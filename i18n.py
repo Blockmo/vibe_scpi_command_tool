@@ -29,6 +29,7 @@ _STR = {
     "command":         {"en": "Command:",             "zh": "指令："},
     "channel":         {"en": "Channel:",             "zh": "通道："},
     "seq_elem":        {"en": "Seq element n:",        "zh": "序列元素 n："},
+    "index_n":         {"en": "Index n:",              "zh": "編號 n："},
     "chlist":          {"en": "Channel list (@):",     "zh": "通道清單 (@)："},
     "param":           {"en": "Parameter:",           "zh": "參數："},
     "no_param":        {"en": "(no parameter)",        "zh": "（此指令無參數）"},

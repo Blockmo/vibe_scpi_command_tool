@@ -1,0 +1,154 @@
+Answer:
+CH<x>?@@CH<x>?@@無@@查詢指定類比通道的完整垂直控制參數與探針資訊。@@2-85@@R@@N
+CH<x>:AMPSVIAVOLTS:ENAble@@CH<x>:AMPSVIAVOLTS:ENAble {<NR1>|OFF|ON} ; 
+CH<x>:AMPSVIAVOLTS:ENAble?@@<NR1> | OFF | 
+ON@@設定或查詢是否啟用將電壓換算為安培（Amps via 
+Volts）的比例換算功能。@@2-85@@RW@@N
+CH<x>:AMPSVIAVOLTS:FACtor@@CH<x>:AMPSVIAVOLTS:FACtor <NR3> ; 
+CH<x>:AMPSVIAVOLTS:FACtor?@@<NR3> (A/V 換算係數)@@設定或查詢安培/伏特（Amps via
+Volts）的比例換算因子。@@2-85@@RW@@N
+CH<x>:BANdwidth@@CH<x>:BANdwidth {<NR3>|FULl} ; CH<x>:BANdwidth?@@<NR3> (Hz) | 
+FULl@@設定或查詢指定類比通道的低通頻寬限制濾波器。@@2-85@@RW@@N
+CH<x>:CLIPping?@@CH<x>:CLIPping?@@無@@查詢指定通道目前是否發生波形垂直過載削頂
+（Clipping）狀態。@@2-85@@R@@N
+CH<x>:COUPling@@CH<x>:COUPling {AC|DC|DCREJ} ; CH<x>:COUPling?@@AC | DC | 
+DCREJ@@設定或查詢指定類比通道的輸入耦合方式。@@2-85@@RW@@N
+CH<x>:DESKew@@CH<x>:DESKew <NR3> ; CH<x>:DESKew?@@<NR3> (-125 ns 至 +125 
+ns)@@設定或查詢指定類比通道的水平時間校正（Deskew）補償值。@@2-85@@RW@@N
+CH<x>:INVert@@CH<x>:INVert {<NR1>|OFF|ON} ; CH<x>:INVert?@@<NR1> | OFF | 
+ON@@設定或查詢指定類比通道波形的垂直反相顯示狀態。@@2-85@@RW@@N
+CH<x>🏷COLor@@CH<x>🏷COLor <QString> ; CH<x>🏷COLor?@@<QString> (Hex 
+顏色碼或空字串)@@設定或查詢指定類比通道標籤文字的顯示色彩。@@2-85@@RW@@N
+CH<x>🏷FONT:BOLD@@CH<x>:LABel:FONT:BOLD {<NR1>|OFF|ON} ; CH<x>🏷FONT:BOLD?@@<NR1>
+| OFF | ON@@設定或查詢指定類比通道標籤文字的粗體樣式。@@2-85@@RW@@N
+CH<x>🏷FONT:ITALic@@CH<x>:LABel:FONT:ITALic {<NR1>|OFF|ON} ; 
+CH<x>🏷FONT:ITALic?@@<NR1> | OFF | 
+ON@@設定或查詢指定類比通道標籤文字的斜體樣式。@@2-85@@RW@@N
+CH<x>🏷FONT:SIZE@@CH<x>:LABel:FONT:SIZE <NR1> ; CH<x>🏷FONT:SIZE?@@<NR1> 
+(點數)@@設定或查詢指定類比通道標籤文字的字型大小。@@2-85@@RW@@N
+CH<x>🏷FONT:TYPE@@CH<x>:LABel:FONT:TYPE <QString> ; CH<x>🏷FONT:TYPE?@@<QString> 
+(字型名稱，如 Arial)@@設定或查詢指定類比通道標籤文字的字型名稱。@@2-85@@RW@@N
+CH<x>🏷FONT:UNDERline@@CH<x>:LABel:FONT:UNDERline {<NR1>|OFF|ON} ; 
+CH<x>🏷FONT:UNDERline?@@<NR1> | OFF | 
+ON@@設定或查詢指定類比通道標籤文字的底線樣式。@@2-85@@RW@@N
+CH<x>:LABel[:NAMe]@@CH<x>:LABel[:NAMe] <QString> ; 
+CH<x>:LABel[:NAMe]?@@<QString> (1 至 32 
+個字元)@@設定或查詢附加於指定類比通道波形上的自訂標籤名稱。@@2-85@@RW@@N
+CH<x>🏷XPOS@@CH<x>🏷XPOS <NR3> ; CH<x>🏷XPOS?@@<NR3> 
+(螢幕像素位置)@@設定或查詢指定通道標籤在螢幕上的 X 軸像素位置。@@2-85@@RW@@N
+CH<x>🏷YPOS@@CH<x>🏷YPOS <NR3> ; CH<x>🏷YPOS?@@<NR3> 
+(相對於波形基準線像素)@@設定或查詢指定通道標籤在螢幕上的 Y 
+軸像素位置。@@2-85@@RW@@N
+CH<x>:OFFSet@@CH<x>:OFFSet <NR3> ; CH<x>:OFFSet?@@<NR3> 
+(電壓/物理單位)@@設定或查詢指定類比通道的垂直偏移量（Offset）。@@2-85@@RW@@N
+CH<x>:POSition@@CH<x>:POSition <NR3> ; CH<x>:POSition?@@<NR3> (格數 
+divisions，如 -5.0 至 
+5.0)@@設定或查詢指定類比通道的垂直顯示位置（Position）。@@2-85@@RW@@N
+CH<x>:PRObe?@@CH<x>:PRObe?@@無@@查詢連接於指定通道之探針的所有詳細參數與狀態。@
+@2-85@@R@@N
+CH<x>:PRObe:AUTOZero@@CH<x>:PRObe:AUTOZero 
+EXECute@@EXECute@@執行連接於指定通道上之探針的自動歸零（Auto 
+Zero）程序。@@2-85@@W@@N
+CH<x>:PRObe:DEGAUSS@@CH<x>:PRObe:DEGAUSS 
+EXECute@@EXECute@@啟動連接於指定通道上之 TekVPI 
+探針的消磁（Degauss）程序。@@2-85@@W@@N
+CH<x>:PRObe:DEGAUSS:STATE?@@CH<x>:PRObe:DEGAUSS:STATE?@@無@@查詢指定通道上探針
+的消磁狀態（Passed, Failed, Required 等）。@@2-85@@R@@N
+CH<x>:PRObe:FORCEDRange@@CH<x>:PRObe:FORCEDRange <dynamicRangeNR3> ; 
+CH<x>:PRObe:FORCEDRange?@@<dynamicRangeNR3> 
+(量程數值)@@設定或查詢連接探針的固定量程範圍（Forced Range）。@@2-85@@RW@@N
+CH<x>:PRObe:GAIN?@@CH<x>:PRObe:GAIN?@@無@@查詢連接於指定通道之探針的增益因子（O
+utput/Input 比例）。@@2-85@@R@@N
+CH<x>:PRObe:ID?@@CH<x>:PRObe:ID?@@無@@查詢連接於指定通道之探針的型號與序號資訊
+。@@2-85@@R@@N
+CH<x>:PRObe:ID:SERnumber?@@CH<x>:PRObe🆔SERnumber?@@無@@查詢連接於指定通道之探
+針的製造序號（Serial Number）。@@2-85@@R@@N
+CH<x>:PRObe:ID:TYPe?@@CH<x>:PRObe🆔TYPe?@@無@@查詢連接於指定通道之探針的型號名
+稱（Type）。@@2-85@@R@@N
+CH<x>:PRObe:PROPDELAY@@CH<x>:PRObe:PROPDELAY <NR3> ; 
+CH<x>:PRObe:PROPDELAY?@@<NR3> 
+(秒)@@設定或查詢指定通道探針的硬體訊號傳播延遲時間。@@2-85@@RW@@N
+CH<x>:PRObe:RESistance?@@CH<x>:PRObe:RESistance?@@無@@查詢連接於指定通道之探針
+的輸入阻抗值（歐姆）。@@2-85@@R@@N
+CH<x>:PRObe:SET@@CH<x>:PRObe:SET <QString> ; CH<x>:PRObe:SET?@@<QString> 
+(設定字串，如 "ATTENUATION 
+25X")@@設定或查詢連接探針配件介面的特定延伸屬性。@@2-85@@RW@@N
+CH<x>:PRObe:UNIts?@@CH<x>:PRObe:UNIts?@@無@@查詢指定通道探針目前採用的物理量測
+單位（如 V、A）。@@2-85@@R@@N
+CH<x>:PROBECal?@@CH<x>:PROBECal?@@無@@查詢指定通道的探針校正狀態（Passed, 
+Failed, Default, Running）。@@2-85@@R@@N
+CH<x>:PROBECOntrol@@CH<x>:PROBECOntrol {AUTO|MANual} ; 
+CH<x>:PROBECOntrol?@@AUTO | 
+MANual@@設定或查詢多量程探針的量程控制策略模式。@@2-85@@RW@@N
+CH<x>:PROBEFunc:EXTAtten@@CH<x>:PROBEFunc:EXTAtten <NR3> ; 
+CH<x>:PROBEFunc:EXTAtten?@@<NR3> (1.00E-10 至 
+1.00E+10)@@設定或查詢指定通道外接衰減器的比例倍率因子。@@2-85@@RW@@N
+CH<x>:PROBEFunc:EXTDBatten@@CH<x>:PROBEFunc:EXTDBatten <NR3> ; 
+CH<x>:PROBEFunc:EXTDBatten?@@<NR3> (分貝 
+dB)@@設定或查詢指定通道外接衰減器的分貝衰減數值。@@2-85@@RW@@N
+CH<x>:PROBEFunc:EXTUnits@@CH<x>:PROBEFunc:EXTUnits <QString> ; 
+CH<x>:PROBEFunc:EXTUnits?@@<QString> (自訂單位名稱，如 
+Pascals)@@設定或查詢指定通道外接衰減器的自訂物理單位名稱。@@2-85@@RW@@N
+CH<x>:PROBEFunc:EXTUnits:STATE@@CH<x>:PROBEFunc:EXTUnits:STATE {<NR1>|OFF|ON} ;
+CH<x>:PROBEFunc:EXTUnits:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定通道是否啟用外接衰減器的自訂單位。@@2-85@@RW@@N
+CH<x>:SCAle@@CH<x>:SCAle <NR3> ; CH<x>:SCAle?@@<NR3> (伏特/div 
+或物理單位/div)@@設定或查詢指定類比通道的垂直檔位比例（Scale）。@@2-85@@RW@@N
+CH<x>:TERmination@@CH<x>:TERmination <NR3> ; CH<x>:TERmination?@@<NR3> (50.0E+0
+或 1.0000E+6)@@設定或查詢指定類比通道的垂直輸入阻抗終端（50 Ω 或 1 
+MΩ）。@@2-85@@RW@@N
+CH<x>:YUNits?@@CH<x>:YUNits?@@無@@查詢指定通道垂直波形數據的垂直單位字串。@@2-8
+5@@R@@N
+CONFIGuration:ANALOg:BANDWidth?@@CONFIGuration:ANALOg:BANDWidth?@@無@@查詢儀器
+硬體目前已授權支援的最大類比頻寬（Hz）。@@2-86@@R@@N
+REF:ADDNew@@REF:ADDNew <QString>@@<QString> (如 
+"REF1")@@新增指定編號的參考波形實體（REF<x>）。@@2-86@@W@@N
+REF:DELete@@REF:DELete <QString>@@<QString> (如 
+"REF1")@@刪除指定的參考波形實體（REF<x>）。@@2-86@@W@@N
+REF:LIST?@@REF:LIST?@@無@@查詢目前儀器中已建立的所有參考波形名稱清單。@@2-86@@R
+@@N
+REF:REF<x>:DESKew@@REF:REF<x>:DESKew <NR3> ; REF:REF<x>:DESKew?@@<NR3> 
+(秒)@@設定或查詢指定參考波形（REF<x>）的時間校正偏移量。@@2-86@@RW@@N
+REF:REF<x>:LABel:COLor@@REF:REF<x>🏷COLor <QString> ; 
+REF:REF<x>:LABel:COLor?@@<QString> (Hex 
+顏色碼或空字串)@@設定或查詢指定參考波形標籤的顯示色彩。@@2-86@@RW@@N
+REF:REF<x>:LABel:FONT:BOLD@@REF:REF<x>:LABel:FONT:BOLD {<NR1>|OFF|ON} ; 
+REF:REF<x>:LABel:FONT:BOLD?@@<NR1> | OFF | 
+ON@@設定或查詢指定參考波形標籤文字的粗體狀態。@@2-86@@RW@@N
+REF:REF<x>:LABel:FONT:ITALic@@REF:REF<x>:LABel:FONT:ITALic {<NR1>|OFF|ON} ; 
+REF:REF<x>:LABel:FONT:ITALic?@@<NR1> | OFF | 
+ON@@設定或查詢指定參考波形標籤文字的斜體狀態。@@2-86@@RW@@N
+REF:REF<x>:LABel:FONT:SIZE@@REF:REF<x>:LABel:FONT:SIZE <NR1> ; 
+REF:REF<x>:LABel:FONT:SIZE?@@<NR1> 
+(點數)@@設定或查詢指定參考波形標籤文字的字型大小。@@2-86@@RW@@N
+REF:REF<x>:LABel:FONT:TYPE@@REF:REF<x>:LABel:FONT:TYPE <QString> ; 
+REF:REF<x>:LABel:FONT:TYPE?@@<QString> 
+(字型名稱)@@設定或查詢指定參考波形標籤文字的字型名稱。@@2-86@@RW@@N
+REF:REF<x>:LABel:FONT:UNDERline@@REF:REF<x>:LABel:FONT:UNDERline {<NR1>|OFF|ON}
+; REF:REF<x>:LABel:FONT:UNDERline?@@<NR1> | OFF | 
+ON@@設定或查詢指定參考波形標籤文字的底線狀態。@@2-86@@RW@@N
+REF:REF<x>:LABel[:NAMe]@@REF:REF<x>:LABel[:NAMe] <QString> ; 
+REF:REF<x>:LABel[:NAMe]?@@<QString> 
+(字串)@@設定或查詢指定參考波形的自訂名稱標籤。@@2-86@@RW@@N
+REF:REF<x>:LABel:XPOS@@REF:REF<x>🏷XPOS <NR1> ; REF:REF<x>:LABel:XPOS?@@<NR1> 
+(格數 divisions)@@設定或查詢指定參考波形標籤在 X 軸上的顯示位置。@@2-86@@RW@@N
+REF:REF<x>:LABel:YPOS@@REF:REF<x>🏷YPOS <NR1> ; REF:REF<x>:LABel:YPOS?@@<NR1> 
+(格數 divisions)@@設定或查詢指定參考波形標籤在 Y 軸上的顯示位置。@@2-86@@RW@@N
+REF:REF<x>:SOUrce@@REF:REF<x>:SOUrce <QString> ; REF:REF<x>:SOUrce?@@<QString> 
+(檔案路徑與檔名)@@設定或查詢指定參考波形載入使用的波形檔案路徑。@@2-86@@RW@@N
+VERTical:DESKew:FROM:CUSTOMPROPAgation@@VERTical:DESKew:FROM:CUSTOMPROPAgation 
+<NR3> ; VERTical:DESKew:FROM:CUSTOMPROPAgation?@@<NR3> (秒)@@設定或查詢通道間 
+Deskew 校正時來源端探針的自訂傳播延遲。@@2-87@@RW@@N
+VERTical:DESKEW:FROM:SOUrce@@VERTical:DESKEW:FROM:SOUrce CH<x> ; 
+VERTical:DESKEW:FROM:SOUrce?@@CH<x>@@設定或查詢通道間 Deskew 
+自動對齊校正的參考來源通道。@@2-87@@RW@@N
+VERTical:DESKEW:STATIC@@VERTical:DESKEW:STATIC EXECute@@EXECute@@依據當前 
+Deskew 設定值執行靜態通道對齊校正。@@2-87@@W@@N
+VERTical:DESKew:TO:CUSTOMPROPAgation@@VERTical:DESKew:TO:CUSTOMPROPAgation 
+<NR3> ; VERTical:DESKew:TO:CUSTOMPROPAgation?@@<NR3> (秒)@@設定或查詢通道間 
+Deskew 校正時目標端探針的自訂傳播延遲。@@2-87@@RW@@N
+VERTical:DESKEW:TO:SOUrce@@VERTical:DESKEW:TO:SOUrce CH<x> ; 
+VERTical:DESKEW:TO:SOUrce?@@CH<x>@@設定或查詢通道間 Deskew 
+自動對齊校正的目標校正通道。@@2-87@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 5)

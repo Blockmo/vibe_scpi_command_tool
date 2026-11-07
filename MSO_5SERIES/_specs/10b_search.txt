@@ -1,0 +1,262 @@
+Answer:
+SEARCH:SEARCH<x>:COPy@@SEARCH:SEARCH<x>:COPy 
+{FROMTRIGger|TOTRIGger}@@FROMTRIGger | 
+TOTRIGger@@複製觸發設定至指定搜尋實體或將搜尋設定複製至觸發。@@2-68@@W@@N
+SEARCH:SEARCH<x>:NAVigate@@SEARCH:SEARCH<x>:NAVigate {PREVious|NEXT}@@PREVious 
+| NEXT@@設定或執行搜尋標記點之間的前後巡航跳轉。@@2-68@@W@@N
+SEARCH:SEARCH<x>:TRIGger🅰STOPAcq@@SEARCH:SEARCH<x>:TRIGger🅰STOPAcq 
+{<NR1>|OFF|ON} ; SEARCH:SEARCH<x>:TRIGger🅰STOPAcq?@@<NR1> | OFF | 
+ON@@設定或查詢當波形搜尋找到匹配標記時是否自動停止波形採集。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:CROSSIng@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:CRO
+SSIng {UPPer|LOWer|EITher|NONe} ; 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:CROSSIng?@@UPPer | LOWer | EITher | 
+NONe@@設定或查詢視窗波形搜尋（Window 
+Search）在邊界穿越時的判定邊界。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGger:A:
+WINdow:LOGICQUALification {ON|OFF} ; 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:LOGICQUALification?@@ON | 
+OFF@@設定或查詢視窗波形搜尋是否啟用邏輯條件限定。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:POL
+arity {UPPer|LOWer|EITher|NONe} ; 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:POLarity?@@UPPer | LOWer | EITher | 
+NONe@@設定或查詢視窗波形搜尋的門檻穿越極性模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:SOUrc
+e {CH<x>|MATH<x>|REF<x>} ; SEARCH:SEARCH<x>:TRIGger🅰WINdow:SOUrce?@@CH<x> | 
+MATH<x> | REF<x>@@設定或查詢視窗波形搜尋的輸入波形訊號源。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:HIGH@@SEARCH:SEARCH<x>:TRIGger🅰WINdow
+:THReshold:HIGH <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:HIGH?@@<NR3> 
+(伏特 V)@@設定或查詢視窗波形搜尋的上邊界電位門檻值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:LOW@@SEARCH:SEARCH<x>:TRIGger🅰WINdow:
+THReshold:LOW <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:LOW?@@<NR3> 
+(伏特 V)@@設定或查詢視窗波形搜尋的下邊界電位門檻值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:WHEn 
+{ENTERSWindow|EXITSWindow|INSIDEGreater|OUTSIDEGreater} ; 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:WHEn?@@ENTERSWindow | EXITSWindow | 
+INSIDEGreater | 
+OUTSIDEGreater@@設定或查詢視窗波形搜尋事件條件（進入視窗/離開視窗/視窗內停留超
+時/視窗外停留超時）。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:WIDth@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:WIDth 
+<NR3> ; SEARCH:SEARCH<x>:TRIGger🅰WINdow:WIDth?@@<NR3> 
+(秒)@@設定或查詢視窗波形搜尋違規判定的最少停留時間限制。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:CLOCk:THReshold@@SEARCH:SEARCH<x>:TRIGger🅰LOGIc:
+CLOCk:THReshold <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:CLOCk:THReshold?@@<NR3> 
+(伏特 V)@@設定或查詢邏輯波形搜尋所採用時脈訊號源的電位門檻值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:DELTatime@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:DELT
+atime <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:DELTatime?@@<NR3> 
+(秒)@@設定或查詢邏輯波形搜尋（Logic Search）的時間條件限制值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:FUNCtion@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:FUNCt
+ion {AND|NANd|NOR|OR} ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:FUNCtion?@@AND | NANd | 
+NOR | OR@@設定或查詢邏輯波形搜尋多通道圖案組合的邏輯運算子。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:INPUT:CLOCK:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:L
+OGIc:INPUT:CLOCK:SOUrce {CH<x>|CH<x>_D<y>|REF<x>_D<y>} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:INPUT:CLOCK:SOUrce?@@CH<x> | CH<x>_D<y> | 
+REF<x>_D<y>@@設定或查詢狀態邏輯波形搜尋所採用的時脈訊號源通道。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVel:CH<x>@@SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVe
+l:CH<x> <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVel:CH<x>?@@<NR3> (伏特 
+V)@@設定或查詢指定類比通道在邏輯波形搜尋中的邏輯判定電位準位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVel:MATH<x>@@SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LE
+Vel:MATH<x> <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVel:MATH<x>?@@<NR3> (伏特 
+V)@@設定或查詢指定數學波形在邏輯波形搜尋中的邏輯判定電位準位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVel:REF<x>@@SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEV
+el:REF<x> <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LEVel:REF<x>?@@<NR3> (伏特 
+V)@@設定或查詢指定參考波形在邏輯波形搜尋中的邏輯判定電位準位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:CH<x>@@SEARCH:SEARCH<x>:TRIGger🅰LOG
+Ic:LOGICPattern:CH<x> {H|L|X} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:CH<x>?@@H | L | 
+X@@設定或查詢指定類比通道在邏輯搜尋圖案中的目標邏輯狀態（高/低/不關心）。@@2-68
+@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:CH<x>_D<x>@@SEARCH:SEARCH<x>:TRIGge
+r🅰LOGIc:LOGICPattern:CH<x>_D<x> {H|L|X} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:CH<x>_D<x>?@@H | L | 
+X@@設定或查詢指定數位通道位元在邏輯搜尋圖案中的目標邏輯狀態。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:MATH<x>@@SEARCH:SEARCH<x>:TRIGger🅰L
+OGIc:LOGICPattern:MATH<x> {H|L|X} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:MATH<x>?@@H | L | 
+X@@設定或查詢指定數學波形在邏輯搜尋圖案中的目標邏輯狀態。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:REF<x>@@SEARCH:SEARCH<x>:TRIGger🅰LO
+GIc:LOGICPattern:REF<x> {H|L|X} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:LOGICPattern:REF<x>?@@H | L | 
+X@@設定或查詢指定參考波形在邏輯搜尋圖案中的目標邏輯狀態。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:POLar
+ity {POSitive|NEGative|EITher} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:POLarity?@@POSitive | NEGative | 
+EITher@@設定或查詢邏輯波形搜尋使用時脈邊緣時的時脈極性。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:USEClockedge@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:U
+SEClockedge {OFF|ON|0|1} ; SEARCH:SEARCH<x>:TRIGger🅰LOGIc:USEClockedge?@@OFF | 
+ON | 0 | 
+1@@設定或查詢邏輯波形搜尋是否啟用時脈邊緣同步搜尋（State/Pattern）。@@2-68@@RW@
+@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:WHEn 
+{TRUe|FALSe|MOREThan|LESSThan|EQual|UNEQual} ; 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:WHEn?@@TRUe | FALSe | MOREThan | LESSThan | 
+EQual | UNEQual@@設定或查詢邏輯圖案成立或失效的時間條件搜尋模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:EDGE@@SEARCH:SEARCH<x>:TRIGger🅰SETHold:C
+LOCk:EDGE {FALL|RISe} ; SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:EDGE?@@FALL | 
+RISe@@設定或查詢 Setup/Hold 
+波形搜尋時脈邊緣的極性（上升沿/下降沿）。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:SOUrce@@SEARCH:SEARCH<x>:TRIGger🅰SETHold
+:CLOCk:SOUrce {CH<x>|CH<x>_D<x>|MATH<x>|REF<x>|REF<x>_D<x>} ; 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:SOUrce?@@CH<x> | CH<x>_D<x> | MATH<x> | 
+REF<x> | REF<x>_D<x>@@設定或查詢 Setup/Hold 
+波形搜尋的時脈訊號源通道。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:THReshold@@SEARCH:SEARCH<x>:TRIGger🅰SETH
+old:CLOCk:THReshold <NR3> ; 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:THReshold?@@<NR3> (伏特 V)@@設定或查詢 
+Setup/Hold 波形搜尋的時脈訊號源門檻電位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:HOLDTime@@SEARCH:SEARCH<x>:TRIGger:A:SETHold:H
+OLDTime <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰SETHold:HOLDTime?@@<NR3> 
+(秒)@@設定或查詢 Setup/Hold 違規波形搜尋的 Hold 保持時間 limit。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:SETTime@@SEARCH:SEARCH<x>:TRIGger:A:SETHold:SE
+TTime <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰SETHold:SETTime?@@<NR3> (秒)@@設定或查詢
+Setup/Hold 違規波形搜尋的 Setup 建立時間 limit。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LEVel:CH<x>@@SEARCH:SEARCH<x>:TRIGger🅰SETHold:
+LEVel:CH<x> <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰SETHold:LEVel:CH<x>?@@<NR3> (伏特 
+V)@@設定或查詢指定類比通道在 Setup/Hold 波形搜尋中的判定電位準位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LEVel:MATH<x>@@SEARCH:SEARCH<x>:TRIGger🅰SETHol
+d:LEVel:MATH<x> <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰SETHold:LEVel:MATH<x>?@@<NR3> 
+(伏特 V)@@設定或查詢指定數學波形在 Setup/Hold 
+波形搜尋中的判定電位準位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LEVel:REF<x>@@SEARCH:SEARCH<x>:TRIGger🅰SETHold
+:LEVel:REF<x> <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰SETHold:LEVel:REF<x>?@@<NR3> 
+(伏特 V)@@設定或查詢指定參考波形在 Setup/Hold 
+波形搜尋中的判定電位準位。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:CH<x>@@SEARCH:SEARCH<x>:TRIGger🅰S
+ETHold:LOGICPattern:CH<x> {INCLude|DONTInclude} ; 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:CH<x>?@@INCLude | 
+DONTInclude@@設定或查詢指定類比通道是否包含於 Setup/Hold 
+波形搜尋資料組合中。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:CH<x>_D<x>@@SEARCH:SEARCH<x>:TRIG
+ger🅰SETHold:LOGICPattern:CH<x>_D<x> {INCLude|DONTInclude} ; 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:CH<x>_D<x>?@@INCLude | 
+DONTInclude@@設定或查詢指定數位通道是否包含於 Setup/Hold 
+波形搜尋資料組合中。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:MATH<x>@@SEARCH:SEARCH<x>:TRIGger
+🅰SETHold:LOGICPattern:MATH<x> {INCLude|DONTInclude} ; 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:MATH<x>?@@INCLude | 
+DONTInclude@@設定或查詢指定數學波形是否包含於 Setup/Hold 
+波形搜尋資料組合中。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:REF<x>@@SEARCH:SEARCH<x>:TRIGger🅰
+SETHold:LOGICPattern:REF<x> {INCLude|DONTInclude} ; 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:LOGICPattern:REF<x>?@@INCLude | 
+DONTInclude@@設定或查詢指定參考波形是否包含於 Setup/Hold 
+波形搜尋資料組合中。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:DELTATime@@SEARCH:SEARCH<x>:TRIGger:A:TRANs
+ition:DELTATime <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰TRANsition:DELTATime?@@<NR3> 
+(秒)@@設定或查詢轉態時間波形搜尋（Rise/Fall Transition Time）的 Delta 
+時間限制。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGge
+r:A:TRANsition:LOGICQUALification {ON|OFF} ; 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:LOGICQUALification?@@ON | 
+OFF@@設定或查詢轉態時間波形搜尋是否啟用邏輯條件限定。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:TRANsi
+tion:POLarity {POSitive|NEGative|EITher} ; 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:POLarity?@@POSitive | NEGative | 
+EITher@@設定或查詢轉態時間波形搜尋的斜率極性（正斜率/負斜率/任意）。@@2-68@@RW@
+@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:TRANsiti
+on:SOUrce {CH<x>|MATH<x>|REF<x>} ; 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:SOUrce?@@CH<x> | MATH<x> | 
+REF<x>@@設定或查詢轉態時間波形搜尋的輸入訊號源通道。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:HIGH@@SEARCH:SEARCH<x>:TRIGger🅰TR
+ANsition:THReshold:HIGH <NR3> ; 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:HIGH?@@<NR3> (伏特 
+V)@@設定或查詢轉態時間波形搜尋的高參考電位門檻值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:LOW@@SEARCH:SEARCH<x>:TRIGger🅰TRA
+Nsition:THReshold:LOW <NR3> ; 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:LOW?@@<NR3> (伏特 
+V)@@設定或查詢轉態時間波形搜尋的低參考電位門檻值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:TRANsition
+:WHEn {FASTERthan|SLOWERthan|EQual|UNEQual} ; 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:WHEn?@@FASTERthan | SLOWERthan | EQual | 
+UNEQual@@設定或查詢轉態時間波形搜尋的判定模式（快於/慢於/等於/不等於）。@@2-68@
+@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A🚌SOUrce B<x> ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:SOUrce?@@B<x> (如 B1 至 
+B16)@@設定或查詢匯流排波形搜尋（Bus 
+Search）所使用的目標匯流排訊號源。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:CONDition@@SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:CO
+NDition {SOF|FRAMEtype|IDentifier|DATa|IDANDDATA|EOF|ERRor|FDBITS} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:CONDition?@@SOF | FRAMEtype | IDentifier | 
+DATa | IDANDDATA | EOF | ERRor | FDBITS@@設定或查詢 CAN 
+匯流排波形搜尋的觸發條件。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:DIRection@@SEARCH:SEARCH<x>:TRIGger:A🚌CA
+N:DATa:DIRection {READ|WRITE|NOCARE} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:DIRection?@@READ | WRITE | 
+NOCARE@@設定或查詢 CAN 匯流排波形搜尋的資料傳輸方向。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:OFFSet@@SEARCH:SEARCH<x>:TRIGger:A🚌CAN:D
+ATa:OFFSet <NR1> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:OFFSet?@@<NR1> 
+(位元組)@@設定或查詢 CAN 匯流排資料搜尋的位元組起始偏移量。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:QUALifier@@SEARCH:SEARCH<x>:TRIGger:A🚌CA
+N:DATa:QUALifier {EQUal|LESSEQual|MOREEQua|UNEQual|LESSthan|MOREthan} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:QUALifier?@@EQUal | LESSEQual | MOREEQua 
+| UNEQual | LESSthan | MOREthan@@設定或查詢 CAN 
+匯流排資料搜尋值的比較限定條件。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:SIZe@@SEARCH:SEARCH<x>:TRIGger:A🚌CAN:DAT
+a:SIZe <NR1> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:SIZe?@@<NR1> (1 至 8 
+位元組)@@設定或查詢 CAN 匯流排資料搜尋的比對長度（位元組數）。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌CAN:DA
+Ta:VALue <QString> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:CAN:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 CAN 匯流排波形搜尋的資料比對字串值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:ADDRess:MODe@@SEARCH:SEARCH<x>:TRIGger:A🚌I2C:
+ADDRess:MODe {ADDR10|ADDR7} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:ADDRess:MODe?@@ADDR10 | ADDR7@@設定或查詢 I2C 
+匯流排波形搜尋的位址定址模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:ADDRess:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌I2C
+:ADDRess:VALue <QString> ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:ADDRess:VALue?@@<QString> 
+(二進位位址字串)@@設定或查詢 I2C 匯流排波形搜尋的位址比對字串值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:CONDition@@SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:CO
+NDition {ADDRess|ADDRANDDATA|DATa|ACKMISS|REPEATstart|STARt|STOP} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:CONDition?@@ADDRess | ADDRANDDATA | DATa | 
+ACKMISS | REPEATstart | STARt | STOP@@設定或查詢 I2C 
+匯流排波形搜尋的條件模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:DATa:DIRection@@SEARCH:SEARCH<x>:TRIGger:A🚌I2
+C:DATa:DIRection {NOCARE|READ|WRITE} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:DATa:DIRection?@@NOCARE | READ | 
+WRITE@@設定或查詢 I2C 匯流排波形搜尋的 R/W 資料傳輸方向。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:DATa:SIZe@@SEARCH:SEARCH<x>:TRIGger:A🚌I2C:DAT
+a:SIZe <NR1> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:DATa:SIZe?@@<NR1> (1 至 16 
+位元組)@@設定或查詢 I2C 匯流排波形搜尋的比對資料長度（位元組數）。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:DATa:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌I2C:DA
+Ta:VALue <QString> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:I2C:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 I2C 匯流排波形搜尋的資料比對字串值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:LIN:CONDition@@SEARCH:SEARCH<x>:TRIGger🅰BUS:LIN:CO
+NDition {DATA|IDANDDATA|ERRor|IDentifier|SLEEP|SYNCfield|WAKEup} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:LIN:CONDition?@@DATA | IDANDDATA | ERRor | 
+IDentifier | SLEEP | SYNCfield | WAKEup@@設定或查詢 LIN 
+匯流排波形搜尋的條件模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:LIN:DATa:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌LIN:DA
+Ta:VALue <QString> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:LIN:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 LIN 匯流排波形搜尋的資料比對數值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:RS232C:CONDition@@SEARCH:SEARCH<x>:TRIGger🅰BUS:RS2
+32C:CONDition {DATa|EOp|PARItyerror|STARt} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:RS232C:CONDition?@@DATa | EOp | PARItyerror | 
+STARt@@設定或查詢 RS-232C 匯流排波形搜尋的條件模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:RS232C:DATa:SIZe@@SEARCH:SEARCH<x>:TRIGger:A🚌RS23
+2C:DATa:SIZe <NR3> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:RS232C:DATa:SIZe?@@<NR3> (1 
+至 10 位元組)@@設定或查詢 RS-232C 資料搜尋的比對長度（位元組數）。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:RS232C:DATa:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌RS2
+32C:DATa:VALue <QString> ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:RS232C:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 RS-232C 匯流排波形搜尋的資料比對數值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:CONDition@@SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:CO
+NDition {DATA|SS|STARTofframe} ; 
+SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:CONDition?@@DATA | SS | 
+STARTofframe@@設定或查詢 SPI 匯流排波形搜尋的條件模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:DATa:SIZe@@SEARCH:SEARCH<x>:TRIGger:A🚌SPI:DAT
+a:SIZe <NR1> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:DATa:SIZe?@@<NR1> (1 至 16 
+位元組)@@設定或查詢 SPI 匯流排資料搜尋的比對長度（位元組數）。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:DATa:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌SPI:DA
+Ta:VALue <QString> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:SPI:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 SPI 匯流排波形搜尋的資料比對數值。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:USB:CONDition@@SEARCH:SEARCH<x>:TRIGger🅰BUS:USB:CO
+NDition 
+{DATAPacket|EOP|ERRor|HANDSHAKEPacket|RESET|RESUME|SPECIALPacket|SUSPEND|SYNC|T
+OKENPacket} ; SEARCH:SEARCH<x>:TRIGger🅰BUS:USB:CONDition?@@DATAPacket | EOP | 
+ERRor | HANDSHAKEPacket | RESET | RESUME | SPECIALPacket | SUSPEND | SYNC | 
+TOKENPacket@@設定或查詢 USB 匯流排波形搜尋的條件模式。@@2-68@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰BUS:USB:DATa:VALue@@SEARCH:SEARCH<x>:TRIGger:A🚌USB:DA
+Ta:VALue <QString> ; SEARCH:SEARCH<x>:TRIGger🅰BUS:USB:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 USB 資料封包搜尋的數值。@@2-68@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 17)

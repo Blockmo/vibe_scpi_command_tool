@@ -1,0 +1,116 @@
+Continuing conversation 98e96dc0...
+Answer:
+MEASUrement:ADDNew@@MEASUrement:ADDNew "QString"@@"MEAS<x>" (如 
+"MEAS1")@@新增指定編號的自動測量項實體（MEAS<x>）。@@2-40@@W@@N
+MEASUrement:DELete@@MEASUrement:DELete "QString"@@"MEAS<x>" (如 
+"MEAS1")@@刪除指定編號的自動測量項實體（MEAS<x>）。@@2-40@@W@@N
+MEASUrement:DELETEALL@@MEASUrement:DELETEALL@@無@@一鍵刪除目前所有已建立的自動
+測量項。@@2-40@@W@@N
+MEASUrement:LIST?@@MEASUrement:LIST?@@無@@查詢目前儀器中所有已建立的自動測量項
+清單。@@2-40@@R@@N
+MEASUrement:MEAS<x>:TYPe@@MEASUrement:MEAS<x>:TYPe <MeasurementType> ; 
+MEASUrement:MEAS<x>:TYPe?@@FREQUENCY | PERIOD | AMPLITUDE | PK2Pk | RMS | 
+RISEtime | FALLtime | HIGH | LOW | DELay | TIE | 
+...@@設定或查詢指定量測項（MEAS<x>）的測量類型。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:SOUrce<x>@@MEASUrement:MEAS<x>:SOUrce<x> 
+{CH<x>|MATH<x>|REF<x>|BUS<x>} ; MEASUrement:MEAS<x>:SOUrce<x>?@@CH<x> | MATH<x>
+| REF<x> | BUS<x>@@設定或查詢指定量測項（MEAS<x>）的輸入訊號源（Source1 或 
+Source2）。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:STATE@@MEASUrement:MEAS<x>:STATE {<NR1>|OFF|ON} ; 
+MEASUrement:MEAS<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定量測項（MEAS<x>）的計算與顯示啟用狀態。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:LABel@@MEASUrement:MEAS<x>:LABel <QString> ; 
+MEASUrement:MEAS<x>:LABel?@@<QString> 
+(自訂標籤字串)@@設定或查詢指定量測項（MEAS<x>）的自訂文字標籤。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:DISPlaystat:ENABle@@MEASUrement:MEAS<x>:DISPlaystat:ENABle 
+{OFF|ON|<NR1>} ; MEASUrement:MEAS<x>:DISPlaystat:ENABle?@@OFF | ON | 
+<NR1>@@設定或查詢指定量測項 Badge 內統計數據的顯示啟用狀態。@@2-40@@RW@@N
+MEASUrement:GATing@@MEASUrement:GATing {NONE|SCREEN|CURSor|LOGic|SEARch} ; 
+MEASUrement:GATing?@@NONE | SCREEN | CURSor | LOGic | 
+SEARch@@設定或查詢全域自動測量的門限（Gating）模式。@@2-40@@RW@@N
+MEASUrement:GATing:ACTive@@MEASUrement:GATing:ACTive {HIGH|LOW} ; 
+MEASUrement:GATing:ACTive?@@HIGH | LOW@@當全域門限為 LOGic 
+時，設定或查詢門限生效的邏輯位準。@@2-40@@RW@@N
+MEASUrement:GATing:HYSTeresis@@MEASUrement:GATing:HYSTeresis <NR3> ; 
+MEASUrement:GATing:HYSTeresis?@@<NR3> 
+(伏特)@@設定或查詢全域邏輯門限判定的遲滯電位數值。@@2-40@@RW@@N
+MEASUrement:GATing:LOGICSource@@MEASUrement:GATing:LOGICSource 
+{CH<x>|MATH<x>|REF<x>} ; MEASUrement:GATing:LOGICSource?@@CH<x> | MATH<x> | 
+REF<x>@@設定或查詢全域邏輯門限控制所使用的訊號源通道。@@2-40@@RW@@N
+MEASUrement:GATing:MIDRef@@MEASUrement:GATing:MIDRef <NR3> ; 
+MEASUrement:GATing:MIDRef?@@<NR3> 
+(伏特)@@設定或查詢全域邏輯門限判定的中位參考電位準位。@@2-40@@RW@@N
+MEASUrement:GATing:SEARCHSource@@MEASUrement:GATing:SEARCHSource SEARCH<x> ; 
+MEASUrement:GATing:SEARCHSource?@@SEARCH<x>@@設定或查詢當門限模式為 SEARch 
+時所關聯的搜尋標記訊號源。@@2-40@@RW@@N
+MEASUrement:REFLevels:TYPE@@MEASUrement:REFLevels:TYPE {GLOBal|PERSource} ; 
+MEASUrement:REFLevels:TYPE?@@GLOBal | 
+PERSource@@設定或查詢全域參考準位模式（所有通道共用或依訊號源獨立設定）。@@2-40
+@@RW@@N
+MEASUrement:REFLevels:METHod@@MEASUrement:REFLevels:METHod {PERCent|ABSolute} ;
+MEASUrement:REFLevels:METHod?@@PERCent | 
+ABSolute@@設定或查詢全域參考準位的計算單位方式（百分比或絕對電位）。@@2-40@@RW@
+@N
+MEASUrement:REFLevels:BASETop@@MEASUrement:REFLevels:BASETop 
+{AUTO|MINMax|MEANhistogram|MODEhistogram|EYEhistogram} ; 
+MEASUrement:REFLevels:BASETop?@@AUTO | MINMax | MEANhistogram | MODEhistogram |
+EYEhistogram@@設定或查詢全域參考準位計算 Top 與 Base 準位的方法。@@2-40@@RW@@N
+MEASUrement:REFLevels:MODE@@MEASUrement:REFLevels:MODE {LATCh|CONTinuous} ; 
+MEASUrement:REFLevels:MODE?@@LATCh | 
+CONTinuous@@設定或查詢全域參考準位的計算頻率（僅首次採集鎖定或每次採集重新計算
+）。@@2-40@@RW@@N
+MEASUrement:REFLevels:JITTERMODE@@MEASUrement:REFLevels:JITTERMODE 
+{CONTinuous|LATCh} ; MEASUrement:REFLevels:JITTERMODE?@@CONTinuous | 
+LATCh@@設定或查詢抖動（Jitter）自動測量中參考準位的計算頻率。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:RISEHigh@@MEASUrement:REFLevels:ABSolute:RISEHig
+h <NR3> ; MEASUrement:REFLevels:ABSolute:RISEHigh?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢上升沿的高參考電位準位。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:RISEMid@@MEASUrement:REFLevels:ABSolute:RISEMid 
+<NR3> ; MEASUrement:REFLevels:ABSolute:RISEMid?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢上升沿的中參考電位準位。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:RISELow@@MEASUrement:REFLevels:ABSolute:RISELow 
+<NR3> ; MEASUrement:REFLevels:ABSolute:RISELow?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢上升沿的低參考電位準位。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:FALLHigh@@MEASUrement:REFLevels:ABSolute:FALLHig
+h <NR3> ; MEASUrement:REFLevels:ABSolute:FALLHigh?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢下降沿的高參考電位準位。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:FALLMid@@MEASUrement:REFLevels:ABSolute:FALLMid 
+<NR3> ; MEASUrement:REFLevels:ABSolute:FALLMid?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢下降沿的中參考電位準位。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:FALLLow@@MEASUrement:REFLevels:ABSolute:FALLLow 
+<NR3> ; MEASUrement:REFLevels:ABSolute:FALLLow?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢下降沿的低參考電位準位。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:HYSTeresis@@MEASUrement:REFLevels:ABSolute:HYSTe
+resis <NR3> ; MEASUrement:REFLevels:ABSolute:HYSTeresis?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢全域參考準位的遲滯電位數值。@@2-40@@RW@@N
+MEASUrement:REFLevels:ABSolute:TYPE@@MEASUrement:REFLevels:ABSolute:TYPE 
+{SAME|UNIQue} ; MEASUrement:REFLevels:ABSolute:TYPE?@@SAME | 
+UNIQue@@設定或查詢上升沿與下降沿的絕對參考電位是否設定為相同數值。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:TYPE@@MEASUrement:REFLevels:PERCent:TYPE 
+{TENNinety|TWENtyeighty|CUSTom} ; 
+MEASUrement:REFLevels:PERCent:TYPE?@@TENNinety | TWENtyeighty | 
+CUSTom@@設定或查詢百分比參考準位預設模式（10%-90%、20%-80% 
+或自訂）。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:RISEHigh@@MEASUrement:REFLevels:PERCent:RISEHigh 
+<NR3> ; MEASUrement:REFLevels:PERCent:RISEHigh?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢上升沿的高參考準位百分比。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:RISEMid@@MEASUrement:REFLevels:PERCent:RISEMid 
+<NR3> ; MEASUrement:REFLevels:PERCent:RISEMid?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢上升沿的中參考準位百分比。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:RISELow@@MEASUrement:REFLevels:PERCent:RISELow 
+<NR3> ; MEASUrement:REFLevels:PERCent:RISELow?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢上升沿的低參考準位百分比。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:FALLHigh@@MEASUrement:REFLevels:PERCent:FALLHigh 
+<NR3> ; MEASUrement:REFLevels:PERCent:FALLHigh?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢下降沿的高參考準位百分比。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:FALLMid@@MEASUrement:REFLevels:PERCent:FALLMid 
+<NR3> ; MEASUrement:REFLevels:PERCent:FALLMid?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢下降沿的中參考準位百分比。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:FALLLow@@MEASUrement:REFLevels:PERCent:FALLLow 
+<NR3> ; MEASUrement:REFLevels:PERCent:FALLLow?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢下降沿的低參考準位百分比。@@2-40@@RW@@N
+MEASUrement:REFLevels:PERCent:HYSTeresis@@MEASUrement:REFLevels:PERCent:HYSTere
+sis <NR3> ; MEASUrement:REFLevels:PERCent:HYSTeresis?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢參考準位的遲滯百分比數值。@@2-40@@RW@@N
+
+Resumed conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c

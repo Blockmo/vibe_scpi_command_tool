@@ -1,0 +1,222 @@
+Answer:
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:CONDition@@TRIGger:{A|B}🚌B<x>:ARINC429A:CONDi
+tion {SOW|LABel|DATa|LABELANDDATA|EOW|ERRor} ; 
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:CONDition?@@SOW | LABel | DATa | LABELANDDATA 
+| EOW | ERRor@@設定或查詢 ARINC429 匯流排觸發的條件欄位。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:DATa:HIVALue@@TRIGger:{A|B}:BUS:B<x>:ARINC429A
+:DATa:HIVALue <QString> ; 
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:DATa:HIVALue?@@<QString> (位元字串)@@當 
+ARINC429 觸發範圍條件為 In Range 或 Out of Range 
+時，設定或查詢資料欄位的高位值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:DATa:QUALifier@@TRIGger:{A|B}:BUS:B<x>:ARINC42
+9A:DATa:QUALifier 
+{EQual|UNEQual|LESSthan|MOREthan|LESSEQual|MOREEQual|INrange|OUTrange} ; 
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:DATa:QUALifier?@@EQual | UNEQual | LESSthan | 
+MOREthan | LESSEQual | MOREEQual | INrange | OUTrange@@設定或查詢 ARINC429 
+匯流排資料觸發的比較限定條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:ARINC429A:D
+ATa:VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:ARINC429A:DATa:VALue?@@<QString> 
+(位元字串)@@設定或查詢 ARINC429 匯流排資料欄位的觸發數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:ERRTYPe@@TRIGger:{A|B}🚌B<x>:ARINC429A:ERRTYPe
+{ANY|PARity|WORD|GAP} ; TRIGger:{A|B}:BUS:B<x>:ARINC429A:ERRTYPe?@@ANY | PARity
+| WORD | GAP@@設定或查詢 ARINC429 匯流排錯誤觸發的類型。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷HIVALue@@TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷HIVA
+Lue <QString> ; TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷HIVALue?@@<QString> 
+(標籤字串)@@當 ARINC429 標籤範圍條件為 In Range 或 Out of Range 
+時，設定或查詢標籤高位值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷QUALifier@@TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷QU
+ALifier {EQual|UNEQual|LESSthan|MOREthan|LESSEQual|MOREEQual|INrange|OUTrange} 
+; TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷QUALifier?@@EQual | UNEQual | LESSthan | 
+MOREthan | LESSEQual | MOREEQual | INrange | OUTrange@@設定或查詢 ARINC429 
+匯流排標籤欄位的比較限定條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷VALue@@TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷VALue 
+<QString> ; TRIGger:{A|B}:BUS:B<x>:ARINC429A🏷VALue?@@<QString> 
+(標籤字串)@@設定或查詢 ARINC429 匯流排標籤欄位的觸發數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:SDI:VALue@@TRIGger:{A|B}:BUS:B<x>:ARINC429A:SD
+I:VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:ARINC429A:SDI:VALue?@@<QString> (2 
+位元字串)@@設定或查詢 ARINC429 匯流排 SDI 欄位的觸發對應數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:ARINC429A:SSM:VALue@@TRIGger:{A|B}:BUS:B<x>:ARINC429A:SS
+M:VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:ARINC429A:SSM:VALue?@@<QString> (2 
+位元字串)@@設定或查詢 ARINC429 匯流排 SSM 欄位的觸發對應數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:CONDition@@TRIGger:{A|B}🚌B<x>:AUDio:CONDition 
+{SOF|DATa} ; TRIGger:{A|B}:BUS:B<x>:AUDio:CONDition?@@SOF | DATa@@設定或查詢 
+Audio 音訊匯流排觸發條件（Frame Sync 或 Data 匹配）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:HITDMVALue@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa
+:HITDMVALue <QString> ; 
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:HITDMVALue?@@<QString> 
+(二進位字串)@@設定或查詢 TDM 音訊匯流排高資料字組的觸發數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:HIVALue@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:HI
+VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:HIVALue?@@<QString> 
+(二進位字串)@@設定或查詢 Audio 音訊匯流排上限資料字組觸發數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:OFFSet@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:OFF
+Set <NR1> ; TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:OFFSet?@@<NR1> 
+(位元組偏移量)@@設定或查詢 Audio 
+音訊匯流排觸發資料的位元組偏移量。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:QUALifier@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:
+QUALifier 
+{LESSthan|MOREthan|EQual|UNEQual|LESSEQual|MOREEQual|INrange|OUTrange} ; 
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:QUALifier?@@LESSthan | MOREthan | EQual | 
+UNEQual | LESSEQual | MOREEQual | INrange | OUTrange@@設定或查詢 Audio 
+音訊匯流排資料觸發的比較限定條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:TDMVALue@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:T
+DMVALue <QString> ; TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:TDMVALue?@@<QString> 
+(二進位字串)@@設定或查詢 TDM 
+音訊匯流排單一或低資料字組的觸發數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:VALu
+e <QString> ; TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 Audio 音訊匯流排下限資料字組觸發數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:WORD@@TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:WORD 
+{EITher|LEFt|RIGht} ; TRIGger:{A|B}:BUS:B<x>:AUDio:DATa:WORD?@@EITher | LEFt | 
+RIGht@@設定或查詢非 TDM 型別 Audio 匯流排資料對齊觸發模式。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:CONDition@@TRIGger:{A|B}🚌B<x>:CAN:CONDition 
+{SOF|FRAMEtype|IDentifier|DATa|IDANDDATA|EOF|ERRor|FDBITS} ; 
+TRIGger:{A|B}:BUS:B<x>:CAN:CONDition?@@SOF | FRAMEtype | IDentifier | DATa | 
+IDANDDATA | EOF | ERRor | FDBITS@@設定或查詢 CAN 
+匯流排觸發的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:DATa:DIRection@@TRIGger:{A|B}:BUS:B<x>:CAN:DATa:DIRe
+ction {READ|WRITE|NOCARE} ; TRIGger:{A|B}:BUS:B<x>:CAN:DATa:DIRection?@@READ | 
+WRITE | NOCARE@@設定或查詢 CAN 匯流排觸發的資料傳輸方向。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:DATa:OFFSet@@TRIGger:{A|B}:BUS:B<x>:CAN:DATa:OFFSet 
+<NR1> ; TRIGger:{A|B}:BUS:B<x>:CAN:DATa:OFFSet?@@<NR1> (0 至 63 
+位元組)@@設定或查詢 CAN 匯流排資料觸發的位元組起始偏移量。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:DATa:QUALifier@@TRIGger:{A|B}:BUS:B<x>:CAN:DATa:QUAL
+ifier {LESSthan|MOREthan|EQual|UNEQual|LESSEQual|MOREEQual} ; 
+TRIGger:{A|B}:BUS:B<x>:CAN:DATa:QUALifier?@@LESSthan | MOREthan | EQual | 
+UNEQual | LESSEQual | MOREEQual@@設定或查詢 CAN 
+匯流排資料觸發值的比較限定條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:DATa:SIZe@@TRIGger:{A|B}:BUS:B<x>:CAN:DATa:SIZe 
+<NR1> ; TRIGger:{A|B}:BUS:B<x>:CAN:DATa:SIZe?@@<NR1> (1 至 8 
+位元組)@@設定或查詢 CAN 匯流排資料觸發的比對資料長度（位元組數）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:CAN:DATa:VALue 
+<QString> ; TRIGger:{A|B}:BUS:B<x>:CAN:DATa:VALue?@@<QString> (0, 1, X 
+二進位字串)@@設定或查詢 CAN 匯流排觸發的資料比對字串值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:ERRType@@TRIGger:{A|B}🚌B<x>:CAN:ERRType 
+{ACKMISS|BITSTUFFing|FORMERRor|ANYERRor} ; 
+TRIGger:{A|B}:BUS:B<x>:CAN:ERRType?@@ACKMISS | BITSTUFFing | FORMERRor | 
+ANYERRor@@設定或查詢 CAN 匯流排錯誤觸發的具體錯誤型別。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:FD:BRSBit@@TRIGger:{A|B}:BUS:B<x>:CAN:FD:BRSBit 
+{ONE|ZERo|NOCARE} ; TRIGger:{A|B}:BUS:B<x>:CAN:FD:BRSBit?@@ONE | ZERo | 
+NOCARE@@設定或查詢 CAN FD 封包中 Bit Rate Switch (BRS) 
+位元的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:FD:ESIBit@@TRIGger:{A|B}:BUS:B<x>:CAN:FD:ESIBit 
+{ONE|ZERo|NOCARE} ; TRIGger:{A|B}:BUS:B<x>:CAN:FD:ESIBit?@@ONE | ZERo | 
+NOCARE@@設定或查詢 CAN FD 封包中 Error State Indicator (ESI) 
+位元的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:FRAMEtype@@TRIGger:{A|B}🚌B<x>:CAN:FRAMEtype 
+{DATa|REMote|ERRor|OVERLoad} ; TRIGger:{A|B}:BUS:B<x>:CAN:FRAMEtype?@@DATa | 
+REMote | ERRor | OVERLoad@@設定或查詢 CAN 
+匯流排觸發的訊框型態（Data/Remote/Error/Overload）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:IDentifier:MODe@@TRIGger:{A|B}:BUS:B<x>:CAN:IDentifi
+er:MODe {STandard|EXTended} ; 
+TRIGger:{A|B}:BUS:B<x>:CAN:IDentifier:MODe?@@STandard | EXTended@@設定或查詢 
+CAN 匯流排識別碼（ID）的定址模式。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:CAN:IDentifier:VALue@@TRIGger:{A|B}:BUS:B<x>:CAN:IDentif
+ier:VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:CAN:IDentifier:VALue?@@<QString> 
+(二進位 ID 字串)@@設定或查詢 CAN 
+匯流排觸發的識別碼（ID）比對數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:I2C:ADDRess:MODe@@TRIGger:{A|B}:BUS:B<x>:I2C:ADDRess:MOD
+e {ADDR7|ADDR10} ; TRIGger:{A|B}:BUS:B<x>:I2C:ADDRess:MODe?@@ADDR7 | 
+ADDR10@@設定或查詢 I2C 匯流排觸發的位址定址模式（7 位元或 10 
+位元）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:I2C:ADDRess:VALue@@TRIGger:{A|B}:BUS:B<x>:I2C:ADDRess:VA
+Lue <QString> ; TRIGger:{A|B}:BUS:B<x>:I2C:ADDRess:VALue?@@<QString> 
+(二進位位址字串)@@設定或查詢 I2C 匯流排觸發的位址比對字串值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:I2C:CONDition@@TRIGger:{A|B}🚌B<x>:I2C:CONDition 
+{STARt|STOP|REPEATstart|ACKMISS|ADDRess|DATa|ADDRANDDATA} ; 
+TRIGger:{A|B}:BUS:B<x>:I2C:CONDition?@@STARt | STOP | REPEATstart | ACKMISS | 
+ADDRess | DATa | ADDRANDDATA@@設定或查詢 I2C 
+匯流排觸發的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:I2C:DATa:DIRection@@TRIGger:{A|B}:BUS:B<x>:I2C:DATa:DIRe
+ction {READ|WRITE|NOCARE} ; TRIGger:{A|B}:BUS:B<x>:I2C:DATa:DIRection?@@READ | 
+WRITE | NOCARE@@設定或查詢 I2C 匯流排觸發的 R/W 資料傳輸方向。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:I2C:DATa:SIZe@@TRIGger:{A|B}:BUS:B<x>:I2C:DATa:SIZe 
+<NR1> ; TRIGger:{A|B}:BUS:B<x>:I2C:DATa:SIZe?@@<NR1> (1 至 16 
+位元組)@@設定或查詢 I2C 匯流排觸發的比對資料長度（位元組數）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:I2C:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:I2C:DATa:VALue 
+<QString> ; TRIGger:{A|B}:BUS:B<x>:I2C:DATa:VALue?@@<QString> (0, 1, X 
+二進位字串)@@設定或查詢 I2C 匯流排觸發的資料比對字串值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:CONDition@@TRIGger:{A|B}🚌B<x>:LIN:CONDition 
+{SYNCfield|IDentifier|DATa|IDANDDATA|WAKEup|SLEEP|ERRor} ; 
+TRIGger:{A|B}:BUS:B<x>:LIN:CONDition?@@SYNCfield | IDentifier | DATa | 
+IDANDDATA | WAKEup | SLEEP | ERRor@@設定或查詢 LIN 
+匯流排觸發的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:DATa:HIVALue@@TRIGger:{A|B}:BUS:B<x>:LIN:DATa:HIVALu
+e <QString> ; TRIGger:{A|B}:BUS:B<x>:LIN:DATa:HIVALue?@@<QString> 
+(二進位字串)@@當 LIN 觸發資料限定為 In Range 或 Out of Range 
+時，設定或查詢資料上限值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:DATa:QUALifier@@TRIGger:{A|B}:BUS:B<x>:LIN:DATa:QUAL
+ifier {EQual|UNEQual|LESSthan|MOREthan|LESSEQual|MOREEQual|INrange|OUTrange} ; 
+TRIGger:{A|B}:BUS:B<x>:LIN:DATa:QUALifier?@@EQual | UNEQual | LESSthan | 
+MOREthan | LESSEQual | MOREEQual | INrange | OUTrange@@設定或查詢 LIN 
+匯流排資料觸發的比較限定條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:DATa:SIZe@@TRIGger:{A|B}:BUS:B<x>:LIN:DATa:SIZe 
+<NR1> ; TRIGger:{A|B}:BUS:B<x>:LIN:DATa:SIZe?@@<NR1> (1 至 8 
+位元組)@@設定或查詢 LIN 匯流排觸發的比對資料長度（位元組數）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:LIN:DATa:VALue 
+<QString> ; TRIGger:{A|B}:BUS:B<x>:LIN:DATa:VALue?@@<QString> 
+(二進位字串)@@設定或查詢 LIN 匯流排觸發的資料比對數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:ERRTYPE@@TRIGger:{A|B}🚌B<x>:LIN:ERRTYPE 
+{SYNC|PARity|CHecksum} ; TRIGger:{A|B}:BUS:B<x>:LIN:ERRTYPE?@@SYNC | PARity | 
+CHecksum@@設定或查詢 LIN 匯流排錯誤觸發的具體錯誤型別。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:LIN:IDentifier:VALue@@TRIGger:{A|B}:BUS:B<x>:LIN:IDentif
+ier:VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:LIN:IDentifier:VALue?@@<QString> 
+(6 位元二進位 ID 字串)@@設定或查詢 LIN 
+匯流排觸發的識別碼（ID）比對數值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:PARallel:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:PARallel:DAT
+a:VALue <QString> ; TRIGger:{A|B}:BUS:B<x>:PARallel:DATa:VALue?@@<QString> 
+(二進位資料字串)@@設定或查詢平行匯流排觸發的比對資料字串值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:RS232C:CONDition@@TRIGger:{A|B}🚌B<x>:RS232C:CONDition 
+{STARt|EOp|DATa|PARItyerror} ; TRIGger:{A|B}:BUS:B<x>:RS232C:CONDition?@@STARt 
+| EOp | DATa | PARItyerror@@設定或查詢 RS-232C 
+匯流排觸發的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:RS232C:DATa:SIZe@@TRIGger:{A|B}:BUS:B<x>:RS232C:DATa:SIZ
+e <NR3> ; TRIGger:{A|B}:BUS:B<x>:RS232C:DATa:SIZe?@@<NR3> (1 至 10 
+位元組)@@設定或查詢 RS-232C 資料觸發的比對長度（位元組數）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:RS232C:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:RS232C:DATa:VA
+Lue <QString> ; TRIGger:{A|B}:BUS:B<x>:RS232C:DATa:VALue?@@<QString> (0, 1, X 
+二進位字串)@@設定或查詢 RS-232C 匯流排觸發的資料比對字串值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:SPI:CONDition@@TRIGger:{A|B}🚌B<x>:SPI:CONDition 
+{SS|STARTofframe|DATa} ; TRIGger:{A|B}:BUS:B<x>:SPI:CONDition?@@SS | 
+STARTofframe | DATa@@設定或查詢 SPI 匯流排觸發的觸發條件。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:SPI:DATa:SIZe@@TRIGger:{A|B}:BUS:B<x>:SPI:DATa:SIZe 
+<NR1> ; TRIGger:{A|B}:BUS:B<x>:SPI:DATa:SIZe?@@<NR1> (1 至 16 
+位元組)@@設定或查詢 SPI 匯流排資料觸發的比對長度（位元組數）。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:B<x>:SPI:DATa:VALue@@TRIGger:{A|B}:BUS:B<x>:SPI:DATa:VALue 
+<QString> ; TRIGger:{A|B}:BUS:B<x>:SPI:DATa:VALue?@@<QString> (0, 1, X 
+二進位字串)@@設定或查詢 SPI 匯流排觸發的資料比對字串值。@@2-76@@RW@@N
+TRIGger:{A|B}:BUS:SOUrce@@TRIGger:{A|B}🚌SOUrce B<x> ; 
+TRIGger:{A|B}:BUS:SOUrce?@@B<x> (如 B1 至 
+B16)@@設定或查詢匯流排觸發所使用的目標匯流排訊號源。@@2-76@@RW@@N
+TRIGger🅱BY@@TRIGger🅱BY {EVENTS|TIMe} ; TRIGger🅱BY?@@EVENTS | TIMe@@設定或查詢 B
+觸發是在 A 觸發發生後依據事件次數或延遲時間觸發。@@2-76@@RW@@N
+TRIGger🅱EVENTS:COUNt@@TRIGger:B:EVENTS:COUNt <NR1> ; 
+TRIGger🅱EVENTS:COUNt?@@<NR1> (1 至 65471 次)@@設定或查詢 A 觸發之後觸發 B 
+觸發所需發生的目標事件總次數。@@2-76@@RW@@N
+TRIGger🅱RESET@@TRIGger🅱RESET SETLevel@@SETLevel@@自動將 B 觸發 Reset 
+重置準位設定為 50%。@@2-76@@W@@N
+TRIGger🅱RESET:EDGE:COUPling@@TRIGger🅱RESET:EDGE:COUPling 
+{DC|HFRej|LFRej|NOISErej} ; TRIGger🅱RESET:EDGE:COUPling?@@DC | HFRej | LFRej | 
+NOISErej@@設定或查詢 A→B 順序邊緣觸發 Reset 
+重置訊號的耦合濾波模式。@@2-76@@RW@@N
+TRIGger🅱RESET:EDGE:LEVel@@TRIGger🅱RESET:EDGE:LEVel <NR3> ; 
+TRIGger🅱RESET:EDGE:LEVel?@@<NR3> (伏特)@@設定或查詢 A→B 順序邊緣觸發 Reset 
+重置訊號的觸發電位。@@2-76@@RW@@N
+TRIGger🅱RESET:EDGE:SLOpe@@TRIGger🅱RESET:EDGE:SLOpe {RISe|FALL|EITher} ; 
+TRIGger🅱RESET:EDGE:SLOpe?@@RISe | FALL | EITher@@設定或查詢 A→B 順序邊緣觸發 
+Reset 重置訊號的斜率方向。@@2-76@@RW@@N
+TRIGger🅱RESET:EDGE:SOUrce@@TRIGger🅱RESET:EDGE:SOUrce {CH<x>|CH<x>_D<y>} ; 
+TRIGger🅱RESET:EDGE:SOUrce?@@CH<x> | CH<x>_D<y>@@設定或查詢 A→B 順序邊緣觸發 
+Reset 功能的輸入訊號源通道。@@2-76@@RW@@N
+TRIGger🅱RESET:TIMEOut:TIMe@@TRIGger🅱RESET:TIMEOut:TIMe <NR3> ; 
+TRIGger🅱RESET:TIMEOut:TIMe?@@<NR3> (秒)@@設定或查詢 A→B 順序觸發中 Timeout 
+Reset 的定時時間。@@2-76@@RW@@N
+TRIGger🅱RESET:TYPe@@TRIGger:B:RESET:TYPe {NONe|TIMEOut|EDGE} ; 
+TRIGger🅱RESET:TYPe?@@NONe | TIMEOut | EDGE@@設定或查詢 A→B 順序觸發的 Reset 
+重置模式（無/逾時/邊緣）。@@2-76@@RW@@N
+TRIGger🅱STATE@@TRIGger🅱STATE {ON|OFF|<NR1>} ; TRIGger🅱STATE?@@ON | OFF | <NR1> 
+(0=OFF, 1=ON)@@設定或查詢 B 觸發（A->B 
+順序觸發序列）的啟用開關狀態。@@2-76@@RW@@N
+TRIGger🅱TIMe@@TRIGger🅱TIMe <NR3> ; TRIGger🅱TIMe?@@<NR3> (秒)@@設定或查詢 A 
+觸發發生後觸發 B 觸發的延遲時間長度。@@2-76@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 13)

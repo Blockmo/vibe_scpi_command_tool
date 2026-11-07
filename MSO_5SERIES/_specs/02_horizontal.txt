@@ -1,0 +1,111 @@
+Answer:
+ACQuire:NUMFRAMESACQuired?@@ACQuire:NUMFRAMESACQuired?@@無@@查詢目前已採集到的 
+FastFrame 幀數總計。@@2-35@@R@@N
+CH<x>:SCALERATio@@CH<x>:SCALERATio <NR2> ; 
+CH<x>:SCALERATio?@@<NR2>@@設定或查詢指定類比通道的水平縮放比例。@@2-35@@RW@@N
+HORizontal?@@HORizontal?@@無@@查詢目前所有水平時基系統的設定與參數。@@2-35@@R@@
+N
+HORizontal:ACQDURATION?@@HORizontal:ACQDURATION?@@無@@查詢目前水平時基的波形採
+集時間長度（秒）。@@2-35@@R@@N
+HORizontal:DELay:MODe@@HORizontal:DELay:MODe {OFF|ON|<NR1>} ; 
+HORizontal:DELay:MODe?@@OFF | ON | 
+<NR1>@@設定或查詢水平延遲（Delay）模式的啟用狀態。@@2-35@@RW@@N
+HORizontal:DELay:TIMe@@HORizontal:DELay:TIMe <NR3> ; 
+HORizontal:DELay:TIMe?@@<NR3> 
+(秒)@@在延遲模式開啟時，設定或查詢水平延遲時間。@@2-35@@RW@@N
+HORizontal:DIVisions?@@HORizontal:DIVisions?@@無@@查詢螢幕波形顯示區域的水平總
+格數（Divisions）。@@2-35@@R@@N
+HORizontal:FASTframe?@@HORizontal:FASTframe?@@無@@查詢 FastFrame 
+分段記憶體採集功能的完整設定資訊。@@2-35@@R@@N
+HORizontal:FASTframe:COUNt@@HORizontal:FASTframe:COUNt <NR1> ; 
+HORizontal:FASTframe:COUNt?@@<NR1> (整數)@@設定或查詢 FastFrame 
+模式下要採集的目標總幀數。@@2-35@@RW@@N
+HORizontal:FASTframe:MAXFRames?@@HORizontal:FASTframe:MAXFRames?@@無@@查詢目前
+記錄長度下所支援的最大 FastFrame 採集幀數。@@2-35@@R@@N
+HORizontal:FASTframe:MULtipleframes:MODe@@HORizontal:FASTframe:MULtipleframes:M
+ODe {OFF|OVERlay} ; HORizontal:FASTframe:MULtipleframes:MODe?@@OFF | 
+OVERlay@@設定或查詢 FastFrame 多幀疊加（Overlay）顯示模式。@@2-35@@RW@@N
+HORizontal:FASTframe:REF:FRAme@@HORizontal:FASTframe:REF:FRAme <NR1> ; 
+HORizontal:FASTframe:REF:FRAme?@@<NR1> (幀編號)@@設定或查詢 FastFrame 
+時間戳記比較的參考幀編號。@@2-35@@RW@@N
+HORizontal:FASTframe:REF:INCLUde@@HORizontal:FASTframe:REF:INCLUde 
+{<NR1>|OFF|ON} ; HORizontal:FASTframe:REF:INCLUde?@@<NR1> | OFF | 
+ON@@設定或查詢是否在螢幕顯示中包含參考幀的時間差資訊。@@2-35@@RW@@N
+HORizontal:FASTframe:SELECTED@@HORizontal:FASTframe:SELECTED <NR1> ; 
+HORizontal:FASTframe:SELECTED?@@<NR1> (幀編號)@@設定或查詢目前選定與顯示的 
+FastFrame 採集幀編號。@@2-35@@RW@@N
+HORizontal:FASTframe:STATE@@HORizontal:FASTframe:STATE {<NR1>|OFF|ON} ; 
+HORizontal:FASTframe:STATE?@@<NR1> | OFF | ON@@開啟、關閉或查詢 FastFrame 
+分段採集功能的啟用狀態。@@2-35@@RW@@N
+HORizontal:FASTframe:SUMFrame?@@HORizontal:FASTframe:SUMFrame? 
+{NONe|AVErage|ENVelope}@@NONe | AVErage | ENVelope@@設定或查詢 FastFrame 
+摘要幀（Summary Frame）的類型。@@2-35@@RW@@N
+HORizontal:FASTframe:SUMFrame:STATE@@HORizontal:FASTframe:SUMFrame:STATE 
+{<NR1>|OFF|ON} ; HORizontal:FASTframe:SUMFrame:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢 FastFrame 摘要幀的啟用狀態。@@2-35@@RW@@N
+HORizontal:FASTframe:TIMEStamp:ALL?@@HORizontal:FASTframe:TIMEStamp:ALL?@@無@@
+查詢所有採集的 FastFrame 幀之時間戳記。@@2-35@@R@@N
+HORizontal:FASTframe:TIMEStamp:DELTa?@@HORizontal:FASTframe:TIMEStamp:DELTa?@@
+無@@查詢目前選定幀與參考幀之間的時間差。@@2-35@@R@@N
+HORizontal:FASTframe:TIMEStamp:REFerence?@@HORizontal:FASTframe:TIMEStamp:REFer
+ence?@@無@@查詢 FastFrame 參考幀的時間戳記。@@2-35@@R@@N
+HORizontal:FASTframe:TIMEStamp:SELECTED?@@HORizontal:FASTframe:TIMEStamp:SELECT
+ED?@@無@@查詢 FastFrame 目前選定幀的時間戳記。@@2-35@@R@@N
+HORizontal:FASTframe:XZEro:ALL?@@HORizontal:FASTframe:XZEro:ALL?@@無@@查詢所有 
+FastFrame 幀之觸發點與實際觸發時間差（XZero）。@@2-35@@R@@N
+HORizontal:FASTframe:XZEro:REF?@@HORizontal:FASTframe:XZEro:REF?@@無@@查詢 
+FastFrame 參考幀之觸發點與實際觸發時間差（XZero）。@@2-35@@R@@N
+HORizontal:FASTframe:XZEro:SELECTED?@@HORizontal:FASTframe:XZEro:SELECTED?@@無@
+@查詢 FastFrame 選定幀之觸發點與實際觸發時間差（XZero）。@@2-35@@R@@N
+HORizontal:MAIn:INTERPRatio?@@HORizontal:MAIn:INTERPRatio?@@無@@查詢主水平時基
+的波形內插比例（Interpolation Ratio）。@@2-35@@R@@N
+HORizontal:MODE@@HORizontal:MODE {AUTO|MANual} ; HORizontal:MODE?@@AUTO | 
+MANual@@設定或查詢水平時基運作模式為自動（AUTO）或手動（MANual）。@@2-35@@RW@@N
+HORizontal:MODe:AUTOmatic:FASTAcq:RECOrdlength:MAXimum:VALue@@HORizontal:MODe:A
+UTOmatic:FASTAcq:RECOrdlength:MAXimum:VALue <NR1> ; 
+HORizontal:MODe:AUTOmatic:FASTAcq:RECOrdlength:MAXimum:VALue?@@<NR1> 
+(樣點數)@@設定或查詢自動模式下 FastAcq 波形採集的最大記錄長度。@@2-35@@RW@@N
+HORizontal:MODe:AUTOmatic:FASTAcq:RECOrdlength:MAXimum:ZOOMOVERride@@HORizontal
+:MODe:AUTOmatic:FASTAcq:RECOrdlength:MAXimum:ZOOMOVERride {OFF|ON|0|1} ; 
+HORizontal:MODe:AUTOmatic:FASTAcq:RECOrdlength:MAXimum:ZOOMOVERride?@@OFF | ON 
+| 0 | 1@@設定或查詢是否允許覆寫 FastAcq 
+自動模式下的最大記錄長度限制。@@2-35@@RW@@N
+HORizontal:MODe:MANual:CONFIGure@@HORizontal:MODe:MANual:CONFIGure 
+{HORIZontalscale|RECORDLength} ; 
+HORizontal:MODe:MANual:CONFIGure?@@HORIZontalscale | 
+RECORDLength@@設定或查詢手動模式下調整取樣率時優先自動連動調整的控制項。@@2-35@
+@RW@@N
+HORizontal:MODE:RECOrdlength@@HORizontal:MODE:RECOrdlength <NR1> ; 
+HORizontal:MODE:RECOrdlength?@@<NR1> 
+(樣點數)@@在水平模式控制下，設定或查詢波形記錄長度（Record 
+Length）。@@2-35@@RW@@N
+HORizontal:MODE:SAMPLERate@@HORizontal:MODE:SAMPLERate <NR1> ; 
+HORizontal:MODE:SAMPLERate?@@<NR1> 
+(Sa/s)@@在水平模式控制下，設定或查詢水平取樣率（Sample Rate）。@@2-35@@RW@@N
+HORizontal:MODE:SCAle@@HORizontal:MODE:SCAle <NR1> ; 
+HORizontal:MODE:SCAle?@@<NR1> 
+(秒/div)@@在水平模式控制下，設定或查詢水平時基檔位（Scale）。@@2-35@@RW@@N
+HORizontal:POSition@@HORizontal:POSition <NR3> ; HORizontal:POSition?@@<NR3> (0
+至 100%)@@設定或查詢觸發點相對於螢幕顯示範圍的水平位置百分比。@@2-35@@RW@@N
+HORizontal:PREViewstate?@@HORizontal:PREViewstate?@@無@@查詢示波器顯示系統目前
+是否處於預覽（Preview）狀態。@@2-35@@R@@N
+HORizontal:RECOrdlength@@HORizontal:RECOrdlength <NR1> ; 
+HORizontal:RECOrdlength?@@<NR1> (樣點數)@@設定或查詢波形記錄長度（須在 Manual 
+模式下設定）。@@2-35@@RW@@N
+HORizontal:ROLL?@@HORizontal:ROLL?@@無@@查詢目前水平滾動（Roll）模式的啟用狀態
+。@@2-35@@R@@N
+HORizontal:SAMPLERate@@HORizontal:SAMPLERate <NR3> ; 
+HORizontal:SAMPLERate?@@<NR3> (Sa/s)@@設定或查詢波形水平取樣率（Samples per 
+second）。@@2-35@@RW@@N
+HORizontal:SAMPLERate:ANALYZemode:MINimum:OVERRide@@HORizontal:SAMPLERate:ANALY
+Zemode:MINimum:OVERRide {OFF|ON|0|1} ; 
+HORizontal:SAMPLERate:ANALYZemode:MINimum:OVERRide?@@OFF | ON | 0 | 
+1@@設定或查詢是否允許覆寫分析自動模式下的最小取樣率限制。@@2-35@@RW@@N
+HORizontal:SAMPLERate:ANALYZemode:MINimum:VALue@@HORizontal:SAMPLERate:ANALYZem
+ode:MINimum:VALue {AUTOmatic|<NR3>} ; 
+HORizontal:SAMPLERate:ANALYZemode:MINimum:VALue?@@AUTOmatic | 
+<NR3>@@設定或查詢分析自動水平模式下使用的最小取樣率門檻值。@@2-35@@RW@@N
+HORizontal:SCAle@@HORizontal:SCAle <NR3> ; HORizontal:SCAle?@@<NR3> 
+(秒/div)@@設定或查詢水平時基檔位（Scale，單位：秒/div）。@@2-35@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 4)

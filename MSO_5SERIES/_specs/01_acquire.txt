@@ -1,0 +1,40 @@
+Continuing conversation 98e96dc0...
+Answer:
+ACQuire?@@ACQuire?@@無@@查詢目前波形採集系統的完整狀態與設定參數。@@2-93@@R@@N
+ACQuire:FASTAcq:PALEtte@@ACQuire:FASTAcq:PALEtte 
+{NORMal|TEMPerature|SPECtral|INVErted} ; ACQuire:FASTAcq:PALEtte?@@NORMal | 
+TEMPerature | SPECtral | 
+INVErted@@設定或查詢快速採集模式（FastAcq）下的波形配色方案與灰階顯示模式。@@2-
+94@@RW@@N
+ACQuire:FASTAcq:STATE@@ACQuire:FASTAcq:STATE {<NR1>|OFF|ON} ; 
+ACQuire:FASTAcq:STATE?@@<NR1> (0=OFF, 1=ON) | OFF | 
+ON@@開啟、關閉或查詢快速波形採集模式（FastAcq）的啟用狀態。@@2-94@@RW@@N
+ACQuire:MAXSamplerate?@@ACQuire:MAXSamplerate?@@無@@查詢示波器當前硬體支援的最
+大實時取樣率（Hz）。@@2-95@@R@@N
+ACQuire:MODe@@ACQuire:MODe {SAMple|PEAKdetect|HIRes|AVErage|ENVelope} ; 
+ACQuire:MODe?@@SAMple | PEAKdetect | HIRes | AVErage | 
+ENVelope@@設定或查詢示波器的波形採集與信號處理模式。@@2-95@@RW@@N
+ACQuire:NUMACq?@@ACQuire:NUMACq?@@無@@查詢自上次開始採集（RUN）以來已完成的波形
+採集總次數。@@2-97@@R@@N
+ACQuire:NUMAVg@@ACQuire:NUMAVg <NR1> ; ACQuire:NUMAVg?@@<NR1> (2 至 
+10240)@@設定或查詢平均（Average）採集模式下用於計算平均值的波形採集次數。@@2-97
+@@RW@@N
+ACQuire:SEQuence:CURrent?@@ACQuire:SEQuence:CURrent?@@無@@在單次序列採集模式下
+，查詢目前已完成的採集或測量序列次數。@@2-98@@R@@N
+ACQuire:SEQuence:MODe@@ACQuire:SEQuence:MODe NUMACQs ; 
+ACQuire:SEQuence:MODe?@@NUMACQs@@設定或查詢單次序列採集停止計數的依據模式（僅支
+援 NUMACQs）。@@2-98@@RW@@N
+ACQuire:SEQuence:NUMSEQuence@@ACQuire:SEQuence:NUMSEQuence <NR1> ; 
+ACQuire:SEQuence:NUMSEQuence?@@<NR1> (整數，預設 
+1)@@在單次序列採集模式下，設定或查詢組成一個單次序列所需的總採集次數。@@2-98@@R
+W@@N
+ACQuire:STATE@@ACQuire:STATE {<NR1>|OFF|ON|RUN|STOP} ; ACQuire:STATE?@@<NR1> 
+(0=STOP, 1=RUN/ON) | OFF | ON | RUN | 
+STOP@@控制示波器開始（RUN/ON）或停止（STOP/OFF）波形採集，或查詢採集運行狀態。@
+@2-99@@RW@@N
+ACQuire:STOPAfter@@ACQuire:STOPAfter {RUNSTop|SEQuence} ; 
+ACQuire:STOPAfter?@@RUNSTop | 
+SEQuence@@設定或查詢採集控制模式為連續採集（RUNSTop）或單次序列採集（SEQuence）
+。@@2-100@@RW@@N
+
+Resumed conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c

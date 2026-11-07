@@ -1,0 +1,258 @@
+Answer:
+DISplay?@@DISplay?@@無@@查詢螢幕顯示系統目前的完整設定與參數。@@2-28@@R@@N
+DISplay:COLors@@DISplay:COLors {NORMal|INVERTed} ; DISplay:COLors?@@NORMal | 
+INVERTed@@設定或查詢格線與波形顯示的色彩模式（正常/反相）。@@2-28@@RW@@N
+DISplay:GLObal:B<x>:STATE@@DISplay:GLObal:B<x>:STATE {<NR1>|OFF|ON} ; 
+DISplay:GLObal:B<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定匯流排（B<x>）在波形視圖中的全域顯示狀態。@@2-28@@RW@@N
+DISplay:GLObal:CH<x>:STATE@@DISplay:GLObal:CH<x>:STATE {<NR1>|OFF|ON} ; 
+DISplay:GLObal:CH<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定類比/數位通道的全域顯示狀態。@@2-28@@RW@@N
+DISplay:GLObal:MATH<x>:STATE@@DISplay:GLObal:MATH<x>:STATE {<NR1>|OFF|ON} ; 
+DISplay:GLObal:MATH<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定數學波形（MATH<x>）的全域顯示狀態。@@2-28@@RW@@N
+DISplay:GLObal:PLOT<x>:STATE@@DISplay:GLObal:PLOT<x>:STATE {<NR1>|OFF|ON} ; 
+DISplay:GLObal:PLOT<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定趨勢分析圖表（PLOT<x>）的全域顯示狀態。@@2-28@@RW@@N
+DISplay:GLObal:REF<x>:STATE@@DISplay:GLObal:REF<x>:STATE {<NR1>|OFF|ON} ; 
+DISplay:GLObal:REF<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定參考波形（REF<x>）的全域顯示狀態。@@2-28@@RW@@N
+DISplay:INTENSITy?@@DISplay:INTENSITy?@@無@@查詢波形與格線輝度發光飽和度及螢幕
+保護設定。@@2-28@@R@@N
+DISplay:INTENSITy:BACKLight@@DISplay:INTENSITy:BACKLight {LOW|MEDium|HIGH} ; 
+DISplay:INTENSITy:BACKLight?@@LOW | MEDium | 
+HIGH@@設定或查詢顯示器背光的亮度等級（低/中/高）。@@2-28@@RW@@N
+DISplay:INTENSITy:BACKLight:AUTODim:ENAble@@DISplay:INTENSITy:BACKLight:AUTODim
+:ENAble {ON|OFF} ; DISplay:INTENSITy:BACKLight:AUTODim:ENAble?@@ON | 
+OFF@@開啟、關閉或查詢顯示背光自動減暗（Auto-Dim）功能。@@2-28@@RW@@N
+DISplay:INTENSITy:BACKLight:AUTODim:TIMe@@DISplay:INTENSITy:BACKLight:AUTODim:T
+IMe <NR1> ; DISplay:INTENSITy:BACKLight:AUTODim:TIMe?@@<NR1> 
+(分鐘)@@設定或查詢儀器閒置後進入背光自動減暗的時間（分鐘）。@@2-28@@RW@@N
+DISplay:MATHFFTView<x>:AUTOScale@@DISplay:MATHFFTView<x>:AUTOScale 
+{OFF|ON|<NR1>} ; DISplay:MATHFFTView<x>:AUTOScale?@@OFF | ON | 
+<NR1>@@設定或查詢指定 FFT 數學視圖中的自動縮放（Autoscale）功能。@@2-28@@RW@@N
+DISplay:MATHFFTView<x>:GRIDlines@@DISplay:MATHFFTView<x>:GRIDlines 
+{HORizontal|VERTical|BOTH} ; DISplay:MATHFFTView<x>:GRIDlines?@@HORizontal | 
+VERTical | BOTH@@設定或查詢指定 FFT 視圖中的背景格線顯示樣式。@@2-28@@RW@@N
+DISplay:MATHFFTView<x>:MATH:MATH<x>:STATE@@DISplay:MATHFFTView<x>:MATH:MATH<x>:
+STATE {<NR1>|OFF|ON} ; DISplay:MATHFFTView<x>:MATH:MATH<x>:STATE?@@<NR1> | OFF 
+| ON@@設定或查詢指定 FFT 視圖內數學波形的顯示啟用狀態。@@2-28@@RW@@N
+DISplay:MATHFFTView<x>:XAXIS:SCALE@@DISplay:MATHFFTView<x>:XAXIS:SCALE 
+{LINear|LOGarithmic} ; DISplay:MATHFFTView<x>:XAXIS:SCALE?@@LINear | 
+LOGarithmic@@設定或查詢 FFT 數學視圖 X 軸的顯示比例（線性/對數）。@@2-28@@RW@@N
+DISplay:MATHFFTView<x>:YAXIS:SCALE@@DISplay:MATHFFTView<x>:YAXIS:SCALE 
+{LINear|LOGarithmic} ; DISplay:MATHFFTView<x>:YAXIS:SCALE?@@LINear | 
+LOGarithmic@@設定或查詢 FFT 數學視圖 Y 軸的顯示比例（線性/對數）。@@2-28@@RW@@N
+DISplay:MATHFFTView<x>:ZOOM:XAXIS:FROM@@DISplay:MATHFFTView<x>:ZOOM:XAXIS:FROM 
+<NR3> ; DISplay:MATHFFTView<x>:ZOOM:XAXIS:FROM?@@<NR3> (Hz)@@設定或查詢 FFT 
+視圖中 X 軸放大區域的起始頻率。@@2-92@@RW@@N
+DISplay:MATHFFTView<x>:ZOOM:XAXIS:TO@@DISplay:MATHFFTView<x>:ZOOM:XAXIS:TO 
+<NR3> ; DISplay:MATHFFTView<x>:ZOOM:XAXIS:TO?@@<NR3> (Hz)@@設定或查詢 FFT 
+視圖中 X 軸放大區域的結束頻率。@@2-92@@RW@@N
+DISplay:MATHFFTView<x>:ZOOM:YAXIS:FROM@@DISplay:MATHFFTView<x>:ZOOM:YAXIS:FROM 
+<NR3> ; DISplay:MATHFFTView<x>:ZOOM:YAXIS:FROM?@@<NR3> (dBm/V)@@設定或查詢 FFT 
+視圖中 Y 軸放大區域的底部數值。@@2-92@@RW@@N
+DISplay:MATHFFTView<x>:ZOOM:YAXIS:TO@@DISplay:MATHFFTView<x>:ZOOM:YAXIS:TO 
+<NR3> ; DISplay:MATHFFTView<x>:ZOOM:YAXIS:TO?@@<NR3> (dBm/V)@@設定或查詢 FFT 
+視圖中 Y 軸放大區域的頂部數值。@@2-92@@RW@@N
+DISplay:PERSistence@@DISplay:PERSistence 
+{OFF|AUTO|INFPersist|INFInite|VARpersist|CLEAR} ; DISplay:PERSistence?@@OFF | 
+AUTO | INFPersist | INFInite | VARpersist | 
+CLEAR@@設定或查詢波形顯示餘暉（Persistence）模式或清除餘暉數據。@@2-28@@RW@@N
+DISplay:PERSistence:RESET@@DISplay:PERSistence:RESET 
+EXECute@@EXECute@@開啟並立即清除螢幕上累積的波形餘暉數據。@@2-28@@W@@N
+DISplay:PLOTView<x>:AUTOScale@@DISplay:PLOTView<x>:AUTOScale {OFF|ON|<NR1>} ; 
+DISplay:PLOTView<x>:AUTOScale?@@OFF | ON | 
+<NR1>@@設定或查詢指定圖表視圖（PlotView）的自動縮放功能。@@2-28@@RW@@N
+DISplay:PLOTView<x>:GRIDlines@@DISplay:PLOTView<x>:GRIDlines 
+{HORizontal|VERTical|BOTH} ; DISplay:PLOTView<x>:GRIDlines?@@HORizontal | 
+VERTical | BOTH@@設定或查詢指定圖表視圖的背景格線顯示樣式。@@2-28@@RW@@N
+DISplay:PLOTView<x>:XAXIS:SCALE@@DISplay:PLOTView<x>:XAXIS:SCALE 
+{LINear|LOGarithmic} ; DISplay:PLOTView<x>:XAXIS:SCALE?@@LINear | 
+LOGarithmic@@設定或查詢分析圖表 X 軸的顯示比例（線性/對數）。@@2-28@@RW@@N
+DISplay:PLOTView<x>:YAXIS:SCALE@@DISplay:PLOTView<x>:YAXIS:SCALE 
+{LINear|LOGarithmic} ; DISplay:PLOTView<x>:YAXIS:SCALE?@@LINear | 
+LOGarithmic@@設定或查詢分析圖表 Y 軸的顯示比例（線性/對數）。@@2-28@@RW@@N
+DISplay:PLOTView<x>:ZOOM:XAXIS:FROM@@DISplay:PLOTView<x>:ZOOM:XAXIS:FROM <NR3> 
+; DISplay:PLOTView<x>:ZOOM:XAXIS:FROM?@@<NR3> (物理單位)@@設定或查詢圖表視圖中 
+X 軸放大區域的左邊界值。@@2-92@@RW@@N
+DISplay:PLOTView<x>:ZOOM:XAXIS:TO@@DISplay:PLOTView<x>:ZOOM:XAXIS:TO <NR3> ; 
+DISplay:PLOTView<x>:ZOOM:XAXIS:TO?@@<NR3> (物理單位)@@設定或查詢圖表視圖中 X 
+軸放大區域的右邊界值。@@2-92@@RW@@N
+DISplay:PLOTView<x>:ZOOM:YAXIS:FROM@@DISplay:PLOTView<x>:ZOOM:YAXIS:FROM <NR3> 
+; DISplay:PLOTView<x>:ZOOM:YAXIS:FROM?@@<NR3> (物理單位)@@設定或查詢圖表視圖中 
+Y 軸放大區域的下邊界值。@@2-92@@RW@@N
+DISplay:PLOTView<x>:ZOOM:YAXIS:TO@@DISplay:PLOTView<x>:ZOOM:YAXIS:TO <NR3> ; 
+DISplay:PLOTView<x>:ZOOM:YAXIS:TO?@@<NR3> (物理單位)@@設定或查詢圖表視圖中 Y 
+軸放大區域的上邊界值。@@2-92@@RW@@N
+DISplay:REFFFTView<x>:AUTOScale@@DISplay:REFFFTView<x>:AUTOScale {OFF|ON|<NR1>}
+; DISplay:REFFFTView<x>:AUTOScale?@@OFF | ON | <NR1>@@設定或查詢參考 FFT 
+視圖的自動縮放啟用狀態。@@2-28@@RW@@N
+DISplay:REFFFTView<x>:GRIDlines@@DISplay:REFFFTView<x>:GRIDlines 
+{HORizontal|VERTical|BOTH} ; DISplay:REFFFTView<x>:GRIDlines?@@HORizontal | 
+VERTical | BOTH@@設定或查詢參考 FFT 視圖的背景格線樣式。@@2-28@@RW@@N
+DISplay:REFFFTView<x>:REF:REF<x>:STATE@@DISplay:REFFFTView<x>:REF:REF<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:REFFFTView<x>:REF:REF<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢參考 FFT 視圖中對應參考波形的顯示狀態。@@2-28@@RW@@N
+DISplay:REFFFTView<x>:XAXIS:SCALE@@DISplay:REFFFTView<x>:XAXIS:SCALE 
+{LINear|LOGarithmic} ; DISplay:REFFFTView<x>:XAXIS:SCALE?@@LINear | 
+LOGarithmic@@設定或查詢參考 FFT 視圖 X 軸的顯示比例（線性/對數）。@@2-28@@RW@@N
+DISplay:REFFFTView<x>:ZOOM:XAXIS:FROM@@DISplay:REFFFTView<x>:ZOOM:XAXIS:FROM 
+<NR3> ; DISplay:REFFFTView<x>:ZOOM:XAXIS:FROM?@@<NR3> (Hz)@@設定或查詢參考 FFT 
+視圖放大時 X 軸的起始頻率。@@2-92@@RW@@N
+DISplay:REFFFTView<x>:ZOOM:XAXIS:TO@@DISplay:REFFFTView<x>:ZOOM:XAXIS:TO <NR3> 
+; DISplay:REFFFTView<x>:ZOOM:XAXIS:TO?@@<NR3> (Hz)@@設定或查詢參考 FFT 
+視圖放大時 X 軸的結束頻率。@@2-92@@RW@@N
+DISplay:REFFFTView<x>:ZOOM:YAXIS:FROM@@DISplay:REFFFTView<x>:ZOOM:YAXIS:FROM 
+<NR3> ; DISplay:REFFFTView<x>:ZOOM:YAXIS:FROM?@@<NR3> (dBm/V)@@設定或查詢參考 
+FFT 視圖放大時 Y 軸的下限值。@@2-92@@RW@@N
+DISplay:REFFFTView<x>:ZOOM:YAXIS:TO@@DISplay:REFFFTView<x>:ZOOM:YAXIS:TO <NR3> 
+; DISplay:REFFFTView<x>:ZOOM:YAXIS:TO?@@<NR3> (dBm/V)@@設定或查詢參考 FFT 
+視圖放大時 Y 軸的上限值。@@2-92@@RW@@N
+DISplay:SELect:BUS@@DISplay:SELect:BUS BUS<x> ; 
+DISplay:SELect:BUS?@@BUS<x>@@設定或查詢當前全域選定的匯流排（Bus）對象。@@2-28@
+@RW@@N
+DISplay:SELect:MATH@@DISplay:SELect:MATH MATH<x> ; 
+DISplay:SELect:MATH?@@MATH<x>@@設定或查詢當前全域選定的數學波形對象。@@2-28@@RW
+@@N
+DISplay:SELect:REFerence@@DISplay:SELect:REFerence {NONE|REF<x>} ; 
+DISplay:SELect:REFerence?@@NONE | 
+REF<x>@@設定或查詢當前全域選定的參考波形對象。@@2-28@@RW@@N
+DISplay:SELect:SOUrce@@DISplay:SELect:SOUrce 
+{NONE|CH<x>|BUS<x>|MATH<x>|PLOT<x>|REF<x>} ; DISplay:SELect:SOUrce?@@NONE | 
+CH<x> | BUS<x> | MATH<x> | PLOT<x> | 
+REF<x>@@設定或查詢當前全域選定的主要波形訊號源。@@2-28@@RW@@N
+DISplay:SELect:VIEW@@DISplay:SELect:VIEW 
+{WAVEVIEW1|MATHFFT<x>|PLOTVIEW<x>|REFFFT<x>} ; DISplay:SELect:VIEW?@@WAVEVIEW1 
+| MATHFFT<x> | PLOTVIEW<x> | 
+REFFFT<x>@@設定或查詢螢幕上當前選定的目標視圖（View）。@@2-28@@RW@@N
+DISplay:SELect:WAVEView<x>:SOUrce@@DISplay:SELect:WAVEView<x>:SOUrce 
+{CH<x>|MATH<x>|BUS<x>|REF<x>|PLOT<x>} ; 
+DISplay:SELect:WAVEView<x>:SOUrce?@@CH<x> | MATH<x> | BUS<x> | REF<x> | 
+PLOT<x>@@設定或查詢指定波形視圖內選定的主要訊號源。@@2-28@@RW@@N
+DISplay:VARpersist@@DISplay:VARpersist <NR3> ; DISplay:VARpersist?@@<NR3> (0.5 
+至 100 秒)@@設定或查詢波形可變餘暉的衰減衰退時間（秒）。@@2-28@@RW@@N
+DISplay:WAVEView<x>:BUS:B<x>:STATE@@DISplay:WAVEView<x>:BUS:B<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:BUS:B<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中匯流排的顯示啟用狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:BUS:B<x>:VERTical:POSition@@DISplay:WAVEView<x>🚌B<x>:VERTi
+cal:POSition <NR3> ; DISplay:WAVEView<x>:BUS:B<x>:VERTical:POSition?@@<NR3> 
+(格數 divisions)@@設定或查詢指定波形視圖中匯流排的垂直顯示位置。@@2-28@@RW@@N
+DISplay:WAVEView<x>:CH<x>:STATE@@DISplay:WAVEView<x>:CH<x>:STATE {<NR1>|OFF|ON}
+; DISplay:WAVEView<x>:CH<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中類比通道的顯示啟用狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:CH<x>:VERTical:POSition@@DISplay:WAVEView<x>:CH<x>:VERTical
+:POSition <NR3> ; DISplay:WAVEView<x>:CH<x>:VERTical:POSition?@@<NR3> (-5.0 至 
+5.0 div)@@設定或查詢指定波形視圖中類比通道的垂直顯示位置。@@2-28@@RW@@N
+DISplay:WAVEView<x>:CH<x>:VERTical:SCAle@@DISplay:WAVEView<x>:CH<x>:VERTical:SC
+Ale <NR3> ; DISplay:WAVEView<x>:CH<x>:VERTical:SCAle?@@<NR3> 
+(V/div)@@設定或查詢指定波形視圖中類比通道的垂直檔位比例。@@2-28@@RW@@N
+DISplay:WAVEView<x>:CH<x>_DALL:STATE@@DISplay:WAVEView<x>:CH<x>_DALL:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:CH<x>_DALL:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中所有數位位元的整體顯示狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:CH<x>_DALL:VERTical:POSition@@DISplay:WAVEView<x>:CH<x>_DAL
+L:VERTical:POSition <NR3> ; 
+DISplay:WAVEView<x>:CH<x>_DALL:VERTical:POSition?@@<NR3> (-5.0 至 5.0 
+div)@@設定或查詢指定波形視圖中數位位元群組的垂直顯示位置。@@2-28@@RW@@N
+DISplay:WAVEView<x>:CH<x>_D<x>:STATE@@DISplay:WAVEView<x>:CH<x>_D<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:CH<x>_D<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中單一數位位元（D<x>）的顯示狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:FILTer@@DISplay:WAVEView<x>:FILTer {SINX|LINear} ; 
+DISplay:WAVEView<x>:FILTer?@@SINX | 
+LINear@@設定或查詢波形顯示時採用的內插濾波器類型（Sin(x)/x 或 
+Linear）。@@2-28@@RW@@N
+DISplay:WAVEView<x>:GRAticule@@DISplay:WAVEView<x>:GRAticule 
+{FULL|GRID|CROSSHAIR|FRAME} ; DISplay:WAVEView<x>:GRAticule?@@FULL | GRID | 
+CROSSHAIR | 
+FRAME@@設定或查詢波形視圖的背景格線（Graticule）顯示類型。@@2-28@@RW@@N
+DISplay:WAVEView<x>:INTENSITy:GRAticule@@DISplay:WAVEView<x>:INTENSITy:GRAticul
+e <NR2> ; DISplay:WAVEView<x>:INTENSITy:GRAticule?@@<NR2> (0 至 
+100%)@@設定或查詢指定波形視圖中背景格線的發光亮度飽和百分比。@@2-28@@RW@@N
+DISplay:WAVEView<x>:INTENSITy:WAVEform@@DISplay:WAVEView<x>:INTENSITy:WAVEform 
+<NR2> ; DISplay:WAVEView<x>:INTENSITy:WAVEform?@@<NR2> (0 至 
+100%)@@設定或查詢指定波形視圖中波形發光輝度飽和百分比。@@2-28@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:AUTOScale@@DISplay:WAVEView<x>:MATH:MATH<x>:AU
+TOScale {<NR1>|OFF|ON} ; DISplay:WAVEView<x>:MATH:MATH<x>:AUTOScale?@@<NR1> | 
+OFF | ON@@設定或查詢數學算式變更時是否對數學波形自動執行垂直縮放。@@2-28@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:STATE@@DISplay:WAVEView<x>:MATH:MATH<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:MATH:MATH<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中數學波形的顯示啟用狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:POSition@@DISplay:WAVEView<x>:MATH:MA
+TH<x>:VERTical:POSition <NR3> ; 
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:POSition?@@<NR3> (格數 
+divisions)@@設定或查詢指定波形視圖中數學波形的垂直顯示位置。@@2-28@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:SCAle@@DISplay:WAVEView<x>:MATH:MATH<
+x>:VERTical:SCAle <NR3> ; 
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:SCAle?@@<NR3> 
+(單位/div)@@設定或查詢指定波形視圖中數學波形的垂直檔位比例。@@2-28@@RW@@N
+DISplay:WAVEView<x>:PLOT:PLOT<x>:AUTOScale@@DISplay:WAVEView<x>:PLOT:PLOT<x>:AU
+TOScale {<NR1>|OFF|ON} ; DISplay:WAVEView<x>:PLOT:PLOT<x>:AUTOScale?@@<NR1> | 
+OFF | ON@@設定或查詢新數據產生時趨勢波形是否自動進行垂直縮放。@@2-28@@RW@@N
+DISplay:WAVEView<x>:PLOT:PLOT<x>:STATE@@DISplay:WAVEView<x>:PLOT:PLOT<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:PLOT:PLOT<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中趨勢分析波形的顯示狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:PLOT:PLOT<x>:VERTical:POSition@@DISplay:WAVEView<x>:PLOT:PL
+OT<x>:VERTical:POSition <NR3> ; 
+DISplay:WAVEView<x>:PLOT:PLOT<x>:VERTical:POSition?@@<NR3> (格數 
+divisions)@@設定或查詢指定波形視圖中趨勢分析波形的垂直顯示位置。@@2-28@@RW@@N
+DISplay:WAVEView<x>:PLOT:PLOT<x>:VERTical:SCAle@@DISplay:WAVEView<x>:PLOT:PLOT<
+x>:VERTical:SCAle <NR3> ; 
+DISplay:WAVEView<x>:PLOT:PLOT<x>:VERTical:SCAle?@@<NR3> (V/div 
+或物理單位/div)@@設定或查詢指定波形視圖中趨勢分析波形的垂直檔位比例。@@2-28@@RW
+@@N
+DISplay:WAVEView<y>:REF:REF<x>:FRAMe@@DISplay:WAVEView<y>:REF:REF<x>:FRAMe 
+<NR1> ; DISplay:WAVEView<y>:REF:REF<x>:FRAMe?@@<NR1> 
+(幀編號)@@設定或查詢指定波形視圖中類比參考波形的選定顯示幀編號。@@2-28@@RW@@N
+DISplay:WAVEView<y>:REF<x>_DALL:FRAMe@@DISplay:WAVEView<y>:REF<x>_DALL:FRAMe 
+<NR1> ; DISplay:WAVEView<y>:REF<x>_DALL:FRAMe?@@<NR1> 
+(幀編號)@@設定或查詢指定波形視圖中數位參考波形的選定顯示幀編號。@@2-28@@RW@@N
+DISplay:WAVEView<x>:REF:REF<x>:STATE@@DISplay:WAVEView<x>:REF:REF<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:REF:REF<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中參考波形的顯示啟用狀態。@@2-28@@RW@@N
+DISplay:WAVEView<x>:REF:REF<x>:VERTical:POSition@@DISplay:WAVEView<x>:REF:REF<x
+>:VERTical:POSition <NR3> ; 
+DISplay:WAVEView<x>:REF:REF<x>:VERTical:POSition?@@<NR3> (格數 
+divisions)@@設定或查詢指定波形視圖中參考波形的垂直顯示位置。@@2-28@@RW@@N
+DISplay:WAVEView<x>:REF:REF<x>:VERTical:SCAle@@DISplay:WAVEView<x>:REF:REF<x>:V
+ERTical:SCAle <NR3> ; DISplay:WAVEView<x>:REF:REF<x>:VERTical:SCAle?@@<NR3> 
+(V/div 
+或物理單位/div)@@設定或查詢指定波形視圖中參考波形的垂直檔位比例。@@2-28@@RW@@N
+DISplay:WAVEView<x>:STYle@@DISplay:WAVEView<x>:STYle {VECtors|DOTS} ; 
+DISplay:WAVEView<x>:STYle?@@VECtors | 
+DOTS@@設定或查詢分析模式下波形數據點的連接方式（向量線或點狀）。@@2-28@@RW@@N
+DISplay:WAVEView<x>:VIEWStyle@@DISplay:WAVEView<x>:VIEWStyle {OVERLAY|STACKED} 
+; DISplay:WAVEView<x>:VIEWStyle?@@OVERLAY | 
+STACKED@@設定或查詢波形顯示佈局模式為重疊（Overlay）或堆疊（Stacked）。@@2-28@@
+RW@@N
+DISplay:WAVEView<x>:Zoom?@@DISplay:WAVEView<x>:Zoom?@@無@@查詢指定波形視圖中所
+有放大（Zoom）控制項的完整參數。@@2-92@@R@@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>?@@DISplay:WAVEView<x>:ZOOM:ZOOM<x>?@@無@@查詢
+指定波形視圖中特定放大視窗（ZOOM<x>）的詳細參數。@@2-92@@R@@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:HORizontal:POSition@@DISplay:WAVEView<x>:ZOOM:
+ZOOM<x>:HORizontal:POSition <NR3> ; 
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:HORizontal:POSition?@@<NR3> (0 至 
+100%)@@設定或查詢放大區域相對於原始波形記錄長度的水平中心位置百分比。@@2-92@@RW
+@@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:HORizontal:SCALe@@DISplay:WAVEView<x>:ZOOM:ZOO
+M<x>:HORizontal:SCALe <NR3> ; 
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:HORizontal:SCALe?@@<NR3> (1-2-4 
+步進倍數)@@設定或查詢指定波形視圖中放大視窗的水平倍率因子。@@2-92@@RW@@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:HORizontal:WINSCALe@@DISplay:WAVEView<x>:ZOOM:
+ZOOM<x>:HORizontal:WINSCALe <NR3> ; 
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:HORizontal:WINSCALe?@@<NR3> 
+(秒/div)@@設定或查詢主總覽視窗中放大邊框視窗的水平時間檔位。@@2-92@@RW@@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:STATe@@DISplay:WAVEView<x>:ZOOM:ZOOM<x>:STATe 
+{ON|OFF|<NR1>} ; DISplay:WAVEView<x>:ZOOM:ZOOM<x>:STATe?@@ON | OFF | 
+<NR1>@@開啟、關閉或查詢指定波形視圖中放大視窗（Zoom）的顯示啟用狀態。@@2-92@@RW
+@@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:VERTical:POSition@@DISplay:WAVEView<x>:ZOOM:ZO
+OM<x>:VERTical:POSition <NR3> ; 
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:VERTical:POSition?@@<NR3> 
+(依垂直倍率計算範圍)@@設定或查詢放大波形在視圖內的垂直顯示中心位置。@@2-92@@RW@
+@N
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:VERTical:SCALe@@DISplay:WAVEView<x>:ZOOM:ZOOM<
+x>:VERTical:SCALe <NR3> ; 
+DISplay:WAVEView<x>:ZOOM:ZOOM<x>:VERTical:SCALe?@@<NR3> 
+(倍數)@@設定或查詢指定放大視窗中波形的垂直放大倍率。@@2-92@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 6)

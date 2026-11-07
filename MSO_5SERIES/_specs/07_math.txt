@@ -1,0 +1,117 @@
+Answer:
+DISplay:GLObal:MATH<x>:STATE@@DISplay:GLObal:MATH<x>:STATE {<NR1>|OFF|ON} ; 
+DISplay:GLObal:MATH<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定數學波形的全域顯示狀態。@@2-37@@RW@@N
+DISplay:SELect:MATH@@DISplay:SELect:MATH MATH<x> ; 
+DISplay:SELect:MATH?@@MATH<x>@@設定或查詢儀器當前全域選定的目標數學波形對象。@@
+2-37@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:STATE@@DISplay:WAVEView<x>:MATH:MATH<x>:STATE 
+{<NR1>|OFF|ON} ; DISplay:WAVEView<x>:MATH:MATH<x>:STATE?@@<NR1> | OFF | 
+ON@@設定或查詢指定波形視圖中數學波形的顯示啟用狀態。@@2-37@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:POSition@@DISplay:WAVEView<x>:MATH:MA
+TH<x>:VERTical:POSition <NR3> ; 
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:POSition?@@<NR3> (格數 
+divisions)@@設定或查詢指定波形視圖中數學波形的垂直顯示位置。@@2-37@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:SCAle@@DISplay:WAVEView<x>:MATH:MATH<
+x>:VERTical:SCAle <NR3> ; 
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:SCAle?@@<NR3> 
+(單位/div)@@設定或查詢指定波形視圖中數學波形的垂直檔位比例。@@2-37@@RW@@N
+MATH:ADDNew@@MATH:ADDNew <QString>@@<QString> (如 
+"MATH1")@@新增指定編號的數學波形實體（MATH<x>）。@@2-37@@W@@N
+MATH:DELete@@MATH:DELete <QString>@@<QString> (如 
+"MATH1")@@刪除指定編號的數學波形實體（MATH<x>）。@@2-37@@W@@N
+MATH:LIST?@@MATH:LIST?@@無@@查詢目前已建立的所有數學波形名稱清單。@@2-37@@R@@N
+MATH:MATH<x>:AVG:MODE@@MATH:MATH<x>:AVG:MODE {<NR1>|OFF|ON} ; 
+MATH:MATH<x>:AVG:MODE?@@<NR1> | OFF | 
+ON@@設定或查詢指定數學波形的平均運算模式啟用狀態。@@2-37@@RW@@N
+MATH:MATH<x>:AVG:WEIGht@@MATH:MATH<x>:AVG:WEIGht <NR1> ; 
+MATH:MATH<x>:AVG:WEIGht?@@<NR1> 
+(採集次數權重)@@設定或查詢指數平均運算開始發揮作用的波形採集次數權重。@@2-37@@R
+W@@N
+MATH:MATH<x>:DEFine@@MATH:MATH<x>:DEFine <QString> ; 
+MATH:MATH<x>:DEFine?@@<QString> (運算表達式字串，如 
+"CH1+CH2")@@使用數學表達式建立與定義指定的數學波形。@@2-37@@RW@@N
+MATH:MATH<x>:FUNCtion@@MATH:MATH<x>:FUNCtion {ADD|SUBtract|MULTiply|DIVide} ; 
+MATH:MATH<x>:FUNCtion?@@ADD | SUBtract | MULTiply | 
+DIVide@@設定或查詢基礎數學模式下的算術運算子。@@2-37@@RW@@N
+MATH:MATH<x>:GATing@@MATH:MATH<x>:GATing {NONE|SCREEN|CURSor} ; 
+MATH:MATH<x>:GATing?@@NONE | SCREEN | CURSor@@設定或查詢 Math FFT 
+頻譜分析波形的範圍門限模式。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:COLor@@MATH:MATH<x>🏷COLor <QString> ; 
+MATH:MATH<x>:LABel:COLor?@@<QString> (Hex 
+顏色碼或空字串)@@設定或查詢指定數學波形標籤的顯示色彩。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:FONT:BOLD@@MATH:MATH<x>:LABel:FONT:BOLD {<NR1>|OFF|ON} ; 
+MATH:MATH<x>:LABel:FONT:BOLD?@@<NR1> | OFF | 
+ON@@設定或查詢指定數學波形標籤文字的粗體樣式。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:FONT:ITALic@@MATH:MATH<x>:LABel:FONT:ITALic {<NR1>|OFF|ON} ;
+MATH:MATH<x>:LABel:FONT:ITALic?@@<NR1> | OFF | 
+ON@@設定或查詢指定數學波形標籤文字的斜體樣式。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:FONT:SIZE@@MATH:MATH<x>:LABel:FONT:SIZE <NR1> ; 
+MATH:MATH<x>:LABel:FONT:SIZE?@@<NR1> 
+(點數)@@設定或查詢指定數學波形標籤文字的字型大小。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:FONT:TYPE@@MATH:MATH<x>:LABel:FONT:TYPE <QString> ; 
+MATH:MATH<x>:LABel:FONT:TYPE?@@<QString> 
+(字型名稱)@@設定或查詢指定數學波形標籤文字的字型名稱。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:FONT:UNDERline@@MATH:MATH<x>:LABel:FONT:UNDERline 
+{<NR1>|OFF|ON} ; MATH:MATH<x>:LABel:FONT:UNDERline?@@<NR1> | OFF | 
+ON@@設定或查詢指定數學波形標籤文字的底線樣式。@@2-37@@RW@@N
+MATH:MATH<x>:LABel[:NAMe]@@MATH:MATH<x>:LABel[:NAMe] <QString> ; 
+MATH:MATH<x>:LABel[:NAMe]?@@<QString> (1 至 32 
+字元)@@設定或查詢附加於指定數學波形上的自訂文字標籤。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:XPOS@@MATH:MATH<x>🏷XPOS <NR1> ; 
+MATH:MATH<x>:LABel:XPOS?@@<NR1> 
+(螢幕像素位置)@@設定或查詢數學波形標籤在螢幕上的 X 軸像素位置。@@2-37@@RW@@N
+MATH:MATH<x>:LABel:YPOS@@MATH:MATH<x>🏷YPOS <NR1> ; 
+MATH:MATH<x>:LABel:YPOS?@@<NR1> 
+(相對於波形基準線像素)@@設定或查詢數學波形標籤在螢幕上的 Y 
+軸像素位置。@@2-37@@RW@@N
+MATH:MATH<x>:SOUrce<x>@@MATH:MATH<x>:SOUrce<x> {CH<x>|MATH<x>|REF<x>} ; 
+MATH:MATH<x>:SOUrce<x>?@@CH<x> | MATH<x> | 
+REF<x>@@設定或查詢基礎數學模式下的波形輸入訊號源（Source1 或 
+Source2）。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:HORZ@@MATH:MATH<x>:SPECTral:HORZ {LOG|LINEAr} ; 
+MATH:MATH<x>:SPECTral:HORZ?@@LOG | 
+LINEAr@@設定或查詢頻譜數學波形（FFT）水平顯示軸的比例縮放模式（對數/線性）。@@2
+-37@@RW@@N
+MATH:MATH<x>:SPECTral:MAG@@MATH:MATH<x>:SPECTral:MAG {LINEAr|DBM} ; 
+MATH:MATH<x>:SPECTral:MAG?@@LINEAr | 
+DBM@@設定或查詢頻譜振幅函數（SpectralMag）的垂直物理單位（線性/dBm）。@@2-37@@R
+W@@N
+MATH:MATH<x>:SPECTral:PHASE@@MATH:MATH<x>:SPECTral:PHASE 
+{DEGrees|RADians|GROUPDelay} ; MATH:MATH<x>:SPECTral:PHASE?@@DEGrees | RADians 
+| GROUPDelay@@設定或查詢頻譜相位函數（SpectralPhase）的顯示單位。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:SOUrce@@MATH:MATH<x>:SPECTral:SOUrce 
+{CH<x>|MATH<x>|REF<x>} ; MATH:MATH<x>:SPECTral:SOUrce?@@CH<x> | MATH<x> | 
+REF<x>@@設定或查詢 FFT 頻譜分析所使用的目標波形訊號源。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:SUPPress@@MATH:MATH<x>:SPECTral:SUPPress {OFF|ON|0|1} ; 
+MATH:MATH<x>:SPECTral:SUPPress?@@OFF | ON | 0 | 
+1@@設定或查詢相位頻譜分析時的低振幅噪聲抑制門檻功能啟用狀態。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:SUPPress:VALue@@MATH:MATH<x>:SPECTral:SUPPress:VALue 
+<NR3> ; MATH:MATH<x>:SPECTral:SUPPress:VALue?@@<NR3> (伏特 
+V)@@設定或查詢相位頻譜噪聲抑制的電位門檻數值。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:TYPE@@MATH:MATH<x>:SPECTral:TYPE 
+{MAGNitude|PHASe|REAL|IMAGinary} ; MATH:MATH<x>:SPECTral:TYPE?@@MAGNitude | 
+PHASe | REAL | IMAGinary@@設定或查詢 FFT 
+頻譜分析輸出的顯示類型（振幅/相位/實部/虛部）。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:UNWRap@@MATH:MATH<x>:SPECTral:UNWRap {OFF|ON|0|1} ; 
+MATH:MATH<x>:SPECTral:UNWRap?@@OFF | ON | 0 | 1@@設定或查詢相位頻譜解包（Phase 
+Unwrap）功能的啟用狀態。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:UNWRap:DEGrees@@MATH:MATH<x>:SPECTral:UNWRap:DEGrees 
+<NR3> ; MATH:MATH<x>:SPECTral:UNWRap:DEGrees?@@<NR3> (角度 
+degrees)@@設定或查詢觸發相位解包的相鄰相位跳變角度門檻。@@2-37@@RW@@N
+MATH:MATH<x>:SPECTral:WINdow@@MATH:MATH<x>:SPECTral:WINdow 
+{RECTANGular|HAMMing|HANNing|BLACKMANHarris} ; 
+MATH:MATH<x>:SPECTral:WINdow?@@RECTANGular | HAMMing | HANNing | 
+BLACKMANHarris@@設定或查詢用於 FFT 頻譜分析的時域窗函數（Window 
+Function）。@@2-37@@RW@@N
+MATH:MATH<x>:TYPe@@MATH:MATH<x>:TYPe {BASic|FFT|ADVanced} ; 
+MATH:MATH<x>:TYPe?@@BASic | FFT | 
+ADVanced@@設定或查詢數學波形的模式型態（基礎/FFT/進階算式）。@@2-37@@RW@@N
+MATH:MATH<x>:VUNIT@@MATH:MATH<x>:VUNIT <QString> ; 
+MATH:MATH<x>:VUNIT?@@<QString> 
+(自訂單位名稱)@@設定或查詢指定數學波形的自訂垂直物理單位名稱。@@2-37@@RW@@N
+MATHArbflt<x>:FILepath@@MATHArbflt<x>:FILepath <QString> ; 
+MATHArbflt<x>:FILepath?@@<QString> 
+(檔案路徑)@@設定或查詢自訂任意濾波器（ArbFilter）係數檔案的路徑。@@2-37@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 9)

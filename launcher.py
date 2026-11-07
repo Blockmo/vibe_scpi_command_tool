@@ -72,6 +72,13 @@ INSTRUMENTS = [
         "note": {"en": "single output, no channel; VOLTage:RANGe P8V/P20V range switching",
                  "zh": "單輸出、無通道；VOLTage:RANGe P8V/P20V 檔位切換"},
     },
+    {
+        "name": "MSO 5 Series", "folder": "MSO_5SERIES", "entry": "ui.py", "count": 557,
+        "kind": {"en": "Mixed-Signal Oscilloscope (Tektronix)",
+                 "zh": "混合訊號示波器 (Tektronix)"},
+        "note": {"en": "header-index model (CH{n}/MEAS{n}/MATH{n}); core + measure/analysis groups",
+                 "zh": "標頭編號模型 (CH{n}/MEAS{n}/MATH{n})；核心 + 量測分析群組"},
+    },
 ]
 
 

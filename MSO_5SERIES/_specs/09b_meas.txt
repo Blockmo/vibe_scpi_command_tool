@@ -1,0 +1,160 @@
+Answer:
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:MEAN?@@MEASUrement:MEAS<x>:RESUlts:CURRe
+ntacq:MEAN?@@無@@查詢指定量測項在當前採集波形中的平均值（Mean）。@@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:MAXimum?@@MEASUrement:MEAS<x>:RESUlts:CU
+RRentacq:MAXimum?@@無@@查詢指定量測項在當前採集波形中的最大值（Maximum）。@@2-4
+0@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:MINimum?@@MEASUrement:MEAS<x>:RESUlts:CU
+RRentacq:MINimum?@@無@@查詢指定量測項在當前採集波形中的最小值（Minimum）。@@2-4
+0@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:STDDev?@@MEASUrement:MEAS<x>:RESUlts:CUR
+Rentacq:STDDev?@@無@@查詢指定量測項在當前採集波形中的標準差（Standard 
+Deviation）。@@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:PK2PK?@@MEASUrement:MEAS<x>:RESUlts:CURR
+entacq:PK2PK?@@無@@查詢指定量測項在當前採集波形中的峰對峰值（Peak-to-Peak）。@@
+2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:POPUlation?@@MEASUrement:MEAS<x>:RESUlts
+:CURRentacq:POPUlation?@@無@@查詢指定量測項在當前採集波形中的統計樣本數（Popula
+tion）。@@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:MEAN?@@MEASUrement:MEAS<x>:RESUlts:ALLAcqs:
+MEAN?@@無@@查詢指定量測項自統計重置以來所有採集累計的平均值（Mean）。@@2-40@@R@
+@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:MAXimum?@@MEASUrement:MEAS<x>:RESUlts:ALLAc
+qs:MAXimum?@@無@@查詢指定量測項自統計重置以來所有採集累計的最大值（Maximum）。@
+@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:MINimum?@@MEASUrement:MEAS<x>:RESUlts:ALLAc
+qs:MINimum?@@無@@查詢指定量測項自統計重置以來所有採集累計的最小值（Minimum）。@
+@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:STDDev?@@MEASUrement:MEAS<x>:RESUlts:ALLAcq
+s:STDDev?@@無@@查詢指定量測項自統計重置以來所有採集累計的標準差（Standard 
+Deviation）。@@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:PK2PK?@@MEASUrement:MEAS<x>:RESUlts:ALLAcqs
+:PK2PK?@@無@@查詢指定量測項自統計重置以來所有採集累計的峰對峰值（Peak-to-Peak）
+。@@2-40@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:POPUlation?@@MEASUrement:MEAS<x>:RESUlts:AL
+LAcqs:POPUlation?@@無@@查詢指定量測項自統計重置以來所有採集累計的統計總樣本數（
+Population）。@@2-40@@R@@N
+MEASUrement:MEAS<x>:GATing@@MEASUrement:MEAS<x>:GATing 
+{NONE|SCREEN|CURSor|LOGic|SEARch} ; MEASUrement:MEAS<x>:GATing?@@NONE | SCREEN 
+| CURSor | LOGic | 
+SEARch@@設定或查詢指定量測項（MEAS<x>）的個別門限（Gating）模式。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GATing:GLOBal@@MEASUrement:MEAS<x>:GATing:GLOBal 
+{OFF|ON|0|1} ; MEASUrement:MEAS<x>:GATing:GLOBal?@@OFF | ON | 0 | 
+1@@設定或查詢指定量測項是否套用全域門限設定（1=全域, 
+0=個別設定）。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GATing:ACTive@@MEASUrement:MEAS<x>:GATing:ACTive {HIGH|LOW}
+; MEASUrement:MEAS<x>:GATing:ACTive?@@HIGH | LOW@@當量測項門限為 LOGic 
+時，設定或查詢邏輯門限生效的極性準位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GATing:HYSTeresis@@MEASUrement:MEAS<x>:GATing:HYSTeresis 
+<NR3> ; MEASUrement:MEAS<x>:GATing:HYSTeresis?@@<NR3> 
+(伏特)@@設定或查詢指定量測項邏輯門限判定的遲滯電位數值。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GATing:LOGICSource@@MEASUrement:MEAS<x>:GATing:LOGICSource 
+{CH<x>|MATH<x>|REF<x>} ; MEASUrement:MEAS<x>:GATing:LOGICSource?@@CH<x> | 
+MATH<x> | 
+REF<x>@@設定或查詢指定量測項邏輯門限控制所使用的訊號源通道。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GATing:MIDRef@@MEASUrement:MEAS<x>:GATing:MIDRef <NR3> ; 
+MEASUrement:MEAS<x>:GATing:MIDRef?@@<NR3> 
+(伏特)@@設定或查詢指定量測項邏輯門限判定的中位參考電位準位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GATing:SEARCHSource@@MEASUrement:MEAS<x>:GATing:SEARCHSourc
+e SEARCH1 ; 
+MEASUrement:MEAS<x>:GATing:SEARCHSource?@@SEARCH1@@設定或查詢指定量測項門限模式
+為 SEARch 時關聯的搜尋標記訊號源。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:GLOBalref@@MEASUrement:MEAS<x>:GLOBalref {OFF|ON|0|1} ; 
+MEASUrement:MEAS<x>:GLOBalref?@@OFF | ON | 0 | 
+1@@設定或查詢指定量測項是否套用全域參考準位（1=全域, 
+0=個別設定）。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:METHod@@MEASUrement:MEAS<x>:REFLevels:METHod 
+{PERCent|ABSolute} ; MEASUrement:MEAS<x>:REFLevels:METHod?@@PERCent | 
+ABSolute@@設定或查詢指定量測項參考準位的計算單位方式（百分比或絕對電位）。@@2-4
+0@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:BASETop@@MEASUrement:MEAS<x>:REFLevels:BASETop 
+{AUTO|MINMax|MEANhistogram|MODEhistogram|EYEhistogram} ; 
+MEASUrement:MEAS<x>:REFLevels:BASETop?@@AUTO | MINMax | MEANhistogram | 
+MODEhistogram | EYEhistogram@@設定或查詢指定量測項計算 Top 與 Base 
+準位的方法。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:TYPE@@MEASUrement:MEAS<x>:REFLevels:ABSo
+lute:TYPE {SAME|UNIQue} ; MEASUrement:MEAS<x>:REFLevels:ABSolute:TYPE?@@SAME | 
+UNIQue@@設定或查詢指定量測項上升沿與下降沿的絕對參考電位是否相同。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:RISEHigh@@MEASUrement:MEAS<x>:REFLevels:
+ABSolute:RISEHigh <NR3> ; 
+MEASUrement:MEAS<x>:REFLevels:ABSolute:RISEHigh?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項上升沿的高參考電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:RISEMid@@MEASUrement:MEAS<x>:REFLevels:A
+BSolute:RISEMid <NR3> ; MEASUrement:MEAS<x>:REFLevels:ABSolute:RISEMid?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項上升沿的中參考電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:RISELow@@MEASUrement:MEAS<x>:REFLevels:A
+BSolute:RISELow <NR3> ; MEASUrement:MEAS<x>:REFLevels:ABSolute:RISELow?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項上升沿的低參考電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:FALLHigh@@MEASUrement:MEAS<x>:REFLevels:
+ABSolute:FALLHigh <NR3> ; 
+MEASUrement:MEAS<x>:REFLevels:ABSolute:FALLHigh?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項下降沿的高參考電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:FALLMid@@MEASUrement:MEAS<x>:REFLevels:A
+BSolute:FALLMid <NR3> ; MEASUrement:MEAS<x>:REFLevels:ABSolute:FALLMid?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項下降沿的中參考電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:FALLLow@@MEASUrement:MEAS<x>:REFLevels:A
+BSolute:FALLLow <NR3> ; MEASUrement:MEAS<x>:REFLevels:ABSolute:FALLLow?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項下降沿的低參考電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:ABSolute:HYSTeresis@@MEASUrement:MEAS<x>:REFLevel
+s:ABSolute:HYSTeresis <NR3> ; 
+MEASUrement:MEAS<x>:REFLevels:ABSolute:HYSTeresis?@@<NR3> 
+(伏特)@@在絕對電位模式下，設定或查詢指定量測項參考準位的遲滯電位。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:TYPE@@MEASUrement:MEAS<x>:REFLevels:PERCe
+nt:TYPE {TENNinety|TWENtyeighty|CUSTom} ; 
+MEASUrement:MEAS<x>:REFLevels:PERCent:TYPE?@@TENNinety | TWENtyeighty | 
+CUSTom@@設定或查詢指定量測項百分比參考準位預設模式（10%-90%、20%-80% 
+或自訂）。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:RISEHigh@@MEASUrement:MEAS<x>:REFLevels:P
+ERCent:RISEHigh <NR3> ; MEASUrement:MEAS<x>:REFLevels:PERCent:RISEHigh?@@<NR3> 
+(百分比 
+%)@@在百分比模式下，設定或查詢指定量測項上升沿的高參考準位百分比。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:RISEMid@@MEASUrement:MEAS<x>:REFLevels:PE
+RCent:RISEMid <NR3> ; MEASUrement:MEAS<x>:REFLevels:PERCent:RISEMid?@@<NR3> 
+(百分比 
+%)@@在百分比模式下，設定或查詢指定量測項上升沿的中參考準位百分比。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:RISELow@@MEASUrement:MEAS<x>:REFLevels:PE
+RCent:RISELow <NR3> ; MEASUrement:MEAS<x>:REFLevels:PERCent:RISELow?@@<NR3> 
+(百分比 
+%)@@在百分比模式下，設定或查詢指定量測項上升沿的低參考準位百分比。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:FALLHigh@@MEASUrement:MEAS<x>:REFLevels:P
+ERCent:FALLHigh <NR3> ; MEASUrement:MEAS<x>:REFLevels:PERCent:FALLHigh?@@<NR3> 
+(百分比 
+%)@@在百分比模式下，設定或查詢指定量測項下降沿的高參考準位百分比。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:FALLMid@@MEASUrement:MEAS<x>:REFLevels:PE
+RCent:FALLMid <NR3> ; MEASUrement:MEAS<x>:REFLevels:PERCent:FALLMid?@@<NR3> 
+(百分比 
+%)@@在百分比模式下，設定或查詢指定量測項下降沿的中參考準位百分比。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:FALLLow@@MEASUrement:MEAS<x>:REFLevels:PE
+RCent:FALLLow <NR3> ; MEASUrement:MEAS<x>:REFLevels:PERCent:FALLLow?@@<NR3> 
+(百分比 
+%)@@在百分比模式下，設定或查詢指定量測項下降沿的低參考準位百分比。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:REFLevels:PERCent:HYSTeresis@@MEASUrement:MEAS<x>:REFLevels
+:PERCent:HYSTeresis <NR3> ; 
+MEASUrement:MEAS<x>:REFLevels:PERCent:HYSTeresis?@@<NR3> (百分比 
+%)@@在百分比模式下，設定或查詢指定量測項參考準位的遲滯百分比數值。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:CLOCKRecovery:GLOBal@@MEASUrement:MEAS<x>:CLOCKRecovery:GLO
+Bal {OFF|ON|0|1} ; MEASUrement:MEAS<x>:CLOCKRecovery:GLOBal?@@OFF | ON | 0 | 
+1@@設定或查詢指定量測項是否套用全域時脈復原設定（1=全域, 
+0=個別設定）。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:CLOCKRecovery:METHod@@MEASUrement:MEAS<x>:CLOCKRecovery:MET
+Hod {PLL|CONSTANTCLOCK|EXPLICITCLOCK} ; 
+MEASUrement:MEAS<x>:CLOCKRecovery:METHod?@@PLL | CONSTANTCLOCK | 
+EXPLICITCLOCK@@設定或查詢指定量測項的時脈復原（Clock 
+Recovery）方法。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:CLOCKRecovery:MODel@@MEASUrement:MEAS<x>:CLOCKRecovery:MODe
+l {TYPE1|TYPE2} ; MEASUrement:MEAS<x>:CLOCKRecovery:MODel?@@TYPE1 | 
+TYPE2@@設定或查詢指定量測項採用 PLL 時脈復原時的 PLL 模型類型。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:CLOCKRecovery:CLOCKFrequency@@MEASUrement:MEAS<x>:CLOCKReco
+very:CLOCKFrequency <NR3> ; 
+MEASUrement:MEAS<x>:CLOCKRecovery:CLOCKFrequency?@@<NR3> 
+(Hz)@@設定或查詢指定量測項採用固定常數時脈復原時的時脈頻率。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:CLOCKRecovery:DATARate@@MEASUrement:MEAS<x>:CLOCKRecovery:D
+ATARate <NR3> ; MEASUrement:MEAS<x>:CLOCKRecovery:DATARate?@@<NR3> 
+(b/s)@@設定或查詢指定量測項採用標稱資料速率時脈復原時的位元率。@@2-40@@RW@@N
+MEASUrement:MEAS<x>:CLOCKRecovery:STAndard@@MEASUrement:MEAS<x>:CLOCKRecovery:S
+TAndard {CUSTom|ENET100|PCIE_GEN1|PCIE_GEN2|PCIE_GEN3|USB3|SATA_GEN1|...} ; 
+MEASUrement:MEAS<x>:CLOCKRecovery:STAndard?@@CUSTom | ENET100 | PCIE_GEN1 | 
+PCIE_GEN2 | PCIE_GEN3 | USB3 | SATA_GEN1 | ...@@設定或查詢指定量測項採用 PLL 
+時脈復原時所遵循的通訊標準。@@2-40@@RW@@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 15)

@@ -1,0 +1,105 @@
+Answer:
+TRIGger🅰RUNT:LOGICQUALification@@TRIGger:A:RUNT:LOGICQUALification {ON|OFF} ; 
+TRIGger🅰RUNT:LOGICQUALification?@@ON | OFF@@設定或查詢矮脈衝觸發（Runt 
+Trigger）是否啟用邏輯圖案條件限定。@@2-76@@RW@@N
+TRIGger🅰RUNT:POLarity@@TRIGger:A:RUNT:POLarity {EITher|NEGative|POSitive} ; 
+TRIGger🅰RUNT:POLarity?@@EITher | NEGative | 
+POSitive@@設定或查詢矮脈衝觸發的脈衝極性方向。@@2-76@@RW@@N
+TRIGger🅰RUNT:SOUrce@@TRIGger:A:RUNT:SOUrce {CH<x>} ; 
+TRIGger🅰RUNT:SOUrce?@@CH<x>@@設定或查詢矮脈衝觸發的類比通道輸入訊號源。@@2-76@@
+RW@@N
+TRIGger🅰RUNT:WHEn@@TRIGger:A:RUNT:WHEn {LESSthan|MOREthan|EQual|UNEQual|OCCURS}
+; TRIGger🅰RUNT:WHEn?@@LESSthan | MOREthan | EQual | UNEQual | 
+OCCURS@@設定或查詢矮脈衝觸發的寬度檢查條件模式。@@2-76@@RW@@N
+TRIGger🅰RUNT:WIDth@@TRIGger:A:RUNT:WIDth <NR3> ; TRIGger🅰RUNT:WIDth?@@<NR3> 
+(秒)@@設定或查詢矮脈衝觸發的目標脈衝寬度限制時間。@@2-76@@RW@@N
+TRIGger🅰TIMEOut:LOGICQUALification@@TRIGger:A:TIMEOut:LOGICQUALification 
+{ON|OFF} ; TRIGger🅰TIMEOut:LOGICQUALification?@@ON | 
+OFF@@設定或查詢逾時觸發（Timeout Trigger）是否啟用邏輯條件限定。@@2-76@@RW@@N
+TRIGger🅰TIMEOut:POLarity@@TRIGger:A:TIMEOut:POLarity 
+{STAYSHigh|STAYSLow|EITher} ; TRIGger🅰TIMEOut:POLarity?@@STAYSHigh | STAYSLow |
+EITher@@設定或查詢逾時觸發的訊號狀態極性（保持高電位/保持低電位/任意）。@@2-76@
+@RW@@N
+TRIGger🅰TIMEOut:SOUrce@@TRIGger:A:TIMEOut:SOUrce {CH<x>|CH<x>_D<y>} ; 
+TRIGger🅰TIMEOut:SOUrce?@@CH<x> | 
+CH<x>_D<y>@@設定或查詢逾時觸發的輸入波形訊號源。@@2-76@@RW@@N
+TRIGger🅰TIMEOut:TIMe@@TRIGger:A:TIMEOut:TIMe <NR3> ; 
+TRIGger🅰TIMEOut:TIMe?@@<NR3> 
+(秒)@@設定或查詢逾時觸發的目標門檻時間長度。@@2-76@@RW@@N
+TRIGger🅰WINdow:CROSSIng@@TRIGger:A:WINdow:CROSSIng {UPPer|LOWer|EITher|NONe} ; 
+TRIGger🅰WINdow:CROSSIng?@@UPPer | LOWer | EITher | 
+NONe@@設定或查詢視窗觸發（Window Trigger）在邊界穿越時的判定邊界。@@2-76@@RW@@N
+TRIGger🅰WINdow:LOGICQUALification@@TRIGger:A:WINdow:LOGICQUALification {ON|OFF}
+; TRIGger🅰WINdow:LOGICQUALification?@@ON | 
+OFF@@設定或查詢視窗觸發是否啟用邏輯圖案條件限定。@@2-76@@RW@@N
+TRIGger🅰WINdow:SOUrce@@TRIGger:A:WINdow:SOUrce {CH<x>} ; 
+TRIGger🅰WINdow:SOUrce?@@CH<x>@@設定或查詢視窗觸發的類比通道訊號源。@@2-76@@RW@@
+N
+TRIGger🅰WINdow:WHEn@@TRIGger:A:WINdow:WHEn 
+{ENTERSWindow|EXITSWindow|INSIDEGreater|OUTSIDEGreater} ; 
+TRIGger🅰WINdow:WHEn?@@ENTERSWindow | EXITSWindow | INSIDEGreater | 
+OUTSIDEGreater@@設定或查詢視窗觸發事件條件（進入視窗/離開視窗/視窗內停留超時/視
+窗外停留超時）。@@2-76@@RW@@N
+TRIGger🅰WINdow:WIDth@@TRIGger:A:WINdow:WIDth <NR3> ; 
+TRIGger🅰WINdow:WIDth?@@<NR3> 
+(秒)@@設定或查詢視窗觸發違規判定的最少停留時間限制。@@2-76@@RW@@N
+TRIGger🅰LOGIc:DELTatime@@TRIGger:A:LOGIc:DELTatime <NR3> ; 
+TRIGger🅰LOGIc:DELTatime?@@<NR3> (秒)@@設定或查詢邏輯觸發（Logic 
+Trigger）的時間條件限制值。@@2-76@@RW@@N
+TRIGger🅰LOGIc:FUNCtion@@TRIGger:A:LOGIc:FUNCtion {AND|NANd|NOR|OR} ; 
+TRIGger🅰LOGIc:FUNCtion?@@AND | NANd | NOR | 
+OR@@設定或查詢邏輯觸發多通道輸入組合的邏輯運算子。@@2-76@@RW@@N
+TRIGger🅰LOGIc:INPut:CLOCk:SOUrce@@TRIGger:A:LOGIc:INPut:CLOCk:SOUrce 
+{CH<x>|CH<x>_D<y>} ; TRIGger🅰LOGIc:INPut:CLOCk:SOUrce?@@CH<x> | 
+CH<x>_D<y>@@設定或查詢狀態邏輯觸發（State 
+Trigger）所採用的時脈訊號源通道。@@2-76@@RW@@N
+TRIGger🅰LOGIc:POLarity@@TRIGger:A:LOGIc:POLarity {POSitive|NEGative|EITher} ; 
+TRIGger🅰LOGIc:POLarity?@@POSitive | NEGative | 
+EITher@@設定或查詢邏輯觸發使用時脈邊緣時的時脈極性。@@2-76@@RW@@N
+TRIGger🅰LOGIc:USECLockedge@@TRIGger:A:LOGIc:USECLockedge {OFF|ON|0|1} ; 
+TRIGger🅰LOGIc:USECLockedge?@@OFF | ON | 0 | 
+1@@設定或查詢邏輯觸發是否啟用時脈邊緣同步觸發（State/Pattern）。@@2-76@@RW@@N
+TRIGger🅰LOGIc:WHEn@@TRIGger:A:LOGIc:WHEn 
+{TRUe|FALSe|MOREThan|LESSThan|EQual|UNEQual} ; TRIGger🅰LOGIc:WHEn?@@TRUe | 
+FALSe | MOREThan | LESSThan | EQual | 
+UNEQual@@設定或查詢邏輯圖案成立或失效的時間觸發條件。@@2-76@@RW@@N
+TRIGger🅰LOGICPattern:{CH<x>|CH<x>_D<x>}@@TRIGger:A:LOGICPattern:{CH<x>|CH<x>_D<
+x>} {HIGH|LOW|X} ; TRIGger🅰LOGICPattern:{CH<x>|CH<x>_D<x>}?@@HIGH | LOW | 
+X@@設定或查詢指定類比或數位通道在邏輯觸發圖案中的邏輯狀態（高/低/不關心）。@@2-
+76@@RW@@N
+TRIGger🅰SETHold:CLOCk:EDGE@@TRIGger🅰SETHold:CLOCk:EDGE {FALL|RISe} ; 
+TRIGger🅰SETHold:CLOCk:EDGE?@@FALL | RISe@@設定或查詢 Setup/Hold 
+觸發時脈邊緣的極性（上升沿/下降沿）。@@2-76@@RW@@N
+TRIGger🅰SETHold:CLOCk:SOUrce@@TRIGger🅰SETHold:CLOCk:SOUrce {CH<x>|CH<x>_D<y>} ;
+TRIGger🅰SETHold:CLOCk:SOUrce?@@CH<x> | CH<x>_D<y>@@設定或查詢 Setup/Hold 
+觸發的時脈訊號源通道。@@2-76@@RW@@N
+TRIGger🅰SETHold:HOLDTime@@TRIGger:A:SETHold:HOLDTime <NR3> ; 
+TRIGger🅰SETHold:HOLDTime?@@<NR3> (秒)@@設定或查詢 Setup/Hold 違規觸發的 Hold 
+保持時間。@@2-76@@RW@@N
+TRIGger🅰SETHold:SETTime@@TRIGger:A:SETHold:SETTime <NR3> ; 
+TRIGger🅰SETHold:SETTime?@@<NR3> (秒)@@設定或查詢 Setup/Hold 違規觸發的 Setup 
+建立時間。@@2-76@@RW@@N
+TRIGger🅰SETHOLDLogicval:{CH<x>|CH<x>_D<x>}@@TRIGger:A:SETHOLDLogicval:{CH<x>|CH
+<x>_D<x>} {INCLude|DONTInclude} ; 
+TRIGger🅰SETHOLDLogicval:{CH<x>|CH<x>_D<x>}?@@INCLude | 
+DONTInclude@@設定或查詢指定通道是否包含於 Setup/Hold 
+觸發資料輸入組合中。@@2-76@@RW@@N
+TRIGger🅰TRANsition:DELTatime@@TRIGger:A:TRANsition:DELTatime <NR3> ; 
+TRIGger🅰TRANsition:DELTatime?@@<NR3> (秒)@@設定或查詢轉態時間觸發（Rise/Fall 
+Transition Time）的 Delta 時間限制。@@2-76@@RW@@N
+TRIGger🅰TRANsition:LOGICQUALification@@TRIGger:A:TRANsition:LOGICQUALification 
+{ON|OFF} ; TRIGger🅰TRANsition:LOGICQUALification?@@ON | 
+OFF@@設定或查詢轉態時間觸發是否啟用邏輯圖案條件限定。@@2-76@@RW@@N
+TRIGger🅰TRANsition:POLarity@@TRIGger:A:TRANsition:POLarity 
+{EITher|NEGative|POSitive} ; TRIGger🅰TRANsition:POLarity?@@EITher | NEGative | 
+POSitive@@設定或查詢轉態時間觸發的斜率極性（正斜率/負斜率/任意）。@@2-76@@RW@@N
+TRIGger🅰TRANsition:SOUrce@@TRIGger:A:TRANsition:SOUrce {CH<x>} ; 
+TRIGger🅰TRANsition:SOUrce?@@CH<x>@@設定或查詢轉態時間觸發的類比通道訊號源。@@2-
+76@@RW@@N
+TRIGger🅰TRANsition:WHEn@@TRIGger:A:TRANsition:WHEn 
+{SLOWer|FASTer|EQual|UNEQual} ; TRIGger🅰TRANsition:WHEn?@@SLOWer | FASTer | 
+EQual | 
+UNEQual@@設定或查詢轉態時間觸發的判定模式（慢於/快於/等於/不等於）。@@2-76@@RW@
+@N
+
+Conversation: 98e96dc0-1017-4185-8255-6c54c0bbca8c (turn 12)
