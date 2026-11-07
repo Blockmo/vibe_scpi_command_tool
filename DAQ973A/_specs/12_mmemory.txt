@@ -1,0 +1,84 @@
+Answer:
+MMEMory:CATalog[:ALL]? @@ MMEMory:CATalog[:ALL]?[<folder>] @@ <folder> (如 
+"INT:\*", "USB:\MyData") @@ 查詢指定目錄或儲存裝置中的檔案與目錄清單及容量資訊 
+@@ 179 @@ R @@ N
+MMEMory:CDIRectory @@ MMEMory:CDIRectory [<folder>] / MMEMory:CDIRectory? @@ 
+<folder> (如 "INT:\", "USB:\") @@ 設定或查詢 MMEMory 子系統操作的預設目錄路徑 
+@@ 179 @@ RW @@ N
+MMEMory:MDIRectory @@ MMEMory:MDIRectory <folder> @@ <folder> (目錄名稱字串) @@
+在內部快閃記憶體或 USB 儲存裝置上建立新目錄 @@ 179 @@ W @@ N
+MMEMory:RDIRectory @@ MMEMory:RDIRectory <folder> @@ <folder> (目錄名稱字串) @@
+刪除內部快閃記憶體或 USB 儲存裝置上的空目錄 @@ 179 @@ W @@ N
+MMEMory:COPY @@ MMEMory:COPY <file1>,<file2> @@ <file1> (來源檔案), <file2> 
+(目的檔案/目錄) @@ 將指定檔案複製至新檔案名稱或另一個目錄中 @@ 179 @@ W @@ N
+MMEMory:DELete @@ MMEMory:DELete <file> @@ <file> (檔案名稱字串) @@ 
+刪除內部記憶體或 USB 儲存裝置中的指定檔案 @@ 179 @@ W @@ N
+MMEMory:MOVE @@ MMEMory:MOVE <file1>,<file2> @@ <file1> (來源檔案), <file2> 
+(目的檔案/目錄) @@ 移動檔案或變更內部/USB 儲存裝置中的檔案名稱 @@ 179 @@ W @@ N
+MMEMory:LOG[:ENABle] @@ MMEMory:LOG[:ENABle] {OFF|ON} / MMEMory:LOG[:ENABle]? 
+@@ {OFF|ON|0|1} @@ 設定或查詢是否將掃描數據自動記錄至外接 USB 隨身碟 @@ 179 @@ 
+RW @@ N
+MMEMory:LOG:NEW @@ MMEMory:LOG:NEW @@ 無 @@ 強制 USB 
+數據記錄功能立即關閉當前檔案並建立新檔案續寫 @@ 179 @@ W @@ N
+MMEMory:DOWNload:FNAMe @@ MMEMory:DOWNload:FNAMe <file> / 
+MMEMory:DOWNload:FNAMe? @@ <file> (檔案路徑字串) @@ 建立或開啟檔案以便接續透過 
+DOWNload:DATA 寫入資料 @@ 178 @@ RW @@ N
+MMEMory:DOWNload:DATA @@ MMEMory:DOWNload:DATA <block> @@ <block> (IEEE-488.2 
+區塊數據) @@ 將電腦端資料寫入先前由 DOWNload:FNAMe 開啟的檔案中 @@ 178 @@ W @@ 
+N
+MMEMory:UPLoad? @@ MMEMory:UPLoad? <file> @@ <file> (檔案路徑字串) @@ 
+將儀器內部記憶體或 USB 隨身碟中的檔案上傳傳輸至電腦端 @@ 178 @@ R @@ N
+MMEMory:FORMat:READing:CHEAder @@ MMEMory:FORMat:READing:CHEAder {NUMber|LABel}
+/ MMEMory:FORMat:READing:CHEAder? @@ {NUMber|LABel} @@ 設定或查詢 CSV 
+數據檔案中每欄標頭顯示通道號碼或通道標籤 @@ 178 @@ RW @@ N
+MMEMory:FORMat:READing:CSEParator @@ MMEMory:FORMat:READing:CSEParator 
+{COMMa|SEMicolon|TAB} / MMEMory:FORMat:READing:CSEParator? @@ 
+{COMMa|SEMicolon|TAB} @@ 設定或查詢 CSV 數據檔案中每行數據欄位之間的分隔字元 @@
+178 @@ RW @@ N
+MMEMory:FORMat:READing:RLIMit @@ MMEMory:FORMat:READing:RLIMit {OFF|ON} / 
+MMEMory:FORMat:READing:RLIMit? @@ {OFF|ON|0|1} @@ 設定或查詢數據記錄至 CSV 
+檔案時是否啟用單檔行數限制 @@ 178 @@ RW @@ N
+MMEMory:FORMat:READing:RLIMit:COUNt @@ MMEMory:FORMat:READing:RLIMit:COUNt 
+{65536|1048576|MIN|MAX|DEF} / 
+MMEMory:FORMat:READing:RLIMit:COUNt?[{MIN|MAX|DEF}] @@ 
+{65536|1048576|MIN|MAX|DEF} @@ 設定或查詢啟用單檔行數限制時每個 CSV 
+檔案的最大資料列數 @@ 178 @@ RW @@ N
+MMEMory:STORe:DATA @@ MMEMory:STORe:DATA RDG_STORE,<file> @@ RDG_STORE, <file> 
+(含.csv或.dat檔名) @@ 將讀取記憶體中所有掃描數據匯出儲存至指定 CSV 或 BIN 檔案 
+@@ 178 @@ W @@ N
+MMEMory:STORe:DATA:AUTO @@ MMEMory:STORe:DATA:AUTO {OFF|ON} / 
+MMEMory:STORe:DATA:AUTO? @@ {OFF|ON|0|1} @@ 設定或查詢單通道 DMM 
+數位化完成後是否自動將數據存至 USB @@ 178 @@ RW @@ N
+MMEMory:STORe:DATA:AUTO:FNAMe @@ MMEMory:STORe:DATA:AUTO:FNAMe <file> / 
+MMEMory:STORe:DATA:AUTO:FNAMe? @@ <file> (如 "USB:\AUTOSTORE.csv") @@ 
+設定或查詢 DMM 數位化數據自動儲存至 USB 時的預設檔案名稱 @@ 178 @@ RW @@ N
+MMEMory:LOAD:PREFerences @@ MMEMory:LOAD:PREFerences <file> @@ <file> 
+(偏好設定檔路徑字串) @@ 重啟儀器並從指定檔案載入非揮發性系統 I/O 
+設定與使用者偏好 @@ 178 @@ W @@ N
+MMEMory:STORe:PREFerences @@ MMEMory:STORe:PREFerences <file> @@ <file> 
+(偏好設定檔路徑字串) @@ 將當前非揮發性系統 I/O 設定與使用者偏好儲存至指定檔案 
+@@ 178 @@ W @@ N
+MMEMory:LOAD:STATe @@ MMEMory:LOAD:STATe <file> @@ <file> (狀態檔案路徑字串) @@
+從指定狀態檔案 (.sta) 中載入並還原儀器配置狀態 @@ 178 @@ W @@ N
+MMEMory:STORe:STATe @@ MMEMory:STORe:STATe <file> @@ <file> (狀態檔案路徑字串) 
+@@ 將當前儀器配置狀態儲存至指定狀態檔案 (.sta) @@ 178 @@ W @@ N
+MMEMory:STATe:RECall:AUTO @@ MMEMory:STATe:RECall:AUTO {OFF|ON} / 
+MMEMory:STATe:RECall:AUTO? @@ {OFF|ON|0|1} @@ 
+設定或查詢開機時是否自動恢復關機前或自訂的儀器狀態 @@ 178 @@ RW @@ N
+MMEMory:STATe:RECall:SELect @@ MMEMory:STATe:RECall:SELect <file> / 
+MMEMory:STATe:RECall:SELect? @@ <file> (狀態檔案路徑字串) @@ 
+設定或查詢開啟自動恢復狀態時開機預設自動載入的狀態檔案 @@ 178 @@ RW @@ N
+MMEMory:STATe:VALid? @@ MMEMory:STATe:VALid? <file> @@ <file> 
+(狀態檔案路徑字串) @@ 查詢指定位置是否儲存有有效且非空的儀器狀態檔案 @@ 178 @@ 
+R @@ N
+MMEMory3:STORe:DATA @@ MMEMory3:STORe:DATA RDG_STORE,<file> @@ RDG_STORE, 
+<file> (含.dat二進位檔名) @@ 將 DAQM909A 
+數位化採集的讀取數據匯出儲存至指定二進位檔案 @@ 195 @@ W @@ N
+MMEMory3:STORe:DATA:AUTO @@ MMEMory3:STORe:DATA:AUTO {OFF|ON} / 
+MMEMory3:STORe:DATA:AUTO? @@ {OFF|ON|0|1} @@ 設定或查詢 DAQM909A 
+數位化採集完成後是否自動存至 USB @@ 195 @@ RW @@ N
+MMEMory3:STORe:DATA:AUTO:FNAMe @@ MMEMory3:STORe:DATA:AUTO:FNAMe <file> / 
+MMEMory3:STORe:DATA:AUTO:FNAMe? @@ <file> (如 "USB:\DIGAUTOSTORE.dat") @@ 
+設定或查詢 DAQM909A 數位化數據自動儲存至 USB 時的預設檔名 @@ 195 @@ RW @@ N
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 14)

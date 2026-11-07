@@ -1,0 +1,68 @@
+Answer:
+SYSTem:ERRor?@@SYSTem:ERRor?@@無@@讀取並清除儀器錯誤佇列中的一條錯誤訊息@@56@@R
+@@N
+SYSTem:VERSion?@@SYSTem:VERSion?@@無@@查詢儀器符合之 SCPI 版本年份@@48@@R@@N
+SYSTem:COMMunicate:TCPip:CONTrol?@@SYSTem:COMMunicate:TCPip:CONTrol?@@無@@查詢 
+LAN TCP/IP 控制通訊埠號@@46@@R@@N
+SYSTem:BEEPer[:IMMediate]@@SYSTem:BEEPer[:IMMediate]@@無@@發出一聲蜂鳴警告音@@1
+03@@W@@N
+SYSTem:BEEPer:STATe@@SYSTem:BEEPer:STATe {0|1|OFF|ON} / 
+SYSTem:BEEPer:STATe?@@0, 1, OFF, ON@@設定或查詢蜂鳴器聲音致能狀態@@103@@RW@@N
+SYSTem:LOCal@@SYSTem:LOCal@@無@@將儀器控制權切換回前面板本地操作模式@@93@@W@@N
+SYSTem:REMote@@SYSTem:REMote@@無@@將儀器切換至遠端控制模式並鎖定前面板@@93@@W@@
+N
+SYSTem:RWLock@@SYSTem:RWLock@@無@@將儀器切換至遠端控制並完全鎖定前面板按鍵@@93@
+@W@@N
+SYSTem:PERSona:MODE@@SYSTem:PERSona:MODE {E3631A|E3631xA} / 
+SYSTem:PERSona:MODE?@@E3631A, E3631xA@@設定或查詢 SCPI 
+相容模式(E3631A或E36300原生模式)@@94@@RW@@N
+SYSTem:PRESet@@SYSTem:PRESet@@無@@將儀器重設為預設運作狀態@@99@@W@@N
+SYSTem:DATE@@SYSTem:DATE <year>,<month>,<day> / SYSTem:DATE?@@年(YYYY), 
+月(1-12), 日(1-31)@@設定或查詢儀器內部即時時鐘之日期@@103@@RW@@N
+SYSTem:TIME@@SYSTem:TIME <hour>,<minute>,<second> / SYSTem:TIME?@@時(0-23), 
+分(0-59), 秒(0-59)@@設定或查詢儀器內部即時時鐘之時間@@103@@RW@@N
+STATus:OPERation[:EVENt]?@@STATus:OPERation[:EVENt]?@@無@@查詢並清除操作狀態事
+件暫存器數值@@48@@R@@N
+STATus:OPERation:ENABle@@STATus:OPERation:ENABle <value> / 
+STATus:OPERation:ENABle?@@0~32767@@設定或查詢操作狀態致能暫存器遮罩數值@@48@@RW
+@@N
+STATus:OPERation:CONDition?@@STATus:OPERation:CONDition?@@無@@查詢當前操作狀態
+條件暫存器即時狀態@@48@@R@@N
+STATus:QUEStionable[:EVENt]?@@STATus:QUEStionable[:EVENt]?@@無@@查詢並清除可疑
+狀態事件暫存器數值@@48@@R@@N
+STATus:QUEStionable:ENABle@@STATus:QUEStionable:ENABle <value> / 
+STATus:QUEStionable:ENABle?@@0~32767@@設定或查詢可疑狀態致能暫存器遮罩數值@@48@
+@RW@@N
+STATus:QUEStionable:CONDition?@@STATus:QUEStionable:CONDition?@@無@@查詢當前可
+疑狀態條件暫存器即時狀態@@48@@R@@N
+STATus:PRESet@@STATus:PRESet@@無@@預設並重設 STATus 
+子系統所有暫存器致能遮罩@@48@@W@@N
+CALibration:STATe@@CALibration:STATe {0|1|OFF|ON},[<passcode>] / 
+CALibration:STATe?@@0, 1, OFF, ON, 
+密碼字串@@開啟或關閉儀器校正模式或查詢校正狀態@@102@@RW@@N
+CALibration:VALue@@CALibration:VALue <value> / 
+CALibration:VALue?@@浮點數值@@輸入當前校正點之參考標準量測數值或查詢設定值@@102
+@@RW@@N
+CALibration:SECurity:CODE@@CALibration:SECurity:CODE 
+<new_code>@@新密碼字串(最多9位數字)@@變更校正防護安全密碼@@102@@W@@N
+CALibration:SECurity:STATe@@CALibration:SECurity:STATe {0|1|OFF|ON},<passcode> 
+/ CALibration:SECurity:STATe?@@0, 1, OFF, ON, 
+密碼字串@@解鎖或鎖定校正安全保護狀態或查詢保護狀態@@102@@RW@@N
+DISPlay[:WINDow][:STATe]@@DISPlay[:WINDow][:STATe] {0|1|OFF|ON} / 
+DISPlay[:WINDow][:STATe]?@@0, 1, OFF, 
+ON@@設定或查詢前面板螢幕顯示致能狀態@@103@@RW@@N
+DISPlay[:WINDow]:TEXT[:DATA]@@DISPlay[:WINDow]:TEXT[:DATA] "<string>" / 
+DISPlay[:WINDow]:TEXT[:DATA]?@@文字字串@@在前面板螢幕上顯示自訂訊息字串@@103@@R
+W@@N
+DISPlay[:WINDow]:TEXT:CLEar@@DISPlay[:WINDow]:TEXT:CLEar@@無@@清除前面板螢幕上
+顯示的自訂訊息字串@@103@@W@@N
+DISPlay:VIEW@@DISPlay:VIEW {METER|DLOG|LIST} / DISPlay:VIEW?@@METER, DLOG, 
+LIST@@切換或查詢前面板螢幕顯示主畫面視圖模式@@18@@RW@@N
+MEMory:STATe:NAME@@MEMory:STATe:NAME <state>,"<name>" / MEMory:STATe:NAME? 
+<state>@@state(0~9), 名稱字串@@設定或查詢特定記憶體位置之自訂名稱@@95@@RW@@N
+MEMory:STATe:VALid?@@MEMory:STATe:VALid? 
+<state>@@0~9@@查詢指定記憶體位置是否已儲存有效之儀器狀態@@95@@R@@N
+*SAV@@*SAV <state>@@0~9@@將當前儀器狀態儲存至指定記憶體位置@@95@@W@@N
+*RCL@@*RCL <state>@@0~9@@從指定記憶體位置召回並恢復儀器狀態@@95@@W@@N
+
+Conversation: 8df3aee9-a6cc-4871-ab85-2ecc391a71e3 (turn 7)

@@ -1,0 +1,90 @@
+Answer:
+[SENSe:]TEMPerature:TRANsducer:TYPE @@ [SENSe:]TEMPerature:TRANsducer:TYPE 
+{TCouple|RTD|FRTD|THERmistor|FTHermistor}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:TYPE?[(@<ch_list>)] @@ 
+{TCouple|RTD|FRTD|THERmistor|FTHermistor} @@ 
+設定或查詢指定通道的溫度感測器換能器類型 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:TCouple:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:TCouple:TYPE {B|E|J|K|N|R|S|T}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:TCouple:TYPE?[(@<ch_list>)] @@ {B|E|J|K|N|R|S|T}
+@@ 設定或查詢熱電偶的具體型號類型 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:TCouple:RJUNction @@ 
+[SENSe:]TEMPerature:TRANsducer:TCouple:RJUNction 
+{<temp>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:TCouple:RJUNction?[{(@<ch_list>)|MIN|MAX|DEF}] 
+@@ <temp>: 固定參考溫度值(單位與UNIT一致) @@ 
+設定或查詢固定參考端/冷端補償溫度數值 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:TCouple:RJUNction:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:TCouple:RJUNction:TYPE 
+{INTernal|EXTernal|FIXed}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:TCouple:RJUNction:TYPE?[(@<ch_list>)] @@ 
+{INTernal|EXTernal|FIXed} @@ 設定或查詢熱電偶測量的參考端補償類型 @@ 253 @@ RW 
+@@ Y
+[SENSe:]TEMPerature:TRANsducer:TCouple:CHECk @@ 
+[SENSe:]TEMPerature:TRANsducer:TCouple:CHECk {OFF|ON}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:TCouple:CHECk?[(@<ch_list>)] @@ {OFF|ON|0|1} @@ 
+設定或查詢熱電偶開路檢測(Open Thermocouple Check)功能 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:RTD:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:RTD:TYPE 
+{PT100|D100|F100|PT1000|85}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:RTD:TYPE?[(@<ch_list>)] @@ 
+{PT100|D100|F100|PT1000|85} @@ 設定或查詢2線式RTD感測器類型與Alpha係數 @@ 253 
+@@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:RTD:RESistance[:REFerence] @@ 
+[SENSe:]TEMPerature:TRANsducer:RTD:RESistance[:REFerence] 
+{<resistance>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:RTD:RESistance[:REFerence]?[{(@<ch_list>)|MIN|MA
+X|DEF}] @@ <resistance>: 80Ω至1100Ω @@ 設定或查詢2線式RTD的名義基底電阻值(Ro) 
+@@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:RTD:OCOMpensated @@ 
+[SENSe:]TEMPerature:TRANsducer:RTD:OCOMpensated {OFF|ON}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:RTD:OCOMpensated?[(@<ch_list>)] @@ {OFF|ON|0|1} 
+@@ 設定或查詢2線式RTD測量是否啟用偏移補償功能 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:THERmistor:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:THERmistor:TYPE {2254|5000|10000}[,(@<ch_list>)]
+/ [SENSe:]TEMPerature:TRANsducer:THERmistor:TYPE?[(@<ch_list>)] @@ 
+{2254|5000|10000} @@ 設定或查詢2線式熱敏電阻類型(2.254kΩ/5kΩ/10kΩ) @@ 253 @@ RW
+@@ Y
+[SENSe:]TEMPerature:TRANsducer:FRTD:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:FRTD:TYPE 
+{PT100|D100|F100|PT1000|85}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:FRTD:TYPE?[(@<ch_list>)] @@ 
+{PT100|D100|F100|PT1000|85} @@ 設定或查詢4線式RTD感測器類型與Alpha係數 @@ 253 
+@@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:FRTD:RESistance[:REFerence] @@ 
+[SENSe:]TEMPerature:TRANsducer:FRTD:RESistance[:REFerence] 
+{<resistance>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:FRTD:RESistance[:REFerence]?[{(@<ch_list>)|MIN|M
+AX|DEF}] @@ <resistance>: 80Ω至1100Ω @@ 設定或查詢4線式RTD的名義基底電阻值(Ro) 
+@@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:FRTD:OCOMpensated @@ 
+[SENSe:]TEMPerature:TRANsducer:FRTD:OCOMpensated {OFF|ON}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:FRTD:OCOMpensated?[(@<ch_list>)] @@ {OFF|ON|0|1}
+@@ 設定或查詢4線式RTD測量是否啟用偏移補償功能 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:FTHermistor:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:FTHermistor:TYPE 
+{2254|5000|10000}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:TRANsducer:FTHermistor:TYPE?[(@<ch_list>)] @@ 
+{2254|5000|10000} @@ 設定或查詢4線式熱敏電阻類型(2.254kΩ/5kΩ/10kΩ) @@ 253 @@ RW
+@@ Y
+[SENSe:]TEMPerature:APERture @@ [SENSe:]TEMPerature:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:APERture?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <seconds>: 
+200μs至1s @@ 設定或查詢溫度測量的閘門/積分時間(以秒為單位) @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:APERture:ENABle @@ [SENSe:]TEMPerature:APERture:ENABle 
+{OFF|ON}[,(@<ch_list>)] / [SENSe:]TEMPerature:APERture:ENABle?[(@<ch_list>)] @@
+{OFF|ON|0|1} @@ 設定或查詢溫度測量是否啟用秒數模式積分時間 @@ 253 @@ RW @@ Y
+[SENSe:]TEMPerature:NPLCycles @@ [SENSe:]TEMPerature:NPLCycles 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+[SENSe:]TEMPerature:NPLCycles?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <PLCs>: 
+0.001至200 PLC @@ 設定或查詢溫度測量以電源週期數(PLC)為單位的積分時間 @@ 253 @@
+RW @@ Y
+[SENSe:]TEMPerature:ZERO:AUTO @@ [SENSe:]TEMPerature:ZERO:AUTO 
+{OFF|ON}[,(@<ch_list>)] / [SENSe:]TEMPerature:ZERO:AUTO?[(@<ch_list>)] @@ 
+{OFF|ON|0|1} @@ 設定或查詢溫度測量是否啟用自動零點校正(Autozero) @@ 253 @@ RW 
+@@ Y
+UNIT[:TEMPerature] @@ UNIT[:TEMPerature] {C|F|K}[,(@<ch_list>)] / 
+UNIT[:TEMPerature]?[(@<ch_list>)] @@ {C|F|K} @@ 
+設定或查詢指定通道的溫度顯示與輸出單位(攝氏/華氏/開爾文) @@ 341 @@ RW @@ Y
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 8)

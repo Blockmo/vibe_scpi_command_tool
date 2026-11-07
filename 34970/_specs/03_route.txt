@@ -1,0 +1,34 @@
+Answer:
+ROUTe:SCAN @@ ROUTe:SCAN (@<scan_list>) | ROUTe:SCAN? @@ (@<scan_list>) @@ 
+定義或查詢當前掃描清單中的通道組合 @@ 105 @@ RW @@ Y
+ROUTe:SCAN:SIZE? @@ ROUTe:SCAN:SIZE? @@ 無 @@ 
+查詢當前掃描清單中包含的通道總數量 @@ 233 @@ R @@ N
+ROUTe:MONitor @@ ROUTe:MONitor (@<channel>) | ROUTe:MONitor? @@ (@<channel>) 
+(僅限單一通道) @@ 指定單一通道進行連續監視 @@ 176 @@ RW @@ Y
+ROUTe:MONitor:STATe @@ ROUTe:MONitor:STATe {OFF|ON|0|1} | ROUTe:MONitor:STATe? 
+@@ OFF|ON|0|1 @@ 啟用或停用單通道監視功能 @@ 176 @@ RW @@ N
+ROUTe:MONitor:DATA? @@ ROUTe:MONitor:DATA? @@ 無 @@ 
+讀取當前監視通道最新取得的量測數值 @@ 176 @@ R @@ N
+ROUTe:CHANnel:DELay @@ ROUTe:CHANnel:DELay {<seconds>|MIN|MAX}[,(@<ch_list>)] |
+ROUTe:CHANnel:DELay? [(@<ch_list>)] @@ 0~60秒(解析度1ms)|MIN|MAX @@ 
+設定或查詢指定通道在切換時的通道延遲時間 @@ 115 @@ RW @@ Y
+ROUTe:CHANnel:DELay:AUTO @@ ROUTe:CHANnel:DELay:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | ROUTe:CHANnel:DELay:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用或停用指定通道的自動通道延遲功能 @@ 116 @@ RW @@ Y
+ROUTe:CHANnel:ADVance:SOURce @@ ROUTe:CHANnel:ADVance:SOURce 
+{EXTernal|BUS|IMMediate} | ROUTe:CHANnel:ADVance:SOURce? @@ 
+EXTernal|BUS|IMMediate @@ 設定或查詢外部控制掃描時推進至下個通道的觸發來源 @@ 
+101 @@ RW @@ N
+ROUTe:CHANnel:FWIRe @@ ROUTe:CHANnel:FWIRe {OFF|ON|0|1}[,(@<ch_list>)] | 
+ROUTe:CHANnel:FWIRe? [(@<ch_list>)] @@ OFF|ON|0|1 @@ 
+設定或查詢外部掃描時是否啟用 4 線式自動配對模式 @@ 102 @@ RW @@ Y
+ROUTe:CLOSe @@ ROUTe:CLOSe (@<ch_list>) @@ (@<ch_list>) @@ 
+閉合指定的模組開關或多工器通道繼電器 @@ 47 @@ W @@ Y
+ROUTe:CLOSe:STATe? @@ ROUTe:CLOSe:STATe? (@<ch_list>) @@ (@<ch_list>) @@ 
+查詢指定通道繼電器當前的閉合狀態 (1為閉合, 0為開啟) @@ 47 @@ R @@ Y
+ROUTe:OPEN @@ ROUTe:OPEN (@<ch_list>) @@ (@<ch_list>) @@ 
+開啟指定的模組開關或多工器通道繼電器 @@ 47 @@ W @@ Y
+ROUTe:DONE? @@ ROUTe:DONE? @@ 無 @@ 
+查詢上一次切換開關或繼電器的操作是否已完全完畢 @@ 102 @@ R @@ N
+
+Conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e (turn 4)

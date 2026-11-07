@@ -1,0 +1,36 @@
+Continuing conversation 8df3aee9...
+Answer:
+*CLS@@*CLS@@無@@清除所有狀態事件暫存器與錯誤佇列@@48@@W@@N
+*ESE@@*ESE <value> / 
+*ESE?@@0~255@@設定或查詢標準事件狀態致能暫存器遮罩@@48@@RW@@N
+*ESR?@@*ESR?@@無@@查詢並清除標準事件狀態暫存器數值@@48@@R@@N
+*IDN?@@*IDN?@@無@@查詢儀器製造商、型號、序號與韌體版本@@48@@R@@N
+*OPC@@*OPC@@無@@完成所有待處理操作時於狀態暫存器設定 OPC 位元@@48@@W@@N
+*OPC?@@*OPC?@@無@@完成所有待處理操作時於輸出緩衝區回傳 1@@48@@R@@N
+*PSC@@*PSC {0|1|OFF|ON} / 
+*PSC?@@0|1|OFF|ON@@設定或查詢開機時是否清除狀態暫存器致能遮罩@@48@@RW@@N
+*RCL@@*RCL <state>@@0~9@@從指定的非揮發性記憶體位置召回儀器狀態@@95@@W@@N
+*RST@@*RST@@無@@將儀器重設為出廠預設狀態@@48@@W@@N
+*SAV@@*SAV <state>@@0~9@@將當前儀器狀態儲存至指定記憶體位置@@95@@W@@N
+*SRE@@*SRE <value> / *SRE?@@0~255@@設定或查詢服務請求致能暫存器遮罩@@48@@RW@@N
+*STB?@@*STB?@@無@@查詢狀態位元組暫存器數值@@48@@R@@N
+*TRG@@*TRG@@無@@發送匯流排觸發訊號以啟動觸發功能@@64@@W@@N
+*TST?@@*TST?@@無@@執行儀器自我測試並回傳測試結果@@102@@R@@N
+*WAI@@*WAI@@無@@暫停執行後續命令直到所有待處理操作完成@@48@@W@@N
+*RDT?@@*RDT?@@無@@查詢儀器已安裝之硬體選項資訊@@48@@R@@N
+APPLy@@APPLy [{CH1|CH2|CH3|P6V|P25V|N25V}[, {<volts>|DEF|MIN|MAX}[, 
+{<current>|DEF|MIN|MAX}]]]@@通道名, 電壓(V), 
+電流(A)@@快速設定指定通道之輸出電壓與電流目標值@@57@@W@@N
+APPLy?@@APPLy? 
+[{CH1|CH2|CH3|P6V|P25V|N25V}]@@通道名(可選)@@查詢指定通道之電壓與電流設定值@@57
+@@R@@N
+INSTrument[:SELect]@@INSTrument[:SELect] {CH1|CH2|CH3|P6V|P25V|N25V} / 
+INSTrument[:SELect]?@@CH1|CH2|CH3|P6V|P25V|N25V@@在 E3631A 
+相容模式下選擇或查詢作用通道名稱@@94@@RW@@N
+INSTrument:NSELect@@INSTrument:NSELect {1|2|3} / INSTrument:NSELect?@@1|2|3@@在
+E3631A 相容模式下以編號選擇或查詢作用通道@@94@@RW@@N
+INSTrument:COUPle[:TRIGger]@@INSTrument:COUPle[:TRIGger] {NONE|ALL|CH1|CH2|CH3}
+/ INSTrument:COUPle[:TRIGger]?@@NONE|ALL|CH1|CH2|CH3@@在 E3631A 
+相容模式下設定或查詢通道間觸發耦合狀態@@45@@RW@@N
+
+Resumed conversation: 8df3aee9-a6cc-4871-ab85-2ecc391a71e3

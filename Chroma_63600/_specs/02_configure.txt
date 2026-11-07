@@ -1,0 +1,55 @@
+Answer:
+CONFigure:ALLRun @@ CONFigure:ALLRun <state> @@ OFF, ON, 0, 1 @@ 
+設定負載模組全運行 (All Run) 狀態 @@ 5-40 @@ RW @@ N
+CONFigure:AUTO:ON @@ CONFigure:AUTO:ON <state> @@ OFF, ON, 0, 1 @@ 
+設定開機時是否自動執行拉載 @@ 5-40 @@ RW @@ N
+CONFigure:EXTernal:WAVeform @@ CONFigure:EXTernal:WAVeform <state> @@ OFF, ON, 
+0, 1 @@ 設定外部動態波形控制功能的啟用或關閉 @@ 5-40 @@ RW @@ N
+CONFigure:PARAllel:INITial @@ CONFigure:PARAllel:INITial <state> @@ OFF, ON, 0,
+1 @@ 設定負載進入或退出並聯控制模式 @@ 5-41 @@ RW @@ N
+CONFigure:PARAllel:MODE @@ CONFigure:PARAllel:MODE <mode> @@ NONE(0), 
+MASTER(1), SLAVE(2) @@ 設定多模組並聯控制時的主從角色 @@ 5-41 @@ RW @@ N
+CONFigure:SOUNd @@ CONFigure:SOUNd <state> @@ OFF, ON, 0, 1 @@ 
+設定負載模組蜂鳴器提示音的啟用與關閉 @@ 5-41 @@ RW @@ N
+CONFigure:SYNChronization:MODE @@ CONFigure:SYNChronization:MODE <mode> @@ 
+NONE(0), MASTER(1), SLAVE(2) @@ 設定同步動態拉載模式的主從角色 @@ 5-41 @@ RW @@
+N
+CONFigure:VOLTage:LATCh @@ CONFigure:VOLTage:LATCh <state> @@ OFF, ON, 0, 1 @@ 
+設定 Von 導通電壓觸發後的鎖存模式 @@ 5-42 @@ RW @@ N
+CONFigure:VOLTage:LATCh:RESet @@ CONFigure:VOLTage:LATCh:RESet @@ 無 @@ 
+重置並清除 Von 導通電壓鎖存信號 @@ 5-42 @@ W @@ N
+CONFigure:VOLTage:OFF @@ CONFigure:VOLTage:OFF <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定停止拉載的導通關閉電壓 (Voff) 位準 @@ 5-42 @@ RW @@ N
+CONFigure:VOLTage:ON @@ CONFigure:VOLTage:ON <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定開始拉載的導通開啟電壓 (Von) 位準 @@ 5-42 @@ RW @@ N
+CONFigure:VOLTage:RANGe @@ CONFigure:VOLTage:RANGe <range> @@ LOW|L|0, 
+MIDDLE|M|1, HIGH|H|2 @@ 設定定電流 (CC) 模式下的電壓量測檔位 @@ 5-43 @@ RW @@ N
+CONFigure:VOLTage:SIGN @@ CONFigure:VOLTage:SIGN <sign> @@ PLUS(0), MINUS(1) @@
+設定電壓量測數據顯示的正負極性符號 @@ 5-43 @@ RW @@ N
+CONFigure:WINDow @@ CONFigure:WINDow <NRf+> @@ 0.001s~10.000s, MIN, MAX @@ 
+設定移動平均計算視窗的時間長度 @@ 5-43 @@ RW @@ N
+CONFigure:LVP @@ CONFigure:LVP <state> @@ OFF, ON, 0, 1 @@ 設定低電壓保護 (LVP)
+功能的啟用與關閉 @@ 5-44 @@ RW @@ N
+CONFigure:ENTer:KEY @@ CONFigure:ENTer:KEY <mode> @@ NEXT(0), FIXED(1) @@ 
+設定面板 ENTER 鍵按下後的游標移動模式 @@ 5-44 @@ RW @@ N
+CONFigure:SHORt:KEY @@ CONFigure:SHORt:KEY <state> @@ DISABLE(0), ENABLE(1) @@ 
+設定面板 SHORT 短路按鍵功能的啟用與停用 @@ 5-44 @@ RW @@ N
+CONFigure:DIO:IN1 @@ CONFigure:DIO:IN1 <NR1> @@ <NR1> @@ 查詢或設定數位輸入通道
+1 狀態 @@ 5-45 @@ RW @@ N
+CONFigure:DIO:IN2 @@ CONFigure:DIO:IN2 <NR1> @@ <NR1> @@ 查詢或設定數位輸入通道
+2 狀態 @@ 5-45 @@ RW @@ N
+CONFigure:DIO:OUT1 @@ CONFigure:DIO:OUT1 <type> @@ 0~7 (NONE, OCP_PASS/FAIL, 
+GONG_PASS/FAIL, ALARM, BUS) @@ 設定數位輸出 Pin 9 (DO1) 觸發類型 @@ 5-45 @@ RW 
+@@ N
+CONFigure:DIO:OUT2 @@ CONFigure:DIO:OUT2 <type> @@ 0~7 (NONE, OCP_PASS/FAIL, 
+GONG_PASS/FAIL, ALARM, BUS) @@ 設定數位輸出 Pin 43 (DO2) 觸發類型 @@ 5-45 @@ RW
+@@ N
+CONFigure:DIO:VOLTage @@ CONFigure:DIO:VOLTage <level> @@ 0:NONE, 1:1.8V, 
+2:3.3V, 3:5.0V @@ 設定數位輸出腳位 (DO1/DO2) 的高電位電壓位準 @@ 5-45 @@ RW @@ 
+N
+DIO:OUT1 @@ DIO:OUT1 <state> @@ OFF(0), ON(1) @@ 在 BUS CTRL 模式下直接控制 DO1
+腳位輸出狀態 @@ 5-46 @@ RW @@ N
+DIO:OUT2 @@ DIO:OUT2 <state> @@ OFF(0), ON(1) @@ 在 BUS CTRL 模式下直接控制 DO2
+腳位輸出狀態 @@ 5-46 @@ RW @@ N
+
+Conversation: 5f147963-f342-4b96-b4e6-95abde1b314c (turn 4)

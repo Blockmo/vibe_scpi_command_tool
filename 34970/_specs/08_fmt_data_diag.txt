@@ -1,0 +1,37 @@
+Answer:
+FORMat:READing:ALARm @@ FORMat:READing:ALARm {OFF|ON|0|1} | 
+FORMat:READing:ALARm? @@ OFF|ON|0|1 @@ 
+設定或查詢從記憶體讀取數據時是否包含警報狀態資訊 @@ 118 @@ RW @@ N
+FORMat:READing:CHANnel @@ FORMat:READing:CHANnel {OFF|ON|0|1} | 
+FORMat:READing:CHANnel? @@ OFF|ON|0|1 @@ 
+設定或查詢從記憶體讀取數據時是否包含通道號碼資訊 @@ 118 @@ RW @@ N
+FORMat:READing:TIME @@ FORMat:READing:TIME {OFF|ON|0|1} | FORMat:READing:TIME? 
+@@ OFF|ON|0|1 @@ 設定或查詢從記憶體讀取數據時是否包含時間戳記資訊 @@ 118 @@ RW 
+@@ N
+FORMat:READing:TIME:TYPE @@ FORMat:READing:TIME:TYPE {ABSolute|RELative} | 
+FORMat:READing:TIME:TYPE? @@ ABSolute|RELative @@ 
+設定或查詢時間戳記格式為絕對時間或相對時間 @@ 118 @@ RW @@ N
+FORMat:READing:UNIT @@ FORMat:READing:UNIT {OFF|ON|0|1} | FORMat:READing:UNIT? 
+@@ OFF|ON|0|1 @@ 設定或查詢從記憶體讀取數據時是否包含工程單位資訊 @@ 118 @@ RW 
+@@ N
+DATA:POINts? @@ DATA:POINts? @@ 無 @@ 查詢當前儀器記憶體中所儲存的讀值總數量 @@
+122 @@ R @@ N
+DATA:POINts:EVENt:THReshold @@ DATA:POINts:EVENt:THReshold 
+{<count>|MIN|MAX|DEF} | DATA:POINts:EVENt:THReshold? @@ 1~50000|MIN|MAX|DEF @@ 
+設定或查詢觸發記憶體事件中斷的資料點數門檻值 @@ 122 @@ RW @@ N
+DATA:POINts:EVENt:THReshold:CLEar @@ DATA:POINts:EVENt:THReshold:CLEar @@ 無 @@
+清除資料點數事件門檻值的旗標狀態 @@ 122 @@ W @@ N
+DATA:REMove? @@ DATA:REMove? <count>[,{WAIT}] @@ <count>: 1~50000, WAIT(選填) 
+@@ 從記憶體中讀取並移除指定數量的最舊量測讀值 @@ 122 @@ R @@ N
+DATA:LAST? @@ DATA:LAST? [(@<channel>)] @@ (@<channel>)（選填） @@ 
+查詢指定通道最近一次掃描所取得的最新讀值 @@ 122 @@ R @@ Y
+DIAGnostic:DMM:CYCLes? @@ DIAGnostic:DMM:CYCLes? [{1|2|3}] @@ 1|2|3(選填) @@ 
+查詢內部 DMM 指定繼電器的開閉切換次數 @@ 177 @@ R @@ N
+DIAGnostic:DMM:CYCLes:CLEar @@ DIAGnostic:DMM:CYCLes:CLEar [{1|2|3}] @@ 
+1|2|3(選填) @@ 清除內部 DMM 指定繼電器的切換次數計數 @@ 177 @@ W @@ N
+DIAGnostic:RELay:CYCLes? @@ DIAGnostic:RELay:CYCLes? (@<ch_list>) @@ 
+(@<ch_list>) @@ 查詢指定模組通道繼電器的開閉切換次數 @@ 177 @@ R @@ Y
+DIAGnostic:RELay:CYCLes:CLEar @@ DIAGnostic:RELay:CYCLes:CLEar (@<ch_list>) @@ 
+(@<ch_list>) @@ 清除指定模組通道繼電器的切換次數計數 @@ 177 @@ W @@ Y
+
+Conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e (turn 9)

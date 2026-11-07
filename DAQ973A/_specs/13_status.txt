@@ -1,0 +1,72 @@
+Answer:
+STATus:ALARm:CONDition? @@ STATus:ALARm:CONDition? @@ 無 @@ 
+查詢警報暫存器群組的狀況暫存器數值 @@ 296 @@ R @@ N
+STATus:ALARm:ENABle @@ STATus:ALARm:ENABle <enable> / STATus:ALARm:ENABle? @@ 
+<enable>: 0 至 65535 的十進位整數 @@ 設定或查詢警報暫存器群組的致能遮罩 @@ 296 
+@@ RW @@ N
+STATus:ALARm[:EVENt]? @@ STATus:ALARm[:EVENt]? @@ 無 @@ 
+查詢並清除警報暫存器群組的事件暫存器數值 @@ 296 @@ R @@ N
+STATus:OPERation:CONDition? @@ STATus:OPERation:CONDition? @@ 無 @@ 
+查詢標準操作暫存器群組的狀況暫存器數值 @@ 296 @@ R @@ N
+STATus:OPERation:ENABle @@ STATus:OPERation:ENABle <enable> / 
+STATus:OPERation:ENABle? @@ <enable>: 0 至 65535 的十進位整數 @@ 
+設定或查詢標準操作暫存器群組的致能遮罩 @@ 296 @@ RW @@ N
+STATus:OPERation[:EVENt]? @@ STATus:OPERation[:EVENt]? @@ 無 @@ 
+查詢並清除標準操作暫存器群組的事件暫存器數值 @@ 296 @@ R @@ N
+STATus:PRESet @@ STATus:PRESet @@ 無 @@ 
+清除警報、標準操作及可疑數據暫存器群組的所有致能暫存器位元 @@ 296 @@ W @@ N
+STATus:QUEStionable:CONDition? @@ STATus:QUEStionable:CONDition? @@ 無 @@ 
+查詢可疑數據暫存器群組的狀況暫存器數值 @@ 296 @@ R @@ N
+STATus:QUEStionable:ENABle @@ STATus:QUEStionable:ENABle <enable> / 
+STATus:QUEStionable:ENABle? @@ <enable>: 0 至 65535 的十進位整數 @@ 
+設定或查詢可疑數據暫存器群組的致能遮罩 @@ 296 @@ RW @@ N
+STATus:QUEStionable[:EVENt]? @@ STATus:QUEStionable[:EVENt]? @@ 無 @@ 
+查詢並清除可疑數據暫存器群組的事件暫存器數值 @@ 296 @@ R @@ 
+NSTATus:ALARm:CONDition? @@ STATus:ALARm:CONDition? @@ 無 @@ 
+實時查詢警報狀態暫存器群組的當前狀況(Condition)位元數值 @@ 296 @@ R @@ N
+STATus:ALARm:ENABle @@ STATus:ALARm:ENABle <enable> / STATus:ALARm:ENABle? @@ 
+<enable>: 0至65535之整數 @@ 設定或查詢允許通報至狀態位元組的警報事件致能遮罩 @@
+296 @@ RW @@ N
+STATus:ALARm[:EVENt]? @@ STATus:ALARm[:EVENt]? @@ 無 @@ 
+讀取並清除警報狀態暫存器群組中鎖存的事件(Event)記錄 @@ 296 @@ R @@ N
+STATus:OPERation:CONDition? @@ STATus:OPERation:CONDition? @@ 無 @@ 
+實時查詢標準操作暫存器群組的當前運行狀況(Condition)數值 @@ 296 @@ R @@ N
+STATus:OPERation:ENABle @@ STATus:OPERation:ENABle <enable> / 
+STATus:OPERation:ENABle? @@ <enable>: 0至65535之整數 @@ 
+設定或查詢允許通報至狀態位元組的標準操作致能遮罩 @@ 296 @@ RW @@ N
+STATus:OPERation[:EVENt]? @@ STATus:OPERation[:EVENt]? @@ 無 @@ 
+讀取並清除標準操作暫存器群組中鎖存的事件(Event)記錄 @@ 296 @@ R @@ N
+STATus:PRESet @@ STATus:PRESet @@ 無 @@ 
+清除警報、標準操作及可疑數據暫存器群組內的所有致能暫存器遮罩 @@ 296 @@ W @@ N
+STATus:QUEStionable:CONDition? @@ STATus:QUEStionable:CONDition? @@ 無 @@ 
+實時查詢可疑數據暫存器群組的當前異常狀況(Condition)數值 @@ 296 @@ R @@ N
+STATus:QUEStionable:ENABle @@ STATus:QUEStionable:ENABle <enable> / 
+STATus:QUEStionable:ENABle? @@ <enable>: 0至65535之整數 @@ 
+設定或查詢允許通報至狀態位元組的可疑數據致能遮罩 @@ 296 @@ RW @@ N
+STATus:QUEStionable[:EVENt]? @@ STATus:QUEStionable[:EVENt]? @@ 無 @@ 
+STATus:ALARm:CONDition? @@ STATus:ALARm:CONDition? @@ 無參數(僅查詢) @@ 
+查詢警報通道目前監測狀態暫存器數值 @@ 296 @@ R @@ N
+STATus:ALARm:ENABle @@ STATus:ALARm:ENABle <enable> / STATus:ALARm:ENABle? @@ 
+<enable>: 0至65535之16位元整數 @@ 設定或查詢允許警報事件呈報至 Status Byte 
+之致能遮罩 @@ 296 @@ RW @@ N
+STATus:ALARm[:EVENt]? @@ STATus:ALARm[:EVENt]? @@ 無 (Read-destructive) @@ 
+讀取並自動清空已鎖存之警報事件暫存器內容 @@ 297 @@ R @@ N
+STATus:OPERation:CONDition? @@ STATus:OPERation:CONDition? @@ 無參數(實時更新) 
+@@ 查詢儀器當前運作狀態暫存器之即時位元狀態 @@ 298 @@ R @@ N
+STATus:OPERation:ENABle @@ STATus:OPERation:ENABle <enable> / 
+STATus:OPERation:ENABle? @@ <enable>: 0至65535十進位數值 @@ 
+設定或讀取標準操作暫存器報告至 Status Byte 的遮罩 @@ 299 @@ RW @@ N
+STATus:OPERation[:EVENt]? @@ STATus:OPERation[:EVENt]? @@ 無 (讀取後即清零) @@ 
+擷取並清除標準操作狀態群組內累積之事件旗標 @@ 300 @@ R @@ N
+STATus:PRESet @@ STATus:PRESet @@ 無 @@ 將 Alarm、Operation 及 Questionable 
+暫存器群組的致能暫存器全部重置為零 @@ 301 @@ W @@ N
+STATus:QUEStionable:CONDition? @@ STATus:QUEStionable:CONDition? @@ 無參數 
+(即時轉譯) @@ 檢視過載或數據可疑狀況暫存器當前的實時二進位碼 @@ 301 @@ R @@ N
+STATus:QUEStionable:ENABle @@ STATus:QUEStionable:ENABle <enable> / 
+STATus:QUEStionable:ENABle? @@ <enable>: 0到65535之整數遮罩 @@ 
+配置可疑數據與過載事件回報至總狀態暫存器的通訊致能 @@ 302 @@ RW @@ N
+STATus:QUEStionable[:EVENt]? @@ STATus:QUEStionable[:EVENt]? @@ 無 
+(讀取後自動清除) @@ 查詢並清除可疑數據群組中自上次讀取後發生的事件 @@ 303 @@ R 
+@@ N
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 15)

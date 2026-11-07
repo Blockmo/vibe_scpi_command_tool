@@ -1,0 +1,39 @@
+Answer:
+[SENSe:]DLOG:FUNCtion:VOLTage@@[SENSe:]DLOG:FUNCtion:VOLTage {0|1|OFF|ON}, 
+(@<ch_list>) / [SENSe:]DLOG:FUNCtion:VOLTage? (@<ch_list>)@@0, 1, OFF, 
+ON@@設定或查詢 Data Logger 電壓追蹤記錄致能狀態@@83@@RW@@Y
+[SENSe:]DLOG:FUNCtion:CURRent@@[SENSe:]DLOG:FUNCtion:CURRent {0|1|OFF|ON}, 
+(@<ch_list>) / [SENSe:]DLOG:FUNCtion:CURRent? (@<ch_list>)@@0, 1, OFF, 
+ON@@設定或查詢 Data Logger 電流追蹤記錄致能狀態@@83@@RW@@Y
+[SENSe:]DLOG:FUNCtion:MINMax@@[SENSe:]DLOG:FUNCtion:MINMax {0|1|OFF|ON} / 
+[SENSe:]DLOG:FUNCtion:MINMax?@@0, 1, OFF, ON@@設定或查詢 Data Logger 
+是否記錄各採樣點極值(Min/Max)@@83@@RW@@N
+[SENSe:]DLOG:TIME@@[SENSe:]DLOG:TIME {<seconds>|MIN|MAX|DEF} / 
+[SENSe:]DLOG:TIME? [MIN|MAX|DEF]@@1~108000000秒, MIN, MAX, DEF@@設定或查詢 Data
+Logger 資料記錄總持續時間@@83@@RW@@N
+[SENSe:]DLOG:PERiod@@[SENSe:]DLOG:PERiod {<seconds>|MIN|MAX|DEF} / 
+[SENSe:]DLOG:PERiod? [MIN|MAX|DEF]@@0.2~60秒, MIN, MAX, DEF@@設定或查詢 Data 
+Logger 資料記錄採樣週期時間@@83@@RW@@N
+[SENSe:]SWEep:POINts@@[SENSe:]SWEep:POINts {<points>|MIN|MAX|DEF} / 
+[SENSe:]SWEep:POINts? [MIN|MAX|DEF]@@整數點數, MIN, MAX, DEF@@設定或查詢 Data 
+Logger 記錄資料點數@@83@@RW@@N
+[SENSe:]FUNCtion@@[SENSe:]FUNCtion "<function>", (@<ch_list>) / 
+[SENSe:]FUNCtion? (@<ch_list>)@@"VOLTage[:DC]", 
+"CURRent[:DC]"@@設定或查詢指定通道感測與量測功能類型@@58@@RW@@Y
+DIGital:PIN<n>:FUNCtion@@DIGital:PIN<n>:FUNCtion 
+{DIO|DINP|FAUL|INH|TINP|TOUT|CONC|COFC} / DIGital:PIN<n>:FUNCtion?@@n=1~3, DIO,
+DINP, FAUL, INH, TINP, TOUT, CONC, COFC@@設定或查詢後面板數位 I/O 腳位 n 
+之功能配置@@51@@RW@@N
+DIGital:PIN<n>:POLarity@@DIGital:PIN<n>:POLarity {POSitive|NEGative} / 
+DIGital:PIN<n>:POLarity?@@n=1~3, POSitive, NEGative@@設定或查詢後面板數位 I/O 
+腳位 n 之訊號邏輯極性@@51@@RW@@N
+DIGital:INPut:DATA?@@DIGital:INPut:DATA?@@無@@讀取後面板數位 I/O 
+連接埠輸入腳位之二進位權重資料@@53@@R@@N
+DIGital:OUTPut:DATA@@DIGital:OUTPut:DATA <value> / DIGital:OUTPut:DATA?@@0~7 
+(3-bit 二進位權重)@@設定或查詢後面板數位 I/O 
+連接埠輸出腳位之二進位權重數值@@51@@RW@@N
+DIGital:PIN<n>:OUTPut[:STATe]@@DIGital:PIN<n>:OUTPut[:STATe] {0|1|OFF|ON} / 
+DIGital:PIN<n>:OUTPut[:STATe]?@@n=1~3, 0, 1, OFF, ON@@設定或查詢指定數位 I/O 
+腳位 n 之輸出電位狀態@@50@@RW@@N
+
+Conversation: 8df3aee9-a6cc-4871-ab85-2ecc391a71e3 (turn 6)

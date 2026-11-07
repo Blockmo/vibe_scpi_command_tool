@@ -1,0 +1,112 @@
+Answer:
+SAMPle3:COUNt @@ SAMPle3:COUNt {<count>|MIN|MAX|DEF},(@<ch_list>) / 
+SAMPle3:COUNt?{(@<ch_list>)|MIN|MAX|DEF} @@ <count>: 1至50,331,584 @@ 
+設定或查詢指定通道每次觸發時採集的採樣點個數 @@ 220 @@ RW @@ Y
+SAMPle3:COUNt:PRETrigger @@ SAMPle3:COUNt:PRETrigger 
+{<count>|MIN|MAX|DEF},(@<ch_list>) / 
+SAMPle3:COUNt:PRETrigger?{(@<ch_list>)|MIN|MAX|DEF} @@ <count>: 0至50,331,583 
+@@ 設定或查詢指定通道觸發前進行的預採樣點數量 @@ 220 @@ RW @@ Y
+SAMPle3:RATE @@ SAMPle3:RATE {<rate>|MIN|MAX|DEF},(@<ch_list>) / 
+SAMPle3:RATE?{(@<ch_list>)|MIN|MAX|DEF} @@ <rate>: 1.5625k至800k (10檔設定) @@ 
+設定或查詢指定通道的高速數位化採樣率 @@ 220 @@ RW @@ Y
+TRIGger3:DELay @@ TRIGger3:DELay {<seconds>|MIN|MAX|DEF},(@<ch_list>) / 
+TRIGger3:DELay?{(@<ch_list>)|MIN|MAX|DEF} @@ <seconds>: 0s至60s @@ 
+設定或查詢指定通道接收觸發至開始採集之間的延遲時間 @@ 345 @@ RW @@ Y
+TRIGger3:LEVel @@ TRIGger3:LEVel {<level>|MIN|MAX|DEF},(@<ch_list>) / 
+TRIGger3:LEVel?[{MIN|MAX|DEF},](@<ch_list>) @@ <level>: ±120%量程或±18V @@ 
+設定或查詢指定通道啟用電位觸發時的觸發電位準位 @@ 345 @@ RW @@ Y
+TRIGger3:SLOPe @@ TRIGger3:SLOPe {POSitive|NEGative},(@<ch_list>) / 
+TRIGger3:SLOPe?(@<ch_list>) @@ {POSitive|NEGative} @@ 
+設定或查詢指定通道觸發邊緣極性為上升沿或下降沿 @@ 345 @@ RW @@ Y
+TRIGger3:SOURce @@ TRIGger3:SOURce 
+{IMMediate|EXTernal|BUS|INTernal|ALARm[{1|2|3|4}]|(@<channel>)},(@<ch_list>) / 
+TRIGger3:SOURce?(@<ch_list>) @@ {IMM|EXT|BUS|INT|ALAR1..4|(@master_ch)} @@ 
+設定或查詢指定通道的高速數位化採集觸發來源 @@ 345 @@ RW @@ Y
+TRIGger3:WFTRigger? @@ TRIGger3:WFTRigger?(@<channel>) @@ 通道清單 (@<channel>)
+@@ 查詢指定通道當前波形觸發狀態旗標 @@ 345 @@ R @@ Y
+ARM3:COUNt @@ ARM3:COUNt {<count>|MIN|MAX|DEF},(@<ch_list>) / 
+ARM3:COUNt?[{MIN|MAX|DEF},](@<ch_list>) @@ <count>: 1至87381 (視安裝板卡數而定)
+@@ 設定或查詢指定通道預備採集的讀取記錄次數 @@ 55 @@ RW @@ Y
+ARM3:SOURce @@ ARM3:SOURce {IMMediate|SWEep},(@<ch_list>) / 
+ARM3:SOURce?(@<ch_list>) @@ {IMMediate|SWEep} @@ 設定或查詢指定通道預備採集 
+(Arm) 的觸發來源 @@ 55 @@ RW @@ Y
+ACQuire3? @@ ACQuire3?(@<channel>) @@ 通道清單 (@<channel>) @@ 
+查詢指定通道當前完整的數位化採集參數配置 @@ 46 @@ R @@ Y
+ACQuire3:POWer:ANALysis[:STATe] @@ ACQuire3:POWer:ANALysis[:STATe] 
+{OFF|ON},(@<ch_list>) / ACQuire3:POWer:ANALysis[:STATe]?(@<ch_list>) @@ 
+{OFF|ON|0|1} @@ 開啟或關閉指定通道的功率分析模式 @@ 46 @@ RW @@ Y
+ACQuire3:STRain:QUARter @@ ACQuire3:STRain:QUARter 
+[{<gage_factor>|DEF},[{<excitation>|DEF},[{<range>|DEF},[{<type>|DEF},[{<coupli
+ng>|DEF},[{<mode>|DEF},[{<samp_count>|DEF},[{<samp_rate>|DEF}]]]]]]]],(@<ch_lis
+t>) @@ <gage_factor>: 0.5~5, <range>: 300mV~18V, <samp_rate>: 1.5625k~800k @@ 
+預先配置 1/4 橋應變規數位化採集模式但不立即啟動 @@ 46 @@ W @@ Y
+ACQuire3:STRain:HALF:BENDing @@ ACQuire3:STRain:HALF:BENDing 
+[{<gage_factor>|DEF},[{<excitation>|DEF},[{<range>|DEF},[{<type>|DEF},[{<coupli
+ng>|DEF},[{<mode>|DEF},[{<samp_count>|DEF},[{<samp_rate>|DEF}]]]]]]]],(@<ch_lis
+t>) @@ <gage_factor>: 0.5~5, <range>: 300mV~18V, <samp_rate>: 1.5625k~800k @@ 
+預先配置半橋彎曲應變規數位化採集模式但不立即啟動 @@ 46 @@ W @@ Y
+ACQuire3:STRain:FULL:BENDing @@ ACQuire3:STRain:FULL:BENDing 
+[{<gage_factor>|DEF},[{<excitation>|DEF},[{<range>|DEF},[{<type>|DEF},[{<coupli
+ng>|DEF},[{<mode>|DEF},[{<samp_count>|DEF},[{<samp_rate>|DEF}]]]]]]]],(@<ch_lis
+t>) @@ <gage_factor>: 0.5~5, <range>: 300mV~18V, <samp_rate>: 1.5625k~800k @@ 
+預先配置全橋彎曲應變規數位化採集模式但不立即啟動 @@ 46 @@ W @@ Y
+ACQuire3:STRain:HALF:POISson @@ ACQuire3:STRain:HALF:POISson 
+[{<gage_factor>|DEF},[{<poisson>|DEF},[{<excitation>|DEF},[{<range>|DEF},[{<typ
+e>|DEF},[{<coupling>|DEF},[{<mode>|DEF},[{<samp_count>|DEF},[{<samp_rate>|DEF}]
+]]]]]]]],(@<ch_list>) @@ <gage_factor>: 0.5~5, <poisson>: -0.9999~+0.5, 
+<range>: 300mV~18V @@ 預先配置半橋泊松應變規數位化採集模式但不立即啟動 @@ 46 @@
+W @@ Y
+ACQuire3:STRain:FULL:POISson @@ ACQuire3:STRain:FULL:POISson 
+[{<gage_factor>|DEF},[{<poisson>|DEF},[{<excitation>|DEF},[{<range>|DEF},[{<typ
+e>|DEF},[{<coupling>|DEF},[{<mode>|DEF},[{<samp_count>|DEF},[{<samp_rate>|DEF}]
+]]]]]]]],(@<ch_list>) @@ <gage_factor>: 0.5~5, <poisson>: -0.9999~+0.5, 
+<range>: 300mV~18V @@ 預先配置全橋泊松應變規數位化採集模式但不立即啟動 @@ 46 @@
+W @@ Y
+ACQuire3:STRain:FULL:BENDing:POISson @@ ACQuire3:STRain:FULL:BENDing:POISson 
+[{<gage_factor>|DEF},[{<poisson>|DEF},[{<excitation>|DEF},[{<range>|DEF},[{<typ
+e>|DEF},[{<coupling>|DEF},[{<mode>|DEF},[{<samp_count>|DEF},[{<samp_rate>|DEF}]
+]]]]]]]],(@<ch_list>) @@ <gage_factor>: 0.5~5, <poisson>: -0.9999~+0.5, 
+<range>: 300mV~18V @@ 預先配置全橋彎曲泊松應變規數位化採集模式但不立即啟動 @@ 
+46 @@ W @@ Y
+ACQuire3:VOLTage[:DC] @@ ACQuire3:VOLTage[:DC] 
+[{<range>|DEF},[{DIFFerential|SENDed|DEF},[{AC|DC|DEF},[{TIME|FREQuency|DEF},[{
+<samp_count>|DEF},[{<samp_rate>|DEF}]]]]]],(@<ch_list>) @@ <range>: 
+300mV|1V|3V|18V, <samp_rate>: 1.5625k~800k @@ 
+預先配置直流電壓數位化採集模式但不立即啟動 @@ 46 @@ W @@ Y
+FORMat3:BORDer @@ FORMat3:BORDer {NORMal|SWAPped} / FORMat3:BORDer? @@ 
+{NORMal|SWAPped} @@ 設定或查詢 DAQM909A 二進位區塊傳輸時的位元組傳輸順序 @@ 143
+@@ RW @@ N
+FORMat3[:DATA] @@ FORMat3[:DATA] {ASCii|REAL}[,<length>] / FORMat3[:DATA]? @@ 
+{ASCii|REAL}, <length>: 9 (ASCii) 或 32 (REAL) @@ 設定或查詢 DAQM909A 
+數據傳輸格式為 ASCII 或二進位 REAL @@ 143 @@ RW @@ N
+INPut3:COUPling @@ INPut3:COUPling {AC|DC},(@<ch_list>) / 
+INPut3:COUPling?(@<ch_list>) @@ {AC|DC} @@ 設定或查詢 DAQM909A 
+數位化通道的輸入耦合方式 @@ 157 @@ RW @@ Y
+INPut3:TYPE @@ INPut3:TYPE {DIFFerential|SENDed|IEPE},(@<ch_list>) / 
+INPut3:TYPE?(@<ch_list>) @@ {DIFFerential|SENDed|IEPE} @@ 設定或查詢 DAQM909A 
+數位化通道的訊號輸入類型 @@ 157 @@ RW @@ Y
+ABORt3 @@ ABORt3 @@ 無 @@ 中止 DAQM909A 模組所有已啟動通道的高速數位化採集作業 
+@@ 33 @@ W @@ N
+INITiate3 @@ INITiate3 (@<ch_list>) @@ 通道清單 (@<ch_list>) @@ 啟動指定 
+DAQM909A 數位化通道的採集作業並清除其先前讀取記錄 @@ 154 @@ W @@ Y
+DATA3:LAST? @@ DATA3:LAST?[<num_rdgs>],(@<channel>) @@ <num_rdgs>: 
+小於記錄邊界之整數, (@<channel>) @@ 傳回 DAQM909A 
+數位化模組最後一筆記錄中指定通道的最近期數據點 @@ 111 @@ R @@ Y
+DATA3:POINts? @@ DATA3:POINts?(@<channel>) @@ 通道清單 (@<channel>) @@ 查詢 
+DAQM909A 數位化模組指定通道可讀取的測量數據點總個數 @@ 111 @@ R @@ Y
+DATA3:RECords? @@ DATA3:RECords?(@<channel>) @@ 通道清單 (@<channel>) @@ 查詢 
+DAQM909A 數位化模組指定通道可讀取的讀取記錄總個數 @@ 111 @@ R @@ Y
+MMEMory3:STORe:DATA @@ MMEMory3:STORe:DATA RDG_STORE,<file> @@ RDG_STORE, 
+<file> (含.dat二進位檔名) @@ 將 DAQM909A 
+數位化採集的讀取數據匯出儲存至指定二進位檔案 @@ 195 @@ W @@ N
+MMEMory3:STORe:DATA:AUTO @@ MMEMory3:STORe:DATA:AUTO {OFF|ON} / 
+MMEMory3:STORe:DATA:AUTO? @@ {OFF|ON|0|1} @@ 設定或查詢 DAQM909A 
+數位化採集完成後是否自動存至 USB @@ 195 @@ RW @@ N
+MMEMory3:STORe:DATA:AUTO:FNAMe @@ MMEMory3:STORe:DATA:AUTO:FNAMe <file> / 
+MMEMory3:STORe:DATA:AUTO:FNAMe? @@ <file> (如 "USB:\DIGAUTOSTORE.dat") @@ 
+設定或查詢 DAQM909A 數位化數據自動儲存至 USB 時的預設檔名 @@ 195 @@ RW @@ N
+SYSTem:TIME:TRIGger3? @@ SYSTem:TIME:TRIGger3?[<record#>,](@<channel>) @@ 
+<record#>: 整數, (@<channel>) @@ 查詢 DAQM909A 
+數位化模組通道接收到觸發時的時間戳記 @@ 301 @@ R @@ Y
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 18)

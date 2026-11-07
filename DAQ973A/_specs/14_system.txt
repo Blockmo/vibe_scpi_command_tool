@@ -1,0 +1,145 @@
+Continuing conversation 6e310b33...
+Answer:
+SYSTem:ACALibration? @@ SYSTem:ACALibration? {<slot>|DMM|ALL} @@ 
+<slot>:{1|2|3}, DMM, ALL @@ 執行或查詢指定模組插槽或內部 DMM 之自動校準狀態 @@ 
+300 @@ R @@ N
+SYSTem:ACALibration:DATE? @@ SYSTem:ACALibration:DATE? {<slot>|DMM} @@ 
+<slot>:{1|2|3}, DMM @@ 查詢指定模組或內部 DMM 最近一次自動校準的日期 @@ 300 @@ 
+R @@ N
+SYSTem:ACALibration:INTerval:MDAY @@ SYSTem:ACALibration:INTerval:MDAY 
+<dayOfMonth> / SYSTem:ACALibration:INTerval:MDAY? @@ <dayOfMonth>: 1 至 31 整數
+@@ 設定或查詢每月定期執行自動校準的日期 @@ 300 @@ RW @@ N
+SYSTem:ACALibration:INTerval:TIME @@ SYSTem:ACALibration:INTerval:TIME 
+<hour>,<minute> / SYSTem:ACALibration:INTerval:TIME? @@ <hour>: 0-23, <minute>:
+0-59 @@ 設定或查詢每日定期執行自動校準的時間 @@ 300 @@ RW @@ N
+SYSTem:ACALibration:INTerval:WDAY @@ SYSTem:ACALibration:INTerval:WDAY 
+<dayOfWeek> / SYSTem:ACALibration:INTerval:WDAY? @@ 
+{SUNDay|MONDay|TUESday|WEDNesday|THURsday|FRIDay|SATurday} @@ 
+設定或查詢每周定期執行自動校準的星期 @@ 300 @@ RW @@ N
+SYSTem:ACALibration:TEMPerature? @@ SYSTem:ACALibration:TEMPerature? 
+{<slot>|DMM} @@ <slot>:{1|2|3}, DMM @@ 查詢最近一次自動校準時的攝氏溫度數值 @@ 
+300 @@ R @@ N
+SYSTem:ACALibration:TIME? @@ SYSTem:ACALibration:TIME? {<slot>|DMM} @@ 
+<slot>:{1|2|3}, DMM @@ 查詢最近一次自動校準的具體時間 @@ 300 @@ R @@ N
+SYSTem:ALARm? @@ SYSTem:ALARm? @@ 無 @@ 從警報佇列中讀取並移除一筆警報事件紀錄 
+@@ 300 @@ R @@ N
+SYSTem:BEEPer[:IMMediate] @@ SYSTem:BEEPer[:IMMediate] @@ 無 @@ 
+使儀器蜂鳴器立即發出一聲嗶聲 @@ 300 @@ W @@ N
+SYSTem:BEEPer:STATe @@ SYSTem:BEEPer:STATe {OFF|ON} / SYSTem:BEEPer:STATe? @@ 
+{OFF|ON|0|1} @@ 開啟或關閉測量與錯誤發生時的蜂鳴器提示音 @@ 300 @@ RW @@ N
+SYSTem:CLICk:STATe @@ SYSTem:CLICk:STATe {OFF|ON} / SYSTem:CLICk:STATe? @@ 
+{OFF|ON|0|1} @@ 開啟或關閉前面板按鍵與旋鈕轉動時的按鍵音 @@ 300 @@ RW @@ N
+SYSTem:CPON @@ SYSTem:CPON {<slot>|ALL} @@ <slot>:{1|2|3}, ALL @@ 
+將指定插槽或所有插槽模組重置至開機初始狀態 @@ 300 @@ W @@ N
+SYSTem:CTYPe? @@ SYSTem:CTYPe? <slot> @@ <slot>:{1|2|3} @@ 
+查詢指定插槽中插接的模組型號與韌體版本 @@ 300 @@ R @@ N
+SYSTem:DATE @@ SYSTem:DATE <year>,<month>,<day> / SYSTem:DATE? @@ <year>: 
+2000-2099, <month>: 1-12, <day>: 1-31 @@ 設定或查詢儀器實時時鐘的年、月、日日期
+@@ 300 @@ RW @@ N
+SYSTem:ERRor? @@ SYSTem:ERRor? @@ 無 @@ 
+從錯誤佇列中讀取並清除最舊的一條錯誤訊息 @@ 300 @@ R @@ N
+SYSTem:HELP? @@ SYSTem:HELP? @@ 無 @@ 傳回儀器所支援的所有 SCPI 指令完整清單 @@
+300 @@ R @@ N
+SYSTem:LOCal @@ SYSTem:LOCal @@ 無 @@ 將儀器控制切換回前面板本地操作模式 @@ 300
+@@ W @@ N
+SYSTem🔒NAME? @@ SYSTem🔒NAME? @@ 無 @@ 查詢當前發送指令之 I/O 
+連線會話的介面名稱 @@ 300 @@ R @@ N
+SYSTem🔒OWNer? @@ SYSTem🔒OWNer? @@ 無 @@ 查詢目前擁有儀器介面鎖定控制權的 I/O 
+會話名稱 @@ 300 @@ R @@ N
+SYSTem🔒RELease @@ SYSTem🔒RELease @@ 無 @@ 釋放當前 I/O 介面所持有的儀器控制鎖
+@@ 300 @@ W @@ N
+SYSTem🔒REQuest? @@ SYSTem🔒REQuest? @@ 無 @@ 請求為當前 I/O 
+介面取得獨佔的儀器控制鎖 @@ 300 @@ R @@ N
+SYSTem:PERSona:MODel @@ SYSTem:PERSona:MODel "<model>" / SYSTem:PERSona:MODel? 
+@@ "<model>": "DAQ970A" 或 "DAQ973A" @@ 設定或查詢儀器回報的個人化型號字串 @@ 
+300 @@ RW @@ N
+SYSTem:PERSona:MODel:DEFault @@ SYSTem:PERSona:MODel:DEFault? @@ 無 @@ 
+查詢儀器出廠預設的個人化型號字串 @@ 300 @@ R @@ N
+SYSTem:PRESet @@ SYSTem:PRESet @@ 無 @@ 
+將儀器配置重置為已知預設狀態並開啟所有通道 @@ 300 @@ W @@ N
+SYSTem:RELay:CYCLes? @@ SYSTem:RELay:CYCLes? (@<ch_list>) @@ 通道清單 
+(@<ch_list>) @@ 讀取指定通道繼電器累積的閉合切換次數 @@ 300 @@ R @@ Y
+SYSTem:RELay:CYCLes:CLEar @@ SYSTem:RELay:CYCLes:CLEar (@<ch_list>) @@ 通道清單
+(@<ch_list>) @@ 清零重置指定通道繼電器的使用者累積切換計數 @@ 300 @@ W @@ Y
+SYSTem:RELay:CYCLes:FACTory? @@ SYSTem:RELay:CYCLes:FACTory? (@<ch_list>) @@ 
+通道清單 (@<ch_list>) @@ 讀取指定通道繼電器出廠記錄的總切換次數 @@ 300 @@ R @@ 
+Y
+SYSTem:REMote @@ SYSTem:REMote @@ 無 @@ 
+將儀器切換至遠端通訊控制模式並鎖定前面板 @@ 300 @@ W @@ N
+SYSTem:SECurity:COUNt? @@ SYSTem:SECurity:COUNt? @@ 無 @@ 
+查詢儀器執行安全保護設定變更的累積次數 @@ 300 @@ R @@ N
+SYSTem:SECurity:ENABle @@ SYSTem:SECurity:ENABle {OFF|ON} / 
+SYSTem:SECurity:ENABle? @@ {OFF|ON|0|1} @@ 啟用或停用儀器的高安全性模式 @@ 300 
+@@ RW @@ N
+SYSTem:SECurity:IMMediate @@ SYSTem:SECurity:IMMediate @@ 無 @@ 
+立即清除記憶體與敏感設定以符合 NISPOM 安全規範 @@ 300 @@ W @@ N
+SYSTem:SET @@ SYSTem:SET <block_data> / SYSTem:SET? @@ <block_data>: 
+二進位區塊資料 @@ 設定或查詢儀器整體的完整狀態二進位資料塊 @@ 300 @@ RW @@ N
+SYSTem:SLOT:LABel @@ SYSTem:SLOT:LABel <slot>,"<string>" / 
+SYSTem:SLOT:LABel?<slot> @@ <slot>:{1|2|3}, <string>: 最多 10 字元 @@ 
+為指定插槽的模組設定自訂辨識標籤名稱 @@ 300 @@ RW @@ N
+SYSTem:TIME @@ SYSTem:TIME <hour>,<minute>,<second> / SYSTem:TIME? @@ <hour>: 
+0-23, <minute>: 0-59, <second>: 0-60 @@ 設定或查詢儀器實時時鐘的時、分、秒時間 
+@@ 300 @@ RW @@ N
+SYSTem:TIME:SCAN? @@ SYSTem:TIME:SCAN? @@ 無 @@ 
+查詢最近一次掃描作業開始時的完整時間與日期 @@ 301 @@ R @@ N
+SYSTem:TIME:TRIGger? @@ SYSTem:TIME:TRIGger? @@ 無 @@ 
+查詢接收到最近一次觸發訊號時的時間戳記 @@ 301 @@ R @@ N
+SYSTem:TIME:TRIGger3? @@ SYSTem:TIME:TRIGger3? (@<channel>) @@ 通道清單 
+(@<channel>) (DAQM909A 數位化通道) @@ 查詢 DAQM909A 
+數位化模組通道接收到觸發時的時間戳記 @@ 301 @@ R @@ Y
+SYSTem:UPTime? @@ SYSTem:UPTime? @@ 無 @@ 
+查詢儀器自本次開機以來累積運行的天、時、分、秒時間 @@ 301 @@ R @@ N
+SYSTem:VERSion? @@ SYSTem:VERSion? @@ 無 @@ 查詢儀器韌體符合之 SCPI 
+標準版本年份 @@ 301 @@ R @@ N
+SYSTem:WMESsage @@ SYSTem:WMESsage "<string>" / SYSTem:WMESsage? @@ "<string>":
+最多 40 字元字串 @@ 設定或查詢開機時於畫面顯示的自訂歡迎訊息字串 @@ 301 @@ RW 
+@@ N
+SYSTem:COMMunicate:ENABle @@ SYSTem:COMMunicate:ENABle {OFF|ON},<interface> / 
+SYSTem:COMMunicate:ENABle?<interface> @@ {OFF|ON}, 
+<interface>:{GPIB|USB|LAN|SOCKets|TELNet|VXI11|WEB|USBMtp|USBHost|HISLip} @@ 
+啟用或停用指定之遠端通訊介面或網路服務 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:GPIB:ADDRess @@ SYSTem:COMMunicate:GPIB:ADDRess <address> / 
+SYSTem:COMMunicate:GPIB:ADDRess? @@ <address>: 0 至 30 整數 (DAQ973A 專用) @@ 
+設定或查詢儀器的 GPIB (IEEE-488) 匯流排位址 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:CONTrol? @@ SYSTem:COMMunicate:LAN:CONTrol? @@ 無 @@ 
+查詢 Sockets 網路通訊時使用的控制連線連接埠號碼 @@ 301 @@ R @@ N
+SYSTem:COMMunicate:LAN:DHCP @@ SYSTem:COMMunicate:LAN:DHCP {OFF|ON} / 
+SYSTem:COMMunicate:LAN:DHCP? @@ {OFF|ON|0|1} @@ 設定或查詢是否啟用 DHCP 動態 IP
+位址分配功能 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:DNS @@ SYSTem:COMMunicate:LAN:DNS "<address>" / 
+SYSTem:COMMunicate:LAN:DNS?[{CURRent|STATic}] @@ "<address>": IP 位址格式 @@ 
+設定或查詢網域名稱伺服器 (DNS) 的 IP 位址 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:DOMain? @@ SYSTem:COMMunicate:LAN:DOMain? @@ 無 @@ 
+查詢儀器當前所在之網路網域名稱字串 @@ 301 @@ R @@ N
+SYSTem:COMMunicate:LAN:GATeway @@ SYSTem:COMMunicate:LAN:GATeway "<address>" / 
+SYSTem:COMMunicate:LAN:GATeway?[{CURRent|STATic}] @@ "<address>": IP 位址格式 
+@@ 設定或查詢預設通訊閘 (Default Gateway) 的 IP 位址 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:HOSTname @@ SYSTem:COMMunicate:LAN:HOSTname "<name>" / 
+SYSTem:COMMunicate:LAN:HOSTname?[{CURRent|STATic}] @@ "<name>": 主機名稱字串 @@
+設定或查詢儀器於 LAN 網路上顯示的主機名稱 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:IPADdress @@ SYSTem:COMMunicate:LAN:IPADdress 
+"<address>" / SYSTem:COMMunicate:LAN:IPADdress?[{CURRent|STATic}] @@ 
+"<address>": IP 位址格式 @@ 設定或查詢儀器的靜態 IP 位址 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:MAC? @@ SYSTem:COMMunicate:LAN:MAC? @@ 無 @@ 查詢儀器 
+LAN 網路卡之 12 位元十六進位 MAC 硬體位址 @@ 301 @@ R @@ N
+SYSTem:COMMunicate:LAN:SMASk @@ SYSTem:COMMunicate:LAN:SMASk "<mask>" / 
+SYSTem:COMMunicate:LAN:SMASk?[{CURRent|STATic}] @@ "<mask>": 子網路遮罩格式 @@ 
+設定或查詢儀器的 LAN 子網路遮罩 (Subnet Mask) @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:TELNet:PROMpt @@ SYSTem:COMMunicate:LAN:TELNet:PROMpt 
+"<string>" / SYSTem:COMMunicate:LAN:TELNet:PROMpt? @@ "<string>": 提示字元字串 
+@@ 設定或查詢 Telnet 會話連線時顯示的命令提示字元 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:TELNet:WMESsage @@ 
+SYSTem:COMMunicate:LAN:TELNet:WMESsage "<string>" / 
+SYSTem:COMMunicate:LAN:TELNet:WMESsage? @@ "<string>": 歡迎訊息字串 @@ 
+設定或查詢 Telnet 會話連線成功時顯示的歡迎訊息 @@ 301 @@ RW @@ N
+SYSTem:COMMunicate:LAN:UPDate @@ SYSTem:COMMunicate:LAN:UPDate @@ 無 @@ 
+儲存並立即套用變更後的 LAN 網路設定參數 @@ 301 @@ W @@ N
+SYSTem:COMMunicate:LAN:WINS @@ SYSTem:COMMunicate:LAN:WINS "<address>" / 
+SYSTem:COMMunicate:LAN:WINS?[{CURRent|STATic}] @@ "<address>": IP 位址格式 @@ 
+設定或查詢 WINS 名稱伺服器的 IP 位址 @@ 301 @@ RW @@ N
+SYSTem:USB:HOST:ENABle @@ SYSTem:USB:HOST:ENABle {OFF|ON} / 
+SYSTem:USB:HOST:ENABle? @@ {OFF|ON|0|1} @@ 設定或查詢是否啟用前面板 USB 
+主控埠功能 @@ 301 @@ RW @@ N
+
+Resumed conversation: 6e310b33-6e38-4888-aa63-a00403826193

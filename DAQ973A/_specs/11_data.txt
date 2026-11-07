@@ -1,0 +1,21 @@
+Continuing conversation 6e310b33...
+Answer:
+DATA:LAST? @@ DATA:LAST?[<num_rdgs>],(@<channel>) @@ <num_rdgs>: 1至1000整數, 
+(@<channel>) @@ 傳回指定通道在當前掃描期間所取得的最近期測量數據點 @@ 108 @@ R 
+@@ Y
+DATA:POINts? @@ DATA:POINts?[(@<ch_list>)] @@ (@<ch_list>) @@ 
+查詢目前讀取記憶體中儲存的測量數據點總個數 @@ 108 @@ R @@ Y
+DATA:POINts:EVENt:THReshold @@ DATA:POINts:EVENt:THReshold <num_rdgs> / 
+DATA:POINts:EVENt:THReshold? @@ <num_rdgs>: 1至100000整數 @@ 
+設定或查詢觸發標準操作暫存器事件位元前的記憶體數據點臨界值 @@ 108 @@ RW @@ N
+DATA:REMove? @@ DATA:REMove? <num_rdgs>[,WAIT] @@ <num_rdgs>: 1至100000整數, 
+WAIT @@ 從讀取記憶體中讀取並清除指定數量的最舊測量數據點 @@ 108 @@ R @@ N
+DATA3:LAST? @@ DATA3:LAST?[<num_rdgs>],(@<channel>) @@ <num_rdgs>: 
+小於記錄邊界之整數, (@<channel>) @@ 傳回 DAQM909A 
+數位化模組最後一筆記錄中指定通道的最近期數據點 @@ 111 @@ R @@ Y
+DATA3:POINts? @@ DATA3:POINts?(@<channel>) @@ (@<channel>) @@ 查詢 DAQM909A 
+數位化模組指定通道可讀取的測量數據點總個數 @@ 111 @@ R @@ Y
+DATA3:RECords? @@ DATA3:RECords?(@<channel>) @@ (@<channel>) @@ 查詢 DAQM909A 
+數位化模組指定通道可讀取的讀取記錄總個數 @@ 111 @@ R @@ Y
+
+Resumed conversation: 6e310b33-6e38-4888-aa63-a00403826193

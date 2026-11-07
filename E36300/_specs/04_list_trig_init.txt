@@ -1,0 +1,40 @@
+Continuing conversation 8df3aee9...
+Answer:
+LIST:VOLTage@@LIST:VOLTage <value>{,<value>}, (@<ch_list>) / LIST:VOLTage? 
+(@<ch_list>)@@電壓點陣列(V), 1~100步@@設定或查詢指定通道 List 
+序列之各步階輸出電壓值@@69@@RW@@Y
+LIST:CURRent@@LIST:CURRent <value>{,<value>}, (@<ch_list>) / LIST:CURRent? 
+(@<ch_list>)@@電流點陣列(A), 1~100步@@設定或查詢指定通道 List 
+序列之各步階輸出電流值@@69@@RW@@Y
+LIST:DWELl@@LIST:DWELl <value>{,<value>}, (@<ch_list>) / LIST:DWELl? 
+(@<ch_list>)@@時間點陣列(秒), 0.001~3600秒@@設定或查詢指定通道 List 
+序列之各步階停留時間@@69@@RW@@Y
+LIST:COUNt@@LIST:COUNt {<count>|INFinite|MIN|MAX|DEF}, (@<ch_list>) / 
+LIST:COUNt? [MIN|MAX|DEF,] (@<ch_list>)@@1~256, INFinite, MIN, MAX, 
+DEF@@設定或查詢指定通道 List 序列重複執行的循環次數@@75@@RW@@Y
+LIST:STEP@@LIST:STEP {AUTO|ONCE}, (@<ch_list>) / LIST:STEP? (@<ch_list>)@@AUTO,
+ONCE@@設定或查詢指定通道 List 
+序列步階前進控制模式(自動推進/單步觸發)@@75@@RW@@Y
+LIST:TOUT:BOSTep@@LIST:TOUT:BOSTep {0|1|OFF|ON}{,{0|1|OFF|ON}}, (@<ch_list>) / 
+LIST:TOUT:BOSTep? (@<ch_list>)@@0, 1, OFF, ON@@設定或查詢指定通道 List 
+步階開頭(BOST)觸發輸出訊號致能狀態@@69@@RW@@Y
+LIST:TOUT:EOSTep@@LIST:TOUT:EOSTep {0|1|OFF|ON}{,{0|1|OFF|ON}}, (@<ch_list>) / 
+LIST:TOUT:EOSTep? (@<ch_list>)@@0, 1, OFF, ON@@設定或查詢指定通道 List 
+步階結尾(EOST)觸發輸出訊號致能狀態@@69@@RW@@Y
+TRIGger[:TRANsient][:IMMediate]@@TRIGger[:TRANsient][:IMMediate] 
+(@<ch_list>)@@無@@立即發送觸發訊號以啟動指定通道之瞬態/List輸出@@78@@W@@Y
+TRIGger:TRANsient:SOURce@@TRIGger:TRANsient:SOURce {BUS|EXTernal|IMMediate}, 
+(@<ch_list>) / TRIGger:TRANsient:SOURce? (@<ch_list>)@@BUS, EXTernal, 
+IMMediate@@設定或查詢指定通道瞬態/List輸出的觸發來源@@75@@RW@@Y
+TRIGger:DLOG[:IMMediate]@@TRIGger:DLOG[:IMMediate]@@無@@立即發送觸發訊號以啟動 
+Data Logger 資料記錄@@78@@W@@N
+TRIGger:DLOG:SOURce@@TRIGger:DLOG:SOURce {BUS|EXTernal|IMMediate} / 
+TRIGger:DLOG:SOURce?@@BUS, EXTernal, IMMediate@@設定或查詢 Data Logger 
+資料記錄器的觸發來源@@78@@RW@@N
+INITiate[:IMMediate][:TRANsient]@@INITiate[:IMMediate][:TRANsient] 
+(@<ch_list>)@@無@@將指定通道之瞬態/List觸發系統設為等待觸發狀態@@69@@W@@Y
+INITiate:DLOG@@INITiate:DLOG ["<filename>"]@@檔名字串(例如 
+"External:\log1.csv")@@啟動 Data Logger 
+資料記錄流程並指定寫入之檔案路徑@@75@@W@@N
+
+Resumed conversation: 8df3aee9-a6cc-4871-ab85-2ecc391a71e3

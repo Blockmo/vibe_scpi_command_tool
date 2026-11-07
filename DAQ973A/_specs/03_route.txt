@@ -1,0 +1,48 @@
+Answer:
+ROUTe:CHANnel:ADVance:SOURce @@ ROUTe:CHANnel:ADVance:SOURce 
+{BUS|IMMediate|EXTernal} / ROUTe:CHANnel:ADVance:SOURce? @@ 
+{BUS|IMMediate|EXTernal} @@ 設定或查詢使用外部 DMM 
+掃描時推進至下一個通道的觸發源 @@ 203 @@ RW @@ N
+ROUTe:CHANnel:DELay @@ ROUTe:CHANnel:DELay {<seconds>|MIN|MAX}[,(@<ch_list>)] /
+ROUTe:CHANnel:DELay?[{(@<ch_list>)|MIN|MAX}] @@ <seconds>: 0 至 60 秒 @@ 
+設定或查詢指定通道繼電器閉合後與實際測量之間的延遲時間 @@ 203 @@ RW @@ Y
+ROUTe:CHANnel:DELay:AUTO @@ ROUTe:CHANnel:DELay:AUTO {OFF|ON}[,(@<ch_list>)] / 
+ROUTe:CHANnel:DELay:AUTO?[(@<ch_list>)] @@ {OFF|ON|0|1} @@ 
+設定或查詢指定通道是否啟用自動判定延遲時間功能 @@ 203 @@ RW @@ Y
+ROUTe:CHANnel:FWIRe @@ ROUTe:CHANnel:FWIRe {OFF|ON}[,(@<ch_list>)] / 
+ROUTe:CHANnel:FWIRe?[(@<ch_list>)] @@ {OFF|ON|0|1} @@ 
+設定或查詢外部掃描時指定通道是否啟用四線式自動配對功能 @@ 203 @@ RW @@ Y
+ROUTe:CHANnel:LABel @@ ROUTe:CHANnel:LABel "<label>",(@<ch_list>) / 
+ROUTe:CHANnel:LABel?[{USER|FACTory},](@<ch_list>) @@ <label>: 最多 30 字元; 
+{USER|FACTory} @@ 為指定通道設定自訂標籤或查詢通道標籤 @@ 203 @@ RW @@ Y
+ROUTe:CHANnel:LABel:CLEar:MODule @@ ROUTe:CHANnel:LABel:CLEar:MODule 
+{<slot>|ALL} @@ <slot>: {1|2|3|ALL} @@ 
+清除指定插槽模組或所有模組上的自訂通道標籤 @@ 203 @@ W @@ N
+ROUTe:CLOSe @@ ROUTe:CLOSe (@<ch_list>) / ROUTe:CLOSe? (@<ch_list>) @@ 通道清單
+(@<ch_list>) @@ 閉合多工器或開關模組上的指定通道或查詢閉合狀態 @@ 203 @@ RW @@ 
+Y
+ROUTe:CLOSe:EXCLusive @@ ROUTe:CLOSe:EXCLusive (@<ch_list>) @@ 通道清單 
+(@<ch_list>) @@ 先開啟模組上所有通道後再獨佔閉合指定通道 @@ 203 @@ W @@ Y
+ROUTe:DONE? @@ ROUTe:DONE? @@ 無 @@ 
+查詢未參與掃描的繼電器切換動作是否已全數完成 @@ 203 @@ R @@ N
+ROUTe:MONitor @@ ROUTe:MONitor (@<channel>) / ROUTe:MONitor? @@ 單一通道 
+(@<channel>) @@ 設定前面板即時監控顯示的單一通道或查詢當前監控通道 @@ 203 @@ RW
+@@ Y
+ROUTe:MONitor:DATA? @@ ROUTe:MONitor:DATA? @@ 無 @@ 
+讀取當前監控通道的最新測量數值 @@ 203 @@ R @@ N
+ROUTe:MONitor:DATA:FULL? @@ ROUTe:MONitor:DATA:FULL? @@ 無 @@ 
+讀取當前監控通道包含單位與時間戳記的完整數據 @@ 203 @@ R @@ N
+ROUTe:MONitor:STATe @@ ROUTe:MONitor:STATe {OFF|ON} / ROUTe:MONitor:STATe? @@ 
+{OFF|ON|0|1} @@ 開啟或關閉監控模式或查詢監控模式啟用狀態 @@ 203 @@ RW @@ N
+ROUTe:MONitor:VIEW @@ ROUTe:MONitor:VIEW {NUMeric|TCHart|HISTogram|METer} / 
+ROUTe:MONitor:VIEW? @@ {NUMeric|TCHart|HISTogram|METer} @@ 
+設定或查詢前面板監控模式下的數據顯示畫面格式 @@ 203 @@ RW @@ N
+ROUTe:OPEN @@ ROUTe:OPEN (@<ch_list>) / ROUTe:OPEN? (@<ch_list>) @@ 通道清單 
+(@<ch_list>) @@ 開啟多工器或開關模組上的指定通道或查詢開啟狀態 @@ 203 @@ RW @@ 
+Y
+ROUTe:SCAN @@ ROUTe:SCAN (@<ch_list>) / ROUTe:SCAN? @@ 通道清單 (@<ch_list>) @@
+定義自動掃描清單的通道或查詢當前掃描清單 @@ 203 @@ RW @@ Y
+ROUTe:SCAN:SIZE? @@ ROUTe:SCAN:SIZE? @@ 無 @@ 
+查詢當前掃描清單中所包含的通道總數量 @@ 203 @@ R @@ N
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 5)

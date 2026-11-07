@@ -1,0 +1,29 @@
+Continuing conversation 5f147963...
+Answer:
+DIGitizing:ABORt @@ DIGitizing:ABORt @@ 無 @@ 停止並取消數位化採樣功能 @@ 5-55 
+@@ W @@ N
+DIGitizing:INITiate @@ DIGitizing:INITiate @@ 無 @@ 
+啟動數位化採樣功能並等待觸發訊號 @@ 5-55 @@ W @@ N
+DIGitizing:SAMPling:POINt @@ DIGitizing:SAMPling:POINt <NRf+> @@ 1~15000, MIN, 
+MAX @@ 設定數位化採樣功能之總採樣點數 @@ 5-55 @@ RW @@ N
+DIGitizing:SAMPling:TIME @@ DIGitizing:SAMPling:TIME <NRf+> @@ 2μs~40ms, MIN, 
+MAX @@ 設定數位化採樣功能之採樣時間間隔 @@ 5-56 @@ RW @@ N
+DIGitizing:TRIGger[:STATe] @@ DIGitizing:TRIGger[:STATe] <state> @@ OFF(0), 
+ON(1) @@ 設定軟體觸發或查詢數位化採樣當前執行狀態 @@ 5-56 @@ RW @@ N
+DIGitizing:TRIGger:POINt @@ DIGitizing:TRIGger:POINt <NRf+> @@ 1~15000, MIN, 
+MAX @@ 設定數位化採樣功能之觸發點數 @@ 5-57 @@ RW @@ N
+DIGitizing:TRIGger:SOURce @@ DIGitizing:TRIGger:SOURce <source> @@ LOADON(0), 
+LOADOFF(1), TTL(2), BUS(3), MANUAL(4) @@ 設定數位化採樣功能之觸發訊號來源 @@ 
+5-57 @@ RW @@ N
+DIGitizing:WAVeform:CAPture? @@ DIGitizing:WAVeform:CAPture? @@ 無 @@ 
+觸發將負載模組內擷取之波形資料傳送至機框記憶體 @@ 5-58 @@ R @@ N
+DIGitizing:WAVeform:DATA? @@ DIGitizing:WAVeform:DATA? <type> @@ V(0), I(1) @@ 
+以二進位格式讀取波形之電壓或電流採樣數據 @@ 5-58 @@ R @@ N
+SYNChronous:CHANnel @@ SYNChronous:CHANnel <NRf+> @@ 1~10, MIN, MAX @@ 
+設定同步動態拉載模式下指定通道至 T1 與 T2 週期 @@ 5-81 @@ W @@ N
+SYNChronous:RUN @@ SYNChronous:RUN <state> @@ OFF(0), ON(1) @@ 
+控制同步並聯組態下所有電子負載通道同時開始或停止拉載 @@ 5-81 @@ W @@ N
+SYNChronous:TYPE @@ SYNChronous:TYPE <type> @@ NONE(0), MASTER(1), SLAVE(2) @@ 
+設定指定機框在同步並聯拉載時的主從架構角色 @@ 5-81 @@ W @@ N
+
+Resumed conversation: 5f147963-f342-4b96-b4e6-95abde1b314c

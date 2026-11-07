@@ -1,0 +1,74 @@
+Continuing conversation 5f147963...
+Answer:
+VOLTage[:STATic]:L1 @@ VOLTage[:STATic]:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電壓 (CV) 模式下的 L1 電壓位準 @@ 5-90 @@ RW @@ N
+VOLTage[:STATic]:L2 @@ VOLTage[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電壓 (CV) 模式下的 L2 電壓位準 @@ 5-91 @@ RW @@ N
+VOLTage[:STATic]:ILIMit @@ VOLTage[:STATic]:ILIMit <NRf+> @@ <NRf+>, MIN, MAX 
+@@ 設定定電壓 (CV) 模式下的電流限制 (Current Limit) 位準 @@ 5-90 @@ RW @@ N
+VOLTage[:STATic]:TYPE @@ VOLTage[:STATic]:TYPE <NRf> @@ CURR/PSU(0), 
+VOLT/PSU(1) @@ 設定定電壓 (CV) 模式的控制迴路類型 @@ 5-91 @@ RW @@ N
+VOLTage[:STATic]:RESponse @@ VOLTage[:STATic]:RESponse <NRf> @@ FAST(0), 
+NORMAL(1), SLOW(2) @@ 設定定電壓 (CV) 模式下的反應速度 @@ 5-91 @@ RW @@ N
+POWer[:STATic]:L1 @@ POWer[:STATic]:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 設定定功率
+(CP) 模式下的 L1 功率位準 @@ 5-70 @@ RW @@ N
+POWer[:STATic]:L2 @@ POWer[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 設定定功率
+(CP) 模式下的 L2 功率位準 @@ 5-71 @@ RW @@ N
+POWer[:STATic]:RISE @@ POWer[:STATic]:RISE <NRf+> @@ 上升斜率(A/us), MIN, MAX 
+@@ 設定定功率 (CP) 模式下的電流上升斜率 @@ 5-71 @@ RW @@ N
+POWer[:STATic]:FALL @@ POWer[:STATic]:FALL <NRf+> @@ 下降斜率(A/us), MIN, MAX 
+@@ 設定定功率 (CP) 模式下的電流下降斜率 @@ 5-70 @@ RW @@ N
+RESistance[:STATic]:L1 @@ RESistance[:STATic]:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電阻 (CR) 模式下的 L1 電阻位準 @@ 5-78 @@ RW @@ N
+RESistance[:STATic]:L2 @@ RESistance[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電阻 (CR) 模式下的 L2 電阻位準 @@ 5-78 @@ RW @@ N
+RESistance[:STATic]:CURRent:RANGe @@ RESistance[:STATicVOLTage[:STATic]:L1 @@ 
+VOLTage[:STATic]:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 設定定電壓 (CV) 模式下的 L1 
+電壓位準 @@ 5-90 @@ RW @@ N
+VOLTage[:STATic]:L2 @@ VOLTage[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電壓 (CV) 模式下的 L2 電壓位準 @@ 5-91 @@ RW @@ N
+VOLTage[:STATic]:ILIMit @@ VOLTage[:STATic]:ILIMit <NRf+> @@ <NRf+>, MIN, MAX 
+@@ 設定定電壓 (CV) 模式下的電流限制位準 @@ 5-90 @@ RW @@ N
+VOLTage[:STATic]:TYPE @@ VOLTage[:STATic]:TYPE <NRf> @@ CURR/PSU(0), 
+VOLT/PSU(1) @@ 設定定電壓 (CV) 模式的控制迴路類型 @@ 5-91 @@ RW @@ N
+VOLTage[:STATic]:RESponse @@ VOLTage[:STATic]:RESponse <NRf> @@ FAST(0), 
+NORMAL(1), SLOW(2) @@ 設定定電壓 (CV) 模式下的反應速度 @@ 5-91 @@ RW @@ N
+POWer[:STATic]:L1 @@ POWer[:STATic]:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 設定定功率
+(CP) 模式下的 L1 功率位準 @@ 5-70 @@ RW @@ N
+POWer[:STATic]:L2 @@ POWer[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 設定定功率
+(CP) 模式下的 L2 功率位準 @@ 5-71 @@ RW @@ N
+POWer[:STATic]:RISE @@ POWer[:STATic]:RISE <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定功率 (CP) 模式下的電流上升斜率 @@ 5-71 @@ RW @@ N
+POWer[:STATic]:FALL @@ POWer[:STATic]:FALL <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定功率 (CP) 模式下的電流下降斜率 @@ 5-7VOLTage[:STATic]:L1 @@ 
+VOLTage[:STATic]:L1 <NRf+> @@ 數值, MIN, MAX @@ 設定 CV 模式 L1 靜態電壓位準 @@
+5-90 @@ RW @@ N
+VOLTage[:STATic]:L2 @@ VOLTage[:STATic]:L2 <NRf+> @@ 數值, MIN, MAX @@ 設定 CV 
+模式 L2 靜態電壓位準 @@ 5-91 @@ RW @@ N
+VOLTage[:STATic]:ILIMit @@ VOLTage[:STATic]:ILIMit <NRf+> @@ 數值, MIN, MAX @@ 
+指定 CV 模式下最大允許拉載電流上限 @@ 5-90 @@ RW @@ N
+VOLTage[:STATic]:TYPE @@ VOLTage[:STATic]:TYPE <mode> @@ CURR/PSU|0, VOLT/PSU|1
+@@ 切換 CV 運作時對應電流源或電壓源 UUT 之迴路特性 @@ 5-91 @@ RW @@ N
+VOLTage[:STATic]:RESponse @@ VOLTage[:STATic]:RESponse <speed> @@ FAST|0, 
+NORMAL|1, SLOW|2 @@ 調整定電壓迴路的轉態響應速度 @@ 5-91 @@ RW @@ N
+POWer[:STATic]:L1 @@ POWer[:STATic]:L1 <NRf+> @@ 瓦特數, MIN, MAX @@ 設定 CP 
+模式 L1 靜態功率位準 @@ 5-70 @@ RW @@ N
+POWer[:STATic]:L2 @@ POWer[:STATic]:L2 <NRf+> @@ 瓦特數, MIN, MAX @@ 設定 CP 
+模式 L2 靜態功率位準 @@ 5-71 @@ RW @@ N
+POWer[:STATic]:RISE @@ POWer[:STATic]:RISE <NRf+> @@ 斜率(A/us), MIN, MAX @@ 
+調整 CP 模式切換功率時之電流上升轉換速率 @@ 5-71 @@ RW @@ N
+POWer[:STATic]:FALL @@ POWer[:STATic]:FALL <NRf+> @@ 斜率(A/us), MIN, MAX @@ 
+調整 CP 模式切換功率時之電流下降轉換速率 @@ 5-70 @@ RW @@ N
+RESistance[:STATic]:L1 @@ RESistance[:STATic]:L1 <NRf+> @@ 歐姆值, MIN, MAX @@ 
+設定 CR 模式 L1 靜態電阻位準 @@ 5-78 @@ RW @@ N
+RESistance[:STATic]:L2 @@ RESistance[:STATic]:L2 <NRf+> @@ 歐姆值, MIN, MAX @@ 
+設定 CR 模式 L2 靜態電阻位準 @@ 5-78 @@ RW @@ N
+RESistance[:STATic]:CURRent:RANGe @@ RESistance[:STATic]:CURRent:RANGe <range> 
+@@ LOW|L|0, MIDDLE|M|1, HIGH|H|2 @@ 設定定電阻運作時所搭配的電流檔位 @@ 5-79 @@
+RW @@ N
+MODE @@ MODE <mode> @@ 
+CCL,CCM,CCH,CRL,CRM,CRH,CVL,CVM,CVH,CPL,CPM,CPH,CZL,CZM,CZH,CCDL,CCDM,CCDH,CCFS
+L,CCFSM,CCFSH,TIML,TIMM,TIMH,SWDL,SWDM,SWDH,OCPL,OCPM,OCPH,PROG,MPPTL,MPPTM,MPP
+TH,UDWL,UDWM,UDWH @@ 切換電子負載通道的工作模式與特定檔位 @@ 5-69 @@ RW @@ N
+
+Resumed conversation: 5f147963-f342-4b96-b4e6-95abde1b314c

@@ -1,0 +1,109 @@
+Answer:
+CALCulate:AVERage:MINimum? @@ CALCulate:AVERage:MINimum? [(@<ch_list>)] @@ 
+(@<ch_list>)（選填） @@ 查詢指定通道在當前掃描記憶體中的最小讀值 @@ 122 @@ R @@
+Y
+CALCulate:AVERage:MINimum:TIME? @@ CALCulate:AVERage:MINimum:TIME? 
+[(@<ch_list>)] @@ (@<ch_list>)（選填） @@ 查詢指定通道記錄到最小讀值的時間戳記 
+@@ 122 @@ R @@ Y
+CALCulate:AVERage:MAXimum? @@ CALCulate:AVERage:MAXimum? [(@<ch_list>)] @@ 
+(@<ch_list>)（選填） @@ 查詢指定通道在當前掃描記憶體中的最大讀值 @@ 122 @@ R @@
+Y
+CALCulate:AVERage:MAXimum:TIME? @@ CALCulate:AVERage:MAXimum:TIME? 
+[(@<ch_list>)] @@ (@<ch_list>)（選填） @@ 查詢指定通道記錄到最大讀值的時間戳記 
+@@ 122 @@ R @@ Y
+CALCulate:AVERage:AVERage? @@ CALCulate:AVERage:AVERage? [(@<ch_list>)] @@ 
+(@<ch_list>)（選填） @@ 查詢指定通道在當前掃描記憶體中所有讀值的平均值 @@ 122 
+@@ R @@ Y
+CALCulate:AVERage:COUNt? @@ CALCulate:AVERage:COUNt? [(@<ch_list>)] @@ 
+(@<ch_list>)（選填） @@ 查詢指定通道在當前掃描中已記錄的讀值總數量 @@ 122 @@ R 
+@@ Y
+CALCulate:AVERage:PTPEak? @@ CALCulate:AVERage:PTPEak? [(@<ch_list>)] @@ 
+(@<ch_list>)（選填） @@ 查詢指定通道讀值的峰對峰差值（最大值減最小值） @@ 122 
+@@ R @@ Y
+CALCulate:AVERage:CLEar @@ CALCulate:AVERage:CLEar 
+[(@<ch_CALCulate:AVERage:MINimum? @@ CALCulate:AVERage:MINimum? [(@<ch_list>)] 
+@@ (@<ch_list>) @@ 查詢指定通道在記憶體中的最小讀值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:MINimum:TIME? @@ CALCulate:AVERage:MINimum:TIME? 
+[(@<ch_list>)] @@ (@<ch_list>) @@ 查詢指定通道記錄到最小讀值的時間戳記 @@ 122 
+@@ R @@ Y
+CALCulate:AVERage:MAXimum? @@ CALCulate:AVERage:MAXimum? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 查詢指定通道在記憶體中的最大讀值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:MAXimum:TIME? @@ CALCulate:AVERage:MAXimum:TIME? 
+[(@<ch_list>)] @@ (@<ch_list>) @@ 查詢指定通道記錄到最大讀值的時間戳記 @@ 122 
+@@ R @@ Y
+CALCulate:AVERage:AVERage? @@ CALCulate:AVERage:AVERage? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 查詢指定通道所有讀值的平均值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:COUNt? @@ CALCulate:AVERage:COUNt? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 查詢指定通道在掃描中記錄的讀值數量 @@ 122 @@ R @@ Y
+CALCulate:AVERage:PTPEak? @@ CALCulate:AVERage:PTPEak? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 查詢指定通道讀值的峰對峰差值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:CLEar @@ CALCulate:AVERage:CLEar [(@<ch_list>)] @@ 
+(@<ch_listCALibration? @@ CALibration? @@ 無 @@ 
+執行設備內部自我校正作業並返回結果碼 @@ 198 @@ R @@ N
+CALibration:COUNt? @@ CALibration:COUNt? @@ 無 @@ 查詢系統累積執行的校正次數 @@
+202 @@ R @@ N
+CALibration:SECure:CODE @@ CALibration:SECure:CODE <new_code> @@ 最多12個字元 
+@@ 變更校正保護解鎖密碼 @@ 198 @@ W @@ N
+CALibration:SECure:STATe @@ CALibration:SECure:STATe 
+{OFF|ON|0|1}[,<code_string>] | CALibration:SECure:STATe? @@ OFF|ON|0|1, 
+密碼字串 @@ 切換儀器校正防護鎖定狀態 @@ 198 @@ RW @@ N
+CALibration:STRing @@ CALibration:STRing "<message>" | CALibration:STRing? @@ 
+最多40字元 @@ 存取非揮發記憶體中的校正備忘紀錄 @@ 201 @@ RW @@ N
+CALibration:VALue @@ CALibration:VALue <value> | CALibration:VALue? @@ 
+校正參考點數值 @@ 輸入或讀取當前校正步驟之參考標準值 @@ 198 @@ RW @@ N
+CALCulate:SCALe:GAIN @@ CALCulate:SCALe:GAIN {<gain>|MIN|MAX}[,(@<ch_list>)] | 
+CALCulate:SCALe:GAIN? [(@<ch_list>)] @@ ±1E-15~±1E+15 @@ 設定/查詢 Mx+B 
+比例放大增益 M @@ 148 @@ RW @@ Y
+CALCulate:SCALe:OFFSet @@ CALCulate:SCALe:OFFSet 
+{<offset>|MIN|MAX}[,(@<ch_list>)] | CALCulate:SCALe:OFFSet? [(@<ch_list>)] @@ 
+±1E-15~±1E+15 @@ 設定/查詢 Mx+B 偏移基準量 B @@ 148 @@ RW @@ Y
+CALCulate:SCALe:OFFSet:NULL @@ CALCulate:SCALe:OFFSet:NULL [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 將當前通道實測值自動歸零寫入 B 偏移量 @@ 148 @@ W @@ Y
+CALCulate:SCALe:UNIT @@ CALCulate:SCALe:UNIT "<units>"[,(@<ch_list>)] | 
+CALCulate:SCALe:UNIT? [(@<ch_list>)] @@ 1~3字元符號 @@ 
+設定/查詢換算數值後顯示的工程單位標籤 @@ 148 @@ RW @@ Y
+CALCulate:SCALe:STATe @@ CALCulate:SCALe:STATe {OFF|ON|0|1}[,(@<ch_list>)] | 
+CALCulate:SCALe:STATe? [(@<ch_list>)] @@ OFF|ON|0|1 @@ 開啟或關閉指定通道的 
+Mx+B 數據縮放 @@ 148 @@ RW @@ Y
+CALCulate:LIMit:UPPer @@ CALCulate:LIMit:UPPer {<limit>|MIN|MAX}[,(@<ch_list>)]
+| CALCulate:LIMit:UPPer? [(@<ch_list>)] @@ 上限數值 @@ 
+設定/查詢通道判定上限門檻值 @@ 151 @@ RW @@ Y
+CALCulate:LIMit:UPPer:STATe @@ CALCulate:LIMit:UPPer:STATe 
+{OFF|ON|0|1}[,(@<ch_list>)] | CALCulate:LIMit:UPPer:STATe? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用/停用指定通道的上極限過高警報 @@ 151 @@ RW @@ Y
+CALCulate:LIMit:LOWer @@ CALCulate:LIMit:LOWer {<limit>|MIN|MAX}[,(@<ch_list>)]
+| CALCulate:LIMit:LOWer? [(@<ch_list>)] @@ 下限數值 @@ 
+設定/查詢通道判定下限門檻值 @@ 151 @@ RW @@ Y
+CALCulate:LIMit:LOWer:STATe @@ CALCulate:LIMit:LOWer:STATe 
+{OFF|ON|0|1}[,(@<ch_list>)] | CALCulate:LIMit:LOWer:STATe? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用/停用指定通道的下極限過低警報 @@ 151 @@ RW @@ Y
+CALCulate:COMPare:TYPE @@ CALCulate:COMPare:TYPE {EQUal|NEQual}[,(@<ch_list>)] 
+| CALCulate:COMPare:TYPE? [(@<ch_list>)] @@ EQUal|NEQual @@ 
+指定數位邏輯埠圖案符合或不符觸發條件 @@ 159 @@ RW @@ Y
+CALCulate:COMPare:DATA @@ CALCulate:COMPare:DATA <data>[,(@<ch_list>)] | 
+CALCulate:COMPare:DATA? [(@<ch_list>)] @@ 0~255 @@ 
+設定數位通道圖案檢驗的目標位元值 @@ 159 @@ RW @@ Y
+CALCulate:COMPare:MASK @@ CALCulate:COMPare:MASK <mask>[,(@<ch_list>)] | 
+CALCulate:COMPare:MASK? [(@<ch_list>)] @@ 0~255 @@ 
+遮罩數位檢驗中不必比對的忽略位元 @@ 159 @@ RW @@ Y
+CALCulate:COMPare:STATe @@ CALCulate:COMPare:STATe {OFF|ON|0|1}[,(@<ch_list>)] 
+| CALCulate:COMPare:STATe? [(@<ch_list>)] @@ OFF|ON|0|1 @@ 
+致能數位邏輯埠的狀態比對警報功能 @@ 159 @@ RW @@ Y
+CALCulate:AVERage:MINimum? @@ CALCulate:AVERage:MINimum? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 擷取掃描紀錄中該通道測得之最小值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:MINimum:TIME? @@ CALCulate:AVERage:MINimum:TIME? 
+[(@<ch_list>)] @@ (@<ch_list>) @@ 取得最小值產生的精確時間戳記 @@ 122 @@ R @@ Y
+CALCulate:AVERage:MAXimum? @@ CALCulate:AVERage:MAXimum? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 擷取掃描紀錄中該通道測得之最大值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:MAXimum:TIME? @@ CALCulate:AVERage:MAXimum:TIME? 
+[(@<ch_list>)] @@ (@<ch_list>) @@ 取得最大值產生的精確時間戳記 @@ 122 @@ R @@ Y
+CALCulate:AVERage:AVERage? @@ CALCulate:AVERage:AVERage? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 計算並傳回掃描資料庫中該通道的平均數 @@ 122 @@ R @@ Y
+CALCulate:AVERage:COUNt? @@ CALCulate:AVERage:COUNt? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 查詢歷次掃描中累積採樣的點數 @@ 122 @@ R @@ Y
+CALCulate:AVERage:PTPEak? @@ CALCulate:AVERage:PTPEak? [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 算取最高與最低讀值間的峰對峰差值 @@ 122 @@ R @@ Y
+CALCulate:AVERage:CLEar @@ CALCulate:AVERage:CLEar [(@<ch_list>)] @@ 
+(@<ch_list>) @@ 清理指定通道保有的統計暫存數據 @@ 122 @@ W @@ Y
+
+Conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e (turn 6)

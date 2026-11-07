@@ -1,0 +1,55 @@
+Answer:
+CALibration:ADC? @@ CALibration:ADC? @@ 無 @@ 執行類比數位轉換器 (ADC) 
+的低階電路校準程序 @@ 82 @@ R @@ N
+CALibration[:ALL]? @@ CALibration[:ALL]? @@ 無 @@ 
+使用設定之校準值執行儀器整體校準並傳回結果 @@ 82 @@ R @@ N
+CALibration:COUNt? @@ CALibration:COUNt? @@ 無 @@ 
+查詢儀器自出廠以來累積執行的校準總次數 @@ 82 @@ R @@ N
+CALibration:DATE? @@ CALibration:DATE? @@ 無 @@ 查詢最近一次執行校準的日期 @@ 
+82 @@ R @@ N
+CALibration:SECure:CODE @@ CALibration:SECure:CODE <new_code> @@ <new_code>: 
+最多12字元字串 @@ 設定或更改儀器校準密碼 @@ 82 @@ W @@ N
+CALibration:SECure:STATe @@ CALibration:SECure:STATe {OFF|ON}[,<code_string>] /
+CALibration:SECure:STATe? @@ {OFF|ON}, <code_string>: 最多12字元字串 @@ 
+設定或查詢儀器校準安全保護狀態的解除與開啟 @@ 82 @@ RW @@ N
+CALibration:STORe @@ CALibration:STORe @@ 無 @@ 
+將暫存器中最新的校準常數儲存至非揮發性記憶體 @@ 82 @@ W @@ N
+CALibration:STRing @@ CALibration:STRing "<string>" / CALibration:STRing? @@ 
+<string>: 最多40字元字串 @@ 寫入或查詢校準訊息字串 @@ 82 @@ RW @@ N
+CALibration:TEMPerature? @@ CALibration:TEMPerature? @@ 無 @@ 
+查詢最近一次執行校準時的環境攝氏溫度 @@ 82 @@ R @@ N
+CALibration:TIME? @@ CALibration:TIME? @@ 無 @@ 
+查詢最近一次校準至今所經歷的時間 @@ 82 @@ R @@ N
+CALibration:VALue @@ CALibration:VALue <value> / CALibration:VALue? @@ <value>:
+輸入之校準訊號數值 @@ 設定或查詢施加於輸入端的校準參考訊號數值 @@ 82 @@ RW @@ N
+SOURce:CURRent @@ SOURce:CURRent {<current>|MIN|MAX|DEF},(@<ch_list>) / 
+SOURce:CURRent?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <current>: -24mA至+24mA @@ 
+設定或查詢 DAQM907A 模組 DAC 通道的輸出直流電流值 @@ 288 @@ RW @@ Y
+SOURce:DIGital:DATA[:BYTE] @@ SOURce:DIGital:DATA[:BYTE] <data>,(@<ch_list>) / 
+SOURce:DIGital:DATA[:BYTE]?(@<ch_list>) @@ <data>: 0至255整數 @@ 將 8 
+位元位元組數位圖案輸出至指定數位 I/O 通道或查詢最後輸出值 @@ 288 @@ RW @@ Y
+SOURce:DIGital:DATA:WORD @@ SOURce:DIGital:DATA:WORD <data>,(@<ch_list>) / 
+SOURce:DIGital:DATA:WORD?(@<ch_list>) @@ <data>: 0至65535整數 @@ 將 16 
+位元字組數位圖案同時輸出至 Port 1 與 Port 2 或查詢最後輸出值 @@ 288 @@ RW @@ Y
+SOURce:DIGital:STATe? @@ SOURce:DIGital:STATe?(@<ch_list>) @@ (@<ch_list>) @@ 
+查詢指定數位 I/O 通道目前為輸入通道(0)或輸出通道(1) @@ 288 @@ R @@ Y
+SOURce:MODE @@ SOURce:MODE {CURRent|VOLTage},(@<ch_list>) / 
+SOURce:MODE?(@<ch_list>) @@ {CURRent|VOLTage} @@ 設定或查詢 DAQM907A 模組 DAC 
+通道的輸出模式為電流或電壓 @@ 288 @@ RW @@ Y
+SOURce:MODE:LOCK @@ SOURce:MODE:LOCK {OFF|ON},(@<ch_list>) / 
+SOURce:MODE:LOCK?(@<ch_list>) @@ {OFF|ON|0|1} @@ 鎖定或解鎖指定 DAC 
+通道的輸出模式以防止誤修改 @@ 288 @@ RW @@ Y
+SOURce:VOLTage @@ SOURce:VOLTage {<voltage>|MIN|MAX|DEF},(@<ch_list>) / 
+SOURce:VOLTage?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <voltage>: -12VDC至+12VDC @@ 
+設定或查詢 DAQM907A 模組 DAC 通道的輸出直流電壓值 @@ 288 @@ RW @@ Y
+UNIT[:TEMPerature] @@ UNIT[:TEMPerature] {C|F|K}[,(@<ch_list>)] / 
+UNIT[:TEMPerature]?[(@<ch_list>)] @@ {C|F|K} @@ 
+設定或查詢指定通道的溫度顯示與輸出單位(攝氏/華氏/開爾文) @@ 32 @@ RW @@ Y
+INPut3:COUPling @@ INPut3:COUPling {AC|DC},(@<ch_list>) / 
+INPut3:COUPling?(@<ch_list>) @@ {AC|DC} @@ 設定或查詢 DAQM909A 
+數位化模組指定通道的輸入耦合方式 @@ 157 @@ RW @@ Y
+INPut3:TYPE @@ INPut3:TYPE {DIFFerential|SENDed|IEPE},(@<ch_list>) / 
+INPut3:TYPE?(@<ch_list>) @@ {DIFFerential|SENDed|IEPE} @@ 設定或查詢 DAQM909A 
+數位化模組指定通道的訊號輸入類型 @@ 157 @@ RW @@ Y
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 11)

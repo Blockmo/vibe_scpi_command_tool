@@ -1,0 +1,87 @@
+Answer:
+FETCh:VOLTage? @@ FETCh:VOLTage? @@ 無 @@ 讀取作用中通道輸入端量測之電壓數值 @@
+5-62 @@ R @@ N
+FETCh:VOLTage:MAX? @@ FETCh:VOLTage:MAX? @@ 無 @@ 讀取 CZ 
+模式下作用中通道輸入端量測之最大電壓數值 @@ 5-62 @@ R @@ N
+FETCh:VOLTage:MIN? @@ FETCh:VOLTage:MIN? @@ 無 @@ 讀取 CZ 
+模式下作用中通道輸入端量測之最小電壓數值 @@ 5-62 @@ R @@ N
+FETCh:VOLTage:PEAK+? @@ FETCh:VOLTage:PEAK+? @@ 無 @@ 
+讀取動態拉載模式下作用中通道輸入端量測之正峰值電壓 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK+:FREQuency? @@ FETCh:VOLTage:PEAK+:FREQuency? @@ 無 @@ 
+讀取掃頻模式下發生正峰值電壓時的頻率數值 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK-? @@ FETCh:VOLTage:PEAK-? @@ 無 @@ 
+讀取動態拉載模式下作用中通道輸入端量測之負峰值電壓 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK-:FREQuency? @@ FETCh:VOLTage:PEAK-:FREQuency? @@ 無 @@ 
+讀取掃頻模式下發生負峰值電壓時的頻率數值 @@ 5-63 @@ R @@ N
+FETCh:CURRent? @@ FETCh:CURRent? @@ 無 @@ 讀取作用中通道輸入端量測之電流數值 @@
+5-60FETCh:VOLTage? @@ FETCh:VOLTage? @@ 無 @@ 傳回作用中通道輸入端之電壓量測值 
+@@ 5-62 @@ R @@ N
+FETCh:VOLTage:MAX? @@ FETCh:VOLTage:MAX? @@ 無 @@ 取得 CZ 
+模式下作用中通道的最大電壓位準 @@ 5-62 @@ R @@ N
+FETCh:VOLTage:MIN? @@ FETCh:VOLTage:MIN? @@ 無 @@ 取得 CZ 
+模式下作用中通道的最小電壓位準 @@ 5-62 @@ R @@ N
+FETCh:VOLTage:PEAK+? @@ FETCh:VOLTage:PEAK+? @@ 無 @@ 
+查詢動態模式下輸入端量測到的正電壓峰值 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK+:FREQuency? @@ FETCh:VOLTage:PEAK+:FREQuency? @@ 無 @@ 
+查詢掃頻測試中正峰值電壓對應之頻率 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK-? @@ FETCh:VOLTage:PEAK-? @@ 無 @@ 
+查詢動態模式下輸入端量測到的負電壓峰值 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK-:FREQuency? @@ FETCh:VOLTage:PEAK-:FREQuency? @@ 無 @@ 
+查詢掃頻測試中負峰值電壓對應之頻率 @@ 5-63 @@ R @@ N
+FETCh:CURRent? @@ FETCh:CURRent? @@ 無 @@ 讀取作用中FETCh:VOLTage @@ 
+FETCh:VOLTage? @@ 無(傳回NR2) @@ 傳回作用中通道輸入端之電壓量測值 @@ 5-62 @@ R 
+@@ N
+FETCh:VOLTage:MAX @@ FETCh:VOLTage:MAX? @@ 無(傳回NR2) @@ 取得 CZ 
+模式下作用中通道的最大電壓位準 @@ 5-62 @@ R @@ N
+FETCh:VOLTage:MIN @@ FETCh:VOLTage:MIN? @@ 無(傳回NR2) @@ 取得 CZ 
+模式下作用中通道的最小電壓位準 @@ 5-62 @@ R @@ N
+FETCh:VOLTage:PEAK+ @@ FETCh:VOLTage:PEAK+? @@ 無(傳回NR2) @@ 
+查詢動態模式下輸入端量測到的正電壓峰值 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK+:FREQuency @@ FETCh:VOLTage:PEAK+:FREQuency? @@ 無(傳回NR2) 
+@@ 查詢掃頻測試中正峰值電壓對應之頻率 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK- @@ FETCh:VOLTage:PEAK-? @@ 無(傳回NR2) @@ 
+查詢動態模式下輸入端量測到的負電壓峰值 @@ 5-63 @@ R @@ N
+FETCh:VOLTage:PEAK-:FREQuency @@ FETCh:VOLTage:PEAK-:FREQuency? @@ 無(傳回NR2) 
+@@ 查詢掃頻測試中負峰值電壓對應之頻率 @@ 5-63 @@ R @@ N
+FETCh:CURRent @@ FETCh:CURRent? @@ 無(傳回NR2) @@ 讀取作用中負載通道的輸入電流 
+@@ 5-60 @@ R @@ N
+FETCh:CURRent:PEAK+ @@ FETCh:CURRent:PEAK+? @@ 無(傳回NR2) @@ 讀取 CZ 
+模式下作用中通道正峰值電流 @@ 5-60 @@ R @@ N
+FETCh:POWer @@ FETCh:POWer? @@ 無(傳回NR2) @@ 讀取作用中負載通道的輸入功率 @@ 
+5-61 @@ R @@ N
+FETCh:AH @@ FETCh:AH? @@ 無(傳回NR2) @@ 傳回時間量測模式累積安培小時 (Ah) @@ 
+5-60 @@ R @@ N
+FETCh:WH @@ FETCh:WH? @@ 無(傳回NR2) @@ 傳回時間量測模式累積瓦特小時 (Wh) @@ 
+5-62 @@ R @@ N
+FETCh:FREQuency @@ FETCh:FREQuency? @@ 無(傳回NR2) @@ 
+讀取正弦波或掃頻動態模式下量測頻率 @@ 5-61 @@ R @@ N
+FETCh:TIME @@ FETCh:TIME? @@ 無(傳回NR2) @@ 讀取時間量測功能擷取到的時間數據 @@
+5-62 @@ R @@ N
+FETCh:STATus @@ FETCh:STATus? @@ 無(傳回NR1) @@ 
+查詢負載模組即時運作與保護狀態碼 @@ 5-61 @@ R @@ N
+FETCh:ALLVoltage @@ FETCh:ALLVoltage? @@ 無(傳回AARD) @@ 
+一次回傳機框內所有通道之電壓數據 @@ 5-60 @@ R @@ N
+FETCh:ALLVoltage:MAX @@ FETCh:ALLVoltage:MAX? @@ 無(傳回AARD) @@ 
+一次回傳全機框所有通道之最大電壓 @@ 5-63 @@ R @@ N
+FETCh:ALLVoltage:MIN @@ FETCh:ALLVoltage:MIN? @@ 無(傳回AARD) @@ 
+一次回傳全機框所有通道之最小電壓 @@ 5-63 @@ R @@ N
+FETCh:ALLCurrent @@ FETCh:ALLCurrent? @@ 無(傳回AARD) @@ 
+一次回傳機框內所有通道之電流數據 @@ 5-60 @@ R @@ N
+FETCh:ALLPower @@ FETCh:ALLPower? @@ 無(傳回AARD) @@ 
+一次回傳機框內所有通道之功率數據 @@ 5-60 @@ R @@ N
+MEASure:INPut @@ MEASure:INPut <port> @@ LOAD|0, UUT|1 @@ 
+切換電壓量測訊號之採樣來源輸入端 @@ 5-68 @@ RW @@ N
+MEASure:VOLTage @@ MEASure:VOLTage? @@ 無(傳回NR2) @@ 
+即時讀取作用中通道之電壓數值 @@ 5-68 @@ R @@ N
+MEASure:CURRent @@ MEASure:CURRent? @@ 無(傳回NR2) @@ 
+即時讀取作用中通道之電流數值 @@ 5-67 @@ R @@ N
+MEASure:POWer @@ MEASure:POWer? @@ 無(傳回NR2) @@ 即時讀取作用中通道之功率數值 
+@@ 5-68 @@ R @@ N
+MEASure:ALLVoltage @@ MEASure:ALLVoltage? @@ 無(傳回AARD) @@ 
+即時讀取全機框所有通道電壓陣列 @@ 5-68 @@ R @@ N
+MEASure:ALLCurrent @@ MEASure:ALLCurrent? @@ 無(傳回AARD) @@ 
+即時讀取全機框所有通道電流陣列 @@ 5-67 @@ R @@ N
+MEASure:ALLPower @@ MEASure:ALLPower? @@ 無(傳回AARD) @@ 
+即時讀取全機框所有通道功率陣列 @@ 5-67 @@ R @@ N
+
+Conversation: 5f147963-f342-4b96-b4e6-95abde1b314c (turn 8)

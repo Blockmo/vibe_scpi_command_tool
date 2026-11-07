@@ -1,0 +1,190 @@
+Continuing conversation 6e310b33...
+Answer:
+CONFigure? @@ CONFigure?[(@<ch_list>)] @@ (@<ch_list>) @@ 
+查詢指定通道當前的測量功能、量程與解析度配置 @@ 88 @@ R @@ Y
+CONFigure[:VOLTage]:DC @@ CONFigure[:VOLTage]:DC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100mV|1V|10V|100V|300V|AUTO, <resolution>: 積分時間/解析度 @@ 
+配置指定通道為直流電壓測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure[:VOLTage]:AC @@ CONFigure[:VOLTage]:AC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100mV|1V|10V|100V|300V|AUTO, <resolution>: 固定6½位 @@ 
+配置指定通道為交流電壓測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:CURRent:DC @@ CONFigure:CURRent:DC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+1μA|10μA|100μA|1mA|10mA|100mA|1A|AUTO, <resolution>: 積分時間 @@ 
+配置指定通道為直流電流測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:CURRent:AC @@ CONFigure:CURRent:AC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100μA|1mA|10mA|100mA|1A|AUTO, <resolution>: 固定6½位 @@ 
+配置指定通道為交流電流測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:RESistance @@ CONFigure:RESistance [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100Ω|1kΩ|10kΩ|100kΩ|1MΩ|10MΩ|100MΩ|1GΩ|AUTO @@ 
+配置指定通道為2線式電阻測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:FRESistance @@ CONFigure:FRESistance [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100Ω|1kΩ|10kΩ|100kΩ|1MΩ|10MΩ|100MΩ|1GΩ|AUTO @@ 
+配置指定通道為4線式電阻測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:TEMPerature @@ CONFigure:TEMPerature:<probe_type> [{<type>|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <probe_type>: 
+TCouple|RTD|FRTD|THERmistor|FTHermistor @@ 
+配置指定通道為溫度測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:FREQuency @@ CONFigure:FREQuency [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3Hz至300kHz|AUTO, 
+<resolution>: 閘門時間/解析度 @@ 配置指定通道為頻率測量功能但不立即啟動掃描 @@ 
+88 @@ W @@ Y
+CONFigure:PERiod @@ CONFigure:PERiod [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3.33μs至333.33ms|AUTO, 
+<resolution>: 閘門時間/解析度 @@ 配置指定通道為週期測量功能但不立即啟動掃描 @@ 
+88 @@ W @@ Y
+CONFigure:CAPacitance @@ CONFigure:CAPacitance [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+1nF|10nF|100nF|1µF|10µF|100µF|AUTO @@ 
+配置指定通道為電容測量功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:DIODe @@ CONFigure:DIODe (@<ch_list>) @@ 固定量程1VDC，測試電流1mA @@
+配置指定通道為二極體測試功能但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:CONTinuity @@ CONFigure:CONTinuity @@ 無 
+(手冊未提供獨立CONFigure:CONT指令，硬體功能以DIODe或RESistance替代) @@ 
+配置導通性測試功能 (手冊中不包含獨立CONT變體指令) @@ 88 @@ W @@ N
+CONFigure:DIGital[:BYTE] @@ CONFigure:DIGital[:BYTE] (@<ch_list>) @@ 通道清單 
+(@<ch_list>) (DAQM907A數位輸入通道) @@ 
+配置指定數位I/O通道為位元組模式掃描但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure:TOTalize @@ CONFigure:TOTalize {READ|RRESet}, (@<ch_list>) @@ 
+{READ|RRESet}: 僅讀取或讀取後清零 @@ 
+配置指定累加器通道為累加計數模式但不立即啟動掃描 @@ 88 @@ W @@ Y
+CONFigure:DAC:OUTPut @@ CONFigure:DAC:OUTPut (@<ch_list>) @@ 通道清單 
+(@<ch_list>) (DAQM907A DAC輸出通道04與05) @@ 
+配置指定DAC輸出通道加入掃描清單但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure:DAC:SENSe @@ CONFigure:DAC:SENSe (@<ch_list>) @@ 通道清單 
+(@<ch_list>) (DAQM907A DAC感測通道06與07) @@ 
+配置指定DAC感測通道加入掃描清單但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure:STRain:DIRect @@ CONFigure:STRain:DIRect [{<gage_ohms>|MIN|MAX|DEF}, 
+[{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ <gage_ohms>: 80至1100Ω, 
+<gage_factor>: 0.5至5, <range>: 100Ω至1GΩ @@ 
+配置指定通道為2線式直讀應變規測量但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure:STRain:FDIRect @@ CONFigure:STRain:FDIRect 
+[{<gage_ohms>|MIN|MAX|DEF}, [{<gage_factor>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_ohms>: 80至1100Ω, <gage_factor>: 0.5至5, <range>: 100Ω至1GΩ @@ 
+配置指定通道為4線式直讀應變規測量但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure:STRain:QUARter @@ CONFigure:STRain:QUARter 
+{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <gage_factor>: 0.5至5, <range>: 
+100mV|1V|10V|100V|300V|AUTO @@ 配置指定通道為1/4橋應變規測量功能但不立即啟動 @@
+88 @@ W @@ Y
+CONFigure:STRain:HALF:BENDing @@ CONFigure:STRain:HALF:BENDing 
+[{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]]] (@<ch_list>) @@ <gage_factor>: 0.5至5, <range>:
+100mV|1V|10V|100V|300V|AUTO @@ 配置指定通道為半橋彎曲應變規測量功能但不立即啟動
+@@ 88 @@ W @@ Y
+CONFigure:STRain:FULL:BENDing @@ CONFigure:STRain:FULL:BENDing 
+[{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]]] (@<ch_list>) @@ <gage_factor>: 0.5至5, <range>:
+100mV|1V|10V|100V|300V|AUTO @@ 配置指定通道為全橋彎曲應變規測量功能但不立即啟動
+@@ 88 @@ W @@ Y
+CONFigure:STRain:HALF:POISson @@ CONFigure:STRain:HALF:POISson 
+[{<gage_factor>|MIN|MAX|DEF}, [{<poisson_ratio>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_factor>: 0.5至5, <poisson_ratio>: -0.9999至+0.5 @@ 
+配置指定通道為半橋泊松應變規測量功能但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure:STRain:FULL:POISson @@ CONFigure:STRain:FULL:POISson 
+[{<gage_factor>|MIN|MAX|DEF}, [{<poisson_ratio>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_factor>: 0.5至5, <poisson_ratio>: -0.9999至+0.5 @@ 
+配置指定通道為全橋泊松應變規測量功能但不立即啟動 @@ 88 @@ W @@ Y
+CONFigure? @@ CONFigure?[(@<ch_list>)] @@ (@<ch_list>) @@ 
+查詢指定通道目前設定之測量功能、量程與解析度 @@ 88 @@ R @@ Y
+CONFigure[:VOLTage]:DC @@ CONFigure[:VOLTage]:DC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 100mV, 1V, 10V, 100V, 
+300V 或 AUTO; <resolution>: NPLC積分時間 @@ 
+預先配置直流電壓測量參數但不立即觸發掃描 @@ 88 @@ W @@ Y
+CONFigure[:VOLTage]:AC @@ CONFigure[:VOLTage]:AC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 100mV 至 300V 或 AUTO; 
+<resolution>: 固定為6.5位 @@ 預先配置交流電壓測量參數但不立即觸發掃描 @@ 88 @@ 
+W @@ Y
+CONFigure:CURRent:DC @@ CONFigure:CURRent:DC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 1μA, 10μA, 100μA, 1mA, 
+10mA, 100mA, 1A 或 AUTO @@ 配置DAQM901A專用通道之直流電流測量 @@ 88 @@ W @@ Y
+CONFigure:CURRent:AC @@ CONFigure:CURRent:AC [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 100μA, 1mA, 10mA, 
+100mA, 1A 或 AUTO @@ 配置DAQM901A專用通道之交流電流測量 @@ 88 @@ W @@ Y
+CONFigure:RESistance @@ CONFigure:RESistance [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 100Ω 至 1GΩ 
+七個固定檔位或 AUTO @@ 配置二線式電阻測量功能並將通道加入掃描清單 @@ 88 @@ W @@
+Y
+CONFigure:FRESistance @@ CONFigure:FRESistance [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 100Ω 至 1GΩ 
+七個固定檔位或 AUTO @@ 配置四線式電阻測量功能並自動配對相鄰通道 @@ 88 @@ W @@ Y
+CONFigure:TEMPerature @@ CONFigure:TEMPerature:<probe_type> [{<type>|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <probe_type>: TCouple, RTD, 
+FRTD, THERmistor, FTHermistor @@ 配置熱電偶、RTD 或熱敏電阻之溫度測量模式 @@ 88
+@@ W @@ Y
+CONFigure:FREQuency @@ CONFigure:FREQuency [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3Hz 至 300kHz 
+電壓輸入範圍 @@ 配置信號頻率測量功能並設定對應電壓量程 @@ 88 @@ W @@ Y
+CONFigure:PERiod @@ CONFigure:PERiod [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3.33μs 至 333.33ms 
+週期時間範圍 @@ 配置信號週期時間測量功能並設定電壓量程 @@ 88 @@ W @@ Y
+CONFigure:CAPacitance @@ CONFigure:CAPacitance [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 1nF, 10nF, 100nF, 1μF, 
+10μF, 100μF 或 AUTO @@ 配置電容測量功能 (僅多工器模組支援) @@ 88 @@ W @@ Y
+CONFigure:DIODe @@ CONFigure:DIODe (@<ch_list>) @@ 固定 1VDC 量程與 1mA 
+測試勵磁電流 @@ 配置二極體順向壓降測試但不立即執行量測 @@ 88 @@ W @@ Y
+CONFigure:CONTinuity @@ CONFigure:CONTinuity @@ 無獨立 SCPI 指令 (手冊指示改用 
+DIODe 或 RESistance) @@ 導通測試功能 (手冊中未定義獨立 CONT 變體) @@ 88 @@ W @@
+N
+CONFigure:DIGital[:BYTE] @@ CONFigure:DIGital[:BYTE] (@<ch_list>) @@ 僅適用 
+DAQM907A 多功能模組數位通道 01/02 @@ 將數位 I/O 通道設定為 8 位元位元組讀取模式
+@@ 88 @@ W @@ Y
+CONFigure:TOTalize @@ CONFigure:TOTalize {READ|RRESet}, (@<ch_list>) @@ 
+{READ|RRESet}: 讀取保持或讀取後即刻清零 @@ 
+設定累加器通道之脈衝計數與讀取清零模式 @@ 88 @@ W @@ Y
+CONFigure:DAC:OUTPut @@ CONFigure:DAC:OUTPut (@<ch_list>) @@ 僅適用 DAQM907A 
+模組 DAC 輸出通道 04/05 @@ 將 DAC 輸出通道納入掃描清單以記錄設定值 @@ 88 @@ W 
+@@ Y
+CONFigure:DAC:SENSe @@ CONFigure:DAC:SENSe (@<ch_list>) @@ 僅適用 DAQM907A 模組
+DAC 感測通道 06/07 @@ 配置 DAC 感測通道以實測對應之電壓或電流 @@ 88 @@ W @@ Y
+CONFigure:STRain:DIRect @@ CONFigure:STRain:DIRect [{<gage_ohms>|MIN|MAX|DEF}, 
+[{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ <gage_ohms>: 80~1100Ω; 
+<gage_factor>: 0.5~5; <range>: 100Ω~1GΩ @@ 配置二線式直讀式應變規測量硬體參數 
+@@ 88 @@ W @@ Y
+CONFigure:STRain:FDIRect @@ CONFigure:STRain:FDIRect 
+[{<gage_ohms>|MIN|MAX|DEF}, [{<gage_factor>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_ohms>: 80~1100Ω; <gage_factor>: 0.5~5; <range>: 100Ω~1GΩ @@ 
+配置四線式直讀式應變規測量硬體參數 @@ 88 @@ W @@ Y
+CONFigure:STRain:QUARter @@ CONFigure:STRain:QUARter 
+{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <gage_factor>: 0.5 至 5; 
+<range>: 100mV 至 300V 或 AUTO @@ 設定 1/4 橋路應變規之電橋增益與電壓量程 @@ 88
+@@ W @@ Y
+CONFigure:STRain:HALF:BENDing @@ CONFigure:STRain:HALF:BENDing 
+[{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]]] (@<ch_list>) @@ <gage_factor>: 0.5 至 5; 
+<range>: 100mV 至 300V 或 AUTO @@ 設定半橋彎曲 (Half Bending) 應變規測量 @@ 88 
+@@ W @@ Y
+CONFigure:STRain:FULL:BENDing @@ CONFigure:STRain:FULL:BENDing 
+[{<gage_factor>|MIN|MAX|DEF}, [{<range>|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]]] (@<ch_list>) @@ <gage_factor>: 0.5 至 5; 
+<range>: 100mV 至 300V 或 AUTO @@ 設定全橋彎曲 (Full Bending) 應變規測量 @@ 88 
+@@ W @@ Y
+CONFigure:STRain:HALF:POISson @@ CONFigure:STRain:HALF:POISson 
+[{<gage_factor>|MIN|MAX|DEF}, [{<poisson_ratio>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_factor>: 0.5~5; <poisson_ratio>: -0.9999~+0.5 @@ 設定半橋泊松 (Half 
+Poisson) 應變規測量 @@ 88 @@ W @@ Y
+CONFigure:STRain:FULL:POISson @@ CONFigure:STRain:FULL:POISson 
+[{<gage_factor>|MIN|MAX|DEF}, [{<poisson_ratio>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_factor>: 0.5~5; <poisson_ratio>: -0.9999~+0.5 @@ 設定全橋泊松 (Full 
+Poisson) 應變規測量 @@ 88 @@ W @@ Y
+CONFigure:STRain:FULL:BENDing:POISson @@ CONFigure:STRain:FULL:BENDing:POISson 
+[{<gage_factor>|MIN|MAX|DEF}, [{<poisson_ratio>|MIN|MAX|DEF}, 
+[{<range>|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]]]] (@<ch_list>) @@ 
+<gage_factor>: 0.5~5; <poisson_ratio>: -0.9999~+0.5 @@ 設定全橋彎曲泊松 (Full 
+Bending Poisson) 應變規 @@ 88 @@ W @@ Y
+
+Resumed conversation: 6e310b33-6e38-4888-aa63-a00403826193

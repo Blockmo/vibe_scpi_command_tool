@@ -1,0 +1,37 @@
+Answer:
+OUTPut[:STATe]@@OUTPut[:STATe] {0|1|OFF|ON}, (@<ch_list>) / OUTPut[:STATe]? 
+(@<ch_list>)@@0, 1, OFF, ON@@設定或查詢指定通道之輸出開啟或關閉狀態@@58@@RW@@Y
+OUTPut:PROTection:CLEar@@OUTPut:PROTection:CLEar 
+(@<ch_list>)@@無@@清除指定通道之過電壓與過電流保護跳脫狀態@@45@@W@@Y
+OUTPut:PAIR@@OUTPut:PAIR {OFF|SERies|PARallel} / OUTPut:PAIR?@@OFF, SERies, 
+PARallel@@設定或查詢通道 2 與通道 3 之自動串聯或並聯操作模式@@51@@RW@@N
+OUTPut:TRACk[:STATe]@@OUTPut:TRACk[:STATe] {0|1|OFF|ON} / 
+OUTPut:TRACk[:STATe]?@@0, 1, OFF, ON@@設定或查詢通道 2 與通道 3 
+之電壓雙向追蹤模式狀態@@48@@RW@@N
+OUTPut:COUPle[:STATe]@@OUTPut:COUPle[:STATe] {0|1|OFF|ON} / 
+OUTPut:COUPle[:STATe]?@@0, 1, OFF, 
+ON@@設定或查詢多通道輸出開關機同步耦合致能狀態@@65@@RW@@N
+OUTPut👫CHANnel@@OUTPut👫CHANnel {CH1|CH2|CH3}[,{CH1|CH2|CH3}...] / 
+OUTPut👫CHANnel?@@CH1, CH2, 
+CH3@@設定或查詢參與開關機同步耦合之通道組合@@49@@RW@@N
+OUTPut👫DOFF@@OUTPut👫DOFF {0|1|OFF|ON} / OUTPut👫DOFF?@@0, 1, OFF, 
+ON@@設定或查詢任一耦合通道跳脫時是否同步關閉其他通道@@65@@RW@@N
+OUTPut👫DON@@OUTPut👫DON {0|1|OFF|ON} / OUTPut👫DON?@@0, 1, OFF, 
+ON@@設定或查詢任一耦合通道跳脫恢復時是否同步開啟通道@@65@@RW@@N
+OUTPut:DELay:FALL@@OUTPut:DELay:FALL {<seconds>|MIN|MAX|DEF}, (@<ch_list>) / 
+OUTPut:DELay:FALL? [MIN|MAX|DEF,] (@<ch_list>)@@0~3600秒, MIN, MAX, 
+DEF@@設定或查詢指定通道之關機延遲時間@@49@@RW@@Y
+OUTPut:DELay:RISE@@OUTPut:DELay:RISE {<seconds>|MIN|MAX|DEF}, (@<ch_list>) / 
+OUTPut:DELay:RISE? [MIN|MAX|DEF,] (@<ch_list>)@@0~3600秒, MIN, MAX, 
+DEF@@設定或查詢指定通道之開機延遲時間@@49@@RW@@Y
+OUTPut:INHibit:MODE@@OUTPut:INHibit:MODE {LATCh|LIVE|OFF} / 
+OUTPut:INHibit:MODE?@@LATCh, LIVE, OFF@@設定或查詢數位介面 Inhibit 
+訊號觸發時的保護回應模式@@71@@RW@@N
+MEASure[:SCALar]:VOLTage[:DC]?@@MEASure[:SCALar]:VOLTage[:DC]? 
+(@<ch_list>)@@無@@量測並回傳指定通道之實際輸出電壓值@@58@@R@@Y
+MEASure[:SCALar]:CURRent[:DC]?@@MEASure[:SCALar]:CURRent[:DC]? 
+(@<ch_list>)@@無@@量測並回傳指定通道之實際輸出電流值@@58@@R@@Y
+MEASure[:SCALar]:POWer[:DC]?@@MEASure[:SCALar]:POWer[:DC]? 
+(@<ch_list>)@@無@@量測並回傳指定通道之實際輸出功率值@@58@@R@@Y
+
+Conversation: 8df3aee9-a6cc-4871-ab85-2ecc391a71e3 (turn 4)

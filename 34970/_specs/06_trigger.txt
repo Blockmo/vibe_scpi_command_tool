@@ -1,0 +1,13 @@
+Answer:
+TRIGger:SOURce @@ TRIGger:SOURce 
+{BUS|IMMediate|EXTernal|TIMer|ALARM1|ALARM2|ALARM3|ALARM4} | TRIGger:SOURce? @@
+BUS|IMMediate|EXTernal|TIMer|ALARM1|ALARM2|ALARM3|ALARM4 @@ 
+設定或查詢啟動掃描的觸發來源模式 @@ 110 @@ RW @@ N
+TRIGger:TIMer @@ TRIGger:TIMer {<seconds>|MIN|MAX|DEF} | TRIGger:TIMer? @@ 
+0~359999秒(解析度1ms)|MIN|MAX|DEF @@ 設定或查詢定時掃描模式下的掃描時間間隔 @@ 
+110 @@ RW @@ N
+TRIGger:COUNt @@ TRIGger:COUNt {<count>|MIN|MAX|DEF|INFinity} | TRIGger:COUNt? 
+@@ 1~50000|INFinity|MIN|MAX|DEF @@ 設定或查詢掃描流程重複執行的總掃描次數 @@ 
+117 @@ RW @@ N
+
+Conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e (turn 7)

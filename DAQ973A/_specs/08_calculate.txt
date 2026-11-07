@@ -1,0 +1,102 @@
+Continuing conversation 6e310b33...
+Answer:
+CALCulate:AVERage:ALL? @@ CALCulate:AVERage:ALL?[(@<ch_list>)] @@ (@<ch_list>) 
+@@ 傳回指定通道自上次清空統計以來之最小、最大、算術平均值與標準差 @@ 59 @@ R @@
+Y
+CALCulate:AVERage:AVERage? @@ CALCulate:AVERage:AVERage?[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 傳回指定通道統計暫存器中讀數的算術平均值 @@ 59 @@ R @@ Y
+CALCulate:AVERage:MAXimum? @@ CALCulate:AVERage:MAXimum?[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 傳回指定通道統計紀錄中的最大測量數值 @@ 59 @@ R @@ Y
+CALCulate:AVERage:MINimum? @@ CALCulate:AVERage:MINimum?[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 傳回指定通道統計紀錄中的最小測量數值 @@ 59 @@ R @@ Y
+CALCulate:AVERage:PTPeak? @@ CALCulate:AVERage:PTPeak?[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 傳回指定通道最大值與最小值之間的峰對峰差值 @@ 59 @@ R @@ Y
+CALCulate:AVERage:SDEViation? @@ CALCulate:AVERage:SDEViation?[(@<ch_list>)] @@
+(@<ch_list>) @@ 傳回指定通道統計測量數據的標準差 @@ 59 @@ R @@ Y
+CALCulate:AVERage:CLEar @@ CALCulate:AVERage:CLEar[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 清除指定通道統計暫存器內儲存的所有統計數據 @@ 59 @@ W @@ Y
+CALCulate:AVERage:COUNt? @@ CALCulate:AVERage:COUNt?[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 查詢指定通道在目前掃描作業中所累積採樣的數據點總個數 @@ 59 @@ R
+@@ Y
+CALCulate:AVERage:MAXimum:TIME? @@ 
+CALCulate:AVERage:MAXimum:TIME?[(@<ch_list>)] @@ (@<ch_list>) @@ 
+查詢指定通道取得最大測量值時的時間與日期戳記 @@ 59 @@ R @@ Y
+CALCulate:AVERage:MINimum:TIME? @@ 
+CALCulate:AVERage:MINimum:TIME?[(@<ch_list>)] @@ (@<ch_list>) @@ 
+查詢指定通道取得最小測量值時的時間與日期戳記 @@ 59 @@ R @@ Y
+CALCulate:COMPare:DATA @@ CALCulate:COMPare:DATA <data>[,(@<ch_list>)] / 
+CALCulate:COMPare:DATA?[(@<ch_list>)] @@ <data>: 0至255整數 @@ 
+設定或查詢數位輸入通道進行圖案比較用的8位元數據 @@ 62 @@ RW @@ Y
+CALCulate:COMPare:MASK @@ CALCulate:COMPare:MASK <mask>[,(@<ch_list>)] / 
+CALCulate:COMPare:MASK?[(@<ch_list>)] @@ <mask>: 0至255整數 @@ 
+設定或查詢數位輸入通道進行圖案比較時遮罩的位元設定 @@ 62 @@ RW @@ Y
+CALCulate:COMPare:STATe @@ CALCulate:COMPare:STATe {OFF|ON}[,(@<ch_list>)] / 
+CALCulate:COMPare:STATe?[(@<ch_list>)] @@ {OFF|ON|0|1} @@ 
+啟用或停用指定數位通道的數位圖案比較與警報觸發功能 @@ 62 @@ RW @@ Y
+CALCulate:COMPare:TYPE @@ CALCulate:COMPare:TYPE {EQUal|NEQual}[,(@<ch_list>)] 
+/ CALCulate:COMPare:TYPE?[(@<ch_list>)] @@ {EQUal|NEQual} @@ 
+設定或查詢數位圖案比較為數值相等或不相等時產生警報 @@ 62 @@ RW @@ Y
+CALCulate:LIMit:LOWer @@ CALCulate:LIMit:LOWer 
+{<limit>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:LIMit:LOWer?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <limit>: 
+-1.0E+15至+1.0E+15 @@ 設定或查詢指定通道測量評估的警報下限數值 @@ 66 @@ RW @@ Y
+CALCulate:LIMit:UPPer @@ CALCulate:LIMit:UPPer 
+{<limit>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:LIMit:UPPer?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <limit>: 
+-1.0E+15至+1.0E+15 @@ 設定或查詢指定通道測量評估的警報上限數值 @@ 66 @@ RW @@ Y
+CALCulate:LIMit:LOWer:STATe @@ CALCulate:LIMit:LOWer:STATe 
+{OFF|ON}[,(@<ch_list>)] / CALCulate:LIMit:LOWer:STATe?[(@<ch_list>)] @@ 
+{OFF|ON|0|1} @@ 開啟或關閉指定通道在掃描時的警報下限檢測判定 @@ 66 @@ RW @@ Y
+CALCulate:LIMit:UPPer:STATe @@ CALCulate:LIMit:UPPer:STATe 
+{OFF|ON}[,(@<ch_list>)] / CALCulate:LIMit:UPPer:STATe?[(@<ch_list>)] @@ 
+{OFF|ON|0|1} @@ 開啟或關閉指定通道在掃描時的警報上限檢測判定 @@ 66 @@ RW @@ Y
+CALCulate:MATH @@ CALCulate:MATH <expression>,(@<computed_ch_list>) / 
+CALCulate:MATH?(@<computed_ch_list>) @@ <expression>: 運算表達式 @@ 
+設定或查詢計算通道 (CH 401-420) 所使用的數學運算公式 @@ 71 @@ RW @@ Y
+CALCulate:SCALe:DB:REFerence @@ CALCulate:SCALe:DB:REFerence 
+{<ref>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:SCALe:DB:REFerence?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <ref>: 
+-200.0dBm至+200.0dBm @@ 設定或查詢 dB 縮放計算所扣除的相對參考數值 @@ 73 @@ RW 
+@@ Y
+CALCulate:SCALe:DBM:REFerence @@ CALCulate:SCALe:DBM:REFerence 
+{<ref>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:SCALe:DBM:REFerence?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <ref>: 
+參考阻抗歐姆值 @@ 設定或查詢電壓轉換為 dBm 功率時所依據的基準阻抗數值 @@ 73 @@ 
+RW @@ Y
+CALCulate:SCALe:FUNCtion @@ CALCulate:SCALe:FUNCtion 
+{DB|DBM|PCT|SCALe}[,(@<ch_list>)] / CALCulate:SCALe:FUNCtion?[(@<ch_list>)] @@ 
+{DB|DBM|PCT|SCALe} @@ 設定或查詢指定通道所採用的數學縮放運算類型 @@ 73 @@ RW @@
+Y
+CALCulate:SCALe:GAIN @@ CALCulate:SCALe:GAIN 
+{<gain>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:SCALe:GAIN?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <gain>: 浮點數(預設1.0) @@
+設定或查詢 mX+b 縮放運算公式中的增益倍率 (M) @@ 73 @@ RW @@ Y
+CALCulate:SCALe:OFFSet @@ CALCulate:SCALe:OFFSet 
+{<offset>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:SCALe:OFFSet?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <offset>: 
+浮點數(預設0.0) @@ 設定或查詢 mX+b 縮放運算公式中的偏移量 (B) @@ 73 @@ RW @@ Y
+CALCulate:SCALe:OFFSet:NULL @@ CALCulate:SCALe:OFFSet:NULL[(@<ch_list>)] @@ 
+(@<ch_list>) @@ 立即對指定通道採樣並將該數值設定為 mX+b 的偏移量 (B) @@ 73 @@ W
+@@ Y
+CALCulate:SCALe:REFerence @@ CALCulate:SCALe:REFerence 
+{<ref>|MIN|MAX|DEF}[,(@<ch_list>)] / 
+CALCulate:SCALe:REFerence?[{(@<ch_list>)|MIN|MAX|DEF}] @@ <ref>: 基準實數 @@ 
+設定或查詢百分比變化 (PCT) 縮放功能所對照的參考基準數值 @@ 73 @@ RW @@ Y
+CALCulate:SCALe:REFerence:AUTO @@ CALCulate:SCALe:REFerence:AUTO 
+{OFF|ON}[,(@<ch_list>)] / CALCulate:SCALe:REFerence:AUTO?[(@<ch_list>)] @@ 
+{OFF|ON|0|1} @@ 設定或查詢是否自動將接續的首次測量值取為 PCT/dB 的參考基準 @@ 
+73 @@ RW @@ Y
+CALCulate:SCALe:REFerence:IMMEdiate @@ 
+CALCulate:SCALe:REFerence:IMMEdiate[(@<ch_list>)] @@ (@<ch_list>) @@ 
+立即對指定通道量測並將結果刷新為 PCT 與 dB 縮放的基準值 @@ 73 @@ W @@ Y
+CALCulate:SCALe[:STATe] @@ CALCulate:SCALe[:STATe] {OFF|ON}[,(@<ch_list>)] / 
+CALCulate:SCALe[:STATe]?[(@<ch_list>)] @@ {OFF|ON|0|1} @@ 
+設定或查詢指定通道是否啟用數學縮放功能 @@ 73 @@ RW @@ Y
+CALCulate:SCALe:UNIT @@ CALCulate:SCALe:UNIT "<string>"[,(@<ch_list>)] / 
+CALCulate:SCALe:UNIT?[(@<ch_list>)] @@ <string>: 最多3字元 @@ 
+設定或查詢縮放後自訂的顯示工程單位標籤名稱 @@ 73 @@ RW @@ Y
+CALCulate:SCALe:UNIT:STATe @@ CALCulate:SCALe:UNIT:STATe 
+{OFF|ON}[,(@<ch_list>)] / CALCulate:SCALe:UNIT:STATe?[(@<ch_list>)] @@ 
+{OFF|ON|0|1} @@ 設定或查詢前面板是否顯示自訂的工程單位字串 @@ 73 @@ RW @@ Y
+
+Resumed conversation: 6e310b33-6e38-4888-aa63-a00403826193

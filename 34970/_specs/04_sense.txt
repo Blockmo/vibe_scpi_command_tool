@@ -1,0 +1,217 @@
+Continuing conversation 3b68823b...
+08:29:19 WARNING [notebooklm._chat] No chunk carried isFinalResponse; falling back to the longest marked chunk (11498 chars). The stream may have been truncated, or the API response format may have changed.
+Answer:
+[SENSe:]FUNCtion @@ [SENSe:]FUNCtion "<function>"[,(@<ch_list>)] | 
+[SENSe:]FUNCtion? [(@<ch_list>)] @@ 
+"VOLT:DC"|"VOLT:AC"|"CURR:DC"|"CURR:AC"|"RES"|"FRES"|"TEMP"|"FREQ"|"PER"|"DIOD"
+|"CONT" @@ 設定或查詢指定通道的量測功能 @@ 129 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RANGe @@ [SENSe:]VOLTage:DC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:RANGe? 
+[(@<ch_list>)] @@ 100mV|1V|10V|100V|300V|AUTO|MIN|MAX|DEF @@ 設定或查詢 DC 
+電壓量測範圍 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RANGe:AUTO @@ [SENSe:]VOLTage:DC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用或停用 DC 電壓自動換檔 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RESolution @@ [SENSe:]VOLTage:DC:RESolution 
+{<resolution>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:RESolution? 
+[(@<ch_list>)] @@ 4.5~6.5位解析度(伏特值)|MIN|MAX|DEF @@ 設定或查詢 DC 
+電壓量測解析度 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:NPLC @@ [SENSe:]VOLTage:DC:NPLC 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:NPLC? [(@<ch_list>)] 
+@@ 0.02|0.2|1|2|10|20|100|200|MIN|MAX|DEF @@ 設定或查詢 DC 電壓 A/D 
+積分時間(電源週期數) @@ 133 @@ RW @@ Y
+[SENSe:]VOLTage:DC:APERture @@ [SENSe:]VOLTage:DC:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:APERture? 
+[(@<ch_list>)] @@ 0.0004~3.33秒|MIN|MAX|DEF @@ 設定或查詢 DC 電壓 A/D 
+積分孔徑時間 @@ 133 @@ RW @@ Y
+[SENSe:]VOLTage:AC:RANGe @@ [SENSe:]VOLTage:AC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:AC:RANGe? 
+[(@<ch_list>)] @@ 100mV|1V|10V|100V|300V|AUTO|MIN|MAX|DEF @@ 設定或查詢 AC 
+電壓量測範圍 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:AC:RANGe:AUTO @@ [SENSe:]VOLTage:AC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]VOLTage:AC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用或停用 AC 電壓自動換檔 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:AC:BANDwidth @@ [SENSe:]VOLTage:AC:BANDwidth 
+{3|20|200|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:AC:BANDwidth? 
+[(@<ch_list>)] @@ 3|20|200 (Hz)|MIN|MAX|DEF @@ 設定或查詢 AC 
+電壓量測的低頻濾波器頻率 @@ 143 @@ RW @@ Y
+[SENSe:]CURRent:DC:RANGe @@ [SENSe:]CURRent:DC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:RANGe? 
+[(@<ch_list>)] @@ 10mA|100mA|1A|AUTO|MIN|MAX|DEF @@ 設定或查詢 DC 電流量測範圍 
+@@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:RANGe:AUTO @@ [SENSe:]CURRent:DC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]CURRent:DC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用或停用 DC 電流自動換檔 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:RESolution @@ [SENSe:]CURRent:DC:RESolution 
+{<resolution>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:RESolution? 
+[(@<ch_list>)] @@ 4.5~6.5位解析度(安培值)|MIN|MAX|DEF @@ 設定或查詢 DC 
+電流量測解析度 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:NPLC @@ [SENSe:]CURRent:DC:NPLC 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:NPLC? [(@<ch_list>)] 
+@@ 0.02|0.2|1|2|10|20|100|200|MIN|MAX|DEF @@ 設定或查詢 DC 電流 A/D 
+積分時間(電源週期數) @@ 133 @@ RW @@ Y
+[SENSe:]CURRent:DC:APERture @@ [SENSe:]CURRent:DC:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:APERture? 
+[(@<ch_list>)] @@ 0.0004~3.33秒|MIN|MAX|DEF @@ 設定或查詢 DC 電流 A/D 
+積分孔徑時間 @@ 133 @@ RW @@ Y
+[SENSe:]CURRent:AC:RANGe @@ [SENSe:]CURRent:AC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:AC:RANGe? 
+[(@<ch_list>)] @@ 10mA|100mA|1A|AUTO|MIN|MAX|DEF @@ 設定或查詢 AC 電流量測範圍 
+@@ 145 @@ RW @@ Y
+[SENSe:]CURRent:AC:RANGe:AUTO @@ [SENSe:]CURRent:AC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]CURRent:AC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 啟用或停用 AC 電流自動換檔 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:AC:BANDwidth @@[SENSe:]FUNCtion @@ [SENSe:]FUNCtion 
+"<func>"[,(@<ch_list>)] | [SENSe:]FUNCtion? [(@<ch_list>)] @@ 
+"VOLT:DC"|"VOLT:AC"|"CURR:DC"|"CURR:AC"|"RES"|"FRES"|"TEMP"|"FREQ"|"PER"|"DIOD"
+|"CONT" @@ 設定或查詢指定通道的量測功能種類 @@ 129 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RANGe @@ [SENSe:]VOLTage:DC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:RANGe? 
+[(@<ch_list>)] @@ 100mV|1V|10V|100V|300V|AUTO @@ 設定或查詢直流電壓檔位範圍 @@ 
+142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RANGe:AUTO @@ [SENSe:]VOLTage:DC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 開啟或關閉直流電壓自動選擇檔位 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RESolution @@ [SENSe:]VOLTage:DC:RESolution 
+{<res>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:RESolution? 
+[(@<ch_list>)] @@ 4.5至6.5位電壓解析度 @@ 設定或查詢直流電壓量測解析度 @@ 142 
+@@ RW @@ Y
+[SENSe:]VOLTage:DC:NPLC @@ [SENSe:]VOLTage:DC:NPLC 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:NPLC? [(@<ch_list>)] 
+@@ 0.02|0.2|1|2|10|20|100|200 @@ 設定或查詢直流電壓 A/D 
+轉換器之電源線週期積分時間 @@ 133 @@ RW @@ Y
+[SENSe:]VOLTage:DC:APERture @@ [SENSe:]VOLTage:DC:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:DC:APERture? 
+[(@<ch_list>)] @@ 400µs至3.33s @@ 設定或查詢直流電壓 A/D 轉換器之孔徑秒數 @@ 
+133 @@ RW @@ Y
+[SENSe:]VOLTage:AC:RANGe @@ [SENSe:]VOLTage:AC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:AC:RANGe? 
+[(@<ch_list>)] @@ 100mV|1V|10V|100V|300V|AUTO @@ 設定或查詢交流電壓檔位範圍 @@ 
+142 @@ RW @@ Y
+[SENSe:]VOLTage:AC:RANGe:AUTO @@ [SENSe:]VOLTage:AC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]VOLTage:AC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 開啟或關閉交流電壓自動選擇檔位 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:AC:BANDwidth @@ [SENSe:]VOLTage:AC:BANDwidth 
+{3|20|200|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]VOLTage:AC:BANDwidth? 
+[(@<ch_list>)] @@ 3Hz|20Hz|200Hz @@ 設定或查詢交流電壓量測之低頻濾波器頻率 @@ 
+143 @@ RW @@ Y
+[SENSe:]CURRent:DC:RANGe @@ [SENSe:]CURRent:DC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:RANGe? 
+[(@<ch_list>)] @@ 10mA|100mA|1A|AUTO @@ 設定或查詢直流電流量測範圍 @@ 145 @@ RW
+@@ Y
+[SENSe:]CURRent:DC:RANGe:AUTO @@ [SENSe:]CURRent:DC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]CURRent:DC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 開啟或關閉直流電流自動選擇檔位 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:RESolution @@ [SENSe:]CURRent:DC:RESolution 
+{<res>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:RESolution? 
+[(@<ch_list>)] @@ 4.5至6.5位電流解析度 @@ 設定或查詢直流電流量測解析度 @@ 145 
+@@ RW @@ Y
+[SENSe:]CURRent:DC:NPLC @@ [SENSe:]CURRent:DC:NPLC 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:NPLC? [(@<ch_list>)] 
+@@ 0.02|0.2|1|2|10|20|100|200 @@ 設定或查詢直流電流 A/D 
+轉換器之電源線週期積分時間 @@ 133 @@ RW @@ Y
+[SENSe:]CURRent:DC:APERture @@ [SENSe:]CURRent:DC:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:DC:APERture? 
+[(@<ch_list>)] @@ 400µs至3.33s @@ 設定或查詢直流電流 A/D 轉換器之孔徑秒數 @@ 
+133 @@ RW @@ Y
+[SENSe:]CURRent:AC:RANGe @@ [SENSe:]CURRent:AC:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:AC:RANGe? 
+[(@<ch_list>)] @@ 10mA|100mA|1A|AUTO @@ 設定或查詢交流電流量測範圍 @@ 145 @@ RW
+@@ Y
+[SENSe:]CURRent:AC:RANGe:AUTO @@ [SENSe:]CURRent:AC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]CURRent:AC:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 開啟或關閉交流電流自動選擇檔位 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:AC:BANDwidth @@ [SENSe:]CURRent:AC:BANDwidth 
+{3|20|200|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]CURRent:AC:BANDwidth? 
+[(@<ch_list>)] @@ 3Hz|20Hz|200Hz @@ 設定或查詢交流電流量測之低頻濾波器頻率 @@ 
+143 @@ RW @@ Y
+[SENSe:]RESistance:RANGe @@ [SENSe:]RESistance:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]RESistance:RANGe? 
+[(@<ch_list>)] @@ 100Ω~100MΩ|AUTO @@ 設定或查詢二線式電阻量測範圍 @@ 144 @@ RW 
+@@ Y
+[SENSe:]RESistance:RANGe:AUTO @@ [SENSe:]RESistance:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]RESistance:RANGe:AUTO? [(@<ch_list>)] @@ 
+OFF|ON|0|1 @@ 開啟或關閉二線式電阻自動換檔 @@ 144 @@ RW @@ Y
+[SENSe:]RESistance:RESolution @@ [SENSe:]RESistance:RESolution 
+{<res>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]RESistance:RESolution? 
+[(@<ch_list>)] @@ 4.5至6.5位電阻解析度 @@ 設定或查詢二線式電阻量測解析度 @@ 144
+@@ RW @@ Y
+[SENSe:]RESistance:NPLC @@ [SENSe:]RESistance:NPLC 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]RESistance:NPLC? [(@<ch_list>)] 
+@@ 0.02|0.2|1|2|10|20|100|200 @@ 設定或查詢二線式電阻 A/D 積分時間 @@ 133 @@ RW
+@@ Y
+[SENSe:]RESistance:APERture @@ [SENSe:]RESistance:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]RESistance:APERture? 
+[(@<ch_list>)] @@ 400µs至3.33s @@ 設定或查詢二線式電阻 A/D 孔徑時間 @@ 133 @@ 
+RW @@ Y
+[SENSe:]RESistance:OCOMpensated @@ [SENSe:]RESistance:OCOMpensated 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]RESistance:OCOMpensated? [(@<ch_list>)] 
+@@ OFF|ON|0|1 @@ 啟用或停用二線式電阻熱電勢偏移補償 @@ 144 @@ RW @@ Y
+[SENSe:]FRESistance:RANGe @@ [SENSe:]FRESistance:RANGe 
+{<range>|AUTO|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]FRESistance:RANGe? 
+[(@<ch_list>)] @@ 100Ω~100MΩ|AUTO @@ 設定或查詢四線式電阻量測範圍 @@ 144 @@ RW 
+@@ Y
+[SENSe:]FRESistance:RANGe:AUTO @@ [SENSe:]FRESistance:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]FRESistance:RANGe:AUTO? [(@<ch_list>)] @@
+OFF|ON|0|1 @@ 開啟或關閉四線式電阻自動換檔 @@ 144 @@ RW @@ Y
+[SENSe:]FRESistance:RESolution @@ [SENSe:]FRESistance:RESolution 
+{<res>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]FRESistance:RESolution? 
+[(@<ch_list>)] @@ 4.5至6.5位電阻解析度 @@ 設定或查詢四線式電阻量測解析度 @@ 144
+@@ RW @@ Y
+[SENSe:]FRESistance:NPLC @@ [SENSe:]FRESistance:NPLC 
+{<PLCs>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]FRESistance:NPLC? [(@<ch_list>)] 
+@@ 0.02|0.2|1|2|10|20|100|200 @@ 設定或查詢四線式電阻 A/D 積分時間 @@ 133 @@ RW
+@@ Y
+[SENSe:]FRESistance:APERture @@ [SENSe:]FRESistance:APERture 
+{<seconds>|MIN|MAX|DEF}[,(@<ch_list>)] | [SENSe:]FRESistance:APERture? 
+[(@<ch_list>)] @@ 400µs至3.33s @@ 設定或查詢四線式電阻 A/D 孔徑時間 @@ 133 @@ 
+RW @@ Y
+[SENSe:]FRESistance:OCOMpensated @@ [SENSe:]FRESistance:OCOMpensated 
+{OFF|ON|0|1}[,(@<ch_list>)] | [SENSe:]FRESistance:OCOMpensated? [(@<ch_list>)] 
+@@ OFF|ON|0|1 @@ 啟用或停用四線式電阻熱電勢偏移補償 @@ 144 @@ RW @@ Y
+[SENSe:]TEMPerature:TRANsducer:TCouple:TYPE @@ 
+[SENSe:]TEMPerature:TRANsducer:TCouple:TYPE {B|E|J|K|N|R|S|T}[,(@<ch_list>)] | 
+[SENSe:][SENSe:]FUNCtion @@ [SENSe:]FUNCtion "<func>"[,(@<ch_list>)] | ? @@ 
+"VOLT:DC"|"VOLT:AC"|"CURR:DC"|"CURR:AC"|"RES"|"FRES"|"TEMP"|"FREQ"|"PER"|"DIOD"
+|"CONT" @@ 設定或查詢指定通道的量測功能種類 @@ 129 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RANGe @@ [SENSe:]VOLTage:DC:RANGe 
+{<range>|AUTO|MIN|MAX}[,(@<ch_list>)] | ? @@ 100mV|1V|10V|100V|300V|AUTO @@ 
+設定或查詢直流電壓檔位範圍 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RANGe:AUTO @@ [SENSe:]VOLTage:DC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | ? @@ OFF|ON|0|1 @@ 設定或查詢直流電壓自動換檔狀態
+@@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:RESolution @@ [SENSe:]VOLTage:DC:RESolution 
+{<res>|MIN|MAX}[,(@<ch_list>)] | ? @@ 4.5至6.5位電壓解析度 @@ 
+設定或查詢直流電壓量測解析度 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:DC:NPLC @@ [SENSe:]VOLTage:DC:NPLC 
+{<PLCs>|MIN|MAX}[,(@<ch_list>)] | ? @@ 0.02|0.2|1|2|10|20|100|200 @@ 
+設定或查詢直流電壓 A/D 轉換電源週期積分時間 @@ 133 @@ RW @@ Y
+[SENSe:]VOLTage:DC:APERture @@ [SENSe:]VOLTage:DC:APERture 
+{<sec>|MIN|MAX}[,(@<ch_list>)] | ? @@ 400µs~3.33s @@ 設定或查詢直流電壓 A/D 
+轉換孔徑秒數 @@ 133 @@ RW @@ Y
+[SENSe:]VOLTage:AC:RANGe @@ [SENSe:]VOLTage:AC:RANGe 
+{<range>|AUTO|MIN|MAX}[,(@<ch_list>)] | ? @@ 100mV|1V|10V|100V|300V|AUTO @@ 
+設定或查詢交流電壓檔位範圍 @@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:AC:RANGe:AUTO @@ [SENSe:]VOLTage:AC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | ? @@ OFF|ON|0|1 @@ 設定或查詢交流電壓自動換檔狀態
+@@ 142 @@ RW @@ Y
+[SENSe:]VOLTage:AC:BANDwidth @@ [SENSe:]VOLTage:AC:BANDwidth 
+{3|20|200|MIN|MAX}[,(@<ch_list>)] | ? @@ 3Hz|20Hz|200Hz @@ 
+設定或查詢交流電壓低頻濾波器頻率 @@ 143 @@ RW @@ Y
+[SENSe:]CURRent:DC:RANGe @@ [SENSe:]CURRent:DC:RANGe 
+{<range>|AUTO|MIN|MAX}[,(@<ch_list>)] | ? @@ 10mA|100mA|1A|AUTO @@ 
+設定或查詢直流電流量測範圍 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:RANGe:AUTO @@ [SENSe:]CURRent:DC:RANGe:AUTO 
+{OFF|ON|0|1}[,(@<ch_list>)] | ? @@ OFF|ON|0|1 @@ 設定或查詢直流電流自動換檔狀態
+@@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:RESolution @@ [SENSe:]CURRent:DC:RESolution 
+{<res>|MIN|MAX}[,(@<ch_list>)] | ? @@ 4.5至6.5位電流解析度 @@ 
+設定或查詢直流電流量測解析度 @@ 145 @@ RW @@ Y
+[SENSe:]CURRent:DC:NPLC @@ [SENSe:]CURRent:DC:NPLC 
+{<PLCs>|MIN|MAX}[,(@<ch_list>)] | ? @@ 0.02|0.2|1|2|10|20|100|200 @@ 
+設定或查詢直流電流 A/D 轉換電源週期積分時間 @@ 133 @@ RW @@ Y
+[SENSe:]CURRent:DC:APERture @@ [SENSe:]CURRent:DC:APERture 
+{<sec>|MIN|MAX}[,(@<ch_list>)] | ? @@ 400µs~3.33s @@ 設定或查詢直流電流 A/D 
+轉換
+
+Resumed conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e

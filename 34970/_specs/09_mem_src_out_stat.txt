@@ -1,0 +1,74 @@
+Answer:
+MEMory:STATe:NAME @@ MEMory:STATe:NAME {1|2|3|4|5},"<name>" | 
+MEMory:STATe:NAME? {1|2|3|4|5} @@ 1~5, 最多12字元名稱 @@ 
+設定或查詢指定儲存位置的狀態名稱 @@ 170 @@ RW @@ N
+MEMory:STATe:RECall:AUTO @@ MEMory:STATe:RECall:AUTO {OFF|ON|0|1} | 
+MEMory:STATe:RECall:AUTO? @@ OFF|ON|0|1 @@ 
+設定或查詢開機時是否自動復原電源中斷前的儀器狀態 @@ 170 @@ RW @@ N
+MMEMory:LOG[:ENABle] @@ MMEMory:LOG[:ENABle] {OFF|ON|0|1} | 
+MMEMory:LOG[:ENABle]? @@ OFF|ON|0|1 @@ 啟用或停用自動將掃描讀值紀錄寫入 USB 
+隨身碟 @@ 183 @@ RW @@ N
+MMEMory:EXPort? @@ MMEMory:EXPort? @@ 無 @@ 將記憶體中的讀值資料匯出並寫入 USB 
+隨身碟檔案 @@ 183 @@ R @@ N
+MMEMory:IMPort:CONFiguration? @@ MMEMory:IMPort:CONFiguration? "<file_name>" @@
+"<file_name>" (BLCFG檔) @@ 從 USB 隨身碟匯入 BenchLink 設定檔至儀器 @@ 183 @@ R
+@@ N
+MMEMory:IMPort:CATalog? @@ MMEMory:IMPort:CATalog? @@ 無 @@ 查詢 USB 
+隨身碟根目錄中可匯入的設定檔案清單 @@ 183 @@ R @@ N
+MMEMory:FORMat:READing:CSEParator @@ MMEMory:FORMat:READing:CSEParator 
+{COMMa|SEMicolon|TAB} | MMEMory:FORMat:READing:CSEParator? @@ 
+COMMa|SEMicolon|TAB @@ 設定或查詢 USB 匯出檔案中的欄位分隔符號 @@ 183 @@ RW @@ 
+N
+MMEMory:FORMat:READing:RLIMit @@ MMEMory:FORMat:READing:RLIMit {OFF|ON|0|1} | 
+MMEMory:FORMat:READing:RLIMit? @@ OFF|ON|0|1 @@ 設定或查詢 USB 
+匯出檔案是否限制每檔 65535 列 @@ 183 @@ RW @@ N
+MMEMory:STORe:STATe @@ MMEMory:STORe:STATe "<file_name>"[,{1|2|3|4|5}] @@ 
+"<file_name>", 1~5(選填) @@ 將儀器狀態設定儲存至 USB 隨身碟檔案中 @@ 183 @@ W 
+@@ N
+MMEMory:LOAD:STATe @@ MMEMory:LOAD:STATe "<file_name>" @@ "<file_name>" @@ 從 
+USB 隨身碟檔案載入並復原儀器狀態設定 @@ 183 @@ W @@ N
+SOURce:DIGital:DATA[:BYTE] @@ SOURce:DIGital:DATA[:BYTE] <data>[,(@<ch_list>)] 
+| SOURce:DIGital:DATA[:BYTE]? [(@<ch_list>)] @@ 0~255 @@ 寫入或查詢指定 34907A 
+數位輸出埠的 8 位元數據 @@ 167 @@ RW @@ Y
+SOURce:DIGital:DATA:WORD @@ SOURce:DIGital:DATA:WORD <data>[,(@<ch_list>)] | 
+SOURce:DIGital:DATA:WORD? [(@<ch_list>)] @@ 0~65535 @@ 寫入或查詢 34907A 
+兩個數位輸出埠組成的 16 位元數據 @@ 167 @@ RW @@ Y
+SOURce:VOLTage @@ SOURce:VOLTage {<voltage>|MIN|MAX}[,(@<ch_list>)] | 
+SOURce:VOLTage? [(@<ch_list>)] @@ -12V~+12V|MIN|MAX @@ 設定或查詢 34907A 
+類比輸出 DAC 通道之輸出電壓 @@ 169 @@ RW @@ Y
+OUTPut:ALARm<n>:SOURce @@ OUTPut:ALARm<n>:SOURce (@<ch_list>) | 
+OUTPut:ALARm<n>:SOURce? @@ <n>: 1|2|3|4, (@<ch_list>) @@ 指定硬體警報輸出腳位 n
+所綁定的通道清單 @@ 153 @@ RW @@ Y
+OUTPut:ALARm:MODE @@ OUTPut:ALARm:MODE {LATCh|TRACk} | OUTPut:ALARm:MODE? @@ 
+LATCh|TRACk @@ 設定或查詢所有警報輸出腳位的作用模式 @@ 150 @@ RW @@ N
+OUTPut:ALARm:SLOPe @@ OUTPut:ALARm:SLOPe {NEGative|POSitive} | 
+OUTPut:ALARm:SLOPe? @@ NEGative|POSitive @@ 
+設定或查詢所有警報輸出腳位的觸發電位邊緣極性 @@ 150 @@ RW @@ N
+OUTPut:ALARm<n>:CLEar @@ OUTPut:ALARm<n>:CLEar @@ <n>: 1|2|3|4 (選填) @@ 
+清除指定或全部硬體警報輸出腳位的觸發狀態 @@ 150 @@ W @@ N
+OUTPut:ALARm:CLEar:ALL @@ OUTPut:ALARm:CLEar:ALL @@ 無 @@ 強制清除所有 4 
+條硬體警報輸出腳位狀態 @@ 150 @@ W @@ N
+STATus:OPERation:CONDition? @@ STATus:OPERation:CONDition? @@ 無 @@ 
+查詢操作狀態暫存器當前的即時條件值 @@ 292 @@ R @@ N
+STATus:OPERation:EVENt? @@ STATus:OPERation:EVENt? @@ 無 @@ 
+查詢並清除操作狀態暫存器的事件暫存器數值 @@ 292 @@ R @@ N
+STATus:OPERation:ENABle @@ STATus:OPERation:ENABle <value> | 
+STATus:OPERation:ENABle? @@ 0~32767 @@ 設定或查詢操作狀態致能暫存器的遮罩值 @@ 
+292 @@ RW @@ N
+STATus:QUEStionable:CONDition? @@ STATus:QUEStionable:CONDition? @@ 無 @@ 
+查詢可疑狀態暫存器的即時條件值 @@ 292 @@ R @@ N
+STATus:QUEStionable:EVENt? @@ STATus:QUEStionable:EVENt? @@ 無 @@ 
+查詢並清除可疑狀態暫存器的事件暫存器數值 @@ 292 @@ R @@ N
+STATus:QUEStionable:ENABle @@ STATus:QUEStionable:ENABle <value> | 
+STATus:QUEStionable:ENABle? @@ 0~32767 @@ 設定或查詢可疑狀態致能暫存器的遮罩值 
+@@ 292 @@ RW @@ N
+STATus:ALARm:CONDition? @@ STATus:ALARm:CONDition? @@ 無 @@ 
+查詢警報狀態暫存器當前的即時條件值 @@ 292 @@ R @@ N
+STATus:ALARm:EVENt? @@ STATus:ALARm:EVENt? @@ 無 @@ 
+查詢並清除警報狀態暫存器的事件暫存器數值 @@ 292 @@ R @@ N
+STATus:ALARm:ENABle @@ STATus:ALARm:ENABle <value> | STATus:ALARm:ENABle? @@ 
+0~32767 @@ 設定或查詢警報狀態致能暫存器的遮罩值 @@ 292 @@ RW @@ N
+STATus:PRESet @@ STATus:PRESet @@ 無 @@ 
+將所有狀態暫存器的致能位元重置為預設狀態 @@ 292 @@ W @@ N
+
+Conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e (turn 10)

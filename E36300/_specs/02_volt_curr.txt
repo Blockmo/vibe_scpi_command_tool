@@ -1,0 +1,69 @@
+Answer:
+[SOURce:]VOLTage[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]VOLTage[:LEVel][:IMM
+ediate][:AMPLitude] {<voltage>|MIN|MAX|DEF}, (@<ch_list>) / 
+[SOURce:]VOLTage[:LEVel][:IMMediate][:AMPLitude]? [MIN|MAX|DEF,] 
+(@<ch_list>)@@0~6.18V(Ch1), 0~25.75V(Ch2/3), MIN, MAX, 
+DEF@@設定或查詢指定通道之電壓輸出目標值@@57@@RW@@Y
+[SOURce:]VOLTage:TRIGgered[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]VOLTage:TR
+IGgered[:LEVel][:IMMediate][:AMPLitude] {<voltage>|MIN|MAX|DEF}, (@<ch_list>) /
+[SOURce:]VOLTage:TRIGgered[:LEVel][:IMMediate][:AMPLitude]? [MIN|MAX|DEF,] 
+(@<ch_list>)@@0~6.18V(Ch1), 0~25.75V(Ch2/3), MIN, MAX, 
+DEF@@設定或查詢觸發發生時指定通道輸出的觸發電壓值@@64@@RW@@Y
+[SOURce:]VOLTage:RANGe@@[SOURce:]VOLTage:RANGe {<range>|MIN|MAX|DEF}, 
+(@<ch_list>) / [SOURce:]VOLTage:RANGe? [MIN|MAX|DEF,] (@<ch_list>)@@P6V, P25V, 
+N25V, MIN, MAX, DEF@@設定或查詢指定通道之電壓輸出檔位範圍@@37@@RW@@Y
+[SOURce:]VOLTage:PROTection[:LEVel]@@[SOURce:]VOLTage:PROTection[:LEVel] 
+{<voltage>|MIN|MAX|DEF}, (@<ch_list>) / [SOURce:]VOLTage:PROTection[:LEVel]? 
+[MIN|MAX|DEF,] (@<ch_list>)@@電壓值(V), MIN, MAX, 
+DEF@@設定或查詢指定通道之過電壓保護(OVP)觸發門檻值@@45@@RW@@Y
+[SOURce:]VOLTage:PROTection:STATe@@[SOURce:]VOLTage:PROTection:STATe 
+{0|1|OFF|ON}, (@<ch_list>) / [SOURce:]VOLTage:PROTection:STATe? 
+(@<ch_list>)@@0, 1, OFF, 
+ON@@設定或查詢指定通道之過電壓保護(OVP)致能狀態@@60@@RW@@Y
+[SOURce:]VOLTage:PROTection:TRIPped?@@[SOURce:]VOLTage:PROTection:TRIPped? 
+(@<ch_list>)@@無@@查詢指定通道之過電壓保護(OVP)是否已跳脫@@60@@R@@Y
+[SOURce:]VOLTage:PROTection:CLEar@@[SOURce:]VOLTage:PROTection:CLEar 
+(@<ch_list>)@@無@@清除指定通道已跳脫之過電壓保護(OVP)狀態@@45@@W@@Y
+[SOURce:]VOLTage:SENSe:SOURce@@[SOURce:]VOLTage:SENSe:SOURce 
+{INTernal|EXTernal}, (@<ch_list>) / [SOURce:]VOLTage:SENSe:SOURce? 
+(@<ch_list>)@@INTernal, EXTernal 
+(2wire/4wire)@@設定或查詢指定通道之電壓感測模式(2線內部/4線遠端)@@47@@RW@@Y
+[SOURce:]VOLTage:MODE@@[SOURce:]VOLTage:MODE {FIXed|STEP|LIST}, (@<ch_list>) / 
+[SOURce:]VOLTage:MODE? (@<ch_list>)@@FIXed, STEP, 
+LIST@@設定或查詢指定通道電壓輸出之瞬態與序列模式@@66@@RW@@Y
+[SOURce:]CURRent[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]CURRent[:LEVel][:IMM
+ediate][:AMPLitude] {<current>|MIN|MAX|DEF}, (@<ch_list>) / 
+[SOURce:]CURRent[:LEVel][:IMMediate][:AMPLitude]? [MIN|MAX|DEF,] 
+(@<ch_list>)@@0.001~5.15A/10.3A(Ch1), 
+0.001~1.03A/2.06A(Ch2/3)@@設定或查詢指定通道之電流極限目標值@@57@@RW@@Y
+[SOURce:]CURRent:TRIGgered[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]CURRent:TR
+IGgered[:LEVel][:IMMediate][:AMPLitude] {<current>|MIN|MAX|DEF}, (@<ch_list>) /
+[SOURce:]CURRent:TRIGgered[:LEVel][:IMMediate][:AMPLitude]? [MIN|MAX|DEF,] 
+(@<ch_list>)@@電流值(A), MIN, MAX, 
+DEF@@設定或查詢觸發發生時指定通道輸出的觸發電流值@@64@@RW@@Y
+[SOURce:]CURRent:RANGe@@[SOURce:]CURRent:RANGe {<range>|MIN|MAX|DEF}, 
+(@<ch_list>) / [SOURce:]CURRent:RANGe? [MIN|MAX|DEF,] 
+(@<ch_list>)@@電流範圍(A), MIN, MAX, 
+DEF@@設定或查詢指定通道之電流輸出檔位範圍@@37@@RW@@Y
+[SOURce:]CURRent:PROTection:STATe@@[SOURce:]CURRent:PROTection:STATe 
+{0|1|OFF|ON}, (@<ch_list>) / [SOURce:]CURRent:PROTection:STATe? 
+(@<ch_list>)@@0, 1, OFF, 
+ON@@設定或查詢指定通道之過電流保護(OCP)致能狀態@@45@@RW@@Y
+[SOURce:]CURRent:PROTection:DELay[:TIME]@@[SOURce:]CURRent:PROTection:DELay[:TI
+ME] {<seconds>|MIN|MAX|DEF}, (@<ch_list>) / 
+[SOURce:]CURRent:PROTection:DELay[:TIME]? [MIN|MAX|DEF,] 
+(@<ch_list>)@@0~3600秒, MIN, MAX, 
+DEF@@設定或查詢指定通道過電流保護(OCP)之延遲時間@@45@@RW@@Y
+[SOURce:]CURRent:PROTection:DELay:STARt@@[SOURce:]CURRent:PROTection:DELay:STAR
+t {CCTRansition|SCHange}, (@<ch_list>) / 
+[SOURce:]CURRent:PROTection:DELay:STARt? (@<ch_list>)@@CCTRansition, 
+SCHange@@設定或查詢指定通道 OCP 延遲計時器之起始條件@@45@@RW@@Y
+[SOURce:]CURRent:PROTection:TRIPped?@@[SOURce:]CURRent:PROTection:TRIPped? 
+(@<ch_list>)@@無@@查詢指定通道之過電流保護(OCP)是否已跳脫@@60@@R@@Y
+[SOURce:]CURRent:PROTection:CLEar@@[SOURce:]CURRent:PROTection:CLEar 
+(@<ch_list>)@@無@@清除指定通道已跳脫之過電流保護(OCP)狀態@@45@@W@@Y
+[SOURce:]CURRent:MODE@@[SOURce:]CURRent:MODE {FIXed|STEP|LIST}, (@<ch_list>) / 
+[SOURce:]CURRent:MODE? (@<ch_list>)@@FIXed, STEP, 
+LIST@@設定或查詢指定通道電流輸出之瞬態與序列模式@@66@@RW@@Y
+
+Conversation: 8df3aee9-a6cc-4871-ab85-2ecc391a71e3 (turn 3)

@@ -1,0 +1,119 @@
+Continuing conversation 6e310b33...
+Answer:
+MEASure[:VOLTage]:DC? @@ MEASure[:VOLTage]:DC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100mV|1V|10V|100V|300V|AUTO, <resolution>: 積分時間/解析度 @@ 
+配置直流電壓測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure[:VOLTage]:AC? @@ MEASure[:VOLTage]:AC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100mV|1V|10V|100V|300V|AUTO, <resolution>: 固定6½位 @@ 
+配置交流電壓測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:CURRent:DC? @@ MEASure:CURRent:DC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+1μA|10μA|100μA|1mA|10mA|100mA|1A|AUTO, <resolution>: 積分時間 @@ 
+配置直流電流測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:CURRent:AC? @@ MEASure:CURRent:AC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100μA|1mA|10mA|100mA|1A|AUTO, <resolution>: 固定6½位 @@ 
+配置交流電流測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:RESistance? @@ MEASure:RESistance? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100Ω|1kΩ|10kΩ|100kΩ|1MΩ|10MΩ|100MΩ|1GΩ|AUTO @@ 
+配置2線式電阻測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:FRESistance? @@ MEASure:FRESistance? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100Ω|1kΩ|10kΩ|100kΩ|1MΩ|10MΩ|100MΩ|1GΩ|AUTO @@ 
+配置4線式電阻測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:TEMPerature? @@ MEASure:TEMPerature:<probe_type>? [{<type>|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <probe_type>: 
+TCouple|RTD|FRTD|THERmistor|FTHermistor @@ 配置溫度測量並立即進行掃描且傳回結果
+@@ 163 @@ R @@ Y
+MEASure:FREQuency? @@ MEASure:FREQuency? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3Hz至300kHz|AUTO, 
+<resolution>: 閘門時間/解析度 @@ 配置頻率測量並立即進行掃描且傳回結果 @@ 163 @@
+R @@ Y
+MEASure:PERiod? @@ MEASure:PERiod? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3.33μs至333.33ms|AUTO, 
+<resolution>: 閘門時間/解析度 @@ 配置週期測量並立即進行掃描且傳回結果 @@ 163 @@
+R @@ Y
+MEASure:CAPacitance? @@ MEASure:CAPacitance? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+1nF|10nF|100MEASure[:VOLTage]:DC? @@ MEASure[:VOLTage]:DC? 
+[{<range>|AUTO|MIN|MAX|DEF}, [{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ 
+<range>: 100mV|1V|10V|100V|300V|AUTO, <resolution>: 積分時間/解析度 @@ 
+配置直流電壓測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure[:VOLTage]:AC? @@ MEASure[:VOLTage]:AC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100mV|1V|10V|100V|300V|AUTO, <resolution>: 固定6½位 @@ 
+配置交流電壓測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:CURRent:DC? @@ MEASure:CURRent:DC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+1μA|10μA|100μA|1mA|10mA|100mA|1A|AUTO, <resolution>: 積分時間 @@ 
+配置直流電流測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:CURRent:AC? @@ MEASure:CURRent:AC? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100μA|1mA|10mA|100mA|1A|AUTO, <resolution>: 固定6½位 @@ 
+配置交流電流測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:RESistance? @@ MEASure:RESistance? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100Ω|1kΩ|10kΩ|100kΩ|1MΩ|10MΩ|100MΩ|1GΩ|AUTO @@ 
+配置2線式電阻測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:FRESistance? @@ MEASure:FRESistance? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+100Ω|1kΩ|10kΩ|100kΩ|1MΩ|10MΩ|100MΩ|1GΩ|AUTO @@ 
+配置4線式電阻測量並立即進行掃描且傳回結果 @@ 163 @@ R @@ Y
+MEASure:TEMPerature? @@ MEASure:TEMPerature:<probe_type>? [{<type>|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <probe_type>: 
+TCouple|RTD|FRTD|THERmistor|FTHermistor @@ 配置溫度測量並立即進行掃描且傳回結果
+@@ 163 @@ R @@ Y
+MEASure:FREQuency? @@ MEASure:FREQuency? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3Hz至300kHz|AUTO, 
+<resolution>: 閘門時間/解析度 @@ 配置頻率測量並立即進行掃描且傳回結果 @@ 163 @@
+R @@ Y
+MEASure:PERiod? @@ MEASure:PERiod? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 3.33μs至333.33ms|AUTO, 
+<resolution>: 閘門時間/解析度 @@ 配置週期測量並立即進行掃描且傳回結果 @@ 163 @@
+R @@ Y
+MEASure:CAPacitance? @@ MEASure:CAPacitance? [{<range>|AUTO|MIN|MAX|DEF}, 
+[{<resolution>|MIN|MAX|DEF},]] (@<ch_list>) @@ <range>: 
+1nF|10nF|100nF|1µFMEASure[:VOLTage]:DC? @@ MEASure[:VOLTage]:DC? 
+[<range>[,<res>]] (@<ch_list>) @@ range: 100mV/1V/10V/100V/300V/AUTO; res: 
+NPLC/resolution @@ 重置參數並配置直流電壓測量，立即觸發掃描傳回結果 @@ 163 @@ R
+@@ Y
+MEASure[:VOLTage]:AC? @@ MEASure[:VOLTage]:AC? [<range>[,<res>]] (@<ch_list>) 
+@@ range: 100mV/1V/10V/100V/300V/AUTO; res: 6.5位固定 @@ 
+重置參數並配置交流電壓測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:CURRent:DC? @@ MEASure:CURRent:DC? [<range>[,<res>]] (@<ch_list>) @@ 
+range: 1uA至1A共7檔/AUTO; res: NPLC積分時間 @@ 
+重置參數並配置直流電流測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:CURRent:AC? @@ MEASure:CURRent:AC? [<range>[,<res>]] (@<ch_list>) @@ 
+range: 100uA/1mA/10mA/100mA/1A/AUTO; res: 6.5位 @@ 
+重置參數並配置交流電流測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:RESistance? @@ MEASure:RESistance? [<range>[,<res>]] (@<ch_list>) @@ 
+range: 100Ω至1GΩ共7檔/AUTO; res: 積分時間 @@ 
+重置參數並配置2線電阻測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:FRESistance? @@ MEASure:FRESistance? [<range>[,<res>]] (@<ch_list>) @@ 
+range: 100Ω至1GΩ共7檔/AUTO; res: 積分時間 @@ 
+重置參數並配置4線電阻測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:TEMPerature? @@ MEASure:TEMPerature:<probe>? [<type>[,<res>]] 
+(@<ch_list>) @@ probe: TCouple/RTD/FRTD/THER/FTH; type: 探頭型號 @@ 
+重置參數並配置溫度測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:FREQuency? @@ MEASure:FREQuency? [<range>[,<res>]] (@<ch_list>) @@ 
+range: 3Hz-300kHz/AUTO; res: 閘門時間 @@ 
+重置參數並配置頻率測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:PERiod? @@ MEASure:PERiod? [<range>[,<res>]] (@<ch_list>) @@ range: 
+3.33us-333ms/AUTO; res: 閘門時間 @@ 
+重置參數並配置週期測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:CAPacitance? @@ MEASure:CAPacitance? [<range>[,<res>]] (@<ch_list>) @@ 
+range: 1nF/10nF/100nF/1uF/10uF/100uF/AUTO @@ 
+重置參數並配置電容測量，立即觸發掃描傳回結果 @@ 163 @@ R @@ Y
+MEASure:DIODe? @@ MEASure:DIODe? (@<ch_list>) @@ 勵磁: 1mA測試電流, 固定1V量程 
+@@ 重置參數並配置二極體測試，立即觸發掃描傳回壓降 @@ 163 @@ R @@ Y
+MEASure:DIGital[:BYTE]? @@ MEASure:DIGital[:BYTE]? (@<ch_list>) @@ 適用: 
+DAQM907A數位輸入通道01/02 @@ 配置數位通道為位元組輸入，立即掃描讀取8位元數值 @@
+163 @@ R @@ Y
+MEASure:TOTalize? @@ MEASure:TOTalize? {READ|RRESet}, (@<ch_list>) @@ mode: 
+READ(保持計數) 或 RRESet(讀取後重置清零) @@ 
+配置累加器通道，立即掃描讀取脈衝計數數值 @@ 163 @@ R @@ Y
+
+Resumed conversation: 6e310b33-6e38-4888-aa63-a00403826193

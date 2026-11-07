@@ -1,0 +1,70 @@
+Answer:
+ADVance:SINE:FREQuency @@ ADVance:SINE:FREQuency <NRf+> @@ 0.01Hz~20000.00Hz, 
+MIN, MAX @@ 設定正弦波拉載動態模式的頻率 @@ 5-25 @@ RW @@ N
+ADVance:SINE:IAC @@ ADVance:SINE:IAC <NRf+> @@ 交流電流值, MIN, MAX @@ 
+設定正弦波拉載動態模式的 AC 交流電流峰對峰值 @@ 5-25 @@ RW @@ N
+ADVance:SINE:IDC @@ ADVance:SINE:IDC <NRf+> @@ 直流電流值, MIN, MAX @@ 
+設定正弦波拉載動態模式的 DC 偏壓電流位準 @@ 5-26 @@ RW @@ N
+ADVance:OCP:ISTArt @@ ADVance:OCP:ISTArt <NRf+> @@ 起始電流值, MIN, MAX @@ 
+設定過電流保護 (OCP) 測試模式的起始電流位準 @@ 5-26 @@ RW @@ N
+ADVance:OCP:IEND @@ ADVance:OCP:IEND <NRf+> @@ 結束電流值, MIN, MAX @@ 
+設定過電流保護 (OCP) 測試模式的結束電流位準 @@ 5-27 @@ RW @@ N
+ADVance:OCP:STEP @@ ADVance:OCP:STEP <NRf+> @@ 1~1000, MIN, MAX @@ 
+設定過電流保護 (OCP) 測試模式的電流步進階數 @@ 5-27 @@ RW @@ N
+ADVance:OCP:DWELl @@ ADVance:OCP:DWELl <NRf+> @@ 10μs~1s, MIN, MAX @@ 
+設定過電流保護 (OCP) 測試模式各步進點的停留時間 @@ 5-28 @@ RW @@ N
+ADVance:OCP:SPECification:H @@ ADVance:OCP:SPECification:H <NRf+> @@ 
+電流上限值, MIN, MAX @@ 設定過電流保護 (OCP) 測試判定規格之電流上限位準 @@ 5-28
+@@ RW @@ N
+ADVance:OCP:SPECification:L @@ ADVance:OCP:SPECification:L <NRf+> @@ 
+電流下限值, MIN, MAX @@ 設定過電流保護 (OCP) 測試判定規格之電流下限位準 @@ 5-29
+@@ RW @@ N
+ADVance:OCP:TRIGger:VOLTage @@ ADVance:OCP:TRIGger:VOLTage <NRf+> @@ 
+觸發電壓值, MIN, MAX @@ 設定過電流保護 (OCP) 測試停止拉載的判定觸發電壓 @@ 5-29
+@@ RW @@ N
+ADVance:OCP:RESult? @@ ADVance:OCP:RESult? @@ 無 @@ 查詢過電流保護 (OCP) 
+測試結果 @@ 5-30 @@ R @@ N
+ADVance:OCP:LATCh @@ ADVance:OCP:LATCh <state> @@ OFF(0), ON(1) @@ 
+設定過電流保護 (OCP) 測試結束後是否鎖存負載狀態 @@ 5-30 @@ RW @@ N
+ADVance:TIMing:MODE @@ ADVance:TIMing:MODE <mode> @@ CC(0), CR(1), CP(2) @@ 
+設定時間量測 (Timing) 模式的運作主模式 @@ 5-31 @@ RW @@ N
+ADVance:TIMing:VALue @@ ADVance:TIMing:VALue <NRf+> @@ 負載設定值, MIN, MAX @@ 
+依時間量測運作主模式設定對應的拉載數值 @@ 5-31 @@ RW @@ N
+ADVance:TIMing:RISE @@ ADVance:TIMing:RISE <NRf+> @@ 上升斜率, MIN, MAX @@ 
+設定時間量測模式下負載電流的上升斜率 @@ 5-32 @@ RW @@ N
+ADVance:TIMing:FALL @@ ADVance:TIMing:FALL <NRf+> @@ 下降斜率, MIN, MAX @@ 
+設定時間量測模式下負載電流的下降斜率 @@ 5-32 @@ RW @@ N
+ADVance:TIMing:TRIGger:MODE @@ ADVance:TIMing:TRIGger:MODE <mode> @@ FALL(0), 
+RISE(1), HOLDUP(2) @@ 設定時間量測模式的電壓觸發邊緣類型 @@ 5-33 @@ RW @@ N
+ADVance:TIMing:TRIGger:VSTArt @@ ADVance:TIMing:TRIGger:VSTArt <NRf+> @@ 
+起始電壓值, MIN, MAX @@ 設定時間量測觸發模式為 FALL/RISE 時的起始電壓 @@ 5-33 
+@@ RW @@ N
+ADVance:TIMing:TRIGger:VEND @@ ADVance:TIMing:TRIGger:VEND <NRf+> @@ 
+結束電壓值, MIN, MAX @@ 設定時間量測觸發模式為 FALL/RISE 時的結束電壓 @@ 5-34 
+@@ RW @@ N
+ADVance:TIMing:ENDVoltage @@ ADVance:TIMing:ENDVoltage <NRf+> @@ 截止電壓值, 
+MIN, MAX @@ 設定時間量測觸發模式為 HOLDUP 時的截止電壓位準 @@ 5-34 @@ RW @@ N
+ADVance:TIMing:TOUT @@ ADVance:TIMing:TOUT <NRf+> @@ 0s~100000s, MIN, MAX @@ 
+設定時間量測模式的逾時限制時間 @@ 5-35 @@ RW @@ N
+[ADVance:]USER:WAVeform:NSELect @@ [ADVance:]USER:WAVeform:NSELect <NRf+> @@ 
+1~10, MIN, MAX @@ 指定自訂波形 (UDW) 執行的目標波形編號 @@ 5-35 @@ RW @@ N
+[ADVance:]USER:WAVeform:DATA @@ [ADVance:]USER:WAVeform:DATA 
+<arg1>,<arg2>,<arg3>,<arg4>,<arg5> @@ arg1:1~10, arg2:0.00001s~20s, 
+arg3:0~100000, arg4:0~10, arg5:0|1 @@ 設定自訂波形 (UDW) 
+的時間間隔、重複次數、鏈結與插補參數 @@ 5-36 @@ RW @@ N
+[ADVance:]USER:WAVeform:DATA:POINt @@ [ADVance:]USER:WAVeform:DATA:POINt 
+<DLABRD> @@ 二進位數據區塊 @@ 以二進位格式下載自訂波形 (UDW) 的採樣點數資料 @@ 
+5-36 @@ RW @@ N
+[ADVance:]USER:WAVeform:DATA:STATus? @@ [ADVance:]USER:WAVeform:DATA:STATus? @@
+無 @@ 查詢自訂波形 (UDW) 資料下載過程的當前狀態 @@ 5-37 @@ R @@ N
+[ADVance:]USER:WAVeform:REMain? @@ [ADVance:]USER:WAVeform:REMain? [<NR1>] @@ 
+1~10 @@ 查詢自訂波形 (UDW) 剩餘可用的未分配記憶體點數 @@ 5-37 @@ R @@ N
+[ADVance:]USER:WAVeform:EXEcute:STATus? @@ 
+[ADVance:]USER:WAVeform:EXEcute:STATus? @@ 無 @@ 查詢自訂波形 (UDW) 
+波形當前的執行狀態 @@ 5-37 @@ R @@ N
+[ADVance:]USER:WAVeform:SAVe? @@ [ADVance:]USER:WAVeform:SAVe? @@ 無 @@ 
+儲存自訂波形 (UDW) 設定至記憶體中 @@ 5-37 @@ R @@ N
+[ADVance:]USER:WAVeform:CLEar? @@ [ADVance:]USER:WAVeform:CLEar? <NR1> @@ 1~10 
+@@ 清除指定編號的自訂波形 (UDW) 資料 @@ 5-37 @@ R @@ N
+
+Conversation: 5f147963-f342-4b96-b4e6-95abde1b314c (turn 7)

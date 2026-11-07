@@ -1,0 +1,46 @@
+Answer:
+SAMPle:COUNt @@ SAMPle:COUNt {<count>|MIN|MAX|DEF} / 
+SAMPle:COUNt?[{MIN|MAX|DEF}] @@ <count>: 1 至 50,331,648 @@ 
+設定或查詢每次觸發時單通道 DMM 數位化採集的採樣點數量 @@ 216 @@ RW @@ N
+SAMPle:COUNt:PRETrigger @@ SAMPle:COUNt:PRETrigger {<count>|MIN|MAX|DEF} / 
+SAMPle:COUNt:PRETrigger?[{MIN|MAX|DEF}] @@ <count>: 0 至 999,999 @@ 
+設定或查詢單通道 DMM 數位化採集時觸發前進行的預採樣點數量 @@ 216 @@ RW @@ N
+SAMPle:TIMer @@ SAMPle:TIMer {<seconds>|MIN|MAX|DEF} / 
+SAMPle:TIMer?[{MIN|MAX|DEF}] @@ <seconds>: 20μs 至 3600s @@ 設定或查詢單通道 
+DMM 數位化採集模式下的採樣時間間隔 @@ 216 @@ RW @@ N
+TRIGger:COUNt @@ TRIGger:COUNt {<count>|MIN|MAX|DEF|INFinity} / 
+TRIGger:COUNt?[{MIN|MAX|DEF}] @@ <count>: 1 至 1,000,000 或 INFinity @@ 
+設定或查詢返回空閒狀態前儀器所接收的觸發總次數 @@ 337 @@ RW @@ N
+TRIGger:DELay @@ TRIGger:DELay {<seconds>|MIN|MAX|DEF} / 
+TRIGger:DELay?[{MIN|MAX|DEF}] @@ <seconds>: 0s 至 3600s @@ 
+設定或查詢接收觸發訊號至開始第一次測量之間的延遲時間 @@ 337 @@ RW @@ N
+TRIGger:LEVel @@ TRIGger:LEVel {<level>|MIN|MAX|DEF} / 
+TRIGger:LEVel?[{MIN|MAX|DEF}] @@ <level>: 依功能與量程而定 (如 ±120% 量程) @@ 
+設定或查詢啟用電位觸發時觸發發生的訊號電位準位 @@ 337 @@ RW @@ N
+TRIGger:SLOPe @@ TRIGger:SLOPe {POSitive|NEGative} / TRIGger:SLOPe? @@ 
+{POSitive|NEGative} @@ 設定或查詢外部觸發或電位觸發的觸發邊緣極性 @@ 337 @@ RW 
+@@ N
+TRIGger:SOURce @@ TRIGger:SOURce 
+{IMMediate|EXTernal|INTernal|BUS|TIMer|ALARm[{1|2|3|4}]} / TRIGger:SOURce? @@ 
+{IMMediate|EXTernal|INTernal|BUS|TIMer|ALARm1|ALARm2|ALARm3|ALARm4} @@ 
+設定或查詢控制測量採集的觸發信號來源 @@ 337 @@ RW @@ N
+TRIGger:TIMer @@ TRIGger:TIMer {<seconds>|MIN|MAX|DEF} / 
+TRIGger:TIMer?[{MIN|MAX|DEF}] @@ <seconds>: 0s 至 360,000s @@ 
+設定或查詢定時器觸發源模式下兩次觸發掃描之間的間隔時間 @@ 337 @@ RW @@ N
+OUTPut:ALARm:CLEar:ALL @@ OUTPut:ALARm:CLEar:ALL @@ 無 @@ 
+清除所有四條警報輸出線的輸出狀態 @@ 198 @@ W @@ N
+OUTPut:ALARm{1|2|3|4}:CLEar @@ OUTPut:ALARm{1|2|3|4}:CLEar @@ {1|2|3|4} @@ 
+清除指定的警報輸出線狀態 @@ 198 @@ W @@ N
+OUTPut:ALARm[{1|2|3|4}]:SOURce @@ OUTPut:ALARm[{1|2|3|4}]:SOURce (@<ch_list>) /
+OUTPut:ALARm[{1|2|3|4}]:SOURce? @@ (@<ch_list>) @@ 
+將指定警報編號指定給特定多工器或數位通道以回報警報條件 @@ 198 @@ RW @@ Y
+OUTPut:ALARm:MODE @@ OUTPut:ALARm:MODE {LATCh|TRACk} / OUTPut:ALARm:MODE? @@ 
+{LATCh|TRACk} @@ 設定或查詢所有四條警報輸出線的輸出模式 @@ 198 @@ RW @@ N
+OUTPut:ALARm:SLOPe @@ OUTPut:ALARm:SLOPe {POSitive|NEGative} / 
+OUTPut:ALARm:SLOPe? @@ {POSitive|NEGative} @@ 
+設定或查詢所有四條警報輸出線觸發時的電位斜率 @@ 198 @@ RW @@ N
+OUTPut:TRIGger:SLOPe @@ OUTPut:TRIGger:SLOPe {POSitive|NEGative} / 
+OUTPut:TRIGger:SLOPe? @@ {POSitive|NEGative} @@ 
+設定或查詢後面板通道閉合輸出信號的電位斜率 @@ 198 @@ RW @@ N
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 6)

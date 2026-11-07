@@ -1,0 +1,28 @@
+Answer:
+PROGram:NSELect @@ PROGram:NSELect <NR1> @@ 1~10, MIN, MAX @@ 
+選擇或查詢要執行的自動測試程序編號 @@ 5-76 @@ RW @@ N
+PROGram:SAVe @@ PROGram:SAVe @@ 無 @@ 儲存當前設定的自動測試程序至記憶體 @@ 
+5-76 @@ W @@ N
+PROGram:STATe? @@ PROGram:STATe? @@ 無(傳回aard) @@ 
+查詢自動測試程序的執行狀態、程序編號與 Sequence 資訊 @@ 5-76 @@ R @@ N
+PROGram:SEQuence:CLEar @@ PROGram:SEQuence:CLEar <NR1> @@ 1~10 @@ 
+清除指定程序編號內的所有 Sequence 設定 @@ 5-77 @@ W @@ N
+PROGram:SEQuence:REMain? @@ PROGram:SEQuence:REMain? @@ 無(傳回NR1) @@ 
+查詢未分配且剩餘可用的 Sequence 總數量 @@ 5-77 @@ R @@ N
+PROGram:SEQuence:FAIL? @@ PROGram:SEQuence:FAIL? @@ 無(傳回aard) @@ 
+查詢自動測試程序執行後不符合規格判定 (Fail) 的 Sequence 清單 @@ 5-77 @@ R @@ N
+PROGram:SEQuence:SPECification? @@ PROGram:SEQuence:SPECification? 
+<arg1>,<arg2> @@ arg1:1~10, arg2:V(0)|I(1)|P(2) @@ 
+以二進位格式讀取指定程序的所有 Sequence 上下限規格資料 @@ 5-77 @@ R @@ N
+PROGram:DATA @@ PROGram:DATA <arg1>,<arg2>,<arg3>,<arg4>,<arg5> @@ arg1:1~10, 
+arg2:LIST(0)|STEP(1), arg3:0~10, arg4:0~9999, arg5:0~100 @@ 
+設定或查詢指定測試程序的類型、鏈結程序、重複次數與 Sequence 總數 @@ 5-72 @@ RW 
+@@ N
+PROGram:DATA:LIST @@ PROGram:DATA:LIST <arg1>,<arg2>,...,<arg16> @@ arg1:1~10, 
+arg2:1~N, arg3:0~3, arg4:0~3, arg5:0~2, arg6~16:數值/時間/規格 @@ 設定或查詢 
+LIST 型態自動測試程序的 Sequence 詳細參數與 P/F 規格 @@ 5-73 @@ RW @@ N
+PROGram:DATA:STEP @@ PROGram:DATA:STEP <arg1>,<arg2>,...,<arg16> @@ arg1:1~10, 
+arg2:0~3, arg3:0~3, arg4:0~2, arg5~16:起始/結束數值/時間/規格 @@ 設定或查詢 
+STEP 型態自動測試程序的步進參數與 P/F 規格 @@ 5-75 @@ RW @@ N
+
+Conversation: 5f147963-f342-4b96-b4e6-95abde1b314c (turn 10)

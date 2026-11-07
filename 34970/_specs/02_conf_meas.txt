@@ -1,0 +1,99 @@
+Answer:
+CONFigure? @@ CONFigure? [(@<ch_list>)] @@ (@<ch_list>)（選填） @@ 
+查詢指定通道或目前掃描清單通道的設定配置字串 @@ 105 @@ R @@ Y
+CONFigure:VOLTage:DC @@ CONFigure:VOLTage:DC 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100mV|1V|10V|100V|300V|AUTO; resolution: 4.5~6.5位 @@ 設定指定通道為 DC 
+電壓量測功能並加入掃描清單 @@ 142 @@ W @@ Y
+CONFigure:VOLTage:AC @@ CONFigure:VOLTage:AC 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100mV|1V|10V|100V|300V|AUTO; resolution: 固定6.5位 @@ 設定指定通道為 AC 
+電壓 True RMS 量測功能並加入掃描清單 @@ 142 @@ W @@ Y
+CONFigure:CURRent:DC @@ CONFigure:CURRent:DC 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 10mA|100mA|1A|AUTO; resolution: 4.5~6.5位 @@ 設定指定電流通道為 DC 
+電流量測功能並加入掃描清單 @@ 145 @@ W @@ Y
+CONFigure:CURRent:AC @@ CONFigure:CURRent:AC 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 10mA|100mA|1A|AUTO; resolution: 固定6.5位 @@ 設定指定電流通道為 AC 電流 
+True RMS 量測功能並加入掃描清單 @@ 145 @@ W @@ Y
+CONFigure:RESistance @@ CONFigure:RESistance 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100Ω~100MΩ|AUTO; resolution: 4.5~6.5位 @@ 設定指定通道為 2 
+線式電阻量測功能並加入掃描清單 @@ 144 @@ W @@ Y
+CONFigure:FRESistance @@ CONFigure:FRESistance 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100Ω~100MΩ|AUTO; resolution: 4.5~6.5位 @@ 設定指定通道為 4 
+線式電阻量測功能並自動配對通道加入掃描清單 @@ 144 @@ W @@ Y
+CONFigure:TEMPerature @@ CONFigure:TEMPerature 
+[{TC|RTD|THERmistor}[,{<type>|DEF}[,1[,{<resolution>|DEF}]]]], (@<ch_list>) @@ 
+probe: TC|RTD|THERmistor; type: B|E|J|K|N|R|S|T, 85|92, 2252|5000|10000 @@ 
+設定指定通道為溫度量測功能並加入掃描清單 @@ 136 @@ W @@ Y
+CONFigure:FREQuency @@ CONFigure:FREQuency 
+[{<range>|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ range: 
+3Hz~300kHz; resolution: 閘門時間/解析度 @@ 
+設定指定通道為頻率量測功能並加入掃描清單 @@ 147 @@ W @@ Y
+CONFigure:PERiod @@ CONFigure:PERiod 
+[{<range>|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ range: 
+333µs~333ms; resolution: 閘門時間/解析度 @@ 
+設定指定通道為週期量測功能並加入掃描清單 @@ 147 @@ W @@ Y
+CONFigure:DIODe @@ CONFigure:DIODe (@<ch_list>) @@ 無 @@ 
+設定指定通道為二極體測試功能並加入掃描清單 @@ 129 @@ W @@ Y
+CONFigure:CONTinuity @@ CONFigure:CONTinuity (@<ch_list>) @@ 無 @@ 
+設定指定通道為導通測試功能並加入掃描清單 @@ 129 @@ W @@ Y
+CONFigure:DIGital:BYTE @@ CONFigure:DIGital:BYTE (@<ch_list>) @@ (@<ch_list>): 
+34907A 數位輸入通道 (s01, s02) @@ 設定指定 34907A 數位輸入埠為 8 
+位元讀取模式並加入掃描清單 @@ 162 @@ W @@ Y
+CONFigure:TOTalize @@ CONFigure:TOTalize {READ|RRESet}, (@<ch_list>) @@ 
+READ|RRESet (保持計數 或 讀取後重置歸零) @@ 設定指定 34907A 
+累加計數器模式並加入掃描清單 @@ 164 @@ W @@ Y
+MEASure? @@ MEASure? [(@<ch_list>)] @@ (@<ch_list>)（選填） @@ 
+以當前配置對指定通道執行量測並直接傳回讀值 @@ 105 @@ R @@ Y
+MEASure:VOLTage:DC? @@ MEASure:VOLTage:DC? 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100mV|1V|10V|100V|300V|AUTO; resolution: 4.5~6.5位 @@ 配置 DC 
+電壓量測、啟動掃描並直接傳回讀值 @@ 142 @@ R @@ Y
+MEASure:VOLTage:AC? @@ MEASure:VOLTage:AC? 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100mV|1V|10V|100V|300V|AUTO; resolution: 固定6.5位 @@ 配置 AC 電壓 True 
+RMS 量測、啟動掃描並直接傳回讀值 @@ 142 @@ R @@ Y
+MEASure:CURRent:DC? @@ MEASure:CURRent:DC? 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 10mA|100mA|1A|AUTO; resolution: 4.5~6.5位 @@ 配置 DC 
+電流量測、啟動掃描並直接傳回讀值 @@ 145 @@ R @@ Y
+MEASure:CURRent:AC? @@ MEASure:CURRent:AC? 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 10mA|100mA|1A|AUTO; resolution: 固定6.5位 @@ 配置 AC 電流 True RMS 
+量測、啟動掃描並直接傳回讀值 @@ 145 @@ R @@ Y
+MEASure:RESistance? @@ MEASure:RESistance? 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100Ω~100MΩ|AUTO; resolution: 4.5~6.5位 @@ 配置 2 
+線式電阻量測、啟動掃描並直接傳回讀值 @@ 144 @@ R @@ Y
+MEASure:FRESistance? @@ MEASure:FRESistance? 
+[{<range>|AUTO|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ 
+range: 100Ω~100MΩ|AUTO; resolution: 4.5~6.5位 @@ 配置 4 
+線式電阻量測、啟動掃描並直接傳回讀值 @@ 144 @@ R @@ Y
+MEASure:TEMPerature? @@ MEASure:TEMPerature? 
+[{TC|RTD|THERmistor}[,{<type>|DEF}[,1[,{<resolution>|DEF}]]]], (@<ch_list>) @@ 
+probe: TC|RTD|THERmistor; type: B|E|J|K|N|R|S|T, 85|92, 2252|5000|10000 @@ 
+配置溫度量測 (熱電偶/RTD/熱敏電阻)、啟動掃描並直接傳回讀值 @@ 136 @@ R @@ Y
+MEASure:FREQuency? @@ MEASure:FREQuency? 
+[{<range>|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ range: 
+3Hz~300kHz; resolution: 閘門時間/解析度 @@ 配置頻率量測、啟動掃描並直接傳回讀值
+@@ 147 @@ R @@ Y
+MEASure:PERiod? @@ MEASure:PERiod? 
+[{<range>|MIN|MAX|DEF}[,{<resolution>|MIN|MAX|DEF}]], (@<ch_list>) @@ range: 
+333µs~333ms; resolution: 閘門時間/解析度 @@ 
+配置週期量測、啟動掃描並直接傳回讀值 @@ 147 @@ R @@ Y
+MEASure:DIODe? @@ MEASure:DIODe? (@<ch_list>) @@ 無 @@ 
+配置二極體測試、啟動掃描並直接傳回順向壓降讀值 @@ 129 @@ R @@ Y
+MEASure:CONTinuity? @@ MEASure:CONTinuity? (@<ch_list>) @@ 無 @@ 
+配置導通測試、啟動掃描並直接傳回電阻讀值 @@ 129 @@ R @@ Y
+MEASure:DIGital:BYTE? @@ MEASure:DIGital:BYTE? (@<ch_list>) @@ (@<ch_list>): 
+34907A 數位輸入通道 (s01, s02) @@ 配置 34907A 數位輸入埠 8 
+位元讀取、啟動掃描並傳回數據 @@ 162 @@ R @@ Y
+MEASure:TOTalize? @@ MEASure:TOTalize? {READ|RRESet}, (@<ch_list>) @@ 
+READ|RRESet (保持計數 或 讀取後重置歸零) @@ 配置 34907A 
+累加計數器模式、啟動掃描並傳回累計計數值 @@ 164 @@ R @@ Y
+
+Conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e (turn 3)

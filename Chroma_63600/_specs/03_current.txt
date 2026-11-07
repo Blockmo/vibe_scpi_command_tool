@@ -1,0 +1,84 @@
+Answer:
+CURRent[:STATic]:L1 @@ CURRent[:STATic]:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的 L1 電流位準 @@ 5-47 @@ RW @@ N
+CURRent[:STATic]:L2 @@ CURRent[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的 L2 電流位準 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:RISE @@ CURRent[:STATic]:RISE <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的電流上升斜率 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:FALL @@ CURRent[:STATic]:FALL <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的電流下降斜率 @@ 5-48 @@ RW @@ N
+CURRent:DYNamic:L1 @@ CURRent:DYNamic:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流動態模式下 T1 時間內的負載電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:L2 @@ CURRent:DYNamic:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流動態模式下 T2 時間內的負載電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:T1 @@ CURRent:DYNamic:T1 <NRf+> @@ 10μs~100s, MIN, MAX @@ 
+設定定電流動態模式下CURRent[:STATic]:L1 @@ CURRent[:STATic]:L1 <NRf+> @@ 
+<NRf+>, MIN, MAX @@ 設定定電流靜態模式下的 L1 電流位準 @@ 5-47 @@ RW @@ N
+CURRent[:STATic]:L2 @@ CURRent[:STATic]:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的 L2 電流位準 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:RISE @@ CURRent[:STATic]:RISE <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的電流上升斜率 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:FALL @@ CURRent[:STATic]:FALL <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流靜態模式下的電流下降斜率 @@ 5-48 @@ RW @@ N
+CURRent:DYNamic:L1 @@ CURRent:DYNamic:L1 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流動態模式下 T1 時間內的負載電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:L2 @@ CURRent:DYNamic:L2 <NRf+> @@ <NRf+>, MIN, MAX @@ 
+設定定電流動態模式下 T2 時間內的負載電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:T1 @@ CURRent:DYNamic:T1 <NRf+> @@ 10μs~100s, MIN, MAX 
+@@CURRent[:STATic]:L1 @@ CURRent[:STATic]:L1 <NRf+> @@ 數值, MIN, MAX @@ 設定 
+CC 靜態模式的 L1 負載電流位準 @@ 5-47 @@ RW @@ N
+CURRent[:STATic]:L2 @@ CURRent[:STATic]:L2 <NRf+> @@ 數值, MIN, MAX @@ 設定 CC 
+靜態模式的 L2 負載電流位準 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:RISE @@ CURRent[:STATic]:RISE <NRf+> @@ 斜率(A/us), MIN, MAX 
+@@ 設定 CC 靜態拉載上升斜率 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:FALL @@ CURRent[:STATic]:FALL <NRf+> @@ 斜率(A/us), MIN, MAX 
+@@ 設定 CC 靜態拉載下降斜率 @@ 5-48 @@ RW @@ N
+CURRent:DYNamic:L1 @@ CURRent:DYNamic:L1 <NRf+> @@ 電流值, MIN, MAX @@ 設定 CC 
+動態模式 T1 段的電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:L2 @@ CURRent:DYNamic:L2 <NRf+> @@ 電流值, MIN, MAX @@ 設定 CC 
+動態模式 T2 段的電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:T1 @@ CURRent:DYNamic:T1 <NRf+> @@ 10us~100s, MIN, MAX @@ 設定 
+CC 動態 T1 時間長度 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:T2 @@ CURRent:DYNamic:T2 <NRf+> @@ 10us~100s, MIN, MAX @@ 設定 
+CC 動態 T2 時間長CURRent[:STATic]:L1 @@ CURRent[:STATic]:L1 <NRf+> @@ 電流位準 
+(NRf+) @@ 設定定電流靜態運作模式下的第一組 L1 負載電流 @@ 5-47 @@ RW @@ N
+CURRent[:STATic]:L2 @@ CURRent[:STATic]:L2 <NRf+> @@ 電流位準 (NRf+) @@ 
+設定定電流靜態運作模式下的第二組 L2 負載電流 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:RISE @@ CURRent[:STATic]:RISE <NRf+> @@ 上升斜率 A/us @@ 
+調整定電流靜態模式下切換電流時的上升轉換速率 @@ 5-48 @@ RW @@ N
+CURRent[:STATic]:FALL @@ CURRent[:STATic]:FALL <NRf+> @@ 下降斜率 A/us @@ 
+調整定電流靜態模式下切換電流時的下降轉換速率 @@ 5-48 @@ RW @@ N
+CURRent:DYNamic:L1 @@ CURRent:DYNamic:L1 <NRf+> @@ 定電流 L1 數值 @@ 設定 CC 
+動態模式下 T1 時間區間內的拉載電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:L2 @@ CURRent:DYNamic:L2 <NRf+> @@ 定電流 L2 數值 @@ 設定 CC 
+動態模式下 T2 時間區間內的拉載電流位準 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:T1 @@ CURRent:DYNamic:T1 <NRf+> @@ 時間 10us~100s @@ 設定 CC 
+動態拉載中維持 L1 電流特性的時間長度 T1 @@ 5-49 @@ RW @@ N
+CURRent:DYNamic:T2 @@ CURRent:DYNamic:T2 <NRf+> @@ 時間 10us~100s @@ 設定 CC 
+動態拉載中維持 L2 電流特性的時間長度 T2 @@ 5-50 @@ RW @@ N
+CURRent:DYNamic:RISE @@ CURRent:DYNamic:RISE <NRf+> @@ 上升變化率 A/us @@ 設定 
+CC 動態脈波電流從 L2 上升到 L1 之斜率 @@ 5-50 @@ RW @@ N
+CURRent:DYNamic:FALL @@ CURRent:DYNamic:FALL <NRf+> @@ 下降變化率 A/us @@ 設定 
+CC 動態脈波電流從 L1 下降到 L2 之斜率 @@ 5-50 @@ RW @@ N
+CURRent:DYNamic:REPeat @@ CURRent:DYNamic:REPeat <NRf+> @@ 0~65535 次 @@ 指定 
+CC 動態拉載波形之自動重複切換循環總次數 @@ 5-51 @@ RW @@ N
+CURRent:SWEep:IMAXimum @@ CURRent:SWEep:IMAXimum <NRf+> @@ 最大電流安培數 @@ 
+設定 CC 頻率掃頻測試時所對應的上限電流位準 Load1 @@ 5-51 @@ RW @@ N
+CURRent:SWEep:IMINimum @@ CURRent:SWEep:IMINimum <NRf+> @@ 最小電流安培數 @@ 
+設定 CC 頻率掃頻測試時所對應的下限電流位準 Load2 @@ 5-51 @@ RW @@ N
+CURRent:SWEep:RISE @@ CURRent:SWEep:RISE <NRf+> @@ 掃頻上升 Rate @@ 設定 CC 
+頻率掃頻拉載切換過程中的上升波形斜率 @@ 5-52 @@ RW @@ N
+CURRent:SWEep:FALL @@ CURRent:SWEep:FALL <NRf+> @@ 掃頻下降 Rate @@ 設定 CC 
+頻率掃頻拉載切換過程中的下降波形斜率 @@ 5-52 @@ RW @@ N
+CURRent:SWEep:FSTArt @@ CURRent:SWEep:FSTArt <NRf+> @@ 頻率 0.01Hz~50kHz @@ 
+設定 CC 頻率掃頻模式執行時的起點頻率 FSTART @@ 5-52 @@ RW @@ N
+CURRent:SWEep:FEND @@ CURRent:SWEep:FEND <NRf+> @@ 頻率 0.01Hz~50kHz @@ 設定 CC
+頻率掃頻模式執行時的終點頻率 FEND @@ 5-53 @@ RW @@ N
+CURRent:SWEep:FSTEp @@ CURRent:SWEep:FSTEp <NRf+> @@ 步進 0.01Hz~50kHz @@ 設定 
+CC 頻率掃頻過程中每次遞增或遞減的頻率步進值 @@ 5-53 @@ RW @@ N
+CURRent:SWEep:DUTY @@ CURRent:SWEep:DUTY <NRf> @@ 百分比 1%~99% @@ 設定 CC 
+頻率掃頻動態週期中高電流段的工作占空比 @@ 5-53 @@ RW @@ N
+CURRent:SWEep:DWELl @@ CURRent:SWEep:DWELl <NRf+> @@ 停留時間 1ms~100s @@ 設定 
+CC 頻率掃頻測試時每個頻率點持續停留的時間 @@ 5-54 @@ RW @@ N
+
+Conversation: 5f147963-f342-4b96-b4e6-95abde1b314c (turn 5)

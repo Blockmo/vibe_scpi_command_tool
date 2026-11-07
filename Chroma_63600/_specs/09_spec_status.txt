@@ -1,0 +1,62 @@
+Answer:
+SPECification:TEST[:STATe] @@ SPECification:TEST <state> @@ OFF(0), ON(1) @@ 
+啟動或關閉全通道規格判定測試功能 @@ 5-90 @@ RW @@ N
+SPECification[:PASS]? @@ SPECification? @@ 無(傳回IDLE, GO, NG) @@ 查詢全通道 
+GO/NG 規格判定總結果 @@ 5-84 @@ R @@ N
+SPECification[:PASS]:VOLTage? @@ SPECification[:PASS]:VOLTage? @@ 無(傳回IDLE, 
+GO, NG) @@ 查詢作用中通道電壓 GO/NG 規格判定結果 @@ 5-85 @@ R @@ N
+SPECification[:PASS]:CURRent? @@ SPECification[:PASS]:CURRent? @@ 無(傳回IDLE, 
+GO, NG) @@ 查詢作用中通道電流 GO/NG 規格判定結果 @@ 5-84 @@ R @@ N
+SPECification[:PASS]:POWer? @@ SPECification[:PASS]:POWer? @@ 無(傳回IDLE, GO, 
+NG) @@ 查詢作用中通道功率 GO/NG 規格判定結果 @@ 5-85 @@ R @@ N
+SPECification:UNIT @@ SPECification:UNIT <unit> @@ VALUE(1), PERCENT(0) @@ 
+設定規格判定數值輸入模式為絕對值或百分比 @@ 5-90 @@ RW @@ N
+SPECification:VOLTage:C @@ SPECification:VOLTage:C <NRf+> @@ 伏特數, 
+-1(不檢查), MIN, MAX @@ 設定作用中通道電壓規格中心位準 Center @@ 5-91 @@ RW @@ 
+N
+SPECification:VOLTage:H @@ SPECification:VOLTage:H <NRf+> @@ 伏特數/%, 
+-1(不檢查), MIN, MAX @@ 設定作用中通道電壓規格上限 High @@ 5-91 @@ RW @@ N
+SPECification:VOLTage:L @@ SPECification:VOLTage:L <NRf+> @@ 伏特數/%, 
+-1(不檢查), MIN, MAX @@ 設定作用中通道電壓規格下限 Low @@ 5-92 @@ RW @@ N
+SPECification:CURRent:C @@ SPECification:CURRent:C <NRf+> @@ 安培數, 
+-1(不檢查), MIN, MAX @@ 設定作用中通道電流規格中心位準 Center @@ 5-85 @@ RW @@ 
+N
+SPECification:CURRent:H @@ SPECification:CURRent:H <NRf+> @@ 安培數/%, 
+-1(不檢查), MIN, MAX @@ 設定作用中通道電流規格上限 High @@ 5-86 @@ RW @@ N
+SPECification:CURRent:L @@ SPECification:CURRent:L <NRf+> @@ 安培數/%, 
+-1(不檢查), MIN, MAX @@ 設定作用中通道電流規格下限 Low @@ 5-87 @@ RW @@ N
+SPECification:POWer:C @@ SPECification:POWer:C <NRf+> @@ 瓦特數, -1(不檢查), 
+MIN, MAX @@ 設定作用中通道功率規格中心位準 Center @@ 5-88 @@ RW @@ N
+SPECification:POWer:H @@ SPECification:POWer:H <NRf+> @@ 瓦特數/%, -1(不檢查), 
+MIN, MAX @@ 設定作用中通道功率規格上限 High @@ 5-88 @@ RW @@ N
+SPECification:POWer:L @@ SPECification:POWer:L <NRf+> @@ 瓦特數/%, -1(不檢查), 
+MIN, MAX @@ 設定作用中通道功率規格下限 Low @@ 5-89 @@ RW @@ N
+STATus:CHANnel:CONDition? @@ STATus:CHANnel:CONDition? @@ 無(傳回0~65535) @@ 
+讀取作用中通道的即時狀態條件暫存器 Condition @@ 5-92 @@ R @@ N
+STATus:CHANnel:ENABle @@ STATus:CHANnel:ENABle <NR1> @@ 0~65535 @@ 
+設定作用中通道狀態啟用暫存器 Enable Mask @@ 5-93 @@ RW @@ N
+STATus:CHANnel:EVENt? @@ STATus:CHANnel:EVENt? @@ 無(傳回0~65535) @@ 
+讀取並重置作用中通道的事件暫存器 Event @@ 5-94 @@ R @@ N
+STATus:CHANnel:PTRansition @@ STATus:CHANnel:PTRansition <NR1> @@ 0~65535 @@ 
+設定作用中通道狀態的正向轉態過濾器 (0-to-1) @@ 5-94 @@ RW @@ N
+STATus:CHANnel:NTRansition @@ STATus:CHANnel:NTRansition <NR1> @@ 0~65535 @@ 
+設定作用中通道狀態的反向轉態過濾器 (1-to-0) @@ 5-95 @@ RW @@ N
+STATus:CSUMmary:ENABle @@ STATus:CSUMmary:ENABle <NR1> @@ 0~1023 @@ 設定 
+Channel Summary 啟用暫存器 Mask @@ 5-96 @@ RW @@ N
+STATus:CSUMmary:EVENt? @@ STATus:CSUMmary:EVENt? @@ 無(傳回0~1023) @@ 讀取 
+Channel Summary 事件暫存器 (彙整 1~10 通道) @@ 5-97 @@ R @@ N
+STATus:QUEStionable:CONDition? @@ STATus:QUEStionable:CONDition? @@ 
+無(傳回0~65535) @@ 讀取 Questionable 即時狀態條件暫存器 Condition @@ 5-97 @@ R 
+@@ N
+STATus:QUEStionable:ENABle @@ STATus:QUEStionable:ENABle <NR1> @@ 0~65535 @@ 
+設定 Questionable 狀態啟用暫存器 Enable Mask @@ 5-98 @@ RW @@ N
+STATus:QUEStionable:EVENt? @@ STATus:QUEStionable:EVENt? @@ 無(傳回0~65535) @@ 
+讀取並重置 Questionable 事件暫存器 Event @@ 5-98 @@ R @@ N
+STATus:QUEStionable:PTRansition @@ STATus:QUEStionable:PTRansition <NR1> @@ 
+0~65535 @@ 設定 Questionable 狀態的正向轉態過濾器 (0-to-1) @@ 5-99 @@ RW @@ N
+STATus:QUEStionable:NTRansition @@ STATus:QUEStionable:NTRansition <NR1> @@ 
+0~65535 @@ 設定 Questionable 狀態的反向轉態過濾器 (1-to-0) @@ 5-99 @@ RW @@ N
+STATus:PRESet @@ STATus:PRESet @@ 無 @@ 重置與預設儀器 SCPI 狀態暫存器的 Enable
+與 Transition 設定 @@ 5-92 @@ W @@ N
+
+Conversation: 5f147963-f342-4b96-b4e6-95abde1b314c (turn 11)

@@ -1,0 +1,59 @@
+Answer:
+FORMat:READing:ALARm[:STATe] @@ FORMat:READing:ALARm[:STATe] {OFF|ON} / 
+FORMat:READing:ALARm[:STATe]? @@ {OFF|ON|0|1} @@ 
+設定或查詢測量數據輸出格式中是否包含警報狀態資訊 @@ 139 @@ RW @@ N
+FORMat:READing:CHANnel[:STATe] @@ FORMat:READing:CHANnel[:STATe] {OFF|ON} / 
+FORMat:READing:CHANnel[:STATe]? @@ {OFF|ON|0|1} @@ 
+設定或查詢測量數據輸出格式中是否包含通道號碼資訊 @@ 139 @@ RW @@ N
+FORMat:READing:TIME[:STATe] @@ FORMat:READing:TIME[:STATe] {OFF|ON} / 
+FORMat:READing:TIME[:STATe]? @@ {OFF|ON|0|1} @@ 
+設定或查詢測量數據輸出格式中是否包含時間戳記資訊 @@ 139 @@ RW @@ N
+FORMat:READing:TIME:TYPE @@ FORMat:READing:TIME:TYPE {ABSolute|RELative} / 
+FORMat:READing:TIME:TYPE? @@ {ABSolute|RELative} @@ 
+設定或查詢時間戳記的顯示格式為絕對時間或相對時間 @@ 139 @@ RW @@ N
+FORMat:READing:UNIT[:STATe] @@ FORMat:READing:UNIT[:STATe] {OFF|ON} / 
+FORMat:READing:UNIT[:STATe]? @@ {OFF|ON|0|1} @@ 
+設定或查詢測量數據輸出格式中是否包含工程單位字串 @@ 139 @@ RW @@ N
+FORMat:BORDer @@ FORMat:BORDer {NORMal|SWAPped} / FORMat:BORDer? @@ 
+{NORMal|SWAPped} @@ 設定或查詢 DMM 數位化二進位區塊傳輸時的位元組傳輸順序 @@ 
+139 @@ RW @@ N
+FORMat[:DATA] @@ FORMat[:DATA] {ASCii|REAL}[,<length>] / FORMat[:DATA]? @@ 
+{ASCii|REAL}, <length>: 9 (ASCii) 或 32 (REAL) @@ 設定或查詢 DMM 
+數位化採集模式下 FETCh? 輸出的數據格式 @@ 139 @@ RW @@ N
+FORMat3:BORDer @@ FORMat3:BORDer {NORMal|SWAPped} / FORMat3:BORDer? @@ 
+{NORMal|SWAPped} @@ 設定或查詢 DAQM909A 
+數位化模組二進位區塊傳輸時的位元組傳輸順序 @@ 143 @@ RW @@ N
+FORMat3[:DATA] @@ FORMat3[:DATA] {ASCii|REAL}[,<length>] / FORMat3[:DATA]? @@ 
+{ASCii|REAL}, <length>: 9 (ASCii) 或 32 (REAL) @@ 設定或查詢 DAQM909A 
+數位化模組 FETCh3? 輸出的數據格式 @@ 143 @@ RW @@ N
+DISPlay[:STATe] @@ DISPlay[:STATe] {OFF|ON} / DISPlay[:STATe]? @@ {OFF|ON|0|1} 
+@@ 開啟或關閉前面板螢幕顯示或查詢當前螢幕顯示狀態 @@ 114 @@ RW @@ N
+DISPlay:TEXT[:DATA] @@ DISPlay:TEXT[:DATA] "<string>" / DISPlay:TEXT[:DATA]? @@
+"<string>": 最多40個字元字串 @@ 
+在儀器前面板螢幕上顯示自訂文字訊息或查詢當前顯示文字 @@ 114 @@ RW @@ N
+DISPlay:TEXT:CLEar @@ DISPlay:TEXT:CLEar @@ 無 @@ 
+清除儀器前面板螢幕上顯示的自訂文字訊息 @@ 114 @@ W @@ N
+HCOPy:SDUMp:DATA? @@ HCOPy:SDUMp:DATA? @@ 無 @@ 
+擷取前面板螢幕畫面並以二進位區塊傳回影像數據 @@ 145 @@ R @@ N
+HCOPy:SDUMp:DATA:FORMat @@ HCOPy:SDUMp:DATA:FORMat {PNG|BMP} / 
+HCOPy:SDUMp:DATA:FORMat? @@ {PNG|BMP} @@ 設定或查詢螢幕截圖導出時的影像格式 @@ 
+145 @@ RW @@ N
+LXI:IDENtify[:STATe] @@ LXI:IDENtify[:STATe] {OFF|ON} / LXI:IDENtify[:STATe]? 
+@@ {OFF|ON|0|1} @@ 開啟或關閉前面板 LXI 設備識別指示狀態 @@ 159 @@ RW @@ N
+LXI:MDNS:ENABle @@ LXI:MDNS:ENABle {OFF|ON} / LXI:MDNS:ENABle? @@ {OFF|ON|0|1} 
+@@ 設定或查詢是否啟用多播功能 mDNS 服務 @@ 159 @@ RW @@ N
+LXI:MDNS:HNAMe[:RESolved]? @@ LXI:MDNS:HNAMe[:RESolved]? @@ 無 @@ 
+查詢解析完成的 mDNS 主機名稱字串 @@ 159 @@ R @@ N
+LXI:MDNS:SNAMe:DESired @@ LXI:MDNS:SNAMe:DESired "<string>" / 
+LXI:MDNS:SNAMe:DESired? @@ "<string>": mDNS服務名稱字串 @@ 設定或查詢期望使用的
+mDNS 服務名稱字串 @@ 159 @@ RW @@ N
+LXI:MDNS:SNAMe[:RESolved]? @@ LXI:MDNS:SNAMe[:RESolved]? @@ 無 @@ 
+查詢解析完成的 mDNS 服務名稱字串 @@ 159 @@ R @@ N
+LXI:MDNS[:STATe] @@ LXI:MDNS[:STATe] {OFF|ON} / LXI:MDNS[:STATe]? @@ 
+{OFF|ON|0|1} @@ 設定或查詢 mDNS 服務的啟用狀態 @@ 159 @@ RW @@ N
+LXI:RESet @@ LXI:RESet @@ 無 @@ 重置 LAN 介面至預設運行狀態並清除 Web 介面密碼 
+@@ 159 @@ W @@ N
+LXI:RESTart @@ LXI:RESTart @@ 無 @@ 使用當前的配置參數重新啟動 LAN 網路介面 @@ 
+159 @@ W @@ N
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 12)

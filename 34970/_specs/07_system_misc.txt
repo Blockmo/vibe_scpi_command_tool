@@ -1,0 +1,47 @@
+Continuing conversation 3b68823b...
+Answer:
+SYSTem:ERRor? @@ SYSTem:ERRor? @@ 無 @@ 從錯誤佇列中讀取並清除一個錯誤訊息 @@ 
+172 @@ R @@ N
+SYSTem:VERSion? @@ SYSTem:VERSion? @@ 無 @@ 查詢儀器符合的 SCPI 版本年份與號碼 
+@@ 180 @@ R @@ N
+SYSTem:DATE @@ SYSTem:DATE <year>,<month>,<day> | SYSTem:DATE? @@ <year>:yyyy, 
+<month>:mm, <day>:dd @@ 設定或查詢儀器的系統內部日期 @@ 175 @@ RW @@ N
+SYSTem:TIME @@ SYSTem:TIME <hour>,<minute>,<second> | SYSTem:TIME? @@ 
+<hour>:0~23, <minute>:0~59, <second>:0~59 @@ 
+設定或查詢儀器的系統內部即時時鐘時間 @@ 175 @@ RW @@ N
+SYSTem:CPON @@ SYSTem:CPON {100|200|300|ALL} @@ 100|200|300|ALL @@ 
+將指定插槽模組或所有插槽模組執行卡片重置 @@ 104 @@ W @@ N
+SYSTem:LOCal @@ SYSTem:LOCal @@ 無 @@ 
+將儀器從遠端通訊模式切換回前面板本地控制模式 @@ 245 @@ W @@ N
+SYSTem:REMote @@ SYSTem:REMote @@ 無 @@ 將儀器切換至遠端通訊控制模式 @@ 245 @@ 
+W @@ N
+SYSTem:RWLock @@ SYSTem:RWLock @@ 無 @@ 切換至遠端控制並鎖定前面板 Local 按鈕 
+@@ 245 @@ W @@ N
+SYSTem:INTerface @@ SYSTem:INTerface {GPIB|RS232} | SYSTem:INTerface? @@ 
+GPIB|RS232 @@ 設定或查詢遠端通訊介面的啟用類型 @@ 181 @@ RW @@ N
+SYSTem:BEEPer[:IMMediate] @@ SYSTem:BEEPer[:IMMediate] @@ 無 @@ 
+控制儀器發出一聲蜂鳴音 @@ 170 @@ W @@ N
+SYSTem:BEEPer:STATe @@ SYSTem:BEEPer:STATe {OFF|ON|0|1} | SYSTem:BEEPer:STATe? 
+@@ OFF|ON|0|1 @@ 啟用或停用儀器的系統蜂鳴器聲音 @@ 170 @@ RW @@ N
+SYSTem:PRESet @@ SYSTem:PRESet @@ 無 @@ 將儀器恢復至預設狀態 (Preset State) @@ 
+205 @@ W @@ N
+SYSTem:ALARM? @@ SYSTem:ALARM? @@ 無 @@ 從警報佇列中讀取並清除一個警報事件 @@ 
+155 @@ R @@ N
+SYSTem:CTYPe? @@ SYSTem:CTYPe? {100|200|300} @@ 100|200|300 @@ 
+查詢指定插槽所安裝模組的型號與韌體版本 @@ 176 @@ R @@ N
+DISPlay[:STATe] @@ DISPlay[:STATe] {OFF|ON|0|1} | DISPlay[:STATe]? @@ 
+OFF|ON|0|1 @@ 控制前面板顯示螢幕的開啟或關閉 @@ 174 @@ RW @@ N
+DISPlay:TEXT @@ DISPlay:TEXT "<string>" | DISPlay:TEXT? @@ 最多13個字元 @@ 
+在前面板顯示幕上顯示指定的自訂文字訊息 @@ 174 @@ RW @@ N
+DISPlay:TEXT:CLEar @@ DISPlay:TEXT:CLEar @@ 無 @@ 
+清除前面板顯示幕上顯示的自訂文字訊息 @@ 174 @@ W @@ N
+UNIT:TEMPerature @@ UNIT:TEMPerature {C|F|K}[,(@<ch_list>)] | UNIT:TEMPerature?
+[(@<ch_list>)] @@ C|F|K @@ 設定或查詢指定通道的溫度顯示單位 @@ 136 @@ RW @@ Y
+INPut:IMPedance:AUTO @@ INPut:IMPedance:AUTO {OFF|ON|0|1}[,(@<ch_list>)] | 
+INPut:IMPedance:AUTO? [(@<ch_list>)] @@ OFF|ON|0|1 @@ 
+設定或查詢直流電壓低檔位是否自動切換高輸入阻抗 @@ 142 @@ RW @@ Y
+INSTrument:DMM[:STATe] @@ INSTrument:DMM[:STATe] {OFF|ON|0|1} | 
+INSTrument:DMM[:STATe]? @@ OFF|ON|0|1 @@ 啟用或停用儀器內部的數位多功能電錶 @@ 
+175 @@ RW @@ N
+
+Resumed conversation: 3b68823b-f5d1-47b5-86fe-a84a5b2e6d4e

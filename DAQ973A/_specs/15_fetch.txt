@@ -1,0 +1,121 @@
+Answer:
+FETCh? @@ FETCh? @@ 無 @@ 
+等待測量完成並將讀取記憶體中所有可用數據傳輸至輸出緩衝區 @@ 117 @@ R @@ N
+FETCh:DATA? @@ FETCh:DATA? [<first_pt>, [<last_pt>]] @@ <first_pt>, <last_pt>: 
+數據點編號整數 @@ 擷取 DMM 數位化採集模式下指定範圍的原始測量數據點 @@ 117 @@ R
+@@ N
+FETCh:{DCYCle|DUTYcycle}? @@ FETCh:{DCYCle|DUTYcycle}? [<first_pt>, 
+[<last_pt>]] @@ <first_pt>, <last_pt>: 數據點編號整數 @@ 對 DMM 
+數位化採集數據進行後處理計算並傳回工作週期百分比 @@ 117 @@ R @@ N
+FETCh:FFTRansform:MAGNitude? @@ FETCh:FFTRansform:MAGNitude? [{FLAT|HANNing}, 
+[<first_pt>, [<length>]]] @@ {FLAT|HANNing}, <length>: 2^n 整數 (256~65536) @@ 
+對 DMM 數位化採集數據進行 FFT 變換並傳回頻譜振幅數值 @@ 117 @@ R @@ N
+FETCh:FFTRansform:PHASe? @@ FETCh:FFTRansform:PHASe? [{FLAT|HANNing}, 
+[<first_pt>, [<length>]]] @@ {FLAT|HANNing}, <length>: 2^n 整數 (256~65536) @@ 
+對 DMM 數位化採集數據進行 FFT 變換並傳回頻譜相位數值 @@ 117 @@ R @@ N
+FETCh:FREQuency? @@ FETCh:FREQuency? [<first_pt>, [<last_pt>]] @@ <first_pt>, 
+<last_pt>: 數據點編號整數 @@ 對 DMM 數位化採集數據進行後處理計算並傳回信號頻率 
+@@ 117 @@ R @@ N
+FETCh:{FTIMe|FALL:TIME}? @@ FETCh:{FTIMe|FALL:TIME}? [<first_pt>, [<last_pt>]] 
+@@ <first_pt>, <last_pt>: 數據點編號整數 @@ 對 DMM 
+數位化採集數據進行後處理計算並傳回信號下降時間 @@ 117 @@ R @@ N
+FETCh:NWIDth? @@ FETCh:NWIDth? [<first_pt>, [<last_pt>]] @@ <first_pt>, 
+<last_pt>: 數據點編號整數 @@ 對 DMM 
+數位化採集數據進行後處理計算並傳回負脈寬時間 @@ 117 @@ R @@ N
+FETCh:PERiod? @@ FETCh:PERiod? [<first_pt>,FETCh? @@ FETCh? @@ 無 @@ 
+從讀取記憶體中擷取所有可用掃描數據至輸出緩衝區 @@ 117 @@ R @@ N
+FETCh:DATA? @@ FETCh:DATA? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>,<last_pt>:數據點範圍 @@ 擷取 DMM 
+數位化模式下指定點數區間的原始測量數據 @@ 117 @@ R @@ N
+FETCh:{DCYCle|DUTYcycle}? @@ FETCh:{DCYCle|DUTYcycle}? [<first_pt>, 
+[<last_pt>]] @@ <first_pt>,<last_pt>:運算點範圍 @@ 計算 DMM 
+數位化波形並傳送工作週期百分比結果 @@ 117 @@ R @@ N
+FETCh:FFTRansform:MAGNitude? @@ FETCh:FFTRansform:MAGNitude? [{FLAT|HANNing}, 
+[<first_pt>, [<length>]]] @@ {FLAT|HANNing}, <length>:256至65536之2^n @@ 對 DMM
+採集波形進行 FFT 運算並傳回頻譜幅值 @@ 117 @@ R @@ N
+FETCh:FFTRansform:PHASe? @@ FETCh:FFTRansform:PHASe? [{FLAT|HANNing}, 
+[<first_pt>, [<length>]]] @@ {FLAT|HANNing}, <length>:256至65536之2^n @@ 對 DMM
+採集波形進行 FFT 運算並傳回頻譜相位角度 @@ 117 @@ R @@ N
+FETCh:FREQuency? @@ FETCh:FREQuency? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>,<last_pt>:數據範圍 @@ 分析 DMM 數位化採集點數並計算傳回信號頻率 @@ 
+117 @@ R @@ N
+FETCh:{FTIMe|FALL:TIME}? @@ FETCh:{FTIMe|FALL:TIME}? [<first_pt>, [<last_pt>]] 
+@@ <first_pt>,<last_pt>:下降區間 @@ 分析 DMM 數位化波形並計算傳回信號下降時間 
+@@ 117 @@ R @@ N
+FETCh:NWIDth? @@ FETCh:NWIDth? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>,<last_pt>:負脈衝範圍 @@ 計算 DMM 數位化採集數據並傳回負脈寬持續時間 
+@@ 117 @@ R @@ N
+FETCh:PERiod? @@ FETCh:PERiod? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>,<last_pt>:週期區間 @@ 分析 DMM 數位化採集數據並計算傳回波形週期 @@ 
+117 @@ R @@ N
+FETCh:PWIDth? @@ FETCh:PWIDth? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>,<last_pt>:正脈衝範圍 @@ 計算 DMM 數位化採集數據並傳回正脈寬持續時間 
+@@ 117 @@ R @@ N
+FETCh:RMS? @@ FETCh:RMS? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>,<last_pt>:RMS算點 @@ 對 DMM 數位化採集數據進行計算並傳回真均方根值 
+@@ 117 @@ R @@ N
+FETCh:{RTIMe|RISE:TIME}? @@ FETCh:{RTIMe|RISE:TIME}? [<first_pt>, [<last_pt>]] 
+@@ <first_pt>,<last_pt>:上升區間 @@ 分析 DMMFETCh? @@ FETCh? @@ 無 @@ 
+從讀取記憶體擷取所有可用掃描測量數據至輸出緩衝區 @@ 117 @@ R @@ N
+FETCh:DATA? @@ FETCh:DATA? [<first_pt>, [<last_pt>]] @@ <first_pt>, <last_pt> 
+數據點整數範圍 @@ 擷取單通道 DMM 數位化採集模式下指定點數區間的原始測量數據 @@ 
+117 @@ R @@ N
+FETCh:{DCYCle|DUTYcycle}? @@ FETCh:{DCYCle|DUTYcycle}? [<first_pt>, 
+[<last_pt>]] @@ <first_pt>, <last_pt> 運算區間 @@ 計算 DMM 
+數位化波形並傳回工作週期百分比數值 @@ 117 @@ R @@ N
+FETCh:FFTRansform:{MAGNitude|PHASe}? @@ FETCh:FFTRansform:{MAGNitude|PHASe}? 
+[{FLAT|HANNing}, [<first_pt>, [<length>]]] @@ {FLAT|HANNing}, <length>: 2^n 
+(256~65536) @@ 對 DMM 採集波形進行 FFT 轉換並傳回頻譜幅值或相位角度 @@ 117 @@ R
+@@ N
+FETCh:{FREQuency|PERiod|RMS}? @@ FETCh:{FREQuency|PERiod|RMS}? [<first_pt>, 
+[<last_pt>]] @@ <first_pt>, <last_pt> 數據點範圍 @@ 計算 DMM 
+數位化波形並傳回信號頻率、週期或真均方根值 (RMS) @@ 117 @@ R @@ N
+FETCh:{FTIMe|FALL:TIME|RTIMe|RISE:TIME}? @@ 
+FETCh:{FTIMe|FALL:TIME|RTIMe|RISE:TIME}? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>, <last_pt> 邊緣分析區間 @@ 分析 DMM 
+數位化波形並計算傳回信號之下降時間或上升時間 @@ 117 @@ R @@ N
+FETCh:{PWIDth|NWIDth}? @@ FETCh:{PWIDth|NWIDth}? [<first_pt>, [<last_pt>]] @@ 
+<first_pt>, <last_pt> 脈衝分析區間 @@ 分析 DMM 
+數位化數據並計算傳回信號之正脈寬或負脈寬時間 @@ 117 @@ R @@ N
+FETCh:STATistics? @@ FETCh:STATistics? [<first_pt>, [<last_pt>]] @@ <first_pt>,
+<last_pt> 統計點數範圍 @@ 計算 DMM 
+數位化數據並傳回算術平均值、標準差、最小值與最大值 @@ 117 @@ R @@ N
+FETCh:{THDNoise|THDistortion}? @@ FETCh:{THDNoise|THDistortion}? [<first_pt>, 
+[<length>]] @@ <first_pt> 起始點, <length>: 2^n @@ 運算 DMM 
+數位化採集波形並傳回總諧波失真加雜訊(THD+N)或總諧波失真(THD) @@ 117 @@ R @@ N
+FETCh3? @@ FETCh3? (@<channel>) @@ 通道清單 (@<channel>) @@ 等待指定 DAQM909A 
+數位化通道採集完成並傳送記憶體數據 @@ 125 @@ R @@ Y
+FETCh3:DATA? @@ FETCh3:DATA? [<record#>, [<first_pt>, [<last_pt>]]](@<channel>)
+@@ <record#> 記錄編號, 點數範圍, (@<channel>) @@ 傳回 DAQM909A 
+指定通道與記錄編號範圍內的數位化原始數據點 @@ 125 @@ R @@ Y
+FETCh3:{DCYCle|DUTYcycle}? @@ FETCh3:{DCYCle|DUTYcycle}?[<record#>, 
+[<first_pt>, [<last_pt>]]](@<channel>) @@ <record#> 記錄編號, 運算區間, 
+(@<channel>) @@ 對 DAQM909A 指定通道記錄進行後處理計算並傳回工作週期百分比 @@ 
+125 @@ R @@ Y
+FETCh3:FFTRansform:{MAGNitude|PHASe}? @@ 
+FETCh3:FFTRansform:{MAGNitude|PHASe}?[{FLAT|HANNing}, [<record#>, [<first_pt>, 
+[<length>]]]](@<channel>) @@ {FLAT|HANNing}, <length>: 2^n, (@<channel>) @@ 對 
+DAQM909A 指定記錄進行 FFT 變換並傳回頻譜幅值或相位角度 @@ 125 @@ R @@ Y
+FETCh3:{FREQuency|PERiod|RMS}? @@ FETCh3:{FREQuency|PERiod|RMS}?[<record#>, 
+[<first_pt>, [<last_pt>]]](@<channel>) @@ <record#> 記錄編號, 數據範圍, 
+(@<channel>) @@ 對 DAQM909A 指定記錄進行後處理計算並傳回頻率、週期或 RMS 數值 
+@@ 125 @@ R @@ Y
+FETCh3:{FTIMe|FALL:TIME|RTIMe|RISE:TIME}? @@ 
+FETCh3:{FTIMe|FALL:TIME|RTIMe|RISE:TIME}?[<record#>, [<first_pt>, 
+[<last_pt>]]](@<channel>) @@ <record#> 記錄編號, 邊緣區間, (@<channel>) @@ 對 
+DAQM909A 指定記錄進行後處理計算並傳回信號下降時間或上升時間 @@ 125 @@ R @@ Y
+FETCh3:{PWIDth|NWIDth}? @@ FETCh3:{PWIDth|NWIDth}?[<record#>, [<first_pt>, 
+[<last_pt>]]](@<channel>) @@ <record#> 記錄編號, 脈衝區間, (@<channel>) @@ 對 
+DAQM909A 指定記錄進行後處理計算並傳回信號正脈寬或負脈寬時間 @@ 125 @@ R @@ Y
+FETCh3:POWer? @@ FETCh3:POWer?<scale>, [<record#>, [<first_pt>, 
+[<last_pt>]]](@<volt_ch>), (@<curr_ch>) @@ <scale> 比例因子, 雙通道清單 @@ 對 
+DAQM909A 成對配對之電壓與電流通道執行功率分析後處理運算 @@ 125 @@ R @@ Y
+FETCh3:STATistics? @@ FETCh3:STATistics?[<record#>, [<first_pt>, 
+[<last_pt>]]](@<channel>) @@ <record#> 記錄編號, 統計區間, (@<channel>) @@ 對 
+DAQM909A 指定記錄進行後處理計算並傳回平均值、標準差與極值 @@ 125 @@ R @@ Y
+FETCh3:{THDNoise|THDistortion}? @@ FETCh3:{THDNoise|THDistortion}?[<record#>, 
+[<first_pt>, [<length>]]](@<channel>) @@ <first_pt> 起始點, <length>: 2^n, 
+(@<channel>) @@ 對 DAQM909A 指定記錄進行後處理計算並傳送總諧波失真與雜訊指標 @@
+125 @@ R @@ Y
+
+Conversation: 6e310b33-6e38-4888-aa63-a00403826193 (turn 17)
