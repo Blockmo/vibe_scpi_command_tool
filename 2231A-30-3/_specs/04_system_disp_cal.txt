@@ -1,0 +1,44 @@
+Continuing conversation 6d6d3f30...
+Answer:
+SYSTem:ERRor?@@SYSTem:ERRor?@@無@@查詢電源供應器發生的錯誤碼與錯誤訊息內容@@5-1
+7@@R@@N
+SYSTem:VERSion?@@SYSTem:VERSion?@@無@@查詢電源供應器的 SCPI 
+語法版本@@5-17@@R@@N
+SYSTem:REMote@@SYSTem:REMote@@無@@將電源供應器切換至遠端控制模式@@5-17@@W@@N
+SYSTem:LOCal@@SYSTem:LOCal@@無@@將電源供應器切換至前面板本地控制模式@@5-17@@W@@
+N
+SYSTem:RWLock@@SYSTem:RWLock@@無@@切換至遠端控制模式並鎖定前面板所有按鈕@@5-18@
+@W@@N
+SYSTem:MODUle?@@SYSTem:MODUle?@@無@@查詢電源供應器的模組名稱與韌體版本@@5-18@@R
+@@N
+SYSTem:BEEPer@@SYSTem:BEEPer@@無@@測試電源供應器的蜂鳴器發聲功能@@5-18@@W@@N
+DISPlay[:WINDow][:STATe]@@DISPlay[:WINDow][:STATe] <bool> | 
+DISPlay[:WINDow][:STATe]?@@0|1|ON|OFF@@設定或查詢前面板螢幕顯示功能的開關狀態@@
+5-9@@RW@@N
+DISPlay[:WINDow]:TEXT[:DATA]@@DISPlay[:WINDow]:TEXT[:DATA] <string> | 
+DISPlay[:WINDow]:TEXT[:DATA]?@@字串(加雙引號)@@在前面板螢幕顯示指定文字訊息或查
+詢當前顯示文字@@5-10@@RW@@N
+DISPlay[:WINDow]:TEXT:CLEar@@DISPlay[:WINDow]:TEXT:CLEar@@無@@清除螢幕顯示的自
+訂文字並恢復電壓電流數值顯示@@5-10@@W@@N
+CALibration:SECure:[STATe]@@CALibration:SECure:[STATe] {<bool>,[<password>]} | 
+CALibration:SECure:STATe?@@0|1|ON|OFF, 
+密碼@@解除或啟用校正安全鎖定狀態並驗證密碼@@5-7@@RW@@N
+CALibrate:VOLTage:LEVel@@CALibrate:VOLTage:LEVel 
+<level>@@P1|P2|P3|P4@@設定電壓校正點（需依 P1 至 P4 順序執行）@@5-7@@W@@N
+CALibrate:VOLTage[:DATA]@@CALibrate:VOLTage[:DATA] <NRf> | 
+CALibrate:VOLTage[:DATA]?@@電壓數值@@輸入校正點實際輸出的電壓讀值進行校正@@5-8@
+@RW@@N
+CALibrate:CURRent:LEVel@@CALibrate:CURRent:LEVel 
+<level>@@P1|P2@@設定電流校正點（需依 P1 至 P2 順序執行）@@5-8@@W@@N
+CALibrate:CURRent[:DATA]@@CALibrate:CURRent[:DATA] <NRf> | 
+CALibrate:CURRent[:DATA]?@@電流數值@@輸入校正點實際輸出的電流讀值進行校正@@5-8@
+@RW@@N
+CALibration:SAVe@@CALibration:SAVe@@無@@將校正參數與係數儲存至非揮發性記憶體中@
+@5-9@@W@@N
+CALibration:INITital@@CALibration:INITital@@無@@將當前校正係數重置恢復為出廠預
+設值@@5-9@@W@@N
+CALibrate:STRing@@CALibrate:STRing <string> | 
+CALibrate:STRing?@@字串(最多22字)@@寫入或查詢儀器的校正相關資訊與日期字串@@5-9@
+@RW@@N
+
+Resumed conversation: 6d6d3f30-977a-49aa-88ed-de94085b2806

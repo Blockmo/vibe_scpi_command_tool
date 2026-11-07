@@ -1,0 +1,51 @@
+Continuing conversation 6d6d3f30...
+Answer:
+*CLS@@*CLS@@無@@清除事件暫存器與錯誤佇列@@5-2@@W@@N
+*ESE@@*ESE <NRf> | 
+*ESE?@@0~255@@設定或查詢標準事件狀態致能暫存器遮罩@@5-2@@RW@@N
+*ESR?@@*ESR?@@無@@讀取並清除標準事件狀態暫存器的數值@@5-3@@R@@N
+*IDN?@@*IDN?@@無@@查詢電源供應器製造商、型號、序號與韌體版本@@5-3@@R@@N
+*OPC@@*OPC | *OPC?@@無@@當所有待處理指令完成時將OPC位置1或回傳1@@5-3@@RW@@N
+*RST@@*RST@@無@@重置電源供應器至出廠預設設定@@5-3@@W@@N
+*SRE@@*SRE <NRf> | *SRE?@@0~255@@設定或查詢狀態位元組致能暫存器遮罩@@5-4@@RW@@N
+*STB?@@*STB?@@無@@讀取狀態位元組暫存器的數值@@5-4@@R@@N
+*TRG@@*TRG@@無@@發送匯流排觸發訊號以啟動觸發操作@@5-4@@W@@N
+*SAV@@*SAV <NR1>@@0~30@@將當前設定儲存至指定記憶體位置@@5-5@@W@@N
+*RCL@@*RCL <NR1>@@0~30@@從指定記憶體位置載入先前儲存的設定@@5-5@@W@@N
+*TST?@@*TST?@@無@@執行自我測試並回傳測試結果狀態碼@@5-5@@R@@N
+*WAI@@*WAI@@無@@暫停執行後續指令直到先前指令完全執行完畢@@5-5@@W@@N
+*PSC@@*PSC <bool> | 
+*PSC?@@0|1|ON|OFF@@設定或查詢開機時是否自動清除狀態暫存器致能遮罩@@5-6@@RW@@N
+[SOURce:]APPLy@@[SOURce:]APPLy 
+{CH1|CH2|CH3},{<voltage>|MAX|MIN|DEF|UP|DOWN},{<current>|MAX|MIN|DEF|UP|DOWN} |
+[SOURce:]APPLy?@@CH1|CH2|CH3, 電壓值|MAX|MIN|DEF|UP|DOWN, 
+電流值|MAX|MIN|DEF|UP|DOWN@@以單一指令切換通道並設定或查詢該通道之電壓與電流位
+準@@5-6@@RW@@N
+[SOURce:]APPly:VOLTage[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]APPly:VOLTage[
+:LEVel][:IMMediate][:AMPLitude] <ch1_v>,<ch2_v>,<ch3_v> | 
+[SOURce:]APPly:VOLTage[:LEVel][:IMMediate][:AMPLitude]?@@ch1_v, ch2_v, 
+ch3_v@@同時設定或查詢三個通道的電壓輸出位準@@5-6@@RW@@N
+[SOURce:]APPly:CURRent[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]APPly:CURRent[
+:LEVel][:IMMediate][:AMPLitude] <ch1_i>,<ch2_i>,<ch3_i> | 
+[SOURce:]APPly:CURRent[:LEVel][:IMMediate][:AMPLitude]?@@ch1_i, ch2_i, 
+ch3_i@@同時設定或查詢三個通道的電流輸出位準@@5-7@@RW@@N
+INSTrument[:SELect]@@INSTrument[:SELect] {CH1|CH2|CH3} | 
+INSTrument[:SELect]?@@CH1|CH2|CH3@@以通道名稱選取作用中通道或查詢當前作用中通道
+@@5-10@@RW@@N
+INSTrument:NSELect@@INSTrument:NSELect {1|2|3} | 
+INSTrument:NSELect?@@1|2|3@@以數字索引選取作用中通道或查詢當前作用中通道@@5-11@
+@RW@@N
+INSTrument:COMbine:SERies@@INSTrument:COMbine:SERies@@無@@設定 CH1 與 CH2 
+為串聯組合顯示模式@@5-11@@W@@N
+INSTrument:COMbine:PARAllel@@INSTrument:COMbine:PARAllel@@無@@設定 CH1 與 CH2 
+為並聯組合顯示模式@@5-11@@W@@N
+INSTrument:COMbine:TRACk@@INSTrument:COMbine:TRACk@@無@@設定 CH1 與 CH2 
+為追蹤（Track）同步運作模式@@5-12@@W@@N
+INSTrument:COMbine:OFF@@INSTrument:COMbine:OFF | 
+INSTrument:COMbine:OFF?@@無@@關閉 CH1 與 CH2 
+的組合模式或查詢當前組合狀態@@5-12@@RW@@N
+INSTrument:COUPle[:TRIGger]@@INSTrument:COUPle[:TRIGger] {CH1|CH2|CH3} | 
+INSTrument:COUPle[:TRIGger]?@@CH1|CH2|CH3@@設定或查詢哪些通道會響應匯流排觸發指
+令@@5-12@@RW@@N
+
+Resumed conversation: 6d6d3f30-977a-49aa-88ed-de94085b2806

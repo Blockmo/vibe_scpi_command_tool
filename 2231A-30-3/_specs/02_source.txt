@@ -1,0 +1,46 @@
+Answer:
+[SOURce:]CHANnel:OUTPut[:STATe]@@[SOURce:]CHANnel:OUTPut[:STATe] <bool> | 
+[SOURce:]CHANnel:OUTPut[:STATe]?@@0|1|ON|OFF@@設定或查詢當前作用中通道的輸出開
+關狀態@@5-24@@RW@@N
+[SOURce:]CURRent[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]CURRent[:LEVel] 
+<NRf> | [SOURce:]CURRent[:LEVel][:IMMediate][:AMPLitude]?@@MIN TO 
+MAX|MIN|MAX|UP|DOWN|DEF@@設定或查詢當前作用中通道的輸出電流位準@@5-24@@RW@@N
+[SOURce:]CURRent[:LEVel]:UP[:IMMediate][:AMPLitude]@@[SOURce:]CURRent[:LEVel]:U
+P[:IMMediate][:AMPLitude]@@無@@將當前作用中通道的電流設定值增加一個步進量@@5-24
+@@W@@N
+[SOURce:]CURRent[:LEVel]:DOWN[:IMMediate][:AMPLitude]@@[SOURce:]CURRent[:LEVel]
+:DOWN[:IMMediate][:AMPLitude]@@無@@將當前作用中通道的電流設定值減少一個步進量@@
+5-25@@W@@N
+[SOURce:]CURRent[:LEVel][:IMMediate]:STEP[:INCRement]@@[SOURce:]CURRent[:LEVel]
+[:IMMediate]:STEP[:INCRement] <current> | 
+[SOURce:]CURRent[:LEVel][:IMMediate]:STEP[:INCRement]?@@電流數值(A|mA|uA)@@設定
+或查詢當前作用中通道電流微調的步進增量值@@5-25@@RW@@N
+[SOURce:]CURRent[:LEVel]:TRIGgered[:IMMediate][:INCRement]@@[SOURce:]CURRent[:L
+EVel]:TRIGgered[:IMMediate][:INCRement] <current> | 
+[SOURce:]CURRent[:LEVel]:TRIGgered[:IMMediate][:INCRement]?@@電流數值|MIN|MAX|D
+EF|UP|DOWN@@設定或查詢觸發事件發生時當前作用中通道套用的電流位準@@5-25@@RW@@N
+[SOURce:]VOLTage[:LEVel][:IMMediate][:AMPLitude]@@[SOURce:]VOLTage[:LEVel] 
+<NRf> | [SOURce:]VOLTage[:LEVel]?@@MIN TO 
+MAX|MIN|MAX|UP|DOWN|DEF@@設定或查詢當前作用中通道的輸出電壓位準@@5-26@@RW@@N
+[SOURce:]VOLTage[:LEVel]:UP[:IMMediate][:AMPLitude]@@[SOURce:]VOLTage[:LEVel]:U
+P[:IMMediate][:AMPLitude]@@無@@將當前作用中通道的電壓設定值增加一個步進量@@5-26
+@@W@@N
+[SOURce:]VOLTage[:LEVel]:DOWN[:IMMediate][:AMPLitude]@@[SOURce:]VOLTage[:LEVel]
+:DOWN[:IMMediate][:AMPLitude]@@無@@將當前作用中通道的電壓設定值減少一個步進量@@
+5-26@@W@@N
+[SOURce:]VOLTage[:LEVel][:IMMediate]:STEP[:INCRement]@@[SOURce:]VOLTage[:LEVel]
+[:IMMediate]:STEP[:INCRement] <voltage> | 
+[SOURce:]VOLTage[:LEVel][:IMMediate]:STEP[:INCRement]?@@電壓數值(kV|V|mV|uV)@@
+設定或查詢當前作用中通道電壓微調的步進增量值@@5-27@@RW@@N
+[SOURce:]VOLTage[:LEVel]:TRIGgered[:IMMediate][:INCRement]@@[SOURce:]VOLTage[:L
+EVel]:TRIGgered[:IMMediate][:INCRement] <voltage> | 
+[SOURce:]VOLTage[:LEVel]:TRIGgered[:IMMediate][:INCRement]?@@0至最大額定電壓(kV
+|V|mV|uV)@@設定或查詢觸發事件發生時當前作用中通道套用的電壓位準@@5-27@@RW@@N
+[SOURce:]VOLTage:LIMIT[:LEVel]@@[SOURce:]VOLTage:LIMIT[:LEVel] <voltage> | 
+[SOURce:]VOLTage:LIMIT[:LEVel]?@@0至最大額定電壓|MIN|MAX|DEF@@設定或查詢當前作
+用中通道的最高電壓限制位準@@5-27@@RW@@N
+[SOURce:]VOLTage:LIMit:STATe@@[SOURce:]VOLTage:LIMit:STATe <bool> | 
+[SOURce:]VOLTage:LIMit:STATe?@@0|1|ON|OFF@@設定或查詢當前作用中通道電壓上限保護
+功能的啟用狀態@@5-28@@RW@@N
+
+Conversation: 6d6d3f30-977a-49aa-88ed-de94085b2806 (turn 3)

@@ -1,0 +1,49 @@
+Answer:
+STATus:QUEStionable[:EVENt]?@@STATus:QUEStionable[:EVENt]?@@無@@查詢並重置可疑
+事件暫存器的內容@@5-19@@R@@N
+STATus:QUEStionable:ENABle@@STATus:QUEStionable:ENABle <NR1> | 
+STATus:QUEStionable:ENABle?@@0~255@@設定或查詢可疑事件致能暫存器的遮罩值@@5-19@
+@RW@@N
+STATus:QUEStionable:CONDition?@@STATus:QUEStionable:CONDition?@@無@@查詢可疑條
+件暫存器的當前狀態數值@@5-19@@R@@N
+STATus:PRESet@@STATus:PRESet@@無@@重置所有狀態暫存器位元為預設設定@@5-20@@W@@N
+STATus:QUEStionable:INSTrument[:EVENt]?@@STATus:QUEStionable:INSTrument[:EVENt]
+?@@無@@查詢儀器可疑狀態事件暫存器的內容@@5-20@@R@@N
+STATus:QUEStionable:INSTrument:ENABle@@STATus:QUEStionable:INSTrument:ENABle 
+<NR1> | 
+STATus:QUEStionable:INSTrument:ENABle?@@0~255@@設定或查詢儀器可疑狀態致能暫存器
+的遮罩值@@5-20@@RW@@N
+STATus:QUEStionable:INSTrument:ISUMmary<x>[:EVENt]?@@STATus:QUEStionable:INSTru
+ment:ISUMmary<x>[:EVENt]?@@x=1|2|3@@查詢指定通道(1/2/3)的可疑事件摘要暫存器內容
+@@5-20@@R@@N
+STATus:QUEStionable:INSTrument:ISUMmary<x>:ENABle@@STATus:QUEStionable:INSTrume
+nt:ISUMmary<x>:ENABle <NR1> | 
+STATus:QUEStionable:INSTrument:ISUMmary<x>:ENABle?@@x=1|2|3, 
+0~255@@設定或查詢指定通道(1/2/3)的可疑致能暫存器遮罩值@@5-21@@RW@@N
+STATus:QUEStionable:INSTrument:ISUMmary<x>:CONDition?@@STATus:QUEStionable:INST
+rument:ISUMmary<x>:CONDition?@@x=1|2|3@@查詢指定通道(1/2/3)的可疑條件摘要暫存器
+數值@@5-21@@R@@N
+STATus:OPERation[:EVENt]?@@STATus:OPERation[:EVENt]?@@無@@查詢並重置操作事件暫
+存器的內容@@5-21@@R@@N
+STATus:OPERation:CONDition?@@STATus:OPERation:CONDition?@@無@@查詢操作條件暫存
+器的當前數值@@5-22@@R@@N
+STATus:OPERation:ENABle@@STATus:OPERation:ENABle <NRf> | 
+STATus:OPERation:ENABle?@@0~255@@設定或查詢操作致能暫存器的遮罩數值@@5-22@@RW@@
+N
+STATus:OPERation:INSTrument[:EVENt]?@@STATus:OPERation:INSTrument[:EVENt]?@@無@
+@查詢並重置儀器操作事件暫存器的數值@@5-22@@R@@N
+STATus:OPERation:INSTrument:ENABle@@STATus:OPERation:INSTrument:ENABle <NRf> | 
+STATus:OPERation:INSTrument:ENABle?@@0~255@@設定或查詢儀器操作致能暫存器的遮罩
+數值@@5-23@@RW@@N
+STATus:OPERation:INSTrument:ISUMmary<x>[:EVENt]?@@STATus:OPERation:INSTrument:I
+SUMmary<x>[:EVENt]?@@x=1|2|3@@查詢指定通道(1/2/3)的操作事件摘要暫存器內容@@5-23
+@@R@@N
+STATus:OPERation:INSTrument:ISUMmary<x>:ENABle@@STATus:OPERation:INSTrument:ISU
+Mmary<x>:ENABle <NRf> | 
+STATus:OPERation:INSTrument:ISUMmary<x>:ENABle?@@x=1|2|3, 
+0~255@@設定或查詢指定通道(1/2/3)的操作致能暫存器遮罩值@@5-23@@RW@@N
+STATus:OPERation:INSTrument:ISUMmary<x>:CONDition?@@STATus:OPERation:INSTrument
+:ISUMmary<x>:CONDition?@@x=1|2|3@@查詢指定通道(1/2/3)的操作條件摘要暫存器數值@@
+5-23@@R@@N
+
+Conversation: 6d6d3f30-977a-49aa-88ed-de94085b2806 (turn 6)

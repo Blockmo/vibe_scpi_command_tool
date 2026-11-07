@@ -58,6 +58,13 @@ INSTRUMENTS = [
         "note": {"en": "(@1:3) channel-list model; output/list/data-logger",
                  "zh": "(@1:3) 通道清單模型；輸出/LIST 序列/資料記錄器"},
     },
+    {
+        "name": "2231A-30-3", "folder": "2231A-30-3", "entry": "ui.py", "count": 76,
+        "kind": {"en": "Triple-channel DC Power Supply (Keithley)",
+                 "zh": "三通道直流電源供應器 (Keithley)"},
+        "note": {"en": "INSTrument:SELect CH1/CH2/CH3 active-channel model",
+                 "zh": "INSTrument:SELect CH1/CH2/CH3 作用中通道模型"},
+    },
 ]
 
 

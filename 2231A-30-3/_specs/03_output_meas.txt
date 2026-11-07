@@ -1,0 +1,37 @@
+Answer:
+OUTPut[:STATe][:ALL]@@OUTPut[:STATe] <bool> | 
+OUTPut:STATe[:ALL]?@@0|1|ON|OFF@@設定或查詢所有通道的輸出開關狀態@@5-14@@RW@@N
+CHANnel:OUTPut[:STATe]@@CHANnel:OUTPut[:STATe] <bool> | 
+CHANnel:OUTPut[:STATe]?@@0|1|ON|OFF@@設定或查詢當前作用中通道的輸出開關狀態@@5-
+14@@RW@@N
+OUTPut:ENABle@@OUTPut:ENABle <bool> | OUTPut:ENABle?@@0|1@@啟用或停用 Enable 
+Channels 選單中選擇的通道輸出功能@@5-14@@RW@@N
+OUTPut:TIMer[:STATe]@@OUTPut:TIMer[:STATe] <bool> | 
+OUTPut:TIMer[:STATe]?@@0|1|ON|OFF@@設定或查詢當前作用中通道的輸出定時器啟用狀態
+@@5-15@@RW@@N
+OUTPut:TIMer:DELay@@OUTPut:TIMer:DELay <delay> | 
+OUTPut:TIMer:DELay?@@0.1-99999.9(s)@@設定或查詢輸出定時器的延遲時間@@5-15@@RW@@
+N
+OUTPut:TRACk[:STATe]@@OUTPut:TRACk[:STATe] <bool> | 
+OUTPut:TRACk[:STATe]?@@0|1|ON|OFF@@設定或查詢 CH1 與 CH2 
+的追蹤同步運作狀態@@5-15@@RW@@N
+OUTPut:SERies[:STATe]@@OUTPut:SERies[:STATe] <bool> | 
+OUTPut:SERies[:STATe]?@@0|1|ON|OFF@@設定或查詢 CH1 與 CH2 
+串聯連線時的電壓顯示組合狀態@@5-16@@RW@@N
+OUTPut:PARallel[:STATe]@@OUTPut:PARallel[:STATe] <bool> | 
+OUTPut:PARallel[:STATe]?@@0|1|ON|OFF@@設定或查詢 CH1 與 CH2 
+並聯連線時的電流顯示組合狀態@@5-16@@RW@@N
+MEASure[:SCALar]:VOLTage[:DC]?@@MEASure[:SCALar]:VOLTage[:DC]?@@無@@發起並執行
+當前作用中通道的直流電壓量測並回傳讀值@@5-13@@R@@N
+FETCh[:VOLTage][:DC]?@@FETCh[:VOLTage][:DC]?@@無@@查詢當前作用中通道最近一次量
+測的直流電壓讀值@@5-13@@R@@N
+MEASure[:SCALar]:CURRent[:DC]?@@MEASure[:SCALar]:CURRent[:DC]?@@無@@發起並執行
+當前作用中通道的直流電流量測並回傳讀值@@5-13@@R@@N
+FETCh:CURRent[:DC]?@@FETCh:CURRent[:DC]?@@無@@查詢當前作用中通道最近一次量測的
+直流電流讀值@@5-13@@R@@N
+MEASure[:SCALar]:POWer[:DC]?@@MEASure[:SCALar]:POWer[:DC]?@@無@@發起並執行當前
+作用中通道的直流功率量測並回傳讀值@@5-13@@R@@N
+FETCh:POWer[:DC]?@@FETCh:POWer[:DC]?@@無@@查詢當前作用中通道最近一次量測的直流
+功率讀值@@5-13@@R@@N
+
+Conversation: 6d6d3f30-977a-49aa-88ed-de94085b2806 (turn 4)
