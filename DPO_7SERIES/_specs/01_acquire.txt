@@ -1,0 +1,37 @@
+Continuing conversation bed39e7c...
+Answer:
+ACQuire?@@ACQuire?@@無@@查詢目前的擷取狀態設定@@60@@R@@N
+ACQuire:FASTAVerage:LIMit@@ACQuire:FASTAVerage:LIMit <NR1> | 
+ACQuire:FASTAVerage:LIMit?@@<NR1> (1 ~ 
+10240)@@設定或查詢硬體加速平均的批次組數上限@@61@@RW@@N
+ACQuire:FASTAVerage:STATE@@ACQuire:FASTAVerage:STATE {0|1|OFF|ON} | 
+ACQuire:FASTAVerage:STATE?@@{0|1|OFF|ON}@@設定或查詢硬體加速平均模式的啟用狀態@
+@62@@RW@@N
+ACQuire:FASTAVerage:STOPafter@@ACQuire:FASTAVerage:STOPafter <NR1> | 
+ACQuire:FASTAVerage:STOPafter?@@<NR1> (1 ~ 
+1000000)@@設定或查詢硬體加速平均累積的總平均次數上限@@63@@RW@@N
+ACQuire:MAXSamplerate?@@ACQuire:MAXSamplerate?@@無@@查詢儀器支援的最大即時採樣
+率@@65@@R@@N
+ACQuire:MODe@@ACQuire:MODe {SAMple|PEAKdetect|AVErage|ENVelope} | 
+ACQuire:MODe?@@{SAMple|PEAKdetect|AVErage|ENVelope}@@設定或查詢儀器的波形擷取模
+式@@65@@RW@@N
+ACQuire:NUMACq?@@ACQuire:NUMACq?@@無@@查詢自上次停止擷取以來已完成的波形擷取次
+數@@67@@R@@N
+ACQuire:NUMAVg@@ACQuire:NUMAVg <NR1> | ACQuire:NUMAVg?@@<NR1> (2 ~ 
+10240)@@設定或查詢平均波形模式下進行平均的擷取次數@@68@@RW@@N
+ACQuire:SEQuence:CURrent?@@ACQuire:SEQuence:CURrent?@@無@@在單次序列擷取模式下
+查詢目前已完成的擷取次數@@69@@R@@N
+ACQuire:SEQuence:MODe@@ACQuire:SEQuence:MODe NUMACQs | 
+ACQuire:SEQuence:MODe?@@NUMACQs@@設定或查詢單次序列擷取的停止基準模式@@69@@RW@@
+N
+ACQuire:SEQuence:NUMSEQuence@@ACQuire:SEQuence:NUMSEQuence <NR1> | 
+ACQuire:SEQuence:NUMSEQuence?@@<NR1> 
+(>=1)@@設定或查詢組成單次序列的擷取次數上限@@70@@RW@@N
+ACQuire:STATE@@ACQuire:STATE {<NR1>|OFF|ON|RUN|STOP} | 
+ACQuire:STATE?@@{<NR1>|OFF|ON|RUN|STOP}@@啟動、停止或查詢波形擷取的執行狀態@@71
+@@RW@@N
+ACQuire:STOPAfter@@ACQuire:STOPAfter {RUNSTop|SEQuence} | 
+ACQuire:STOPAfter?@@{RUNSTop|SEQuence}@@設定或查詢波形擷取為連續擷取或單次序列
+擷取@@73@@RW@@N
+
+Resumed conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5

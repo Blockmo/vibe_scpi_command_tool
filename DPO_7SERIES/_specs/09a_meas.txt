@@ -1,0 +1,76 @@
+Continuing conversation bed39e7c...
+Answer:
+MEASurement:ADDNew@@MEASurement:ADDNew <QString>@@<QString> 
+("MEAS<x>")@@新增指定的自動測量項目實例@@215@@W@@N
+MEASurement:DELETEALL@@MEASurement:DELETEALL@@無@@刪除目前建立的所有自動測量項
+目@@218@@W@@N
+MEASurement:GATing@@MEASurement:GATing {OFF|SCREEN|CURSOR|ZOOM} | 
+MEASurement:GATing?@@{OFF|SCREEN|CURSOR|ZOOM}@@設定或查詢自動測量的波形門控選取
+範圍區域@@221@@RW@@N
+MEASurement:IMMed:SOUrce1@@MEASurement:IMMed:SOUrce1 {CH<x>|MATH<x>|REF<x>} | 
+MEASurement:IMMed:SOUrce1?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢即時測量的第一通
+道來源@@223@@RW@@N
+MEASurement:IMMed:SOUrce2@@MEASurement:IMMed:SOUrce2 {CH<x>|MATH<x>|REF<x>} | 
+MEASurement:IMMed:SOUrce2?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢即時測量的第二通
+道來源@@224@@RW@@N
+MEASurement:IMMed:TYPe@@MEASurement:IMMed:TYPe 
+{AMPLITUDE|FREQUENCY|PERIOD|PK2PK|RISETIME|FALLTIME} | 
+MEASurement:IMMed:TYPe?@@{AMPLITUDE|FREQUENCY|PERIOD|PK2PK|RISETIME|FALLTIME}@@
+設定或查詢即時測量的測量參數類型@@225@@RW@@N
+MEASurement:MEAS<x>:DELete@@MEASurement:MEAS<x>:DELete@@無@@刪除指定編號的自動
+測量項目@@228@@W@@N
+MEASurement:MEAS<x>:LABEL@@MEASurement:MEAS<x>:LABEL <QString> | 
+MEASurement:MEAS<x>:LABEL?@@<QString> 
+(自訂標籤)@@設定或查詢指定測量項目的顯示標籤文字@@231@@RW@@N
+MEASurement:MEAS<x>:SOUrce1@@MEASurement:MEAS<x>:SOUrce1 {CH<x>|MATH<x>|REF<x>}
+| 
+MEASurement:MEAS<x>:SOUrce1?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢指定測量項目的
+第一訊號來源波形@@235@@RW@@N
+MEASurement:MEAS<x>:SOUrce2@@MEASurement:MEAS<x>:SOUrce2 {CH<x>|MATH<x>|REF<x>}
+| 
+MEASurement:MEAS<x>:SOUrce2?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢指定測量項目的
+第二訊號來源波形@@236@@RW@@N
+MEASurement:MEAS<x>:STATE@@MEASurement:MEAS<x>:STATE {OFF|ON|<NR1>} | 
+MEASurement:MEAS<x>:STATE?@@{OFF|ON|<NR1>}@@設定或查詢指定自動測量項目的開啟或
+關閉狀態@@238@@RW@@N
+MEASurement:MEAS<x>:TYPe@@MEASurement:MEAS<x>:TYPe 
+{AMPLITUDE|AREA|BURST|CYCLEAREA|CYCLEMEAN|CYCLERMS|DELAY|FALLTIME|FREQUENCY|HIG
+H|LOW|MAXIMUM|MEAN|MINIMUM|NDUTY|NEGATIVEWIDTH|PERIOD|PK2PK|PDUTY|POSITIVEWIDTH
+|RISETIME|RMS|PHASE} | 
+MEASurement:MEAS<x>:TYPe?@@{AMPLITUDE|AREA|BURST|CYCLEAREA|CYCLEMEAN|...}@@設定
+或查詢指定自動測量項目的測量參數類型@@240@@RW@@N
+MEASurement:METHOD@@MEASurement:METHOD {HISTOGRAM|MINMAX|MEAN} | 
+MEASurement:METHOD?@@{HISTOGRAM|MINMAX|MEAN}@@設定或查詢測量 High/Low 
+電位計算的統計方法@@243@@RW@@N
+MEASurement:REFLevel:METHod@@MEASurement:REFLevel:METHod {PERCent|ABSolute} | 
+MEASurement:REFLevel:METHod?@@{PERCent|ABSolute}@@設定或查詢參考電位的設定單位
+模式（百分比或絕對電壓）@@246@@RW@@N
+MEASurement:REFLevel:ABSolute:HIGH@@MEASurement:REFLevel:ABSolute:HIGH <NR3> | 
+MEASurement:REFLevel:ABSolute:HIGH?@@<NR3> 
+(電壓)@@設定或查詢高參考電位的絕對電壓數值@@247@@RW@@N
+MEASurement:REFLevel:ABSolute:MID@@MEASurement:REFLevel:ABSolute:MID <NR3> | 
+MEASurement:REFLevel:ABSolute:MID?@@<NR3> 
+(電壓)@@設定或查詢中參考電位的絕對電壓數值@@248@@RW@@N
+MEASurement:REFLevel:ABSolute:LOW@@MEASurement:REFLevel:ABSolute:LOW <NR3> | 
+MEASurement:REFLevel:ABSolute:LOW?@@<NR3> 
+(電壓)@@設定或查詢低參考電位的絕對電壓數值@@249@@RW@@N
+MEASurement:REFLevel:PERCent:HIGH@@MEASurement:REFLevel:PERCent:HIGH <NR3> | 
+MEASurement:REFLevel:PERCent:HIGH?@@<NR3> (0 ~ 
+100%)@@設定或查詢高參考電位的波形振幅百分比@@250@@RW@@N
+MEASurement:REFLevel:PERCent:MID@@MEASurement:REFLevel:PERCent:MID <NR3> | 
+MEASurement:REFLevel:PERCent:MID?@@<NR3> (0 ~ 
+100%)@@設定或查詢中參考電位的波形振幅百分比@@251@@RW@@N
+MEASurement:REFLevel:PERCent:LOW@@MEASurement:REFLevel:PERCent:LOW <NR3> | 
+MEASurement:REFLevel:PERCent:LOW?@@<NR3> (0 ~ 
+100%)@@設定或查詢低參考電位的波形振幅百分比@@252@@RW@@N
+MEASurement:STATIstics:MODe@@MEASurement:STATIstics:MODe 
+{OFF|ALL|MEAN|STDDEV|MINMAX} | 
+MEASurement:STATIstics:MODe?@@{OFF|ALL|MEAN|STDDEV|MINMAX}@@設定或查詢自動測量
+統計數據的顯示與計算模式@@255@@RW@@N
+MEASurement:STATIstics:RESET@@MEASurement:STATIstics:RESET@@無@@重設並清除所有
+自動測量項目的統計數據累積紀錄@@257@@W@@N
+MEASurement:STATIstics:WEIGHTing@@MEASurement:STATIstics:WEIGHTing <NR1> | 
+MEASurement:STATIstics:WEIGHTing?@@<NR1> (1 ~ 
+1000)@@設定或查詢統計數據樣本計算的權重次數上限@@258@@RW@@N
+
+Resumed conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5

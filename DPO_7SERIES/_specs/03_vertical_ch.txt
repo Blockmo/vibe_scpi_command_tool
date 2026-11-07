@@ -1,0 +1,117 @@
+Answer:
+CH<x>?@@CH<x>?@@無@@查詢指定類比通道的所有垂直參數設定@@117@@R@@N
+CH<x>:BANdwidth@@CH<x>:BANdwidth {<NR3>|FULl} | 
+CH<x>:BANdwidth?@@{<NR3>|FULl}@@設定或查詢指定通道的低通頻寬限制@@117@@RW@@N
+CH<x>:BANdwidth:FILTer:OPTIMIZation@@CH<x>:BANdwidth:FILTer:OPTIMIZation 
+{FLATness|STEPresponse} | 
+CH<x>:BANdwidth:FILTer:OPTIMIZation?@@{FLATness|STEPresponse}@@設定或查詢通道濾
+波器的響應最佳化形狀@@118@@RW@@N
+CH<x>:CLIPping?@@CH<x>:CLIPping?@@無@@查詢指定通道輸入訊號是否超出 A/D 
+轉換器動態範圍@@119@@R@@N
+CH<x>:COUPling@@CH<x>:COUPling DC | 
+CH<x>:COUPling?@@DC@@設定或查詢指定通道的輸入耦合模式@@120@@RW@@N
+CH<x>:DESKew@@CH<x>:DESKew <NR3> | CH<x>:DESKew?@@<NR3> (-125ns ~ 
++125ns)@@設定或查詢指定通道的水平時延校正時間@@120@@RW@@N
+CH<x>:DITHERrange@@CH<x>:DITHERrange <NR3> | CH<x>:DITHERrange?@@<NR3> (0.0 ~ 
+100.0%)@@設定或查詢指定通道抖動全步階百分比範圍@@121@@RW@@N
+CH<x>:INVert@@CH<x>:INVert {ON|OFF|<NR1>} | 
+CH<x>:INVert?@@{ON|OFF|<NR1>}@@設定或查詢指定通道的反相顯示狀態@@122@@RW@@N
+CH<x>🏷COLor@@CH<x>🏷COLor <QString> | CH<x>🏷COLor?@@<QString> 
+(HEX顏色碼)@@設定或查詢指定通道波形標籤的顯示顏色@@123@@RW@@N
+CH<x>🏷FONT:BOLD@@CH<x>:LABel:FONT:BOLD {ON|OFF|<NR1>} | 
+CH<x>🏷FONT:BOLD?@@{ON|OFF|<NR1>}@@設定或查詢指定通道波形標籤粗體字型狀態@@124@@
+RW@@N
+CH<x>🏷FONT:ITALic@@CH<x>:LABel:FONT:ITALic {ON|OFF|<NR1>} | 
+CH<x>🏷FONT:ITALic?@@{ON|OFF|<NR1>}@@設定或查詢指定通道波形標籤斜體字型狀態@@125
+@@RW@@N
+CH<x>🏷FONT:SIZE@@CH<x>:LABel:FONT:SIZE <NR1> | CH<x>🏷FONT:SIZE?@@<NR1> 
+(字型大小Pt)@@設定或查詢指定通道波形標籤字型大小@@126@@RW@@N
+CH<x>🏷FONT:TYPE@@CH<x>:LABel:FONT:TYPE <QString> | CH<x>🏷FONT:TYPE?@@<QString> 
+(字型名稱)@@設定或查詢指定通道波形標籤字型種類@@127@@RW@@N
+CH<x>🏷FONT:UNDERline@@CH<x>:LABel:FONT:UNDERline {ON|OFF|<NR1>} | 
+CH<x>🏷FONT:UNDERline?@@{ON|OFF|<NR1>}@@設定或查詢指定通道波形標籤底線字型狀態@@
+128@@RW@@N
+CH<x>🏷NAMe@@CH<x>🏷NAMe <QString> | CH<x>🏷NAMe?@@<QString> 
+(1~32字元)@@設定或查詢指定通道波形顯示標籤文字@@129@@RW@@N
+CH<x>🏷XPOS@@CH<x>🏷XPOS <NR3> | CH<x>🏷XPOS?@@<NR3> 
+(像素位置)@@設定或查詢指定通道波形標籤的水平螢幕位置@@130@@RW@@N
+CH<x>🏷YPOS@@CH<x>🏷YPOS <NR3> | CH<x>🏷YPOS?@@<NR3> 
+(像素位置)@@設定或查詢指定通道波形標籤相對基線的垂直位置@@131@@RW@@N
+CH<x>:OFFSet@@CH<x>:OFFSet <NR3> | CH<x>:OFFSet?@@<NR3> 
+(電壓/物理單位)@@設定或查詢指定通道的垂直偏移電壓@@132@@RW@@N
+CH<x>:POSition@@CH<x>:POSition <NR1> | CH<x>:POSition?@@<NR1> 
+(格數Divisions)@@設定或查詢指定通道波形相對畫面的垂直位置@@133@@RW@@N
+CH<x>:PRObe?@@CH<x>:PRObe?@@無@@查詢連接於指定通道的探棒所有參數資訊@@134@@R@@N
+CH<x>:PROBECal?@@CH<x>:PROBECal?@@無@@查詢指定通道的探棒校正狀態@@134@@R@@N
+CH<x>:PRObe:COMPensate@@CH<x>:PRObe:COMPensate@@無@@啟動指定通道探棒的自動補償
+程序@@136@@W@@N
+CH<x>:PRObe:COMPensate:DEFault@@CH<x>:PRObe:COMPensate:DEFault@@無@@重設指定通
+道探棒的補償參數為出廠預設值@@136@@W@@N
+CH<x>:PRObe:DYNAmicrange?@@CH<x>:PRObe:DYNAmicrange?@@無@@查詢指定通道探棒的動
+態範圍@@137@@R@@N
+CH<x>:PRObe:GAIN?@@CH<x>:PRObe:GAIN?@@無@@查詢指定通道探棒的增益比率@@140@@R@@N
+CH<x>:PRObe:ID?@@CH<x>:PRObe:ID?@@無@@查詢指定通道探棒的型號與序號資訊@@141@@R@
+@N
+CH<x>:PRObe:ID:SERnumber?@@CH<x>:PRObe🆔SERnumber?@@無@@查詢指定通道探棒的序列
+號@@141@@R@@N
+CH<x>:PRObe:ID:TYPe?@@CH<x>:PRObe🆔TYPe?@@無@@查詢指定通道探棒的型號名稱@@142@@
+R@@N
+CH<x>:PRObe:INPUTMode@@CH<x>:PRObe:INPUTMode {A|B|COMMONMODE|DIFFERENTIAL} | 
+CH<x>:PRObe:INPUTMode?@@{A|B|COMMONMODE|DIFFERENTIAL}@@設定或查詢雙輸入探棒的訊
+號輸入模式@@143@@RW@@N
+CH<x>:PRObe:INPUTMode:AOFFSet@@CH<x>:PRObe:INPUTMode:AOFFSet <NR3> | 
+CH<x>:PRObe:INPUTMode:AOFFSet?@@<NR3> (電壓/物理單位)@@設定或查詢雙輸入探棒 A 
+模式的偏移電壓@@144@@RW@@N
+CH<x>:PRObe:INPUTMode:BOFFSet@@CH<x>:PRObe:INPUTMode:BOFFSet <NR3> | 
+CH<x>:PRObe:INPUTMode:BOFFSet?@@<NR3> (電壓/物理單位)@@設定或查詢雙輸入探棒 B 
+模式的偏移電壓@@145@@RW@@N
+CH<x>:PRObe:INPUTMode:COFFSet@@CH<x>:PRObe:INPUTMode:COFFSet <NR3> | 
+CH<x>:PRObe:INPUTMode:COFFSet?@@<NR3> 
+(電壓/物理單位)@@設定或查詢雙輸入探棒共模偏移電壓@@147@@RW@@N
+CH<x>:PRObe:INPUTMode:DOFFSet@@CH<x>:PRObe:INPUTMode:DOFFSet <NR3> | 
+CH<x>:PRObe:INPUTMode:DOFFSet?@@<NR3> 
+(電壓/物理單位)@@設定或查詢雙輸入探棒差模偏移電壓@@148@@RW@@N
+CH<x>:PRObe:RESistance?@@CH<x>:PRObe:RESistance?@@無@@查詢指定通道探棒的輸入阻
+抗@@149@@R@@N
+CH<x>:PRObe:STATus?@@CH<x>:PRObe:STATus?@@無@@查詢指定通道探棒的狀態與錯誤位元
+代碼@@150@@R@@N
+CH<x>:PROBEFunc:EXTAtten@@CH<x>:PROBEFunc:EXTAtten <NR3> | 
+CH<x>:PROBEFunc:EXTAtten?@@<NR3> 
+(衰減倍率)@@設定或查詢指定通道外部衰減器的倍率設定@@137@@RW@@N
+CH<x>:PROBEFunc:EXTDBatten@@CH<x>:PROBEFunc:EXTDBatten <NR3> | 
+CH<x>:PROBEFunc:EXTDBatten?@@<NR3> 
+(dB衰減值)@@設定或查詢指定通道外部衰減器的分貝衰減值@@138@@RW@@N
+CH<x>:PROBEFunc:EXTUnits@@CH<x>:PROBEFunc:EXTUnits <QString> | 
+CH<x>:PROBEFunc:EXTUnits?@@<QString> 
+(單位字串)@@設定或查詢指定通道外部衰減器的自訂物理單位@@139@@RW@@N
+CH<x>:PRObe:TIP🆔SERnumber?@@CH<x>:PRObe:TIP🆔SERnumber?@@無@@查詢指定通道探棒 
+Tip 端配件的序列號@@151@@R@@N
+CH<x>:PRObe:TIP🆔TYPe?@@CH<x>:PRObe:TIP🆔TYPe?@@無@@查詢指定通道探棒 Tip 
+端配件的型號名稱@@152@@R@@N
+CH<x>:PRObe:TRACking:OFFSet@@CH<x>:PRObe:TRACking:OFFSet {ON|OFF} | 
+CH<x>:PRObe:TRACking:OFFSet?@@{ON|OFF}@@設定或查詢指定通道探棒的偏移跟蹤狀態@@1
+52@@RW@@N
+CH<x>:PRObe:TRACking:VTERm@@CH<x>:PRObe:TRACking:VTERm {ON|OFF} | 
+CH<x>:PRObe:TRACking:VTERm?@@{ON|OFF}@@設定或查詢指定通道探棒的 VTERM 
+跟蹤狀態@@153@@RW@@N
+CH<x>:PRObe:UNIts?@@CH<x>:PRObe:UNIts?@@無@@查詢指定通道探棒量測單位字串@@154@@
+R@@N
+CH<x>:PROBETYPE?@@CH<x>:PROBETYPE?@@無@@查詢連接於指定通道的探棒類型@@155@@R@@N
+CH<x>:QCHannel@@CH<x>:QCHannel {QC0|QC1|QC2|QC3|QC4|QC5|QC6|QC7} | 
+CH<x>:QCHannel?@@{QC0|QC1|QC2|QC3|QC4|QC5|QC6|QC7}@@設定或查詢指定通道的 
+QuietChannel 低雜訊濾波設定@@155@@RW@@N
+CH<x>:QCHannel:OPTimize@@CH<x>:QCHannel:OPTimize 
+EXECute@@EXECute@@自動依據輸入訊號調校最佳化指定通道的 QuietChannel 
+設定@@157@@W@@N
+CH<x>:SCAle@@CH<x>:SCAle <NR3> | CH<x>:SCAle?@@<NR3> 
+(V/div)@@設定或查詢指定類比通道的垂直敏銳度比例@@158@@RW@@N
+CH<x>:SCALERATio@@CH<x>:SCALERATio <NR2> | CH<x>:SCALERATio?@@<NR2> 
+(比例值)@@設定或查詢指定類比通道的波形顯示垂直比例縮放係數@@159@@RW@@N
+CH<x>:TERmination@@CH<x>:TERmination 50 | 
+CH<x>:TERmination?@@50@@設定或查詢指定類比通道的垂直輸入匹配阻抗@@159@@RW@@N
+CH<x>:VTERM:DUAL:A@@CH<x>:VTERM:DUAL:A <NR3> | CH<x>:VTERM:DUAL:A?@@<NR3> 
+(端子電壓)@@設定或查詢雙輸入探棒 A 側的終端電壓@@160@@RW@@N
+CH<x>:VTERM:DUAL:B@@CH<x>:VTERM:DUAL:B <NR3> | CH<x>:VTERM:DUAL:B?@@<NR3> 
+(端子電壓)@@設定或查詢雙輸入探棒 B 側的終端電壓@@161@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 4)

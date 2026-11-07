@@ -1,0 +1,135 @@
+Answer:
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:CROSSIng@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:CRO
+SSIng {UPper|LOWer|EITher} | 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:CROSSIng?@@{UPper|LOWer|EITher}@@設定或查詢視窗
+搜尋超越邊界時的穿透方向條件@@550@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGger:A:
+WINdow:LOGICQUALification {OFF|ON|<NR1>} | 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢
+視窗搜尋是否啟用邏輯條件合格化@@552@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:POL
+arity {POSITIVe|NEGATIVe|EITher} | 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:POLarity?@@{POSITIVe|NEGATIVe|EITher}@@設定或查
+詢視窗搜尋訊號的極性條件@@554@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:SOUrc
+e {CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢視窗
+搜尋的輸入波形訊號來源@@556@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:HIGH@@SEARCH:SEARCH<x>:TRIGger🅰WINdow
+:THReshold:HIGH <NR3> | SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:HIGH?@@<NR3> 
+(電壓)@@設定或查詢視窗搜尋的高門檻電壓值@@558@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:LOW@@SEARCH:SEARCH<x>:TRIGger🅰WINdow:
+THReshold:LOW <NR3> | SEARCH:SEARCH<x>:TRIGger🅰WINdow:THReshold:LOW?@@<NR3> 
+(電壓)@@設定或查詢視窗搜尋的低門檻電壓值@@560@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:WHEn 
+{ENTERing|EXITing|INside|OUTside} | 
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:WHEn?@@{ENTERing|EXITing|INside|OUTside}@@設定
+或查詢視窗搜尋事件條件判斷模式@@562@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰WINdow:WIDth@@SEARCH:SEARCH<x>:TRIGger:A:WINdow:WIDth 
+<NR3> | SEARCH:SEARCH<x>:TRIGger🅰WINdow:WIDth?@@<NR3> 
+(秒)@@設定或查詢視窗搜尋違反條件的最小時間寬度門檻@@564@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGICQUALification@@SEARCH:SEARCH<x>:TRIGger🅰LOGICQUAL
+ification {AND|OR|NAND|NOR} | 
+SEARCH:SEARCH<x>:TRIGger🅰LOGICQUALification?@@{AND|OR|NAND|NOR}@@設定或查詢邏輯
+合格化搜尋的布林運算類型@@566@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGICPattern:{CH<x>}@@SEARCH:SEARCH<x>:TRIGger:A:LOGIC
+Pattern:{CH<x>} {HIGH|LOW|X} | 
+SEARCH:SEARCH<x>:TRIGger🅰LOGICPattern:{CH<x>}?@@{HIGH|LOW|X}@@設定或查詢指定類
+比通道在邏輯搜尋中的狀態圖樣@@568@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:FUNCtion@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:FUNCt
+ion {AND|OR|NAND|NOR} | 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:FUNCtion?@@{AND|OR|NAND|NOR}@@設定或查詢邏輯搜尋
+的布林邏輯運算函數@@570@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:INPut:CH<x>@@SEARCH:SEARCH<x>:TRIGger🅰LOGIc:INPu
+t:CH<x> {HIGH|LOW|X} | 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:INPut:CH<x>?@@{HIGH|LOW|X}@@設定或查詢指定通道參
+與邏輯搜尋的邏輯準位輸入@@572@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:THReshold:CH<x>@@SEARCH:SEARCH<x>:TRIGger🅰LOGIc:
+THReshold:CH<x> <NR3> | SEARCH:SEARCH<x>:TRIGger🅰LOGIc:THReshold:CH<x>?@@<NR3> 
+(電壓)@@設定或查詢指定通道在邏輯搜尋下的邏輯判定電位門檻@@574@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:LOGIc:WHEn 
+{TRUE|FALSE|LESSthan|MOREthan} | 
+SEARCH:SEARCH<x>:TRIGger🅰LOGIc:WHEn?@@{TRUE|FALSE|LESSthan|MOREthan}@@設定或查
+詢邏輯搜尋的發生時間或狀態條件@@576@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:EDGE@@SEARCH:SEARCH<x>:TRIGger🅰SETHold:C
+LOCk:EDGE {RISe|FALl} | 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:EDGE?@@{RISe|FALl}@@設定或查詢 
+Setup/Hold 搜尋的時脈訊號有效邊緣極性@@578@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:SOUrce@@SEARCH:SEARCH<x>:TRIGger🅰SETHold
+:CLOCk:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或
+查詢 Setup/Hold 搜尋的時脈訊號來源通道@@580@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:THReshold@@SEARCH:SEARCH<x>:TRIGger🅰SETH
+old:CLOCk:THReshold <NR3> | 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:CLOCk:THReshold?@@<NR3> (電壓)@@設定或查詢 
+Setup/Hold 搜尋的時脈電位門檻值@@582@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:DATa:SOUrce@@SEARCH:SEARCH<x>:TRIGger🅰SETHold:
+DATa:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:DATa:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查
+詢 Setup/Hold 搜尋的資料訊號來源通道@@584@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:DATa:THReshold@@SEARCH:SEARCH<x>:TRIGger🅰SETHo
+ld:DATa:THReshold <NR3> | 
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:DATa:THReshold?@@<NR3> (電壓)@@設定或查詢 
+Setup/Hold 搜尋的資料電位門檻值@@586@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:HOLDTime@@SEARCH:SEARCH<x>:TRIGger:A:SETHold:H
+OLDTime <NR3> | SEARCH:SEARCH<x>:TRIGger🅰SETHold:HOLDTime?@@<NR3> 
+(秒)@@設定或查詢 Setup/Hold 搜尋的保持時間限制值@@588@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰SETHold:SETTime@@SEARCH:SEARCH<x>:TRIGger:A:SETHold:SE
+TTime <NR3> | SEARCH:SEARCH<x>:TRIGger🅰SETHold:SETTime?@@<NR3> (秒)@@設定或查詢
+Setup/Hold 搜尋的建立時間限制值@@590@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:DELTATime@@SEARCH:SEARCH<x>:TRIGger:A:TRANs
+ition:DELTATime <NR3> | SEARCH:SEARCH<x>:TRIGger🅰TRANsition:DELTATime?@@<NR3> 
+(秒)@@設定或查詢轉態時間搜尋的轉態時間差門檻@@592@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGge
+r:A:TRANsition:LOGICQUALification {OFF|ON|<NR1>} | 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或
+查詢轉態時間搜尋是否啟用邏輯條件合格化@@594@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:TRANsi
+tion:POLarity {POSITIVe|NEGATIVe|EITher} | 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:POLarity?@@{POSITIVe|NEGATIVe|EITher}@@設定
+或查詢轉態時間搜尋的邊緣極性條件@@596@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:TRANsiti
+on:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢
+轉態時間搜尋的輸入波形訊號來源@@598@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:HIGH@@SEARCH:SEARCH<x>:TRIGger🅰TR
+ANsition:THReshold:HIGH <NR3> | 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:HIGH?@@<NR3> 
+(電壓)@@設定或查詢轉態時間搜尋的高電位轉換門檻@@600@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:LOW@@SEARCH:SEARCH<x>:TRIGger🅰TRA
+Nsition:THReshold:LOW <NR3> | 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:THReshold:LOW?@@<NR3> 
+(電壓)@@設定或查詢轉態時間搜尋的低電位轉換門檻@@602@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:TRANsition
+:WHEn {FASTer|SLOWer|EQual|UNEQual} | 
+SEARCH:SEARCH<x>:TRIGger🅰TRANsition:WHEn?@@{FASTer|SLOWer|EQual|UNEQual}@@設定
+或查詢轉態時間搜尋的轉態速度比較判斷模式@@604@@RW@@N
+SEARCH:SEARCH<x>:NAVigate@@SEARCH:SEARCH<x>:NAVigate 
+{NEXT|PREVious|MIN|NONE|MAX}@@{NEXT|PREVious|MIN|NONE|MAX}@@在搜尋到的波形標記 
+Mark 之間進行導覽切換@@139@@W@@N
+SEARCH:SEARCH<x>:COPy@@SEARCH:SEARCH<x>:COPy 
+{SEARCHtotrigger|TRIGgertosearch}@@{SEARCHtotrigger|TRIGgertosearch}@@將波形搜
+尋條件與觸發設定互相複製套用@@138@@W@@N
+SEARCH:SELected@@SEARCH:SELected SEARCH<x> | 
+SEARCH:SELected?@@SEARCH<x>@@設定或查詢目前 UI 
+所選取的主控制搜尋標記索引@@608@@RW@@N
+MARK:ADDNew@@MARK:ADDNew <QString>@@<QString> 
+("MARK<x>")@@手動在指定位置或時間點新增自訂波形標記@@610@@W@@N
+MARK:DELete@@MARK:DELete <QString>@@<QString> 
+("MARK<x>")@@刪除指定編號的手動自訂波形標記@@612@@W@@N
+MARK:DELETEALL@@MARK:DELETEALL@@無@@刪除畫面上所有的手動與搜尋產生的波形標記@@6
+14@@W@@N
+MARK:MARK<x>:STATE@@MARK:MARK<x>:STATE {OFF|ON|<NR1>} | 
+MARK:MARK<x>:STATE?@@{OFF|ON|<NR1>}@@設定或查詢指定波形標記的顯示開啟狀態@@616@
+@RW@@N
+MARK:MARK<x>:XPOSition@@MARK:MARK<x>:XPOSition <NR3> | 
+MARK:MARK<x>:XPOSition?@@<NR3> 
+(時間)@@設定或查詢指定波形標記在波形上記錄的水平時間位置@@618@@RW@@N
+SEARCHTABle:ADDNew@@SEARCHTABle:ADDNew <QString>@@<QString> 
+("SEARCHTABLE<x>")@@新增搜尋結果與 Mark 統計事件數據表格@@620@@W@@N
+SEARCHTABle:DELete@@SEARCHTABle:DELete <QString>@@<QString> 
+("SEARCHTABLE<x>")@@刪除指定的搜尋結果數據表格@@622@@W@@N
+SEARCHTABle:LIST?@@SEARCHTABle:LIST?@@無@@查詢目前已建立的所有搜尋 Mark 
+數據表格列表@@624@@R@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 14)

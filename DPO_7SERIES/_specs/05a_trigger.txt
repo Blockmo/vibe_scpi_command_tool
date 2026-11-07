@@ -1,0 +1,85 @@
+Continuing conversation bed39e7c...
+Answer:
+TRIGger@@TRIGger FORCe | 
+TRIGger?@@FORCe@@強制產生一次波形觸發事件或查詢目前整體觸發參數@@91@@RW@@N
+TRIGger:STATE?@@TRIGger:STATE?@@無@@查詢觸發系統目前的執行與準備狀態@@91@@R@@N
+TRIGger🅰MODe@@TRIGger🅰MODe {AUTO|NORMal} | 
+TRIGger🅰MODe?@@{AUTO|NORMal}@@設定或查詢 A 觸發系統的操作模式@@91@@RW@@N
+TRIGger🅰TYPe@@TRIGger🅰TYPe 
+{EDGe|PULSEwidth|RUNt|TIMEOut|TRANsition|WINdow|LOGIc|SETHold|VIDeo|BUS} | 
+TRIGger🅰TYPe?@@{EDGe|PULSEwidth|RUNt|TIMEOut|TRANsition|WINdow|LOGIc|SETHold|VI
+Deo|BUS}@@設定或查詢 A 觸發的主類型@@91@@RW@@N
+TRIGger🅰HOLDoff:BY@@TRIGger:A:HOLDoff:BY {TIMe|DEFAult|OFF} | 
+TRIGger🅰HOLDoff:BY?@@{TIMe|DEFAult|OFF}@@設定或查詢 A 
+觸發抑制模式基準@@91@@RW@@N
+TRIGger🅰HOLDoff:TIMe@@TRIGger:A:HOLDoff:TIMe <NR3> | 
+TRIGger🅰HOLDoff:TIMe?@@<NR3> (秒)@@設定或查詢 A 
+觸發抑制的持續時間長度@@91@@RW@@N
+TRIGger🅰HOLDoff:USER@@TRIGger:A:HOLDoff:USER@@無@@手動解除觸發抑制狀態並接收下
+一次 A 觸發事件@@91@@W@@N
+TRIGger🅰EDGE:COUPling@@TRIGger:A:EDGE:COUPling {AC|DC|HFRej|LFRej|NOISErej} | 
+TRIGger🅰EDGE:COUPling?@@{AC|DC|HFRej|LFRej|NOISErej}@@設定或查詢邊緣觸發訊號的
+輸入耦合方式@@91@@RW@@N
+TRIGger🅰EDGE:SLOpe@@TRIGger:A:EDGE:SLOpe {RISe|FALl|EITher} | 
+TRIGger🅰EDGE:SLOpe?@@{RISe|FALl|EITher}@@設定或查詢邊緣觸發的邊緣斜率極性@@91@@
+RW@@N
+TRIGger🅰EDGE:SOUrce@@TRIGger:A:EDGE:SOUrce {CH<x>|MATH<x>|REF<x>|LINE|AUX} | 
+TRIGger🅰EDGE:SOUrce?@@{CH<x>|MATH<x>|REF<x>|LINE|AUX}@@設定或查詢邊緣觸發的訊號
+來源通道@@91@@RW@@N
+TRIGger🅰LEVel:CH<x>@@TRIGger:A:LEVel:CH<x> <NR3> | TRIGger🅰LEVel:CH<x>?@@<NR3> 
+(電壓)@@設定或查詢指定類比通道的 A 觸發電位門檻@@91@@RW@@N
+TRIGger🅰LEVel@@TRIGger🅰LEVel {SETLevel|<NR3>} | 
+TRIGger🅰LEVel?@@{SETLevel|<NR3>}@@設定 A 觸發電位為訊號峰值的 50% 
+或指定數值@@91@@RW@@N
+TRIGger🅰PULSEWidth:HIGHLimit@@TRIGger:A:PULSEWidth:HIGHLimit <NR3> | 
+TRIGger🅰PULSEWidth:HIGHLimit?@@<NR3> 
+(秒)@@設定或查詢脈寬觸發時的脈波寬度上限值@@91@@RW@@N
+TRIGger🅰PULSEWidth:LOGICQUALification@@TRIGger:A:PULSEWidth:LOGICQUALification 
+{OFF|ON|<NR1>} | 
+TRIGger🅰PULSEWidth:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢脈寬觸發是否
+啟用邏輯條件合格化@@91@@RW@@N
+TRIGger🅰PULSEWidth:LOWLimit@@TRIGger:A:PULSEWidth:LOWLimit <NR3> | 
+TRIGger🅰PULSEWidth:LOWLimit?@@<NR3> 
+(秒)@@設定或查詢脈寬觸發時的脈波寬度下限值@@91@@RW@@N
+TRIGger🅰PULSEWidth:POLarity@@TRIGger:A:PULSEWidth:POLarity {POSITIVe|NEGATIVe} 
+| 
+TRIGger🅰PULSEWidth:POLarity?@@{POSITIVe|NEGATIVe}@@設定或查詢脈寬觸發的脈波極性
+@@91@@RW@@N
+TRIGger🅰PULSEWidth:SOUrce@@TRIGger:A:PULSEWidth:SOUrce {CH<x>|MATH<x>|REF<x>} |
+TRIGger🅰PULSEWidth:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢脈寬觸發的輸入訊
+號來源@@91@@RW@@N
+TRIGger🅰PULSEWidth:WHEn@@TRIGger:A:PULSEWidth:WHEn 
+{LESSthan|MOREthan|EQual|UNEQual|INside|OUTside} | 
+TRIGger🅰PULSEWidth:WHEn?@@{LESSthan|MOREthan|EQual|UNEQual|INside|OUTside}@@設
+定或查詢脈寬觸發的寬度條件比較判斷模式@@91@@RW@@N
+TRIGger🅰RUNT:LOGICQUALification@@TRIGger:A:RUNT:LOGICQUALification 
+{OFF|ON|<NR1>} | 
+TRIGger🅰RUNT:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢矮脈波觸發是否啟用
+邏輯條件合格化@@91@@RW@@N
+TRIGger🅰RUNT:POLarity@@TRIGger:A:RUNT:POLarity {POSITIVe|NEGATIVe|EITher} | 
+TRIGger🅰RUNT:POLarity?@@{POSITIVe|NEGATIVe|EITher}@@設定或查詢矮脈波觸發檢查的
+脈波極性@@91@@RW@@N
+TRIGger🅰RUNT:SOUrce@@TRIGger:A:RUNT:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+TRIGger🅰RUNT:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢矮脈波觸發的輸入波形來
+源@@91@@RW@@N
+TRIGger🅰RUNT:WHEn@@TRIGger:A:RUNT:WHEn {OCCURS|LESSthan|MOREthan|EQual|UNEQual}
+| 
+TRIGger🅰RUNT:WHEn?@@{OCCURS|LESSthan|MOREthan|EQual|UNEQual}@@設定或查詢矮脈波
+觸發的發生或時間條件@@91@@RW@@N
+TRIGger🅰RUNT:WIDth@@TRIGger:A:RUNT:WIDth <NR3> | TRIGger🅰RUNT:WIDth?@@<NR3> 
+(秒)@@設定或查詢矮脈波觸發的時間限定門檻@@91@@RW@@N
+TRIGger🅰TIMEOut:LOGICQUALification@@TRIGger:A:TIMEOut:LOGICQUALification 
+{OFF|ON|<NR1>} | 
+TRIGger🅰TIMEOut:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢逾時觸發是否啟用
+邏輯條件合格化@@91@@RW@@N
+TRIGger🅰TIMEOut:POLarity@@TRIGger:A:TIMEOut:POLarity {HIGH|LOW|EITher} | 
+TRIGger🅰TIMEOut:POLarity?@@{HIGH|LOW|EITher}@@設定或查詢逾時觸發保持在 High/Low
+狀態的電位極性@@91@@RW@@N
+TRIGger🅰TIMEOut:SOUrce@@TRIGger:A:TIMEOut:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+TRIGger🅰TIMEOut:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢逾時觸發的輸入訊號來
+源@@91@@RW@@N
+TRIGger🅰TIMEOut:TIMe@@TRIGger:A:TIMEOut:TIMe <NR3> | 
+TRIGger🅰TIMEOut:TIMe?@@<NR3> 
+(秒)@@設定或查詢逾時觸發所等待的限制時間長度@@91@@RW@@N
+
+Resumed conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5

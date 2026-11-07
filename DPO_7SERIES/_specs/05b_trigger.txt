@@ -1,0 +1,146 @@
+Answer:
+TRIGger🅰WINdow:CROSSIng@@TRIGger:A:WINdow:CROSSIng {UPper|LOWer|EITher} | 
+TRIGger🅰WINdow:CROSSIng?@@{UPper|LOWer|EITher}@@設定或查詢視窗觸發超越邊界時的
+穿透方向條件@@92@@RW@@N
+TRIGger🅰WINdow:LOGICQUALification@@TRIGger:A:WINdow:LOGICQUALification 
+{OFF|ON|<NR1>} | 
+TRIGger🅰WINdow:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢視窗觸發是否啟用
+邏輯條件合格化@@92@@RW@@N
+TRIGger🅰WINdow:SOUrce@@TRIGger:A:WINdow:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+TRIGger🅰WINdow:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢視窗觸發的輸入波形訊
+號來源@@92@@RW@@N
+TRIGger🅰WINdow:THReshold:HIGH@@TRIGger🅰WINdow:THReshold:HIGH <NR3> | 
+TRIGger🅰WINdow:THReshold:HIGH?@@<NR3> 
+(電壓)@@設定或查詢視窗觸發的高電位門檻值@@92@@RW@@N
+TRIGger🅰WINdow:THReshold:LOW@@TRIGger🅰WINdow:THReshold:LOW <NR3> | 
+TRIGger🅰WINdow:THReshold:LOW?@@<NR3> 
+(電壓)@@設定或查詢視窗觸發的低電位門檻值@@92@@RW@@N
+TRIGger🅰WINdow:WHEn@@TRIGger:A:WINdow:WHEn {ENTERing|EXITing|INside|OUTside} | 
+TRIGger🅰WINdow:WHEn?@@{ENTERing|EXITing|INside|OUTside}@@設定或查詢視窗觸發的事
+件條件判斷模式@@92@@RW@@N
+TRIGger🅰WINdow:WIDth@@TRIGger:A:WINdow:WIDth <NR3> | 
+TRIGger🅰WINdow:WIDth?@@<NR3> 
+(秒)@@設定或查詢視窗觸發違反條件的最小時間寬度門檻@@92@@RW@@N
+TRIGger🅰LOGICQUALification@@TRIGger🅰LOGICQUALification {AND|OR|NAND|NOR} | 
+TRIGger🅰LOGICQUALification?@@{AND|OR|NAND|NOR}@@設定或查詢 A 
+觸發系統邏輯合格化運算類型@@92@@RW@@N
+TRIGger🅰LOGICPattern:{CH<x>}@@TRIGger:A:LOGICPattern:{CH<x>} {HIGH|LOW|X} | 
+TRIGger🅰LOGICPattern:{CH<x>}?@@{HIGH|LOW|X}@@設定或查詢指定類比通道在邏輯觸發中
+的狀態圖樣@@92@@RW@@N
+TRIGger🅰LOGIc:FUNCtion@@TRIGger:A:LOGIc:FUNCtion {AND|OR|NAND|NOR} | 
+TRIGger🅰LOGIc:FUNCtion?@@{AND|OR|NAND|NOR}@@設定或查詢邏輯觸發的布林邏輯運算函
+數@@92@@RW@@N
+TRIGger🅰LOGIc:INPut:CH<x>@@TRIGger🅰LOGIc:INPut:CH<x> {HIGH|LOW|X} | 
+TRIGger🅰LOGIc:INPut:CH<x>?@@{HIGH|LOW|X}@@設定或查詢指定通道參與邏輯觸發的邏輯
+準位輸入@@92@@RW@@N
+TRIGger🅰LOGIc:THReshold:CH<x>@@TRIGger🅰LOGIc:THReshold:CH<x> <NR3> | 
+TRIGger🅰LOGIc:THReshold:CH<x>?@@<NR3> 
+(電壓)@@設定或查詢指定通道在邏輯觸發下的邏輯判定電位門檻@@92@@RW@@N
+TRIGger🅰LOGIc:WHEn@@TRIGger:A:LOGIc:WHEn {TRUE|FALSE|LESSthan|MOREthan} | 
+TRIGger🅰LOGIc:WHEn?@@{TRUE|FALSE|LESSthan|MOREthan}@@設定或查詢邏輯觸發的發生時
+間或狀態條件@@92@@RW@@N
+TRIGger🅰SETHold:CLOCk:EDGE@@TRIGger🅰SETHold:CLOCk:EDGE {RISe|FALl} | 
+TRIGger🅰SETHold:CLOCk:EDGE?@@{RISe|FALl}@@設定或查詢 Setup/Hold 
+觸發的時脈訊號有效邊緣極性@@93@@RW@@N
+TRIGger🅰SETHold:CLOCk:SOUrce@@TRIGger🅰SETHold:CLOCk:SOUrce 
+{CH<x>|MATH<x>|REF<x>} | 
+TRIGger🅰SETHold:CLOCk:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢 Setup/Hold 
+觸發的時脈訊號來源通道@@93@@RW@@N
+TRIGger🅰SETHold:CLOCk:THReshold@@TRIGger🅰SETHold:CLOCk:THReshold <NR3> | 
+TRIGger🅰SETHold:CLOCk:THReshold?@@<NR3> (電壓)@@設定或查詢 Setup/Hold 
+觸發的時脈電位門檻值@@93@@RW@@N
+TRIGger🅰SETHold:DATa:SOUrce@@TRIGger🅰SETHold:DATa:SOUrce {CH<x>|MATH<x>|REF<x>}
+| TRIGger🅰SETHold:DATa:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢 Setup/Hold 
+觸發的資料訊號來源通道@@93@@RW@@N
+TRIGger🅰SETHold:DATa:THReshold@@TRIGger🅰SETHold:DATa:THReshold <NR3> | 
+TRIGger🅰SETHold:DATa:THReshold?@@<NR3> (電壓)@@設定或查詢 Setup/Hold 
+觸發的資料電位門檻值@@93@@RW@@N
+TRIGger🅰SETHold:HOLDTime@@TRIGger:A:SETHold:HOLDTime <NR3> | 
+TRIGger🅰SETHold:HOLDTime?@@<NR3> (秒)@@設定或查詢 Setup/Hold 
+觸發的保持時間限制值@@93@@RW@@N
+TRIGger🅰SETHold:SETTime@@TRIGger:A:SETHold:SETTime <NR3> | 
+TRIGger🅰SETHold:SETTime?@@<NR3> (秒)@@設定或查詢 Setup/Hold 
+觸發的建立時間限制值@@93@@RW@@N
+TRIGger🅰TRANsition:DELTatime@@TRIGger:A:TRANsition:DELTatime <NR3> | 
+TRIGger🅰TRANsition:DELTatime?@@<NR3> 
+(秒)@@設定或查詢轉態時間觸發的轉態時間差門檻@@93@@RW@@N
+TRIGger🅰TRANsition:LOGICQUALification@@TRIGger:A:TRANsition:LOGICQUALification 
+{OFF|ON|<NR1>} | 
+TRIGger🅰TRANsition:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢轉態時間觸發
+是否啟用邏輯條件合格化@@93@@RW@@N
+TRIGger🅰TRANsition:POLarity@@TRIGger:A:TRANsition:POLarity 
+{POSITIVe|NEGATIVe|EITher} | 
+TRIGger🅰TRANsition:POLarity?@@{POSITIVe|NEGATIVe|EITher}@@設定或查詢轉態時間觸
+發的邊緣極性條件@@93@@RW@@N
+TRIGger🅰TRANsition:SOUrce@@TRIGger:A:TRANsition:SOUrce {CH<x>|MATH<x>|REF<x>} |
+TRIGger🅰TRANsition:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢轉態時間觸發的輸
+入波形訊號來源@@93@@RW@@N
+TRIGger🅰TRANsition:THReshold:HIGH@@TRIGger🅰TRANsition:THReshold:HIGH <NR3> | 
+TRIGger🅰TRANsition:THReshold:HIGH?@@<NR3> 
+(電壓)@@設定或查詢轉態時間觸發的高電位轉換門檻@@93@@RW@@N
+TRIGger🅰TRANsition:THReshold:LOW@@TRIGger🅰TRANsition:THReshold:LOW <NR3> | 
+TRIGger🅰TRANsition:THReshold:LOW?@@<NR3> 
+(電壓)@@設定或查詢轉態時間觸發的低電位轉換門檻@@93@@RW@@N
+TRIGger🅰TRANsition:WHEn@@TRIGger:A:TRANsition:WHEn 
+{FASTer|SLOWer|EQual|UNEQual} | 
+TRIGger🅰TRANsition:WHEn?@@{FASTer|SLOWer|EQual|UNEQual}@@設定或查詢轉態時間觸發
+的轉態速度比較判斷模式@@93@@RW@@N
+TRIGger🅱BY@@TRIGger🅱BY {TIMe|EVENts} | TRIGger🅱BY?@@{TIMe|EVENts}@@設定或查詢 
+A->B 循序觸發的 B 觸發延遲模式@@94@@RW@@N
+TRIGger🅱EDGE:COUPling@@TRIGger:B:EDGE:COUPling {AC|DC|HFRej|LFRej|NOISErej} | 
+TRIGger🅱EDGE:COUPling?@@{AC|DC|HFRej|LFRej|NOISErej}@@設定或查詢 B 
+邊緣觸發訊號的輸入耦合方式@@94@@RW@@N
+TRIGger🅱EDGE:SLOpe@@TRIGger:B:EDGE:SLOpe {RISe|FALl|EITher} | 
+TRIGger🅱EDGE:SLOpe?@@{RISe|FALl|EITher}@@設定或查詢 B 
+邊緣觸發的邊緣斜率極性@@94@@RW@@N
+TRIGger🅱EDGE:SOUrce@@TRIGger:B:EDGE:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+TRIGger🅱EDGE:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢 B 
+邊緣觸發的訊號來源通道@@94@@RW@@N
+TRIGger🅱EVENTS:COUNt@@TRIGger:B:EVENTS:COUNt <NR1> | 
+TRIGger🅱EVENTS:COUNt?@@<NR1> (1 ~ 65535)@@設定或查詢觸發 B 
+事件前必須發生的事件計數值@@94@@RW@@N
+TRIGger🅱LEVel:CH<x>@@TRIGger:B:LEVel:CH<x> <NR3> | TRIGger🅱LEVel:CH<x>?@@<NR3> 
+(電壓)@@設定或查詢指定通道的 B 觸發電位門檻值@@94@@RW@@N
+TRIGger🅱LEVel@@TRIGger🅱LEVel {SETLevel|<NR3>} | 
+TRIGger🅱LEVel?@@{SETLevel|<NR3>}@@設定或查詢 B 觸發電位為訊號 50% 
+或指定數值@@94@@RW@@N
+TRIGger🅱RESET@@TRIGger🅱RESET@@無@@將 B 重設觸發電位自動設定為訊號範圍的 
+50%@@94@@W@@N
+TRIGger🅱RESET:EDGE:COUPling@@TRIGger🅱RESET:EDGE:COUPling 
+{AC|DC|HFRej|LFRej|NOISErej} | 
+TRIGger🅱RESET:EDGE:COUPling?@@{AC|DC|HFRej|LFRej|NOISErej}@@設定或查詢 A->B 
+循序重設觸發的邊緣耦合方式@@94@@RW@@N
+TRIGger🅱RESET:EDGE:LEVel@@TRIGger🅱RESET:EDGE:LEVel <NR3> | 
+TRIGger🅱RESET:EDGE:LEVel?@@<NR3> (電壓)@@設定或查詢 A->B 
+循序重設觸發的邊緣電位門檻@@94@@RW@@N
+TRIGger🅱RESET:EDGE:SLOpe@@TRIGger🅱RESET:EDGE:SLOpe {RISe|FALl} | 
+TRIGger🅱RESET:EDGE:SLOpe?@@{RISe|FALl}@@設定或查詢 A->B 
+循序重設觸發的邊緣斜率極性@@94@@RW@@N
+TRIGger🅱RESET:EDGE:SOUrce@@TRIGger🅱RESET:EDGE:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+TRIGger🅱RESET:EDGE:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢 A->B 
+循序重設觸發的訊號來源通道@@94@@RW@@N
+TRIGger🅱RESET:STATE:LEVel@@TRIGger🅱RESET:STATE:LEVel <NR3> | 
+TRIGger🅱RESET:STATE:LEVel?@@<NR3> (電壓)@@設定或查詢 B 
+狀態重設觸發的電位門檻值@@94@@RW@@N
+TRIGger🅱RESET:STATE:POLarity@@TRIGger🅱RESET:STATE:POLarity {HIGH|LOW} | 
+TRIGger🅱RESET:STATE:POLarity?@@{HIGH|LOW}@@設定或查詢 B 
+狀態重設觸發的高/低電位極性@@94@@RW@@N
+TRIGger🅱RESET:STATE:SOUrce@@TRIGger🅱RESET:STATE:SOUrce {CH<x>|MATH<x>|REF<x>} |
+TRIGger🅱RESET:STATE:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢 B 
+狀態重設觸發的訊號來源通道@@94@@RW@@N
+TRIGger🅱RESET:TIMEOut:TIMe@@TRIGger🅱RESET:TIMEOut:TIMe <NR3> | 
+TRIGger🅱RESET:TIMEOut:TIMe?@@<NR3> (秒)@@設定或查詢 B 
+循序逾時重設觸發的時間長度@@94@@RW@@N
+TRIGger🅱RESET:TYPe@@TRIGger:B:RESET:TYPe {NONE|EDGE|TIMEOut|STATe} | 
+TRIGger🅱RESET:TYPe?@@{NONE|EDGE|TIMEOut|STATe}@@設定或查詢 A->B 
+循序觸發的重設機制類型@@94@@RW@@N
+TRIGger🅱STATE?@@TRIGger🅱STATE?@@無@@查詢 B 
+觸發系統目前的執行與準備狀態@@94@@R@@N
+TRIGger🅱TIMe@@TRIGger🅱TIMe <NR3> | TRIGger🅱TIMe?@@<NR3> (秒)@@設定或查詢 A 
+觸發之後觸發 B 所需延遲的時間長度@@94@@RW@@N
+TRIGger🅱TYPe@@TRIGger🅱TYPe 
+{EDGe|PULSEwidth|RUNt|TIMEOut|TRANsition|WINdow|LOGIc} | 
+TRIGger🅱TYPe?@@{EDGe|PULSEwidth|RUNt|TIMEOut|TRANsition|WINdow|LOGIc}@@設定或查
+詢 B 觸發的主類型@@94@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 7)

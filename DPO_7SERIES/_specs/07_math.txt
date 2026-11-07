@@ -1,0 +1,128 @@
+Answer:
+MATH:ADDNew@@MATH:ADDNew <QString>@@<QString> 
+("MATH<x>")@@新增指定的數學波形運算實例@@202@@W@@N
+MATH:DELete@@MATH:DELete <QString>@@<QString> 
+("MATH<x>")@@刪除指定的數學波形實例@@204@@W@@N
+MATH:LIST?@@MATH:LIST?@@無@@查詢目前已定義的所有數學波形列表@@204@@R@@N
+MATHArbflt<x>:FILepath@@MATHArbflt<x>:FILepath <QString> | 
+MATHArbflt<x>:FILepath?@@<QString> (檔案路徑)@@設定或查詢自訂任意濾波器 
+(ARBFLT) 的係數檔案路徑@@202@@RW@@N
+MATH:MATH<x>:DEFine@@MATH:MATH<x>:DEFine <QString> | 
+MATH:MATH<x>:DEFine?@@<QString> 
+(數學表達式算式)@@定義或查詢指定數學波形的表達式算式@@213@@RW@@N
+MATH:MATH<x>:TYPe@@MATH:MATH<x>:TYPe {BASic|FILTER|FFT|ADVanced} | 
+MATH:MATH<x>:TYPe?@@{BASic|FILTER|FFT|ADVanced}@@設定或查詢指定數學波形的運算類
+型@@276@@RW@@N
+MATH:MATH<x>:FUNCtion@@MATH:MATH<x>:FUNCtion {ADD|SUBtract|MULTiply|DIVide} | 
+MATH:MATH<x>:FUNCtion?@@{ADD|SUBtract|MULTiply|DIVide}@@設定或查詢基礎數學波形
+運算的四則運算函數@@245@@RW@@N
+MATH:MATH<x>:SOUrce<x>@@MATH:MATH<x>:SOUrce<x> {CH<x>|MATH<x>|REF<x>} | 
+MATH:MATH<x>:SOUrce<x>?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢基礎數學運算所使用的
+輸入波形來源@@269@@RW@@N
+MATH:MATH<x>:AVG:MODE@@MATH:MATH<x>:AVG:MODE {<NR1>|OFF|ON} | 
+MATH:MATH<x>:AVG:MODE?@@{<NR1>|OFF|ON}@@設定或查詢數學波形平均運算的開啟狀態@@2
+09@@RW@@N
+MATH:MATH<x>:AVG:WEIGht@@MATH:MATH<x>:AVG:WEIGht <NR1> | 
+MATH:MATH<x>:AVG:WEIGht?@@<NR1> 
+(擷取次數)@@設定或查詢開始進行指數平均前所需的波形擷取次數@@210@@RW@@N
+MATH:MATH<x>:GATing@@MATH:MATH<x>:GATing {NONE|SCREEN|CURSor} | 
+MATH:MATH<x>:GATing?@@{NONE|SCREEN|CURSor}@@設定或查詢 Spectral/FFT 
+數學運算的門控範圍模式@@246@@RW@@N
+MATH:MATH<x>:SPECTral:HORZ@@MATH:MATH<x>:SPECTral:HORZ {LOG|LINEAr} | 
+MATH:MATH<x>:SPECTral:HORZ?@@{LOG|LINEAr}@@設定或查詢頻域 (FFT) 
+數學波形的水平顯示對數/線性刻度@@272@@RW@@N
+MATH:MATH<x>:SPECTral:WRAP:STATE@@MATH:MATH<x>:SPECTral:WRAP:STATE 
+{OFF|ON|<NR1>} | 
+MATH:MATH<x>:SPECTral:WRAP:STATE?@@{OFF|ON|<NR1>}@@設定或查詢頻域相位波形的 
+Unwrap 展開功能開啟狀態@@8@@RW@@N
+MATH:MATH<x>:INTERpolation@@MATH:MATH<x>:INTERpolation {ON|OFF} | 
+MATH:MATH<x>:INTERpolation?@@{ON|OFF}@@設定或查詢匯流排來源數學運算是否開啟 
+Sinc 內插@@250@@RW@@N
+MATH:MATH<x>:SIGNeddata@@MATH:MATH<x>:SIGNeddata {ON|OFF} | 
+MATH:MATH<x>:SIGNeddata?@@{ON|OFF}@@設定或查詢匯流排資料繪製數學波形時是否視為
+有符號數值@@267@@RW@@N
+MATH:MATH<x>:VUNIT@@MATH:MATH<x>:VUNIT <QString> | 
+MATH:MATH<x>:VUNIT?@@<QString> 
+(單位字串)@@設定或查詢數學波形的自訂垂直物理單位@@279@@RW@@N
+MATH:MATH<x>:LABel:NAMe@@MATH:MATH<x>🏷NAMe <QString> | 
+MATH:MATH<x>:LABel:NAMe?@@<QString> 
+(標籤文字)@@設定或查詢指定數學波形在畫面上顯示的標籤名稱@@253@@RW@@N
+MATH:MATH<x>:LABel:COLor@@MATH:MATH<x>🏷COLor <QString> | 
+MATH:MATH<x>:LABel:COLor?@@<QString> 
+(HEX顏色碼)@@設定或查詢指定數學波形標籤的顯示顏色@@251@@RW@@N
+MATH:MATH<x>:LABel:FONT:BOLD@@MATH:MATH<x>:LABel:FONT:BOLD {ON|OFF|<NR1>} | 
+MATH:MATH<x>:LABel:FONT:BOLD?@@{ON|OFF|<NR1>}@@設定或查詢指定數學波形標籤的粗體
+字型啟用狀態@@251@@RW@@N
+MATH:MATH<x>:LABel:FONT:ITALic@@MATH:MATH<x>:LABel:FONT:ITALic {ON|OFF|<NR1>} |
+MATH:MATH<x>:LABel:FONT:ITALic?@@{ON|OFF|<NR1>}@@設定或查詢指定數學波形標籤的斜
+體字型啟用狀態@@251@@RW@@N
+MATH:MATH<x>:LABel:FONT:SIZE@@MATH:MATH<x>:LABel:FONT:SIZE <NR1> | 
+MATH:MATH<x>:LABel:FONT:SIZE?@@<NR1> 
+(字型大小Pt)@@設定或查詢指定數學波形標籤的字型大小@@252@@RW@@N
+MATH:MATH<x>:LABel:FONT:TYPE@@MATH:MATH<x>:LABel:FONT:TYPE <QString> | 
+MATH:MATH<x>:LABel:FONT:TYPE?@@<QString> 
+(字型名稱)@@設定或查詢指定數學波形標籤的字型種類@@252@@RW@@N
+MATH:MATH<x>:LABel:FONT:UNDERline@@MATH:MATH<x>:LABel:FONT:UNDERline 
+{ON|OFF|<NR1>} | 
+MATH:MATH<x>:LABel:FONT:UNDERline?@@{ON|OFF|<NR1>}@@設定或查詢指定數學波形標籤
+的底線字型啟用狀態@@253@@RW@@N
+MATH:MATH<x>:LABel:XPOS@@MATH:MATH<x>🏷XPOS <NR1> | 
+MATH:MATH<x>:LABel:XPOS?@@<NR1> 
+(像素位置)@@設定或查詢指定數學波形標籤的水平螢幕像素位置@@254@@RW@@N
+MATH:MATH<x>:LABel:YPOS@@MATH:MATH<x>🏷YPOS <NR1> | 
+MATH:MATH<x>:LABel:YPOS?@@<NR1> 
+(像素位置)@@設定或查詢指定數學波形標籤相對基線的垂直像素位置@@255@@RW@@N
+MATH:MATH<x>:FILTer:TYPe@@MATH:MATH<x>:FILTer:TYPe 
+{LPASs|HPASs|BPASs|BSTop|APASs|HILBert|DIFFerentiator|RC|RRC} | 
+MATH:MATH<x>:FILTer:TYPe?@@{LPASs|HPASs|BPASs|BSTop|APASs|HILBert|DIFFerentiato
+r|RC|RRC}@@設定或查詢數學濾波器運算模式種類@@242@@RW@@N
+MATH:MATH<x>:FILTer:RESPonse@@MATH:MATH<x>:FILTer:RESPonse 
+{BUTTerworth|CHEBYONe|CHEBYTWo|ELLiptical|GAUSsian|BESSelCUSTom} | 
+MATH:MATH<x>:FILTer:RESPonse?@@{BUTTerworth|CHEBYONe|CHEBYTWo|ELLiptical|GAUSsi
+an|BESSelCUSTom}@@設定或查詢數學濾波器響應類型@@230@@RW@@N
+MATH:MATH<x>:FILTer:CFReq@@MATH:MATH<x>:FILTer:CFReq <NR3> | 
+MATH:MATH<x>:FILTer:CFReq?@@<NR3> 
+(Hz)@@設定或查詢數學濾波器的截止頻率@@220@@RW@@N
+MATH:MATH<x>:FILTer:HCFReq@@MATH:MATH<x>:FILTer:HCFReq <NR3> | 
+MATH:MATH<x>:FILTer:HCFReq?@@<NR3> 
+(Hz)@@設定或查詢帶通或帶阻數學濾波器的高端截止頻率@@222@@RW@@N
+MATH:MATH<x>:FILTer:LCFReq@@MATH:MATH<x>:FILTer:LCFReq <NR3> | 
+MATH:MATH<x>:FILTer:LCFReq?@@<NR3> 
+(Hz)@@設定或查詢帶通或帶阻數學濾波器的低端截止頻率@@225@@RW@@N
+MATH:MATH<x>:FILTer:ORDer@@MATH:MATH<x>:FILTer:ORDer <NR1> | 
+MATH:MATH<x>:FILTer:ORDer?@@<NR1> 
+(階數)@@設定或查詢數學濾波器的階數@@228@@RW@@N
+MATH:MATH<x>:FILTer:SOURce@@MATH:MATH<x>:FILTer:SOURce {CH<x>|MATH<x>|REF<x>} |
+MATH:MATH<x>:FILTer:SOURce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢數學濾波器的輸入
+波形訊號來源@@239@@RW@@N
+MATH:MATH<x>:FILTer:LOAD@@MATH:MATH<x>:FILTer:LOAD <QString>@@<QString> 
+(檔案路徑)@@載入已儲存的自訂數學濾波器係數檔 (.flt)@@226@@W@@N
+MATH:MATH<x>:FILTer:SAVe@@MATH:MATH<x>:FILTer:SAVe <QString>@@<QString> 
+(檔案名稱)@@將建立的自訂數學濾波器係數檔儲存至硬碟@@234@@W@@N
+MATH:MATH<x>:FILTer:DESIgn@@MATH:MATH<x>:FILTer:DESIgn 
+{EXECUTE|ABORT|APPLY}@@{EXECUTE|ABORT|APPLY}@@執行自訂數學濾波器的產生、套用或
+中斷設計動作@@221@@W@@N
+MATH:MATH<x>:FILTer:INFo?@@MATH:MATH<x>:FILTer:INFo?@@無@@查詢建立的數學濾波器
+相關資訊與適用採樣率範圍@@224@@R@@N
+DISplay:GLObal:MATH<x>:STATE@@DISplay:GLObal:MATH<x>:STATE {<NR1>|OFF|ON} | 
+DISplay:GLObal:MATH<x>:STATE?@@{<NR1>|OFF|ON}@@設定或查詢指定數學波形的全域螢幕
+顯示開啟狀態@@62@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:POSition@@DISplay:WAVEView<x>:MATH:MA
+TH<x>:VERTical:POSition <NR3> | 
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:POSition?@@<NR3> 
+(格數Divisions)@@設定或查詢指定 Waveform View 
+中數學波形的垂直顯示位置@@174@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:SCAle@@DISplay:WAVEView<x>:MATH:MATH<
+x>:VERTical:SCAle <NR3> | 
+DISplay:WAVEView<x>:MATH:MATH<x>:VERTical:SCAle?@@<NR3> 
+(物理單位/div)@@設定或查詢指定 Waveform View 中數學波形的垂直比例@@175@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:AUTOScale@@DISplay:WAVEView<x>:MATH:MATH<x>:AU
+TOScale {<NR1>|OFF|ON} | 
+DISplay:WAVEView<x>:MATH:MATH<x>:AUTOScale?@@{<NR1>|OFF|ON}@@設定或查詢當數學算
+式變更時是否自動調整該波形的垂直比例與位置@@171@@RW@@N
+DISplay:WAVEView<x>:MATH:MATH<x>:STATE@@DISplay:WAVEView<x>:MATH:MATH<x>:STATE 
+{<NR1>|OFF|ON} | 
+DISplay:WAVEView<x>:MATH:MATH<x>:STATE?@@{<NR1>|OFF|ON}@@設定或查詢指定 
+Waveform View 中數學波形的顯示啟用狀態@@173@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 9)

@@ -79,6 +79,13 @@ INSTRUMENTS = [
         "note": {"en": "header-index model (CH{n}/MEAS{n}/MATH{n}); core + measure/analysis groups",
                  "zh": "標頭編號模型 (CH{n}/MEAS{n}/MATH{n})；核心 + 量測分析群組"},
     },
+    {
+        "name": "DPO 7 Series", "folder": "DPO_7SERIES", "entry": "ui.py", "count": 482,
+        "kind": {"en": "Digital Phosphor Oscilloscope (Tektronix)",
+                 "zh": "數位螢光示波器 (Tektronix)"},
+        "note": {"en": "header-index model (CH{n}/MEAS{n}/MATH{n}); core + measure/analysis groups",
+                 "zh": "標頭編號模型 (CH{n}/MEAS{n}/MATH{n})；核心 + 量測分析群組"},
+    },
 ]
 
 

@@ -1,0 +1,99 @@
+Answer:
+SEARCH:ADDNew@@SEARCH:ADDNew <QString>@@<QString> 
+("SEARCH<x>")@@新增指定的波形搜尋標記實例@@480@@W@@N
+SEARCH:DELETEAll@@SEARCH:DELETEAll@@無@@刪除目前建立的所有波形搜尋標記@@482@@W@
+@N
+SEARCH:LIST?@@SEARCH:LIST?@@無@@查詢目前已建立的所有波形搜尋標記列表@@484@@R@@N
+SEARCH:SEARCH<x>:DELete@@SEARCH:SEARCH<x>:DELete@@無@@刪除指定編號的波形搜尋標
+記實例@@486@@W@@N
+SEARCH:SEARCH<x>:STATE@@SEARCH:SEARCH<x>:STATE {OFF|ON|<NR1>} | 
+SEARCH:SEARCH<x>:STATE?@@{OFF|ON|<NR1>}@@設定或查詢指定波形搜尋標記的開啟狀態@@
+490@@RW@@N
+SEARCH:SEARCH<x>:TOTAL?@@SEARCH:SEARCH<x>:TOTAL?@@無@@查詢指定波形搜尋標記符合
+條件的波形事件總數@@492@@R@@N
+SEARCH:SEARCH<x>:TRIGger🅰TYPe@@SEARCH:SEARCH<x>:TRIGger🅰TYPe 
+{EDGe|PULSEwidth|RUNt|TIMEOut|TRANsition|WINdow|LOGIc|BUS} | 
+SEARCH:SEARCH<x>:TRIGger🅰TYPe?@@{EDGe|PULSEwidth|RUNt|TIMEOut|...}@@設定或查詢
+指定搜尋實例的波形事件搜尋類型@@495@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰EDGE:COUPling@@SEARCH:SEARCH<x>:TRIGger:A:EDGE:COUPlin
+g {DC|HFRej|LFRej|NOISErej} | 
+SEARCH:SEARCH<x>:TRIGger🅰EDGE:COUPling?@@{DC|HFRej|LFRej|NOISErej}@@設定或查詢
+邊緣搜尋訊號的輸入耦合方式@@498@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰EDGE:SLOpe@@SEARCH:SEARCH<x>:TRIGger:A:EDGE:SLOpe 
+{RISe|FALl|EITher} | 
+SEARCH:SEARCH<x>:TRIGger🅰EDGE:SLOpe?@@{RISe|FALl|EITher}@@設定或查詢邊緣搜尋的
+邊緣斜率極性@@500@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰EDGE:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:EDGE:SOUrce 
+{CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰EDGE:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢邊緣搜
+尋的輸入波形訊號來源@@502@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LEVel:CH<x>@@SEARCH:SEARCH<x>:TRIGger:A:LEVel:CH<x> 
+<NR3> | SEARCH:SEARCH<x>:TRIGger🅰LEVel:CH<x>?@@<NR3> 
+(電壓)@@設定或查詢指定通道的邊緣搜尋電位門檻值@@505@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰LEVel@@SEARCH:SEARCH<x>:TRIGger🅰LEVel <NR3> | 
+SEARCH:SEARCH<x>:TRIGger🅰LEVel?@@<NR3> 
+(電壓)@@設定或查詢搜尋邊緣電位門檻數值@@507@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:HIGHLimit@@SEARCH:SEARCH<x>:TRIGger:A:PULSE
+Width:HIGHLimit <NR3> | SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:HIGHLimit?@@<NR3> 
+(秒)@@設定或查詢脈寬搜尋時的脈波寬度上限值@@512@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGge
+r:A:PULSEWidth:LOGICQUALification {OFF|ON|<NR1>} | 
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或
+查詢脈寬搜尋是否啟用邏輯條件合格化@@514@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:LOWLimit@@SEARCH:SEARCH<x>:TRIGger:A:PULSEW
+idth:LOWLimit <NR3> | SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:LOWLimit?@@<NR3> 
+(秒)@@設定或查詢脈寬搜尋時的脈波寬度下限值@@516@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:PULSEW
+idth:POLarity {POSITIVe|NEGATIVe} | 
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:POLarity?@@{POSITIVe|NEGATIVe}@@設定或查詢
+脈寬搜尋的脈波極性@@518@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:PULSEWid
+th:SOUrce {CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢
+脈寬搜尋的輸入波形訊號來源@@520@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth
+:WHEn {LESSthan|MOREthan|EQual|UNEQual|INside|OUTside} | 
+SEARCH:SEARCH<x>:TRIGger🅰PULSEWidth:WHEn?@@{LESSthan|MOREthan|EQual|...}@@設定
+或查詢脈寬搜尋的寬度條件比較判斷模式@@522@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGger:A:RU
+NT:LOGICQUALification {OFF|ON|<NR1>} | 
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查詢矮
+脈波搜尋是否啟用邏輯條件合格化@@525@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:RUNT:POLarit
+y {POSITIVe|NEGATIVe|EITher} | 
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:POLarity?@@{POSITIVe|NEGATIVe|EITher}@@設定或查詢
+矮脈波搜尋檢查的脈波極性@@527@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:RUNT:SOUrce 
+{CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢矮脈波
+搜尋的輸入波形訊號來源@@529@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:THReshold:HIGH@@SEARCH:SEARCH<x>:TRIGger🅰RUNT:THR
+eshold:HIGH <NR3> | SEARCH:SEARCH<x>:TRIGger🅰RUNT:THReshold:HIGH?@@<NR3> 
+(電壓)@@設定或查詢矮脈波搜尋的高門檻電壓值@@531@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:THReshold:LOW@@SEARCH:SEARCH<x>:TRIGger🅰RUNT:THRe
+shold:LOW <NR3> | SEARCH:SEARCH<x>:TRIGger🅰RUNT:THReshold:LOW?@@<NR3> 
+(電壓)@@設定或查詢矮脈波搜尋的低門檻電壓值@@533@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:WHEn@@SEARCH:SEARCH<x>:TRIGger:A:RUNT:WHEn 
+{OCCURS|LESSthan|MOREthan|EQual|UNEQual} | 
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:WHEn?@@{OCCURS|LESSthan|MOREthan|...}@@設定或查詢
+矮脈波搜尋的發生或時間條件@@535@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰RUNT:WIDth@@SEARCH:SEARCH<x>:TRIGger:A:RUNT:WIDth 
+<NR3> | SEARCH:SEARCH<x>:TRIGger🅰RUNT:WIDth?@@<NR3> 
+(秒)@@設定或查詢矮脈波搜尋的時間限定門檻@@537@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:LOGICQUALification@@SEARCH:SEARCH<x>:TRIGger:A
+:TIMEOut:LOGICQUALification {OFF|ON|<NR1>} | 
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:LOGICQUALification?@@{OFF|ON|<NR1>}@@設定或查
+詢逾時搜尋是否啟用邏輯條件合格化@@540@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:POLarity@@SEARCH:SEARCH<x>:TRIGger:A:TIMEOut:P
+OLarity {HIGH|LOW|EITher} | 
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:POLarity?@@{HIGH|LOW|EITher}@@設定或查詢逾時搜
+尋保持在 High/Low 狀態的電位極性@@542@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:SOUrce@@SEARCH:SEARCH<x>:TRIGger:A:TIMEOut:SOU
+rce {CH<x>|MATH<x>|REF<x>} | 
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:SOUrce?@@{CH<x>|MATH<x>|REF<x>}@@設定或查詢逾
+時搜尋的輸入波形訊號來源@@544@@RW@@N
+SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:TIMe@@SEARCH:SEARCH<x>:TRIGger:A:TIMEOut:TIMe 
+<NR3> | SEARCH:SEARCH<x>:TRIGger🅰TIMEOut:TIMe?@@<NR3> 
+(秒)@@設定或查詢逾時搜尋所等待的限制時間長度@@546@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 13)

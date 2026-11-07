@@ -1,0 +1,117 @@
+Answer:
+CURVe?@@CURVe?@@無@@從儀器傳輸由 DATa:SOUrce 所指定之波形點數據數據@@98@@R@@N
+CURVEStream?@@CURVEStream?@@無@@連續即時傳輸儀器擷取到的波形點數據數據@@98@@R@@
+N
+DATa@@DATa {INIT|SNAp} | 
+DATa?@@{INIT|SNAp}@@初始化波形傳輸參數或對齊游標位置@@98@@RW@@N
+DATa:ENCdg@@DATa:ENCdg 
+{ASCIi|RIBinary|RPBinary|FPBinary|SRIbinary|SRPbinary|SFPbinary} | 
+DATa:ENCdg?@@{ASCIi|RIBinary|RPBinary|FPBinary|SRIbinary|SRPbinary|SFPbinary}@@
+設定或查詢傳輸出儀器的波形資料編碼格式@@98@@RW@@N
+DATa:FRAMESTARt@@DATa:FRAMESTARt <NR1> | DATa:FRAMESTARt?@@<NR1> (訊框編號 
+>=1)@@設定或查詢多訊框/FastFrame 波形傳輸的起始訊框編號@@98@@RW@@N
+DATa:FRAMESTOP@@DATa:FRAMESTOP <NR1> | DATa:FRAMESTOP?@@<NR1> (訊框編號 
+>=1)@@設定或查詢多訊框/FastFrame 波形傳輸的結束訊框編號@@98@@RW@@N
+DATa:MODe@@DATa:MODe {VECtor|PIXmap} | 
+DATa:MODe?@@{VECtor|PIXmap}@@設定或查詢傳出的波形資料模式為點陣圖或採樣向量@@98
+@@RW@@N
+DATa:RESample@@DATa:RESample <NR1> | DATa:RESample?@@<NR1> 
+(重採樣間隔)@@設定或查詢傳出波形資料的重採樣抽取倍率@@98@@RW@@N
+DATa:SOUrce@@DATa:SOUrce <wfm> | 
+DATa:SOUrce?@@{CH<x>|MATH<x>|REF<x>|...}@@設定或查詢進行波形傳輸的波形訊號來源
+位置@@98@@RW@@N
+DATa:SOUrce:AVAILable?@@DATa:SOUrce:AVAILable?@@無@@查詢目前儀器中所有已擷取且
+可用於傳輸的波形來源列表@@98@@R@@N
+DATa:STARt@@DATa:STARt <NR1> | DATa:STARt?@@<NR1> (1 ~ 
+紀錄長度)@@設定或查詢傳輸波形紀錄的起始數據點數位置@@98@@RW@@N
+DATa:STOP@@DATa:STOP <NR1> | DATa:STOP?@@<NR1> (1 ~ 
+紀錄長度)@@設定或查詢傳輸波形紀錄的結束數據點數位置@@98@@RW@@N
+DATa:WIDth@@DATa:WIDth <NR1> | DATa:WIDth?@@<NR1> (1|2|4|8 位元組)@@設定或查詢 
+CURVe? 傳輸時每個波形點所佔用的位元組寬度@@98@@RW@@N
+WAVFrm?@@WAVFrm?@@無@@查詢並返回指定波形來源的 Preamble 標頭檔與 CURVe 
+點數據@@98@@R@@N
+WFMOutpre?@@WFMOutpre?@@無@@查詢傳出波形的所有標頭 formatting 
+格式資訊與縮放參數@@98@@R@@N
+WFMOutpre:ASC_Fmt?@@WFMOutpre:ASC_Fmt?@@無@@查詢 ASCII 
+格式傳輸波形時的數值格式字串@@98@@R@@N
+WFMOutpre:BIT_Nr@@WFMOutpre:BIT_Nr <NR1> | WFMOutpre:BIT_Nr?@@<NR1> (1 ~ 32 
+位元)@@設定或查詢傳出波形每個數據點的位元數@@98@@RW@@N
+WFMOutpre:BN_Fmt@@WFMOutpre:BN_Fmt {RI|RP|FP} | 
+WFMOutpre:BN_Fmt?@@{RI|RP|FP}@@設定或查詢二進位傳輸波形點數的格式（補數/無符號/
+浮點數）@@98@@RW@@N
+WFMOutpre:BYT_Nr@@WFMOutpre:BYT_Nr <NR1> | WFMOutpre:BYT_Nr?@@<NR1> (1|2|4|8 
+位元組)@@設定或查詢傳出波形每個點數的位元組寬度@@98@@RW@@N
+WFMOutpre:BYT_Or@@WFMOutpre:BYT_Or {MSB|LSB} | 
+WFMOutpre:BYT_Or?@@{MSB|LSB}@@設定或查詢二進位波形傳輸時的高低位元組傳輸順序@@9
+8@@RW@@N
+WFMOutpre:CENTERFREQuency?@@WFMOutpre:CENTERFREQuency?@@無@@查詢傳出頻域波形的
+中心頻率數值@@98@@R@@N
+WFMOutpre:DOMain?@@WFMOutpre:DOMain?@@無@@查詢傳出波形所屬的域（時域 TIME 
+或頻域 FREQUENCY）@@98@@R@@N
+WFMOutpre:ENCdg@@WFMOutpre:ENCdg {ASC|BIN} | 
+WFMOutpre:ENCdg?@@{ASC|BIN}@@設定或查詢傳出波形標頭編碼類型（ASCII 或 
+Binary）@@98@@RW@@N
+WFMOutpre:NR_Pt?@@WFMOutpre:NR_Pt?@@無@@查詢 CURVe? 
+響應中實際包含的波形總點數@@98@@R@@N
+WFMOutpre:PT_Fmt?@@WFMOutpre:PT_Fmt?@@無@@查詢傳出波形的數據點格式（Y 
+軸一般點或 ENV 格式）@@98@@R@@N
+WFMOutpre:PT_Off?@@WFMOutpre:PT_Off?@@無@@查詢相對 DATa:STARt 
+的觸發點數據位移量@@98@@R@@N
+WFMOutpre:PT_ORder?@@WFMOutpre:PT_ORder?@@無@@查詢來源波形是否為 Fast 
+Acquisition pixmap 資料順序@@98@@R@@N
+WFMOutpre:RESample@@WFMOutpre:RESample <NR1> | WFMOutpre:RESample?@@<NR1> 
+(重採樣率)@@設定或查詢傳出波形資料的重採樣抽取倍率@@98@@RW@@N
+WFMOutpre:SPAN?@@WFMOutpre:SPAN?@@無@@查詢傳出頻域波形的頻率跨度 (Span) 
+數值@@98@@R@@N
+WFMOutpre:WFId?@@WFMOutpre:WFId?@@無@@查詢描述波形擷取條件與垂直/水平比例的文字
+字串@@98@@R@@N
+WFMOutpre:WFMTYPe?@@WFMOutpre:WFMTYPe?@@無@@查詢傳出波形的類型種類@@98@@R@@N
+WFMOutpre:XINcr?@@WFMOutpre:XINcr?@@無@@查詢傳出波形相鄰數據點之間的水平採樣時
+間間隔@@98@@R@@N
+WFMOutpre:XUNit?@@WFMOutpre:XUNit?@@無@@查詢傳出波形水平軸的物理量測單位字串@@9
+8@@R@@N
+WFMOutpre:XZEro?@@WFMOutpre:XZEro?@@無@@查詢觸發採樣點與實際波形觸發點之間的微
+小時間位移@@98@@R@@N
+WFMOutpre:YMUlt?@@WFMOutpre:YMUlt?@@無@@查詢傳出波形數值轉電壓的垂直縮放乘數因
+子@@98@@R@@N
+WFMOutpre:YOFf?@@WFMOutpre:YOFf?@@無@@查詢傳出波形數據點的垂直數字位移量 
+(Digitizing Offset)@@98@@R@@N
+WFMOutpre:YUNit?@@WFMOutpre:YUNit?@@無@@查詢傳出波形垂直軸的物理量測單位字串@@9
+8@@R@@N
+WFMOutpre:YZEro?@@WFMOutpre:YZEro?@@無@@查詢傳出波形垂直零點的參考電位偏置值@@9
+8@@R@@N
+WFMInpre:BIT_Nr@@WFMInpre:BIT_Nr <NR1> | WFMInpre:BIT_Nr?@@<NR1> (1 ~ 32 
+位元)@@設定或查詢傳入參考波形每個數據點的位元數@@98@@RW@@N
+WFMInpre:BN_Fmt@@WFMInpre:BN_Fmt {RI|RP|FP} | 
+WFMInpre:BN_Fmt?@@{RI|RP|FP}@@設定或查詢傳入二進位波形點數的格式（補數/無符號/
+浮點數）@@98@@RW@@N
+WFMInpre:BYT_Nr@@WFMInpre:BYT_Nr <NR1> | WFMInpre:BYT_Nr?@@<NR1> (1|2|4|8 
+位元組)@@設定或查詢傳入波形每個數據點的位元組寬度@@98@@RW@@N
+WFMInpre:BYT_Or@@WFMInpre:BYT_Or {MSB|LSB} | 
+WFMInpre:BYT_Or?@@{MSB|LSB}@@設定或查詢傳入二進位波形時的高低位元組傳輸順序@@98
+@@RW@@N
+WFMInpre:ENCdg@@WFMInpre:ENCdg {ASC|BIN} | 
+WFMInpre:ENCdg?@@{ASC|BIN}@@設定或查詢傳入波形標頭的編碼類型（ASCII 或 
+Binary）@@98@@RW@@N
+WFMInpre:NR_Pt@@WFMInpre:NR_Pt <NR1> | WFMInpre:NR_Pt?@@<NR1> 
+(點數)@@設定或查詢傳入儀器的參考波形總點數長度@@98@@RW@@N
+WFMInpre:PT_Fmt@@WFMInpre:PT_Fmt {Y|ENV} | 
+WFMInpre:PT_Fmt?@@{Y|ENV}@@設定或查詢傳入波形的數據點格式（Y 軸一般點或 ENV 
+格式）@@98@@RW@@N
+WFMInpre:XINcr@@WFMInpre:XINcr <NR3> | WFMInpre:XINcr?@@<NR3> 
+(秒/點)@@設定或查詢傳入波形相鄰數據點之間的水平採樣間隔@@98@@RW@@N
+WFMInpre:XUNit@@WFMInpre:XUNit <QString> | WFMInpre:XUNit?@@<QString> 
+(單位字串)@@設定或查詢傳入波形水平軸的物理量測單位@@98@@RW@@N
+WFMInpre:XZEro@@WFMInpre:XZEro <NR3> | WFMInpre:XZEro?@@<NR3> 
+(秒)@@設定或查詢傳入波形水平原點零位時間偏置@@98@@RW@@N
+WFMInpre:YMUlt@@WFMInpre:YMUlt <NR3> | WFMInpre:YMUlt?@@<NR3> 
+(垂直倍率)@@設定或查詢傳入波形數值轉電壓的垂直縮放乘數因子@@98@@RW@@N
+WFMInpre:YOFf@@WFMInpre:YOFf <NR3> | WFMInpre:YOFf?@@<NR3> 
+(數字位移)@@設定或查詢傳入波形數據點的垂直數字位移量 (Digitizing 
+Offset)@@98@@RW@@N
+WFMInpre:YUNit@@WFMInpre:YUNit <QString> | WFMInpre:YUNit?@@<QString> 
+(單位字串)@@設定或查詢傳入波形垂直軸的物理量測單位@@98@@RW@@N
+WFMInpre:YZEro@@WFMInpre:YZEro <NR3> | WFMInpre:YZEro?@@<NR3> 
+(電壓位移)@@設定或查詢傳入波形垂直零位電位偏置值@@98@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 10)

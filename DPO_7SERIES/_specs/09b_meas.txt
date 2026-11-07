@@ -1,0 +1,195 @@
+Answer:
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:MEAN?@@MEASUrement:MEAS<x>:RESUlts:CURRe
+ntacq:MEAN?@@無@@查詢指定測量項目在目前擷取波形下的平均統計值@@375@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:MAXimum?@@MEASUrement:MEAS<x>:RESUlts:CU
+RRentacq:MAXimum?@@無@@查詢指定測量項目在目前擷取波形下的最大統計值@@374@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:MINimum?@@MEASUrement:MEAS<x>:RESUlts:CU
+RRentacq:MINimum?@@無@@查詢指定測量項目在目前擷取波形下的最小統計值@@376@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:STDDev?@@MEASUrement:MEAS<x>:RESUlts:CUR
+Rentacq:STDDev?@@無@@查詢指定測量項目在目前擷取波形下的標準差統計值@@379@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:PK2PK?@@MEASUrement:MEAS<x>:RESUlts:CURR
+entacq:PK2PK?@@無@@查詢指定測量項目在目前擷取波形下的峰對峰統計值@@377@@R@@N
+MEASUrement:MEAS<x>:RESUlts:CURRentacq:POPUlation?@@MEASUrement:MEAS<x>:RESUlts
+:CURRentacq:POPUlation?@@無@@查詢指定測量項目在目前擷取波形下的累積樣本總數@@37
+8@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:MEAN?@@MEASUrement:MEAS<x>:RESUlts:ALLAcqs:
+MEAN?@@無@@查詢指定測量項目在所有已累積擷取波形下的總體平均統計值@@369@@R@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:MAXimum?@@MEASUrement:MEAS<x>:RESUlts:ALLAc
+qs:MAXimum?@@無@@查詢指定測量項目在所有已累積擷取波形下的總體最大統計值@@368@@R
+@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:MINimum?@@MEASUrement:MEAS<x>:RESUlts:ALLAc
+qs:MINimum?@@無@@查詢指定測量項目在所有已累積擷取波形下的總體最小統計值@@370@@R
+@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:STDDev?@@MEASUrement:MEAS<x>:RESUlts:ALLAcq
+s:STDDev?@@無@@查詢指定測量項目在所有已累積擷取波形下的總體標準差統計值@@372@@R
+@@N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:PK2PK?@@MEASUrement:MEAS<x>:RESUlts:ALLAcqs
+:PK2PK?@@無@@查詢指定測量項目在所有已累積擷取波形下的總體峰對峰統計值@@371@@R@@
+N
+MEASUrement:MEAS<x>:RESUlts:ALLAcqs:POPUlation?@@MEASUrement:MEAS<x>:RESUlts:AL
+LAcqs:POPUlation?@@無@@查詢指定測量項目在所有已累積擷取波形下的總體總樣本次數@@
+372@@R@@N
+MEASUrement:MEAS<x>:XUNIT?@@MEASUrement:MEAS<x>:XUNIT?@@無@@查詢指定測量項目的
+水平 X 軸物理量測單位@@418@@R@@N
+MEASUrement:MEAS<x>:YUNIT?@@MEASUrement:MEAS<x>:YUNIT?@@無@@查詢指定測量項目的
+垂直 Y 軸物理量測單位@@418@@R@@N
+MEASUrement:MEAS<x>:PASSFAILENabled@@MEASUrement:MEAS<x>:PASSFAILENabled 
+{0|1|<NR1>} | 
+MEASUrement:MEAS<x>:PASSFAILENabled?@@{0|1|<NR1>}@@設定或查詢指定測量項目的 
+Limit Pass/Fail 極限測試啟用狀態@@321@@RW@@N
+MEASUrement:MEAS<x>:PASSFAILLIMit@@MEASUrement:MEAS<x>:PASSFAILLIMit <NR2> | 
+MEASUrement:MEAS<x>:PASSFAILLIMit?@@<NR2> 
+(門檻值)@@設定或查詢單一門檻極限測試的數值界限@@324@@RW@@N
+MEASUrement:MEAS<x>:PASSFAILHIGHlimit@@MEASUrement:MEAS<x>:PASSFAILHIGHlimit 
+<NR2> | MEASUrement:MEAS<x>:PASSFAILHIGHlimit?@@<NR2> 
+(高上限值)@@設定或查詢極限測試的高上限門檻數值@@322@@RW@@N
+MEASUrement:MEAS<x>:PASSFAILLOWlimit@@MEASUrement:MEAS<x>:PASSFAILLOWlimit 
+<NR2> | MEASUrement:MEAS<x>:PASSFAILLOWlimit?@@<NR2> 
+(低下限值)@@設定或查詢極限測試的低下限門檻數值@@326@@RW@@N
+MEASUrement:MEAS<x>:PASSFAILMARgin@@MEASUrement:MEAS<x>:PASSFAILMARgin <NR2> | 
+MEASUrement:MEAS<x>:PASSFAILMARgin?@@<NR2> (0.0 ~ 
+1.0)@@設定或查詢極限測試的允許容許裕度百分比@@327@@RW@@N
+MEASUrement:MEAS<x>:PASSFAILWHEN@@MEASUrement:MEAS<x>:PASSFAILWHEN 
+{LESSthan|GREATERthan|Equals|NOTEQuals|INSIDErange|OUTSIDErange} | 
+MEASUrement:MEAS<x>:PASSFAILWHEN?@@{LESSthan|GREATERthan|...}@@設定或查詢判定極
+限測試失敗的條件邏輯規則@@329@@RW@@N
+MEASUrement:MEAS<x>:FAILCount?@@MEASUrement:MEAS<x>:FAILCount?@@無@@查詢指定測
+量項目統計累積至今的失敗判定總次數@@267@@R@@N
+MEASUrement:MEAS<x>:STATUS?@@MEASUrement:MEAS<x>:STATUS?@@無@@查詢指定測量項目
+目前的 Pass/Fail 判定結果狀態@@388@@R@@N
+MEASUrement:MEAS<x>:MEASRange:STATE@@MEASUrement:MEASRange:STATE {OFF|ON|0|1} |
+MEASUrement:MEASRange:STATE?@@{OFF|ON|0|1}@@設定或查詢指定測量項目的數值範圍限
+制啟用狀態@@318@@RW@@N
+MEASUrement:MEAS<x>:MEASRange:MIN@@MEASUrement:MEASRange:MIN <NR3> | 
+MEASUrement:MEASRange:MIN?@@<NR3> 
+(最小值)@@設定或查詢指定測量項目的有效最小範圍限制值@@317@@RW@@N
+MEASUrement:MEAS<x>:MEASRange:MAX@@MEASUrement:MEASRange:MAX <NR3> | 
+MEASUrement:MEASRange:MAX?@@<NR3> 
+(最大值)@@設定或查詢指定測量項目的有效最大範圍限制值@@316@@RW@@N
+MEASUrement:MEAS<x>:MEASRange:GLOBal@@MEASUrement:MEASRange:GLOBal {OFF|ON|0|1}
+| 
+MEASUrement:MEASRange:GLOBal?@@{OFF|ON|0|1}@@設定或查詢指定測量項目是否跟隨全域
+範圍限制設定@@315@@RW@@N
+MEASUrement:MEAS<x>:GATing@@MEASUrement:MEAS<x>:GATing 
+{NONE|SCREEN|CURSor|LOGic|SEARch|TIMe} | 
+MEASUrement:MEAS<x>:GATing?@@{NONE|SCREEN|CURSor|LOGic|SEARch|TIMe}@@設定或查詢
+指定測量項目的個別波形門控選取區域模式@@287@@RW@@N
+MEASUrement:MEAS<x>:GATing:STARTtime@@MEASUrement:MEAS<x>:GATing:STARTtime 
+<NR3> | MEASUrement:MEAS<x>:GATing:STARTtime?@@<NR3> (秒 -10000 ~ 
+10000)@@設定或查詢指定測量項目在 Time 門控下的起始時間位移@@298@@RW@@N
+MEASUrement:MEAS<x>:GATing:ENDtime@@MEASUrement:MEAS<x>:GATing:ENDtime <NR3> | 
+MEASUrement:MEAS<x>:GATing:ENDtime?@@<NR3> (秒 -10000 ~ 
+10000)@@設定或查詢指定測量項目在 Time 門控下的結束時間位移@@291@@RW@@N
+MEASUrement:MEAS<x>:GATing:GLOBal@@MEASUrement:MEAS<x>:GATing:GLOBal 
+{OFF|ON|0|1} | 
+MEASUrement:MEAS<x>:GATing:GLOBal?@@{OFF|ON|0|1}@@設定或查詢指定測量項目是否跟
+隨全域門控設定@@292@@RW@@N
+MEASUrement:MEAS<x>:GLOBalref@@MEASUrement:MEAS<x>:GLOBalref {OFF|ON|0|1} | 
+MEASUrement:MEAS<x>:GLOBalref?@@{OFF|ON|0|1}@@設定或查詢指定測量項目是否跟隨全
+域參考電位設定@@299@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:METHod@@MEASUrement:MEAS<x>:REFLevels<x>:METHo
+d {PERCent|ABSolute} | 
+MEASUrement:MEAS<x>:REFLevels<x>:METHod?@@{PERCent|ABSolute}@@設定或查詢指定測
+量項目的參考電位計算單位模式（百分比或絕對值）@@352@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:BASETop@@MEASUrement:MEAS<x>:REFLevels<x>:BASE
+Top {AUTO|MINMax|MEANhistogram|MODEhistogram|EYEhistogram} | 
+MEASUrement:MEAS<x>:REFLevels<x>:BASETop?@@{AUTO|MINMax|...}@@設定或查詢指定測
+量項目的 Top 與 Base 電位基準計算演算法@@351@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:FALLHigh@@MEASUrement:MEAS<x>:REFLeve
+ls<x>:ABSolute:FALLHigh <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:FALLHigh?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目下降邊緣的高參考絕對電壓值@@339@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:FALLLow@@MEASUrement:MEAS<x>:REFLevel
+s<x>:ABSolute:FALLLow <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:FALLLow?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目下降邊緣的低參考絕對電壓值@@341@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:FALLMid@@MEASUrement:MEAS<x>:REFLevel
+s<x>:ABSolute:FALLMid <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:FALLMid?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目下降邊緣的中參考絕對電壓值@@342@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:HYSTeresis@@MEASUrement:MEAS<x>:REFLe
+vels<x>:ABSolute:HYSTeresis <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:HYSTeresis?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目絕對參考電位模式下的遲滯電壓值@@344@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:RISEHigh@@MEASUrement:MEAS<x>:REFLeve
+ls<x>:ABSolute:RISEHigh <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:RISEHigh?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目上升邊緣的高參考絕對電壓值@@345@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:RISELow@@MEASUrement:MEAS<x>:REFLevel
+s<x>:ABSolute:RISELow <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:RISELow?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目上升邊緣的低參考絕對電壓值@@346@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:RISEMid@@MEASUrement:MEAS<x>:REFLevel
+s<x>:ABSolute:RISEMid <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:RISEMid?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目上升邊緣的中參考絕對電壓值@@348@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:TYPE@@MEASUrement:MEAS<x>:REFLevels<x
+>:ABSolute:TYPE {SAME|UNIQue} | 
+MEASUrement:MEAS<x>:REFLevels<x>:ABSolute:TYPE?@@{SAME|UNIQue}@@設定或查詢指定
+測量項目的上升與下降邊緣絕對電位是否相同@@349@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:FALLHigh@@MEASUrement:MEAS<x>:REFLevel
+s<x>:PERCent:FALLHigh <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:FALLHigh?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目下降邊緣的高參考百分比電位@@354@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:FALLLow@@MEASUrement:MEAS<x>:REFLevels
+<x>:PERCent:FALLLow <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:FALLLow?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目下降邊緣的低參考百分比電位@@356@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:FALLMid@@MEASUrement:MEAS<x>:REFLevels
+<x>:PERCent:FALLMid <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:FALLMid?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目下降邊緣的中參考百分比電位@@357@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:HYSTeresis@@MEASUrement:MEAS<x>:REFLev
+els<x>:PERCent:HYSTeresis <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:HYSTeresis?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目百分比模式下的遲滯百分比值@@359@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:RISEHigh@@MEASUrement:MEAS<x>:REFLevel
+s<x>:PERCent:RISEHigh <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:RISEHigh?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目上升邊緣的高參考百分比電位@@360@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:RISELow@@MEASUrement:MEAS<x>:REFLevels
+<x>:PERCent:RISELow <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:RISELow?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目上升邊緣的低參考百分比電位@@362@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:RISEMid@@MEASUrement:MEAS<x>:REFLevels
+<x>:PERCent:RISEMid <NR3> | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:RISEMid?@@<NR3> (0 ~ 
+100%)@@設定或查詢指定測量項目上升邊緣的中參考百分比電位@@363@@RW@@N
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:TYPE@@MEASUrement:MEAS<x>:REFLevels<x>
+:PERCent:TYPE {TENNinety|TWENtyeighty|CUSTom} | 
+MEASUrement:MEAS<x>:REFLevels<x>:PERCent:TYPE?@@{TENNinety|TWENtyeighty|CUSTom}
+@@設定或查詢指定測量項目的標準參考百分比類型（10-90% 或 20-80%）@@365@@RW@@N
+MEASUrement:MEAS<x>:REFMode@@MEASUrement:MEAS<x>:REFMode {AUTO|MANual} | 
+MEASUrement:MEAS<x>:REFMode?@@{AUTO|MANual}@@設定或查詢指定測量項目的參考電位模
+式為自動或手動@@366@@RW@@N
+MEASUrement:MEAS<x>:REFVoltage@@MEASUrement:MEAS<x>:REFVoltage <NR3> | 
+MEASUrement:MEAS<x>:REFVoltage?@@<NR3> 
+(電壓)@@設定或查詢指定測量項目的參考電位電壓值@@367@@RW@@N
+MEASUrement:MEAS<x>:DELay:EDGE<x>@@MEASUrement:MEAS<x>:DELay:EDGE<x> 
+{FALL|RISe|BOTH|SAMEas|OPPositeas} | 
+MEASUrement:MEAS<x>:DELay:EDGE<x>?@@{FALL|RISe|BOTH|SAMEas|OPPositeas}@@設定或
+查詢 Delay 測量項目起止波形邊緣類型@@250@@RW@@N
+MEASUrement:MEAS<x>:FROMedge@@MEASUrement:MEAS<x>:FROMedge {RISe|FALL|BOTH} | 
+MEASUrement:MEAS<x>:FROMedge?@@{RISe|FALL|BOTH}@@設定或查詢 Delay/Skew 
+測量的起始邊緣極性方向@@277@@RW@@N
+MEASUrement:MEAS<x>:TOEdge@@MEASUrement:MEAS<x>:TOEdge 
+{SAMEas|OPPositeas|RISe|FALL|BOTH} | 
+MEASUrement:MEAS<x>:TOEdge?@@{SAMEas|OPPositeas|RISe|FALL|BOTH}@@設定或查詢 
+Delay/Skew 測量的結束邊緣極性方向@@391@@RW@@N
+MEASUrement:MEAS<x>:FROMEDGESEARCHDIRect@@MEASUrement:MEAS<x>:FROMEDGESEARCHDIR
+ect {FORWard|BACKWard} | 
+MEASUrement:MEAS<x>:FROMEDGESEARCHDIRect?@@{FORWard|BACKWard}@@設定或查詢 Delay
+測量時起始邊緣的波形搜尋方向@@278@@RW@@N
+MEASUrement:MEAS<x>:TOEDGESEARCHDIRect@@MEASUrement:MEAS<x>:TOEDGESEARCHDIRect 
+{FORWard|BACKWard} | 
+MEASUrement:MEAS<x>:TOEDGESEARCHDIRect?@@{FORWard|BACKWard}@@設定或查詢 Delay 
+測量時結束邊緣的波形搜尋方向@@393@@RW@@N
+MEASUrement:MEAS<x>:AMEThod@@MEASUrement:MEAS<x>:AMEThod {PARAmetric|HISTogram}
+| MEASUrement:MEAS<x>:AMEThod?@@{PARAmetric|HISTogram}@@設定或查詢 Eye Width / 
+Eye Height 的計算分析演算法模式@@203@@RW@@N
+MEASUrement:MEAS<x>:DISPlaystat:ENABle@@MEASUrement:MEAS<x>:DISPlaystat:ENABle 
+{OFF|ON|<NR1>} | 
+MEASUrement:MEAS<x>:DISPlaystat:ENABle?@@{OFF|ON|<NR1>}@@設定或查詢 UI 測量 
+Badge 視窗中是否顯示統計數據資訊@@252@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 12)

@@ -1,0 +1,49 @@
+Answer:
+HORizontal?@@HORizontal?@@無@@查詢目前的水平系統設定@@184@@R@@N
+HORizontal:ACQDURATION?@@HORizontal:ACQDURATION?@@無@@查詢擷取時間長度@@184@@R@
+@N
+HORizontal:DELay:MODe@@HORizontal:DELay:MODe {OFF|ON|<NR1>} | 
+HORizontal:DELay:MODe?@@{OFF|ON|<NR1>}@@設定或查詢水平延遲模式的啟動狀態@@185@@
+RW@@N
+HORizontal:DELay:TIMe@@HORizontal:DELay:TIMe <NR3> | 
+HORizontal:DELay:TIMe?@@<NR3> 
+(秒)@@設定或查詢延遲模式開啟時的水平延遲時間@@187@@RW@@N
+HORizontal:DIVisions?@@HORizontal:DIVisions?@@無@@查詢螢幕波形顯示區域的水平網
+格格數@@187@@R@@N
+HORizontal:MAIn:INTERPRatio?@@HORizontal:MAIn:INTERPRatio?@@無@@查詢主時間基底
+的內插比例@@188@@R@@N
+HORizontal:MODe@@HORizontal:MODe {AUTO|MANual} | 
+HORizontal:MODe?@@{AUTO|MANual}@@設定或查詢水平操作模式@@188@@RW@@N
+HORizontal:MODe:MANual:CONFIGure@@HORizontal:MODe:MANual:CONFIGure 
+{HORIZontalscale|RECORDLength} | 
+HORizontal:MODe:MANual:CONFIGure?@@{HORIZontalscale|RECORDLength}@@設定或查詢手
+動模式下調整採樣率時優先變動的控制項@@190@@RW@@N
+HORizontal:MODe:RECOrdlength@@HORizontal:MODe:RECOrdlength <NR1> | 
+HORizontal:MODe:RECOrdlength?@@<NR1> 
+(樣點數)@@設定或查詢紀錄長度的點數@@191@@RW@@N
+HORizontal:MODe:SAMPLERate@@HORizontal:MODe:SAMPLERate <NR1> | 
+HORizontal:MODe:SAMPLERate?@@<NR1> (Sa/s)@@設定或查詢水平採樣率@@192@@RW@@N
+HORizontal:MODe:SCAle@@HORizontal:MODe:SCAle <NR1> | 
+HORizontal:MODe:SCAle?@@<NR1> (s/div)@@設定或查詢水平時間比例@@193@@RW@@N
+HORizontal:POSition@@HORizontal:POSition <NR3> | HORizontal:POSition?@@<NR3> (0
+~ 100%)@@設定或查詢觸發點在螢幕上的水平位置百分比@@194@@RW@@N
+HORizontal:PREViewstate?@@HORizontal:PREViewstate?@@無@@查詢顯示系統的預覽狀態@
+@195@@R@@N
+HORizontal:RECOrdlength@@HORizontal:RECOrdlength <NR1> | 
+HORizontal:RECOrdlength?@@<NR1> 
+(樣點數)@@設定或查詢水平波形紀錄長度@@196@@RW@@N
+HORizontal:ROLL?@@HORizontal:ROLL?@@無@@查詢水平滾動模式的啟用狀態@@197@@R@@N
+HORizontal:SAMPLERate@@HORizontal:SAMPLERate <NR3> | 
+HORizontal:SAMPLERate?@@<NR3> (Sa/s)@@設定或查詢水平採樣率@@197@@RW@@N
+HORizontal:SAMPLERate:ANALYZemode:MINimum:OVERRide@@HORizontal:SAMPLERate:ANALY
+Zemode:MINimum:OVERRide {OFF|ON|0|1} | 
+HORizontal:SAMPLERate:ANALYZemode:MINimum:OVERRide?@@{OFF|ON|0|1}@@設定或查詢是
+否覆寫分析模式下的最低採樣率限制@@198@@RW@@N
+HORizontal:SAMPLERate:ANALYZemode:MINimum:VALue@@HORizontal:SAMPLERate:ANALYZem
+ode:MINimum:VALue {AUTOmatic|<NR3>} | 
+HORizontal:SAMPLERate:ANALYZemode:MINimum:VALue?@@{AUTOmatic|<NR3>}@@設定或查詢
+分析自動水平模式下的最低採樣率數值@@200@@RW@@N
+HORizontal:SCAle@@HORizontal:SCAle <NR3> | HORizontal:SCAle?@@<NR3> 
+(s/div)@@設定或查詢水平時間比例@@201@@RW@@N
+
+Conversation: bed39e7c-1048-4372-bb03-221f76e4b7c5 (turn 3)
