@@ -1,0 +1,72 @@
+Answer:
+OUTPut[:STATe]@@OUTPut[:STATe] {OFF|ON}@@OFF | 
+ON@@開啟或關閉電源供應器之主輸出端子@@82@@W@@N
+OUTPut[:STATe]?@@OUTPut[:STATe]?@@None@@查詢電源供應器主輸出之開啟或關閉狀態@@8
+2@@R@@N
+OUTPut:RELay[:STATe]@@OUTPut:RELay[:STATe] {OFF|ON}@@OFF | ON@@控制 RS-232 
+介面腳位上的外部繼電器 TTL 輸出訊號狀態@@83@@W@@N
+OUTPut:RELay[:STATe]?@@OUTPut:RELay[:STATe]?@@None@@查詢外部繼電器 TTL 
+輸出訊號狀態@@83@@R@@N
+TRIGger[:SEQuence]:SOURce@@TRIGger[:SEQuence]:SOURce {BUS|IMMediate}@@BUS | 
+IMMediate@@選擇電源供應器之觸發訊號來源（匯流排或立即）@@81@@W@@N
+TRIGger[:SEQuence]:SOURce?@@TRIGger[:SEQuence]:SOURce?@@None@@查詢目前設定之觸
+發訊號來源@@81@@R@@N
+TRIGger[:SEQuence]:DELay@@TRIGger[:SEQuence]:DELay {<seconds>|MIN|MAX}@@0 to 
+3600 seconds | MIN | 
+MAX@@設定接收到觸發訊號至執行輸出變更間之延遲時間@@81@@W@@N
+TRIGger[:SEQuence]:DELay?@@TRIGger[:SEQuence]:DELay? [MIN|MAX]@@MIN | 
+MAX@@查詢目前設定之觸發延遲時間@@81@@R@@N
+INITiate[:IMMediate]@@INITiate[:IMMediate]@@None@@啟動觸發系統使預設觸發值於接
+收到觸發時轉移至輸出端@@81@@W@@N
+*TRG@@*TRG@@None@@發送軟體觸發訊號給已設定為 BUS 觸發源之觸發系統@@81@@W@@N
+DISPlay[:WINDow][:STATe]@@DISPlay[:WINDow][:STATe] {OFF|ON}@@OFF | 
+ON@@開啟或關閉前面板 VFD 顯示器顯示功能@@82@@W@@N
+DISPlay[:WINDow][:STATe]?@@DISPlay[:WINDow][:STATe]?@@None@@查詢前面板顯示器開
+啟或關閉狀態@@82@@R@@N
+DISPlay[:WINDow]:TEXT[:DATA]@@DISPlay[:WINDow]:TEXT[:DATA] <quoted 
+string>@@<quoted string> (up to 12 chars)@@在前面板顯示器上顯示最多 12 
+個字元之自訂訊息@@82@@W@@N
+DISPlay[:WINDow]:TEXT[:DATA]?@@DISPlay[:WINDow]:TEXT[:DATA]?@@None@@查詢目前在
+前面板顯示器上顯示之自訂訊息字串@@82@@R@@N
+DISPlay[:WINDow]:TEXT:CLEar@@DISPlay[:WINDow]:TEXT:CLEar@@None@@清除前面板顯示
+器上目前顯示之自訂文字訊息@@82@@W@@N
+CALibration:COUNt?@@CALibration:COUNt?@@None@@查詢電源供應器歷史總校正次數計數@
+@86@@R@@N
+CALibration:CURRent[:DATA]@@CALibration:CURRent[:DATA] <numeric 
+value>@@<numeric value>@@輸入外部標準電表所量測之電流校正數值@@86@@W@@N
+CALibration:CURRent:LEVel@@CALibration:CURRent:LEVel 
+{MINimum|MIDdle|MAXimum}@@MINimum | MIDdle | 
+MAXimum@@設定電流校正程序中之校正點準位（小/中/大）@@86@@W@@N
+CALibration:CURRent:PROTection@@CALibration:CURRent:PROTection@@None@@執行過電
+流保護 (OCP) 電路之自動校正程序@@86@@W@@N
+CALibration:DAC:ERRor@@CALibration:DAC:ERRor@@None@@自動修正內部 DAC 
+數位類比轉換器之微分非線性誤差@@87@@W@@N
+CALibration:SECure:CODE@@CALibration:SECure:CODE <new code>@@<new code> (up to 
+12 chars)@@設定校正解鎖保護之新安全碼字串@@87@@W@@N
+CALibration:SECure:STATe@@CALibration:SECure:STATe {OFF|ON},<code>@@OFF | ON, 
+<code>@@解除鎖定或鎖定電源供應器之校正保護狀態@@87@@W@@N
+CALibration:SECure:STATe?@@CALibration:SECure:STATe?@@None@@查詢校正保護功能是
+否處於鎖定或解鎖狀態@@87@@R@@N
+CALibration:STRing@@CALibration:STRing <quoted string>@@<quoted string> (up to 
+40 chars)@@將校正相關資訊字串寫入非揮發性記憶體中儲存@@87@@W@@N
+CALibration:STRing?@@CALibration:STRing?@@None@@讀取儲存於非揮發性記憶體中之校
+正資訊字串@@87@@R@@N
+CALibration:VOLTage[:DATA]@@CALibration:VOLTage[:DATA] <numeric 
+value>@@<numeric value>@@輸入外部標準電表所量測之電壓校正數值@@87@@W@@N
+CALibration:VOLTage:LEVel@@CALibration:VOLTage:LEVel 
+{MINimum|MIDdle|MAXimum}@@MINimum | MIDdle | 
+MAXimum@@設定電壓校正程序中之校正點準位（小/中/大）@@88@@W@@N
+CALibration:VOLTage:PROTection@@CALibration:VOLTage:PROTection@@None@@執行過電
+壓保護 (OVP) 電路之自動校正程序@@88@@W@@N
+STATus:QUEStionable[:EVENt]?@@STATus:QUEStionable[:EVENt]?@@None@@查詢並清空 
+Questionable 狀態事件暫存器之累積數值@@98@@R@@N
+STATus:QUEStionable:CONDition?@@STATus:QUEStionable:CONDition?@@None@@查詢 
+Questionable 狀態條件暫存器以回報 CV/CC 模式或故障狀態@@98@@R@@N
+STATus:QUEStionable:ENABle@@STATus:QUEStionable:ENABle <enable value>@@0 to 
+32767@@設定 Questionable 狀態啟用暫存器之事件匯報遮罩值@@99@@W@@N
+STATus:QUEStionable:ENABle?@@STATus:QUEStionable:ENABle?@@None@@查詢 
+Questionable 狀態啟用暫存器之數值@@99@@R@@N
+STATus:PRESet@@STATus:PRESet@@None@@將 SCPI 
+狀態系統恢復為預設初始狀態@@99@@W@@N
+
+Conversation: 68bbbc21-a9b2-4160-a8bc-0001c4c7f568 (turn 4)

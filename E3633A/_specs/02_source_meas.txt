@@ -1,0 +1,75 @@
+Answer:
+[SOURce:]APPLy@@APPLy {<voltage>|DEF|MIN|MAX}[,{<current>|DEF|MIN|MAX}]@@0 to 
+8.24V/20.60V, 0 to 20.60A/10.30A | DEF | MIN | 
+MAX@@同時設定電源供應器之輸出電壓與電流值@@71@@W@@N
+[SOURce:]APPLy?@@APPLy?@@None@@查詢目前設定之輸出電壓與電流值字串@@71@@R@@N
+[SOURce:]VOLTage[:LEVel][:IMMediate][:AMPLitude]@@VOLTage[:LEVel][:IMMediate][:
+AMPLitude] {<voltage>|MIN|MAX|UP|DOWN}@@0 to 8.24V/20.60V | MIN | MAX | UP | 
+DOWN@@設定電源供應器即時輸出電壓準位@@75@@W@@N
+[SOURce:]VOLTage[:LEVel][:IMMediate][:AMPLitude]?@@VOLTage[:LEVel][:IMMediate][
+:AMPLitude]? [MIN|MAX]@@MIN | 
+MAX@@查詢目前設定之輸出電壓值或最大/最小可設定值@@75@@R@@N
+[SOURce:]VOLTage[:LEVel][:IMMediate]:STEP[:INCRement]@@VOLTage[:LEVel][:IMMedia
+te]:STEP[:INCRement] {<numeric value>|DEFault}@@<numeric value> | DEFault@@設定
+VOLTage UP/DOWN 之電壓微調步階值@@76@@W@@N
+[SOURce:]VOLTage[:LEVel][:IMMediate]:STEP[:INCRement]?@@VOLTage[:LEVel][:IMMedi
+ate]:STEP[:INCRement]? 
+{DEFault}@@DEFault@@查詢目前設定之電壓微調步階值@@76@@R@@N
+[SOURce:]VOLTage[:LEVel]:TRIGgered[:AMPLitude]@@VOLTage[:LEVel]:TRIGgered[:AMPL
+itude] {<voltage>|MIN|MAX}@@0 to 8.24V/20.60V | MIN | 
+MAX@@設定觸發事件發生時轉移至輸出端之預設觸發電壓準位@@76@@W@@N
+[SOURce:]VOLTage[:LEVel]:TRIGgered[:AMPLitude]?@@VOLTage[:LEVel]:TRIGgered[:AMP
+Litude]? [MIN|MAX]@@MIN | MAX@@查詢目前設定之預設觸發電壓準位@@76@@R@@N
+[SOURce:]VOLTage:PROTection[:LEVel]@@VOLTage:PROTection[:LEVel] 
+{<voltage>|MIN|MAX}@@1V to 22V | MIN | MAX@@設定過電壓保護 (OVP) 
+觸發跳脫之電壓準位@@76@@W@@N
+[SOURce:]VOLTage:PROTection[:LEVel]?@@VOLTage:PROTection[:LEVel]? 
+{MIN|MAX}@@MIN | MAX@@查詢目前設定之過電壓保護 (OVP) 觸發準位@@77@@R@@N
+[SOURce:]VOLTage:PROTection:STATe@@VOLTage:PROTection:STATe {0|1|OFF|ON}@@0 | 1
+| OFF | ON@@啟用或停用過電壓保護 (OVP) 功能@@77@@W@@N
+[SOURce:]VOLTage:PROTection:STATe?@@VOLTage:PROTection:STATe?@@None@@查詢過電壓
+保護 (OVP) 功能啟用狀態@@77@@R@@N
+[SOURce:]VOLTage:PROTection:TRIPped?@@VOLTage:PROTection:TRIPped?@@None@@查詢過
+電壓保護 (OVP) 電路是否已跳脫觸發@@77@@R@@N
+[SOURce:]VOLTage:PROTection:CLEar@@VOLTage:PROTection:CLEar@@None@@清除過電壓保
+護 (OVP) 跳脫狀態並恢復輸出電壓@@77@@W@@N
+[SOURce:]VOLTage:RANGe@@VOLTage:RANGe {P8V|P20V|LOW|HIGH}@@P8V | P20V | LOW | 
+HIGH@@選擇 E3633A 輸出檔位 (8V/20A 或 20V/10A)@@77@@W@@N
+[SOURce:]VOLTage:RANGe?@@VOLTage:RANGe?@@None@@查詢目前選擇之輸出檔位 (傳回 P8V
+或 P20V)@@78@@R@@N
+[SOURce:]CURRent[:LEVel][:IMMediate][:AMPLitude]@@CURRent[:LEVel][:IMMediate][:
+AMPLitude] {<current>|MIN|MAX|UP|DOWN}@@0 to 20.60A/10.30A | MIN | MAX | UP | 
+DOWN@@設定電源供應器即時輸出電流準位@@72@@W@@N
+[SOURce:]CURRent[:LEVel][:IMMediate][:AMPLitude]?@@CURRent[:LEVel][:IMMediate][
+:AMPLitude]? [MIN|MAX]@@MIN | 
+MAX@@查詢目前設定之輸出電流值或最大/最小可設定值@@73@@R@@N
+[SOURce:]CURRent[:LEVel][:IMMediate]:STEP[:INCRement]@@CURRent[:LEVel][:IMMedia
+te]:STEP[:INCRement] {<numeric value>|DEFault}@@<numeric value> | DEFault@@設定
+CURRent UP/DOWN 之電流微調步階值@@73@@W@@N
+[SOURce:]CURRent[:LEVel][:IMMediate]:STEP[:INCRement]?@@CURRent[:LEVel][:IMMedi
+ate]:STEP[:INCRement]? 
+{DEFault}@@DEFault@@查詢目前設定之電流微調步階值@@73@@R@@N
+[SOURce:]CURRent[:LEVel]:TRIGgered[:AMPLitude]@@CURRent[:LEVel]:TRIGgered[:AMPL
+itude] {<current>|MIN|MAX}@@0 to 20.60A/10.30A | MIN | 
+MAX@@設定觸發事件發生時轉移至輸出端之預設觸發電流準位@@73@@W@@N
+[SOURce:]CURRent[:LEVel]:TRIGgered[:AMPLitude]?@@CURRent[:LEVel]:TRIGgered[:AMP
+Litude]? [MIN|MAX]@@MIN | MAX@@查詢目前設定之預設觸發電流準位@@73@@R@@N
+[SOURce:]CURRent:PROTection[:LEVel]@@CURRent:PROTection[:LEVel] 
+{<current>|MIN|MAX}@@0A to 22A | MIN | MAX@@設定過電流保護 (OCP) 
+觸發跳脫之電流準位@@74@@W@@N
+[SOURce:]CURRent:PROTection[:LEVel]?@@CURRent:PROTection[:LEVel]? 
+{MIN|MAX}@@MIN | MAX@@查詢目前設定之過電流保護 (OCP) 觸發準位@@74@@R@@N
+[SOURce:]CURRent:PROTection:STATe@@CURRent:PROTection:STATe {0|1|OFF|ON}@@0 | 1
+| OFF | ON@@啟用或停用過電流保護 (OCP) 功能@@74@@W@@N
+[SOURce:]CURRent:PROTection:STATe?@@CURRent:PROTection:STATe?@@None@@查詢過電流
+保護 (OCP) 功能啟用狀態@@74@@R@@N
+[SOURce:]CURRent:PROTection:TRIPped?@@CURRent:PROTection:TRIPped?@@None@@查詢過
+電流保護 (OCP) 電路是否已跳脫觸發@@74@@R@@N
+[SOURce:]CURRent:PROTection:CLEar@@CURRent:PROTection:CLEar@@None@@清除過電流保
+護 (OCP) 跳脫狀態並恢復輸出電流@@74@@W@@N
+MEASure[:SCALar]:VOLTage[:DC]?@@MEASure[:SCALar]:VOLTage[:DC]?@@None@@量測電源
+供應器輸出端子感測到的實際直流電壓值@@78@@R@@N
+MEASure[:SCALar]:CURRent[:DC]?@@MEASure[:SCALar]:CURRent[:DC]?@@None@@量測電源
+供應器內部感測電阻上的實際直流電流值@@78@@R@@N
+
+Conversation: 68bbbc21-a9b2-4160-a8bc-0001c4c7f568 (turn 3)

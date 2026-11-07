@@ -1,0 +1,36 @@
+Continuing conversation 68bbbc21...
+Answer:
+*CLS@@*CLS@@None@@清除所有事件暫存器與狀態位元組暫存器@@99@@W@@N
+*ESE@@*ESE <enable value>@@0 to 255@@設定標準事件啟用暫存器之遮罩值@@99@@W@@N
+*ESE?@@*ESE?@@None@@查詢標準事件啟用暫存器之數值@@99@@R@@N
+*ESR?@@*ESR?@@None@@查詢並清空標準事件暫存器之數值@@99@@R@@N
+*IDN?@@*IDN?@@None@@讀取電源供應器之製造商、機型與韌體版本識別字串@@84@@R@@N
+*OPC@@*OPC@@None@@當所有先前指令完成時設定標準事件暫存器之 Operation Complete 
+位元@@99@@W@@N
+*OPC?@@*OPC?@@None@@當所有先前指令完成時於輸出緩衝區傳回 1@@99@@R@@N
+*PSC@@*PSC {0|1}@@0 | 
+1@@設定開機時是否自動清除狀態位元組與標準事件啟用遮罩@@99@@W@@N
+*PSC?@@*PSC?@@None@@查詢開機狀態清除設定值@@100@@R@@N
+*RCL@@*RCL {1|2|3}@@1 | 2 | 3@@召回非揮發性記憶體中儲存之儀器設定狀態@@85@@W@@N
+*RST@@*RST@@None@@重置電源供應器至開機預設狀態@@84@@W@@N
+*SAV@@*SAV {1|2|3}@@1 | 2 | 3@@將目前儀器設定狀態儲存至指定記憶體位置@@85@@W@@N
+*SRE@@*SRE <enable value>@@0 to 255@@設定狀態位元組啟用暫存器之數值@@100@@W@@N
+*SRE?@@*SRE?@@None@@查詢狀態位元組啟用暫存器之數值@@100@@R@@N
+*STB?@@*STB?@@None@@查詢狀態位元組摘要暫存器之數值@@100@@R@@N
+*TRG@@*TRG@@None@@發送觸發訊號至設定為 BUS 觸發源之觸發子系統@@81@@W@@N
+*TST?@@*TST?@@None@@執行完整自我測試並傳回測試結果@@85@@R@@N
+*WAI@@*WAI@@None@@等待所有已發送之待處理指令執行完畢@@100@@W@@N
+SYSTem:BEEPer[:IMMediate]@@SYSTem:BEEPer[:IMMediate]@@None@@使電源供應器立即發
+出一聲蜂鳴聲@@83@@W@@N
+SYSTem:ERRor?@@SYSTem:ERRor?@@None@@讀取並清除錯誤佇列中最早的一條錯誤訊息@@83@
+@R@@N
+SYSTem:VERSion?@@SYSTem:VERSion?@@None@@查詢電源供應器符合之 SCPI 
+語言版本@@84@@R@@N
+SYSTem:LOCal@@SYSTem:LOCal@@None@@將電源供應器切換至 RS-232 
+本地控制模式並啟用前面板按鍵@@89@@W@@N
+SYSTem:REMote@@SYSTem:REMote@@None@@將電源供應器切換至 RS-232 
+遠端控制模式@@89@@W@@N
+SYSTem:RWLock@@SYSTem:RWLock@@None@@將電源供應器切換至 RS-232 
+遠端控制模式並鎖定前面板按鍵@@89@@W@@N
+
+Resumed conversation: 68bbbc21-a9b2-4160-a8bc-0001c4c7f568

@@ -65,6 +65,13 @@ INSTRUMENTS = [
         "note": {"en": "INSTrument:SELect CH1/CH2/CH3 active-channel model",
                  "zh": "INSTrument:SELect CH1/CH2/CH3 作用中通道模型"},
     },
+    {
+        "name": "E3633A", "folder": "E3633A", "entry": "ui.py", "count": 59,
+        "kind": {"en": "Single-output DC Power Supply (Agilent/Keysight)",
+                 "zh": "單輸出直流電源供應器 (Agilent/Keysight)"},
+        "note": {"en": "single output, no channel; VOLTage:RANGe P8V/P20V range switching",
+                 "zh": "單輸出、無通道；VOLTage:RANGe P8V/P20V 檔位切換"},
+    },
 ]
 
 
