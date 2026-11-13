@@ -6,13 +6,19 @@ AFG31000 控制面板 (Tkinter GUI) — 支援英文 / 繁體中文（預設英�
 以下拉式選單選擇 SCPI command（涵蓋手冊完整 187 條指令，依功能群組分類），
 面板依指令型態自動彈出參數欄位；右上角「Language」可即時切換英文/繁中介面。
 
+連線列的「Scan」會列出電腦上所有 VISA 資源（GPIB 優先，並附 *IDN? 識別），
+由下拉選單選擇後連線；也可直接手動輸入資源字串。
+指令區的「Search」可用關鍵字（名稱/SCPI/語法/說明，空白分隔為 AND）篩選指令。
+
 執行：
     python ui.py
-
-無實體儀器時，勾選「Simulation mode」即可離線操作測試整個介面。
+    python ui.py --sim      # 開發測試用：模擬模式（介面上不顯示此選項）
 """
 from __future__ import annotations
 
+import queue
+import sys
+import threading
 import tkinter as tk
 from tkinter import ttk, messagebox
 from datetime import datetime
@@ -97,12 +103,14 @@ class InstrumentPanel(tk.Tk):
         self.conn_frame = frm
         self.visa_label = ttk.Label(frm)
         self.visa_label.grid(row=0, column=0, padx=4, pady=6, sticky="w")
-        self.resource_var = tk.StringVar(value="TCPIP0::192.168.0.10::inst0::INSTR")
-        ttk.Entry(frm, textvariable=self.resource_var, width=38).grid(
-            row=0, column=1, padx=4, pady=6, sticky="we")
-        self.sim_var = tk.BooleanVar(value=True)
-        self.sim_chk = ttk.Checkbutton(frm, variable=self.sim_var)
-        self.sim_chk.grid(row=0, column=2, padx=4)
+        # 資源下拉：Scan 後列出找到的資源，也可手動輸入
+        self.resource_var = tk.StringVar(value="GPIB0::9::INSTR")
+        self.resource_combo = ttk.Combobox(frm, textvariable=self.resource_var, width=52)
+        self.resource_combo.grid(row=0, column=1, padx=4, pady=6, sticky="we")
+        self.scan_btn = ttk.Button(frm, command=self._scan_resources)
+        self.scan_btn.grid(row=0, column=2, padx=4)
+        # 模擬模式：介面上隱藏，僅供開發測試（python ui.py --sim）
+        self.sim_var = tk.BooleanVar(value="--sim" in sys.argv)
         self.connect_btn = ttk.Button(frm, command=self._toggle_connection)
         self.connect_btn.grid(row=0, column=3, padx=4)
         self.lang_label = ttk.Label(frm)
@@ -128,6 +136,20 @@ class InstrumentPanel(tk.Tk):
         self.group_combo = ttk.Combobox(frm, textvariable=self.group_var, state="readonly", width=24)
         self.group_combo.grid(row=0, column=1, padx=4, pady=6, sticky="w")
         self.group_combo.bind("<<ComboboxSelected>>", lambda e: self._on_group_change())
+
+        # 關鍵字搜尋（與群組篩選並用）
+        search_box = ttk.Frame(frm)
+        search_box.grid(row=0, column=2, columnspan=2, padx=4, pady=6, sticky="e")
+        self.search_label = ttk.Label(search_box)
+        self.search_label.pack(side="left")
+        self.search_var = tk.StringVar()
+        self.search_entry = ttk.Entry(search_box, textvariable=self.search_var, width=28)
+        self.search_entry.pack(side="left", padx=4)
+        self.search_var.trace_add("write", lambda *_: self._apply_filter())
+        self.search_entry.bind("<Escape>", lambda e: self.search_var.set(""))
+        self.search_count_var = tk.StringVar()
+        ttk.Label(search_box, textvariable=self.search_count_var, foreground="#666",
+                  width=14).pack(side="left")
 
         self.command_label = ttk.Label(frm)
         self.command_label.grid(row=1, column=0, padx=4, pady=6, sticky="w")
@@ -166,12 +188,33 @@ class InstrumentPanel(tk.Tk):
         return [t("all")] + [g for g in GROUP_ORDER if any(c["group"] == g for c in COMMANDS)]
 
     def _on_group_change(self):
+        self._apply_filter(force_first=True)
+
+    @staticmethod
+    def _matches(c, words) -> bool:
+        hay = " ".join(str(c.get(k, "")) for k in
+                       ("name", "scpi", "syntax", "desc", "params", "group")).lower()
+        return all(w in hay for w in words)
+
+    def _apply_filter(self, force_first: bool = False):
+        """依群組 + 搜尋關鍵字（空白分隔、全部須符合、不分大小寫）更新指令下拉。"""
         g = self.group_var.get()
-        labels = LABELS if g == t("all") else [_label(c) for c in _SORTED if c["group"] == g]
+        words = self.search_var.get().lower().split()
+        cmds = [c for c in _SORTED
+                if (g in ("", t("all")) or c["group"] == g) and self._matches(c, words)]
+        labels = [_label(c) for c in cmds]
+        if words:
+            self.search_count_var.set(
+                t("search_count", n=len(labels)) if labels else t("search_none"))
+        else:
+            self.search_count_var.set("")
+        if not labels:                      # 無符合：保留目前指令，不清空
+            self.cmd_combo.config(values=[])
+            return
         self.cmd_combo.config(values=labels)
-        if labels:
+        if force_first or self.cmd_var.get() not in labels:
             self.cmd_var.set(labels[0])
-        self._on_command_change()
+            self._on_command_change()
 
     def _current_command(self) -> dict:
         return CMD_BY_LABEL[self.cmd_var.get()]
@@ -270,11 +313,12 @@ class InstrumentPanel(tk.Tk):
         self.title(t("panel_title", model=MODEL))
         self.conn_frame.config(text=t("conn_frame"))
         self.visa_label.config(text=t("visa"))
-        self.sim_chk.config(text=t("sim"))
+        self.scan_btn.config(text=t("scan"))
         self.connect_btn.config(text=t("disconnect") if self._connected else t("connect"))
         self.lang_label.config(text=t("language"))
         self.cmd_frame.config(text=t("cmd_frame"))
         self.group_label.config(text=t("group"))
+        self.search_label.config(text=t("search"))
         self.command_label.config(text=t("command"))
         self.channel_label.config(text=t("channel"))
         self.element_label.config(text=t("seq_elem"))
@@ -293,7 +337,78 @@ class InstrumentPanel(tk.Tk):
         else:
             self.status_var.set(t("disconnected"))
             self.status_label.config(foreground="#b00")
+        self._apply_filter()
         self._on_command_change()
+
+    # ---------------- 掃描 VISA 資源 ---------------- #
+    def _scan_resources(self):
+        """背景執行緒列出 VISA 資源並查詢 *IDN?，完成後填入資源下拉選單。"""
+        self.scan_btn.config(state="disabled")
+        self.status_var.set(t("scanning"))
+        self.status_label.config(foreground="#357")
+        self._scan_q: queue.Queue = queue.Queue()
+        threading.Thread(target=self._scan_worker, args=(self._scan_q,), daemon=True).start()
+        self.after(100, self._poll_scan)
+
+    def _poll_scan(self):
+        """主執行緒輪詢掃描結果（Tk 物件只能在主執行緒操作）。"""
+        try:
+            items, error = self._scan_q.get_nowait()
+        except queue.Empty:
+            self.after(100, self._poll_scan)
+            return
+        self._scan_done(items, error)
+
+    @staticmethod
+    def _scan_worker(q: "queue.Queue"):
+        try:
+            import pyvisa
+            rm = pyvisa.ResourceManager()
+            found = list(rm.list_resources("?*::INSTR"))
+            # GPIB 排最前面，其次 USB / TCPIP，序列埠 (ASRL) 最後
+            rank = {"GPIB": 0, "USB": 1, "TCPI": 2, "VXI": 3, "ASRL": 9}
+            found.sort(key=lambda r: (rank.get(r[:4].upper(), 5), r))
+            items = []
+            for res in found:
+                idn = ""
+                if not res.upper().startswith("ASRL"):   # 序列埠不查詢，避免卡住
+                    try:
+                        inst = rm.open_resource(res, open_timeout=1000)
+                        inst.timeout = 1500
+                        idn = inst.query("*IDN?").strip()  # type: ignore[attr-defined]
+                        inst.close()
+                    except Exception:  # noqa: BLE001
+                        idn = ""
+                items.append(f"{res}    {idn}".rstrip())
+            q.put((items, None))
+        except Exception as e:  # noqa: BLE001
+            q.put(([], e))
+
+    def _scan_done(self, items, error):
+        self.scan_btn.config(state="normal")
+        if error is not None:
+            self._restore_status()
+            messagebox.showerror(t("scan_fail"), str(error))
+            self._log(f"SCAN ERROR: {error}")
+            return
+        self.resource_combo.config(values=items)
+        self._restore_status()          # 狀態列恢復顯示連線狀態，不顯示掃描結果提示
+        if items:
+            self.resource_var.set(items[0])
+            self.resource_combo.event_generate("<Button-1>")   # 自動展開下拉
+        self._log("SCAN -> " + (", ".join(items) if items else "(none)"))
+
+    def _restore_status(self):
+        if self._connected:
+            self.status_var.set(t("connected", idn=self._idn))
+            self.status_label.config(foreground="#080")
+        else:
+            self.status_var.set(t("disconnected"))
+            self.status_label.config(foreground="#b00")
+
+    def _resource_name(self) -> str:
+        """下拉項目為「資源字串 + IDN」，連線時只取資源字串。"""
+        return self.resource_var.get().strip().split()[0] if self.resource_var.get().strip() else ""
 
     # ---------------- 連線 ---------------- #
     def _toggle_connection(self):
@@ -301,7 +416,7 @@ class InstrumentPanel(tk.Tk):
             self._disconnect()
             return
         try:
-            self.afg = _make_sim() if self.sim_var.get() else AFG31000(self.resource_var.get())
+            self.afg = _make_sim() if self.sim_var.get() else AFG31000(self._resource_name())
             if self.sim_var.get():
                 self._log(t("sim_created", model=MODEL))
             self._idn = self.afg.idn()

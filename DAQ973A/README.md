@@ -36,6 +36,7 @@ with DAQ973A("TCPIP0::192.168.0.10::inst0::INSTR") as daq:
 - `key`：`daq973a_commands.py` 資料表中的鍵（亦可 `DAQ973A.list_commands()` / `command_info(key)` 查詢）。
 - `value`：依該指令型態（bool / numeric / enum / string / raw）自動轉成 SCPI 參數；多參數指令（kind=raw）直接傳完整字串如 `"10,0.001"`。
 - `ch_list`：DAQ973A 的通道清單參數，傳 `"101"`、`"101:105"`、`"101,103,110"`，會自動組成 `(@...)` 附加於指令後（查詢形式亦支援）。
+- 讀取（`query_command`）只在該指令的查詢語法接受參數時才帶 `value`（資料表 `qarg`）：僅查詢指令（如 `MEASure:...? <range>`）照原樣帶；讀寫兩用指令只帶 MIN/MAX/DEF 等查詢關鍵字（`qopts`），一般寫入值（如 `ON`、`5`）不會被送成 `XXX? ON`。
 
 IEEE-488.2 常用另有具名方法：`idn()`、`reset()`、`clear_status()`、`wait()`、`error()`，
 以及低階 `write()` / `query()` / `query_float()`。
@@ -46,7 +47,7 @@ IEEE-488.2 常用另有具名方法：`idn()`、`reset()`、`clear_status()`、`
 python ui.py
 ```
 
-1. **連線**：輸入 VISA 資源字串後按「連線」；無實體儀器時勾選「**模擬模式**」離線操作。
+1. **連線**：按「Scan」列出 VISA 資源（GPIB 優先、附 `*IDN?`）由下拉選擇，或手動輸入資源字串，再按「連線」。指令區可用「Search」關鍵字篩選指令。模擬模式已自介面隱藏，開發測試請用 `python ui.py --sim`。
 2. **選指令**：先用「群組」縮小範圍，再選 421 條中的任一條；下方顯示完整格式、讀寫屬性與頁碼。
    面板依型態自動彈出參數欄位；需要通道的指令會出現「通道清單 (@)」輸入欄（填如 `101:105`）。
 3. **Write / Read**：按鈕依指令是否支援寫入/讀取自動啟用；結果顯示於大字區，下方記錄 SCPI 流量。

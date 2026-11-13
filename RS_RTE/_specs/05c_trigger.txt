@@ -1,0 +1,85 @@
+Answer:
+TRIGger<m>:DATatoclock:CSOurce[:VALue]@@TRIGger<m>:DATatoclock:CSOurce[:VALue] 
+<ClockSource>@@CHANnel1 | CHANnel2 | CHANnel3 | CHANnel4@@設定或查詢 Data2Clock
+觸發的時脈訊號源@@1106@@RW@@N
+TRIGger<m>:DATatoclock:CSOurce:EDGE@@TRIGger<m>:DATatoclock:CSOurce:EDGE 
+<Slope>@@POSitive | NEGative | EITHer@@設定或查詢 Data2Clock 
+觸發的時脈邊緣極性@@1106@@RW@@N
+TRIGger<m>:DATatoclock:CSOurce:LEVel@@TRIGger<m>:DATatoclock:CSOurce:LEVel 
+<Level>@@Range: -10 to 10 V@@設定或查詢 Data2Clock 
+觸發的時脈電壓門限位準@@1106@@RW@@N
+TRIGger<m>:DATatoclock:STIMe@@TRIGger<m>:DATatoclock:STIMe <SetupTime>@@Range: 
+-100 to 100 s@@設定或查詢 Data2Clock 觸發的 Setup 建立時間限制@@1107@@RW@@N
+TRIGger<m>:DATatoclock:HTIMe@@TRIGger<m>:DATatoclock:HTIMe <HoldTime>@@Range: 
+-100 to 100 s@@設定或查詢 Data2Clock 觸發的 Hold 保持時間限制@@1107@@RW@@N
+TRIGger<m>:SCOupling@@TRIGger<m>:SCOupling <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否將觸發電壓與磁滯區域耦合至所有通道@@1106@@RW@@N
+TRIGger<m>:PATTern:MODE@@TRIGger<m>:PATTern:MODE <Mode>@@OFF | TIMeout | 
+WIDTh@@設定或查詢邏輯圖樣觸發的時間條件模式@@1110@@RW@@N
+TRIGger<m>:PATTern:TIMeout:MODE@@TRIGger<m>:PATTern:TIMeout:MODE <Range>@@HIGH 
+| LOW | EITHer@@設定或查詢邏輯圖樣超時觸發的電壓狀態條件@@1110@@RW@@N
+TRIGger<m>:PATTern:TIMeout[:TIME]@@TRIGger<m>:PATTern:TIMeout[:TIME] 
+<Timeout>@@Range: 1e-9 to 1000 
+s@@設定或查詢邏輯圖樣超時觸發的時間限制長度@@1111@@RW@@N
+TRIGger<m>:PATTern:WIDTh:RANGe@@TRIGger<m>:PATTern:WIDTh:RANGe <Range>@@WITHin 
+| OUTSide | LONGer | 
+SHORter@@設定或查詢邏輯圖樣脈寬觸發的時間範圍條件@@1111@@RW@@N
+TRIGger<m>:PATTern:WIDTh[:WIDTh]@@TRIGger<m>:PATTern:WIDTh[:WIDTh] 
+<Width>@@Range: 500e-12 to 1000 
+s@@設定或查詢邏輯圖樣脈寬觸發的目標時間長度@@1112@@RW@@N
+TRIGger<m>:PATTern:WIDTh:DELTa@@TRIGger<m>:PATTern:WIDTh:DELTa <Delta>@@Range: 
+0 to 1000 s@@設定或查詢邏輯圖樣脈寬觸發的時間 ±Delta 容差範圍@@1112@@RW@@N
+TRIGger<m>:SPATtern:CSOurce[:VALue]@@TRIGger<m>:SPATtern:CSOurce[:VALue] 
+<ClockSource>@@CHANnel1 | CHANnel2 | CHANnel3 | 
+CHANnel4@@設定或查詢串列圖樣觸發的時脈訊號源@@1112@@RW@@N
+TRIGger<m>:SPATtern:CSOurce:EDGE@@TRIGger<m>:SPATtern:CSOurce:EDGE 
+<Slope>@@POSitive | NEGative | 
+EITHer@@設定或查詢串列圖樣觸發的時脈邊緣極性@@1113@@RW@@N
+TRIGger<m>:SPATtern:CSOurce:LEVel@@TRIGger<m>:SPATtern:CSOurce:LEVel 
+<Level>@@Range: -10 to 10 
+V@@設定或查詢串列圖樣觸發的時脈電壓門限位準@@1113@@RW@@N
+TRIGger<m>:SPATtern:PATTern@@TRIGger<m>:SPATtern:PATTern <Pattern>@@128-bit 
+binary/hex 
+string@@設定或查詢串列圖樣觸發的目標二進位或十六進位圖樣串@@1113@@RW@@N
+TRIGger<m>📺STANdard@@TRIGger<m>📺STANdard <Standard>@@PAL | PALM | SECAM | 
+NTSC | 1080i | 1080p | 720p | CUSTom@@設定或查詢 TV/Video 
+視訊觸發的電視訊號標準@@1114@@RW@@N
+TRIGger<m>📺MODE@@TRIGger<m>📺MODE <Mode>@@ALLFields | ODD | EVEN | ALLLines | 
+LINE@@設定或查詢 TV/Video 視訊觸發的場或掃描線模式@@1115@@RW@@N
+TRIGger<m>📺LINE@@TRIGger<m>📺LINE <LineNumber>@@Range: 1 to 3000@@設定或查詢 
+TV 視訊觸發的指定掃描線編號@@1115@@RW@@N
+TRIGger<m>📺LFIeld@@TRIGger<m>📺LFIeld <Field>@@ODD | EVEN@@設定或查詢 NTSC 
+視訊觸發指定掃描線所屬的奇數/偶數場@@1116@@RW@@N
+TRIGger<m>📺POLarity@@TRIGger<m>📺POLarity <Polarity>@@POSitive | 
+NEGative@@設定或查詢 TV 視訊訊號的同步脈衝極性@@1116@@RW@@N
+TRIGger<m>📺CUSTom:STYPe@@TRIGger<m>:TV:CUSTom:STYPe <SyncType>@@BILevel | 
+TRILevel@@設定或查詢自訂視訊標準下的同步脈衝類型@@1117@@RW@@N
+TRIGger<m>📺CUSTom:LDURation@@TRIGger<m>:TV:CUSTom:LDURation 
+<LineDuration>@@Range: 1e-6 to 1e-3 
+s@@設定或查詢自訂視訊標準下的單一掃描線週期時間@@1117@@RW@@N
+TRIGger<m>📺CUSTom:SDURation@@TRIGger<m>:TV:CUSTom:SDURation 
+<PulseDuration>@@Range: 10e-9 to 1e-3 
+s@@設定或查詢自訂視訊標準下的同步脈衝寬度時間@@1118@@RW@@N
+TRIGger<m>📺CUSTom:SCANmode@@TRIGger<m>:TV:CUSTom:SCANmode 
+<ScanMode>@@INTerlaced | PROGressive | SEGMent 
+lines@@設定或查詢自訂視訊標準下的影像掃描模式@@1117@@RW@@N
+TRIGger<m>:POWerline:SLOPe@@TRIGger<m>:POWerline:SLOPe <Slope>@@POSitive | 
+NEGative | EITHer@@設定或查詢交流電源線（Line）觸發源的邊緣極性@@1118@@RW@@N
+TRIGger<m>:SEQuence:MODE@@TRIGger<m>:SEQuence:MODE <Mode>@@OFF | 
+AB@@設定或查詢觸發序列模式啟動與否@@1125@@RW@@N
+TRIGger<m>:SEQuence:TIME@@TRIGger<m>:SEQuence:TIME <SequenceTime>@@Range: 0 to 
+10 s@@設定或查詢 A 與 B 觸發事件之間的延遲時間長度@@1125@@RW@@N
+TRIGger<m>:SEQuence:EVENts@@TRIGger<m>:SEQuence:EVENts <EventsCount>@@Range: 1 
+to 2000000000@@設定或查詢 A 觸發後至 B 觸發需滿足之 B 事件次數@@1126@@RW@@N
+TRIGger<m>:SEQuence:RSTate@@TRIGger<m>:SEQuence:RSTate <ResetState>@@OFF | TIME
+| EVENts@@設定或查詢觸發序列的重置條件模式@@1126@@RW@@N
+TRIGger<m>:EVENt:BEEP@@TRIGger<m>:EVENt:BEEP <State>@@OFF | ON | 0 | 
+1@@設定或查詢觸發事件發生時是否發出蜂鳴聲警告@@1128@@RW@@N
+TRIGger<m>:EVENt:PRINt@@TRIGger<m>:EVENt:PRINt <State>@@OFF | ON | 0 | 
+1@@設定或查詢觸發事件發生時是否自動執行列印/截圖@@1128@@RW@@N
+TRIGger<m>:EVENt:WFMSave@@TRIGger<m>:EVENt:WFMSave <State>@@OFF | ON | 0 | 
+1@@設定或查詢觸發事件發生時是否自動儲存波形資料@@1129@@RW@@N
+TRIGger<m>:EVENt:RUNexec@@TRIGger<m>:EVENt:RUNexec <State>@@OFF | ON | 0 | 
+1@@設定或查詢觸發事件發生時是否自動執行外部巨集/程式@@1129@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 8)

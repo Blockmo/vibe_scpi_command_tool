@@ -147,6 +147,41 @@ def infer_kind(syntax: str, params: str = ""):
     return kind, None
 
 
+
+# ---------------------------------------------------------------------- #
+# 查詢參數規則（修正「讀取時把寫入用的值一起送出」的錯誤，如 OUTP? ON）
+#   qarg : 查詢形式是否接受參數（通道清單除外）
+#   qopts: 讀寫兩用指令查詢可帶的關鍵字（如 MIN/MAX/DEF）；寫入值不是這些關鍵字時查詢不帶值
+#   qsel : 讀寫兩用多參數指令，查詢要帶寫入值的第幾個逗號欄位（如 SLOT:LABel? <slot>）
+# ---------------------------------------------------------------------- #
+QSEL = {"SYSTem:SLOT:LABel": [0], "SYSTem:COMMunicate:ENABle": [1], "MEMory:STATe:NAME": [0]}
+KIND_FIX = {"SYSTem:COMMunicate:ENABle": {"kind": "raw", "opts": None}}   # 寫入為 {ON|OFF},<interface>
+
+
+def query_meta(row: dict) -> dict:
+    meta = {"qarg": False, "qopts": None, "qsel": None}
+    meta.update(KIND_FIX.get(row["scpi"], {}))
+    if not row["get"] or row["kind"] == "none":
+        return meta
+    segs = [s.strip() for s in re.split(r"\s+[/|]\s+", row["syntax"])]
+    qs = [s for s in segs if "?" in s]
+    if not qs:
+        return meta                               # 語法只列設定形式 → 查詢為單純 XXX?
+    tail = re.sub(r"\(@[^)]*\)", "", qs[-1].split("?", 1)[1])
+    if not re.sub(r"[\[\]{}(),|\s]", "", tail):
+        return meta                               # 查詢只接受通道清單
+    meta["qarg"] = True
+    if row["set"]:
+        if row["scpi"] in QSEL:
+            meta["qsel"] = QSEL[row["scpi"]]
+        else:
+            words = re.findall(r"[A-Za-z][A-Za-z0-9]*", re.sub(r"<[^>]*>", "", tail.replace(" ", "")))
+            meta["qopts"] = list(dict.fromkeys(words)) or None
+            if not meta["qopts"]:
+                meta["qarg"] = False
+    return meta
+
+
 def main():
     rows = []
     seen = set()       # 已見過的 scpi
@@ -222,6 +257,7 @@ def main():
         f.write("from typing import List, Dict, Any\n\n")
         f.write("COMMANDS: List[Dict[str, Any]] = [\n")
         for r in rows:
+            r.update(query_meta(r))
             f.write("    %r,\n" % (r,))
         f.write("]\n\n")
         f.write("COMMAND_BY_KEY: Dict[str, Dict[str, Any]] = {c['key']: c for c in COMMANDS}\n\n")

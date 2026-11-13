@@ -1,0 +1,35 @@
+Answer:
+*IDN?@@*IDN?@@無@@查詢儀器製造商、型號、序號及韌體版本資訊@@2-28@@R@@N
+*OPT?@@*OPT?@@無@@查詢儀器已安裝之選項清單@@2-36@@R@@N
+*RST@@*RST@@無@@將儀器設定重置為原廠預設值@@2-40@@W@@N
+SYSTem:BEEPer[:IMMediate]@@SYSTem:BEEPer[:IMMediate]@@無@@使儀器蜂鳴器立即發出
+一次提示音@@2-88@@W@@N
+SYSTem:BEEPer:STATe@@SYSTem:BEEPer:STATe {ON|OFF|<NR1>}; 
+SYSTem:BEEPer:STATe?@@ON|OFF|<NR1>@@設定或查詢蜂鳴器警告音致能狀態@@2-88@@RW@@N
+SYSTem:ERRor[:NEXT]?@@SYSTem:ERRor[:NEXT]?@@無@@查詢並傳回錯誤與事件佇列中的下
+一筆紀錄@@2-89@@R@@N
+SYSTem:KCLick[:STATe]@@SYSTem:KCLick[:STATe] {ON|OFF|<NR1>}; 
+SYSTem:KCLick[:STATe]?@@ON|OFF|<NR1>@@設定或查詢按鈕與旋鈕的操作提示音開關@@2-9
+0@@RW@@N
+SYSTem:KLOCk[:STATe]@@SYSTem:KLOCk[:STATe] {ON|OFF|<NR1>}; 
+SYSTem:KLOCk[:STATe]?@@ON|OFF|<NR1>@@設定或查詢前面板按鍵鎖定狀態@@2-90@@RW@@N
+SYSTem:PASSword:CDISable@@SYSTem:PASSword:CDISable 
+<password>@@<password>::=<string>@@停用受保護指令並啟用儀器安全保護@@2-91@@W@@N
+SYSTem:PASSword[:CENable]@@SYSTem:PASSword[:CENable] 
+<password>@@<password>::=<string>@@啟用受保護指令運作並停用儀器安全保護@@2-91@@
+W@@N
+SYSTem:PASSword[:CENable]:STATe?@@SYSTem:PASSword[:CENable]:STATe?@@無@@查詢儀
+器安全保護狀態@@2-92@@R@@N
+SYSTem:PASSword:NEW@@SYSTem:PASSword:NEW 
+<current_password>,<new_password>@@<current_password>,<new_password>@@變更儀器
+安全保護密碼@@2-92@@W@@N
+SYSTem:SECurity:IMMediate@@SYSTem:SECurity:IMMediate@@無@@清除所有設定與記憶體
+資料並重置為原廠預設值@@2-93@@W@@N
+SYSTem:ULANguage@@SYSTem:ULANguage 
+{ENGLish|FRENch|GERMan|JAPanese|KORean|SCHinese|TCHinese|RUSSian}; 
+SYSTem:ULANguage?@@ENGLish|FRENch|GERMan|JAPanese|KORean|SCHinese|TCHinese|RUSS
+ian@@設定或查詢螢幕顯示語言@@2-93@@RW@@N
+SYSTem:VERSion?@@SYSTem:VERSion?@@無@@查詢儀器符合之SCPI版本年份與號碼@@2-94@@R
+@@N
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 3)

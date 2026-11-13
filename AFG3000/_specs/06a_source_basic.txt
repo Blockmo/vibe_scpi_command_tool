@@ -1,0 +1,62 @@
+Continuing conversation 25c759b4...
+Answer:
+[SOURce[1|2]]:FREQuency:CONCurrent[:STATe]@@[SOURce[1|2]]:FREQuency:CONCurrent[
+:STATe] {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:FREQuency:CONCurrent[:STATe]?@@ON|OFF|<NR1>@@設定或查詢雙通道頻率
+或週期同步複製功能致能狀態@@2-52@@RW@@Y
+[SOURce[1|2]]:FREQuency[:CW|:FIXed]@@[SOURce[1|2]]:FREQuency[:CW|:FIXed] 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FREQuency[:CW|:FIXed]?@@<frequency>|MINimum|MAXimum@@設定或查詢指
+定通道的波形輸出頻率@@2-53@@RW@@Y
+[SOURce[1|2]]:FUNCtion:EFILe@@[SOURce[1|2]]:FUNCtion:EFILe <file_name>; 
+[SOURce[1|2]]:FUNCtion:EFILe?@@<file_name>@@設定或查詢大容量記憶體中作為輸出波
+形之EFILe檔案名稱@@2-58@@RW@@Y
+[SOURce[1|2]]:FUNCtion:RAMP:SYMMetry@@[SOURce[1|2]]:FUNCtion:RAMP:SYMMetry 
+{<symmetry>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FUNCtion:RAMP:SYMMetry?@@0.0%~100.0%|MINimum|MAXimum@@設定或查詢
+斜波波形的對稱度百分比@@2-59@@RW@@Y
+[SOURce[1|2]]:FUNCtion[:SHAPe]@@[SOURce[1|2]]:FUNCtion[:SHAPe] 
+{SINusoid|SQUare|PULSe|RAMP|PRNoise|DC|SINC|GAUSsian|LORentz|ERISe|EDECay|HAVer
+sine|USER[1]|USER2|USER3|USER4|EMEMory[1]|EMEMory2|EFILe}; 
+[SOURce[1|2]]:FUNCtion[:SHAPe]?@@SINusoid|SQUare|PULSe|RAMP|PRNoise|DC|SINC|GAU
+Ssian|LORentz|ERISe|EDECay|HAVersine|USER[1..4]|EMEMory[1|2]|EFILe@@設定或查詢
+指定通道的輸出波形形狀@@2-59@@RW@@Y
+[SOURce[1|2]]:VOLTage:CONCurrent[:STATe]@@[SOURce[1|2]]:VOLTage:CONCurrent[:STA
+Te] {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:VOLTage:CONCurrent[:STATe]?@@ON|OFF|<NR1>@@設定或查詢雙通道電壓準
+位同步複製功能致能狀態@@2-78@@RW@@Y
+[SOURce[1|2]]:VOLTage:LIMit:HIGH@@[SOURce[1|2]]:VOLTage:LIMit:HIGH 
+{<voltage>|MINimum|MAXimum}; 
+[SOURce[1|2]]:VOLTage:LIMit:HIGH?@@<voltage>|MINimum|MAXimum@@設定或查詢指定通
+道輸出振幅的高電壓準位上限@@2-81@@RW@@Y
+[SOURce[1|2]]:VOLTage:LIMit:LOW@@[SOURce[1|2]]:VOLTage:LIMit:LOW 
+{<voltage>|MINimum|MAXimum}; 
+[SOURce[1|2]]:VOLTage:LIMit:LOW?@@<voltage>|MINimum|MAXimum@@設定或查詢指定通道
+輸出振幅的低電壓準位下限@@2-82@@RW@@Y
+[SOURce[1|2]]:VOLTage:UNIT@@[SOURce[1|2]]:VOLTage:UNIT {VPP|VRMS|DBM}; 
+[SOURce[1|2]]:VOLTage:UNIT?@@VPP|VRMS|DBM@@設定或查詢指定通道輸出振幅的單位@@2-
+83@@RW@@Y
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate]:HIGH@@[SOURce[1|2]]:VOLTage[:LEVel][:
+IMMediate]:HIGH {<voltage>|MINimum|MAXimum}; 
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate]:HIGH?@@<voltage>|MINimum|MAXimum@@設
+定或查詢指定通道輸出波形的高電壓準位@@2-79@@RW@@Y
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate]:LOW@@[SOURce[1|2]]:VOLTage[:LEVel][:I
+MMediate]:LOW {<voltage>|MINimum|MAXimum}; 
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate]:LOW?@@<voltage>|MINimum|MAXimum@@設定
+或查詢指定通道輸出波形的低電壓準位@@2-79@@RW@@Y
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate]:OFFSet@@[SOURce[1|2]]:VOLTage[:LEVel]
+[:IMMediate]:OFFSet {<voltage>|MINimum|MAXimum}; 
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate]:OFFSet?@@<voltage>|MINimum|MAXimum@@
+設定或查詢指定通道的輸出直流偏移電壓@@2-80@@RW@@Y
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate][:AMPLitude]@@[SOURce[1|2]]:VOLTage[:L
+EVel][:IMMediate][:AMPLitude] {<amplitude>|MINimum|MAXimum}; 
+[SOURce[1|2]]:VOLTage[:LEVel][:IMMediate][:AMPLitude]?@@<amplitude>|MINimum|MAX
+imum@@設定或查詢指定通道的輸出波形振幅@@2-81@@RW@@Y
+[SOURce[1|2]]:PHASe[:ADJust]@@[SOURce[1|2]]:PHASe[:ADJust] 
+{<phase>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PHASe[:ADJust]?@@-1PI~+1PI(RAD)|-180~+180(DEG)|MINimum|MAXimum@@
+設定或查詢指定通道輸出波形的相位調整角度@@2-60@@RW@@Y
+[SOURce[1|2]]:PHASe:INITiate@@[SOURce[1|2]]:PHASe:INITiate@@無@@執行通道1與通道
+2輸出波形的相位同步初始化@@2-61@@W@@Y
+
+Resumed conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad

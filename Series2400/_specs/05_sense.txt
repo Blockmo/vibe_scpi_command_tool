@@ -1,0 +1,95 @@
+Answer:
+[:SENSe[1]]:FUNCtion:CONCurrent@@[:SENSe[1]]:FUNCtion:CONCurrent <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢多功能同時量測啟用狀態@@18-58@@RW@@N
+[:SENSe[1]]:FUNCtion[:ON]@@[:SENSe[1]]:FUNCtion[:ON] <function list>@@<function
+list> = 
+{"VOLTage[:DC]"|"CURRent[:DC]"|"RESistance"}@@設定與查詢開啟之量測功能清單@@18-
+59@@RW@@N
+[:SENSe[1]]:FUNCtion:OFF@@[:SENSe[1]]:FUNCtion:OFF <function list>@@<function 
+list> = 
+{"VOLTage[:DC]"|"CURRent[:DC]"|"RESistance"}@@設定與查詢關閉之量測功能清單@@18-
+59@@RW@@N
+[:SENSe[1]]:FUNCtion[:ON]:ALL@@[:SENSe[1]]:FUNCtion[:ON]:ALL@@無@@開啟所有量測
+功能@@18-60@@W@@N
+[:SENSe[1]]:FUNCtion:OFF:ALL@@[:SENSe[1]]:FUNCtion:OFF:ALL@@無@@關閉所有量測功
+能@@18-60@@W@@N
+[:SENSe[1]]:FUNCtion[:ON]:COUNt?@@[:SENSe[1]]:FUNCtion[:ON]:COUNt?@@無@@查詢目
+前已開啟的量測功能數量@@18-60@@R@@N
+[:SENSe[1]]:FUNCtion:OFF:COUNt?@@[:SENSe[1]]:FUNCtion:OFF:COUNt?@@無@@查詢目前
+已關閉的量測功能數量@@18-60@@R@@N
+[:SENSe[1]]:FUNCtion:STATe?@@[:SENSe[1]]:FUNCtion:STATe? <name>@@<name> = 
+{"VOLTage[:DC]"|"CURRent[:DC]"|"RESistance"}@@查詢指定量測功能之啟用狀態@@18-61
+@@R@@N
+[:SENSe[1]]:DATA[:LATest]?@@[:SENSe[1]]:DATA[:LATest]?@@無@@讀取最新一次取得之
+原始量測讀值@@17-4@@R@@N
+[:SENSe[1]]:CURRent[:DC]:RANGe[:UPPer]@@[:SENSe[1]]:CURRent[:DC]:RANGe[:UPPer] 
+<n>|UP|DOWN@@<n> = -5.25 至 5.25 (依型號), 
+UP|DOWN@@設定與查詢電流量測檔位上限值@@18-62@@RW@@N
+[:SENSe[1]]:CURRent[:DC]:RANGe:AUTO@@[:SENSe[1]]:CURRent[:DC]:RANGe:AUTO 
+<b>@@<b> = {ON|OFF|1|0}@@設定與查詢電流量測自動換檔啟用狀態@@18-65@@RW@@N
+[:SENSe[1]]:CURRent[:DC]:RANGe:AUTO:ULIMit?@@[:SENSe[1]]:CURRent[:DC]:RANGe:AUT
+O:ULIMit?@@無@@查詢電流自動換檔之上限值@@18-65@@R@@N
+[:SENSe[1]]:CURRent[:DC]:RANGe:AUTO:LLIMit@@[:SENSe[1]]:CURRent[:DC]:RANGe:AUTO
+:LLIMit <n>@@<n> = -105e-6 至 
+105e-6@@設定與查詢電流自動換檔之下限值@@18-65@@RW@@N
+[:SENSe[1]]:CURRent[:DC]:NPLCycles@@[:SENSe[1]]:CURRent[:DC]:NPLCycles <n>@@<n>
+= 0.01 至 10 (Pulse模式為 0.004 至 0.1)@@設定與查詢電流量測積分時間 
+(NPLC)@@18-69@@RW@@N
+[:SENSe[1]]:CURRent[:DC]:PROTection[:LEVel]@@[:SENSe[1]]:CURRent[:DC]:PROTectio
+n[:LEVel] <n>@@<n> = 電流 Compliance 限制值@@設定與查詢電流 Compliance 
+限流值@@18-67@@RW@@N
+[:SENSe[1]]:CURRent[:DC]:PROTection:TRIPped?@@[:SENSe[1]]:CURRent[:DC]:PROTecti
+on:TRIPped?@@無@@查詢電源是否處於電流 Compliance 限制狀態@@18-68@@R@@N
+[:SENSe[1]]:CURRent[:DC]:PROTection:RSYNchronize@@[:SENSe[1]]:CURRent[:DC]:PROT
+ection:RSYNchronize <b>@@<b> = {ON|OFF|1|0}@@設定與查詢電流量測檔位與 
+Compliance 檔位同步狀態@@18-68@@RW@@N
+[:SENSe[1]]:VOLTage[:DC]:RANGe[:UPPer]@@[:SENSe[1]]:VOLTage[:DC]:RANGe[:UPPer] 
+<n>|UP|DOWN@@<n> = -1100 至 1100 (依型號), 
+UP|DOWN@@設定與查詢電壓量測檔位上限值@@18-62@@RW@@N
+[:SENSe[1]]:VOLTage[:DC]:RANGe:AUTO@@[:SENSe[1]]:VOLTage[:DC]:RANGe:AUTO 
+<b>@@<b> = {ON|OFF|1|0}@@設定與查詢電壓量測自動換檔啟用狀態@@18-65@@RW@@N
+[:SENSe[1]]:VOLTage[:DC]:RANGe:AUTO:ULIMit?@@[:SENSe[1]]:VOLTage[:DC]:RANGe:AUT
+O:ULIMit?@@無@@查詢電壓自動換檔之上限值@@18-65@@R@@N
+[:SENSe[1]]:VOLTage[:DC]:RANGe:AUTO:LLIMit@@[:SENSe[1]]:VOLTage[:DC]:RANGe:AUTO
+:LLIMit <n>@@<n> = -21 至 21@@設定與查詢電壓自動換檔之下限值@@18-65@@RW@@N
+[:SENSe[1]]:VOLTage[:DC]:NPLCycles@@[:SENSe[1]]:VOLTage[:DC]:NPLCycles <n>@@<n>
+= 0.01 至 10 (Pulse模式為 0.004 至 0.1)@@設定與查詢電壓量測積分時間 
+(NPLC)@@18-69@@RW@@N
+[:SENSe[1]]:VOLTage[:DC]:PROTection[:LEVel]@@[:SENSe[1]]:VOLTage[:DC]:PROTectio
+n[:LEVel] <n>@@<n> = 電壓 Compliance 限制值@@設定與查詢電壓 Compliance 
+限制值@@18-67@@RW@@N
+[:SENSe[1]]:VOLTage[:DC]:PROTection:TRIPped?@@[:SENSe[1]]:VOLTage[:DC]:PROTecti
+on:TRIPped?@@無@@查詢電源是否處於電壓 Compliance 限制狀態@@18-68@@R@@N
+[:SENSe[1]]:VOLTage[:DC]:PROTection:RSYNchronize@@[:SENSe[1]]:VOLTage[:DC]:PROT
+ection:RSYNchronize <b>@@<b> = {ON|OFF|1|0}@@設定與查詢電壓量測檔位與 
+Compliance 檔位同步狀態@@18-68@@RW@@N
+[:SENSe[1]]:RESistance:MODE@@[:SENSe[1]]:RESistance:MODE <name>@@<name> = 
+{MANual|AUTO}@@設定與查詢電阻量測模式 (手動或自動)@@18-61@@RW@@N
+[:SENSe[1]]:RESistance:OCOMpensated@@[:SENSe[1]]:RESistance:OCOMpensated 
+<b>@@<b> = {ON|OFF|1|0}@@設定與查詢偏移補償電阻啟用狀態@@18-61@@RW@@N
+[:SENSe[1]]:RESistance:RANGe[:UPPer]@@[:SENSe[1]]:RESistance:RANGe[:UPPer] 
+<n>|UP|DOWN@@<n> = 0 至 2.1e8, 
+UP|DOWN@@設定與查詢電阻量測檔位上限值@@18-62@@RW@@N
+[:SENSe[1]]:RESistance:RANGe:AUTO@@[:SENSe[1]]:RESistance:RANGe:AUTO <b>@@<b> =
+{ON|OFF|1|0}@@設定與查詢電阻量測自動換檔啟用狀態@@18-65@@RW@@N
+[:SENSe[1]]:RESistance:RANGe:AUTO:ULIMit@@[:SENSe[1]]:RESistance:RANGe:AUTO:ULI
+Mit <n>@@<n> = -2.1e8 至 2.1e8@@設定與查詢電阻自動換檔之上限值@@18-65@@RW@@N
+[:SENSe[1]]:RESistance:RANGe:AUTO:LLIMit@@[:SENSe[1]]:RESistance:RANGe:AUTO:LLI
+Mit <n>@@<n> = -2.1e8 至 2.1e8@@設定與查詢電阻自動換檔之下限值@@18-65@@RW@@N
+[:SENSe[1]]:RESistance:RANGe:HOLDoff@@[:SENSe[1]]:RESistance:RANGe:HOLDoff 
+<b>@@<b> = {ON|OFF|1|0}@@設定與查詢源記憶體掃描之電流檔位 Holdoff 
+啟用狀態@@18-66@@RW@@N
+[:SENSe[1]]:RESistance:RANGe:HOLDoff:DELay@@[:SENSe[1]]:RESistance:RANGe:HOLDof
+f:DELay <NRf>@@<NRf> = 0 至 999.9999 (秒)@@設定與查詢源記憶體掃描之電流檔位 
+Holdoff 延遲時間@@18-66@@RW@@N
+[:SENSe[1]]:RESistance:NPLCycles@@[:SENSe[1]]:RESistance:NPLCycles <n>@@<n> = 
+0.01 至 10 (Pulse模式為 0.004 至 0.1)@@設定與查詢電阻量測積分時間 
+(NPLC)@@18-69@@RW@@N
+[:SENSe[1]]:AVERage:TCONtrol@@[:SENSe[1]]:AVERage:TCONtrol <name>@@<name> = 
+{MOVing|REPeat}@@設定與查詢數位濾波器類型 (移動或重複)@@18-70@@RW@@N
+[:SENSe[1]]:AVERage:COUNt@@[:SENSe[1]]:AVERage:COUNt <n>@@<n> = 1 至 
+100@@設定與查詢數位濾波器平均計數次數@@18-70@@RW@@N
+[:SENSe[1]]:AVERage[:STATe]@@[:SENSe[1]]:AVERage[:STATe] <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢數位濾波器啟用狀態@@18-70@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 6)

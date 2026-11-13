@@ -1,0 +1,50 @@
+Answer:
+:SOURce2:BSIZe@@:SOURce2:BSIZe <n>@@<n> = 3|4@@設定與查詢 Digital I/O 
+埠位元數量 (3或4位元)@@18-99@@RW@@N
+:SOURce2:TTL[:LEVel][:DEFault]@@:SOURce2:TTL[:LEVel][:DEFault] 
+<NRf>|<NDN>@@<NRf>|<NDN> = 0 至 7 (3-bit) 或 0 至 15 
+(4-bit)@@設定與查詢數位輸出位元圖樣@@18-98@@RW@@N
+:SOURce2:TTL[:LEVel]:ACTual?@@:SOURce2:TTL[:LEVel]:ACTual?@@無@@讀取 Digital 
+I/O 埠實際輸出位元圖樣@@18-98@@R@@N
+:SOURce2:TTL4:MODE@@:SOURce2:TTL4:MODE <name>@@<name> = 
+{EOTest|BUSY}@@設定與查詢 Digital I/O 第 4 線之功能模式 (EOT 或 
+BUSY)@@18-99@@RW@@N
+:SOURce2:TTL4:BSTate@@:SOURce2:TTL4:BSTate <b>@@<b> = {1|0}@@設定與查詢 BUSY 及
+EOT 訊號之輸出極性@@18-99@@RW@@N
+:SOURce2:CLEar[:IMMediate]@@:SOURce2:CLEar[:IMMediate]@@無@@立即清除數位輸出線
+並恢復為預設位元圖樣@@18-99@@W@@N
+:SOURce2:CLEar:AUTO@@:SOURce2:CLEar:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢數位輸出自動清除啟用狀態@@18-99@@RW@@N
+:SOURce2:CLEar:AUTO:DELay@@:SOURce2:CLEar:AUTO:DELay <n>@@<n> = 0 至 60 
+(秒)@@設定與查詢數位輸出自動清除延遲時間 (脈衝寬度)@@18-100@@RW@@N
+:STATus:MEASurement[:EVENt]?@@:STATus:MEASurement[:EVENt]?@@無@@讀取並清除 
+Measurement 事件暫存器內容@@18-101@@R@@N
+:STATus:MEASurement:ENABle@@:STATus:MEASurement:ENABle <NDN>|<NRf>@@<NDN>|<NRf>
+= 0 至 65535@@設定與查詢 Measurement 事件啟用暫存器@@18-101@@RW@@N
+:STATus:MEASurement:CONDition?@@:STATus:MEASurement:CONDition?@@無@@讀取 
+Measurement 狀態條件暫存器內容@@18-101@@R@@N
+:STATus:OPERation[:EVENt]?@@:STATus:OPERation[:EVENt]?@@無@@讀取並清除 
+Operation 事件暫存器內容@@18-101@@R@@N
+:STATus:OPERation:ENABle@@:STATus:OPERation:ENABle <NDN>|<NRf>@@<NDN>|<NRf> = 0
+至 65535@@設定與查詢 Operation 事件啟用暫存器@@18-101@@RW@@N
+:STATus:OPERation:CONDition?@@:STATus:OPERation:CONDition?@@無@@讀取 Operation 
+狀態條件暫存器內容@@18-101@@R@@N
+:STATus:QUEStionable[:EVENt]?@@:STATus:QUEStionable[:EVENt]?@@無@@讀取並清除 
+Questionable 事件暫存器內容@@18-101@@R@@N
+:STATus:QUEStionable:ENABle@@:STATus:QUEStionable:ENABle 
+<NDN>|<NRf>@@<NDN>|<NRf> = 0 至 65535@@設定與查詢 Questionable 
+事件啟用暫存器@@18-101@@RW@@N
+:STATus:QUEStionable:CONDition?@@:STATus:QUEStionable:CONDition?@@無@@讀取 
+Questionable 狀態條件暫存器內容@@18-101@@R@@N
+:STATus:PRESet@@:STATus:PRESet@@無@@將所有 SCPI 
+事件啟用暫存器重置為預設值0@@18-102@@W@@N
+:STATus:QUEue[:NEXT]?@@:STATus:QUEue[:NEXT]?@@無@@讀取並清除錯誤佇列中最舊的一
+筆錯誤訊息@@18-102@@R@@N
+:STATus:QUEue:ENABle@@:STATus:QUEue:ENABle <list>@@<list> = 錯誤代碼清單 (例如 
+-110:-222)@@設定與查詢允許進入錯誤佇列之訊息代碼清單@@18-102@@RW@@N
+:STATus:QUEue:DISable@@:STATus:QUEue:DISable <list>@@<list> = 錯誤代碼清單 
+(例如 -110:-222)@@設定與查詢禁止進入錯誤佇列之訊息代碼清單@@18-102@@RW@@N
+:STATus:QUEue:CLEar@@:STATus:QUEue:CLEar@@無@@清除錯誤佇列中的所有訊息內容@@18-
+102@@W@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 9)

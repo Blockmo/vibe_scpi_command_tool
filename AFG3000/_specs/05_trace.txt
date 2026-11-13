@@ -1,0 +1,41 @@
+Answer:
+TRACe|DATA:CATalog?@@TRACe|DATA:CATalog?@@無@@查詢使用者波形記憶體與編輯記憶體
+的名稱清單@@2-94@@R@@N
+TRACe|DATA:COPY@@TRACe|DATA:COPY <trace_name>,{EMEMory[1]|EMEMory2}; 
+TRACe|DATA:COPY 
+{EMEMory[1]|EMEMory2},{USER[1]|USER2|USER3|USER4}@@<trace_name>,{EMEMory[1]|EME
+Mory2}|{EMEMory[1]|EMEMory2},{USER[1]|USER2|USER3|USER4}@@複製編輯記憶體內容至
+使用者波形記憶體或反之@@2-95@@W@@N
+TRACe|DATA[:DATA]@@TRACe|DATA[:DATA] 
+{EMEMory|EMEMory1|EMEMory2},<binary_block_data>; TRACe|DATA[:DATA]? 
+{EMEMory[1]|EMEMory2}@@{EMEMory|EMEMory1|EMEMory2},<binary_block_data>|{EMEMory
+[1]|EMEMory2}@@傳送波形資料至編輯記憶體或查詢編輯記憶體波形資料@@2-96@@RW@@N
+TRACe|DATA[:DATA]:LINE@@TRACe|DATA[:DATA]:LINE 
+{EMEMory|EMEMory1|EMEMory2},<start_point>,<point_data1>,<end_point>,<point_data
+2>@@{EMEMory|EMEMory1|EMEMory2},<start_point>,<point_data1>,<end_point>,<point_
+data2>@@以線性插值方式寫入兩點之間的編輯記憶體波形資料@@2-96@@W@@N
+TRACe|DATA[:DATA]:VALue@@TRACe|DATA[:DATA]:VALue 
+{EMEMory|EMEMory1|EMEMory2},<point>,<data>; TRACe|DATA[:DATA]:VALue? 
+{EMEMory[1]|EMEMory2},<points>@@{EMEMory|EMEMory1|EMEMory2},<point>,<data>|{EME
+Mory[1]|EMEMory2},<points>@@設定或查詢編輯記憶體中指定點數位置的波形數值@@2-97@
+@RW@@N
+TRACe|DATA:DEFine@@TRACe|DATA:DEFine 
+{EMEMory|EMEMory1|EMEMory2}[,{<points>|<trace_name>}]@@{EMEMory|EMEMory1|EMEMor
+y2}[,{<points>|<trace_name>}]@@重置編輯記憶體內容與點數或將指定標準波形複製至編
+輯記憶體@@2-98@@W@@N
+TRACe|DATA:DELete[:NAME]@@TRACe|DATA:DELete[:NAME] 
+<trace_name>@@<trace_name>::={USER[1]|USER2|USER3|USER4}@@刪除指定的使用者波形
+記憶體內容@@2-99@@W@@N
+TRACe|DATA:EMEMCOPY@@TRACe|DATA:EMEMCOPY 
+{EMEMory[1]|EMEMory2},{EMEMory[1]|EMEMory2}@@{EMEMory[1]|EMEMory2},{EMEMory[1]|
+EMEMory2}@@複製通道1或通道2之編輯記憶體內容至另一通道的編輯記憶體@@2-99@@W@@N
+TRACe|DATA:LOCK[:STATe]@@TRACe|DATA:LOCK[:STATe] 
+{USER[1]|USER2|USER3|USER4},{ON|OFF|<NR1>}; TRACe|DATA:LOCK[:STATe]? 
+{USER[1]|USER2|USER3|USER4}@@{USER[1]|USER2|USER3|USER4},{ON|OFF|<NR1>}@@設定或
+查詢指定使用者波形記憶體的防寫鎖定狀態@@2-100@@RW@@N
+TRACe|DATA:POINts@@TRACe|DATA:POINts 
+{EMEMory|EMEMory1|EMEMory2}[,<points>|MINimum|MAXimum]; TRACe|DATA:POINts? 
+{EMEMory[1]|EMEMory2}[,MINimum|MAXimum]@@{EMEMory|EMEMory1|EMEMory2}[,<points>|
+MINimum|MAXimum]@@設定或查詢編輯記憶體中波形資料的點數長度@@2-100@@RW@@N
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 6)

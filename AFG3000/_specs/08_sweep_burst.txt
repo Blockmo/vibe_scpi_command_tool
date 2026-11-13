@@ -1,0 +1,53 @@
+Answer:
+[SOURce[1|2]]:BURSt:MODE@@[SOURce[1|2]]:BURSt:MODE {TRIGgered|GATed}; 
+[SOURce[1|2]]:BURSt:MODE?@@TRIGgered|GATed@@設定或查詢指定通道的爆發模式(觸發或
+門控)@@2-44@@RW@@Y
+[SOURce[1|2]]:BURSt:NCYCles@@[SOURce[1|2]]:BURSt:NCYCles 
+{<cycles>|INFinity|MINimum|MAXimum}; 
+[SOURce[1|2]]:BURSt:NCYCles?@@1~1000000|INFinity|MINimum|MAXimum@@設定或查詢指
+定通道在爆發模式下的輸出波形週期數@@2-45@@RW@@Y
+[SOURce[1|2]]:BURSt[:STATe]@@[SOURce[1|2]]:BURSt[:STATe] {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:BURSt[:STATe]?@@ON|OFF|<NR1>@@設定或查詢指定通道的爆發模式啟用狀
+態@@2-46@@RW@@Y
+[SOURce[1|2]]:BURSt:TDELay@@[SOURce[1|2]]:BURSt:TDELay 
+{<delay>|MINimum|MAXimum}; 
+[SOURce[1|2]]:BURSt:TDELay?@@0.0ns~85.000s|MINimum|MAXimum@@設定或查詢指定通道
+在觸發爆發模式下的觸發延遲時間@@2-46@@RW@@Y
+[SOURce[1|2]]:FREQuency:CENTer@@[SOURce[1|2]]:FREQuency:CENTer 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FREQuency:CENTer?@@<frequency>|MINimum|MAXimum@@設定或查詢指定通
+道的頻率掃描中心頻率@@2-51@@RW@@Y
+[SOURce[1|2]]:FREQuency:MODE@@[SOURce[1|2]]:FREQuency:MODE {CW|FIXed|SWEep}; 
+[SOURce[1|2]]:FREQuency:MODE?@@CW|FIXed|SWEep@@設定或查詢指定通道的頻率掃描模式
+與工作狀態@@2-53@@RW@@Y
+[SOURce[1|2]]:FREQuency:SPAN@@[SOURce[1|2]]:FREQuency:SPAN 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FREQuency:SPAN?@@<frequency>|MINimum|MAXimum@@設定或查詢指定通道
+的頻率掃描跨度@@2-54@@RW@@Y
+[SOURce[1|2]]:FREQuency:STARt@@[SOURce[1|2]]:FREQuency:STARt 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FREQuency:STARt?@@<frequency>|MINimum|MAXimum@@設定或查詢指定通道
+的頻率掃描起始頻率@@2-55@@RW@@Y
+[SOURce[1|2]]:FREQuency:STOP@@[SOURce[1|2]]:FREQuency:STOP 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FREQuency:STOP?@@<frequency>|MINimum|MAXimum@@設定或查詢指定通道
+的頻率掃描終止頻率@@2-55@@RW@@Y
+[SOURce[1|2]]:SWEep:HTIMe@@[SOURce[1|2]]:SWEep:HTIMe 
+{<seconds>|MINimum|MAXimum}; 
+[SOURce[1|2]]:SWEep:HTIMe?@@<seconds>|MINimum|MAXimum@@設定或查詢指定通道到達終
+止頻率後的掃描保持時間@@2-75@@RW@@Y
+[SOURce[1|2]]:SWEep:MODE@@[SOURce[1|2]]:SWEep:MODE {AUTO|MANual}; 
+[SOURce[1|2]]:SWEep:MODE?@@AUTO|MANual@@設定或查詢指定通道的掃描執行模式(自動或
+觸發手動)@@2-76@@RW@@Y
+[SOURce[1|2]]:SWEep:RTIMe@@[SOURce[1|2]]:SWEep:RTIMe 
+{<seconds>|MINimum|MAXimum}; 
+[SOURce[1|2]]:SWEep:RTIMe?@@<seconds>|MINimum|MAXimum@@設定或查詢指定通道從終止
+頻率返回起始頻率的掃描返回時間@@2-76@@RW@@Y
+[SOURce[1|2]]:SWEep:SPACing@@[SOURce[1|2]]:SWEep:SPACing {LINear|LOGarithmic}; 
+[SOURce[1|2]]:SWEep:SPACing?@@LINear|LOGarithmic@@設定或查詢指定通道的頻率掃描
+間隔方式(線性或對數)@@2-77@@RW@@Y
+[SOURce[1|2]]:SWEep:TIME@@[SOURce[1|2]]:SWEep:TIME {<seconds>|MINimum|MAXimum};
+[SOURce[1|2]]:SWEep:TIME?@@1ms~300s|MINimum|MAXimum@@設定或查詢指定通道從起始頻
+率掃描至終止頻率的掃描時間@@2-77@@RW@@Y
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 11)

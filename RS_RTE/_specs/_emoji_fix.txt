@@ -1,0 +1,30 @@
+Answer:
+以下為依照 R&S RTE 示波器使用手冊（第 17 
+章遠端控制指令）原文規範整理的完整指令標頭清單 [1]：
+
+1) 電視觸發（TV/Video Trigger）相關指令：
+TRIGger<m>📺STANdard
+TRIGger<m>📺MODE
+TRIGger<m>📺LINE
+TRIGger<m>📺LFIeld
+TRIGger<m>📺POLarity
+TRIGger<m>📺CUSTom:STYPe
+
+2) 眼圖測量（Eye Diagram Measurement）相關指令：
+MEASurement<m>👁BER
+MEASurement<m>👁CBOund
+MEASurement<m>👁EAMPlitude
+MEASurement<m>👁EVALuation
+MEASurement<m>👁THReshold
+
+3) 搜尋 STATe 與 PATTern 條件邏輯組合（LOGic）相關指令：
+SEARch:TRIGger:STATe🅰LOGic
+SEARch:TRIGger:STATe🆎LOGic
+SEARch:TRIGger:STATe🔡LOGic
+SEARch:TRIGger:PATTern🅰LOGic
+SEARch:TRIGger:PATTern🆎LOGic
+SEARch:TRIGger:PATTern🔡LOGic
+
+如果需要針對特定指令的參數細節或使用情境做進一步說明，隨時告訴我！
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 19)

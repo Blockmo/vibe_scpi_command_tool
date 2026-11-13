@@ -1,0 +1,68 @@
+Answer:
+TRIGger<m>:GLITch:POLarity@@TRIGger<m>:GLITch:POLarity <Polarity>@@POSitive | 
+NEGative | EITHer@@設定或查詢 Glitch 脈衝極性@@1094@@RW@@N
+TRIGger<m>:GLITch:RANGe@@TRIGger<m>:GLITch:RANGe <Range>@@LONGer | 
+SHORter@@設定或查詢 Glitch 脈衝寬度條件@@1094@@RW@@N
+TRIGger<m>:GLITch:WIDTh@@TRIGger<m>:GLITch:WIDTh <Width>@@Range: 100e-12 to 
+1000 s@@設定或查詢 Glitch 脈衝寬度限制時間@@1095@@RW@@N
+TRIGger<m>:WIDTh:POLarity@@TRIGger<m>:WIDTh:POLarity <Polarity>@@POSitive | 
+NEGative@@設定或查詢脈寬觸發的脈衝極性@@1095@@RW@@N
+TRIGger<m>:WIDTh:RANGe@@TRIGger<m>:WIDTh:RANGe <Range>@@WITHin | OUTSide | 
+LONGer | SHORter@@設定或查詢脈寬觸發的範圍條件@@1095@@RW@@N
+TRIGger<m>:WIDTh:WIDTh@@TRIGger<m>:WIDTh:WIDTh <Width>@@Range: 500e-12 to 1000 
+s@@設定或查詢脈寬觸發的目標脈衝寬度時間@@1096@@RW@@N
+TRIGger<m>:WIDTh:DELTa@@TRIGger<m>:WIDTh:DELTa <Delta>@@Range: 0 to 1000 
+s@@設定或查詢脈寬觸發的 ±Delta 時間容差範圍@@1096@@RW@@N
+TRIGger<m>:RUNT:POLarity@@TRIGger<m>:RUNT:POLarity <Polarity>@@POSitive | 
+NEGative | EITHer@@設定或查詢 Runt 矮脈衝極性@@1097@@RW@@N
+TRIGger<m>:LEVel<n>:RUNT:UPPer@@TRIGger<m>:LEVel<n>:RUNT:UPPer <Level>@@Range: 
+-10 to 10 V@@設定或查詢 Runt 觸發的上電壓門限位準@@1097@@RW@@N
+TRIGger<m>:LEVel<n>:RUNT:LOWer@@TRIGger<m>:LEVel<n>:RUNT:LOWer <Level>@@Range: 
+-10 to 10 V@@設定或查詢 Runt 觸發的下電壓門限位準@@1097@@RW@@N
+TRIGger<m>:RUNT:RANGe@@TRIGger<m>:RUNT:RANGe <Range>@@NREDirection | WITHin | 
+OUTSide | LONGer | SHORter@@設定或查詢 Runt 矮脈衝的時間條件定義@@1097@@RW@@N
+TRIGger<m>:RUNT:WIDTh@@TRIGger<m>:RUNT:WIDTh <Width>@@Range: 500e-12 to 1000 
+s@@設定或查詢 Runt 矮脈衝時間限制值@@1098@@RW@@N
+TRIGger<m>:RUNT:DELTa@@TRIGger<m>:RUNT:DELTa <Delta>@@Range: 0 to 1000 
+s@@設定或查詢 Runt 矮脈衝時間的 ±Delta 容差範圍@@1098@@RW@@N
+TRIGger<m>:WINDow:RANGe@@TRIGger<m>:WINDow:RANGe <VerticalCondition>@@ENTer | 
+EXIT | WITHin | OUTSide@@設定或查詢 Window 視窗觸發的垂直訊號條件@@1099@@RW@@N
+TRIGger<m>:LEVel<n>:WINDow:UPPer@@TRIGger<m>:LEVel<n>:WINDow:UPPer 
+<Level>@@Range: -10 to 10 V@@設定或查詢 Window 
+視窗觸發的上限電壓門限@@1099@@RW@@N
+TRIGger<m>:LEVel<n>:WINDow:LOWer@@TRIGger<m>:LEVel<n>:WINDow:LOWer 
+<Level>@@Range: -10 to 10 V@@設定或查詢 Window 
+視窗觸發的下限電壓門限@@1099@@RW@@N
+TRIGger<m>:WINDow:TIME@@TRIGger<m>:WINDow:TIME <TimeCondition>@@OFF | WITHin | 
+OUTSide | LONGer | SHORter@@設定或查詢 Window 
+視窗觸發的時間限制條件@@1100@@RW@@N
+TRIGger<m>:WINDow:WIDTh@@TRIGger<m>:WINDow:WIDTh <Width>@@Range: 500e-12 to 
+1000 s@@設定或查詢 Window 視窗觸發的時間長度限制值@@1100@@RW@@N
+TRIGger<m>:WINDow:DELTa@@TRIGger<m>:WINDow:DELTa <Delta>@@Range: 0 to 1000 
+s@@設定或查詢 Window 視窗觸發的時間 ±Delta 容差範圍@@1101@@RW@@N
+TRIGger<m>:TIMeout:RANGe@@TRIGger<m>:TIMeout:RANGe <Range>@@HIGH | LOW | 
+EITHer@@設定或查詢 Timeout 超時觸發的電壓狀態條件@@1101@@RW@@N
+TRIGger<m>:TIMeout:TIME@@TRIGger<m>:TIMeout:TIME <Time>@@Range: 1e-9 to 1000 
+s@@設定或查詢 Timeout 超時觸發的時間限制值@@1101@@RW@@N
+TRIGger<m>:INTerval:SLOPe@@TRIGger<m>:INTerval:SLOPe <Slope>@@POSitive | 
+NEGative@@設定或查詢間隔觸發的邊緣極性@@1102@@RW@@N
+TRIGger<m>:INTerval:RANGe@@TRIGger<m>:INTerval:RANGe <Range>@@WITHin | OUTSide 
+| LONGer | SHORter@@設定或查詢脈衝間隔時間的範圍條件@@1102@@RW@@N
+TRIGger<m>:INTerval:WIDTh@@TRIGger<m>:INTerval:WIDTh <Width>@@Range: 500e-12 to
+1000 s@@設定或查詢脈衝間隔的目標時間@@1103@@RW@@N
+TRIGger<m>:INTerval:DELTa@@TRIGger<m>:INTerval:DELTa <Delta>@@Range: 0 to 1000 
+s@@設定或查詢脈衝間隔時間的 ±Delta 容差範圍@@1103@@RW@@N
+TRIGger<m>:SLEW:SLOPe@@TRIGger<m>:SLEW:SLOPe <Slope>@@POSitive | NEGative | 
+EITHer@@設定或查詢 Slew rate 轉換時間觸發的邊緣方向@@1103@@RW@@N
+TRIGger<m>:LEVel<n>:SLEW:UPPer@@TRIGger<m>:LEVel<n>:SLEW:UPPer <Level>@@Range: 
+-10 to 10 V@@設定或查詢 Slew rate 觸發的上電壓門限位準@@1104@@RW@@N
+TRIGger<m>:LEVel<n>:SLEW:LOWer@@TRIGger<m>:LEVel<n>:SLEW:LOWer <Level>@@Range: 
+-10 to 10 V@@設定或查詢 Slew rate 觸發的下電壓門限位準@@1104@@RW@@N
+TRIGger<m>:SLEW:RANGe@@TRIGger<m>:SLEW:RANGe <Range>@@WITHin | OUTSide | LONGer
+| SHORter@@設定或查詢 Slew rate 轉換時間的範圍限制條件@@1104@@RW@@N
+TRIGger<m>:SLEW:RATE@@TRIGger<m>:SLEW:RATE <SlewRate>@@Range: 500e-12 to 1000 
+s@@設定或查詢 Slew rate 觸發的目標轉換時間長度@@1105@@RW@@N
+TRIGger<m>:SLEW:DELTa@@TRIGger<m>:SLEW:DELTa <Delta>@@Range: 0 to 1000 
+s@@設定或查詢 Slew rate 轉換時間的 ±Delta 容差範圍@@1105@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 7)

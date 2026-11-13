@@ -1,0 +1,125 @@
+Answer:
+SEARch:ADD@@SEARch:ADD <SearchName>@@String search 
+name@@新增一個指定名稱的新搜尋項目@@1247@@W@@N
+SEARch:REMove@@SEARch:REMove <SearchName>@@String search 
+name@@刪除指定的搜尋項目@@1247@@W@@N
+SEARch:NAME@@SEARch:NAME <Index>, <SearchName>@@Range: 1 to 
+10@@設定或查詢指定索引位置的搜尋項目名稱@@1247@@RW@@N
+SEARch:SOURce@@SEARch:SOURce <SearchName>, <Source>@@CHANnel1 | CHANnel2 | 
+CHANnel3 | CHANnel4 | MATH1 | MATH2 | MATH3 | MATH4 | REFCurve1 | REFCurve2 | 
+REFCurve3 | REFCurve4 | D0 | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10 |
+D11 | D12 | D13 | D14 | D15 | TRACk1 | TRACk2 | TRACk3 | TRACk4 | SBUS1 | SBUS2
+| SBUS3 | SBUS4@@設定或查詢指定搜尋項目的來源訊號波形@@1247@@RW@@N
+SEARch:ONLine@@SEARch:ONLine <SearchName>, <State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否開啟即時線上連續搜尋@@1248@@RW@@N
+SEARch:ALL@@SEARch:ALL <SearchName>@@String search 
+name@@對目前波形資料立即執行一次完整的非即時搜尋動作@@1248@@W@@N
+SEARch:CLEar@@SEARch:CLEar <SearchName>@@String search 
+name@@清除指定搜尋項目的現有搜尋結果@@1247@@W@@N
+SEARch:TRIGger:EDGE[:STATe]@@SEARch:TRIGger:EDGE[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用邊緣搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:GLITch[:STATe]@@SEARch:TRIGger:GLITch[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Glitch 
+脈衝搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:WIDTh[:STATe]@@SEARch:TRIGger:WIDTh[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用脈寬搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:RUNT[:STATe]@@SEARch:TRIGger:RUNT[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Runt 
+矮脈衝搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:WINDow[:STATe]@@SEARch:TRIGger:WINDow[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Window 
+視窗搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:TIMeout[:STATe]@@SEARch:TRIGger:TIMeout[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Timeout 
+超時搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:INTerval[:STATe]@@SEARch:TRIGger:INTerval[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用間隔搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:SLEWrate[:STATe]@@SEARch:TRIGger:SLEWrate[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Slew rate 
+轉換速率搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:DATatoclock[:STATe]@@SEARch:TRIGger:DATatoclock[:STATe] 
+<SearchName>, <State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 
+Data2Clock 搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:STATe[:STATe]@@SEARch:TRIGger:STATe[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 State 
+狀態搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:PATTern[:STATe]@@SEARch:TRIGger:PATTern[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用邏輯圖樣搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:LEVel[:VALue]@@SEARch:TRIGger:LEVel[:VALue] <SearchName>, 
+<Level>@@Range: -10 to 10 
+V@@設定或查詢指定搜尋項目的通用觸發電壓門限位準@@1249@@RW@@N
+SEARch:GATE[:STATe]@@SEARch:GATE[:STATe] <SearchName>, <State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目的搜尋門限啟用狀態@@1272@@RW@@N
+SEARch:GATE:SHOW@@SEARch:GATE:SHOW <SearchName>, <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表中是否顯示搜尋門限區域@@1273@@RW@@N
+SEARch:GATE:MODE@@SEARch:GATE:MODE <SearchName>, <Mode>@@ABSolute | 
+RELative@@設定或查詢搜尋門限設定模式絕對時間或相對百分比@@1272@@RW@@N
+SEARch:GATE:ABSolute:STARt@@SEARch:GATE:ABSolute:STARt <SearchName>, 
+<Start>@@Range: -1000 to 1000 
+s@@設定或查詢絕對模式下搜尋門限的起始時間位置@@1273@@RW@@N
+SEARch:GATE:ABSolute:STOP@@SEARch:GATE:ABSolute:STOP <SearchName>, 
+<Stop>@@Range: -1000 to 1000 
+s@@設定或查詢絕對模式下搜尋門限的結束時間位置@@1273@@RW@@N
+SEARch:GATE:RELative:STARt@@SEARch:GATE:RELative:STARt <SearchName>, 
+<Start>@@Range: 0 to 100 
+%@@設定或查詢相對模式下搜尋門限的起始百分比位置@@1273@@RW@@N
+SEARch:GATE:RELative:STOP@@SEARch:GATE:RELative:STOP <SearchName>, 
+<Stop>@@Range: 0 to 100 
+%@@設定或查詢相對模式下搜尋門限的結束百分比位置@@1274@@RW@@N
+SEARch:GATE:ZCOupling@@SEARch:GATE:ZCOupling <SearchName>, <State>@@OFF | ON | 
+0 | 1@@設定或查詢搜尋門限是否與當前 Zoom 區域連動@@1274@@RW@@N
+SEARch:GATE:ZDIagram@@SEARch:GATE:ZDIagram <SearchName>, <DiagramName>@@String 
+diagram name@@設定或查詢搜尋門限連動的 Zoom 圖表視窗名稱@@1274@@RW@@N
+SEARch:RESDiagram:SHOW@@SEARch:RESDiagram:SHOW <SearchName>, <State>@@OFF | ON 
+| 0 | 1@@設定或查詢是否顯示當前選擇搜尋結果的 Zoom 縮放視窗@@1278@@RW@@N
+SEARch:RESDiagram:HORZontal:MODE@@SEARch:RESDiagram:HORZontal:MODE 
+<SearchName>, <Mode>@@ABSolute | RELative@@設定或查詢搜尋 Zoom 
+視窗水平方向的設定模式@@1277@@RW@@N
+SEARch:RESDiagram:HORZontal:ABSolute:POSition@@SEARch:RESDiagram:HORZontal:ABSo
+lute:POSition <SearchName>, <Position>@@Range: -1000 to 1000 
+s@@設定或查詢絕對模式下搜尋 Zoom 視窗中心點的水平位置@@1277@@RW@@N
+SEARch:RESDiagram:HORZontal:ABSolute:SPAN@@SEARch:RESDiagram:HORZontal:ABSolute
+:SPAN <SearchName>, <Span>@@Range: 10e-12 to 1000 s@@設定或查詢絕對模式下搜尋 
+Zoom 視窗的水平跨度時間@@1277@@RW@@N
+SEARch:RESDiagram:HORZontal:RELative:POSition@@SEARch:RESDiagram:HORZontal:RELa
+tive:POSition <SearchName>, <Position>@@Range: 0 to 100 
+%@@設定或查詢相對模式下搜尋 Zoom 視窗中心點的水平百分比位置@@1277@@RW@@N
+SEARch:RESDiagram:HORZontal:RELative:SPAN@@SEARch:RESDiagram:HORZontal:RELative
+:SPAN <SearchName>, <Span>@@Range: 0 to 100 %@@設定或查詢相對模式下搜尋 Zoom 
+視窗的水平寬度百分比@@1278@@RW@@N
+SEARch:RESDiagram:VERTical:MODE@@SEARch:RESDiagram:VERTical:MODE <SearchName>, 
+<Mode>@@ABSolute | RELative@@設定或查詢搜尋 Zoom 
+視窗垂直方向的設定模式@@1279@@RW@@N
+SEARch:RESDiagram:VERTical:ABSolute:POSition@@SEARch:RESDiagram:VERTical:ABSolu
+te:POSition <SearchName>, <Position>@@Range: -100 to 100 
+V@@設定或查詢絕對模式下搜尋 Zoom 視窗中心點的垂直電壓位置@@1278@@RW@@N
+SEARch:RESDiagram:VERTical:ABSolute:SPAN@@SEARch:RESDiagram:VERTical:ABSolute:S
+PAN <SearchName>, <Span>@@Range: 1e-3 to 200 V@@設定或查詢絕對模式下搜尋 Zoom 
+視窗的垂直電壓高度範圍@@1279@@RW@@N
+SEARch:RESDiagram:VERTical:RELative:POSition@@SEARch:RESDiagram:VERTical:RELati
+ve:POSition <SearchName>, <Position>@@Range: -100 to 100 
+%@@設定或查詢相對模式下搜尋 Zoom 視窗中心點的垂直百分比位置@@1279@@RW@@N
+SEARch:RESDiagram:VERTical:RELative:SPAN@@SEARch:RESDiagram:VERTical:RELative:S
+PAN <SearchName>, <Span>@@Range: 0 to 100 %@@設定或查詢相對模式下搜尋 Zoom 
+視窗的垂直高度百分比範圍@@1279@@RW@@N
+SEARch:RESult:SHOW@@SEARch:RESult:SHOW <SearchName>, <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否顯示搜尋結果表格視窗@@1280@@RW@@N
+SEARch:RESult:SORT[:MODE]@@SEARch:RESult:SORT[:MODE] <SearchName>, 
+<SortMode>@@XPOSition | 
+VALue@@設定或查詢搜尋結果表格的排序依據模式時間位置或數值@@1280@@RW@@N
+SEARch:RESult:SORT:ASCending@@SEARch:RESult:SORT:ASCending <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢搜尋結果表格是否採用升冪排序@@1280@@RW@@N
+SEARch:RESult:LIMit@@SEARch:RESult:LIMit <SearchName>, <MaxResults>@@Range: 1 
+to 100000@@設定或查詢搜尋結果表格中允許顯示的最大結果條目數上限@@1280@@RW@@N
+SEARch:RCOunt?@@SEARch:RCOunt? 
+<SearchName>@@無@@查詢指定搜尋項目符合條件的事件結果總數量@@1281@@R@@N
+SEARch:RESult[:ALL]?@@SEARch:RESult[:ALL]? 
+<SearchName>@@無@@查詢指定搜尋項目的所有事件結果時間位置與詳細數據@@1281@@R@@N
+SEARch:RESult:MATCH?@@SEARch:RESult:MATCH? <SearchName>, <Index>@@Range: 1 to 
+100000@@查詢指定搜尋項目特定索引事件結果的詳細數據@@1281@@R@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 17)

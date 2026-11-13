@@ -40,6 +40,7 @@ with E36300("TCPIP0::192.168.0.10::inst0::INSTR") as psu:
 - `key`：`commands_e36300.py` 中的鍵（`E36300.list_commands()` / `command_info(key)` 可查）。
 - `value`：依型態（bool/numeric/enum/string/raw）自動轉成 SCPI 參數。
 - `ch_list`：通道清單，傳 `"1"`、`"1:3"`、`"1,3"`，自動組成 `(@...)` 附加（查詢亦支援）。
+- 讀取（`query_command`）只在該指令的查詢語法接受參數時才帶 `value`（資料表 `qarg`）：僅查詢指令（如 `MEASure:...? <range>`）照原樣帶；讀寫兩用指令只帶 MIN/MAX/DEF 等查詢關鍵字（`qopts`），一般寫入值（如 `ON`、`5`）不會被送成 `XXX? ON`。
 
 IEEE-488.2 常用另有具名方法：`idn()`、`reset()`、`clear_status()`、`wait()`、`error()`，以及低階 `write()`/`query()`/`query_float()`。
 
@@ -50,7 +51,7 @@ python ui.py
 ```
 
 用「群組」下拉縮小範圍後選指令；面板依型態自動彈出參數欄位，需要通道的指令出現「通道清單 (@)」欄（填如 `1:3`）。
-右上角「Language」可切換英文/繁中（預設英文）。無實體儀器時勾選「Simulation mode」離線操作。
+右上角「Language」可切換英文/繁中（預設英文）。連線列「Scan」可列出 VISA 資源（GPIB 優先、附 `*IDN?`）供下拉選擇；指令區「Search」可用關鍵字篩選指令。模擬模式已自介面隱藏，開發測試請用 `python ui.py --sim`。
 
 ## 指令涵蓋範圍（依群組）
 

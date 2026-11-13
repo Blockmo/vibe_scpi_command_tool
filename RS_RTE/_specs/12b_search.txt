@@ -1,0 +1,243 @@
+Answer:
+SEARch:TRIGger:EDGE[:STATe]@@SEARch:TRIGger:EDGE[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用邊緣搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:EDGE:ACOPy@@SEARch:TRIGger:EDGE:ACOPy 
+<SearchName>@@<SearchName>@@將 A 
+觸發器的邊緣觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:EDGE:SLOPe@@SEARch:TRIGger:EDGE:SLOPe <SearchName>, 
+<Slope>@@POSitive | NEGative | 
+EITHer@@設定或查詢邊緣搜尋的觸發邊緣極性@@1250@@RW@@N
+SEARch:TRIGger:GLITch[:STATe]@@SEARch:TRIGger:GLITch[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Glitch 
+脈衝搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:GLITch:ACOPy@@SEARch:TRIGger:GLITch:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 Glitch 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:GLITch:POLarity@@SEARch:TRIGger:GLITch:POLarity <SearchName>, 
+<Polarity>@@POSitive | NEGative | EITHer@@設定或查詢 Glitch 
+脈衝搜尋的極性條件@@1251@@RW@@N
+SEARch:TRIGger:GLITch:RANGe@@SEARch:TRIGger:GLITch:RANGe <SearchName>, 
+<Range>@@LONGer | SHORter@@設定或查詢 Glitch 
+脈衝搜尋的寬度範圍條件@@1251@@RW@@N
+SEARch:TRIGger:GLITch:WIDTh@@SEARch:TRIGger:GLITch:WIDTh <SearchName>, 
+<Width>@@Range: 100e-12 to 1000 s@@設定或查詢 Glitch 
+脈衝搜尋的時間長度限制@@1251@@RW@@N
+SEARch:TRIGger:WIDTh[:STATe]@@SEARch:TRIGger:WIDTh[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用脈寬搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:WIDTh:ACOPy@@SEARch:TRIGger:WIDTh:ACOPy 
+<SearchName>@@<SearchName>@@將 A 
+觸發器的脈寬觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:WIDTh:POLarity@@SEARch:TRIGger:WIDTh:POLarity <SearchName>, 
+<Polarity>@@POSitive | NEGative | 
+EITHer@@設定或查詢脈寬搜尋的脈衝極性@@1259@@RW@@N
+SEARch:TRIGger:WIDTh:RANGe@@SEARch:TRIGger:WIDTh:RANGe <SearchName>, 
+<Range>@@WITHin | OUTSide | LONGer | 
+SHORter@@設定或查詢脈寬搜尋的時間範圍條件@@1259@@RW@@N
+SEARch:TRIGger:WIDTh:WIDTh@@SEARch:TRIGger:WIDTh:WIDTh <SearchName>, 
+<Width>@@Range: 500e-12 to 1000 
+s@@設定或查詢脈寬搜尋的目標脈衝寬度時間@@1259@@RW@@N
+SEARch:TRIGger:WIDTh:DELTa@@SEARch:TRIGger:WIDTh:DELTa <SearchName>, 
+<Delta>@@Range: 0 to 1000 s@@設定或查詢脈寬搜尋的 ±Delta 
+時間容差範圍@@1258@@RW@@N
+SEARch:TRIGger:RUNT[:STATe]@@SEARch:TRIGger:RUNT[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Runt 
+矮脈衝搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:RUNT:ACOPy@@SEARch:TRIGger:RUNT:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 Runt 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:RUNT:POLarity@@SEARch:TRIGger:RUNT:POLarity <SearchName>, 
+<Polarity>@@POSitive | NEGative | EITHer@@設定或查詢 Runt 
+矮脈衝搜尋的極性條件@@1254@@RW@@N
+SEARch:TRIGger:RUNT:RANGe@@SEARch:TRIGger:RUNT:RANGe <SearchName>, 
+<Range>@@NREDirection | WITHin | OUTSide | LONGer | SHORter@@設定或查詢 Runt 
+矮脈衝搜尋的時間條件定義@@1254@@RW@@N
+SEARch:TRIGger:RUNT:WIDTh@@SEARch:TRIGger:RUNT:WIDTh <SearchName>, 
+<Width>@@Range: 500e-12 to 1000 s@@設定或查詢 Runt 
+矮脈衝搜尋的時間限制值@@1254@@RW@@N
+SEARch:TRIGger:RUNT:DELTa@@SEARch:TRIGger:RUNT:DELTa <SearchName>, 
+<Delta>@@Range: 0 to 1000 s@@設定或查詢 Runt 矮脈衝搜尋的 ±Delta 
+容差範圍@@1253@@RW@@N
+SEARch:TRIGger:LEVel:RUNT:UPPer@@SEARch:TRIGger:LEVel:RUNT:UPPer <SearchName>, 
+<Level>@@Range: -10 to 10 V@@設定或查詢 Runt 
+矮脈衝搜尋的上電壓門限位準@@1255@@RW@@N
+SEARch:TRIGger:LEVel:RUNT:LOWer@@SEARch:TRIGger:LEVel:RUNT:LOWer <SearchName>, 
+<Level>@@Range: -10 to 10 V@@設定或查詢 Runt 
+矮脈衝搜尋的下電壓門限位準@@1255@@RW@@N
+SEARch:TRIGger:WINDow[:STATe]@@SEARch:TRIGger:WINDow[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Window 
+視窗搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:WINDow:ACOPy@@SEARch:TRIGger:WINDow:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 Window 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:WINDow:RANGe@@SEARch:TRIGger:WINDow:RANGe <SearchName>, 
+<VerticalCondition>@@ENTer | EXIT | WITHin | OUTSide@@設定或查詢 Window 
+視窗搜尋的垂直訊號條件@@1260@@RW@@N
+SEARch:TRIGger:WINDow:TIMerange@@SEARch:TRIGger:WINDow:TIMerange <SearchName>, 
+<TimeCondition>@@OFF | WITHin | OUTSide | LONGer | SHORter@@設定或查詢 Window 
+視窗搜尋的時間限制條件@@1261@@RW@@N
+SEARch:TRIGger:WINDow:WIDTh@@SEARch:TRIGger:WINDow:WIDTh <SearchName>, 
+<Width>@@Range: 500e-12 to 1000 s@@設定或查詢 Window 
+視窗搜尋的時間長度限制值@@1261@@RW@@N
+SEARch:TRIGger:WINDow:DELTa@@SEARch:TRIGger:WINDow:DELTa <SearchName>, 
+<Delta>@@Range: 0 to 1000 s@@設定或查詢 Window 視窗搜尋的時間 ±Delta 
+容差範圍@@1260@@RW@@N
+SEARch:TRIGger:LEVel:WINDow:UPPer@@SEARch:TRIGger:LEVel:WINDow:UPPer 
+<SearchName>, <Level>@@Range: -10 to 10 V@@設定或查詢 Window 
+視窗搜尋的上限電壓門限@@1262@@RW@@N
+SEARch:TRIGger:LEVel:WINDow:LOWer@@SEARch:TRIGger:LEVel:WINDow:LOWer 
+<SearchName>, <Level>@@Range: -10 to 10 V@@設定或查詢 Window 
+視窗搜尋的下限電壓門限@@1262@@RW@@N
+SEARch:TRIGger:TIMeout[:STATe]@@SEARch:TRIGger:TIMeout[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Timeout 
+超時搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:TIMeout:ACOPy@@SEARch:TRIGger:TIMeout:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 Timeout 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:TIMeout:RANGe@@SEARch:TRIGger:TIMeout:RANGe <SearchName>, 
+<Range>@@HIGH | LOW | EITHer@@設定或查詢 Timeout 
+超時搜尋的電壓狀態條件@@1257@@RW@@N
+SEARch:TRIGger:TIMeout:TIME@@SEARch:TRIGger:TIMeout:TIME <SearchName>, 
+<Time>@@Range: 1e-9 to 1000 s@@設定或查詢 Timeout 
+超時搜尋的時間限制長度@@1258@@RW@@N
+SEARch:TRIGger:INTerval[:STATe]@@SEARch:TRIGger:INTerval[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用間隔搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:INTerval:ACOPy@@SEARch:TRIGger:INTerval:ACOPy 
+<SearchName>@@<SearchName>@@將 A 
+觸發器的間隔觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:INTerval:SLOPe@@SEARch:TRIGger:INTerval:SLOPe <SearchName>, 
+<Slope>@@POSitive | NEGative | 
+EITHer@@設定或查詢間隔搜尋的邊緣極性@@1252@@RW@@N
+SEARch:TRIGger:INTerval:RANGe@@SEARch:TRIGger:INTerval:RANGe <SearchName>, 
+<Range>@@WITHin | OUTSide | LONGer | 
+SHORter@@設定或查詢脈衝間隔搜尋的範圍條件@@1252@@RW@@N
+SEARch:TRIGger:INTerval:WIDTh@@SEARch:TRIGger:INTerval:WIDTh <SearchName>, 
+<Width>@@Range: 500e-12 to 1000 
+s@@設定或查詢脈衝間隔搜尋的目標時間@@1253@@RW@@N
+SEARch:TRIGger:INTerval:DELTa@@SEARch:TRIGger:INTerval:DELTa <SearchName>, 
+<Delta>@@Range: 0 to 1000 s@@設定或查詢脈衝間隔搜尋的時間 ±Delta 
+容差範圍@@1252@@RW@@N
+SEARch:TRIGger:SLEWrate[:STATe]@@SEARch:TRIGger:SLEWrate[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 Slew rate 
+轉換速率搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:SLEWrate:ACOPy@@SEARch:TRIGger:SLEWrate:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 Slew rate 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:SLEWrate:SLOPe@@SEARch:TRIGger:SLEWrate:SLOPe <SearchName>, 
+<Slope>@@POSitive | NEGative | EITHer@@設定或查詢 Slew rate 
+搜尋的邊緣方向@@1256@@RW@@N
+SEARch:TRIGger:SLEWrate:RANGe@@SEARch:TRIGger:SLEWrate:RANGe <SearchName>, 
+<Range>@@WITHin | OUTSide | LONGer | SHORter@@設定或查詢 Slew rate 
+轉換時間的範圍限制條件@@1256@@RW@@N
+SEARch:TRIGger:SLEWrate:TIME@@SEARch:TRIGger:SLEWrate:TIME <SearchName>, 
+<SlewRate>@@Range: 500e-12 to 1000 s@@設定或查詢 Slew rate 
+搜尋的目標轉換時間長度@@1256@@RW@@N
+SEARch:TRIGger:SLEWrate:DELTa@@SEARch:TRIGger:SLEWrate:DELTa <SearchName>, 
+<Delta>@@Range: 0 to 1000 s@@設定或查詢 Slew rate 轉換時間的 ±Delta 
+容差範圍@@1255@@RW@@N
+SEARch:TRIGger:LEVel:TRANsition:UPPer@@SEARch:TRIGger:LEVel:TRANsition:UPPer 
+<SearchName>, <Level>@@Range: -10 to 10 V@@設定或查詢 Slew rate 
+搜尋的上電壓門限位準@@1257@@RW@@N
+SEARch:TRIGger:LEVel:TRANsition:LOWer@@SEARch:TRIGger:LEVel:TRANsition:LOWer 
+<SearchName>, <Level>@@Range: -10 to 10 V@@設定或查詢 Slew rate 
+搜尋的下電壓門限位準@@1257@@RW@@N
+SEARch:TRIGger:DATatoclock[:STATe]@@SEARch:TRIGger:DATatoclock[:STATe] 
+<SearchName>, <State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 
+Data2Clock 搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:DATatoclock:ACOPy@@SEARch:TRIGger:DATatoclock:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 Data2Clock 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:DATatoclock:CSOurce@@SEARch:TRIGger:DATatoclock:CSOurce 
+<SearchName>, <ClockSource>@@CHANnel1 | CHANnel2 | CHANnel3 | 
+CHANnel4@@設定或查詢 Data2Clock 搜尋的時脈訊號源@@1263@@RW@@N
+SEARch:TRIGger:DATatoclock:CEDGe@@SEARch:TRIGger:DATatoclock:CEDGe 
+<SearchName>, <Slope>@@POSitive | NEGative | EITHer@@設定或查詢 Data2Clock 
+搜尋的時脈邊緣極性@@1262@@RW@@N
+SEARch:TRIGger:DATatoclock:CLEVel@@SEARch:TRIGger:DATatoclock:CLEVel 
+<SearchName>, <Level>@@Range: -10 to 10 V@@設定或查詢 Data2Clock 
+搜尋的時脈電壓門限位準@@1263@@RW@@N
+SEARch:TRIGger:DATatoclock:STIMe@@SEARch:TRIGger:DATatoclock:STIMe 
+<SearchName>, <SetupTime>@@Range: -100 to 100 s@@設定或查詢 Data2Clock 搜尋的 
+Setup 建立時間限制@@1264@@RW@@N
+SEARch:TRIGger:DATatoclock:HTIMe@@SEARch:TRIGger:DATatoclock:HTIMe 
+<SearchName>, <HoldTime>@@Range: -100 to 100 s@@設定或查詢 Data2Clock 搜尋的 
+Hold 保持時間限制@@1263@@RW@@N
+SEARch:TRIGger:STATe[:STATe]@@SEARch:TRIGger:STATe[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定搜尋項目是否啟用 State 
+狀態搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:STATe:ACOPy@@SEARch:TRIGger:STATe:ACOPy 
+<SearchName>@@<SearchName>@@將 A 觸發器的 State 
+觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:STATe:CSOurce@@SEARch:TRIGger:STATe:CSOurce <SearchName>, 
+<ClockSource>@@CHANnel1 | CHANnel2 | CHANnel3 | CHANnel4@@設定或查詢 State 
+狀態搜尋的時脈訊號源@@1269@@RW@@N
+SEARch:TRIGger:STATe:CEDGe@@SEARch:TRIGger:STATe:CEDGe <SearchName>, 
+<Slope>@@POSitive | NEGative | EITHer@@設定或查詢 State 
+狀態搜尋的時脈邊緣極性@@1269@@RW@@N
+SEARch:TRIGger:STATe:CLEVel@@SEARch:TRIGger:STATe:CLEVel <SearchName>, 
+<Level>@@Range: -10 to 10 V@@設定或查詢 State 
+狀態搜尋的時脈電壓門限位準@@1269@@RW@@N
+SEARch:TRIGger:STATe:A[:ENABle]@@SEARch:TRIGger:STATe:A[:ENABle] <SearchName>, 
+<State>@@OFF | ON | 0 | 1@@設定或查詢 State 狀態搜尋中通道 A 
+的條件限定致能狀態@@1270@@RW@@N
+SEARch:TRIGger:STATe🅰LOGic@@SEARch:TRIGger:STATe🅰LOGic <SearchName>, 
+<Operator>@@AND | NAND | OR | NOR@@設定或查詢 State 狀態搜尋中通道 A 
+的邏輯運算子@@1270@@RW@@N
+SEARch:TRIGger:STATe🆎LOGic@@SEARch:TRIGger:STATe🆎LOGic <SearchName>, 
+<Operator>@@AND | NAND | OR | NOR@@設定或查詢 State 狀態搜尋中通道 AB 
+之間的邏輯運算子@@1271@@RW@@N
+SEARch:TRIGger:STATe🔡LOGic@@SEARch:TRIGger:STATe🔡LOGic <SearchName>, 
+<Operator>@@AND | NAND | OR | NOR@@設定或查詢 State 狀態搜尋中通道 ABCD 
+之間的邏輯運算子@@1271@@RW@@N
+SEARch:TRIGger:PATTern[:STATe]@@SEARch:TRIGger:PATTern[:STATe] <SearchName>, 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢指定搜尋項目是否啟用邏輯圖樣搜尋類型@@1249@@RW@@N
+SEARch:TRIGger:PATTern:ACOPy@@SEARch:TRIGger:PATTern:ACOPy 
+<SearchName>@@<SearchName>@@將 A 
+觸發器的邏輯圖樣觸發設定複製至指定搜尋項目@@1250@@W@@N
+SEARch:TRIGger:PATTern:A[:ENABle]@@SEARch:TRIGger:PATTern:A[:ENABle] 
+<SearchName>, <State>@@OFF | ON | 0 | 1@@設定或查詢邏輯圖樣搜尋中通道 A 
+的致能狀態@@1265@@RW@@N
+SEARch:TRIGger:PATTern🅰LOGic@@SEARch:TRIGger:PATTern🅰LOGic <SearchName>, 
+<Operator>@@AND | NAND | OR | NOR@@設定或查詢邏輯圖樣搜尋中通道 A 
+的邏輯運算子@@1265@@RW@@N
+SEARch:TRIGger:PATTern🆎LOGic@@SEARch:TRIGger:PATTern🆎LOGic <SearchName>, 
+<Operator>@@AND | NAND | OR | NOR@@設定或查詢邏輯圖樣搜尋中通道 AB 
+之間的邏輯運算子@@1266@@RW@@N
+SEARch:TRIGger:PATTern🔡LOGic@@SEARch:TRIGger:PATTern🔡LOGic <SearchName>, 
+<Operator>@@AND | NAND | OR | NOR@@設定或查詢邏輯圖樣搜尋中通道 ABCD 
+之間的邏輯運算子@@1266@@RW@@N
+SEARch:TRIGger:PATTern:MODE@@SEARch:TRIGger:PATTern:MODE <SearchName>, 
+<Mode>@@OFF | TIMeout | 
+WIDTh@@設定或查詢邏輯圖樣搜尋的時間條件模式@@1266@@RW@@N
+SEARch:TRIGger:PATTern:TIMeout:MODE@@SEARch:TRIGger:PATTern:TIMeout:MODE 
+<SearchName>, <Range>@@HIGH | LOW | 
+EITHer@@設定或查詢邏輯圖樣超時搜尋的電壓狀態條件@@1267@@RW@@N
+SEARch:TRIGger:PATTern:TIMeout[:TIME]@@SEARch:TRIGger:PATTern:TIMeout[:TIME] 
+<SearchName>, <Timeout>@@Range: 1e-9 to 1000 
+s@@設定或查詢邏輯圖樣超時搜尋的時間限制長度@@1267@@RW@@N
+SEARch:TRIGger:PATTern:WIDTh:RANGe@@SEARch:TRIGger:PATTern:WIDTh:RANGe 
+<SearchName>, <Range>@@WITHin | OUTSide | LONGer | 
+SHORter@@設定或查詢邏輯圖樣脈寬搜尋的時間範圍條件@@1267@@RW@@N
+SEARch:TRIGger:PATTern:WIDTh[:WIDTh]@@SEARch:TRIGger:PATTern:WIDTh[:WIDTh] 
+<SearchName>, <Width>@@Range: 500e-12 to 1000 
+s@@設定或查詢邏輯圖樣脈寬搜尋的目標時間長度@@1268@@RW@@N
+SEARch:TRIGger:PATTern:WIDTh:DELTa@@SEARch:TRIGger:PATTern:WIDTh:DELTa 
+<SearchName>, <Delta>@@Range: 0 to 1000 s@@設定或查詢邏輯圖樣脈寬搜尋的時間 
+±Delta 容差範圍@@1268@@RW@@N
+SEARch:TRIGger:LEVel[:VALue]@@SEARch:TRIGger:LEVel[:VALue] <SearchName>, 
+<Level>@@Range: -10 to 10 
+V@@設定或查詢搜尋項目的通用觸發電壓門限位準@@1249@@RW@@N
+SEARch:TRIGger:LEVel:NOISe:MODE@@SEARch:TRIGger:LEVel:NOISe:MODE <SearchName>, 
+<Mode>@@OFF | ABSolute | 
+RELative@@設定或查詢搜尋項目的雜訊抑制磁滯模式@@1275@@RW@@N
+SEARch:TRIGger:LEVel:NOISe:ABSolute@@SEARch:TRIGger:LEVel:NOISe:ABSolute 
+<SearchName>, <Hysteresis>@@Range: 0 to 10 
+V@@設定或查詢搜尋項目的絕對雜訊抑制磁滯電壓值@@1275@@RW@@N
+SEARch:TRIGger:LEVel:NOISe:RELative@@SEARch:TRIGger:LEVel:NOISe:RELative 
+<SearchName>, <Hysteresis>@@Range: 0 to 10 
+div@@設定或查詢搜尋項目的相對雜訊抑制磁滯刻度值@@1276@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 18)

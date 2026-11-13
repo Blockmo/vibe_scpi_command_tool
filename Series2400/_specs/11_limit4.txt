@@ -1,0 +1,10 @@
+Answer:
+:CALCulate2:LIMit4:STATe@@:CALCulate2:LIMit4:STATe <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢 Limit 4 接觸檢查測試啟用狀態@@18-37@@RW@@N
+:CALCulate2:LIMit4:SOURce2@@:CALCulate2:LIMit4:SOURce2 <NRf>|<NDN>@@<NRf>|<NDN>
+= 0 至 7 (3-bit) 或 0 至 15 (4-bit)@@設定與查詢 Limit 4 
+測試失敗時的數位輸出位元圖樣@@18-36@@RW@@N
+:CALCulate2:LIMit4:FAIL?@@:CALCulate2:LIMit4:FAIL?@@無@@讀取 Limit 4 
+接觸檢查測試結果 (0=Pass, 1=Fail)@@18-37@@R@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 14)

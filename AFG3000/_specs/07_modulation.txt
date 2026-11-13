@@ -1,0 +1,108 @@
+Answer:
+[SOURce[1|2]]:AM[:DEPTh]@@[SOURce[1|2]]:AM[:DEPTh] {<depth>|MINimum|MAXimum}; 
+[SOURce[1|2]]:AM[:DEPTh]?@@0.0%~120.0%|MINimum|MAXimum@@設定或查詢指定通道的AM
+調變深度@@2-41@@RW@@Y
+[SOURce[1|2]]:AM:INTernal:FREQuency@@[SOURce[1|2]]:AM:INTernal:FREQuency 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:AM:INTernal:FREQuency?@@2mHz~50.00kHz|MINimum|MAXimum@@設定或查詢
+指定通道的AM內部調變頻率@@2-41@@RW@@Y
+[SOURce[1|2]]:AM:INTernal:FUNCtion@@[SOURce[1|2]]:AM:INTernal:FUNCtion 
+{SINusoid|SQUare|TRIangle|RAMP|NRAMp|PRNoise|USER[1]|USER2|USER3|USER4|EMEMory[
+1]|EMEMory2|EFILe}; 
+[SOURce[1|2]]:AM:INTernal:FUNCtion?@@SIN|SQU|TRI|RAMP|NRAM|PRN|USER[1..4]|EMEM[
+1|2]|EFILe@@設定或查詢指定通道的AM內部調變波形@@2-42@@RW@@Y
+[SOURce[1|2]]:AM:INTernal:FUNCtion:EFILe@@[SOURce[1|2]]:AM:INTernal:FUNCtion:EF
+ILe <file_name>; 
+[SOURce[1|2]]:AM:INTernal:FUNCtion:EFILe?@@<file_name>@@設定或查詢作為AM調變波
+形之EFILe檔案名稱@@2-43@@RW@@Y
+[SOURce[1|2]]:AM:SOURce@@[SOURce[1|2]]:AM:SOURce [INTernal|EXTernal]; 
+[SOURce[1|2]]:AM:SOURce?@@INTernal|EXTernal@@設定或查詢指定通道的AM調變訊號來源
+@@2-43@@RW@@Y
+[SOURce[1|2]]:AM:STATe@@[SOURce[1|2]]:AM:STATe {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:AM:STATe?@@ON|OFF|<NR1>@@設定或查詢指定通道的AM調變啟用狀態@@2-44
+@@RW@@Y
+[SOURce[1|2]]:FM[:DEViation]@@[SOURce[1|2]]:FM[:DEViation] 
+{<deviation>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FM[:DEViation]?@@<deviation>|MINimum|MAXimum@@設定或查詢指定通道
+的FM峰值頻率偏移@@2-48@@RW@@Y
+[SOURce[1|2]]:FM:INTernal:FREQuency@@[SOURce[1|2]]:FM:INTernal:FREQuency 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FM:INTernal:FREQuency?@@2mHz~50.00kHz|MINimum|MAXimum@@設定或查詢
+指定通道的FM內部調變頻率@@2-48@@RW@@Y
+[SOURce[1|2]]:FM:INTernal:FUNCtion@@[SOURce[1|2]]:FM:INTernal:FUNCtion 
+{SINusoid|SQUare|TRIangle|RAMP|NRAMp|PRNoise|USER[1]|USER2|USER3|USER4|EMEMory[
+1]|EMEMory2|EFILe}; 
+[SOURce[1|2]]:FM:INTernal:FUNCtion?@@SIN|SQU|TRI|RAMP|NRAM|PRN|USER[1..4]|EMEM[
+1|2]|EFILe@@設定或查詢指定通道的FM內部調變波形@@2-49@@RW@@Y
+[SOURce[1|2]]:FM:INTernal:FUNCtion:EFILe@@[SOURce[1|2]]:FM:INTernal:FUNCtion:EF
+ILe <file_name>; 
+[SOURce[1|2]]:FM:INTernal:FUNCtion:EFILe?@@<file_name>@@設定或查詢作為FM調變波
+形之EFILe檔案名稱@@2-50@@RW@@Y
+[SOURce[1|2]]:FM:SOURce@@[SOURce[1|2]]:FM:SOURce [INTernal|EXTernal]; 
+[SOURce[1|2]]:FM:SOURce?@@INTernal|EXTernal@@設定或查詢指定通道的FM調變訊號來源
+@@2-50@@RW@@Y
+[SOURce[1|2]]:FM:STATe@@[SOURce[1|2]]:FM:STATe {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:FM:STATe?@@ON|OFF|<NR1>@@設定或查詢指定通道的FM調變啟用狀態@@2-51
+@@RW@@Y
+[SOURce[1|2]]:PM[:DEViation]@@[SOURce[1|2]]:PM[:DEViation] 
+{<deviation>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PM[:DEViation]?@@0PI~+1PI(RAD)|0~180(DEG)|MINimum|MAXimum@@設定或
+查詢指定通道的PM相位偏移角度@@2-62@@RW@@Y
+[SOURce[1|2]]:PM:INTernal:FREQuency@@[SOURce[1|2]]:PM:INTernal:FREQuency 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PM:INTernal:FREQuency?@@2mHz~50.00kHz|MINimum|MAXimum@@設定或查詢
+指定通道的PM內部調變頻率@@2-62@@RW@@Y
+[SOURce[1|2]]:PM:INTernal:FUNCtion@@[SOURce[1|2]]:PM:INTernal:FUNCtion 
+{SINusoid|SQUare|TRIangle|RAMP|NRAMp|PRNoise|USER[1]|USER2|USER3|USER4|EMEMory[
+1]|EMEMory2|EFILe}; 
+[SOURce[1|2]]:PM:INTernal:FUNCtion?@@SIN|SQU|TRI|RAMP|NRAM|PRN|USER[1..4]|EMEM[
+1|2]|EFILe@@設定或查詢指定通道的PM內部調變波形@@2-63@@RW@@Y
+[SOURce[1|2]]:PM:INTernal:FUNCtion:EFILe@@[SOURce[1|2]]:PM:INTernal:FUNCtion:EF
+ILe <file_name>; 
+[SOURce[1|2]]:PM:INTernal:FUNCtion:EFILe?@@<file_name>@@設定或查詢作為PM調變波
+形之EFILe檔案名稱@@2-64@@RW@@Y
+[SOURce[1|2]]:PM:SOURce@@[SOURce[1|2]]:PM:SOURce [INTernal|EXTernal]; 
+[SOURce[1|2]]:PM:SOURce?@@INTernal|EXTernal@@設定或查詢指定通道的PM調變訊號來源
+@@2-64@@RW@@Y
+[SOURce[1|2]]:PM:STATe@@[SOURce[1|2]]:PM:STATe {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:PM:STATe?@@ON|OFF|<NR1>@@設定或查詢指定通道的PM調變啟用狀態@@2-65
+@@RW@@Y
+[SOURce[1|2]]:FSKey[:FREQuency]@@[SOURce[1|2]]:FSKey[:FREQuency] 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FSKey[:FREQuency]?@@<frequency>|MINimum|MAXimum@@設定或查詢指定通
+道的FSK跳頻頻率@@2-56@@RW@@Y
+[SOURce[1|2]]:FSKey:INTernal:RATE@@[SOURce[1|2]]:FSKey:INTernal:RATE 
+{<rate>|MINimum|MAXimum}; 
+[SOURce[1|2]]:FSKey:INTernal:RATE?@@<rate>|MINimum|MAXimum@@設定或查詢指定通道
+的FSK內部調變速率@@2-57@@RW@@Y
+[SOURce[1|2]]:FSKey:SOURce@@[SOURce[1|2]]:FSKey:SOURce [INTernal|EXTernal]; 
+[SOURce[1|2]]:FSKey:SOURce?@@INTernal|EXTernal@@設定或查詢指定通道的FSK調變訊號
+來源@@2-57@@RW@@Y
+[SOURce[1|2]]:FSKey:STATe@@[SOURce[1|2]]:FSKey:STATe {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:FSKey:STATe?@@ON|OFF|<NR1>@@設定或查詢指定通道的FSK調變啟用狀態@@
+2-58@@RW@@Y
+[SOURce[1|2]]:PWM:INTernal:FREQuency@@[SOURce[1|2]]:PWM:INTernal:FREQuency 
+{<frequency>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PWM:INTernal:FREQuency?@@2mHz~50.00kHz|MINimum|MAXimum@@設定或查
+詢指定通道的PWM內部調變頻率@@2-71@@RW@@Y
+[SOURce[1|2]]:PWM:INTernal:FUNCtion@@[SOURce[1|2]]:PWM:INTernal:FUNCtion 
+{SINusoid|SQUare|TRIangle|RAMP|NRAMp|PRNoise|USER[1]|USER2|USER3|USER4|EMEMory[
+1]|EMEMory2|EFILe}; 
+[SOURce[1|2]]:PWM:INTernal:FUNCtion?@@SIN|SQU|TRI|RAMP|NRAM|PRN|USER[1..4]|EMEM
+[1|2]|EFILe@@設定或查詢指定通道的PWM內部調變波形@@2-71@@RW@@Y
+[SOURce[1|2]]:PWM:INTernal:FUNCtion:EFILe@@[SOURce[1|2]]:PWM:INTernal:FUNCtion:
+EFILe <file_name>; 
+[SOURce[1|2]]:PWM:INTernal:FUNCtion:EFILe?@@<file_name>@@設定或查詢作為PWM調變
+波形之EFILe檔案名稱@@2-72@@RW@@Y
+[SOURce[1|2]]:PWM:SOURce@@[SOURce[1|2]]:PWM:SOURce [INTernal|EXTernal]; 
+[SOURce[1|2]]:PWM:SOURce?@@INTernal|EXTernal@@設定或查詢指定通道的PWM調變訊號來
+源@@2-73@@RW@@Y
+[SOURce[1|2]]:PWM:STATe@@[SOURce[1|2]]:PWM:STATe {ON|OFF|<NR1>}; 
+[SOURce[1|2]]:PWM:STATe?@@ON|OFF|<NR1>@@設定或查詢指定通道的PWM調變啟用狀態@@2-
+73@@RW@@Y
+[SOURce[1|2]]:PWM[:DEViation]:DCYCle@@[SOURce[1|2]]:PWM[:DEViation]:DCYCle 
+{<percent>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PWM[:DEViation]:DCYCle?@@<percent>|MINimum|MAXimum@@設定或查詢指
+定通道的PWM脈寬調變深度百分比@@2-74@@RW@@Y
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 10)

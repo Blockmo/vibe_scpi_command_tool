@@ -1,0 +1,31 @@
+Answer:
+*CLS@@*CLS@@無@@清除所有事件暫存器與錯誤佇列@@16-3@@W@@N
+*ESE@@*ESE <n>@@<n> = 0 至 255@@設定與查詢標準事件啟用暫存器@@16-3@@RW@@N
+*ESR?@@*ESR?@@無@@讀取並清除標準事件狀態暫存器@@16-3@@R@@N
+*IDN?@@*IDN?@@無@@查詢儀器製造商、型號、序列號及韌體版本@@16-3@@R@@N
+*OPC@@*OPC@@無@@設定標準事件暫存器之操作完成位元或於完成時回傳1@@16-3@@RW@@N
+*OPT?@@*OPT?@@無@@查詢儀器已安裝的選購配備選項@@16-3@@R@@N
+*RCL@@*RCL <n>@@<n> = 0|1|2|3|4@@召回儲存於記憶體中的使用者設定檔@@16-3@@W@@N
+*RST@@*RST@@無@@重設儀器至出廠預設 GPIB 狀態@@16-4@@W@@N
+*SAV@@*SAV <n>@@<n> = 
+0|1|2|3|4@@將當前儀器設定檔儲存至指定記憶體位置@@16-3@@W@@N
+*SRE@@*SRE <n>@@<n> = 0 至 255@@設定與查詢服務請求啟用暫存器@@16-3@@RW@@N
+*STB?@@*STB?@@無@@讀取狀態位元組暫存器@@16-3@@R@@N
+*TRG@@*TRG@@無@@發送匯流排觸發訊號至儀器@@16-4@@W@@N
+*TST?@@*TST?@@無@@執行 ROM 自我測試並回傳結果@@16-4@@R@@N
+*WAI@@*WAI@@無@@等待所有先前發送的重疊指令執行完成@@16-5@@W@@N
+:CONFigure[:<function>]@@:CONFigure:<function>@@<function> = 
+{VOLTage[:DC]|CURRent[:DC]|RESistance}@@設定指定量測功能的儀器配置並開啟輸出@@1
+7-2@@RW@@N
+:FETCh?@@:FETCh?@@無@@請求取得樣本緩衝區中最新處理完成的量測讀值@@17-3@@R@@N
+[:SENSe[1]]:DATA[:LATest]?@@[:SENSe[1]]:DATA[:LATest]?@@無@@回傳樣本緩衝區中最
+新取得的一筆量測讀值@@17-4@@R@@N
+:READ?@@:READ?@@無@@觸發源量測循環並擷取處理後的量測讀值@@17-4@@R@@N
+:MEASure[:<function>]?@@:MEASure[:<function>]?@@<function> = 
+{VOLTage[:DC]|CURRent[:DC]|RESistance}@@執行單次量測配置、觸發並擷取讀值@@17-5@
+@R@@N
+:INITiate[:IMMediate]@@:INITiate[:IMMediate]@@無@@啟動源量測循環，將儀器帶離閒
+置狀態@@18-117@@W@@N
+:ABORt@@:ABORt@@無@@中止當前源量測操作並重置觸發系統至閒置狀態@@18-117@@W@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 2)

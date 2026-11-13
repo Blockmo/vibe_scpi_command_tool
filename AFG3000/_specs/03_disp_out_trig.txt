@@ -1,0 +1,50 @@
+Answer:
+DISPlay:BRIGHtness@@DISPlay:BRIGHtness {<brightness>|MINimum|MAXimum}; 
+DISPlay:BRIGHtness? 
+[MINimum|MAXimum]@@0.00~1.00|MINimum|MAXimum@@設定或查詢LCD螢幕亮度(僅AFG3000C
+系列)@@2-22@@RW@@N
+DISPlay:CONTrast@@DISPlay:CONTrast {<contrast>|MINimum|MAXimum}; 
+DISPlay:CONTrast?@@0.00~1.00|MINimum|MAXimum@@設定或查詢LCD螢幕對比度@@2-23@@RW
+@@N
+DISPlay:SAVer:IMMediate@@DISPlay:SAVer:IMMediate@@無@@立即啟動螢幕保護功能@@2-2
+4@@W@@N
+DISPlay:SAVer[:STATe]@@DISPlay:SAVer[:STATe] {ON|OFF|<NR1>}; 
+DISPlay:SAVer[:STATe]?@@ON|OFF|<NR1>@@設定或查詢螢幕保護功能致能狀態@@2-24@@RW@
+@N
+DISPlay[:WINDow]:TEXT[:DATA]@@DISPlay[:WINDow]:TEXT[:DATA] <string>; 
+DISPlay[:WINDow]:TEXT[:DATA]?@@<string>@@在螢幕上顯示自訂文字訊息或查詢目前顯示
+訊息@@2-25@@RW@@N
+DISPlay[:WINDow]:TEXT:CLEar@@DISPlay[:WINDow]:TEXT:CLEar@@無@@清除螢幕上顯示的
+自訂文字訊息@@2-25@@W@@N
+OUTPut[1|2]:IMPedance@@OUTPut[1|2]:IMPedance {<ohms>|INFinity|MINimum|MAXimum};
+OUTPut[1|2]:IMPedance?@@1~10000(OHM)|INFinity|MINimum|MAXimum@@設定或查詢指定通
+道的輸出負載阻抗@@2-36@@RW@@Y
+OUTPut[1|2]:POLarity@@OUTPut[1|2]:POLarity {NORMal|INVerted}; 
+OUTPut[1|2]:POLarity?@@NORMal|INVerted@@設定或查詢指定通道的輸出波形極性@@2-37@
+@RW@@Y
+OUTPut[1|2][:STATe]@@OUTPut[1|2][:STATe] {ON|OFF|<NR1>}; 
+OUTPut[1|2][:STATe]?@@ON|OFF|<NR1>@@設定或查詢指定通道的輸出開啟或關閉狀態@@2-3
+7@@RW@@Y
+OUTPut:TRIGger:MODE@@OUTPut:TRIGger:MODE {TRIGger|SYNC}; 
+OUTPut:TRIGger:MODE?@@TRIGger|SYNC@@設定或查詢觸發輸出端子(Trigger 
+Out)的工作模式@@2-38@@RW@@N
+ABORt@@ABORt@@無@@初始化觸發系統並重置所有觸發序列@@2-19@@W@@N
+*TRG@@*TRG@@無@@強制產生一個觸發事件@@2-101@@W@@N
+TRIGger[:SEQuence][:IMMediate]@@TRIGger[:SEQuence][:IMMediate]@@無@@強制立即產
+生一個觸發事件@@2-103@@W@@N
+TRIGger[:SEQuence]:SLOPe@@TRIGger[:SEQuence]:SLOPe {POSitive|NEGative}; 
+TRIGger[:SEQuence]:SLOPe?@@POSitive|NEGative@@設定或查詢外部觸發訊號的觸發邊緣
+斜率@@2-101@@RW@@N
+TRIGger[:SEQuence]:SOURce@@TRIGger[:SEQuence]:SOURce {TIMer|EXTernal}; 
+TRIGger[:SEQuence]:SOURce?@@TIMer|EXTernal@@設定或查詢觸發訊號來源@@2-102@@RW@@
+N
+TRIGger[:SEQuence]:TIMer@@TRIGger[:SEQuence]:TIMer <seconds>; 
+TRIGger[:SEQuence]:TIMer?@@1us~500.0s@@設定或查詢內部觸發定時器的週期時間@@2-10
+2@@RW@@N
+AFGControl:CSCopy@@AFGControl:CSCopy 
+{CH1|CH2},{CH1|CH2}@@{CH1|CH2},{CH1|CH2}@@複製通道1(或通道2)的設定參數至通道2(
+或通道1)@@2-19@@W@@N
+HCOPy:SDUMp[:IMMediate]@@HCOPy:SDUMp[:IMMediate]@@無@@擷取螢幕畫面並將影像檔案
+儲存至USB記憶體@@2-27@@W@@N
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 4)

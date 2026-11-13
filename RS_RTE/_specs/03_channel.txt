@@ -1,0 +1,43 @@
+Answer:
+CHANnel<m>[:WAVeform<n>][:STATe]@@CHANnel<m>[:WAVeform<n>][:STATe] <State>@@OFF
+| ON | 0 | 1@@設定或查詢類比通道與波形的啟用狀態@@1047@@RW@@N
+CHANnel<m>:COUPling@@CHANnel<m>:COUPling <Coupling>@@DC | DCLimit | 
+AC@@設定或查詢類比通道的輸入耦合方式與終端阻抗@@1048@@RW@@N
+CHANnel<m>:SCALe@@CHANnel<m>:SCALe <Scale>@@Range: 500e-6 to 10 
+V/div@@設定或查詢類比通道的垂直電壓刻度@@1048@@RW@@N
+CHANnel<m>:RANGe@@CHANnel<m>:RANGe <Range>@@Range: 5e-3 to 100 
+V@@設定或查詢類比通道的總垂直動態顯示範圍@@1048@@RW@@N
+CHANnel<m>:POSition@@CHANnel<m>:POSition <Position>@@Range: -5 to 5 
+div@@設定或查詢波形在圖表中的垂直顯示位置@@1049@@RW@@N
+CHANnel<m>:OFFSet@@CHANnel<m>:OFFSet <Offset>@@Range: -200 to 200 
+V@@設定或查詢類比通道的垂直偏移電壓@@1050@@RW@@N
+CHANnel<m>:BANDwidth@@CHANnel<m>:BANDwidth <Bandwidth>@@FULL | B20 | 
+B200@@設定或查詢類比通道的硬體頻寬限制@@1050@@RW@@N
+CHANnel<m>:IMPedance@@CHANnel<m>:IMPedance <Impedance>@@Fifty | FIFTY | ONE | 
+ONEMeg@@設定或查詢通道用於功率計算與測量的輸入阻抗@@1051@@RW@@N
+CHANnel<m>:INVert@@CHANnel<m>:INVert <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否垂直反轉類比通道波形極性@@1050@@RW@@N
+CHANnel<m>:DIGFilter:STATe@@CHANnel<m>:DIGFilter:STATe <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否啟用類比通道的 DSP 數位低通濾波器@@1084@@RW@@N
+CHANnel<m>:SKEW:TIME@@CHANnel<m>:SKEW:TIME <Skew>@@Range: -500e-9 to 500e-9 
+s@@設定或查詢類比通道的傳輸延遲與偏斜補償時間@@1085@@RW@@N
+CHANnel<m>[:WAVeform<n>]:TYPE@@CHANnel<m>[:WAVeform<n>]:TYPE 
+<DecimationMode>@@SAMPle | PDETect | HRESolution | 
+RMS@@設定或查詢類比通道波形的抽取降採樣模式@@1045@@RW@@N
+CHANnel<m>[:WAVeform<n>]:DATA[:VALues]?@@CHANnel<m>[:WAVeform<n>]:DATA[:VALues]
+? [<StartSample>, 
+<StopSample>]@@無@@讀取類比通道波形的採樣點數值資料@@1051@@R@@N
+CHANnel<m>[:WAVeform<n>]:DATA:HEADer?@@CHANnel<m>[:WAVeform<n>]:DATA:HEADer?@@
+無@@讀取類比通道波形資料的表頭參數資訊@@1052@@R@@N
+HDEFinition:STATe@@HDEFinition:STATe <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否開啟高解析度擷取模式@@1086@@RW@@N
+HDEFinition:BWIDth@@HDEFinition:BWIDth <Bandwidth>@@Range: 10e6 to 500e6 
+Hz@@設定或查詢高解析度模式下的數位濾波器頻寬@@1086@@RW@@N
+HDEFinition:RESolution?@@HDEFinition:RESolution?@@無@@查詢當前高解析度模式下的
+垂直解析度位元數@@1087@@R@@N
+FORMat[:DATA]@@FORMat[:DATA] <Format>[, <Length>]@@ASCii | REAL | INT,8 | 
+INT,16@@設定或查詢遠端控制傳輸波形資料時的資料格式@@1015@@RW@@N
+FORMat:BORDer@@FORMat:BORDer <ByteOrder>@@MSBFirst | 
+LSBFirst@@設定或查詢二進位資料傳輸時的高低位元組順序@@1016@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 4)

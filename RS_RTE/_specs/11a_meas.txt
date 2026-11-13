@@ -1,0 +1,79 @@
+Answer:
+MEASurement<m>[:ENABle]@@MEASurement<m>[:ENABle] <State>@@OFF | ON | 0 | 
+1@@設定或查詢指定自動測量項目的啟用狀態@@1166@@RW@@N
+MEASurement<m>:SOURce@@MEASurement<m>:SOURce <Source>[, 
+<SecondSource>]@@CHANnel1 | CHANnel2 | CHANnel3 | CHANnel4 | MATH1 | MATH2 | 
+MATH3 | MATH4 | REFCurve1 | REFCurve2 | REFCurve3 | REFCurve4 | D0 | D1 | D2 | 
+D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10 | D11 | D12 | D13 | D14 | 
+D15@@設定或查詢自動測量的波形來源與第二來源@@1167@@RW@@N
+MEASurement<m>:CATegory@@MEASurement<m>:CATegory <Category>@@AMPTime | EYE | 
+HISTogram | SPECtrum | PROTocol@@設定或查詢自動測量的類別類群@@1169@@RW@@N
+MEASurement<m>:MAIN@@MEASurement<m>:MAIN <MeasurementType>@@HIGH | LOW | 
+AMPLitude | MAXimum | MINimum | PEAK | MEAN | RMS | STDDev | POSOvershoot | 
+NEGOvershoot | CMEAn | CRMS | CSTDdev | TRISetime | TFALltime | TPOSpulse | 
+TNEGpulse | TPERiod | FREQuency | RPOScyc | RNEGcyc | DELay | PHASe | BURSt | 
+TPOSsw | TNEGsw | PTRain | SETup | SETRatio | DELTrigger | AREAf | 
+ARECyc@@設定或查詢自動測量的主要測量項目類型@@1169@@RW@@N
+MEASurement<m>:ADDitional@@MEASurement<m>:ADDitional <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否開啟附加測量功能@@1170@@RW@@N
+MEASurement<m>:ARES?@@MEASurement<m>:ARES?@@無@@查詢自動測量的輔助中間測量結果
+數值@@1171@@R@@N
+MEASurement<m>:ARNames?@@MEASurement<m>:ARNames?@@無@@查詢自動測量的輔助中間測
+量結果名稱清單@@1172@@R@@N
+MEASurement<m>:RESult[:ACTual]?@@MEASurement<m>:RESult[:ACTual]?@@無@@查詢當前
+自動測量的即時實測結果數值@@1172@@R@@N
+MEASurement<m>:RESult:AVG?@@MEASurement<m>:RESult:AVG?@@無@@查詢自動測量結果的
+統計平均值@@1172@@R@@N
+MEASurement<m>:RESult:STDDev?@@MEASurement<m>:RESult:STDDev?@@無@@查詢自動測量
+結果的統計標準差@@1172@@R@@N
+MEASurement<m>:RESult:PPEak?@@MEASurement<m>:RESult:PPEak?@@無@@查詢自動測量結
+果的統計正峰值最大值@@1172@@R@@N
+MEASurement<m>:RESult:NPEak?@@MEASurement<m>:RESult:NPEak?@@無@@查詢自動測量結
+果的統計負峰值最小值@@1172@@R@@N
+MEASurement<m>:RESult:RMS?@@MEASurement<m>:RESult:RMS?@@無@@查詢自動測量結果的
+統計均方根值@@1172@@R@@N
+MEASurement<m>:RESult:COUNt?@@MEASurement<m>:RESult:COUNt?@@無@@查詢自動測量累
+積統計的結果點數總數@@1173@@R@@N
+MEASurement<m>:RESult:EVTCount?@@MEASurement<m>:RESult:EVTCount?@@無@@查詢自動
+測量中單次擷取的測量事件總數@@1172@@R@@N
+MEASurement<m>:RESult:WFMCount?@@MEASurement<m>:RESult:WFMCount?@@無@@查詢參與
+自動測量統計的波形擷取總數@@1172@@R@@N
+MEASurement<m>:CLEar@@MEASurement<m>:CLEar@@無@@清除指定測量項目的結果與統計數
+據@@1173@@W@@N
+MEASurement<m>:MULTiple@@MEASurement<m>:MULTiple <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否限制每幅波形中計算的測量結果數量@@1197@@RW@@N
+MEASurement<m>:MNOMeas@@MEASurement<m>:MNOMeas <MaxMeasPerAcq>@@Range: 1 to 
+100000@@設定或查詢每幅波形中允許的最大測量結果數量上限@@1198@@RW@@N
+REFLevel<m>:LDETection@@REFLevel<m>:LDETection <Mode>@@AUTO | 
+MANual@@設定或查詢參考位準的計算模式自動或手動@@1207@@RW@@N
+REFLevel<m>:LMODe@@REFLevel<m>:LMODe <DefinitionMode>@@ABSolute | 
+RELative@@設定或查詢手動模式下參考位準的定義方式絕對電壓或相對百分比@@1207@@RW@
+@N
+REFLevel<m>:RELative:MODE@@REFLevel<m>:RELative:MODE <PredefinedSet>@@P5_50_95 
+| P10_50_90 | P20_50_80 | 
+USER@@設定或查詢相對參考位準的百分比預設組別或自訂模式@@1207@@RW@@N
+REFLevel<m>:RELative:LOWer@@REFLevel<m>:RELative:LOWer <LowerRefLevel>@@Range: 
+0 to 100 %@@設定或查詢自訂相對參考位準的下限百分比@@1212@@RW@@N
+REFLevel<m>:RELative:MIDDle@@REFLevel<m>:RELative:MIDDle 
+<MiddleRefLevel>@@Range: 0 to 100 
+%@@設定或查詢自訂相對參考位準的中間百分比@@1211@@RW@@N
+REFLevel<m>:RELative:UPPer@@REFLevel<m>:RELative:UPPer <UpperRefLevel>@@Range: 
+0 to 100 %@@設定或查詢自訂相對參考位準的上限百分比@@1211@@RW@@N
+REFLevel<m>:ABSolute:HIGH@@REFLevel<m>:ABSolute:HIGH <HighLevel>@@Range: -100 
+to 100 V@@設定或查詢手動絕對模式下的高訊號電壓位準@@1209@@RW@@N
+REFLevel<m>:ABSolute:LOW@@REFLevel<m>:ABSolute:LOW <LowLevel>@@Range: -100 to 
+100 V@@設定或查詢手動絕對模式下的低訊號電壓位準@@1209@@RW@@N
+REFLevel<m>:ABSolute:MLEVel@@REFLevel<m>:ABSolute:MLEVel <MiddleLevel>@@Range: 
+-100 to 100 V@@設定或查詢手動絕對模式下的中間訊號電壓位準@@1210@@RW@@N
+REFLevel<m>:ABSolute:TDIStance@@REFLevel<m>:ABSolute:TDIStance 
+<TopDistance>@@Range: 0 to 100 
+V@@設定或查詢手動絕對模式下高訊號位準至上限位準的電壓距離@@1210@@RW@@N
+REFLevel<m>:ABSolute:BDIStance@@REFLevel<m>:ABSolute:BDIStance 
+<BottomDistance>@@Range: 0 to 100 
+V@@設定或查詢手動絕對模式下低訊號位準至下限位準的電壓距離@@1210@@RW@@N
+REFLevel<m>:AUTO[:STATe]@@REFLevel<m>:AUTO[:STATe] <State>@@OFF | ON | 0 | 
+1@@設定或查詢自動參考位準模式下是否開啟直方圖平均功能@@1208@@RW@@N
+REFLevel<m>:AUTO:COUNt@@REFLevel<m>:AUTO:COUNt <Count>@@Range: 1 to 
+1000@@設定或查詢自動參考位準計算所需的直方圖平均個數@@1209@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 14)

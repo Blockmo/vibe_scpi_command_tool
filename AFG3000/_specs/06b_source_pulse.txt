@@ -1,0 +1,41 @@
+Answer:
+[SOURce[1|2]]:PULSe:DCYCle@@[SOURce[1|2]]:PULSe:DCYCle 
+{<percent>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PULSe:DCYCle?@@0.001%~99.999%|MINimum|MAXimum@@設定或查詢脈衝波形
+的工作週期百分比@@2-66@@RW@@Y
+[SOURce[1|2]]:PULSe:DELay@@[SOURce[1|2]]:PULSe:DELay {<delay>|MINimum|MAXimum};
+[SOURce[1|2]]:PULSe:DELay?@@<delay>|MINimum|MAXimum@@設定或查詢脈衝波形的前導延
+遲時間@@2-67@@RW@@Y
+[SOURce[1|2]]:PULSe:HOLD@@[SOURce[1|2]]:PULSe:HOLD {WIDTh|DUTY}; 
+[SOURce[1|2]]:PULSe:HOLD?@@WIDTh|DUTY@@設定或查詢脈衝波形參數變化時保持固定脈寬
+或工作週期@@2-68@@RW@@Y
+[SOURce[1|2]]:PULSe:PERiod@@[SOURce[1|2]]:PULSe:PERiod 
+{<period>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PULSe:PERiod?@@<period>|MINimum|MAXimum@@設定或查詢脈衝波形的週期
+時間@@2-68@@RW@@Y
+[SOURce[1|2]]:PULSe:TRANsition[:LEADing]@@[SOURce[1|2]]:PULSe:TRANsition[:LEADi
+ng] {<seconds>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PULSe:TRANsition[:LEADing]?@@<seconds>|MINimum|MAXimum@@設定或查
+詢脈衝波形的上升時間@@2-69@@RW@@Y
+[SOURce[1|2]]:PULSe:TRANsition:TRAiling@@[SOURce[1|2]]:PULSe:TRANsition:TRAilin
+g {<seconds>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PULSe:TRANsition:TRAiling?@@<seconds>|MINimum|MAXimum@@設定或查詢
+脈衝波形的下降時間@@2-69@@RW@@Y
+[SOURce[1|2]]:PULSe:WIDTh@@[SOURce[1|2]]:PULSe:WIDTh 
+{<seconds>|MINimum|MAXimum}; 
+[SOURce[1|2]]:PULSe:WIDTh?@@<seconds>|MINimum|MAXimum@@設定或查詢脈衝波形的脈衝
+寬度@@2-70@@RW@@Y
+[SOURce]:ROSCillator:SOURce@@[SOURce]:ROSCillator:SOURce {INTernal|EXTernal}; 
+[SOURce]:ROSCillator:SOURce?@@INTernal|EXTernal@@設定或查詢參考時脈來源為內部或
+外部輸入@@2-74@@RW@@N
+SOURce<3|4>:POWer[:LEVel][:IMMediate][:AMPLitude]@@SOURce<3|4>:POWer[:LEVel][:I
+MMediate][:AMPLitude] {<percent>|MINimum|MAXimum}; 
+SOURce<3|4>:POWer[:LEVel][:IMMediate][:AMPLitude]?@@0%~50%|MINimum|MAXimum@@設
+定或查詢疊加於通道1(SOUR3)或通道2(SOUR4)輸出訊號的內部雜訊強度百分比@@2-65@@RW@
+@Y
+[SOURce[1|2]]:COMBine:FEED@@[SOURce[1|2]]:COMBine:FEED 
+["NOISe"|"EXTernal"|"BOTH"|""]; 
+[SOURce[1|2]]:COMBine:FEED?@@"NOISe"|"EXTernal"|"BOTH"|""@@設定或查詢指定通道是
+否疊加內部雜訊或外部訊號至輸出波形@@2-47@@RW@@Y
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 9)

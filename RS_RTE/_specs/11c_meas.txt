@@ -1,0 +1,72 @@
+Answer:
+MEASurement<m>:AMPTime:DELay<n>:SLOPe@@MEASurement<m>:AMPTime:DELay<n>:SLOPe 
+<Slope>@@POSitive | NEGative | EITHer@@設定或查詢 Delay 測量時第 n 
+個來源波形的邊緣斜率極性@@1178@@RW@@N
+MEASurement<m>:AMPTime:DELay<n>:DIRection@@MEASurement<m>:AMPTime:DELay<n>:DIRe
+ction <Direction>@@FROMstart | FROMend@@設定或查詢 Delay 測量時第 n 
+個來源波形的邊緣搜尋方向@@1178@@RW@@N
+MEASurement<m>:AMPTime:CSLope@@MEASurement<m>:AMPTime:CSLope <Slope>@@POSitive 
+| NEGative | EITHer@@設定或查詢 Setup/Hold 
+測量時時脈訊號的邊緣斜率極性@@1179@@RW@@N
+MEASurement<m>:AMPTime:CLCK<n>:LSELect@@MEASurement<m>:AMPTime:CLCK<n>:LSELect 
+<LevelSelect>@@UPPer | MIDDle | LOWer@@設定或查詢 Setup/Hold 
+測量時時脈訊號的參考位準@@1179@@RW@@N
+MEASurement<m>:AMPTime:DATA<n>:LSELect@@MEASurement<m>:AMPTime:DATA<n>:LSELect 
+<LevelSelect>@@UPPer | MIDDle | LOWer@@設定或查詢 Setup/Hold 
+測量時資料訊號的參考位準@@1180@@RW@@N
+MEASurement<m>:AMPTime:PFSLope@@MEASurement<m>:AMPTime:PFSLope 
+<Slope>@@POSitive | NEGative | 
+EITHer@@設定或查詢雙通道時間測量首個邊緣或邊緣觸發之斜率極性@@1177@@RW@@N
+MEASurement<m>:AMPTime:PTCount@@MEASurement<m>:AMPTime:PTCount 
+<PulseCount>@@Range: 1 to 10000@@設定或查詢 Pulse train 
+測量的目標脈衝數量@@1178@@RW@@N
+MEASurement<m>:AMPTime:ESLope@@MEASurement<m>:AMPTime:ESLope <Slope>@@POSitive 
+| NEGative | EITHer@@設定或查詢 Edge count 與數位通道 Delay 
+測量的邊緣方向@@1179@@RW@@N
+MEASurement<m>👁BER@@MEASurement<m>👁BER <TargetBER>@@Range: 1e-18 to 
+1e-1@@設定或查詢眼圖與 Jitter 測量時設定的目標位元錯誤率 BER@@1181@@RW@@N
+MEASurement<m>👁CBOund@@MEASurement<m>👁CBOund <Bound>@@Range: 0 to 100 
+%@@設定或查詢 Jitter 測量的 Jitter 邊界門限百分比@@1181@@RW@@N
+MEASurement<m>👁EAMPlitude@@MEASurement<m>👁EAMPlitude <Mode>@@AUTO | 
+MANual@@設定或查詢眼圖振幅計算模式自動或手動@@1182@@RW@@N
+MEASurement<m>👁EVALuation@@MEASurement<m>👁EVALuation <Region>@@FULL | 
+GATE@@設定或查詢眼圖評估分析區域範圍為全圖或門限區域@@1182@@RW@@N
+MEASurement<m>👁THReshold@@MEASurement<m>👁THReshold <Level>@@Range: -100 to 100 
+V@@設定或查詢眼圖交點搜尋之垂直門限電壓位準@@1182@@RW@@N
+MEASurement<m>:SPECtrum:OBANdwidth@@MEASurement<m>:SPECtrum:OBANdwidth 
+<Percentage>@@Range: 1 to 99.9 %@@設定或查詢 Occupied Bandwidth 
+佔用頻寬能量百分比@@1183@@RW@@N
+MEASurement<m>:SPECtrum:ATHReshold@@MEASurement<m>:SPECtrum:ATHReshold 
+<Threshold>@@Range: -200 to 200 
+dBm@@設定或查詢頻譜自動測量中峰值搜尋的絕對位準門限@@1184@@RW@@N
+MEASurement<m>:SPECtrum:PEXCursion@@MEASurement<m>:SPECtrum:PEXCursion 
+<Excursion>@@Range: 0 to 100 dB@@設定或查詢頻譜自動測量中峰值搜尋的 Peak 
+Excursion 門限@@1184@@RW@@N
+MEASurement<m>:SPECtrum:RESult<n>:COUNt@@MEASurement<m>:SPECtrum:RESult<n>:COUN
+t <Count>@@Range: 1 to 500@@設定或查詢 Peak list 
+或諧波搜尋測量結果的最大列出數量@@1185@@RW@@N
+MEASurement<m>:RESult:SHLabels@@MEASurement<m>:RESult:SHLabels <State>@@OFF | 
+ON | 0 | 1@@設定或查詢頻譜 Peak list 測量是否在圖表中顯示峰值標籤@@1187@@RW@@N
+MEASurement<m>:RESult:LABorder@@MEASurement<m>:RESult:LABorder 
+<FrameType>@@FULL | UNDerline | NONE@@設定或查詢頻譜 Peak 
+標籤的外框顯示樣式@@1186@@RW@@N
+MEASurement<m>:RESult:INVerse@@MEASurement<m>:RESult:INVerse <State>@@OFF | ON 
+| 0 | 1@@設定或查詢頻譜 Peak 標籤文字字體色彩反轉顯示狀態@@1185@@RW@@N
+MEASurement<m>:RESult:MAXCount@@MEASurement<m>:RESult:MAXCount <Count>@@Range: 
+1 to 500@@設定或查詢頻譜圖表中允許顯示的峰值標籤最大數量@@1185@@RW@@N
+MEASurement<m>:RESult:SHFRequency@@MEASurement<m>:RESult:SHFRequency 
+<State>@@OFF | ON | 0 | 1@@設定或查詢頻譜 Peak 
+標籤中是否標示頻率數值資訊@@1186@@RW@@N
+MEASurement<m>:LIMit:ENABle@@MEASurement<m>:LIMit:ENABle <State>@@OFF | ON | 0 
+| 1@@設定或查詢指定自動測量項目的極限檢查啟用狀態@@1187@@RW@@N
+MEASurement<m>:LIMit:LOWer@@MEASurement<m>:LIMit:LOWer <LowerLimit>@@Range: 
+-1e24 to 1e24@@設定或查詢自動測量結果極限檢查的下限臨界值@@1187@@RW@@N
+MEASurement<m>:LIMit:UPPer@@MEASurement<m>:LIMit:UPPer <UpperLimit>@@Range: 
+-1e24 to 1e24@@設定或查詢自動測量結果極限檢查的上限臨界值@@1188@@RW@@N
+MEASurement<m>:LIMit:FAILaction@@MEASurement<m>:LIMit:FAILaction <Action>@@NONE
+| BEEP | STOP | PRNT | 
+SAVE@@設定或查詢測量值超出極限時觸發的硬體動作@@1188@@RW@@N
+MEASurement<m>:LIMit:STATus?@@MEASurement<m>:LIMit:STATus?@@無@@查詢指定自動測
+量項目的極限檢查當前合格判斷結果@@1188@@R@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 16)

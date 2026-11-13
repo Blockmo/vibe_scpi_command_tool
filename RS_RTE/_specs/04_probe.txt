@@ -1,0 +1,94 @@
+Answer:
+PROBe<m>:SETup:STATe?@@PROBe<m>:SETup:STATe?@@無@@查詢指定通道的探棒連接狀態@@1
+054@@R@@N
+PROBe<m>:SETup:TYPE?@@PROBe<m>:SETup:TYPE?@@無@@查詢連接探棒的類型名稱@@1054@@R
+@@N
+PROBe<m>:SETup:NAME?@@PROBe<m>:SETup:NAME?@@無@@查詢連接探棒的型號名稱@@1054@@R
+@@N
+PROBe<m>:SETup:BANDwidth?@@PROBe<m>:SETup:BANDwidth?@@無@@查詢探棒的硬體頻寬@@1
+055@@R@@N
+PROBe<m>:SETup:ATTenuation[:AUTO]?@@PROBe<m>:SETup:ATTenuation[:AUTO]?@@無@@查
+詢自動偵測到的探棒衰減比@@1055@@R@@N
+PROBe<m>:SETup:OFFSet:AZERo@@PROBe<m>:SETup:OFFSet:AZERo@@無@@執行探棒 AutoZero
+自動歸零校正@@1055@@W@@N
+PROBe<m>:SETup:OFFSet:USEautozero@@PROBe<m>:SETup:OFFSet:USEautozero 
+<State>@@OFF | ON | 0 | 1@@設定或查詢是否使用 AutoZero 
+歸零校正數值@@1055@@RW@@N
+PROBe<m>:SETup:MODE@@PROBe<m>:SETup:MODE <Mode>@@NOAction | RUNStop | AUToset |
+AZERo | MEAN@@設定或查詢探棒頭按鈕的動作功能@@1057@@RW@@N
+PROBe<m>:PMETer:VISibility@@PROBe<m>:PMETer:VISibility <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否開啟 ProbeMeter 電壓計顯示@@1058@@RW@@N
+PROBe<m>:SETup:DISPlaydiff@@PROBe<m>:SETup:DISPlaydiff <State>@@OFF | ON | 0 | 
+1@@設定或查詢 ProbeMeter 是否顯示差分與共模測量結果@@1058@@RW@@N
+PROBe<m>:PMETer:RESults:SINGle?@@PROBe<m>:PMETer:RESults:SINGle?@@無@@查詢單端
+探棒 ProbeMeter 直流電壓測量結果@@1058@@R@@N
+PROBe<m>:PMETer:RESults:DIFFerential?@@PROBe<m>:PMETer:RESults:DIFFerential?@@
+無@@查詢 ProbeMeter 差分電壓測量結果@@1059@@R@@N
+PROBe<m>:PMETer:RESults:COMMon?@@PROBe<m>:PMETer:RESults:COMMon?@@無@@查詢 
+ProbeMeter 共模電壓測量結果@@1059@@R@@N
+PROBe<m>:PMETer:RESults:POSitive?@@PROBe<m>:PMETer:RESults:POSitive?@@無@@查詢 
+ProbeMeter 正端單端電壓測量結果@@1060@@R@@N
+PROBe<m>:PMETer:RESults:NEGative?@@PROBe<m>:PMETer:RESults:NEGative?@@無@@查詢 
+ProbeMeter 負端單端電壓測量結果@@1060@@R@@N
+PROBe<m>:SETup:ATTenuation:MODE@@PROBe<m>:SETup:ATTenuation:MODE <Mode>@@AUTO |
+MANual@@設定或查詢探棒衰減率設定模式@@1061@@RW@@N
+PROBe<m>:SETup:ATTenuation:UNIT@@PROBe<m>:SETup:ATTenuation:UNIT <Unit>@@V | A 
+| W@@設定或查詢手動模式下探棒垂直測量單位@@1061@@RW@@N
+PROBe<m>:SETup:ATTenuation:MANual@@PROBe<m>:SETup:ATTenuation:MANual 
+<Attenuation>@@Range: 0.001 to 
+10000@@設定或查詢手動模式下的探棒衰減比倍數@@1061@@RW@@N
+PROBe<m>:SETup:GAIN:MANual@@PROBe<m>:SETup:GAIN:MANual <Gain>@@Range: 0.0001 to
+1000@@設定或查詢手動模式下的探棒增益倍數@@1061@@RW@@N
+PROBe<m>:SETup:CMOFfset@@PROBe<m>:SETup:CMOFfset <Offset>@@Range: -100 to 100 
+V@@設定或查詢探棒的共模偏移電壓@@1062@@RW@@N
+PROBe<m>:SETup:ZAXV@@PROBe<m>:SETup:ZAXV <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否啟用外接衰減器衰減補償@@1062@@RW@@N
+PROBe<m>:SETup:ACCoupling@@PROBe<m>:SETup:ACCoupling <State>@@OFF | ON | 0 | 
+1@@設定或查詢探棒內建交流耦合狀態@@1063@@RW@@N
+PROBe<m>:SETup:ADVanced:PMToffset@@PROBe<m>:SETup:ADVanced:PMToffset@@無@@將 
+ProbeMeter 測得電壓設為通道垂直偏移@@1063@@W@@N
+PROBe<m>:SETup:ADVanced:RANGe@@PROBe<m>:SETup:ADVanced:RANGe <Range>@@AUTO | 
+LOW | HIGH@@設定或查詢高壓差分探棒的測量檔位@@1063@@RW@@N
+PROBe<m>:SETup:ADVanced:FILTer@@PROBe<m>:SETup:ADVanced:FILTer <State>@@OFF | 
+ON | 0 | 1@@設定或查詢探棒控制盒內建低通濾波器狀態@@1064@@RW@@N
+PROBe<m>:SETup:ADVanced:AUDioverload@@PROBe<m>:SETup:ADVanced:AUDioverload 
+<State>@@OFF | ON | 0 | 1@@設定或查詢探棒過載聲響警告狀態@@1064@@RW@@N
+PROBe<m>:SETup:PRMode@@PROBe<m>:SETup:PRMode <Mode>@@DM | CM | P | 
+N@@設定或查詢模組化探棒的量測模式@@1064@@RW@@N
+PROBe<m>:SETup:DMOFfset@@PROBe<m>:SETup:DMOFfset <Offset>@@Range: -100 to 100 
+V@@設定或查詢模組化探棒的差模偏移電壓@@1065@@RW@@N
+PROBe<m>:SETup:POFFset@@PROBe<m>:SETup:POFFset <Offset>@@Range: -100 to 100 
+V@@設定或查詢模組化探棒正端獨立偏移電壓@@1066@@RW@@N
+PROBe<m>:SETup:NOFFset@@PROBe<m>:SETup:NOFFset <Offset>@@Range: -100 to 100 
+V@@設定或查詢模組化探棒負端獨立偏移電壓@@1066@@RW@@N
+PROBe<m>:SETup:TERM:ADJust@@PROBe<m>:SETup:TERM:ADJust <AdjustMode>@@AUTO | 
+MANual@@設定或查詢終端電壓調整模式@@1067@@RW@@N
+PROBe<m>:SETup:TERM:MEASure?@@PROBe<m>:SETup:TERM:MEASure?@@無@@查詢 SMA 
+模組量測到的共模終端電壓@@1067@@R@@N
+PROBe<m>:SETup:ATTenuation:DEFProbe@@PROBe<m>:SETup:ATTenuation:DEFProbe 
+<ProbeName>@@NONE | ZC10 | ZC20 | ZD01 | 
+ZZ80@@設定或查詢預定義探棒型號@@1068@@RW@@N
+PROBe<m>:SETup:OFFSet:TOMean@@PROBe<m>:SETup:OFFSet:TOMean@@無@@將波形平均值設
+為探棒垂直偏移@@1068@@W@@N
+PROBe<m>:SETup:DEGauss@@PROBe<m>:SETup:DEGauss@@無@@執行電流探棒消磁動作@@1069@
+@W@@N
+PROBe<m>:SETup:OFFSet:ZADJust@@PROBe<m>:SETup:OFFSet:ZADJust@@無@@執行電流探棒
+零點校正動作@@1069@@W@@N
+PROBe<m>:SETup:OFFSet:STPRobe@@PROBe<m>:SETup:OFFSet:STPRobe@@無@@將零點校正數
+值儲存至探棒 EEPROM@@1069@@W@@N
+PROBe<m>🆔SWVersion?@@PROBe<m>🆔SWVersion?@@無@@查詢探棒內建控制軟體版本@@1070@
+@R@@N
+PROBe<m>🆔PRDate?@@PROBe<m>🆔PRDate?@@無@@查詢探棒製造日期@@1070@@R@@N
+PROBe<m>🆔PARTnumber?@@PROBe<m>🆔PARTnumber?@@無@@查詢探棒物料料號@@1070@@R@@N
+PROBe<m>🆔SRNumber?@@PROBe<m>🆔SRNumber?@@無@@查詢探棒硬體序列號@@1071@@R@@N
+PROBe<m>:SETup:CAPacitance?@@PROBe<m>:SETup:CAPacitance?@@無@@查詢探棒負載電容
+規格值@@1071@@R@@N
+PROBe<m>:SETup:IMPedance?@@PROBe<m>:SETup:IMPedance?@@無@@查詢探棒負載阻抗規格
+值@@1071@@R@@N
+PROBe<m>:SETup:ADAPter?@@PROBe<m>:SETup:ADAPter?@@無@@查詢探棒轉接頭類型@@1071@
+@R@@N
+PROBe<m>:SETup:ATTenuation:TDEFprobe@@PROBe<m>:SETup:ATTenuation:TDEFprobe 
+<ProbeType>@@NONE | RT_ZP10 | RT_ZS10 | 
+RT_ZD10@@設定或查詢預定義探棒類型類別@@1072@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 5)

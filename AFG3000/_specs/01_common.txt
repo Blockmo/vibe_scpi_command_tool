@@ -1,0 +1,41 @@
+Answer:
+*CAL?@@*CAL?@@無@@執行內部自校正並傳回結果狀態@@2-20@@R@@N
+*CLS@@*CLS@@無@@清除所有事件暫存器與佇列@@2-21@@W@@N
+*ESE@@*ESE <bit_value>; 
+*ESE?@@0~255@@設定或查詢標準事件狀態致能暫存器位元數值@@2-26@@RW@@N
+*ESR?@@*ESR?@@無@@查詢標準事件狀態暫存器數值並自動清零@@2-27@@R@@N
+*IDN?@@*IDN?@@無@@查詢儀器製造商、型號、序號及韌體版本資訊@@2-28@@R@@N
+*OPC@@*OPC; *OPC?@@無@@所有掛起操作完成時設定SESR之OPC位元或傳回1@@2-35@@RW@@N
+*OPT?@@*OPT?@@無@@查詢儀器已安裝之選項清單@@2-36@@R@@N
+*PSC@@*PSC <NR1>; *PSC?@@0|非0@@設定或查詢開機狀態清除旗標@@2-39@@RW@@N
+*RCL@@*RCL {0|1|2|3|4}@@0|1|2|3|4@@從指定設定記憶體位置召回儀器設定@@2-39@@W@@N
+*RST@@*RST@@無@@將儀器設定重置為原廠預設值@@2-40@@W@@N
+*SAV@@*SAV 
+{0|1|2|3|4}@@0|1|2|3|4@@將目前儀器設定儲存至指定設定記憶體位置@@2-40@@W@@N
+*SRE@@*SRE <bit_value>; 
+*SRE?@@0~255@@設定或查詢服務請求致能暫存器位元數值@@2-84@@RW@@N
+*STB?@@*STB?@@無@@查詢狀態位元組暫存器數值@@2-88@@R@@N
+*TRG@@*TRG@@無@@強制產生一個觸發事件@@2-101@@W@@N
+*TST?@@*TST?@@無@@執行儀器自我測試並傳回結果狀態@@2-103@@R@@N
+*WAI@@*WAI@@無@@等待所有掛起之OPC操作完成後再執行後續指令@@2-104@@W@@N
+STATus:OPERation:CONDition?@@STATus:OPERation:CONDition?@@無@@傳回操作狀況暫存
+器(OCR)之內容@@2-84@@R@@N
+STATus:OPERation:ENABle@@STATus:OPERation:ENABle <bit_value>; 
+STATus:OPERation:ENABle?@@<bit_value>::=<NR1>@@設定或查詢操作致能暫存器(OENR)遮
+罩數值@@2-85@@RW@@N
+STATus:OPERation[:EVENt]?@@STATus:OPERation[:EVENt]?@@無@@傳回操作事件暫存器(OE
+VR)數值並自動清零@@2-85@@R@@N
+STATus:PRESet@@STATus:PRESet@@無@@重置SCPI狀態暫存器(OENR與QENR)@@2-86@@W@@N
+STATus:QUEStionable:CONDition?@@STATus:QUEStionable:CONDition?@@無@@傳回可疑狀
+況暫存器(QCR)之內容@@2-86@@R@@N
+STATus:QUEStionable:ENABle@@STATus:QUEStionable:ENABle <bit_value>; 
+STATus:QUEStionable:ENABle?@@<bit_value>::=<NR1>@@設定或查詢可疑致能暫存器(QENR
+)遮罩數值@@2-87@@RW@@N
+STATus:QUEStionable[:EVENt]?@@STATus:QUEStionable[:EVENt]?@@無@@傳回可疑事件暫
+存器(QEVR)數值並自動清零@@2-87@@R@@N
+CALibration[:ALL]@@CALibration[:ALL]; 
+CALibration[:ALL]?@@無@@執行內部自校正(查詢形式傳回結果狀態)@@2-20@@RW@@N
+DIAGnostic[:ALL]@@DIAGnostic[:ALL]; 
+DIAGnostic[:ALL]?@@無@@執行自我測試(查詢形式傳回結果狀態)@@2-22@@RW@@N
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 2)

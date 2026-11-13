@@ -1,0 +1,61 @@
+Answer:
+PROGram:SELected@@PROGram:SELected <NR1> / 
+PROGram:SELected?@@1~10@@設定或查詢目前欲編輯或執行的 Program 編號@@5-20@@RW@@N
+PROGram:LINK@@PROGram:LINK <NR1> / PROGram:LINK?@@0~10@@設定或查詢 Program 
+執行結束後欲連結跳接的下一個 Program 編號@@5-21@@RW@@N
+PROGram:COUNT@@PROGram:COUNT <NR1> / PROGram:COUNT?@@1~15000@@設定或查詢目前 
+Program 的重複執行次數@@5-21@@RW@@N
+PROGram:RUN@@PROGram:RUN ON|OFF|1|0 / PROGram:RUN?@@ON|OFF|1|0@@執行或停止 
+Program 程式輸出的控制狀態@@5-21@@RW@@N
+PROGram:SAVE@@PROGram:SAVE@@無@@將目前編輯好的 Program 
+設定值儲存至記憶體@@5-21@@W@@N
+PROGram:SEQuence:SELected@@PROGram:SEQuence:SELected <NR1> / 
+PROGram:SEQuence:SELected?@@1~10@@設定或查詢 Program 中欲編輯的 Sequence 
+步驟編號@@5-22@@RW@@N
+PROGram:SEQuence:TYPE@@PROGram:SEQuence:TYPE AUTO|MANUAL|TRI|SKIP / 
+PROGram:SEQuence:TYPE?@@AUTO|MANUAL|TRI|SKIP@@設定或查詢指定 Sequence 
+的動作觸發類型@@5-22@@RW@@N
+PROGram:SEQuence:VOLTage@@PROGram:SEQuence:VOLTage <NRf+> / 
+PROGram:SEQuence:VOLTage?@@依各型號規格(V)@@設定或查詢指定 Sequence 
+的輸出電壓值@@5-22@@RW@@N
+PROGram:SEQuence:VOLTage:SLEW@@PROGram:SEQuence:VOLTage:SLEW <NR1> / 
+PROGram:SEQuence:VOLTage:SLEW?@@0.01~10.00(V/ms)@@設定或查詢指定 Sequence 
+的電壓變換斜率@@5-22@@RW@@N
+PROGram:SEQuence:CURRent@@PROGram:SEQuence:CURRent <NRf+> / 
+PROGram:SEQuence:CURRent?@@依各型號規格(A)@@設定或查詢指定 Sequence 
+的輸出電流限制值@@5-23@@RW@@N
+PROGram:SEQuence:CURRent:SLEW@@PROGram:SEQuence:CURRent:SLEW <NRf1> / 
+PROGram:SEQuence:CURRent:SLEW?@@依各型號規格(A/ms)@@設定或查詢指定 Sequence 
+的電流變換斜率@@5-23@@RW@@N
+PROGram:SEQuence:CURRent:SLEWINF@@PROGram:SEQuence:CURRent:SLEWINF 
+ENABLE|DISABLE / PROGram:SEQuence:CURRent:SLEW?@@ENABLE|DISABLE@@設定或取消指定
+Sequence 的電流斜率為無限大(INF)@@5-23@@RW@@N
+PROGram:SEQuence:TTLport@@PROGram:SEQuence:TTLport <NRf1> / 
+PROGram:SEQuence:TTLport?@@0~255@@設定或查詢指定 Sequence 執行的 8-bit TTL Port
+數位輸出值@@5-24@@RW@@N
+PROGram:SEQuence:TIME@@PROGram:SEQuence:TIME <NRf1> / 
+PROGram:SEQuence:TIME?@@0.005~15000(S)@@設定或查詢指定 Sequence 在 AUTO 
+模式下的持續執行時間@@5-24@@RW@@N
+PROGram:CLEAR@@PROGram:CLEAR@@無@@清除目前選取 Program 裡的所有 Sequence 
+步驟@@5-24@@W@@N
+PROGram:ADD@@PROGram:ADD <NR1> / PROGram:ADD?@@1~100@@在目前 Program 中新增一個
+Sequence 或查詢剩餘可新增數@@5-24@@RW@@N
+PROGram:MAX?@@PROGram:MAX?@@無@@查詢目前 Program 中已建立的 Sequence 
+總數量@@5-24@@R@@N
+PROGram:SEQuence@@PROGram:SEQuence 
+<arg1>,<arg2>,<arg3>,<arg4>,<arg5>,<arg6>,<arg7> / 
+PROGram:SEQuence?@@7個參數(Type,V,V_SR,I,I_SR,TTL,Time)@@一次性設定或查詢單一 
+Sequence 的完整參數組合@@5-25@@RW@@N
+PROGram:MODE@@PROGram:MODE LIST|STEP / PROGram:MODE?@@LIST|STEP@@設定或查詢 
+Program 輸出的波形模式(LIST或STEP)@@5-25@@RW@@N
+PROGram:STEP:STARTV@@PROGram:STEP:STARTV <NRf+> / 
+PROGram:STEP:STARTV?@@依各型號規格(V)@@設定或查詢 STEP 
+模式下的起始電壓值@@5-25@@RW@@N
+PROGram:STEP:ENDV@@PROGram:STEP:ENDV <NRf+> / 
+PROGram:STEP:ENDV?@@依各型號規格(V)@@設定或查詢 STEP 
+模式下的結束電壓值@@5-25@@RW@@N
+PROGram:STEP:TIME@@PROGram:STEP:TIME <Hour>,<Minute>,<Second> / 
+PROGram:STEP:TIME?@@Hour:0~99, Min:0~59, Sec:0~59.99@@設定或查詢 STEP 
+模式電壓階梯變化的執行總時間@@5-25@@RW@@N
+
+Conversation: 10655a36-4886-4a16-b60a-4ec6010c10dd (turn 5)

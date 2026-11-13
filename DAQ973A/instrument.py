@@ -150,6 +150,30 @@ class DAQ973A:
             parts.append(self._ch_token(ch_list))
         return ",".join(parts)
 
+    @staticmethod
+    def _query_value(entry: dict, value):
+        """查詢時要帶的值：只在查詢語法接受參數時才帶（避免把寫入值送成 OUTP? ON）。
+
+        - qarg=False：查詢不帶值（通道清單照帶）。
+        - 僅查詢指令（如 MEASure:...? <range>）：值照原樣帶。
+        - 讀寫兩用：qsel 指定多參數寫入值中要帶的欄位（如 SLOT:LABel? <slot>）；
+          否則只在值為 qopts 關鍵字（如 MIN/MAX/DEF，可長/短寫）時才帶。
+        """
+        if value in (None, "") or not entry.get("qarg"):
+            return None
+        if not entry["set"]:
+            return value
+        if entry.get("qsel"):
+            parts = [p.strip() for p in str(value).split(",")]
+            if len(parts) <= max(entry["qsel"]):
+                return str(value).strip()          # 只填了查詢參數本身
+            return ",".join(parts[i] for i in entry["qsel"])
+        v = str(value).strip().upper()
+        for opt in entry.get("qopts") or ():
+            if v in (opt.upper(), "".join(ch for ch in opt if ch.isupper() or ch.isdigit())):
+                return v
+        return None
+
     def set_command(self, key: str, value=None, ch_list=None) -> None:
         """送出任一條可寫入指令。value 依型態解讀；ch_list 為通道清單（如 '101:105'）。"""
         entry = self.command_info(key)
@@ -163,7 +187,7 @@ class DAQ973A:
         entry = self.command_info(key)
         if not entry["get"]:
             raise ValueError(f"指令 {entry['name']} 不支援讀取（set-only）")
-        param = self._param_str(entry, value, ch_list)
+        param = self._param_str(entry, self._query_value(entry, value), ch_list)
         stem = f"{entry['scpi']}?"
         return self.query(f"{stem} {param}".rstrip())
 

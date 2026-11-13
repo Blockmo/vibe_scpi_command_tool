@@ -1,0 +1,101 @@
+Answer:
+LAYout:ZOOM:ADD@@LAYout:ZOOM:ADD <Diagram>, <Type>, <State>, <XStart>, <XStop>,
+<YStart>, <YStop>, <ZoomName>@@<Diagram> <Type> <State> <XStart> <XStop> 
+<YStart> <YStop> <ZoomName>@@在指定圖表中新增一個 Zoom 
+縮放區域與視窗@@1131@@W@@N
+LAYout:ZOOM:ADDCoupled@@LAYout:ZOOM:ADDCoupled <Diagram>, <SourceZoom>, 
+<ZoomName>@@<Diagram> <SourceZoom> <ZoomName>@@新增一個與現有 Zoom 
+縮放區域尺吋連動的 Zoom 圖表視窗@@1131@@W@@N
+LAYout:ZOOM:REMove@@LAYout:ZOOM:REMove <Diagram>, <ZoomName>@@<Diagram> 
+<ZoomName>@@移除指定圖表中的指定 Zoom 縮放區域視窗@@1131@@W@@N
+LAYout:ZOOM:ONEDiagram@@LAYout:ZOOM:ONEDiagram <State>@@OFF | ON | 0 | 
+1@@設定或查詢多重 Zoom 圖表是否重疊顯示於單一視窗中@@1132@@RW@@N
+LAYout:ZOOM:POSCoupling@@LAYout:ZOOM:POSCoupling <State>@@OFF | ON | 0 | 
+1@@設定或查詢連動 Zoom 區域之間的位置連動狀態@@1132@@RW@@N
+LAYout:ZOOM:HORZontal:MODE@@LAYout:ZOOM:HORZontal:MODE <Diagram>, <ZoomName>, 
+<Mode>@@ABSolute | RELative@@設定或查詢水平方向 Zoom 
+區域的參數定位模式@@1132@@RW@@N
+LAYout:ZOOM:HORZontal:ABSolute:STARt@@LAYout:ZOOM:HORZontal:ABSolute:STARt 
+<Diagram>, <ZoomName>, <Start>@@Range: -1000 to 1000 
+s@@設定或查詢絕對時間模式下 Zoom 區域的水平起始時間@@1133@@RW@@N
+LAYout:ZOOM:HORZontal:ABSolute:STOP@@LAYout:ZOOM:HORZontal:ABSolute:STOP 
+<Diagram>, <ZoomName>, <Stop>@@Range: -1000 to 1000 s@@設定或查詢絕對時間模式下
+Zoom 區域的水平結束時間@@1133@@RW@@N
+LAYout:ZOOM:HORZontal:ABSolute:POSition@@LAYout:ZOOM:HORZontal:ABSolute:POSitio
+n <Diagram>, <ZoomName>, <Position>@@Range: -1000 to 1000 
+s@@設定或查詢絕對時間模式下 Zoom 區域中心點的水平時間位置@@1133@@RW@@N
+LAYout:ZOOM:HORZontal:ABSolute:SPAN@@LAYout:ZOOM:HORZontal:ABSolute:SPAN 
+<Diagram>, <ZoomName>, <Span>@@Range: 10e-12 to 1000 
+s@@設定或查詢絕對時間模式下 Zoom 區域的水平時間跨度長度@@1133@@RW@@N
+LAYout:ZOOM:HORZontal:RELative:STARt@@LAYout:ZOOM:HORZontal:RELative:STARt 
+<Diagram>, <ZoomName>, <Start>@@Range: 0 to 100 %@@設定或查詢相對百分比模式下 
+Zoom 區域的水平起始位置@@1135@@RW@@N
+LAYout:ZOOM:HORZontal:RELative:STOP@@LAYout:ZOOM:HORZontal:RELative:STOP 
+<Diagram>, <ZoomName>, <Stop>@@Range: 0 to 100 %@@設定或查詢相對百分比模式下 
+Zoom 區域的水平結束位置@@1135@@RW@@N
+LAYout:ZOOM:HORZontal:RELative:POSition@@LAYout:ZOOM:HORZontal:RELative:POSitio
+n <Diagram>, <ZoomName>, <Position>@@Range: 0 to 100 
+%@@設定或查詢相對百分比模式下 Zoom 區域中心點的水平位置@@1134@@RW@@N
+LAYout:ZOOM:HORZontal:RELative:SPAN@@LAYout:ZOOM:HORZontal:RELative:SPAN 
+<Diagram>, <ZoomName>, <Span>@@Range: 0 to 100 %@@設定或查詢相對百分比模式下 
+Zoom 區域的水平寬度百分比@@1134@@RW@@N
+LAYout:ZOOM:VERTical:MODE@@LAYout:ZOOM:VERTical:MODE <Diagram>, <ZoomName>, 
+<Mode>@@ABSolute | RELative@@設定或查詢垂直方向 Zoom 
+區域的參數定位模式@@1135@@RW@@N
+LAYout:ZOOM:VERTical:ABSolute:STARt@@LAYout:ZOOM:VERTical:ABSolute:STARt 
+<Diagram>, <ZoomName>, <Start>@@Range: -100 to 100 V@@設定或查詢絕對電壓模式下 
+Zoom 區域的垂直起始位準@@1136@@RW@@N
+LAYout:ZOOM:VERTical:ABSolute:STOP@@LAYout:ZOOM:VERTical:ABSolute:STOP 
+<Diagram>, <ZoomName>, <Stop>@@Range: -100 to 100 V@@設定或查詢絕對電壓模式下 
+Zoom 區域的垂直結束位準@@1136@@RW@@N
+LAYout:ZOOM:VERTical:ABSolute:POSition@@LAYout:ZOOM:VERTical:ABSolute:POSition 
+<Diagram>, <ZoomName>, <Position>@@Range: -100 to 100 
+V@@設定或查詢絕對電壓模式下 Zoom 區域中心點的垂直電壓位置@@1136@@RW@@N
+LAYout:ZOOM:VERTical:ABSolute:SPAN@@LAYout:ZOOM:VERTical:ABSolute:SPAN 
+<Diagram>, <ZoomName>, <Span>@@Range: 1e-3 to 200 V@@設定或查詢絕對電壓模式下 
+Zoom 區域的垂直電壓高度範圍@@1136@@RW@@N
+LAYout:ZOOM:VERTical:RELative:STARt@@LAYout:ZOOM:VERTical:RELative:STARt 
+<Diagram>, <ZoomName>, <Start>@@Range: -100 to 100 %@@設定或查詢相對模式下 Zoom
+區域的垂直起始百分比位置@@1137@@RW@@N
+LAYout:ZOOM:VERTical:RELative:STOP@@LAYout:ZOOM:VERTical:RELative:STOP 
+<Diagram>, <ZoomName>, <Stop>@@Range: -100 to 100 %@@設定或查詢相對模式下 Zoom 
+區域的垂直結束百分比位置@@1138@@RW@@N
+LAYout:ZOOM:VERTical:RELative:POSition@@LAYout:ZOOM:VERTical:RELative:POSition 
+<Diagram>, <ZoomName>, <Position>@@Range: -100 to 100 %@@設定或查詢相對模式下 
+Zoom 區域中心點的垂直百分比位置@@1137@@RW@@N
+LAYout:ZOOM:VERTical:RELative:SPAN@@LAYout:ZOOM:VERTical:RELative:SPAN 
+<Diagram>, <ZoomName>, <Span>@@Range: 0 to 100 %@@設定或查詢相對模式下 Zoom 
+區域的垂直高度百分比範圍@@1137@@RW@@N
+REFCurve<m>:STATe@@REFCurve<m>:STATe <State>@@OFF | ON | 0 | 
+1@@設定或查詢指定參考波形在螢幕上的顯示狀態@@1139@@RW@@N
+REFCurve<m>:SOURce@@REFCurve<m>:SOURce <Source>@@CHANnel1 | CHANnel2 | CHANnel3
+| CHANnel4 | MATH1 | MATH2 | MATH3 | MATH4 | REFCurve1 | REFCurve2 | REFCurve3 
+| REFCurve4@@設定或查詢指定參考波形所載入的來源波形訊號@@1139@@RW@@N
+REFCurve<m>:UPDate@@REFCurve<m>:UPDate@@無@@將當前來源波形的訊號資料快照更新至
+參考波形記憶體@@1140@@W@@N
+REFCurve<m>:CLEar@@REFCurve<m>:CLEar@@無@@清除並關閉指定的參考波形及其內部記憶
+體資料@@1140@@W@@N
+REFCurve<m>:OPEN@@REFCurve<m>:OPEN 
+<FileName>@@<FileName>@@自指定檔案路徑載入參考波形資料檔案@@1140@@W@@N
+REFCurve<m>:SAVE@@REFCurve<m>:SAVE 
+<FileName>@@<FileName>@@將指定參考波形儲存至指定檔案路徑與格式@@1140@@W@@N
+REFCurve<m>:DELete@@REFCurve<m>:DELete 
+<FileName>@@<FileName>@@刪除指定路徑下儲存的參考波形檔案@@1140@@W@@N
+REFCurve<m>:RESCale:VERTical:STATe@@REFCurve<m>:RESCale:VERTical:STATe 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢是否啟用參考波形的獨立垂直偏移縮放@@1141@@RW@@N
+REFCurve<m>:RESCale:VERTical:OFFSet@@REFCurve<m>:RESCale:VERTical:OFFSet 
+<Offset>@@Range: -100 to 100 
+V@@設定或查詢參考波形的獨立垂直電壓偏移值@@1141@@RW@@N
+REFCurve<m>:RESCale:HORizontal:STATe@@REFCurve<m>:RESCale:HORizontal:STATe 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢是否啟用參考波形的獨立水平時間偏移縮放@@1141@@RW@@N
+REFCurve<m>:RESCale:HORizontal:OFFSet@@REFCurve<m>:RESCale:HORizontal:OFFSet 
+<Offset>@@Range: -1000 to 1000 
+s@@設定或查詢參考波形的獨立水平時間偏移值@@1142@@RW@@N
+REFCurve<m>[:WAVeform<n>]:DATA[:VALues]?@@REFCurve<m>[:WAVeform<n>]:DATA[:VALue
+s]? [<StartSample>, <StopSample>]@@無@@讀取參考波形的採樣點數值資料@@1142@@R@@N
+REFCurve<m>[:WAVeform<n>]:DATA:HEADer?@@REFCurve<m>[:WAVeform<n>]:DATA:HEADer?@
+@無@@讀取參考波形資料的表頭參數資訊@@1143@@R@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 10)

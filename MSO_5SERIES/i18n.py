@@ -44,6 +44,14 @@ _STR = {
     "log_frame":       {"en": "Log / SCPI traffic",   "zh": "紀錄 / SCPI 流量"},
     "read_error":      {"en": "read error",           "zh": "讀取錯誤"},
     # --- 訊息框 ---
+    # --- 掃描 VISA 資源 ---
+    "scan":            {"en": "Scan",                  "zh": "掃描"},
+    "scanning":        {"en": "Scanning VISA resources…", "zh": "正在掃描 VISA 資源…"},
+    "scan_fail":       {"en": "Scan failed",           "zh": "掃描失敗"},
+    # --- 指令搜尋 ---
+    "search":          {"en": "Search:",               "zh": "搜尋："},
+    "search_count":    {"en": "{n} match(es)",         "zh": "符合 {n} 條"},
+    "search_none":     {"en": "no match",              "zh": "無符合指令"},
     "conn_fail":       {"en": "Connection failed",     "zh": "連線失敗"},
     "missing_title":   {"en": "Missing parameter",     "zh": "缺少參數"},
     "missing_msg":     {"en": "Please select or enter a parameter value",
@@ -60,21 +68,6 @@ _STR = {
     # --- 面板標題 ---
     "panel_title":     {"en": "{model} Control Panel (full command set)",
                         "zh": "{model} 控制面板（完整指令集）"},
-    # --- 啟動器 ---
-    "launcher_title":  {"en": "SCPI Instrument Control — Launcher",
-                        "zh": "SCPI 儀器控制 — 共用啟動器"},
-    "launcher_choose": {"en": "Choose an instrument panel to open",
-                        "zh": "選擇要開啟的儀器控制面板"},
-    "launcher_summary":{"en": "{n} instruments · {total} SCPI commands (source: each instrument's manual)",
-                        "zh": "共 {n} 台儀器、{total} 條 SCPI 指令（資料來源：各台手冊）"},
-    "open_panel":      {"en": "Open panel ▶",          "zh": "開啟面板 ▶"},
-    "ready":           {"en": "Ready",                 "zh": "就緒"},
-    "launched":        {"en": "Launched {name} panel (PID {pid})",
-                        "zh": "已啟動 {name} 控制面板（PID {pid}）"},
-    "launch_fail":     {"en": "Launch failed",         "zh": "啟動失敗"},
-    "card_meta":       {"en": "commands: {count} · folder: {folder}/",
-                        "zh": "指令數：{count}　·　資料夾：{folder}/"},
-    "file_missing":    {"en": "File not found",        "zh": "找不到檔案"},
 }
 
 _current = "en"

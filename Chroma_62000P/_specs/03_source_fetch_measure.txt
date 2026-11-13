@@ -1,0 +1,47 @@
+Answer:
+SOURce:VOLTage@@SOURce:VOLTage <NRf+> / 
+SOURce:VOLTage?@@依各型號規格(V)@@設定或查詢電源供應器的輸出電壓值@@5-15@@RW@@N
+SOURce:VOLTage:LIMit:{HIGH|LOW}@@SOURce:VOLTage:LIMIT:HIGH <NRf+> / 
+SOURce:VOLTage:LIMIT:LOW <NRf+> / SOURce:VOLTage:LIMIT:HIGH? / 
+SOURce:VOLTage:LIMIT:LOW?@@依各型號規格(V)@@設定或查詢輸出電壓的上下限制值@@5-1
+6@@RW@@N
+SOURce:VOLTage:PROTect:HIGH@@SOURce:VOLTage:PROTect:HIGH <NRf+> / 
+SOURce:VOLTage:PROTect:HIGH?@@依各型號規格(V)@@設定或查詢過電壓保護 (OVP) 
+的觸發高限值@@5-16@@RW@@N
+SOURce:VOLTage:SLEW@@SOURce:VOLTage:SLEW <NR1> / SOURce:VOLTage:SLEW?@@0.001~10
+(V/ms)@@設定或查詢輸出電壓上升或下降斜率@@5-16@@RW@@N
+SOURce:CURRent@@SOURce:CURRent <NRf+> / 
+SOURce:CURRent?@@依各型號規格(A)@@設定或查詢電源供應器的輸出電流值@@5-16@@RW@@N
+SOURce:CURRent:LIMit:{HIGH|LOW}@@SOURce:CURRent:LIMIT:HIGH <NRf+> / 
+SOURce:CURRent:LIMIT:LOW <NRf+> / SOURce:CURRent:LIMIT:HIGH? / 
+SOURce:CURRent:LIMIT:LOW?@@依各型號規格(A)@@設定或查詢輸出電流的上下限制值@@5-1
+6@@RW@@N
+SOURce:CURRent:PROTect:HIGH@@SOURce:CURRent:PROTect:HIGH <NRf+> / 
+SOURce:CURRent:PROTect:HIGH?@@依各型號規格(A)@@設定或查詢過電流保護 (OCP) 
+的觸發高限值@@5-16@@RW@@N
+SOURce:CURRent:SLEW@@SOURce:CURRent:SLEW <NR1> / SOURce:CURRent:SLEW?@@0.001~2 
+(A/ms)@@設定或查詢輸出電流上升或下降斜率@@5-17@@RW@@N
+SOURce:CURRent:SLEWINF@@SOURce:CURRent:SLEWINF ENABLE|DISABLE / 
+SOURce:CURRent:SLEW?@@ENABLE|DISABLE@@設定或取消電流斜率為無限大 
+(INF)@@5-17@@RW@@N
+SOURce:POWer:PROTect:HIGH@@SOURce:POWer:PROTect:HIGH <NR1> / 
+SOURce:POWer:PROTect:HIGH?@@依各型號規格(W)@@設定或查詢過功率保護 (OPP) 
+的觸發點@@5-17@@RW@@N
+SOURce:DCON:{RISE|FALL}@@SOURce:DCON:RISE <NRf+> / SOURce:DCON:FALL <NRf+> / 
+SOURce:DCON:RISE? / SOURce:DCON:FALL?@@依各型號電壓範圍(V)@@設定或查詢 DC_ON 
+信號觸發的上升與下降電壓點@@5-17@@RW@@N
+FETCh:VOLTage?@@FETCh:VOLTage?@@無@@讀取電源供應器輸出的即時電壓量測值@@5-19@@R
+@@N
+FETCh:CURRent?@@FETCh:CURRent?@@無@@讀取電源供應器輸出的即時電流量測值@@5-19@@R
+@@N
+FETCh:POWer?@@FETCh:POWer?@@無@@讀取電源供應器輸出的即時功率量測值@@5-20@@R@@N
+FETCh:STATus?@@FETCh:STATus?@@無@@查詢電源供應器目前的系統狀態碼與模式@@5-20@@R
+@@N
+MEASure:VOLTage?@@MEASure:VOLTage?@@無@@讀取電源供應器輸出端的量測電壓值@@5-20@
+@R@@N
+MEASure:CURRent?@@MEASure:CURRent?@@無@@讀取電源供應器輸出端的量測電流值@@5-20@
+@R@@N
+MEASure:POWer?@@MEASure:POWer?@@無@@讀取電源供應器輸出端的量測功率值@@5-20@@R@@
+N
+
+Conversation: 10655a36-4886-4a16-b60a-4ec6010c10dd (turn 4)

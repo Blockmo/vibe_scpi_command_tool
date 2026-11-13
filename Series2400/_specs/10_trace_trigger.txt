@@ -1,0 +1,69 @@
+Answer:
+:TRACe:DATA?@@:TRACe:DATA?@@無@@讀取緩衝區中所有儲存的量測讀值@@18-114@@R@@N
+:TRACe:CLEar@@:TRACe:CLEar@@無@@清除緩衝區中所有儲存的讀值數據@@18-114@@W@@N
+:TRACe:FREE?@@:TRACe:FREE?@@無@@查詢緩衝區記憶體可用位元組與保留位元組狀態@@18-
+114@@R@@N
+:TRACe:POINts@@:TRACe:POINts <n>@@<n> = 1 至 
+2500|DEFault|MINimum|MAXimum@@設定與查詢緩衝區可儲存的最大數據容量筆數@@18-114@
+@RW@@N
+:TRACe:POINts:ACTual?@@:TRACe:POINts:ACTual?@@無@@查詢緩衝區目前已實際儲存的數
+據筆數@@18-114@@R@@N
+:TRACe:FEED@@:TRACe:FEED <name>@@<name> = 
+{SENSe[1]|CALCulate[1]|CALCulate2}@@設定與查詢寫入緩衝區的數據來源路徑@@18-114@
+@RW@@N
+:TRACe:FEED:CONTrol@@:TRACe:FEED:CONTrol <name>@@<name> = 
+{NEXT|NEVer}@@設定與查詢緩衝區資料擷取控制模式 
+(填滿即停止或停用)@@18-114@@RW@@N
+:TRACe:TSTamp:FORMat@@:TRACe:TSTamp:FORMat <name>@@<name> = 
+{ABSolute|DELTa}@@設定與查詢緩衝區時間戳記顯示格式 (絕對或相對)@@18-116@@RW@@N
+:INITiate[:IMMediate]@@:INITiate[:IMMediate]@@無@@啟動源量測循環，將儀器帶離閒
+置狀態@@18-117@@W@@N
+:ABORt@@:ABORt@@無@@中止當前源量測操作並重置觸發系統至閒置狀態@@18-117@@W@@N
+:ARM[:SEQuence[1]][:LAYer[1]]:COUNt@@:ARM[:SEQuence[1]][:LAYer[1]]:COUNt 
+<n>@@<n> = 1 至 2500|INFinite|DEFault|MINimum|MAXimum@@設定與查詢 Arm 
+層循環重複執行次數@@18-117@@RW@@N
+:ARM[:SEQuence[1]][:LAYer[1]]:SOURce@@:ARM[:SEQuence[1]][:LAYer[1]]:SOURce 
+<name>@@<name> = 
+{IMMediate|TLINk|TIMer|MANual|BUS|NSTest|PSTest|BSTest}@@設定與查詢 Arm 
+層事件觸發控制來源@@18-117@@RW@@N
+:ARM[:SEQuence[1]][:LAYer[1]]:TIMer@@:ARM[:SEQuence[1]][:LAYer[1]]:TIMer 
+<n>@@<n> = 0.001 至 99999.99 (秒)@@設定與查詢 Arm 
+層計時器觸發時間間隔@@18-117@@RW@@N
+:ARM[:SEQuence[1]][:LAYer[1]][:TCONfigure]:DIRection@@:ARM[:SEQuence[1]][:LAYer
+[1]][:TCONfigure]:DIRection <name>@@<name> = {SOURce|ACCeptor}@@設定與查詢 Arm 
+層觸發旁路 (Bypass) 啟用狀態@@18-117@@RW@@N
+:ARM[:SEQuence[1]][:LAYer[1]][:TCONfigure]:ILINe@@:ARM[:SEQuence[1]][:LAYer[1]]
+[:TCONfigure]:ILINe <n>@@<n> = 1|2|3|4@@設定與查詢 Arm 層 Trigger Link 
+輸入線路編號@@18-117@@RW@@N
+:ARM[:SEQuence[1]][:LAYer[1]][:TCONfigure]:OLINe@@:ARM[:SEQuence[1]][:LAYer[1]]
+[:TCONfigure]:OLINe <n>@@<n> = 1|2|3|4@@設定與查詢 Arm 層 Trigger Link 
+輸出線路編號@@18-117@@RW@@N
+:ARM[:SEQuence[1]][:LAYer[1]][:TCONfigure]:OUTPut@@:ARM[:SEQuence[1]][:LAYer[1]
+][:TCONfigure]:OUTPut <name>@@<name> = {TENTer|TEXit|NONE}@@設定與查詢 Arm 
+層觸發輸出事件點 (進入或離開 Trigger 層)@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]]:CLEar@@:TRIGger[:SEQuence[1]]:CLEar@@無@@立即清除所有暫
+存未執行的輸入觸發訊號@@18-116@@W@@N
+:TRIGger[:SEQuence[1]]:COUNt@@:TRIGger[:SEQuence[1]]:COUNt <n>@@<n> = 1 至 
+2500|DEFault|MINimum|MAXimum@@設定與查詢 Trigger 層觸發計數次數@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]]:DELay@@:TRIGger[:SEQuence[1]]:DELay <n>@@<n> = 0 至 
+999.9999 (秒)@@設定與查詢 Trigger 層觸發延遲時間@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]]:SOURce@@:TRIGger[:SEQuence[1]]:SOURce <name>@@<name> = 
+{IMMediate|TLINk}@@設定與查詢 Trigger 層事件觸發控制來源@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]][:TCONfigure]:DIRection@@:TRIGger[:SEQuence[1]][:TCONfigu
+re]:DIRection <name>@@<name> = {SOURce|ACCeptor}@@設定與查詢 Trigger 層觸發旁路
+(Bypass) 啟用狀態@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]][:TCONfigure][:ASYNchronous]:INPut@@:TRIGger[:SEQuence[1]
+][:TCONfigure][:ASYNchronous]:INPut <event list>@@<event list> = 
+{SOURce|DELay|SENSe|NONE}@@設定與查詢 Trigger 
+層啟用之輸入觸發事件偵測器@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]][:TCONfigure]:ILINe@@:TRIGger[:SEQuence[1]][:TCONfigure]:
+ILINe <n>@@<n> = 1|2|3|4@@設定與查詢 Trigger 層 Trigger Link 
+輸入線路編號@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]][:TCONfigure]:OLINe@@:TRIGger[:SEQuence[1]][:TCONfigure]:
+OLINe <n>@@<n> = 1|2|3|4@@設定與查詢 Trigger 層 Trigger Link 
+輸出線路編號@@18-117@@RW@@N
+:TRIGger[:SEQuence[1]][:TCONfigure]:OUTPut@@:TRIGger[:SEQuence[1]][:TCONfigure]
+:OUTPut <event list>@@<event list> = {SOURce|DELay|SENSe|NONE}@@設定與查詢 
+Trigger 層觸發輸出事件發送時機@@18-117@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 11)

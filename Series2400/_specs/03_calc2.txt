@@ -1,0 +1,66 @@
+Answer:
+:CALCulate2:FEED@@:CALCulate2:FEED <name>@@<name> = 
+{CALCulate[1]|VOLTage|CURRent|RESistance}@@設定與查詢 CALC2 
+極限測試輸入資料源路徑@@18-33@@RW@@N
+:CALCulate2:NULL:OFFSet@@:CALCulate2:NULL:OFFSet <n>@@<n> = -9.999999e20 至 
+9.999999e20@@設定與查詢 Null (Relative) 偏移值@@18-34@@RW@@N
+:CALCulate2:NULL:STATe@@:CALCulate2:NULL:STATe <b>@@<b> = {ON|OFF}@@設定與查詢 
+Null (Relative) 偏移功能啟用狀態@@18-34@@RW@@N
+:CALCulate2:NULL:ACQuire@@:CALCulate2:NULL:ACQuire@@無@@自動擷取當前量測讀值並
+設定為 Null 偏移值@@18-34@@W@@N
+:CALCulate2:DATA[:LATest]?@@:CALCulate2:DATA[:LATest]?@@無@@讀取最新一次 CALC2 
+計算或極限測試結果@@18-34@@R@@N
+:CALCulate2:DATA?@@:CALCulate2:DATA?@@無@@讀取 CALC2 
+極限測試之所有計算結果@@18-34@@R@@N
+:CALCulate2:LIMit[1]:COMPliance:FAIL@@:CALCulate2:LIMit[1]:COMPliance:FAIL 
+<name>@@<name> = {IN|OUT}@@設定與查詢 Limit 1 合規過載 (Compliance) 
+失敗條件@@18-35@@RW@@N
+:CALCulate2:LIMit[1]:COMPliance:SOURce2@@:CALCulate2:LIMit[1]:COMPliance:SOURce
+2 <NRf>|<NDN>@@<NRf>|<NDN> = 0 至 15@@設定與查詢 Limit 1 
+測試失敗時的數位輸出位元圖樣@@18-35@@RW@@N
+:CALCulate2:LIMit[1]:STATe@@:CALCulate2:LIMit[1]:STATe <b>@@<b> = 
+{ON|OFF}@@設定與查詢 Limit 1 (Compliance) 測試啟用狀態@@18-37@@RW@@N
+:CALCulate2:LIMit[1]:FAIL?@@:CALCulate2:LIMit[1]:FAIL?@@無@@讀取 Limit 1 
+測試結果 (0=Pass, 1=Fail)@@18-37@@R@@N
+:CALCulate2:LIMitX:UPPer[:DATA]@@:CALCulate2:LIMitX:UPPer[:DATA] <n>@@<n> = 
+-9.999999e20 至 9.999999e20，X = 2,3,5-12@@設定與查詢 Limit 2, 3, 5-12 
+測試上限值@@18-35@@RW@@N
+:CALCulate2:LIMitX:UPPer:SOURce2@@:CALCulate2:LIMitX:UPPer:SOURce2 
+<NRf>|<NDN>@@<NRf>|<NDN> = 0 至 15，X = 2,3,5-12@@設定與查詢 Grading 
+模式下上限失敗時的數位輸出位元圖樣@@18-36@@RW@@N
+:CALCulate2:LIMitX:LOWer[:DATA]@@:CALCulate2:LIMitX:LOWer[:DATA] <n>@@<n> = 
+-9.999999e20 至 9.999999e20，X = 2,3,5-12@@設定與查詢 Limit 2, 3, 5-12 
+測試下限值@@18-35@@RW@@N
+:CALCulate2:LIMitX:LOWer:SOURce2@@:CALCulate2:LIMitX:LOWer:SOURce2 
+<NRf>|<NDN>@@<NRf>|<NDN> = 0 至 15，X = 2,3,5-12@@設定與查詢 Grading 
+模式下下限失敗時的數位輸出位元圖樣@@18-36@@RW@@N
+:CALCulate2:LIMitX:PASS:SOURce2@@:CALCulate2:LIMitX:PASS:SOURce2 
+<NRf>|<NDN>@@<NRf>|<NDN> = 0 至 15，X = 2,3,5-12@@設定與查詢 Sorting 
+模式下特定極限測試通過時的數位輸出位元圖樣@@18-37@@RW@@N
+:CALCulate2:LIMitX:STATe@@:CALCulate2:LIMitX:STATe <b>@@<b> = {ON|OFF}，X = 
+2,3,5-12@@設定與查詢 Limit 2, 3, 5-12 測試啟用狀態@@18-37@@RW@@N
+:CALCulate2:LIMitX:FAIL?@@:CALCulate2:LIMitX:FAIL?@@X = 2,3,5-12@@讀取 Limit 2,
+3, 5-12 測試結果 (0=Pass, 1=Fail)@@18-37@@R@@N
+:CALCulate2:CLIMits:BCONtrol@@:CALCulate2:CLIMits:BCONtrol <name>@@<name> = 
+{IMMediate|END}@@設定與查詢數位輸出分類 (Binning) 資訊更新時機@@18-41@@RW@@N
+:CALCulate2:CLIMits:MODE@@:CALCulate2:CLIMits:MODE <name>@@<name> = 
+{GRADing|SORTing}@@設定與查詢極限測試之數位輸出控制模式 (Grading 或 
+Sorting)@@18-41@@RW@@N
+:CALCulate2:CLIMits:PASS:SOURce2@@:CALCulate2:CLIMits:PASS:SOURce2 
+<NRf>|<NDN>@@<NRf>|<NDN> = 0 至 
+15@@設定與查詢複合測試全部通過時的數位輸出位元圖樣@@18-39@@RW@@N
+:CALCulate2:CLIMits:PASS:SMLocation@@:CALCulate2:CLIMits:PASS:SMLocation 
+<location>@@<location> = {<NRf>|NEXT} 
+(1至100或NEXT)@@設定與查詢測試通過時源記憶體掃描分支點位置@@18-40@@RW@@N
+:CALCulate2:CLIMits:FAIL:SOURce2@@:CALCulate2:CLIMits:FAIL:SOURce2 
+<NRf>|<NDN>@@<NRf>|<NDN> = 0 至 15@@設定與查詢 Sorting 
+模式下複合測試失敗時的數位輸出位元圖樣@@18-39@@RW@@N
+:CALCulate2:CLIMits:FAIL:SMLocation@@:CALCulate2:CLIMits:FAIL:SMLocation 
+<location>@@<location> = {<NRf>|NEXT} 
+(1至100或NEXT)@@設定與查詢測試失敗時源記憶體掃描分支點位置@@18-40@@RW@@N
+:CALCulate2:CLIMits:CLEar[:IMMediate]@@:CALCulate2:CLIMits:CLEar[:IMMediate]@@
+無@@清除極限測試結果並重置數位 I/O 埠@@18-42@@W@@N
+:CALCulate2:CLIMits:CLEar:AUTO@@:CALCulate2:CLIMits:CLEar:AUTO <b>@@<b> = 
+{ON|OFF}@@設定與查詢當發送 :INITiate 時是否自動清除極限測試結果@@18-42@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 4)

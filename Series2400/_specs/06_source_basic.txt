@@ -1,0 +1,80 @@
+Answer:
+:SOURce[1]:CLEar[:IMMediate]@@:SOURce[1]:CLEar[:IMMediate]@@無@@關閉指定訊號源
+之輸出@@18-71@@W@@N
+:SOURce[1]:CLEar:AUTO@@:SOURce[1]:CLEar:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢自動關閉訊號源輸出啟用狀態@@18-72@@RW@@N
+:SOURce[1]:CLEar:AUTO:MODE@@:SOURce[1]:CLEar:AUTO:MODE <name>@@<name> = 
+{ALWays|TCOunt}@@設定與查詢訊號源自動關閉之模式@@18-72@@RW@@N
+:SOURce[1]:FUNCtion:SHAPe@@:SOURce[1]:FUNCtion:SHAPe <name>@@<name> = 
+{DC|PULSe} (僅 Model 2430)@@設定與查詢訊號源輸出波形模式 (DC 或 
+Pulse)@@18-72@@RW@@N
+:SOURce[1]:FUNCtion[:MODE]@@:SOURce[1]:FUNCtion[:MODE] <name>@@<name> = 
+{VOLTage|CURRent|MEMory}@@設定與查詢訊號源輸出功能 
+(電壓、電流或記憶體掃描)@@18-72@@RW@@N
+:SOURce[1]:DELay@@:SOURce[1]:DELay <n>@@<n> = 0 至 9999.999 
+(秒)@@設定與查詢訊號源輸出穩定延遲時間@@18-82@@RW@@N
+:SOURce[1]:DELay:AUTO@@:SOURce[1]:DELay:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢訊號源自動延遲時間啟用狀態@@18-82@@RW@@N
+:SOURce[1]:CURRent:MODE@@:SOURce[1]:CURRent:MODE <name>@@<name> = 
+{FIXed|SWEep|LIST}@@設定與查詢電流源輸出模式 (固定、掃描或列表)@@18-73@@RW@@N
+:SOURce[1]:CURRent:RANGe@@:SOURce[1]:CURRent:RANGe <n>|UP|DOWN@@<n> = -5.25 至 
+5.25 (依型號), UP|DOWN@@手動設定與查詢電流源檔位上限值@@18-74@@RW@@N
+:SOURce[1]:CURRent:RANGe:AUTO@@:SOURce[1]:CURRent:RANGe:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢電流源自動換檔啟用狀態@@18-76@@RW@@N
+:SOURce[1]:CURRent[:LEVel][:IMMediate][:AMPLitude]@@:SOURce[1]:CURRent[:LEVel][
+:IMMediate][:AMPLitude] <n>@@<n> = -5.25 至 5.25 
+(安培，依型號)@@立即設定與查詢固定電流源輸出振幅@@18-77@@RW@@N
+:SOURce[1]:CURRent[:LEVel]:TRIGgered[:AMPLitude]@@:SOURce[1]:CURRent[:LEVel]:TR
+IGgered[:AMPLitude] <n>@@<n> = -5.25 至 5.25 
+(安培，依型號)@@設定與查詢觸發時輸出的固定電流源振幅@@18-78@@RW@@N
+:SOURce[1]:CURRent[:LEVel]:TRIGgered:SFACtor@@:SOURce[1]:CURRent[:LEVel]:TRIGge
+red:SFACtor <n>@@<n> = -999.9999e18 至 
+999.9999e18@@設定與查詢電流源比例縮放因子@@18-95@@RW@@N
+:SOURce[1]:CURRent[:LEVel]:TRIGgered:SFACtor:STATe@@:SOURce[1]:CURRent[:LEVel]:
+TRIGgered:SFACtor:STATe <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢電流源比例縮放啟用狀態@@18-95@@RW@@N
+:SOURce[1]:CURRent:STARt@@:SOURce[1]:CURRent:STARt <n>@@<n> = -5.25 至 5.25 
+(安培，依型號)@@設定與查詢電流掃描起始值@@18-83@@RW@@N
+:SOURce[1]:CURRent:STOP@@:SOURce[1]:CURRent:STOP <n>@@<n> = -5.25 至 5.25 
+(安培，依型號)@@設定與查詢電流掃描結束值@@18-83@@RW@@N
+:SOURce[1]:CURRent:STEP@@:SOURce[1]:CURRent:STEP <n>@@<n> = -10.5 至 10.5 
+(安培，依型號)@@設定與查詢線性電流掃描步進值@@18-87@@RW@@N
+:SOURce[1]:CURRent:SPAN@@:SOURce[1]:CURRent:SPAN <n>@@<n> = -21 至 21 
+(安培，依型號)@@設定與查詢電流掃描跨度值@@18-86@@RW@@N
+:SOURce[1]:CURRent:CENTer@@:SOURce[1]:CURRent:CENTer <n>@@<n> = -21 至 21 
+(安培，依型號)@@設定與查詢電流掃描中心值@@18-86@@RW@@N
+:SOURce[1]:VOLTage:MODE@@:SOURce[1]:VOLTage:MODE <name>@@<name> = 
+{FIXed|SWEep|LIST}@@設定與查詢電壓源輸出模式 (固定、掃描或列表)@@18-73@@RW@@N
+:SOURce[1]:VOLTage:RANGe@@:SOURce[1]:VOLTage:RANGe <n>|UP|DOWN@@<n> = -1100 至 
+1100 (依型號), UP|DOWN@@手動設定與查詢電壓源檔位上限值@@18-74@@RW@@N
+:SOURce[1]:VOLTage:RANGe:AUTO@@:SOURce[1]:VOLTage:RANGe:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢電壓源自動換檔啟用狀態@@18-76@@RW@@N
+:SOURce[1]:VOLTage[:LEVel][:IMMediate][:AMPLitude]@@:SOURce[1]:VOLTage[:LEVel][
+:IMMediate][:AMPLitude] <n>@@<n> = -1100 至 1100 
+(伏特，依型號)@@立即設定與查詢固定電壓源輸出振幅@@18-77@@RW@@N
+:SOURce[1]:VOLTage[:LEVel]:TRIGgered[:AMPLitude]@@:SOURce[1]:VOLTage[:LEVel]:TR
+IGgered[:AMPLitude] <n>@@<n> = -1100 至 1100 
+(伏特，依型號)@@設定與查詢觸發時輸出的固定電壓源振幅@@18-78@@RW@@N
+:SOURce[1]:VOLTage[:LEVel]:TRIGgered:SFACtor@@:SOURce[1]:VOLTage[:LEVel]:TRIGge
+red:SFACtor <n>@@<n> = -999.9999e18 至 
+999.9999e18@@設定與查詢電壓源比例縮放因子@@18-95@@RW@@N
+:SOURce[1]:VOLTage[:LEVel]:TRIGgered:SFACtor:STATe@@:SOURce[1]:VOLTage[:LEVel]:
+TRIGgered:SFACtor:STATe <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢電壓源比例縮放啟用狀態@@18-95@@RW@@N
+:SOURce[1]:VOLTage:PROTection[:LEVel]@@:SOURce[1]:VOLTage:PROTection[:LEVel] 
+<NRf>@@<NRf> = 電壓限制值 (依型號可選 
+20|40|60|80...|NONE)@@設定與查詢電壓源過壓保護 (OVP) 限制值@@18-79@@RW@@N
+:SOURce[1]:VOLTage:PROTection:TRIPped?@@:SOURce[1]:VOLTage:PROTection:TRIPped?@
+@無@@查詢是否觸發過壓保護限制@@18-81@@R@@N
+:SOURce[1]:VOLTage:STARt@@:SOURce[1]:VOLTage:STARt <n>@@<n> = -1100 至 1100 
+(伏特，依型號)@@設定與查詢電壓掃描起始值@@18-83@@RW@@N
+:SOURce[1]:VOLTage:STOP@@:SOURce[1]:VOLTage:STOP <n>@@<n> = -1100 至 1100 
+(伏特，依型號)@@設定與查詢電壓掃描結束值@@18-83@@RW@@N
+:SOURce[1]:VOLTage:STEP@@:SOURce[1]:VOLTage:STEP <n>@@<n> = -2200 至 2200 
+(伏特，依型號)@@設定與查詢線性電壓掃描步進值@@18-87@@RW@@N
+:SOURce[1]:VOLTage:SPAN@@:SOURce[1]:VOLTage:SPAN <n>@@<n> = -2200 至 2200 
+(伏特，依型號)@@設定與查詢電壓掃描跨度值@@18-86@@RW@@N
+:SOURce[1]:VOLTage:CENTer@@:SOURce[1]:VOLTage:CENTer <n>@@<n> = -2200 至 2200 
+(伏特，依型號)@@設定與查詢電壓掃描中心值@@18-86@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 7)

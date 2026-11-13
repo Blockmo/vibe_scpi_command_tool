@@ -33,6 +33,7 @@ with K34970("GPIB0::9::INSTR") as daq:
 - `key`：`commands_34970.py` 中的鍵（`K34970.list_commands()` / `command_info(key)` 可查）。
 - `value`：依型態（bool/numeric/enum/string/raw）自動轉成 SCPI 參數；多參數傳完整字串如 `"10,0.001"`。
 - `ch_list`：通道清單，傳 `"101"`、`"101:110"`、`"101,103"`，自動組成 `(@...)` 附加（查詢亦支援）。
+- 讀取（`query_command`）只在該指令的查詢語法接受參數時才帶 `value`（資料表 `qarg`）：僅查詢指令（如 `MEASure:...? <range>`）照原樣帶；讀寫兩用指令只帶 MIN/MAX/DEF 等查詢關鍵字（`qopts`），一般寫入值（如 `ON`、`5`）不會被送成 `XXX? ON`。
 
 IEEE-488.2 常用另有具名方法：`idn()`、`reset()`、`clear_status()`、`wait()`、`error()`，以及低階 `write()`/`query()`/`query_float()`。
 
@@ -43,7 +44,10 @@ python ui.py
 ```
 
 用「群組」下拉縮小範圍後選指令；面板依型態自動彈出參數欄位，需要通道的指令出現「通道清單 (@)」欄（填如 `101:110`）。
-無實體儀器時勾選「模擬模式」離線操作。Write/Read 按鈕依指令讀寫屬性自動啟用。
+- **Scan**：列出電腦上所有 VISA 資源（GPIB 排最前，並附 `*IDN?` 識別字串），由下拉選單選擇後按 Connect；也可直接手動輸入資源字串。
+- **Search**：在指令區輸入關鍵字即時篩選（比對名稱、SCPI、語法、說明、參數；空白分隔多個關鍵字須全部符合；可與群組篩選並用；Esc 清除）。
+- Write/Read 按鈕依指令讀寫屬性自動啟用。
+- 模擬模式已自介面隱藏，僅供開發測試：`python ui.py --sim`。
 
 ## 指令涵蓋範圍（依群組）
 

@@ -1,0 +1,74 @@
+Answer:
+DISPlay:PERSistence[:STATe]@@DISPlay:PERSistence[:STATe] <State>@@OFF | ON | 0 
+| 1@@設定或查詢是否開啟波形持續性顯示模式@@1023@@RW@@N
+DISPlay:PERSistence:INFinite@@DISPlay:PERSistence:INFinite <State>@@OFF | ON | 
+0 | 1@@設定或查詢是否開啟無限持續性顯示模式@@1024@@RW@@N
+DISPlay:PERSistence:TIME@@DISPlay:PERSistence:TIME <Time>@@Range: 50e-3 to 10 
+s@@設定或查詢波形持續累積顯示的時間長度@@1024@@RW@@N
+DISPlay:PERSistence:RESet@@DISPlay:PERSistence:RESet@@無@@重置並清除螢幕上所有
+持續累積顯示的波形點@@1024@@W@@N
+DISPlay:INTensity@@DISPlay:INTensity <Intensity>@@Range: 0 to 100 
+%@@設定或查詢圖表中波形線條顯示的亮度強度百分比@@1024@@RW@@N
+DISPlay:DIAGram:STYLe@@DISPlay:DIAGram:STYLe <Style>@@VECTors | LOURs | 
+DOTS@@設定或查詢圖表中波形繪製的風格樣式@@1024@@RW@@N
+DISPlay:COLor:SIGNal<m>:COLor@@DISPlay:COLor:SIGNal<m>:COLor <Color>@@RGB hex 
+string@@設定或查詢指定波形的顯示顏色@@1025@@RW@@N
+DISPlay:COLor:SIGNal<m>:USE@@DISPlay:COLor:SIGNal<m>:USE <State>@@OFF | ON | 0 
+| 1@@設定或查詢指定波形是否套用顏色表顯示@@1025@@RW@@N
+DISPlay:COLor:SIGNal<m>:ASSign@@DISPlay:COLor:SIGNal<m>:ASSign 
+<ColorTable>@@TEMP | SUNG | HOT | JET | SPECtrum | 
+SINGle@@設定或查詢指定波形所分配套用的顏色表類型@@1025@@RW@@N
+DISPlay:DIAGram:GRID@@DISPlay:DIAGram:GRID <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表區域是否顯示背景網格線@@1028@@RW@@N
+DISPlay:DIAGram:LABels@@DISPlay:DIAGram:LABels <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表座標軸是否顯示數值標籤@@1029@@RW@@N
+DISPlay:DIAGram:FINegrid@@DISPlay:DIAGram:FINegrid <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表中心十字標尺是否顯示細微刻度@@1028@@RW@@N
+DISPlay:DIAGram:CROSshair@@DISPlay:DIAGram:CROSshair <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表區域是否顯示中心十字準星線@@1028@@RW@@N
+DISPlay:DIAGram:YFIXed@@DISPlay:DIAGram:YFIXed <State>@@OFF | ON | 0 | 
+1@@設定或查詢垂直偏移改變時水平網格線是否保持固定@@1029@@RW@@N
+DISPlay:DIAGram:TITLe@@DISPlay:DIAGram:TITLe <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表分頁標題列是否恆常顯示@@1029@@RW@@N
+DISPlay:GATE:TRANsparency@@DISPlay:GATE:TRANsparency <Value>@@Range: 0 to 100 
+%@@設定或查詢門限區域在螢幕上的顯示透明度@@1029@@RW@@N
+DISPlay:RESultboxes:DEFaultpos@@DISPlay:RESultboxes:DEFaultpos 
+<Position>@@FLOAting | PREView | 
+DOCKed@@設定或查詢新開啟結果方塊的預設位置@@1029@@RW@@N
+DISPlay:SIGNal:LABel:ADD@@DISPlay:SIGNal🏷ADD <Name>, <Text>@@<Name> 
+<Text>@@替指定波形新增文字註解標籤@@1034@@W@@N
+DISPlay:SIGNal:LABel:REMove@@DISPlay:SIGNal🏷REMove <Name>, <Index>@@<Name> 
+<Index>@@移除指定波形上的指定索引文字標籤@@1035@@W@@N
+DISPlay:SIGNal:LABel:TEXT@@DISPlay:SIGNal🏷TEXT <Name>, <Index>, <Text>@@<Name> 
+<Index> <Text>@@設定或查詢指定波形文字標籤的內容字串@@1035@@RW@@N
+DISPlay:SIGNal:LABel:POSMode@@DISPlay:SIGNal🏷POSMode <Name>, <Mode>@@ABSolute |
+RELative@@設定或查詢波形文字標籤的位置定位模式@@1035@@RW@@N
+DISPlay:TRIGger:LINes@@DISPlay:TRIGger:LINes <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表中是否永久顯示觸發準位與磁滯區域線@@1088@@RW@@N
+LAYout:DIAGram:ADD@@LAYout:DIAGram:ADD 
+<DiagramName>@@<DiagramName>@@在螢幕顯示佈局中新增一個圖表視窗@@1020@@W@@N
+LAYout:DIAGram:REMove@@LAYout:DIAGram:REMove 
+<DiagramName>@@<DiagramName>@@從螢幕顯示佈局中移除指定的圖表視窗@@1020@@W@@N
+LAYout:BAR:AUTOhide@@LAYout:BAR:AUTOhide <State>@@OFF | ON | 0 | 
+1@@設定或查詢右側訊號列自動隱藏功能@@1021@@RW@@N
+LAYout:BAR:HTRansparency@@LAYout:BAR:HTRansparency <Transparency>@@Range: 20 to
+70 %@@設定或查詢訊號列自動隱藏時的淡出透明度@@1021@@RW@@N
+LAYout:BAR:HIDEhead@@LAYout:BAR:HIDEhead <State>@@OFF | ON | 0 | 
+1@@設定或查詢訊號列隱藏時是否連同頂部標籤一併隱藏@@1022@@RW@@N
+LAYout:BAR:FCOLor@@LAYout:BAR:FCOLor <Color>@@RGB hex 
+string@@設定或查詢右側訊號列區域的背景填滿顏色@@1022@@RW@@N
+LAYout:BAR:BCOLor@@LAYout:BAR:BCOLor <Color>@@RGB hex 
+string@@設定或查詢右側訊號列區域的外框顏色@@1022@@RW@@N
+LAYout:ZOOM:ADD@@LAYout:ZOOM:ADD <Diagram>, <Type>, <State>, <XStart>, <XStop>,
+<YStart>, <YStop>, <ZoomName>@@<Diagram> <Type> <State> <XStart> <XStop> 
+<YStart> <YStop> <ZoomName>@@在指定圖表中新增一個縮放區域與 Zoom 
+圖表@@1131@@W@@N
+LAYout:ZOOM:ADDCoupled@@LAYout:ZOOM:ADDCoupled <Diagram>, <SourceZoom>, 
+<ZoomName>@@<Diagram> <SourceZoom> <ZoomName>@@新增一個與現有 Zoom 
+縮放區域尺吋連動的 Zoom 圖表@@1131@@W@@N
+LAYout:ZOOM:ONEDiagram@@LAYout:ZOOM:ONEDiagram <State>@@OFF | ON | 0 | 
+1@@設定或查詢多重 Zoom 圖表是否重疊顯示於單一視窗中@@1132@@RW@@N
+LAYout:HISTogram:MODE@@LAYout:HISTogram:MODE <Mode>@@VERTical | 
+HORizontal@@設定或查詢圖表中直方圖的類型（振幅垂直/時間水平）@@1189@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 9)

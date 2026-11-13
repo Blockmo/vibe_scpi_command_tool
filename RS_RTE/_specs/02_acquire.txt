@@ -1,0 +1,54 @@
+Answer:
+TIMebase:SCALe@@TIMebase:SCALe <Scale>@@Range: 250e-12 to 500 
+s/div@@設定或查詢水平時基刻度@@1039@@RW@@N
+TIMebase:RANGe@@TIMebase:RANGe <AcqTime>@@Range: 2.5e-9 to 5000 
+s@@設定或查詢單次擷取總時間長度@@1040@@RW@@N
+TIMebase:HORizontal:POSition@@TIMebase:HORizontal:POSition <Position>@@Range: 
+-100000 to 100000 s@@設定或查詢水平位置即參考點與觸發點的時間距離@@1040@@RW@@N
+TIMebase:REFerence@@TIMebase:REFerence <ReferencePoint>@@Range: 0 to 100 
+%@@設定或查詢水平參考點在螢幕上的位置百分比@@1040@@RW@@N
+TIMebase:ROLL:ENABle@@TIMebase:ROLL:ENABle <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否啟用滾動顯示模式@@1044@@RW@@N
+TIMebase:ROLL:MTIMe@@TIMebase:ROLL:MTIMe <MinTime>@@Range: 50e-3 to 500 
+s/div@@設定或查詢自動切換至滾動模式的最慢時間刻度臨界值@@1044@@RW@@N
+ACQuire:POINts[:VALue]@@ACQuire:POINts[:VALue] <RecordLength>@@Range: 1000 to 
+1000000000@@設定或查詢記錄長度即波形採樣點數@@1043@@RW@@N
+ACQuire:POINts:AUTO@@ACQuire:POINts:AUTO <Mode>@@RESolution | RECLength | 
+AUTO@@設定或查詢時間刻度變更時保持解析度或記錄長度恆定@@1041@@RW@@N
+ACQuire:POINts:MAXimum@@ACQuire:POINts:MAXimum <MaxRecordLength>@@Range: 1000 
+to 1000000000@@設定或查詢自動模式下的最大記錄長度限制@@1042@@RW@@N
+ACQuire:POINts:ARANge?@@ACQuire:POINts:ARANge?@@無@@查詢當前設定下可用的記錄長
+度範圍@@1042@@R@@N
+ACQuire:SRATe?@@ACQuire:SRATe?@@無@@查詢波形的採樣率@@1042@@R@@N
+ACQuire:SRReal?@@ACQuire:SRReal?@@無@@查詢實時 ADC 採樣率@@1043@@R@@N
+ACQuire:RESolution@@ACQuire:RESolution <Resolution>@@Range: 20e-12 to 100 
+s@@設定或查詢相鄰兩採樣點間的時間解析度@@1043@@RW@@N
+ACQuire:MODE@@ACQuire:MODE <Mode>@@RTIMe | ETIMe | 
+HRESolution@@設定或查詢波形採樣模式@@1043@@RW@@N
+ACQuire:AVAilable?@@ACQuire:AVAilable?@@無@@查詢目前已完成可供讀取分析的擷取波
+形數量@@1043@@R@@N
+ACQuire:CURRent?@@ACQuire:CURRent?@@無@@查詢當前擷取週期中已完成的擷取次數@@113
+0@@R@@N
+ACQuire:COUNt@@ACQuire:COUNt <AcquisitionCount>@@Range: 1 to 
+16777215@@設定或查詢單次擷取與波形平均計算所需的總波形數@@1046@@RW@@N
+ACQuire:ARESet:IMMediate@@ACQuire:ARESet:IMMediate@@無@@立即重新開始包絡與平均
+波形計算@@1046@@W@@N
+ACQuire:CDTA?@@ACQuire:CDTA?@@無@@查詢連續資料傳輸運作狀態@@1044@@R@@N
+ACQuire:INTerpolate@@ACQuire:INTerpolate <Interpolation>@@SINX | LINear | 
+SMINx@@設定或查詢波形採樣點之間的插值方式@@1044@@RW@@N
+ACQuire:SEGMented:STATe@@ACQuire:SEGMented:STATe <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否開啟快速分段記憶體擷取模式@@1046@@RW@@N
+ACQuire:SEGMented:COUNt@@ACQuire:SEGMented:COUNt <SegmentCount>@@Range: 1 to 
+1000000@@設定或查詢快速分段擷取的目標段數@@1047@@RW@@N
+ACQuire:SEGMented:MAXimum?@@ACQuire:SEGMented:MAXimum?@@無@@查詢當前記憶體配置
+下支援的最大分段數量@@1047@@R@@N
+ACQuire:SEGMented:AUToreplay@@ACQuire:SEGMented:AUToreplay <State>@@OFF | ON | 
+0 | 1@@設定或查詢分段擷取完成後是否自動重播顯示@@1047@@RW@@N
+CHANnel<m>[:WAVeform<n>]:TYPE@@CHANnel<m>[:WAVeform<n>]:TYPE 
+<DecimationMode>@@SAMPle | PDETect | HRESolution | 
+RMS@@設定或查詢通道波形的抽取降採樣模式@@1045@@RW@@N
+CHANnel<m>[:WAVeform<n>]:ARIThmetics@@CHANnel<m>[:WAVeform<n>]:ARIThmetics 
+<ArithmeticMode>@@OFF | ENVelope | 
+AVERage@@設定或查詢通道波形的波形算術處理模式@@1045@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 3)

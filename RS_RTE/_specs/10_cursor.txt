@@ -1,0 +1,83 @@
+Answer:
+CURSor<m>:STATe@@CURSor<m>:STATe <State>@@OFF | ON | 0 | 
+1@@設定或查詢游標測量功能的啟用狀態@@1156@@RW@@N
+CURSor<m>:FUNCtion@@CURSor<m>:FUNCtion <Function>@@HORizontal | VERTical | 
+VHORizontal@@設定或查詢使用的游標類型（水平/垂直/兩者皆有）@@1156@@RW@@N
+CURSor<m>:SOURce@@CURSor<m>:SOURce <Source>@@CHANnel1 | CHANnel2 | CHANnel3 | 
+CHANnel4 | MATH1 | MATH2 | MATH3 | MATH4 | REFCurve1 | REFCurve2 | REFCurve3 | 
+REFCurve4@@設定或查詢游標測量的主要目標來源波形@@1157@@RW@@N
+CURSor<m>:SSOurce@@CURSor<m>:SSOurce <SecondSource>@@CHANnel1 | CHANnel2 | 
+CHANnel3 | CHANnel4 | MATH1 | MATH2 | MATH3 | MATH4 | REFCurve1 | REFCurve2 | 
+REFCurve3 | REFCurve4 | 
+NONE@@設定或查詢雙波形游標測量中的第二來源波形@@1157@@RW@@N
+CURSor<m>:USSource@@CURSor<m>:USSource <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否啟用第二來源波形進行跨通道游標測量@@1158@@RW@@N
+CURSor<m>:TRACking[:STATe]@@CURSor<m>:TRACking[:STATe] <State>@@OFF | ON | 0 | 
+1@@設定或查詢水平游標是否自動追蹤波形極值與交點@@1157@@RW@@N
+CURSor<m>:X1Position@@CURSor<m>:X1Position <Position>@@Range: -1000 to 1000 
+s@@設定或查詢第一條垂直游標線的水平時間/頻率位置@@1158@@RW@@N
+CURSor<m>:X2Position@@CURSor<m>:X2Position <Position>@@Range: -1000 to 1000 
+s@@設定或查詢第二條垂直游標線的水平時間/頻率位置@@1158@@RW@@N
+CURSor<m>:XCOupling@@CURSor<m>:XCOupling <State>@@OFF | ON | 0 | 
+1@@設定或查詢兩條垂直游標線的時間間距是否連動鎖定@@1159@@RW@@N
+CURSor<m>:Y1Position@@CURSor<m>:Y1Position <Position>@@Range: -100 to 100 
+V@@設定或查詢第一條水平游標線的手動垂直電壓/振幅位置@@1159@@RW@@N
+CURSor<m>:Y2Position@@CURSor<m>:Y2Position <Position>@@Range: -100 to 100 
+V@@設定或查詢第二條水平游標線的手動垂直電壓/振幅位置@@1159@@RW@@N
+CURSor<m>:YCOupling@@CURSor<m>:YCOupling <State>@@OFF | ON | 0 | 
+1@@設定或查詢兩條水平游標線的電壓間距是否連動鎖定@@1160@@RW@@N
+CURSor<m>:X1ENvelope@@CURSor<m>:X1ENvelope <EnvelopeMode>@@MINimum | 
+MAXimum@@設定或查詢包絡線波形下第一條水平游標追蹤包絡極限@@1160@@RW@@N
+CURSor<m>:X2ENvelope@@CURSor<m>:X2ENvelope <EnvelopeMode>@@MINimum | 
+MAXimum@@設定或查詢包絡線波形下第二條水平游標追蹤包絡極限@@1161@@RW@@N
+CURSor<m>:STYLe@@CURSor<m>:STYLe <Style>@@LINES | LRHombus | VLRHombus | 
+RHOMbus@@設定或查詢圖表中游標線與波形交點的顯示樣式@@1161@@RW@@N
+CURSor<m>:LABel[:STATe]@@CURSor<m>:LABel[:STATe] <State>@@OFF | ON | 0 | 
+1@@設定或查詢圖表中是否顯示游標線的文字標籤@@1161@@RW@@N
+CURSor<m>🏷X1@@CURSor<m>🏷X1 <Text>@@String 
+text@@設定或查詢第一條垂直游標線的文字標籤內容@@1161@@RW@@N
+CURSor<m>🏷X2@@CURSor<m>🏷X2 <Text>@@String 
+text@@設定或查詢第二條垂直游標線的文字標籤內容@@1162@@RW@@N
+CURSor<m>🏷Y1@@CURSor<m>🏷Y1 <Text>@@String 
+text@@設定或查詢第一條水平游標線的文字標籤內容@@1162@@RW@@N
+CURSor<m>🏷Y2@@CURSor<m>🏷Y2 <Text>@@String 
+text@@設定或查詢第二條水平游標線的文字標籤內容@@1162@@RW@@N
+CURSor<m>:SIAD@@CURSor<m>:SIAD <State>@@OFF | ON | 0 | 
+1@@設定或查詢游標是否在相同域的所有圖表視窗中同步顯示@@1162@@RW@@N
+DISPlay:RESultboxes:CUPosition@@DISPlay:RESultboxes:CUPosition 
+<Position>@@FLOAting | PREView | 
+DOCKed@@設定或查詢游標測量結果方塊的螢幕顯示位置@@1162@@RW@@N
+CURSor<m>:RESult:X1?@@CURSor<m>:RESult:X1?@@無@@查詢第一條垂直游標處的 X 
+軸時間或頻率數值@@1163@@R@@N
+CURSor<m>:RESult:X2?@@CURSor<m>:RESult:X2?@@無@@查詢第二條垂直游標處的 X 
+軸時間或頻率數值@@1163@@R@@N
+CURSor<m>:RESult:DELTax?@@CURSor<m>:RESult:DELTax?@@無@@查詢兩條垂直游標之間的 
+X 軸時間或頻率差值 Delta X@@1163@@R@@N
+CURSor<m>:RESult:Y1?@@CURSor<m>:RESult:Y1?@@無@@查詢第一條水平游標處的 Y 
+軸電壓或振幅數值@@1163@@R@@N
+CURSor<m>:RESult:Y2?@@CURSor<m>:RESult:Y2?@@無@@查詢第二條水平游標處的 Y 
+軸電壓或振幅數值@@1163@@R@@N
+CURSor<m>:RESult:DELTay?@@CURSor<m>:RESult:DELTay?@@無@@查詢兩條水平游標之間的 
+Y 軸電壓或振幅差值 Delta Y@@1163@@R@@N
+CURSor<m>:RESult:SLOPe?@@CURSor<m>:RESult:SLOPe?@@無@@查詢兩游標交點之間的波形
+斜率 Delta Y / Delta X@@1163@@R@@N
+CURSor<m>:RESult:INVerse?@@CURSor<m>:RESult:INVerse?@@無@@查詢兩垂直游標時間差
+的倒數 1 / Delta X (頻率)@@1163@@R@@N
+CURSor<m>:MAXimum[:PEAK]@@CURSor<m>:MAXimum[:PEAK]@@無@@在頻譜分析模式下自動將
+兩游標定位至最大峰值點@@1164@@W@@N
+CURSor<m>:MAXimum:NEXT@@CURSor<m>:MAXimum:NEXT@@無@@在頻譜分析模式下將第二游標
+自動移動至下一個次大峰值@@1165@@W@@N
+CURSor<m>:MAXimum:LEFT@@CURSor<m>:MAXimum:LEFT@@無@@在頻譜分析模式下將第二游標
+自動移動至當前位置左側最近峰值@@1164@@W@@N
+CURSor<m>:MAXimum:RIGHt@@CURSor<m>:MAXimum:RIGHt@@無@@在頻譜分析模式下將第二游
+標自動移動至當前位置右側最近峰值@@1164@@W@@N
+CURSor<m>:FFT:TOCenter@@CURSor<m>:FFT:TOCenter@@無@@在頻譜分析模式下將第一垂直
+游標位置設為當前中心頻率@@1164@@W@@N
+CURSor<m>:FFT:SETCenter@@CURSor<m>:FFT:SETCenter@@無@@在頻譜分析模式下將當前中
+心頻率設為第一垂直游標所在頻率@@1164@@W@@N
+CURSor<m>:PEXCursion@@CURSor<m>:PEXCursion <Excursion>@@Range: 0 to 100 
+dB@@設定或查詢頻譜峰值搜尋時視為峰值的最小振幅變化臨界值@@1165@@RW@@N
+CURSor<m>:THReshold@@CURSor<m>:THReshold <Threshold>@@Range: -200 to 200 
+dBm@@設定或查詢頻譜峰值搜尋時視為峰值的絕對最小位準門限@@1165@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 13)

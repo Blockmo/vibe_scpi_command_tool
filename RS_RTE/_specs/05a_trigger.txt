@@ -1,0 +1,56 @@
+Answer:
+TRIGger<m>:SOURce@@TRIGger<m>:SOURce <Source>@@CHANnel1 | CHANnel2 | CHANnel3 |
+CHANnel4 | EXTern | LINE | D0 | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | 
+D10 | D11 | D12 | D13 | D14 | D15 | LOGic | PBUS1 | PBUS2 | PBUS3 | 
+PBUS4@@設定或查詢指定觸發事件的觸發源訊號@@1088@@RW@@N
+TRIGger<m>:TYPE@@TRIGger<m>:TYPE <Type>@@EDGE | GLITch | WIDTh | RUNT | WINDow 
+| TIMeout | INTerval | SLEW | DATatoclock | STATe | PATTern | SPATtern | TV | 
+LINE@@設定或查詢指定觸發事件的觸發類型@@1089@@RW@@N
+TRIGger<m>:LEVel<n>[:VALue]@@TRIGger<m>:LEVel<n>[:VALue] <Level>@@Range: -10 to
+10 V@@設定或查詢觸發電壓臨界值@@1090@@RW@@N
+TRIGger<m>:FINDlevel@@TRIGger<m>:FINDlevel@@無@@自動尋找並設定最適當的觸發電壓
+準位@@1091@@W@@N
+TRIGger<m>:EDGE:SLOPe@@TRIGger<m>:EDGE:SLOPe <Slope>@@POSitive | NEGative | 
+EITHer@@設定或查詢邊緣觸發的觸發邊緣極性@@1091@@RW@@N
+TRIGger<m>:HOLDoff:MODE@@TRIGger<m>:HOLDoff:MODE <Mode>@@OFF | TIME | EVENts | 
+RANDom | AUTO@@設定或查詢觸發 Holdoff 抑制模式@@1119@@RW@@N
+TRIGger<m>:HOLDoff:TIME@@TRIGger<m>:HOLDoff:TIME <HoldoffTime>@@Range: 10e-9 to
+10 s@@設定或查詢時間模式下的 Holdoff 抑制時間@@1119@@RW@@N
+TRIGger<m>:HOLDoff:EVENts@@TRIGger<m>:HOLDoff:EVENts <EventsCount>@@Range: 1 to
+2000000000@@設定或查詢事件模式下需跳過的觸發事件次數@@1120@@RW@@N
+TRIGger<m>:HOLDoff:MIN@@TRIGger<m>:HOLDoff:MIN <MinTime>@@Range: 10e-9 to 10 
+s@@設定或查詢隨機 Holdoff 模式下的最小時間臨界值@@1120@@RW@@N
+TRIGger<m>:HOLDoff:MAX@@TRIGger<m>:HOLDoff:MAX <MaxTime>@@Range: 10e-9 to 10 
+s@@設定或查詢隨機 Holdoff 模式下的最大時間臨界值@@1121@@RW@@N
+TRIGger<m>:HOLDoff:AUTotime?@@TRIGger<m>:HOLDoff:AUTotime?@@無@@查詢自動模式下
+計算出的當前 Holdoff 時間@@1121@@R@@N
+TRIGger<m>:HOLDoff:SCALing@@TRIGger<m>:HOLDoff:SCALing <Scaling>@@Range: 0.1 to
+100@@設定或查詢自動 Holdoff 時間的時基倍率因子@@1122@@RW@@N
+TRIGger<m>:MODE@@TRIGger<m>:MODE <Mode>@@AUTO | 
+NORMal@@設定或查詢觸發運作模式@@1126@@RW@@N
+TRIGger<m>:SEQuence:MODE@@TRIGger<m>:SEQuence:MODE <Mode>@@OFF | 
+AB@@設定或查詢觸發序列模式@@1125@@RW@@N
+TRIGger<m>:SEQuence:TIME@@TRIGger<m>:SEQuence:TIME <SequenceTime>@@Range: 0 to 
+10 s@@設定或查詢 A -> B 觸發序列之間的延遲時間@@1125@@RW@@N
+TRIGger<m>:SEQuence:EVENts@@TRIGger<m>:SEQuence:EVENts <EventsCount>@@Range: 1 
+to 2000000000@@設定或查詢 A 觸發發生後至 B 觸發需計數之 B 事件次數@@1126@@RW@@N
+TRIGger<m>:ANEDge:FILTer@@TRIGger<m>:ANEDge:FILTer <FilterMode>@@OFF | LOWPass 
+| HIGHpass@@設定或查詢類比邊緣觸發的高頻或低頻濾波抑制模式@@1092@@RW@@N
+TRIGger<m>:LEVel<n>:NOISe[:STATe]@@TRIGger<m>:LEVel<n>:NOISe[:STATe] 
+<State>@@OFF | ON | 0 | 1@@設定或查詢抗雜訊磁滯觸發模式狀態@@1122@@RW@@N
+TRIGger<m>:QUALify<n>:A[:ENABle]@@TRIGger<m>:QUALify<n>:A[:ENABle] <State>@@OFF
+| ON | 0 | 1@@設定或查詢觸發條件中通道 A 的條件限定致能狀態@@1108@@RW@@N
+TRIGger<m>:QUALify<n>:A:LOGic@@TRIGger<m>:QUALify<n>🅰LOGic <Operator>@@AND | 
+NAND | OR | NOR@@設定或查詢觸發條件中通道 A 的邏輯運算子@@1108@@RW@@N
+TRIGger<m>:FORCe@@TRIGger<m>:FORCe@@無@@手動強制產生一次立即擷取的觸發事件@@112
+7@@W@@N
+TRIGger<m>:OUT:ENABle@@TRIGger<m>:OUT:ENABle <State>@@OFF | ON | 0 | 
+1@@設定或查詢後面板觸發輸出訊號是否啟用@@1127@@RW@@N
+TRIGger<m>:OUT:POLarity@@TRIGger<m>:OUT:POLarity <Polarity>@@POSitive | 
+NEGative@@設定或查詢後面板觸發輸出脈衝的極性@@1127@@RW@@N
+TRIGger<m>:OUT:PLENgth@@TRIGger<m>:OUT:PLENgth <PulseLength>@@Range: 10e-9 to 1
+s@@設定或查詢後面板觸發輸出脈衝的時間長度@@1128@@RW@@N
+TRIGger<m>:OUT:DELay@@TRIGger<m>:OUT:DELay <DelayTime>@@Range: -10e-6 to 10e-6 
+s@@設定或查詢觸發點至後面板觸發輸出的時間延遲@@1128@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 6)

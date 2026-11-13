@@ -1,0 +1,32 @@
+Answer:
+:CALCulate[1]:MATH[:EXPRession]@@:CALCulate[1]:MATH[:EXPRession] <form>@@<form>
+= 數學運算式公式@@設定與查詢數學運算式公式@@18-29@@RW@@N
+:CALCulate[1]:MATH[:EXPRession][:DEFine]@@:CALCulate[1]:MATH[:EXPRession][:DEFi
+ne] <form>@@<form> = 數學運算式公式@@定義數學運算式公式（同 
+:EXPRession）@@18-29@@W@@N
+:CALCulate[1]:MATH[:EXPRession]:CATalog?@@:CALCulate[1]:MATH[:EXPRession]:CATal
+og?@@無@@查詢數學運算式名稱目錄清單@@18-26@@R@@N
+:CALCulate[1]:MATH[:EXPRession]:NAME@@:CALCulate[1]:MATH[:EXPRession]:NAME 
+<name>@@<name> = 
+{"POWER"|"OFFCOMPOHM"|"VOLTCOEF"|"VARALPHA"|"user-name"}@@設定與查詢數學運算式
+名稱@@18-26@@RW@@N
+:CALCulate[1]:MATH[:EXPRession]:DELete[:SELected]@@:CALCulate[1]:MATH[:EXPRessi
+on]:DELete[:SELected] <name>@@<name> = 
+"user-name"@@刪除指定的使用者定義數學運算式@@18-28@@W@@N
+:CALCulate[1]:MATH[:EXPRession]:DELete:ALL@@:CALCulate[1]:MATH[:EXPRession]:DEL
+ete:ALL@@無@@刪除所有使用者定義數學運算式@@18-28@@W@@N
+:CALCulate[1]:MATH:UNITs@@:CALCulate[1]:MATH:UNITs <name>@@<name> = 3位 ASCII 
+字元@@設定與查詢自訂數學運算式結果單位字尾@@18-28@@RW@@N
+:CALCulate[1]:STATe@@:CALCulate[1]:STATe <b>@@<b> = {ON|OFF}@@設定與查詢 CALC1 
+數學運算啟用狀態@@18-32@@RW@@N
+:CALCulate[1]:DATA[:LATest]?@@:CALCulate[1]:DATA[:LATest]?@@無@@讀取最新一次 
+CALC1 數學運算結果@@18-32@@R@@N
+:CALCulate[1]:DATA?@@:CALCulate[1]:DATA?@@無@@讀取所有觸發點之 CALC1 
+數學運算結果@@18-32@@R@@N
+:CALCulate3:FORMat@@:CALCulate3:FORMat <name>@@<name> = 
+{MEAN|SDEViation|MAXimum|MINimum|PKPK}@@設定與查詢緩衝區資料之統計計算格式@@18-
+43@@RW@@N
+:CALCulate3:DATA?@@:CALCulate3:DATA?@@無@@執行統計計算並讀取 CALC3 
+緩衝區統計結果@@18-43@@R@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 3)

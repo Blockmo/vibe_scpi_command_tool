@@ -1,0 +1,42 @@
+Answer:
+*RCL@@*RCL {0|1|2|3|4}@@0|1|2|3|4@@從指定設定記憶體位置召回儀器設定@@2-39@@W@@N
+*SAV@@*SAV 
+{0|1|2|3|4}@@0|1|2|3|4@@將目前儀器設定儲存至指定設定記憶體位置@@2-40@@W@@N
+MEMory:STATe:DELete@@MEMory:STATe:DELete 
+{0|1|2|3|4}@@0|1|2|3|4@@刪除指定位置的設定記憶體內容@@2-28@@W@@N
+MEMory:STATe:LOCK@@MEMory:STATe:LOCK {1|2|3|4},{ON|OFF|<NR1>}; 
+MEMory:STATe:LOCK? 
+{1|2|3|4}@@{1|2|3|4},{ON|OFF|<NR1>}@@設定或查詢指定設定記憶體位置的防寫鎖定狀態
+@@2-29@@RW@@N
+MEMory:STATe:RECall:AUTo@@MEMory:STATe:RECall:AUTo {ON|OFF|<NR1>}; 
+MEMory:STATe:RECall:AUTo?@@ON|OFF|<NR1>@@設定或查詢開機時是否自動召回上次關機時
+的設定記憶體@@2-29@@RW@@N
+MEMory:STATe:VALid?@@MEMory:STATe:VALid? 
+{0|1|2|3|4}@@0|1|2|3|4@@查詢指定設定記憶體位置是否包含有效設定資料@@2-30@@R@@N
+MMEMory:CATalog?@@MMEMory:CATalog?@@無@@查詢大容量記憶體(USB記憶體)的檔案狀態與
+容量資訊@@2-30@@R@@N
+MMEMory:CDIRectory@@MMEMory:CDIRectory [<directory_name>]; 
+MMEMory:CDIRectory?@@[<directory_name>]@@設定或查詢大容量記憶體的目前工作目錄@@
+2-31@@RW@@N
+MMEMory:DELete@@MMEMory:DELete 
+<file_name>@@<file_name>@@從大容量記憶體中刪除指定的檔案或空目錄@@2-32@@W@@N
+MMEMory:LOAD:STATe@@MMEMory:LOAD:STATe 
+{0|1|2|3|4},<file_name>@@{0|1|2|3|4},<file_name>@@將大容量記憶體中的設定檔案複
+製至內部設定記憶體@@2-32@@W@@N
+MMEMory:LOAD:TRACe@@MMEMory:LOAD:TRACe 
+EMEMory|EMEMory[1]|EMEMory2,<file_name>@@EMEMory|EMEMory[1]|EMEMory2,<file_name
+>@@將大容量記憶體中的波形資料檔案複製至編輯記憶體@@2-33@@W@@N
+MMEMory:LOCK[:STATe]@@MMEMory:LOCK[:STATe] <file_name>,{ON|OFF|<NR1>}; 
+MMEMory:LOCK[:STATe]? 
+<file_name>@@<file_name>,{ON|OFF|<NR1>}@@設定或查詢大容量記憶體中檔案或目錄的防
+寫鎖定狀態@@2-33@@RW@@N
+MMEMory:MDIRectory@@MMEMory:MDIRectory 
+<directory_name>@@<directory_name>@@在大容量記憶體中建立新目錄@@2-34@@W@@N
+MMEMory:STORe:STATe@@MMEMory:STORe:STATe 
+{0|1|2|3|4},<file_name>@@{0|1|2|3|4},<file_name>@@將內部設定記憶體的設定內容儲
+存至大容量記憶體檔案@@2-34@@W@@N
+MMEMory:STORe:TRACe@@MMEMory:STORe:TRACe 
+EMEMory[1]|EMEMory2,<file_name>@@EMEMory[1]|EMEMory2,<file_name>@@將編輯記憶體
+中的波形資料內容儲存至大容量記憶體檔案@@2-35@@W@@N
+
+Conversation: 25c759b4-c9e2-4afe-8ee7-1f495c9a78ad (turn 5)

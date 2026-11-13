@@ -1,0 +1,68 @@
+Answer:
+MEASurement<m>:STATistics[:ENABle]@@MEASurement<m>:STATistics[:ENABle] 
+<State>@@OFF | ON | 0 | 
+1@@設定或查詢是否開啟自動測量的統計計算與顯示@@1197@@RW@@N
+MEASurement<m>:STATistics:HISTogram@@MEASurement<m>:STATistics:HISTogram 
+<State>@@OFF | ON | 0 | 1@@設定或查詢是否開啟測量結果直方圖顯示@@1198@@RW@@N
+MEASurement<m>:STATistics:HBINs@@MEASurement<m>:STATistics:HBINs 
+<BinsCount>@@Range: 10 to 1000@@設定或查詢測量結果直方圖的分箱數量@@1198@@RW@@N
+MEASurement<m>:STATistics:RESet@@MEASurement<m>:STATistics:RESet@@無@@立即重置
+統計數據、長期測量與測量直方圖@@1200@@W@@N
+MEASurement<m>:STATistics:MODE@@MEASurement<m>:STATistics:MODE 
+<ScaleMode>@@TIME | WAVeforms | 
+MEASurements@@設定或查詢長期測量點的產生基準模式@@1199@@RW@@N
+MEASurement<m>:STATistics:RTIMe@@MEASurement<m>:STATistics:RTIMe <Time>@@Range:
+1e-3 to 1000 s@@設定或查詢時間模式下產生每個長期測量點的時間間隔@@1200@@RW@@N
+MEASurement<m>:STATistics:RCOunt@@MEASurement<m>:STATistics:RCOunt 
+<WaveformCount>@@Range: 1 to 
+1000000@@設定或查詢波形數模式下產生每個長期測量點所需的波形擷取數@@1199@@RW@@N
+MEASurement<m>:STATistics:RMEascount@@MEASurement<m>:STATistics:RMEascount 
+<MeasCount>@@Range: 1 to 
+1000000@@設定或查詢測量數模式下產生每個長期測量點所需的測量結果數@@1199@@RW@@N
+MEASurement<m>:LTMeas[:STATe]@@MEASurement<m>:LTMeas[:STATe] <State>@@OFF | ON 
+| 0 | 1@@設定或查詢主測量項目的長期測量啟用狀態@@1201@@RW@@N
+MEASurement<m>:LTMeas:COUNt@@MEASurement<m>:LTMeas:COUNt <PointsCount>@@Range: 
+1 to 100000@@設定或查詢長期測量圖表中顯示的總點數@@1202@@RW@@N
+MEASurement<m>:LTMeas:TIME@@MEASurement<m>:LTMeas:TIME <Duration>@@Range: 1e-3 
+to 100000 s@@設定或查詢時間模式下長期測量涵蓋的總時間長度@@1202@@RW@@N
+MEASurement<m>:TRACk[:STATe]@@MEASurement<m>:TRACk[:STATe] <State>@@OFF | ON | 
+0 | 1@@設定或查詢測量結果隨時間變化的 Track 波形啟用狀態@@1202@@RW@@N
+MEASurement<m>:HISTogram:SELect@@MEASurement<m>:HISTogram:SELect 
+<HistogramName>@@String histogram 
+name@@選擇直方圖測量類別所依據的目標直方圖名稱@@1194@@RW@@N
+MEASurement<m>:HISTogram:PROBability:TYPE@@MEASurement<m>:HISTogram:PROBability
+:TYPE <Reference>@@PEAK | UPEak | LPEak | MAXimum | MINimum | MEDian | 
+MEAN@@設定或查詢概率域測量的標記參考基準點@@1194@@RW@@N
+MEASurement<m>:HISTogram:PROBability:LIMit@@MEASurement<m>:HISTogram:PROBabilit
+y:LIMit <Limit>@@Range: 0 to 100 %@@設定或查詢概率域測量相對於參考點的 ±Delta 
+範圍限制@@1194@@RW@@N
+MEASurement<m>:GATE[:STATe]@@MEASurement<m>:GATE[:STATe] <State>@@OFF | ON | 0 
+| 1@@設定或查詢指定測量項目的門限啟用狀態@@1204@@RW@@N
+MEASurement<m>:GATE:MODE@@MEASurement<m>:GATE:MODE <Mode>@@ABSolute | 
+RELative@@設定或查詢門限範圍的設定模式@@1204@@RW@@N
+MEASurement<m>:GATE:ABSolute:STARt@@MEASurement<m>:GATE:ABSolute:STARt 
+<Start>@@Range: -1000 to 1000 
+s@@設定或查詢絕對時間模式下門限的起始時間位置@@1204@@RW@@N
+MEASurement<m>:GATE:ABSolute:STOP@@MEASurement<m>:GATE:ABSolute:STOP 
+<Stop>@@Range: -1000 to 1000 
+s@@設定或查詢絕對時間模式下門限的結束時間位置@@1204@@RW@@N
+MEASurement<m>:GATE:RELative:STARt@@MEASurement<m>:GATE:RELative:STARt 
+<Start>@@Range: 0 to 100 
+%@@設定或查詢相對百分比模式下門限的起始位置@@1205@@RW@@N
+MEASurement<m>:GATE:RELative:STOP@@MEASurement<m>:GATE:RELative:STOP 
+<Stop>@@Range: 0 to 100 
+%@@設定或查詢相對百分比模式下門限的結束位置@@1205@@RW@@N
+MEASurement<m>:GATE:CCOupling@@MEASurement<m>:GATE:CCOupling <State>@@OFF | ON 
+| 0 | 1@@設定或查詢門限區域是否連動至游標線位置@@1205@@RW@@N
+MEASurement<m>:GATE:CURSor@@MEASurement<m>:GATE:CURSor <CursorSet>@@1 | 2 | 3 |
+4@@設定或查詢門限連動所使用的游標組別編號@@1205@@RW@@N
+MEASurement<m>:GATE:GCOupling@@MEASurement<m>:GATE:GCOupling <State>@@OFF | ON 
+| 0 | 
+1@@設定或查詢當前測量的門限設定是否同步複製套用至所有測量項目@@1206@@RW@@N
+MEASurement<m>:GATE:ZCOupling@@MEASurement<m>:GATE:ZCOupling <State>@@OFF | ON 
+| 0 | 1@@設定或查詢門限時間區域是否與當前 Zoom 區域連動@@1205@@RW@@N
+MEASurement<m>:GATE:ZDIagram@@MEASurement<m>:GATE:ZDIagram 
+<DiagramName>@@String diagram name@@設定或查詢門限區域所連動的 Zoom 
+圖表視窗名稱@@1206@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 15)

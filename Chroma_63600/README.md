@@ -41,6 +41,7 @@ with Chroma63600("USB0::0x1698::0x0837::...::INSTR") as load:
 - `key`：`commands_chroma63600.py` 中的鍵（`Chroma63600.list_commands()` / `command_info(key)` 可查）。
 - `value`：依型態（bool/numeric/enum/string/raw）自動轉成 SCPI 參數。
 - 本機無通道清單，故 `ch_list` 參數一般用不到（保留相容）。
+- 讀取（`query_command`）只在該指令的查詢語法接受參數時才帶 `value`（資料表 `qarg`）：僅查詢指令（如 `MEASure:...? <range>`）照原樣帶；讀寫兩用指令只帶 MIN/MAX/DEF 等查詢關鍵字（`qopts`），一般寫入值（如 `ON`、`5`）不會被送成 `XXX? ON`。
 
 IEEE-488.2 常用另有具名方法：`idn()`、`reset()`、`clear_status()`、`wait()`、`error()`，以及低階 `write()`/`query()`/`query_float()`。
 
@@ -51,7 +52,7 @@ python ui.py
 ```
 
 用「群組」下拉縮小範圍後選指令；面板依型態自動彈出參數欄位（開關/列舉/數值/字串）。
-無實體儀器時勾選「模擬模式」離線操作。Write/Read 按鈕依指令讀寫屬性自動啟用。
+連線列「Scan」可列出 VISA 資源（GPIB 優先、附 `*IDN?`）供下拉選擇；指令區「Search」可用關鍵字篩選指令。模擬模式已自介面隱藏，開發測試請用 `python ui.py --sim`。Write/Read 按鈕依指令讀寫屬性自動啟用。
 
 ## 指令涵蓋範圍（依群組）
 

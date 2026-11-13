@@ -1,0 +1,45 @@
+Answer:
+[:SOURce[1]]:SWEep:SPACing@@[:SOURce[1]]:SWEep:SPACing <name>@@<name> = 
+{LINear|LOGarithmic}@@設定與查詢掃描間距格式 (線性或對數)@@18-88@@RW@@N
+[:SOURce[1]]:SWEep:POINts@@[:SOURce[1]]:SWEep:POINts <n>@@<n> = 1 至 
+2500@@設定與查詢單次掃描點數@@18-89@@RW@@N
+[:SOURce[1]]:SWEep:DIRection@@[:SOURce[1]]:SWEep:DIRection <name>@@<name> = 
+{UP|DOWn}@@設定與查詢掃描執行方向 (正向或反向)@@18-89@@RW@@N
+[:SOURce[1]]:SWEep:RANGing@@[:SOURce[1]]:SWEep:RANGing <name>@@<name> = 
+{BEST|AUTO|FIXed}@@設定與查詢掃描時訊號源檔位切換模式@@18-88@@RW@@N
+[:SOURce[1]]:SWEep:CABort@@[:SOURce[1]]:SWEep:CABort <name>@@<name> = 
+{NEVer|EARLy|LATE}@@設定與查詢發生 Compliance 時是否中斷掃描@@18-90@@RW@@N
+[:SOURce[1]]:LIST:CURRent@@[:SOURce[1]]:LIST:CURRent <NRf list>@@<NRf list> = 
+電流值清單 (最多100點)@@建立與查詢電流源 List 掃描數值清單@@18-91@@RW@@N
+[:SOURce[1]]:LIST:CURRent:APPend@@[:SOURce[1]]:LIST:CURRent:APPend <NRf 
+list>@@<NRf list> = 電流值清單@@追加電流數值至現有電流源 List 
+清單末端@@18-91@@W@@N
+[:SOURce[1]]:LIST:CURRent:POINts?@@[:SOURce[1]]:LIST:CURRent:POINts?@@無@@查詢
+電流源 List 清單中的點數長度@@18-91@@R@@N
+[:SOURce[1]]:LIST:CURRent:STARt@@[:SOURce[1]]:LIST:CURRent:STARt <n>@@<n> = 1 
+至 100@@設定與查詢電流 List 掃描起始點索引@@18-91@@RW@@N
+[:SOURce[1]]:LIST:VOLTage@@[:SOURce[1]]:LIST:VOLTage <NRf list>@@<NRf list> = 
+電壓值清單 (最多100點)@@建立與查詢電壓源 List 掃描數值清單@@18-91@@RW@@N
+[:SOURce[1]]:LIST:VOLTage:APPend@@[:SOURce[1]]:LIST:VOLTage:APPend <NRf 
+list>@@<NRf list> = 電壓值清單@@追加電壓數值至現有電壓源 List 
+清單末端@@18-91@@W@@N
+[:SOURce[1]]:LIST:VOLTage:POINts?@@[:SOURce[1]]:LIST:VOLTage:POINts?@@無@@查詢
+電壓源 List 清單中的點數長度@@18-91@@R@@N
+[:SOURce[1]]:LIST:VOLTage:STARt@@[:SOURce[1]]:LIST:VOLTage:STARt <n>@@<n> = 1 
+至 100@@設定與查詢電壓 List 掃描起始點索引@@18-91@@RW@@N
+[:SOURce[1]]:MEMory:SAVE@@[:SOURce[1]]:MEMory:SAVE <n>@@<n> = 1 至 
+100@@將當前設定儲存至指定的源記憶體位置@@18-93@@W@@N
+[:SOURce[1]]:MEMory:RECall@@[:SOURce[1]]:MEMory:RECall <n>@@<n> = 1 至 
+100@@召回指定源記憶體位置之設定檔@@18-93@@W@@N
+[:SOURce[1]]:MEMory:POINts@@[:SOURce[1]]:MEMory:POINts <n>@@<n> = 1 至 
+100@@設定與查詢源記憶體掃描執行的點數@@18-93@@RW@@N
+[:SOURce[1]]:MEMory:STARt@@[:SOURce[1]]:MEMory:STARt <n>@@<n> = 1 至 
+100@@設定與查詢源記憶體掃描起始記憶體位置@@18-93@@RW@@N
+[:SOURce[1]]:PULSe:WIDTh@@[:SOURce[1]]:PULSe:WIDTh <n>@@<n> = 0.00015 至 0.005 
+(秒，僅 Model 2430)@@設定與查詢脈衝模式之脈衝寬度@@18-97@@RW@@N
+[:SOURce[1]]:PULSe:DELay@@[:SOURce[1]]:PULSe:DELay <n>@@<n> = 0 至 9999.999 
+(秒，僅 Model 2430)@@設定與查詢脈衝模式之脈衝延遲時間@@18-97@@RW@@N
+[:SOURce[1]]:SOAK@@[:SOURce[1]]:SOAK <NRf>@@<NRf> = 0.000 至 9999.999 
+(秒)@@設定與查詢 Multiple 換檔模式下的 Soak 浸潤時間@@18-96@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 8)

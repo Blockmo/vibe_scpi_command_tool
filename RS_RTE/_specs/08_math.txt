@@ -1,0 +1,111 @@
+Answer:
+CALCulate:MATH<m>[:STATe]@@CALCulate:MATH<m>[:STATe] <State>@@OFF | ON | 0 | 
+1@@設定或查詢指定數學波形訊號的啟用狀態@@1145@@RW@@N
+CALCulate:MATH<m>[:EXPRession][:DEFine]@@CALCulate:MATH<m>[:EXPRession][:DEFine
+] <Expression>@@String math 
+formula@@設定或查詢數學波形的運算運算式公式@@1145@@RW@@N
+CALCulate:MATH<m>:ARIThmetics@@CALCulate:MATH<m>:ARIThmetics 
+<ArithmeticMode>@@OFF | ENVelope | AVERage | RMS | MINHold | 
+MAXHold@@設定或查詢數學波形的波形算術處理模式@@1146@@RW@@N
+CALCulate:MATH<m>:ENVSelection@@CALCulate:MATH<m>:ENVSelection 
+<EnvelopeMode>@@OFF | UPPer | LOWer@@設定或查詢包絡線波形顯示模式@@1145@@RW@@N
+CALCulate:MATH<m>:VERTical:SCALe@@CALCulate:MATH<m>:VERTical:SCALe 
+<Scale>@@Range: 1e-12 to 1e6 
+V/div@@設定或查詢數學波形的垂直顯示刻度@@1147@@RW@@N
+CALCulate:MATH<m>:VERTical:OFFSet@@CALCulate:MATH<m>:VERTical:OFFSet 
+<Offset>@@Range: -1e6 to 1e6 V@@設定或查詢數學波形的垂直電壓偏移量@@1147@@RW@@N
+CALCulate:MATH<m>:VERTical:POSition@@CALCulate:MATH<m>:VERTical:POSition 
+<Position>@@Range: -5 to 5 
+div@@設定或查詢數學波形在圖表中的垂直顯示位置@@1148@@RW@@N
+CALCulate:MATH<m>:VERTical:RANGe@@CALCulate:MATH<m>:VERTical:RANGe 
+<Range>@@Range: 1e-12 to 1e7 
+V@@設定或查詢數學波形的總垂直電壓動態範圍@@1147@@RW@@N
+CALCulate:MATH<m>[:WAVeform<n>]:DATA[:VALues]?@@CALCulate:MATH<m>[:WAVeform<n>]
+:DATA[:VALues]? [<StartSample>, 
+<StopSample>]@@無@@讀取數學波形的採樣點數值資料@@1148@@R@@N
+CALCulate:MATH<m>[:WAVeform<n>]:DATA:HEADer?@@CALCulate:MATH<m>[:WAVeform<n>]:D
+ATA:HEADer?@@無@@讀取數學波形資料的表頭參數資訊@@1149@@R@@N
+CALCulate:MATH<m>:FFT:LOGScale@@CALCulate:MATH<m>:FFT:LOGScale <State>@@OFF | 
+ON | 0 | 1@@設定或查詢 FFT 頻譜 X 軸頻率軸是否啟用對數刻度顯示@@1214@@RW@@N
+CALCulate:MATH<m>:FFT:STARt@@CALCulate:MATH<m>:FFT:STARt 
+<StartFrequency>@@Range: 0 to 10e9 Hz@@設定或查詢 FFT 
+顯示頻譜的起始頻率@@1214@@RW@@N
+CALCulate:MATH<m>:FFT:STOP@@CALCulate:MATH<m>:FFT:STOP <StopFrequency>@@Range: 
+0 to 10e9 Hz@@設定或查詢 FFT 顯示頻譜的結束頻率@@1214@@RW@@N
+CALCulate:MATH<m>:FFT:CFRequency@@CALCulate:MATH<m>:FFT:CFRequency 
+<CenterFrequency>@@Range: 0 to 10e9 Hz@@設定或查詢 FFT 
+顯示頻譜的中心頻率@@1215@@RW@@N
+CALCulate:MATH<m>:FFT:SPAN@@CALCulate:MATH<m>:FFT:SPAN <Span>@@Range: 0 to 10e9
+Hz@@設定或查詢 FFT 顯示頻譜的頻率跨度範圍@@1215@@RW@@N
+CALCulate:MATH<m>:FFT:FULLspan@@CALCulate:MATH<m>:FFT:FULLspan@@無@@將 FFT 
+頻率跨度自動重置設為全跨度模式@@1215@@W@@N
+CALCulate:MATH<m>:FFT:BANDwidth[:RESolution][:VALue]@@CALCulate:MATH<m>:FFT:BAN
+Dwidth[:RESolution][:VALue] <Bandwidth>@@Range: 1e-3 to 1e9 Hz@@設定或查詢 FFT 
+分析的解析度頻寬 RBW@@1215@@RW@@N
+CALCulate:MATH<m>:FFT:BANDwidth[:RESolution]:AUTO@@CALCulate:MATH<m>:FFT:BANDwi
+dth[:RESolution]:AUTO <State>@@OFF | ON | 0 | 1@@設定或查詢是否自動連動 FFT 
+頻率跨度與解析度頻寬@@1216@@RW@@N
+CALCulate:MATH<m>:FFT:BANDwidth[:RESolution]:RATio@@CALCulate:MATH<m>:FFT:BANDw
+idth[:RESolution]:RATio <Ratio>@@Range: 1 to 1000000@@設定或查詢 Span 與 RBW 
+自動耦合時的比例因子@@1216@@RW@@N
+CALCulate:MATH<m>:FFT:WINDow:TYPE@@CALCulate:MATH<m>:FFT:WINDow:TYPE 
+<WindowType>@@RECTangle | HAMMing | HANNing | BLACKman | FLATtop | 
+GAUSSian@@設定或查詢 FFT 時域加窗函數類型@@1217@@RW@@N
+CALCulate:MATH<m>:FFT:FRAMe:MAXCount@@CALCulate:MATH<m>:FFT:FRAMe:MAXCount 
+<MaxCount>@@Range: 1 to 100000@@設定或查詢每次擷取計算的最大 FFT 
+框架數量限制@@1218@@RW@@N
+CALCulate:MATH<m>:FFT:FRAMe:COVerage?@@CALCulate:MATH<m>:FFT:FRAMe:COVerage?@@
+無@@查詢當前限制下 FFT 涵蓋輸入波形的百分比涵蓋率@@1218@@R@@N
+CALCulate:MATH<m>:FFT:FRAMe:ARIThmetics@@CALCulate:MATH<m>:FFT:FRAMe:ARIThmetic
+s <Arithmetic>@@OFF | AVERage | ENVelope | MINHold | MAXHold@@設定或查詢跨分段 
+FFT 運算的波形算術處理模式@@1218@@RW@@N
+CALCulate:MATH<m>:FFT:FRAMe:OFACtor@@CALCulate:MATH<m>:FFT:FRAMe:OFACtor 
+<OverlapFactor>@@Range: 0 to 0.99@@設定或查詢相鄰 FFT 
+數據區段的最小重疊率@@1219@@RW@@N
+CALCulate:MATH<m>:FFT:GATE:MODE@@CALCulate:MATH<m>:FFT:GATE:MODE 
+<Mode>@@ABSolute | RELative@@設定或查詢 FFT 
+門限位置與長度的設定模式@@1220@@RW@@N
+CALCulate:MATH<m>:FFT:GATE:ABSolute:STARt@@CALCulate:MATH<m>:FFT:GATE:ABSolute:
+STARt <Start>@@Range: -1000 to 1000 s@@設定或查詢絕對時間模式下 FFT 
+門限的起始時間位置@@1220@@RW@@N
+CALCulate:MATH<m>:FFT:GATE:ABSolute:STOP@@CALCulate:MATH<m>:FFT:GATE:ABSolute:S
+TOP <Stop>@@Range: -1000 to 1000 s@@設定或查詢絕對時間模式下 FFT 
+門限的結束時間位置@@1220@@RW@@N
+CALCulate:MATH<m>:FFT:GATE:RELative:STARt@@CALCulate:MATH<m>:FFT:GATE:RELative:
+STARt <Start>@@Range: 0 to 100 %@@設定或查詢相對百分比模式下 FFT 
+門限的起始位置@@1220@@RW@@N
+CALCulate:MATH<m>:FFT:GATE:RELative:STOP@@CALCulate:MATH<m>:FFT:GATE:RELative:S
+TOP <Stop>@@Range: 0 to 100 %@@設定或查詢相對百分比模式下 FFT 
+門限的結束位置@@1221@@RW@@N
+CALCulate:MATH<m>:FFT:GATE:ZCOupling@@CALCulate:MATH<m>:FFT:GATE:ZCOupling 
+<State>@@OFF | ON | 0 | 1@@設定或查詢 FFT 門限時間區域是否與當前 Zoom 
+區域連動@@1221@@RW@@N
+CALCulate:MATH<m>:FFT:MAGNitude:LEVel@@CALCulate:MATH<m>:FFT:MAGNitude:LEVel 
+<ReferenceLevel>@@Range: -200 to 200 dBm@@設定或查詢對數標度下 FFT 
+振幅對應的參考位準@@1221@@RW@@N
+CALCulate:MATH<m>:FFT:MAGNitude:SCALe@@CALCulate:MATH<m>:FFT:MAGNitude:SCALe 
+<MagnitudeUnit>@@LINear | DBM | DB | DBUV | DBMV | DBV@@設定或查詢 FFT 振幅 Y 
+軸的垂直顯示單位與刻度@@1222@@RW@@N
+CALCulate:MATH<m>:FFT:MAGNitude:RANGe@@CALCulate:MATH<m>:FFT:MAGNitude:RANGe 
+<Range>@@Range: 1 to 200 dB@@設定或查詢 FFT 振幅 Y 
+軸的對數顯示動態範圍大小@@1222@@RW@@N
+CALCulate:MATH<m>:FFT:PHASe:SCALe@@CALCulate:MATH<m>:FFT:PHASe:SCALe 
+<Unit>@@RADians | DEGrees@@設定或查詢 FFT 相位頻譜的顯示角度單位@@1223@@RW@@N
+CALCulate:MATH<m>:FFT:PHASe:SUPPression@@CALCulate:MATH<m>:FFT:PHASe:SUPPressio
+n <State>@@OFF | ON | 0 | 
+1@@設定或查詢是否開啟小訊號振幅的相位計算雜訊抑制功能@@1223@@RW@@N
+CALCulate:MATH<m>:FFT:PHASe:THReshold@@CALCulate:MATH<m>:FFT:PHASe:THReshold 
+<Threshold>@@Range: -200 to 200 
+dBm@@設定或查詢相位雜訊抑制功能下需計算相位的最小振幅門限@@1223@@RW@@N
+CALCulate:MATH<m>:FFT:PHASe:UNWRap@@CALCulate:MATH<m>:FFT:PHASe:UNWRap 
+<State>@@OFF | ON | 0 | 1@@設定或查詢是否開啟相位解繞功能以消除 180 
+度跳變@@1224@@RW@@N
+CALCulate:MATH<m>:FFT:COUPled:WITH<m2>@@CALCulate:MATH<m>:FFT:COUPled:WITH<m2> 
+<State>@@OFF | ON | 0 | 1@@設定或查詢指定數學波形與另一數學波形的 FFT 
+設定連動狀態@@1224@@RW@@N
+CALCulate:MATH<m>:FFT:USEColtab@@CALCulate:MATH<m>:FFT:USEColtab <State>@@OFF |
+ON | 0 | 1@@設定或查詢 FFT 頻譜強度顯示是否套用彩色彩虹對照表@@1226@@RW@@N
+CALCulate:MATH<m>:FFT:SPECtrogram:STATe@@CALCulate:MATH<m>:FFT:SPECtrogram:STAT
+e <State>@@OFF | ON | 0 | 1@@設定或查詢是否開啟時頻譜視窗顯示@@1227@@RW@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 11)

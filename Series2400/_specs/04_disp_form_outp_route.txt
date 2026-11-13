@@ -1,0 +1,53 @@
+Answer:
+:DISPlay:DIGits@@:DISPlay:DIGits <n>@@<n> = 
+4|5|6|7|DEFault|MINimum|MAXimum@@設定與查詢前面板顯示解析度位數@@18-44@@RW@@N
+:DISPlay:ENABle@@:DISPlay:ENABle <b>@@<b> = 
+{ON|OFF|1|0}@@控制與查詢前面板顯示器啟用與冷凍狀態@@18-44@@RW@@N
+:DISPlay:CNDisplay@@:DISPlay:CNDisplay@@無@@返回主源量測讀值顯示狀態@@18-45@@W@
+@N
+:DISPlay[:WINDow[1]]:DATA?@@:DISPlay[:WINDow[1]]:DATA?@@無@@讀取上層顯示器目前
+顯示的字元內容@@18-46@@R@@N
+:DISPlay[:WINDow[1]]:ATTRibutes?@@:DISPlay[:WINDow[1]]:ATTRibutes?@@無@@查詢上
+層顯示器各字元位置之閃爍屬性@@18-46@@R@@N
+:DISPlay[:WINDow[1]]:TEXT:DATA@@:DISPlay[:WINDow[1]]:TEXT:DATA <a>@@<a> = ASCII
+字串 (最多20字元)@@設定與查詢上層顯示器顯示之自訂文字訊息@@18-46@@RW@@N
+:DISPlay[:WINDow[1]]:TEXT:STATe@@:DISPlay[:WINDow[1]]:TEXT:STATe <b>@@<b> = 
+{ON|OFF|1|0}@@控制與查詢上層顯示器自訂文字訊息模式啟用狀態@@18-46@@RW@@N
+:DISPlay:WINDow2:DATA?@@:DISPlay:WINDow2:DATA?@@無@@讀取下層顯示器目前顯示的字
+元內容@@18-46@@R@@N
+:DISPlay:WINDow2:ATTRibutes?@@:DISPlay:WINDow2:ATTRibutes?@@無@@查詢下層顯示器
+各字元位置之閃爍屬性@@18-46@@R@@N
+:DISPlay:WINDow2:TEXT:DATA@@:DISPlay:WINDow2:TEXT:DATA <a>@@<a> = ASCII 字串 
+(最多32字元)@@設定與查詢下層顯示器顯示之自訂文字訊息@@18-46@@RW@@N
+:DISPlay:WINDow2:TEXT:STATe@@:DISPlay:WINDow2:TEXT:STATe <b>@@<b> = 
+{ON|OFF|1|0}@@控制與查詢下層顯示器自訂文字訊息模式啟用狀態@@18-46@@RW@@N
+:FORMat:SREGister@@:FORMat:SREGister <name>@@<name> = 
+{ASCii|HEXadecimal|OCTal|BINary}@@設定與查詢讀取狀態事件暫存器之資料回傳格式@@1
+8-54@@RW@@N
+:FORMat[:DATA]@@:FORMat[:DATA] <type>[,<length>]@@<type> = {ASCii|REAL|SREal}, 
+<length> = 32@@設定與查詢匯流排傳輸量測數據之資料格式@@18-47@@RW@@N
+:FORMat:BORDer@@:FORMat:BORDer <name>@@<name> = 
+{NORMal|SWAPped}@@設定與查詢二進位資料傳輸時之位元組順序@@18-54@@RW@@N
+:FORMat:ELEMents[:SENSe[1]]@@:FORMat:ELEMents[:SENSe[1]] <item list>@@<item 
+list> = 
+VOLTage,CURRent,RESistance,TIME,STATus@@設定與查詢一般量測數據字串包含之資料元
+素項目@@18-49@@RW@@N
+:FORMat:ELEMents:CALCulate@@:FORMat:ELEMents:CALCulate <item list>@@<item list>
+= CALCulate,TIME,STATus@@設定與查詢 CALC 
+運算數據字串包含之資料元素項目@@18-53@@RW@@N
+:FORMat:SOURce2@@:FORMat:SOURce2 <name>@@<name> = 
+{ASCii|HEXadecimal|OCTal|BINary}@@設定與查詢 SOURce2 及 Digital I/O 
+回傳之資料格式@@18-52@@RW@@N
+:OUTPut[1][:STATe]@@:OUTPut[1][:STATe] <b>@@<b> = 
+{ON|OFF|1|0}@@開啟或關閉訊號源輸出狀態@@18-55@@RW@@N
+:OUTPut[1]:ENABle[:STATe]@@:OUTPut[1]:ENABle[:STATe] <b>@@<b> = 
+{ON|OFF|1|0}@@控制與查詢 Output Enable 連鎖功能啟用狀態@@18-55@@RW@@N
+:OUTPut[1]:ENABle:TRIPped?@@:OUTPut[1]:ENABle:TRIPped?@@無@@查詢 Output Enable 
+連鎖線是否處於跳脫或可開啟狀態@@18-55@@R@@N
+:OUTPut[1]:SMODe@@:OUTPut[1]:SMODe <name>@@<name> = 
+{HIMPedance|NORMal|ZERO|GUARd}@@設定與查詢輸出關閉時之輸出狀態模式@@18-55@@RW@@
+N
+:ROUTe:TERMinals@@:ROUTe:TERMinals <name>@@<name> = 
+{FRONt|REAR}@@設定與查詢輸入/輸出端子切換位置@@18-57@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 5)

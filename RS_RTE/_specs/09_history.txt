@@ -1,0 +1,34 @@
+Answer:
+CHANnel<m>[:WAVeform<n>]:HISTory[:STATe]@@CHANnel<m>[:WAVeform<n>]:HISTory[:STA
+Te] <State>@@OFF | ON | 0 | 1@@設定或查詢是否啟用歷史波形顯示模式@@1149@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:CURRent@@CHANnel<m>[:WAVeform<n>]:HISTory:CURR
+ent <CurrentAcq>@@Range: 最舊波形索引 to 
+0@@設定或查詢當前選擇顯示的歷史波形索引編號@@1150@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:STARt@@CHANnel<m>[:WAVeform<n>]:HISTory:STARt 
+<StartAcq>@@Range: 最舊波形索引 to 
+0@@設定或查詢歷史波形重播或匯出的起始擷取索引編號@@1150@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:STOP@@CHANnel<m>[:WAVeform<n>]:HISTory:STOP 
+<StopAcq>@@Range: 最舊波形索引 to 
+0@@設定或查詢歷史波形重播或匯出的結束擷取索引編號@@1151@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:REPLay@@CHANnel<m>[:WAVeform<n>]:HISTory:REPLa
+y <State>@@OFF | ON | 0 | 
+1@@設定或查詢歷史波形重播到達結束索引時是否自動重複循環播放@@1151@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:PLAY@@CHANnel<m>[:WAVeform<n>]:HISTory:PLAY 
+<State>@@OFF | ON | 0 | 
+1@@啟動或停止歷史波形自起始索引至結束索引的動態播放@@1151@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:TPACq@@CHANnel<m>[:WAVeform<n>]:HISTory:TPACq 
+<ReplayTime>@@Range: 1e-3 to 100 
+s@@設定或查詢歷史波形播放時每幅波形的顯示停留時間長度@@1151@@RW@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:TSDate?@@CHANnel<m>[:WAVeform<n>]:HISTory:TSDa
+te?@@無@@查詢當前歷史波形擷取的絕對日期時間戳記字串@@1152@@R@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:TSABsolute?@@CHANnel<m>[:WAVeform<n>]:HISTory:
+TSABsolute?@@無@@查詢當前歷史波形擷取的絕對時間戳記秒數@@1152@@R@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:TSRelative?@@CHANnel<m>[:WAVeform<n>]:HISTory:
+TSRelative?@@無@@查詢當前歷史波形相對於最新擷取波形（索引 
+0）的相對時間戳記@@1152@@R@@N
+CHANnel<m>[:WAVeform<n>]:HISTory:TSRReference?@@CHANnel<m>[:WAVeform<n>]:HISTor
+y:TSRReference?@@無@@查詢當前歷史波形相對於參考波形的相對時間戳記@@1153@@R@@N
+ACQuire:AVAilable?@@ACQuire:AVAilable?@@無@@查詢記憶體中目前已儲存且可供歷史模
+式分析的擷取波形總數@@1043@@R@@N
+
+Conversation: 1b95d8ff-e8bd-4cde-8831-44698d2d59f5 (turn 12)

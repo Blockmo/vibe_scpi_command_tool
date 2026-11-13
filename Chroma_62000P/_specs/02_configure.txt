@@ -1,0 +1,46 @@
+Answer:
+CONFigure:TTL@@CONFigure:TTL <NR1> / CONFigure:TTL?@@0~255@@設定或查詢 TTL Port
+的輸出數值@@5-11@@RW@@N
+CONFigure:BEEPer@@CONFigure:BEEPer ON|OFF / 
+CONFigure:BEEPer?@@ON|OFF@@設定或查詢蜂鳴器開關狀態@@5-11@@RW@@N
+CONFigure:REMote@@CONFigure:REMote ON|OFF@@ON|OFF@@設定遠端控制狀態 (僅對 
+RS-232C 有效)@@5-12@@W@@N
+CONFigure:OUTPut@@CONFigure:OUTPut ON|OFF / 
+CONFigure:OUTPut?@@ON|OFF@@設定或查詢電源供應器的輸出開關狀態@@5-12@@RW@@N
+CONFigure:FOLDback@@CONFigure:FOLDback DISABLE|CVTOCC|CCTOCV / 
+CONFigure:FOLDback?@@DISABLE|CVTOCC|CCTOCV@@設定或查詢 Foldback 
+保護模式@@5-12@@RW@@N
+CONFigure:FOLDT@@CONFigure:FOLDT <NRf1> / 
+CONFigure:FOLDT?@@0.01~600.00@@設定或查詢 Foldback 
+保護延遲時間(秒)@@5-12@@RW@@N
+CONFigure:APGmode@@CONFigure:APGmode NONE|V|I|VI / 
+CONFigure:APGmode?@@NONE|V|I|VI@@設定或查詢類比編程 (APG) 控制模式@@5-12@@RW@@N
+CONFigure:APGV@@CONFigure:APGV FIVE|TEN / CONFigure:APGV?@@FIVE|TEN@@設定或查詢
+APG 參考電壓規格 (5V/10V)@@5-13@@RW@@N
+CONFigure:MEASure:SPeed@@CONFigure:MEASure:SPeed <NR1> / 
+CONFigure:MEASure:SPeed?@@0~3@@設定或查詢 AD 電壓電流讀取速度 
+(SPS/PLC)@@5-13@@RW@@N
+CONFigure:AVG:TIMES@@CONFigure:AVG:TIMES <NR1> / 
+CONFigure:AVG:TIMES?@@0~3@@設定或查詢 AD 電壓電流讀取平均次數 
+(1/2/4/8次)@@5-13@@RW@@N
+CONFigure:AVG:METHod@@CONFigure:AVG:METHod FIX|MOV / 
+CONFigure:AVG:METHod?@@FIX|MOV@@設定或查詢 AD 平均處理演算法 
+(固定/滑動)@@5-13@@RW@@N
+CONFigure:BACKLight@@CONFigure:BACKLight HIGH|NOR|DIM|OFF / 
+CONFigure:BACKLight?@@HIGH|NOR|DIM|OFF@@設定或查詢 LCD 
+背光亮度模式@@5-14@@RW@@N
+CONFigure:MSTSLV:ID@@CONFigure:MSTSLV:ID MASTER|SLAVE1|SLAVE2|SLAVE3|SLAVE4 / 
+CONFigure:MSTSLV:ID?@@MASTER|SLAVE1|SLAVE2|SLAVE3|SLAVE4@@設定或查詢主從控制的
+角色身份@@5-14@@RW@@N
+CONFigure:MSTSLV:PARSER@@CONFigure:MSTSLV:PARSER PARALLEL|SERIES / 
+CONFigure:MSTSLV:PARSER?@@PARALLEL|SERIES@@設定或查詢主從控制的並聯或串聯模式@@
+5-14@@RW@@N
+CONFigure:MSTSLV:NUMSLV@@CONFigure:MSTSLV:NUMSLV <NR1> / 
+CONFigure:MSTSLV:NUMSLV?@@1~4@@設定或查詢主機控制的從機數量@@5-15@@RW@@N
+CONFigure:MSTSLV@@CONFigure:MSTSLV ON|OFF / 
+CONFigure:MSTSLV?@@ON|OFF@@執行或查詢主從控制運作狀態@@5-15@@RW@@N
+CONFigure:INHibit@@CONFigure:INHibit OFF|TRIG|LIVE / 
+CONFigure:INHibit?@@OFF|TRIG|LIVE@@設定或查詢遠端 Inhibit 
+外部控制模式@@5-15@@RW@@N
+
+Conversation: 10655a36-4886-4a16-b60a-4ec6010c10dd (turn 3)

@@ -1,0 +1,67 @@
+Answer:
+:SYSTem:PRESet@@:SYSTem:PRESet@@無@@重設儀器至前面板 :SYSTem:PRESet 
+預設狀態@@18-103@@W@@N
+:SYSTem:POSetup@@:SYSTem:POSetup <name>@@<name> = 
+{RST|PRESet|SAV0|SAV1|SAV2|SAV3|SAV4}@@設定與查詢開機時自動載入的設定檔@@18-103
+@@RW@@N
+:SYSTem:VERSion?@@:SYSTem:VERSion?@@無@@查詢儀器符合之 SCPI 
+標準版本@@18-112@@R@@N
+:SYSTem:ERRor[:NEXT]?@@:SYSTem:ERRor[:NEXT]?@@無@@讀取並清除錯誤佇列中最舊的一
+筆錯誤訊息(代碼與文字)@@18-109@@R@@N
+:SYSTem:ERRor:ALL?@@:SYSTem:ERRor:ALL?@@無@@讀取並清除錯誤佇列中的所有錯誤訊息(
+代碼與文字)@@18-109@@R@@N
+:SYSTem:ERRor:COUNt?@@:SYSTem:ERRor:COUNt?@@無@@查詢錯誤佇列中現有的錯誤訊息數
+量@@18-109@@R@@N
+:SYSTem:ERRor:CODE[:NEXT]?@@:SYSTem:ERRor:CODE[:NEXT]?@@無@@讀取並清除錯誤佇列
+中最舊的一筆錯誤代碼(僅代碼)@@18-109@@R@@N
+:SYSTem:ERRor:CODE:ALL?@@:SYSTem:ERRor:CODE:ALL?@@無@@讀取並清除錯誤佇列中的所
+有錯誤代碼(僅代碼)@@18-109@@R@@N
+:SYSTem:CLEar@@:SYSTem:CLEar@@無@@清除錯誤佇列中的所有訊息@@18-109@@W@@N
+:SYSTem:CCHeck@@:SYSTem:CCHeck <b>@@<b> = {ON|OFF|1|0}@@設定與查詢接觸檢查 
+(Contact Check) 功能啟用狀態@@18-104@@RW@@N
+:SYSTem:CCHeck:RESistance@@:SYSTem:CCHeck:RESistance <NRf>@@<NRf> = 0 至 60 
+(歐姆)@@設定與查詢接觸檢查之門檻電阻值@@18-104@@RW@@N
+:SYSTem:RSENse@@:SYSTem:RSENse <b>@@<b> = {ON|OFF|1|0}@@設定與查詢遠端感測 
+(4-wire Remote Sense) 啟用狀態@@18-104@@RW@@N
+:SYSTem:KEY@@:SYSTem:KEY <n>@@<n> = 1 至 
+32@@模擬前面板按鍵按下動作與查詢最後按下的按鍵代碼@@18-110@@RW@@N
+:SYSTem:GUARd@@:SYSTem:GUARd <name>@@<name> = {OHMS|CABLe}@@設定與查詢 Guard 
+屏蔽模式 (Ohms 或 Cable)@@18-105@@RW@@N
+:SYSTem:BEEPer[:IMMediate]@@:SYSTem:BEEPer[:IMMediate] <freq>,<time>@@<freq> = 
+65 至 2e6 (Hz), <time> = 0 至 7.9 
+(秒)@@使蜂鳴器以指定頻率與時間長度發出聲響@@18-106@@W@@N
+:SYSTem:BEEPer:STATe@@:SYSTem:BEEPer:STATe <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢前面板蜂鳴器啟用狀態@@18-106@@RW@@N
+:SYSTem:AZERo[:STATe]@@:SYSTem:AZERo[:STATe] <name>@@<name> = 
+{ON|OFF|ONCE}@@控制與查詢 Auto Zero 自動歸零功能或強制立即更新@@18-107@@RW@@N
+:SYSTem:AZERo:CACHing[:STATe]@@:SYSTem:AZERo:CACHing[:STATe] <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢 NPLC 快取功能啟用狀態@@18-107@@RW@@N
+:SYSTem:AZERo:CACHing:REFResh@@:SYSTem:AZERo:CACHing:REFResh@@無@@強制立即更新 
+NPLC 快取中的所有參考與零值@@18-107@@W@@N
+:SYSTem:AZERo:CACHing:RESet@@:SYSTem:AZERo:CACHing:RESet@@無@@清除 NPLC 
+快取中的所有數據@@18-107@@W@@N
+:SYSTem:AZERo:CACHing:NPLCycles?@@:SYSTem:AZERo:CACHing:NPLCycles?@@無@@查詢 
+NPLC 快取中已儲存的 NPLC 數值清單@@18-107@@R@@N
+:SYSTem:LFRequency@@:SYSTem:LFRequency <freq>@@<freq> = 50|60 
+(Hz)@@手動設定與查詢電力線頻率@@18-108@@RW@@N
+:SYSTem:LFRequency:AUTO@@:SYSTem:LFRequency:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢電力線頻率自動偵測啟用狀態@@18-108@@RW@@N
+:SYSTem:TIME:RESet@@:SYSTem:TIME:RESet@@無@@將絕對時間戳記 (Timestamp) 重置為 0
+秒@@18-113@@W@@N
+:SYSTem:TIME:RESet:AUTO@@:SYSTem:TIME:RESet:AUTO <b>@@<b> = 
+{ON|OFF|1|0}@@設定與查詢離開閒置狀態時是否自動重置時間戳記@@18-113@@RW@@N
+:SYSTem:TIME?@@:SYSTem:TIME?@@無@@查詢當前時間戳記讀值@@18-112@@R@@N
+:SYSTem:MEMory:INITialize@@:SYSTem:MEMory:INITialize@@無@@初始化電池備份 SRAM 
+記憶體@@18-106@@W@@N
+:SYSTem:LOCal@@:SYSTem:LOCal@@無@@解除 RS-232 
+遠端狀態並恢復前面板按鍵操作@@18-112@@W@@N
+:SYSTem:RWLock@@:SYSTem:RWLock <b>@@<b> = {ON|OFF|1|0}@@設定與查詢 RS-232 
+遠端模式下之本地鎖定 (Local Lockout)@@18-112@@RW@@N
+:SYSTem:RCMode@@:SYSTem:RCMode <name>@@<name> = {SINGle|MULTiple}@@設定與查詢 
+Compliance 自動換檔模式 (Single 或 Multiple)@@18-113@@RW@@N
+:SYSTem:MEP[:STATe]?@@:SYSTem:MEP[:STATe]?@@無@@查詢匯流排通訊協定模式 (1=SCPI,
+0=488.1)@@18-103@@R@@N
+:SYSTem:MEP:HOLDoff@@:SYSTem:MEP:HOLDoff <b>@@<b> = {ON|OFF|1|0}@@設定與查詢 
+488.1 協定下之 NDAC Hold-off 啟用狀態@@18-103@@RW@@N
+
+Conversation: 3d5eb763-db97-4e9b-9da7-d0a51a600ff2 (turn 10)
