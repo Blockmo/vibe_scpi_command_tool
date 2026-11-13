@@ -1,6 +1,6 @@
 namespace ScpiAllInOne.Core;
 
-/// <summary>介面文字翻譯（英文 / 繁體中文），鍵名與 Python 版 i18n.py 對應。</summary>
+/// <summary>介面文字翻譯（英文 / 繁體中文）。</summary>
 public static class I18n
 {
     public static string Lang { get; private set; } = "en";

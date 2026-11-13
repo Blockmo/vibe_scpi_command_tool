@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace ScpiAllInOne.Core;
 
-/// <summary>一條 SCPI 指令的規格（對應各儀器 Python 版 COMMANDS 的一列）。</summary>
+/// <summary>一條 SCPI 指令的規格（對應 Data/&lt;儀器&gt;.json 的一個元素）。</summary>
 public sealed class CommandSpec
 {
     [JsonPropertyName("key")] public string Key { get; set; } = "";

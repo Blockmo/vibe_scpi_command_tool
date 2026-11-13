@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- 視窗左上角 / 工作列圖示（由 tools/make_icon.py 產生） -->
+    <!-- 視窗左上角 / 工作列圖示 -->
     <Resource Include="Assets\app.ico" />
   </ItemGroup>
 

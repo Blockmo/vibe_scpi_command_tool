@@ -4,7 +4,7 @@ namespace ScpiAllInOne.Core;
 public sealed record Position(string? ChList = null, int Channel = 1, int Element = 1);
 
 /// <summary>
-/// SCPI 組字串引擎，規則與各 Python 驅動一致：
+/// SCPI 組字串引擎：
 /// <list type="bullet">
 /// <item>ChList 型（DAQ973A / 34970 / E36300 / 2231A / E3633A / Chroma）：參數 = [值, (@通道清單)] 以逗號相接；
 ///   寫入 <c>SCPI 參數</c>、查詢 <c>SCPI? 參數</c>（值只在查詢語法接受時才帶，見 ChListQueryValue）。</item>
@@ -58,7 +58,7 @@ public static class ScpiBuilder
     }
 
     /// <summary>
-    /// 通道清單型查詢要帶的值（與 Python 驅動 _query_value 相同）：只在查詢語法接受參數時才帶，
+    /// 通道清單型查詢要帶的值：只在查詢語法接受參數時才帶，
     /// 避免把寫入值送成 OUTP? ON。僅查詢指令照原樣帶；讀寫兩用指令依 qsel 取欄位，或只帶 qopts 關鍵字。
     /// </summary>
     private static string? ChListQueryValue(CommandSpec c, string? value)

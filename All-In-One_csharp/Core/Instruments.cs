@@ -9,11 +9,11 @@ public enum CmdStyle
     Index,
 }
 
-/// <summary>一台儀器的定義（對應 Python 版 All-In-One 的 INSTRUMENTS）。</summary>
+/// <summary>一台儀器的定義。</summary>
 public sealed class InstrumentDef
 {
     public required string Name { get; init; }
-    public required string DataId { get; init; }      // Data/<DataId>.json，也是原 Python 資料夾名
+    public required string DataId { get; init; }      // Data/<DataId>.json
     public required CmdStyle Style { get; init; }
     public required string SimIdn { get; init; }
     public required string KindEn { get; init; }
@@ -54,6 +54,8 @@ public static class InstrumentCatalog
         {
             Def("DAQ973A", "DAQ973A", CmdStyle.ChList, "Keysight Technologies,DAQ973A,SIM0000,A.01.00",
                 "Data Acquisition / Switch System (Keysight)", "資料擷取 / 開關量測系統 (Keysight)"),
+            Def("34970 / 34972A", "34970", CmdStyle.ChList, "Agilent Technologies,34970A,SIM0000,1.0",
+                "Data Acquisition / Switch Unit (Keysight/Agilent)", "資料擷取 / 開關單元 (Keysight/Agilent)"),
         }),
         new Category("cat_eload", new[]
         {
