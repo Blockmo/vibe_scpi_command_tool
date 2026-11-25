@@ -1,0 +1,50 @@
+*CLS @@ *CLS @@ 無 @@ 清除狀態暫存器、事件暫存器與錯誤佇列 @@ 249 @@ W @@ N
+*ESE @@ *ESE <mask_value>;*ESE? @@ <mask_value> (0~255整數) @@ 設定或查詢標準事件狀態啟用暫存器的遮罩值 @@ 250 @@ RW @@ N
+*ESR? @@ *ESR? @@ 無 @@ 查詢並清除標準事件狀態暫存器的內容值 @@ 252 @@ R @@ N
+*IDN? @@ *IDN? @@ 無 @@ 查詢示波器的製造商、型號、序列號與韌體版本 @@ 253 @@ R @@ N
+*LRN? @@ *LRN? @@ 無 @@ 查詢並傳回可完全重現當前示波器設定狀態的指令字串 @@ 254 @@ R @@ N
+*OPC @@ *OPC;*OPC? @@ 無 @@ 在所有未完成的操作完成時設定 OPC 位元或回傳 1 @@ 256 @@ RW @@ N
+*OPT? @@ *OPT? @@ 無 @@ 查詢示波器已安裝的軟體與硬體選件清單 @@ 257 @@ R @@ N
+*PSC @@ *PSC {{ON | 1} | {OFF | 0}};*PSC? @@ {{ON | 1} | {OFF | 0}} @@ 設定或查詢開機時是否自動清除狀態暫存器啟用位元 @@ 260 @@ RW @@ N
+*RCL @@ *RCL <register> @@ <register> (0~9整數) @@ 從指定儲存/召回暫存器中恢復示波器設定狀態 @@ 261 @@ W @@ N
+*RST @@ *RST @@ 無 @@ 重置示波器至出廠預設設定狀態 @@ 262 @@ W @@ N
+*SAV @@ *SAV <register> @@ <register> (0~9整數) @@ 將當前示波器設定狀態儲存至指定的暫存器 @@ 263 @@ W @@ N
+*SRE @@ *SRE <mask_value>;*SRE? @@ <mask_value> (0~255整數) @@ 設定或查詢服務要求啟用暫存器的遮罩值 @@ 264 @@ RW @@ N
+*STB? @@ *STB? @@ 無 @@ 查詢狀態位元組暫存器 (Status Byte Register) 的數值 @@ 266 @@ R @@ N
+*TRG @@ *TRG @@ 無 @@ 發送觸發命令以在當前觸發配置下執行一次波形擷取 @@ 268 @@ W @@ N
+*TST? @@ *TST? @@ 無 @@ 執行示波器自我測試並傳回測試結果狀態 @@ 269 @@ R @@ N
+*WAI @@ *WAI @@ 無 @@ 命令示波器等待所有未完成的重疊命令執行完畢後再執行後續命令 @@ 270 @@ W @@ N
+:ADER? @@ :ADER? @@ 無 @@ 查詢並清除擷取完成事件暫存器狀態 @@ 753 @@ R @@ N
+:AER? @@ :AER? @@ 無 @@ 查詢並清除預備觸發事件暫存器狀態 @@ 754 @@ R @@ N
+:ASTate? @@ :ASTate? @@ 無 @@ 查詢示波器當前的擷取執行狀態 @@ 755 @@ R @@ N
+:ATER? @@ :ATER? @@ 無 @@ 查詢並清除自動觸發事件暫存器狀態 @@ 756 @@ R @@ N
+:AUToscale @@ :AUToscale @@ 無 @@ 自動評估輸入波形並設定垂直、時間軸與觸發最佳參數 @@ 757 @@ W @@ N
+:AUToscale:CHANnels @@ :AUToscale:CHANnels {ALL | DISPlayed};:AUToscale:CHANnels? @@ {ALL | DISPlayed} @@ 設定自動調整功能作用於所有通道或僅作用於目前顯示的通道 @@ 758 @@ RW @@ N
+:AUToscale:PLACement @@ :AUToscale:PLACement {STACk | SEParate | OVERlay};:AUToscale:PLACement? @@ {STACk | SEParate | OVERlay} @@ 設定自動調整時多波形在螢幕上的排列排版方式 @@ 759 @@ RW @@ N
+:AUToscale:VERTical @@ :AUToscale:VERTical CHANnel<N> @@ CHANnel<N> (1~4) @@ 僅對指定通道執行垂直自動設定而維持時基與觸發不變 @@ 760 @@ W @@ N
+:BEEP @@ :BEEP <frequency>,<duration> @@ <frequency> (Hz), <duration> (ms) @@ 控制示波器發出指定頻率與持續時間的蜂鳴聲 @@ 761 @@ W @@ N
+:BLANk @@ :BLANk {CHANnel<N> | BUS<N> | DIFFerential<P> | COMMonmode<P> | DIGital<M> | FUNCtion<F> | HISTogram | WMEMory<N> | CLOCk | MTRend | MSPectrum | EQUalize | POD<P> | ALL} @@ {CHANnel<N> | BUS<N> | DIGital<M> | FUNCtion<F> | WMEMory<N> | ALL ...} @@ 關閉指定通道、數學功能、直方圖或波形記憶體在螢幕上的顯示 @@ 762 @@ W @@ N
+:CDISplay @@ :CDISplay @@ 無 @@ 清除螢幕顯示數據並重置相關量測統計 @@ 763 @@ W @@ N
+:DIGitize @@ :DIGitize [CHANnel<N> | DIGital<M> | COMMonmode<P> | DIFFerential<P> | POD<P>][,...] @@ [CHANnel<N> | DIGital<M> | POD<P>][,...] @@ 執行高效能的高速波形採樣擷取並在完成後停止 @@ 764 @@ W @@ N
+:DISable DIGital @@ :DISable DIGital @@ 無 @@ 停用數位通道 (Digital Channels 0-15) 功能 @@ 766 @@ W @@ N
+:ENABle DIGital @@ :ENABle DIGital @@ 無 @@ 啟用數位通道 (Digital Channels 0-15) 功能 @@ 767 @@ W @@ N
+:MODel? @@ :MODel? @@ 無 @@ 查詢示波器的型號名稱 @@ 768 @@ R @@ N
+:MTEE @@ :MTEE <enable_mask>;:MTEE? @@ <enable_mask> (16位元整數) @@ 設定或查詢面板遮罩測試啟用暫存器的遮罩值 @@ 769 @@ RW @@ N
+:MTER? @@ :MTER? @@ 無 @@ 查詢並清除遮罩測試事件暫存器的狀態 @@ 770 @@ R @@ N
+:OPEE @@ :OPEE <enable_mask>;:OPEE? @@ <enable_mask> (16位元整數) @@ 設定或查詢操作狀態啟用暫存器的遮罩值 @@ 771 @@ RW @@ N
+:OPER? @@ :OPER? @@ 無 @@ 查詢並清除操作狀態事件暫存器的數值 @@ 772 @@ R @@ N
+:OVLRegister? @@ :OVLRegister? @@ 無 @@ 查詢過載事件暫存器狀態以確認是否有通道過載 @@ 773 @@ R @@ N
+:PDER? @@ :PDER? @@ 無 @@ 查詢處理完成事件暫存器狀態 @@ 774 @@ R @@ N
+:PRINt @@ :PRINt @@ 無 @@ 將當前螢幕畫面輸出至設定的印表機或檔案 @@ 775 @@ W @@ N
+:RECall:SETup @@ :RECall:SETup <setup_memory_num> @@ <setup_memory_num> (0~9整數) @@ 召回儲存在內部記憶體暫存器中的示波器設定 @@ 776 @@ W @@ N
+:RSTate? @@ :RSTate? @@ 無 @@ 查詢示波器當前運轉狀態 @@ 777 @@ R @@ N
+:RUN @@ :RUN @@ 無 @@ 啟動示波器持續重複進行波形採樣擷取 @@ 778 @@ W @@ N
+:SERial @@ :SERial "<serial_number>";:SERial? @@ "<serial_number>" (10字元字串) @@ 設定或查詢示波器的出廠序列號碼 @@ 779 @@ RW @@ N
+:SINGle @@ :SINGle @@ 無 @@ 啟動示波器執行一次性的單次波形擷取 @@ 780 @@ W @@ N
+:STATus? @@ :STATus? @@ 無 @@ 查詢示波器的整體硬體與擷取運作狀態 @@ 781 @@ R @@ N
+:STOP @@ :STOP @@ 無 @@ 停止示波器的波形採樣與擷取運作 @@ 783 @@ W @@ N
+:STORe:JITTer @@ :STORe:JITTer "<file_name>" @@ "<file_name>" (檔名) @@ 將抖動分析數據儲存至指定的 CSV 檔案中 @@ 784 @@ W @@ N
+:STORe:SETup @@ :STORe:SETup <setup_memory_num> @@ <setup_memory_num> (0~9整數) @@ 將當前示波器面板設定儲存至指定的內部記憶體暫存器 @@ 785 @@ W @@ N
+:STORe:WAVeform @@ :STORe:WAVeform <source>,"<file_name>",<format>[,<save_mode>] @@ <source>, "<file_name>", <format>:{BINary|CSV|TSV|TXT}, <save_mode>:{COMPlete|DISPlay} @@ 將指定來源的波形數據儲存至磁碟檔案 @@ 786 @@ W @@ N
+:TER? @@ :TER? @@ 無 @@ 查詢並清除觸發事件暫存器狀態 @@ 787 @@ R @@ N
+:VIEW @@ :VIEW {CHANnel<N> | BUS<N> | DIFFerential<P> | COMMonmode<P> | DIGital<M> | FUNCtion<F> | HISTogram | WMEMory<N> | CLOCk | MTRend | MSPectrum | EQUalize | POD<P> | ALL} @@ {CHANnel<N> | BUS<N> | DIGital<M> | FUNCtion<F> | WMEMory<N> | ALL ...} @@ 開啟指定通道、數學功能、直方圖或波形記憶體在螢幕上的顯示 @@ 788 @@ W @@ N

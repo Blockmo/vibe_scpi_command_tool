@@ -1,0 +1,28 @@
+ZOOm @@ ZOOm {RESET|RESETLive}; ZOOm? @@ RESET | RESETLive @@ 重設縮放轉換為預設值或查詢顯示的縮放位置與比例 @@ 2-649 @@ RW @@ N
+ZOOm:GRAticule:SIZE @@ ZOOm:GRAticule:SIZE {50|80|100}; ZOOm:GRAticule:SIZE? @@ 50 | 80 | 100 @@ 設定或查詢縮放網格的顯示尺寸百分比 @@ 2-649 @@ RW @@ N
+ZOOm:HORizontal:POSition @@ ZOOm:HORizontal:POSition <NR3>; ZOOm:HORizontal:POSition? @@ <NR3> @@ 設定或查詢縮放波形的水平中心位置百分比 @@ 2-650 @@ RW @@ N
+ZOOm:HORizontal:SCAle @@ ZOOm:HORizontal:SCAle <NR3>; ZOOm:HORizontal:SCAle? @@ <NR3> @@ 設定或查詢縮放波形的水平縮放比例倍率 @@ 2-650 @@ RW @@ N
+ZOOm:MATH<x>:HORizontal:POSition @@ ZOOm:MATH<x>:HORizontal:POSition <NR3>; ZOOm:MATH<x>:HORizontal:POSition? @@ <NR3> @@ 設定或查詢指定數學波形的水平縮放位置百分比 @@ 2-651 @@ RW @@ N
+ZOOm:MATH<x>:HORizontal:SCAle @@ ZOOm:MATH<x>:HORizontal:SCAle <NR3>; ZOOm:MATH<x>:HORizontal:SCAle? @@ <NR3> @@ 設定或查詢指定數學波形的水平縮放比例倍率 @@ 2-651 @@ RW @@ N
+ZOOm:MATH<x>:VERTical:POSition @@ ZOOm:MATH<x>:VERTical:POSition <NR3>; ZOOm:MATH<x>:VERTical:POSition? @@ <NR3> @@ 設定或查詢指定數學波形的垂直縮放顯示位置 @@ 2-652 @@ RW @@ N
+ZOOm:MATH<x>:VERTical:SCAle @@ ZOOm:MATH<x>:VERTical:SCAle <NR3>; ZOOm:MATH<x>:VERTical:SCAle? @@ <NR3> @@ 設定或查詢指定數學波形的垂直縮放比例倍率 @@ 2-652 @@ RW @@ N
+ZOOm:MODe @@ ZOOm:MODe {ON|OFF|<NR1>}; ZOOm:MODe? @@ ON | OFF | <NR1> @@ 設定或查詢縮放模式的啟用狀態 @@ 2-653 @@ RW @@ N
+ZOOm:REF<x>:HORizontal:POSition @@ ZOOm:REF<x>:HORizontal:POSition <NR3>; ZOOm:REF<x>:HORizontal:POSition? @@ <NR3> @@ 設定或查詢指定參考波形的水平縮放位置百分比 @@ 2-653 @@ RW @@ N
+ZOOm:REF<x>:HORizontal:SCAle @@ ZOOm:REF<x>:HORizontal:SCAle <NR3>; ZOOm:REF<x>:HORizontal:SCAle? @@ <NR3> @@ 設定或查詢指定參考波形的水平縮放比例倍率 @@ 2-654 @@ RW @@ N
+ZOOm:REF<x>:VERTical:POSition @@ ZOOm:REF<x>:VERTical:POSition <NR3>; ZOOm:REF<x>:VERTical:POSition? @@ <NR3> @@ 設定或查詢指定參考波形的垂直縮放顯示位置 @@ 2-654 @@ RW @@ N
+ZOOm:REF<x>:VERTical:SCAle @@ ZOOm:REF<x>:VERTical:SCAle <NR3>; ZOOm:REF<x>:VERTical:SCAle? @@ <NR3> @@ 設定或查詢指定參考波形的垂直縮放比例倍率 @@ 2-655 @@ RW @@ N
+ZOOm:SCROLL:DIREction @@ ZOOm:SCROLL:DIREction {FWD|FFWD|REV|FREV|STOP}; ZOOm:SCROLL:DIREction? @@ FWD | FFWD | REV | FREV | STOP @@ 設定或查詢縮放波形自動捲動的方向與狀態 @@ 2-655 @@ RW @@ N
+ZOOm:SCROLL:LOCk @@ ZOOm:SCROLL:LOCk {ON|OFF|<NR1>}; ZOOm:SCROLL:LOCk? @@ ON | OFF | <NR1> @@ 設定或查詢所有縮放視窗的捲動鎖定連動狀態 @@ 2-656 @@ RW @@ N
+ZOOm:SCROLL:SPEED @@ ZOOm:SCROLL:SPEED <NR1>; ZOOm:SCROLL:SPEED? @@ <NR1> @@ 設定或查詢縮放波形自動捲動的速度 @@ 2-656 @@ RW @@ N
+ZOOm:STATE @@ ZOOm:STATE {ON|OFF|<NR1>}; ZOOm:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢波形縮放功能的啟用狀態 @@ 2-657 @@ RW @@ N
+ZOOm:VERTical:POSition @@ ZOOm:VERTical:POSition <NR3>; ZOOm:VERTical:POSition? @@ <NR3> @@ 設定或查詢縮放波形的垂直中心位置百分比 @@ 2-657 @@ RW @@ N
+ZOOm:VERTical:SCAle @@ ZOOm:VERTical:SCAle <NR3>; ZOOm:VERTical:SCAle? @@ <NR3> @@ 設定或查詢縮放波形的垂直縮放比例倍率 @@ 2-658 @@ RW @@ N
+ZOOm:ZOOM<x> @@ ZOOm:ZOOM<x> {RESET|RESETLive}; ZOOm:ZOOM<x>? @@ RESET | RESETLive @@ 重設指定縮放視窗的轉換參數或查詢其設定 @@ 2-658 @@ RW @@ N
+ZOOm:ZOOM<x>:<wfm>:DISplay @@ ZOOm:ZOOM<x>:<wfm>:DISplay {ON|OFF|<NR1>}; ZOOm:ZOOM<x>:<wfm>:DISplay? @@ <wfm>: CH<x>|MATH<x>|REF<x>; ON | OFF | <NR1> @@ 設定或查詢指定縮放視窗中特定波形的顯示狀態 @@ 2-660 @@ RW @@ N
+ZOOm:ZOOM<x>:<wfm>:HORizontal:POSition @@ ZOOm:ZOOM<x>:<wfm>:HORizontal:POSition <NR3>; ZOOm:ZOOM<x>:<wfm>:HORizontal:POSition? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR3> @@ 設定或查詢指定縮放視窗中特定波形的水平位置百分比 @@ 2-660 @@ RW @@ N
+ZOOm:ZOOM<x>:<wfm>:HORizontal:SCAle @@ ZOOm:ZOOM<x>:<wfm>:HORizontal:SCAle <NR3>; ZOOm:ZOOM<x>:<wfm>:HORizontal:SCAle? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR3> @@ 設定或查詢指定縮放視窗中特定波形的水平縮放比例 @@ 2-661 @@ RW @@ N
+ZOOm:ZOOM<x>:<wfm>:HORizontal:TIMEPosition @@ ZOOm:ZOOM<x>:<wfm>:HORizontal:TIMEPosition <NRF>; ZOOm:ZOOM<x>:<wfm>:HORizontal:TIMEPosition? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NRF> @@ 設定或查詢指定縮放視窗中特定波形相對於觸發點的水平時間位置 @@ 2-661 @@ RW @@ N
+ZOOm:ZOOM<x>:<wfm>:VERTical:POSition @@ ZOOm:ZOOM<x>:<wfm>:VERTical:POSition <NR3>; ZOOm:ZOOM<x>:<wfm>:VERTical:POSition? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR3> @@ 設定或查詢指定縮放視窗中特定波形的垂直顯示位置 @@ 2-662 @@ RW @@ N
+ZOOm:ZOOM<x>:<wfm>:VERTical:SCAle @@ ZOOm:ZOOM<x>:<wfm>:VERTical:SCAle <NR3>; ZOOm:ZOOM<x>:<wfm>:VERTical:SCAle? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR3> @@ 設定或查詢指定縮放視窗中特定波形的垂直縮放比例 @@ 2-662 @@ RW @@ N
+ZOOm:ZOOM<x>:SCROLLLock @@ ZOOm:ZOOM<x>:SCROLLLock {ON|OFF|1|0|<NR1>}; ZOOm:ZOOM<x>:SCROLLLock? @@ ON | OFF | 1 | 0 | <NR1> @@ 設定或查詢指定縮放視窗的卷動鎖定狀態 @@ 2-659 @@ RW @@ N
+ZOOm:ZOOM<x>:STATE @@ ZOOm:ZOOM<x>:STATE {ON|OFF|<NR1>}; ZOOm:ZOOM<x>:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢指定縮放視窗的開啟與關閉狀態 @@ 2-659 @@ RW @@ N

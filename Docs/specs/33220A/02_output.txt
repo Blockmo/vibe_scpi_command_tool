@@ -1,0 +1,14 @@
+FUNCtion @@ FUNCtion {SINusoid|SQUare|RAMP|PULSe|NOISe|DC|USER}; FUNCtion? @@ SINusoid|SQUare|RAMP|PULSe|NOISe|DC|USER @@ 選擇輸出函數與波形類型 @@ 179 @@ RW @@ N
+FREQuency @@ FREQuency {<frequency>|MINimum|MAXimum}; FREQuency? [MINimum|MAXimum] @@ 1 uHz-20 MHz (Sine/Square); 200 kHz (Ramp); 5 MHz (Pulse); 6 MHz (Arb) @@ 設定或查詢輸出波形頻率 @@ 181 @@ RW @@ N
+VOLTage @@ VOLTage {<amplitude>|MINimum|MAXimum}; VOLTage? [MINimum|MAXimum] @@ 10 mVpp-10 Vpp (50Ω); MIN; MAX @@ 設定或查詢輸出波形振幅 @@ 182 @@ RW @@ N
+VOLTage:OFFSet @@ VOLTage:OFFSet {<offset>|MINimum|MAXimum}; VOLTage:OFFSet? [MINimum|MAXimum] @@ ±5 Vdc (50Ω); ±10 Vdc (High-Z); MIN; MAX @@ 設定或查詢直流偏置電壓 @@ 184 @@ RW @@ N
+VOLTage:HIGH @@ VOLTage:HIGH {<voltage>|MINimum|MAXimum}; VOLTage:HIGH? [MINimum|MAXimum] @@ 高位準電壓值; MIN; MAX @@ 設定或查詢輸出波形之高位準電壓 @@ 185 @@ RW @@ N
+VOLTage:LOW @@ VOLTage:LOW {<voltage>|MINimum|MAXimum}; VOLTage:LOW? [MINimum|MAXimum] @@ 低位準電壓值; MIN; MAX @@ 設定或查詢輸出波形之低位準電壓 @@ 185 @@ RW @@ N
+VOLTage:RANGe:AUTO @@ VOLTage:RANGe:AUTO {OFF|ON|ONCE}; VOLTage:RANGe:AUTO? @@ OFF|ON|ONCE @@ 停用或啟用電壓自動換檔功能 @@ 186 @@ RW @@ N
+FUNCtion:SQUare:DCYCle @@ FUNCtion:SQUare:DCYCle {<percent>|MINimum|MAXimum}; FUNCtion:SQUare:DCYCle? [MINimum|MAXimum] @@ 20%-80% (≤10 MHz); 40%-60% (>10 MHz); MIN; MAX @@ 設定或查詢方波之工作週期 @@ 187 @@ RW @@ N
+FUNCtion:RAMP:SYMMetry @@ FUNCtion:RAMP:SYMMetry {<percent>|MINimum|MAXimum}; FUNCtion:RAMP:SYMMetry? [MINimum|MAXimum] @@ 0%-100%; MIN; MAX @@ 設定或查詢斜波之對稱度 @@ 188 @@ RW @@ N
+OUTPut @@ OUTPut {OFF|ON}; OUTPut? @@ OFF|ON @@ 啟用或停用前面板 Output 接頭輸出 @@ 188 @@ RW @@ N
+OUTPut:LOAD @@ OUTPut:LOAD {<ohms>|INFinity|MINimum|MAXimum}; OUTPut:LOAD? [MINimum|MAXimum] @@ 1 Ω-10 kΩ; INFinity; MIN; MAX @@ 設定或查詢輸出端匹配負載阻抗 @@ 189 @@ RW @@ N
+OUTPut:POLarity @@ OUTPut:POLarity {NORMal|INVerted}; OUTPut:POLarity? @@ NORMal|INVerted @@ 設定或查詢輸出波形相對於偏置之極性 @@ 190 @@ RW @@ N
+OUTPut:SYNC @@ OUTPut:SYNC {OFF|ON}; OUTPut:SYNC? @@ OFF|ON @@ 啟用或停用前面板 Sync 接頭之同步信號輸出 @@ 191 @@ RW @@ N
+VOLTage:UNIT @@ VOLTage:UNIT {VPP|VRMS|DBM}; VOLTage:UNIT? @@ VPP|VRMS|DBM @@ 設定或查詢輸出振幅之單位 @@ 191 @@ RW @@ N

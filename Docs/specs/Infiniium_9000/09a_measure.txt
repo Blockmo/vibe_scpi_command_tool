@@ -1,0 +1,45 @@
+:MEASure:AREA @@ :MEASure:AREA [<source>[,<display_range>]];:MEASure:AREA? [<source>[,<display_range>]] @@ <source>, <display_range>:{DISPlay | FULL} @@ 量測波形在指定區間內的電壓與時間累積面積 @@ 492 @@ RW @@ N
+:MEASure:BINTerval @@ :MEASure:BINTerval [<source>[,<idle_time>]];:MEASure:BINTerval? [<source>[,<idle_time>]] @@ <source>, <idle_time> (秒) @@ 量測連串脈衝波形中的突波時間間隔 @@ 493 @@ RW @@ N
+:MEASure:BPERiod @@ :MEASure:BPERiod [<source>[,<idle_time>]];:MEASure:BPERiod? [<source>[,<idle_time>]] @@ <source>, <idle_time> (秒) @@ 量測連串脈衝波形的突波週期時間 @@ 494 @@ RW @@ N
+:MEASure:BWIDth @@ :MEASure:BWIDth [<source>[,<idle_time>]];:MEASure:BWIDth? [<source>[,<idle_time>]] @@ <source>, <idle_time> (秒) @@ 量測連串脈衝波形的突波持續寬度 @@ 495 @@ RW @@ N
+:MEASure:CDRRATE @@ :MEASure:CDRRATE [<source>];:MEASure:CDRRATE? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | CLOCk | ...} @@ 量測時脈復原機制所獲得的資料傳輸速率 @@ 496 @@ RW @@ N
+:MEASure:CGRade:CROSsing @@ :MEASure:CGRade:CROSsing;:MEASure:CGRade:CROSsing? @@ 無 @@ 量測色彩分級眼圖中的交越準位百分比 @@ 497 @@ RW @@ N
+:MEASure:CGRade:DCDistortion @@ :MEASure:CGRade:DCDistortion;:MEASure:CGRade:DCDistortion? @@ 無 @@ 量測色彩分級眼圖中的工作週期失真量 @@ 498 @@ RW @@ N
+:MEASure:CGRade:EHEight @@ :MEASure:CGRade:EHEight;:MEASure:CGRade:EHEight? @@ 無 @@ 量測色彩分級眼圖的開眼高度 @@ 499 @@ RW @@ N
+:MEASure:CGRade:EWIDth @@ :MEASure:CGRade:EWIDth;:MEASure:CGRade:EWIDth? @@ 無 @@ 量測色彩分級眼圖的開眼寬度 @@ 500 @@ RW @@ N
+:MEASure:CGRade:EWINdow @@ :MEASure:CGRade:EWINdow <window_percent>;:MEASure:CGRade:EWINdow? @@ <window_percent> (0~100%) @@ 設定計算眼圖邊界時的垂直檢視視窗百分比 @@ 501 @@ RW @@ N
+:MEASure:CGRade:JITTer @@ :MEASure:CGRade:JITTer;:MEASure:CGRade:JITTer? @@ 無 @@ 量測色彩分級眼圖交越點的峰對峰抖動量 @@ 502 @@ RW @@ N
+:MEASure:CGRade:QFACtor @@ :MEASure:CGRade:QFACtor;:MEASure:CGRade:QFACtor? @@ 無 @@ 量測色彩分級眼圖的品質因子 Q-Factor @@ 503 @@ RW @@ N
+:MEASure:CHARge @@ :MEASure:CHARge [<source>[,<display_range>]];:MEASure:CHARge? [<source>[,<display_range>]] @@ <source>, <display_range>:{DISPlay | FULL} @@ 量測電流訊號在時間區間內的總電荷累積量 @@ 504 @@ RW @@ N
+:MEASure:CLEar @@ :MEASure:CLEar @@ 無 @@ 清除螢幕顯示的所有量測項目與統計數據 @@ 505 @@ W @@ N
+:MEASure:CLOCk @@ :MEASure:CLOCk {{ON | 1} | {OFF | 0}};:MEASure:CLOCk? @@ {{ON | 1} | {OFF | 0}} @@ 啟用或停用時脈復原與相關抖動量測功能 @@ 506 @@ RW @@ N
+:MEASure:CLOCk:METHod @@ :MEASure:CLOCk:METHod {FIXed | FOPLL | SOPLL | EXPlicit | EXPFOPLL | EXPSOPLL | EQFOPLL | EQSOPLL};:MEASure:CLOCk:METHod? @@ {FIXed | FOPLL | SOPLL | EXPlicit | EXPFOPLL | EXPSOPLL | EQFOPLL | EQSOPLL} @@ 設定時脈復原所採用的演算法與濾波器方法 @@ 507 @@ RW @@ N
+:MEASure:CLOCk:METHod:ALIGn @@ :MEASure:CLOCk:METHod:ALIGn {CENTer | EDGE};:MEASure:CLOCk:METHod:ALIGn? @@ {CENTer | EDGE} @@ 設定外接或明確時脈復原時的時脈邊緣對齊方式 @@ 509 @@ RW @@ N
+:MEASure:CLOCk:METHod:DEEMphasis @@ :MEASure:CLOCk:METHod:DEEMphasis {{ON | 1} | {OFF | 0}};:MEASure:CLOCk:METHod:DEEMphasis? @@ {{ON | 1} | {OFF | 0}} @@ 設定時脈復原運算時是否啟用去加重補償濾波 @@ 510 @@ RW @@ N
+:MEASure:CLOCk:METHod:EDGE @@ :MEASure:CLOCk:METHod:EDGE {RISing | FALLing | BOTH};:MEASure:CLOCk:METHod:EDGE? @@ {RISing | FALLing | BOTH} @@ 設定時脈復原時所使用的資料訊號邊緣類型 @@ 511 @@ RW @@ N
+:MEASure:CLOCk:METHod:JTF @@ :MEASure:CLOCk:METHod:JTF ...;:MEASure:CLOCk:METHod:JTF? @@ {FOPLL | SOPLL | ...} @@ 以抖動轉移函數 (JTF) 參數配置時脈復原模式 @@ 513 @@ RW @@ N
+:MEASure:CLOCk:METHod:OJTF @@ :MEASure:CLOCk:METHod:OJTF ...;:MEASure:CLOCk:METHod:OJTF? @@ {FOPLL | SOPLL | ...} @@ 以觀測抖動轉移函數 (OJTF) 參數配置時脈復原模式 @@ 515 @@ RW @@ N
+:MEASure:CLOCk:VERTical @@ :MEASure:CLOCk:VERTical {AUTO | MANual};:MEASure:CLOCk:VERTical? @@ {AUTO | MANual} @@ 設定復原時脈波形的垂直縮放模式為自動或手動 @@ 517 @@ RW @@ N
+:MEASure:CLOCk:VERTical:OFFSet @@ :MEASure:CLOCk:VERTical:OFFSet <offset>;:MEASure:CLOCk:VERTical:OFFSet? @@ <offset> (電壓) @@ 設定復原時脈波形的手動垂直偏置電壓 @@ 518 @@ RW @@ N
+:MEASure:CLOCk:VERTical:RANGe @@ :MEASure:CLOCk:VERTical:RANGe <range>;:MEASure:CLOCk:VERTical:RANGe? @@ <range> (電壓) @@ 設定復原時脈波形的手動垂直全螢幕範圍 @@ 519 @@ RW @@ N
+:MEASure:CROSsing @@ :MEASure:CROSsing [<source>];:MEASure:CROSsing? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測眼圖波形的交越電壓準位與百分比 @@ 520 @@ RW @@ N
+:MEASure:CTCDutycycle @@ :MEASure:CTCDutycycle [<source>];:MEASure:CTCDutycycle? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測波形的週期至週期 (Cycle-to-Cycle) 工作週期抖動 @@ 521 @@ RW @@ N
+:MEASure:CTCJitter @@ :MEASure:CTCJitter [<source>];:MEASure:CTCJitter? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測波形的週期至週期 (Cycle-to-Cycle) 時間抖動 @@ 523 @@ RW @@ N
+:MEASure:CTCNwidth @@ :MEASure:CTCNwidth [<source>];:MEASure:CTCNwidth? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測波形的週期至週期負脈寬抖動量 @@ 525 @@ RW @@ N
+:MEASure:CTCPwidth @@ :MEASure:CTCPwidth [<source>];:MEASure:CTCPwidth? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測波形的週期至週期正脈寬抖動量 @@ 527 @@ RW @@ N
+:MEASure:DATarate @@ :MEASure:DATarate [<source>];:MEASure:DATarate? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測輸入序列波形的資料傳輸速率 @@ 529 @@ RW @@ N
+:MEASure:DEEMphasis @@ :MEASure:DEEMphasis [<source>];:MEASure:DEEMphasis? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 量測波形訊號的去加重 (De-emphasis) 比例分貝值 @@ 531 @@ RW @@ N
+:MEASure:DELTatime @@ :MEASure:DELTatime [<start_source>[,<stop_source>]];:MEASure:DELTatime? [<start_source>[,<stop_source>]] @@ <start_source>, <stop_source> @@ 量測兩波形邊緣或同一波形不同邊緣的時間差 @@ 533 @@ RW @@ N
+:MEASure:DELTatime:DEFine @@ :MEASure:DELTatime:DEFine <start_dir>,<start_num>,<start_pos>,<stop_dir>,<stop_num>,<stop_pos>;:MEASure:DELTatime:DEFine? @@ <start_dir>:{RIS|FALL|EITH}, <start_num>:(1~65534), <start_pos>:{UPP|MIDD|LOW}, <stop_dir>:{RIS|FALL|EITH}, <stop_num>:(1~65534), <stop_pos>:{UPP|MIDD|LOW} @@ 定義 Delta time 量測的起始與終止邊緣條件 @@ 535 @@ RW @@ N
+:MEASure:DUTYcycle @@ :MEASure:DUTYcycle [<source>[,<direction>]];:MEASure:DUTYcycle? [<source>[,<direction>]] @@ <source>, <direction>:{RISing | FALLing} @@ 量測波形第一個完整週期的工作週期百分比 @@ 537 @@ RW @@ N
+:MEASure:EDGE @@ :MEASure:EDGE [<source>[,<edge_number>[,<edge_slope>]]];:MEASure:EDGE? [<source>[,<edge_number>[,<edge_slope>]]] @@ <source>, <edge_number>, <edge_slope>:{RISing | FALLing} @@ 量測指定邊緣相對於觸發點的時間位置 @@ 539 @@ RW @@ N
+:MEASure:ETOedge @@ :MEASure:ETOedge [<source1>,<direction1>,<edge_num1>,<source2>,<direction2>,<edge_num2>];:MEASure:ETOedge? @@ <source1>, <direction1>, <edge_num1>, <source2>, <direction2>, <edge_num2> @@ 量測事件至邊緣 (Event-to-Edge) 的精確時間差 @@ 541 @@ RW @@ N
+:MEASure:FALLtime @@ :MEASure:FALLtime [<source>];:MEASure:FALLtime? [<source>] @@ <source>:{CHANnel<N> | FUNCtion<F> | DIGital<M> | WMEMory<N> | ...} @@ 量測波形下降沿的時間 @@ 542 @@ RW @@ N
+:MEASure:FFT:DFRequency @@ :MEASure:FFT:DFRequency [<source>];:MEASure:FFT:DFRequency? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | ...} @@ 量測 FFT 頻譜中 Peak1 與 Peak2 之間的頻率差 @@ 544 @@ RW @@ N
+:MEASure:FFT:DMAGnitude @@ :MEASure:FFT:DMAGnitude [<source>];:MEASure:FFT:DMAGnitude? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | ...} @@ 量測 FFT 頻譜中 Peak1 與 Peak2 之間的振幅差 @@ 546 @@ RW @@ N
+:MEASure:FFT:FREQuency @@ :MEASure:FFT:FREQuency [<source>];:MEASure:FFT:FREQuency? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | ...} @@ 量測 FFT 頻譜中指定峰值 (Peak1) 的頻率值 @@ 548 @@ RW @@ N
+:MEASure:FFT:MAGNitude @@ :MEASure:FFT:MAGNitude [<source>];:MEASure:FFT:MAGNitude? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | ...} @@ 量測 FFT 頻譜中指定峰值 (Peak1) 的振幅值 @@ 549 @@ RW @@ N
+:MEASure:FFT:PEAK1 @@ :MEASure:FFT:PEAK1 <1st_peak_number>;:MEASure:FFT:PEAK1? @@ <1st_peak_number> (1~100整數) @@ 設定 FFT 量測中的第一個目標搜尋峰值編號 @@ 550 @@ RW @@ N
+:MEASure:FFT:PEAK2 @@ :MEASure:FFT:PEAK2 <2nd_peak_number>;:MEASure:FFT:PEAK2? @@ <2nd_peak_number> (1~100整數) @@ 設定 FFT 量測中的第二個目標搜尋峰值編號 @@ 551 @@ RW @@ N
+:MEASure:FFT:THReshold @@ :MEASure:FFT:THReshold <threshold_value>;:MEASure:FFT:THReshold? @@ <threshold_value> (dB 單位實數) @@ 設定 FFT 峰值自動搜尋時的最小強度門檻值 @@ 552 @@ RW @@ N
+:MEASure:FREQuency @@ :MEASure:FREQuency [<source>[,<direction>]];:MEASure:FREQuency? [<source>[,<direction>]] @@ <source>, <direction>:{RISing | FALLing} @@ 量測波形螢幕上第一個完整週期的訊號頻率 @@ 553 @@ RW @@ N

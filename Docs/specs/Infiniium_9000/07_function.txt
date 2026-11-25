@@ -1,0 +1,41 @@
+:FUNCtion<F>? @@ :FUNCtion<F>? @@ 無 @@ 查詢指定數學功能目前定義的波形來源與運算子 @@ 324 @@ R @@ N
+:FUNCtion<F>:ABSolute @@ :FUNCtion<F>:ABSolute <operand> @@ <operand> (通道/功能/記憶體/趨勢等) @@ 設定數學功能為計算來源波形數值的絕對值 @@ 325 @@ W @@ N
+:FUNCtion<F>:ADD @@ :FUNCtion<F>:ADD <operand>,<operand> @@ <operand>,<operand> (通道/功能/記憶體/常數等) @@ 設定數學功能為計算兩來源波形的代數相加 @@ 326 @@ W @@ N
+:FUNCtion<F>:ADEMod @@ :FUNCtion<F>:ADEMod <source> @@ <source> (通道/功能/記憶體/趨勢等) @@ 設定數學功能為顯示 AM 調變輸入訊號的振幅包絡線 @@ 327 @@ W @@ N
+:FUNCtion<F>:AVERage @@ :FUNCtion<F>:AVERage <operand>[,<averages>] @@ <operand>, <averages> (2~65534整數) @@ 設定數學功能為對來源波形進行指定次數的平均運算 @@ 328 @@ W @@ N
+:FUNCtion<F>:COMMonmode @@ :FUNCtion<F>:COMMonmode <operand>,<operand> @@ <operand>,<operand> @@ 設定數學功能為計算兩來源波形的共模電壓 @@ 329 @@ W @@ N
+:FUNCtion<F>:DELay @@ :FUNCtion<F>:DELay <operand>,<delay_time> @@ <operand>, <delay_time> (秒) @@ 設定數學功能為將來源波形在時間軸上進行延遲位移 @@ 330 @@ W @@ N
+:FUNCtion<F>:DIFF @@ :FUNCtion<F>:DIFF <operand>[,<low_pass_phase_align>] @@ <operand>, {{ON | 1} | {OFF | 0}} @@ 設定數學功能為計算來源波形的微分離散運算 @@ 331 @@ W @@ N
+:FUNCtion<F>:DISPlay @@ :FUNCtion<F>:DISPlay {{ON | 1} | {OFF | 0}};:FUNCtion<F>:DISPlay? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定數學功能波形在螢幕上的顯示 @@ 332 @@ RW @@ N
+:FUNCtion<F>:DIVide @@ :FUNCtion<F>:DIVide <operand>,<operand> @@ <operand>,<operand> @@ 設定數學功能為將第一個來源波形除以第二個來源波形 @@ 333 @@ W @@ N
+:FUNCtion<F>:FFT:FREQuency @@ :FUNCtion<F>:FFT:FREQuency <center_frequency_value>;:FUNCtion<F>:FFT:FREQuency? @@ <center_frequency_value> (-1E12 ~ 1E12 Hz) @@ 設定 FFT 頻譜分析功能的中心頻率 @@ 334 @@ RW @@ N
+:FUNCtion<F>:FFT:REFerence @@ :FUNCtion<F>:FFT:REFerence {DISPlay | TRIGger};:FUNCtion<F>:FFT:REFerence? @@ {DISPlay | TRIGger} @@ 設定計算 FFT 相位功能時的時間參考基準點 @@ 335 @@ RW @@ N
+:FUNCtion<F>:FFT:RESolution? @@ :FUNCtion<F>:FFT:RESolution? @@ 無 @@ 查詢當前 FFT 功能的頻率解析度 @@ 336 @@ R @@ N
+:FUNCtion<F>:FFT:TDELay @@ :FUNCtion<F>:FFT:TDELay <time_delay>;:FUNCtion<F>:FFT:TDELay? @@ <time_delay> (秒) @@ 設定 FFT 相位功能的時間延遲量 @@ 337 @@ RW @@ N
+:FUNCtion<F>:FFT:WINDow @@ :FUNCtion<F>:FFT:WINDow {RECTangular | HANNing | FLATtop | BHARris | HAMMing};:FUNCtion<F>:FFT:WINDow? @@ {RECTangular | HANNing | FLATtop | BHARris | HAMMing} @@ 設定 FFT 運算所採用的窗函數濾波器類型 @@ 338 @@ RW @@ N
+:FUNCtion<F>:FFTMagnitude @@ :FUNCtion<F>:FFTMagnitude <operand> @@ <operand> @@ 設定數學功能為計算來源波形的 FFT 振幅頻譜 @@ 340 @@ W @@ N
+:FUNCtion<F>:FFTPhase @@ :FUNCtion<F>:FFTPhase <source> @@ <source> @@ 設定數學功能為計算來源波形的 FFT 相位頻譜 @@ 341 @@ W @@ N
+:FUNCtion<F>:GATing @@ :FUNCtion<F>:GATing <operand>[,<gating_start>,<gating_stop>] @@ <operand>, <gating_start> (秒), <gating_stop> (秒) @@ 設定數學功能為對來源波形進行水平門限截取 @@ 342 @@ W @@ N
+:FUNCtion<F>:HIGHpass @@ :FUNCtion<F>:HIGHpass <source>,<bandwidth> @@ <source>, <bandwidth> (50 ~ 50E9 Hz) @@ 設定數學功能為對來源波形套用單極高通濾波器 @@ 343 @@ W @@ N
+:FUNCtion<F>:HORizontal @@ :FUNCtion<F>:HORizontal {AUTO | MANual};:FUNCtion<F>:HORizontal? @@ {AUTO | MANual} @@ 設定數學功能波形的水平追蹤模式為自動或手動 @@ 344 @@ RW @@ N
+:FUNCtion<F>:HORizontal:POSition @@ :FUNCtion<F>:HORizontal:POSition <position_value>;:FUNCtion<F>:HORizontal:POSition? @@ <position_value> (-10E15 ~ 10E15 秒) @@ 設定數學功能波形在螢幕中央的水平時間位置 @@ 345 @@ RW @@ N
+:FUNCtion<F>:HORizontal:RANGe @@ :FUNCtion<F>:HORizontal:RANGe <range_value>;:FUNCtion<F>:HORizontal:RANGe? @@ <range_value> (秒) @@ 設定數學功能波形的全螢幕水平時間範圍 @@ 346 @@ RW @@ N
+:FUNCtion<F>:INTegrate @@ :FUNCtion<F>:INTegrate <operand>[,<offset>] @@ <operand>, [<offset>] @@ 設定數學功能為對來源波形進行積分運算 @@ 347 @@ W @@ N
+:FUNCtion<F>:INVert @@ :FUNCtion<F>:INVert <operand> @@ <operand> @@ 設定數學功能為將來源波形的垂直電壓強度反相 @@ 348 @@ W @@ N
+:FUNCtion<F>:LOWPass @@ :FUNCtion<F>:LOWPass <source>,<bandwidth> @@ <source>, <bandwidth> (Hz) @@ 設定數學功能為對來源波形套用單極低通濾波器 @@ 349 @@ W @@ N
+:FUNCtion<F>:MAGNify @@ :FUNCtion<F>:MAGNify <operand> @@ <operand> @@ 設定數學功能為對來源波形進行垂直與水平放大顯示 @@ 350 @@ W @@ N
+:FUNCtion<F>:MAXimum @@ :FUNCtion<F>:MAXimum <operand> @@ <operand> @@ 設定數學功能為保留來源波形擷取過程中的最大值包絡線 @@ 351 @@ W @@ N
+:FUNCtion<F>:MHIStogram @@ :FUNCtion<F>:MHIStogram <measurement_number> @@ <measurement_number> (MEASurement1~10) @@ 設定數學功能為繪製指定量測項目的量測統計直方圖 @@ 352 @@ W @@ N
+:FUNCtion<F>:MINimum @@ :FUNCtion<F>:MINimum <operand> @@ <operand> @@ 設定數學功能為保留來源波形擷取過程中的最小值包絡線 @@ 353 @@ W @@ N
+:FUNCtion<F>:MTRend @@ :FUNCtion<F>:MTRend <measurement_number> @@ <measurement_number> (MEASurement1~10) @@ 設定數學功能為繪製指定量測項目的量測趨勢圖 @@ 354 @@ W @@ N
+:FUNCtion<F>:MULTiply @@ :FUNCtion<F>:MULTiply <operand>,<operand> @@ <operand>,<operand> @@ 設定數學功能為計算兩來源波形的點對點相乘 @@ 355 @@ W @@ N
+:FUNCtion<F>:OFFSet @@ :FUNCtion<F>:OFFSet <offset_value>;:FUNCtion<F>:OFFSet? @@ <offset_value> (實數) @@ 設定數學功能波形在螢幕中央的垂直偏置電壓 @@ 356 @@ RW @@ N
+:FUNCtion<F>:RANGe @@ :FUNCtion<F>:RANGe <full_scale_range>;:FUNCtion<F>:RANGe? @@ <full_scale_range> (實數) @@ 設定數學功能波形的全螢幕垂直範圍 @@ 357 @@ RW @@ N
+:FUNCtion<F>:SMOoth @@ :FUNCtion<F>:SMOoth <operand>[,<points>] @@ <operand>, [<points>] @@ 設定數學功能為對來源波形套用平滑化移動平均濾波 @@ 358 @@ W @@ N
+:FUNCtion<F>:SQRT @@ :FUNCtion<F>:SQRT <operand> @@ <operand> @@ 設定數學功能為計算來源波形數值的平方根 @@ 359 @@ W @@ N
+:FUNCtion<F>:SQUare @@ :FUNCtion<F>:SQUare <operand> @@ <operand> @@ 設定數學功能為計算來源波形數值的平方 @@ 360 @@ W @@ N
+:FUNCtion<F>:SUBTract @@ :FUNCtion<F>:SUBTract <operand>,<operand> @@ <operand>,<operand> @@ 設定數學功能為計算第一個來源波形減去第二個來源波形 @@ 361 @@ W @@ N
+:FUNCtion<F>:VERSus @@ :FUNCtion<F>:VERSus <operand_y>,<operand_x> @@ <operand_y>,<operand_x> @@ 設定數學功能為繪製 X-Y 圖形 @@ 362 @@ W @@ N
+:FUNCtion<F>:VERTical @@ :FUNCtion<F>:VERTical {AUTO | MANual};:FUNCtion<F>:VERTical? @@ {AUTO | MANual} @@ 設定數學功能波形的垂直縮放模式為自動或手動 @@ 363 @@ RW @@ N
+:FUNCtion<F>:VERTical:OFFSet @@ :FUNCtion<F>:VERTical:OFFSet <offset_value>;:FUNCtion<F>:VERTical:OFFSet? @@ <offset_value> (實數) @@ 設定數學功能波形在螢幕中央的垂直偏置電壓值 @@ 364 @@ RW @@ N
+:FUNCtion<F>:VERTical:RANGe @@ :FUNCtion<F>:VERTical:RANGe <full_scale_range>;:FUNCtion<F>:VERTical:RANGe? @@ <full_scale_range> (-100E15 ~ 100E15 實數) @@ 設定數學功能波形的全螢幕垂直範圍值 @@ 365 @@ RW @@ N

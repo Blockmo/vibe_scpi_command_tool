@@ -1,0 +1,3 @@
+:DISPlay:CGRade @@ :DISPlay:CGRade {{ON | 1} | {OFF | 0}};:DISPlay:CGRade? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉色彩等級（Color Grade）餘輝顯示模式 @@ 296 @@ RW @@ N
+:DISPlay:CGRade:LEVels? @@ :DISPlay:CGRade:LEVels? @@ 無 @@ 查詢色彩等級顯示中七種顏色分別對應的命中次數最小與最大範圍 @@ 297 @@ R @@ N
+:DISPlay:CGRade:SCHeme @@ :DISPlay:CGRade:SCHeme {CLASsic | TEMP};:DISPlay:CGRade:SCHeme? @@ {CLASsic | TEMP} @@ 設定或查詢色彩等級顯示所採用的配色方案（經典或溫度） @@ 299 @@ RW @@ N

@@ -1,0 +1,37 @@
+AUXIn:BANdwidth @@ AUXIn:BANdwidth <NR3>; AUXIn:BANdwidth? @@ <NR3> @@ 設定或查詢 AUX In 輸入的低通頻寬限制 @@ 2-87 @@ RW @@ N
+AUXIn:COUPling @@ AUXIn:COUPling <NR3>; AUXIn:COUPling? @@ <NR3> @@ 設定或查詢 AUX In 輸入的衰減器耦合模式 @@ 2-88 @@ RW @@ N
+AUXIn:OFFSet @@ AUXIn:OFFSet <NR3>; AUXIn:OFFSet? @@ <NR3> @@ 設定或查詢 AUX In 輸入的垂直偏移電壓 @@ 2-88 @@ RW @@ N
+AUXIn:PRObe:AUTOZero @@ AUXIn:PRObe:AUTOZero EXECute @@ EXECute @@ 執行 AUX In 輸入探棒的自動歸零程序 @@ 2-89 @@ W @@ N
+AUXIn:PRObe:DEGAUSS @@ AUXIn:PRObe:DEGAUSS EXECute @@ EXECute @@ 啟動 AUX In 輸入探棒的消磁程序 @@ 2-89 @@ W @@ N
+AUXIn:PRObe:DEGAUSS:STATE? @@ AUXIn:PRObe:DEGAUSS:STATE? @@ 無 @@ 傳回 AUX In 輸入探棒是否已完成消磁 @@ 2-90 @@ R @@ N
+AUXIn:PRObe:FORCEDRange @@ AUXIn:PRObe:FORCEDRange <NR3>; AUXIn:PRObe:FORCEDRange? @@ <NR3> @@ 設定或查詢 AUX In 探棒的預設強制量程範圍 @@ 2-90 @@ RW @@ N
+AUXIn:PRObe:GAIN? @@ AUXIn:PRObe:GAIN? @@ 無 @@ 傳回 AUX In 輸入探棒的增益係數 @@ 2-91 @@ R @@ N
+AUXIn:PRObe:ID:SERnumber? @@ AUXIn:PRObe:ID:SERnumber? @@ 無 @@ 傳回 AUX In 輸入探棒的產品序號 @@ 2-91 @@ R @@ N
+AUXIn:PRObe:ID:TYPe? @@ AUXIn:PRObe:ID:TYPe? @@ 無 @@ 傳回 AUX In 輸入探棒的型號類型 @@ 2-91 @@ R @@ N
+AUXIn:PRObe:INPUTMode @@ AUXIn:PRObe:INPUTMode {DEFault|DIFFerential|COMmonmode|A|B}; AUXIn:PRObe:INPUTMode? @@ DEFault | DIFFerential | COMmonmode | A | B @@ 設定或查詢 AUX In 探棒的輸入模式 @@ 2-92 @@ RW @@ N
+AUXIn:PRObe:INPUTMode:AOFFSet @@ AUXIn:PRObe:INPUTMode:AOFFSet <NR3>; AUXIn:PRObe:INPUTMode:AOFFSet? @@ <NR3> @@ 設定或查詢 AUX In 探棒在 A 模式下的偏移控制電壓 @@ 2-92 @@ RW @@ N
+AUXIn:PRObe:INPUTMode:BOFFSet @@ AUXIn:PRObe:INPUTMode:BOFFSet <NR3>; AUXIn:PRObe:INPUTMode:BOFFSet? @@ <NR3> @@ 設定或查詢 AUX In 探棒在 B 模式下的偏移控制電壓 @@ 2-93 @@ RW @@ N
+AUXIn:PRObe:INPUTMode:CMOFFSet @@ AUXIn:PRObe:INPUTMode:CMOFFSet <NR3>; AUXIn:PRObe:INPUTMode:CMOFFSet? @@ <NR3> @@ 設定或查詢 AUX In 探棒的共模偏移控制電壓 @@ 2-93 @@ RW @@ N
+AUXIn:PRObe:INPUTMode:DMOFFSet @@ AUXIn:PRObe:INPUTMode:DMOFFSet <NR3>; AUXIn:PRObe:INPUTMode:DMOFFSet? @@ <NR3> @@ 設定或查詢 AUX In 探棒的差模偏移控制電壓 @@ 2-94 @@ RW @@ N
+AUXIn:PRObe:RANge @@ AUXIn:PRObe:RANge {ATTEN1X..ATTEN1000X}; AUXIn:PRObe:RANge? @@ ATTEN1X 至 ATTEN1000X @@ 設定或查詢 AUX In 探棒的衰減範圍 @@ 2-94 @@ RW @@ N
+AUXIn:PRObe:RESistance? @@ AUXIn:PRObe:RESistance? @@ 無 @@ 傳回 AUX In 輸入探棒的輸入阻抗值 @@ 2-95 @@ R @@ N
+AUXIn:PRObe:SET @@ AUXIn:PRObe:SET <QString>; AUXIn:PRObe:SET? @@ <QString> @@ 設定或查詢 AUX In 探棒配件介面的特定設定字串 @@ 2-95 @@ RW @@ N
+AUXIn:PRObe:SIGnal @@ AUXIn:PRObe:SIGnal {PASS|BYPass}; AUXIn:PRObe:SIGnal? @@ PASS | BYPass @@ 設定或查詢 AUX In 探棒配件介面的訊號通路狀態 @@ 2-96 @@ RW @@ N
+AUXIn:PRObe:TIPtype @@ AUXIn:PRObe:TIPtype {HBWStraightflex|OTHer}; AUXIn:PRObe:TIPtype? @@ HBWStraightflex | OTHer @@ 設定或查詢 AUX In 探棒所使用的前端針頭類型 @@ 2-97 @@ RW @@ N
+AUXIn:PRObe:UNIts? @@ AUXIn:PRObe:UNIts? @@ 無 @@ 傳回 AUX In 輸入探棒的量測單位 @@ 2-97 @@ R @@ N
+AUXIn:PROBEFunc:EXTAtten @@ AUXIn:PROBEFunc:EXTAtten <NR3>; AUXIn:PROBEFunc:EXTAtten? @@ <NR3> @@ 設定或查詢 AUX In 外部衰減器的衰減倍率 @@ 2-97 @@ RW @@ N
+AUXIn:PROBEFunc:EXTDBatten @@ AUXIn:PROBEFunc:EXTDBatten <NR3>; AUXIn:PROBEFunc:EXTDBatten? @@ <NR3> @@ 設定或查詢 AUX In 外部衰減器的分貝衰減值 @@ 2-98 @@ RW @@ N
+AUXIn:PROBEFunc:EXTUnits @@ AUXIn:PROBEFunc:EXTUnits <str>; AUXIn:PROBEFunc:EXTUnits? @@ <str> @@ 設定或查詢 AUX In 外部衰減器的量測單位 @@ 2-99 @@ RW @@ N
+MATH<x>:VERTical:POSition @@ MATH<x>:VERTical:POSition <NR3>; MATH<x>:VERTical:POSition? @@ <NR3> @@ 設定或查詢指定數學波形的垂直顯示位置 @@ 2-360 @@ RW @@ N
+MATH<x>:VERTical:SCAle @@ MATH<x>:VERTical:SCAle <NR3>; MATH<x>:VERTical:SCAle? @@ <NR3> @@ 設定或查詢指定數學波形的垂直刻度比例 @@ 2-362 @@ RW @@ N
+REF<x>:HORizontal:POSition @@ REF<x>:HORizontal:POSition <NR3>; REF<x>:HORizontal:POSition? @@ <NR3> @@ 設定或查詢指定參考波形的水平顯示位置百分比 @@ 2-417 @@ RW @@ N
+REF<x>:LABel? @@ REF<x>:LABel? @@ 無 @@ 傳回指定參考波形標籤的名稱與座標 @@ 2-418 @@ R @@ N
+REF<x>:LABel:NAMe @@ REF<x>:LABel:NAMe <QString>; REF<x>:LABel:NAMe? @@ <QString> @@ 設定或查詢指定參考波形顯示標籤的名稱 @@ 2-418 @@ RW @@ N
+REF<x>:LABel:XPOS @@ REF<x>:LABel:XPOS <NR1>; REF<x>:LABel:XPOS? @@ <NR1> @@ 設定或查詢指定參考波形標籤的水平位置 @@ 2-419 @@ RW @@ N
+REF<x>:LABel:YPOS @@ REF<x>:LABel:YPOS <NR1>; REF<x>:LABel:YPOS? @@ <NR1> @@ 設定或查詢指定參考波形標籤的垂直位置 @@ 2-419 @@ RW @@ N
+REF<x>:VERTical:POSition @@ REF<x>:VERTical:POSition <NR3>; REF<x>:VERTical:POSition? @@ <NR3> @@ 設定或查詢指定參考波形的垂直顯示位置 @@ 2-420 @@ RW @@ N
+REF<x>:VERTical:SCAle @@ REF<x>:VERTical:SCAle <NR3>; REF<x>:VERTical:SCAle? @@ <NR3> @@ 設定或查詢指定參考波形的垂直刻度比例 @@ 2-421 @@ RW @@ N
+SELect? @@ SELect? @@ 無 @@ 傳回所有波形的顯示狀態與當前選取的波形 @@ 2-487 @@ R @@ N
+SELect:<wfm> @@ SELect:<wfm> {ON|OFF|<NR1>}; SELect:<wfm>? @@ <wfm>: CH<x>|MATH<x>|REF<x>; ON | OFF | <NR1> @@ 設定或查詢指定波形的顯示啟用狀態 @@ 2-488 @@ RW @@ N
+SELect:CH<x> @@ SELect:CH<x> {<NR1>|OFF|ON}; SELect:CH<x>? @@ <NR1> | OFF | ON @@ 設定或查詢指定通道波形的顯示狀態 @@ 2-487 @@ RW @@ N
+SELect:CONTROl @@ SELect:CONTROl {CH<x>|MATH<x>|REF<x>}; SELect:CONTROl? @@ CH<x> | MATH<x> | REF<x> @@ 設定或查詢控制面板作用的目標波形來源 @@ 2-488 @@ RW @@ N

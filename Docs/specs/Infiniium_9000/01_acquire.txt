@@ -1,0 +1,18 @@
+:ACQuire:AVERage @@ :ACQuire:AVERage {{ON | 1} | {OFF | 0}};:ACQuire:AVERage? @@ {ON | 1 | OFF | 0} @@ 開啟或關閉波形平均功能 @@ 148 @@ RW @@ N
+:ACQuire[:AVERage]:COUNt @@ :ACQuire[:AVERage]:COUNt <count_value>;:ACQuire[:AVERage]:COUNt? @@ <count_value> (2~65534整數) @@ 設定波形平均的擷取次數 @@ 149 @@ RW @@ N
+:ACQuire:BANDwidth @@ :ACQuire:BANDwidth {AUTO | <bandwidth>};:ACQuire:BANDwidth? @@ {AUTO | <bandwidth>} @@ 設定擷取系統的頻寬限制或濾波器頻寬 @@ 150 @@ RW @@ N
+:ACQuire:COMPlete @@ :ACQuire:COMPlete <percent>;:ACQuire:COMPlete? @@ <percent> (0~100整數) @@ 設定量測前波形記錄資料點填滿的百分比門檻 @@ 151 @@ RW @@ N
+:ACQuire:COMPlete:STATe @@ :ACQuire:COMPlete:STATe {{ON | 1} | {OFF | 0}};:ACQuire:COMPlete:STATe? @@ {ON | 1 | OFF | 0} @@ 設定等效時間模式下COMPlete判斷機制的啟用狀態 @@ 153 @@ RW @@ N
+:ACQuire:HRESolution @@ :ACQuire:HRESolution {AUTO | BITS9 | BITS10 | BITS11 | BITS12};:ACQuire:HRESolution? @@ {AUTO | BITS9 | BITS10 | BITS11 | BITS12} @@ 設定高解析度擷取模式下的最小垂直解析度位元數 @@ 154 @@ RW @@ N
+:ACQuire:INTerpolate @@ :ACQuire:INTerpolate {{ON | 1} | {OFF | 0} | INT1 | INT2 | INT4 | INT8 | INT16};:ACQuire:INTerpolate? @@ {ON | 1 | OFF | 0 | INT1 | INT2 | INT4 | INT8 | INT16} @@ 設定Sin(x)/x插值濾波器的開啟、關閉或插值倍率 @@ 155 @@ RW @@ N
+:ACQuire:MODE @@ :ACQuire:MODE {ETIMe | RTIMe | PDETect | HRESolution | SEGMented | SEGPdetect | SEGHres};:ACQuire:MODE? @@ {ETIMe | RTIMe | PDETect | HRESolution | SEGMented | SEGPdetect | SEGHres} @@ 設定示波器的採樣與取樣擷取模式 @@ 156 @@ RW @@ N
+:ACQuire:POINts[:ANALog] @@ :ACQuire:POINts[:ANALog] {AUTO | <points_value>};:ACQuire:POINts[:ANALog]? @@ {AUTO | <points_value>} @@ 設定類比通道擷取所需的記憶體深度資料點數 @@ 158 @@ RW @@ N
+:ACQuire:POINts:AUTO @@ :ACQuire:POINts:AUTO {{ON | 1} | {OFF | 0}};:ACQuire:POINts:AUTO? @@ {ON | 1 | OFF | 0} @@ 開啟或關閉記憶體深度的自動選擇控制 @@ 161 @@ RW @@ N
+:ACQuire:POINts:DIGital? @@ :ACQuire:POINts:DIGital? @@ 無 @@ 查詢數位通道當前的記憶體深度資料點數 @@ 162 @@ R @@ N
+:ACQuire:SEGMented:COUNt @@ :ACQuire:SEGMented:COUNt <#segments>;:ACQuire:SEGMented:COUNt? @@ <#segments> (整數) @@ 設定分段記憶體模式下要擷取的波形分段數量 @@ 163 @@ RW @@ N
+:ACQuire:SEGMented:INDex @@ :ACQuire:SEGMented:INDex <index#>;:ACQuire:SEGMented:INDex? @@ <index#> (整數) @@ 設定分段記憶體模式下要顯示在螢幕上的分段索引編號 @@ 164 @@ RW @@ N
+:ACQuire:SEGMented:TTAGs @@ :ACQuire:SEGMented:TTAGs {{ON | 1} | {OFF | 0}};:ACQuire:SEGMented:TTAGs? @@ {ON | 1 | OFF | 0} @@ 開啟或關閉分段記憶體模式的時間標記功能 @@ 165 @@ RW @@ N
+:ACQuire:SRATe[:ANALog] @@ :ACQuire:SRATe[:ANALog] {AUTO | MAX | <rate>};:ACQuire:SRATe[:ANALog]? @@ {AUTO | MAX | <rate>} @@ 設定類比通道的擷取採樣率 @@ 166 @@ RW @@ N
+:ACQuire:SRATe[:ANALog]:AUTO @@ :ACQuire:SRATe[:ANALog]:AUTO {{ON | 1} | {OFF | 0}};:ACQuire:SRATe[:ANALog]:AUTO? @@ {ON | 1 | OFF | 0} @@ 開啟或關閉類比通道採樣率的自動選擇控制 @@ 168 @@ RW @@ N
+:ACQuire:SRATe:DIGital @@ :ACQuire:SRATe:DIGital {AUTO | MAX | <rate>};:ACQuire:SRATe:DIGital? @@ {AUTO | MAX | <rate>} @@ 設定數位通道的擷取採樣率 @@ 169 @@ RW @@ N
+:ACQuire:SRATe:DIGital:AUTO @@ :ACQuire:SRATe:DIGital:AUTO {{ON | 1} | {OFF | 0}};:ACQuire:SRATe:DIGital:AUTO? @@ {ON | 1 | OFF | 0} @@ 開啟或關閉數位通道採樣率的自動選擇控制 @@ 170 @@ RW @@ N

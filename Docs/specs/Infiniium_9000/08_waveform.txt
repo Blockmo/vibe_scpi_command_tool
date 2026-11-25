@@ -1,0 +1,37 @@
+:WAVeform:BANDpass? @@ :WAVeform:BANDpass? @@ 無 @@ 查詢當前波形傳輸所套用的頻寬或帶通濾波器限制 @@ 1086 @@ R @@ N
+:WAVeform:BYTeorder @@ :WAVeform:BYTeorder {MSBFirst | LSBFirst};:WAVeform:BYTeorder? @@ {MSBFirst | LSBFirst} @@ 設定或查詢多位元組波形資料傳輸時的位元組排列順序 @@ 1087 @@ RW @@ N
+:WAVeform:COMPlete? @@ :WAVeform:COMPlete? @@ 無 @@ 查詢波形擷取記錄填滿的完成百分比 @@ 1088 @@ R @@ N
+:WAVeform:COUNt? @@ :WAVeform:COUNt? @@ 無 @@ 查詢當前擷取波形的平均次數 @@ 1089 @@ R @@ N
+:WAVeform:COUPling? @@ :WAVeform:COUPling? @@ 無 @@ 查詢當前波形來源通道的輸入耦合方式 @@ 1090 @@ R @@ N
+:WAVeform:DATA? @@ :WAVeform:DATA? [<source>[,<points>]] @@ [<source>[,<points>]] @@ 擷取並傳回指定來源波形的區塊資料點 @@ 1091 @@ R @@ N
+:WAVeform:FORMat @@ :WAVeform:FORMat {WORD | BYTE | ASCii};:WAVeform:FORMat? @@ {WORD | BYTE | ASCii} @@ 設定或查詢傳輸波形資料點時所採用的資料格式 @@ 1113 @@ RW @@ N
+:WAVeform:POINts? @@ :WAVeform:POINts? [<points>] @@ [<points>] @@ 查詢當前波形資料可傳輸或傳回的資料點數量 @@ 1116 @@ R @@ N
+:WAVeform:PREamble? @@ :WAVeform:PREamble? @@ 無 @@ 查詢波形數據轉換與解析所需的標頭前導參數 @@ 1117 @@ R @@ N
+:WAVeform:SEGMented:ALL @@ :WAVeform:SEGMented:ALL {{ON | 1} | {OFF | 0}};:WAVeform:SEGMented:ALL? @@ {{ON | 1} | {OFF | 0}} @@ 設定傳輸分段波形時是否下載所有分段資料 @@ 1122 @@ RW @@ N
+:WAVeform:SEGMented:COUNt? @@ :WAVeform:SEGMented:COUNt? @@ 無 @@ 查詢分段記憶體模式下已擷取的波形總分段數 @@ 1123 @@ R @@ N
+:WAVeform:SEGMented:TTAG? @@ :WAVeform:SEGMented:TTAG? [<segment_index>] @@ [<segment_index>] @@ 查詢指定分段波形的時間標記值 @@ 1124 @@ R @@ N
+:WAVeform:SEGMented:XLISt? @@ :WAVeform:SEGMented:XLISt? @@ 無 @@ 查詢所有分段波形的時間標記列表 @@ 1125 @@ R @@ N
+:WAVeform:SOURce @@ :WAVeform:SOURce {CHANnel<N> | DIGital<M> | FUNCtion<F> | WMEMory<R> | COMMonmode<P> | DIFFerential<P> | HISTogram | MTRend | MSPectrum | EQUalized | POD<P>};:WAVeform:SOURce? @@ {CHANnel<N> | DIGital<M> | FUNCtion<F> | WMEMory<R> | ...} @@ 設定或查詢波形傳輸與分析指令所作用的訊號來源 @@ 1126 @@ RW @@ N
+:WAVeform:STReaming @@ :WAVeform:STReaming {{ON | 1} | {OFF | 0}};:WAVeform:STReaming? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉波形資料的高速串流傳輸模式 @@ 1128 @@ RW @@ N
+:WAVeform:TYPE? @@ :WAVeform:TYPE? @@ 無 @@ 查詢當前波形資料的採樣擷取類型 @@ 1129 @@ R @@ N
+:WAVeform:VIEW @@ :WAVeform:VIEW {MAIN | WINDow};:WAVeform:VIEW? @@ {MAIN | WINDow} @@ 設定傳輸波形資料時取自主時間軸或放大視窗時間軸 @@ 1130 @@ RW @@ N
+:WAVeform:XDISplay? @@ :WAVeform:XDISplay? @@ 無 @@ 查詢螢幕水平顯示軸的時間點數量或座標範圍 @@ 1132 @@ R @@ N
+:WAVeform:XINCrement? @@ :WAVeform:XINCrement? @@ 無 @@ 查詢波形數據點之間的水平時間增量間隔 @@ 1133 @@ R @@ N
+:WAVeform:XORigin? @@ :WAVeform:XORigin? @@ 無 @@ 查詢第一個波形數據點的時間原點偏移值 @@ 1134 @@ R @@ N
+:WAVeform:XRANge? @@ :WAVeform:XRANge? @@ 無 @@ 查詢波形數據紀錄的全螢幕水平時間總範圍 @@ 1135 @@ R @@ N
+:WAVeform:XREFerence? @@ :WAVeform:XREFerence? @@ 無 @@ 查詢水平時間座標轉換的參考點索引值 @@ 1136 @@ R @@ N
+:WAVeform:XUNits? @@ :WAVeform:XUNits? @@ 無 @@ 查詢波形數據水平時間軸的單位 @@ 1137 @@ R @@ N
+:WAVeform:YDISplay? @@ :WAVeform:YDISplay? @@ 無 @@ 查詢波形數據垂直顯示的刻度範圍或座標點數 @@ 1138 @@ R @@ N
+:WAVeform:YINCrement? @@ :WAVeform:YINCrement? @@ 無 @@ 查詢波形數據點垂直電壓量化值的位元增量 @@ 1139 @@ R @@ N
+:WAVeform:YORigin? @@ :WAVeform:YORigin? @@ 無 @@ 查詢波形數據垂直電壓平移的原點偏移值 @@ 1140 @@ R @@ N
+:WAVeform:YRANge? @@ :WAVeform:YRANge? @@ 無 @@ 查詢波形數據紀錄的全螢幕垂直電壓範圍 @@ 1141 @@ R @@ N
+:WAVeform:YREFerence? @@ :WAVeform:YREFerence? @@ 無 @@ 查詢垂直電壓座標轉換的零點參考索引值 @@ 1142 @@ R @@ N
+:WAVeform:YUNits? @@ :WAVeform:YUNits? @@ 無 @@ 查詢波形數據垂直電壓軸的物理單位 @@ 1143 @@ R @@ N
+:WMEMory<R>:CLEar @@ :WMEMory<R>:CLEar @@ 無 @@ 清除指定波形記憶體中的波形數據與螢幕顯示 @@ 1146 @@ W @@ N
+:WMEMory<R>:DISPlay @@ :WMEMory<R>:DISPlay {{ON | 1} | {OFF | 0}};:WMEMory<R>:DISPlay? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定波形記憶體在螢幕上的顯示 @@ 1147 @@ RW @@ N
+:WMEMory<R>:LOAD @@ :WMEMory<R>:LOAD "<file_name>" @@ "<file_name>" @@ 從磁碟載入波形檔案至指定的波形記憶體中 @@ 1148 @@ W @@ N
+:WMEMory<R>:SAVE @@ :WMEMory<R>:SAVE "<file_name>" @@ "<file_name>" @@ 將指定波形記憶體中的波形儲存至磁碟檔案 @@ 1149 @@ W @@ N
+:WMEMory<R>:XOFFset @@ :WMEMory<R>:XOFFset <offset>;:WMEMory<R>:XOFFset? @@ <offset> (秒) @@ 設定或查詢波形記憶體在時間軸上的水平偏移量 @@ 1150 @@ RW @@ N
+:WMEMory<R>:XRANge @@ :WMEMory<R>:XRANge <range>;:WMEMory<R>:XRANge? @@ <range> (秒) @@ 設定或查詢波形記憶體的全螢幕水平時間範圍 @@ 1151 @@ RW @@ N
+:WMEMory<R>:YOFFset @@ :WMEMory<R>:YOFFset <offset>;:WMEMory<R>:YOFFset? @@ <offset> (實數) @@ 設定或查詢波形記憶體在垂直軸上的電壓偏置量 @@ 1152 @@ RW @@ N
+:WMEMory<R>:YRANge @@ :WMEMory<R>:YRANge <range>;:WMEMory<R>:YRANge? @@ <range> (實數) @@ 設定或查詢波形記憶體的全螢幕垂直電壓範圍 @@ 1153 @@ RW @@ N

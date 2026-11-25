@@ -1,0 +1,29 @@
+MATH<x>? @@ MATH<x>? @@ 無 @@ 傳回指定數學波形的設定參數 @@ 2-346 @@ R @@ N
+MATH<x>:DEFine @@ MATH<x>:DEFine <QString>; MATH<x>:DEFine? @@ <QString> @@ 設定或查詢指定數學波形的數學表達式定義 @@ 2-346 @@ RW @@ N
+MATH<x>:FILTer:MODe @@ MATH<x>:FILTer:MODe {CENTered|SHIFted}; MATH<x>:FILTer:MODe? @@ CENTered | SHIFted @@ 設定或查詢數學波形濾波器的波形對齊模式 @@ 2-347 @@ RW @@ N
+MATH<x>:FILTer:RISetime @@ MATH<x>:FILTer:RISetime <NR3>; MATH<x>:FILTer:RISetime? @@ <NR3> @@ 設定或查詢數學波形濾波器的上升時間參數 @@ 2-348 @@ RW @@ N
+MATH<x>:LABel:NAMe @@ MATH<x>:LABel:NAMe <string>; MATH<x>:LABel:NAMe? @@ <string> @@ 設定或查詢指定數學波形顯示標籤的名稱 @@ 2-348 @@ RW @@ N
+MATH<x>:LABel:XPOS @@ MATH<x>:LABel:XPOS <NR1>; MATH<x>:LABel:XPOS? @@ <NR1> @@ 設定或查詢指定數學波形標籤的水平顯示位置 @@ 2-349 @@ RW @@ N
+MATH<x>:LABel:YPOS @@ MATH<x>:LABel:YPOS <NR1>; MATH<x>:LABel:YPOS? @@ <NR1> @@ 設定或查詢指定數學波形標籤的垂直顯示位置 @@ 2-349 @@ RW @@ N
+MATH<x>:NUMAVg @@ MATH<x>:NUMAVg <NR1>; MATH<x>:NUMAVg? @@ <NR1> @@ 設定或查詢數學波形平均演算法的擷取平均數 @@ 2-350 @@ RW @@ N
+MATH<x>:SPECTral? @@ MATH<x>:SPECTral? @@ 無 @@ 傳回指定數學波形的所有頻譜分析設定 @@ 2-350 @@ R @@ N
+MATH<x>:SPECTral:CENTER @@ MATH<x>:SPECTral:CENTER <NR3>; MATH<x>:SPECTral:CENTER? @@ <NR3> @@ 設定或查詢頻譜分析輸出資料跨度的中心頻率 @@ 2-351 @@ RW @@ N
+MATH<x>:SPECTral:GATEPOS @@ MATH<x>:SPECTral:GATEPOS <NR3>; MATH<x>:SPECTral:GATEPOS? @@ <NR3> @@ 設定或查詢頻譜分析儀資料輸入閘道的中心位置 @@ 2-351 @@ RW @@ N
+MATH<x>:SPECTral:GATEWIDTH @@ MATH<x>:SPECTral:GATEWIDTH <NR3>; MATH<x>:SPECTral:GATEWIDTH? @@ <NR3> @@ 設定或查詢頻譜分析儀資料輸入閘道的寬度時間 @@ 2-352 @@ RW @@ N
+MATH<x>:SPECTral:LOCk @@ MATH<x>:SPECTral:LOCk {ON|OFF}; MATH<x>:SPECTral:LOCk? @@ ON | OFF @@ 設定或查詢指定數學波形之間的頻譜參數連動鎖定狀態 @@ 2-353 @@ RW @@ N
+MATH<x>:SPECTral:MAG @@ MATH<x>:SPECTral:MAG {LINEAr|DB|DBM}; MATH<x>:SPECTral:MAG? @@ LINEAr | DB | DBM @@ 設定或查詢數學表達式中 SpectralMag 函式的顯示單位 @@ 2-354 @@ RW @@ N
+MATH<x>:SPECTral:PHASE @@ MATH<x>:SPECTral:PHASE {DEGrees|RADians|GROUPDelay}; MATH<x>:SPECTral:PHASE? @@ DEGrees | RADians | GROUPDelay @@ 設定或查詢數學表達式中 SpectralPhase 函式的顯示單位 @@ 2-354 @@ RW @@ N
+MATH<x>:SPECTral:REFLevel @@ MATH<x>:SPECTral:REFLevel <NR3>; MATH<x>:SPECTral:REFLevel? @@ <NR3> @@ 設定或查詢頻譜數學波形螢幕頂部的參考準位 @@ 2-355 @@ RW @@ N
+MATH<x>:SPECTral:REFLEVELOffset @@ MATH<x>:SPECTral:REFLEVELOffset {DBM|<NR3>}; MATH<x>:SPECTral:REFLEVELOffset? @@ DBM | <NR3> @@ 設定或查詢用於計算分貝值的頻譜參考準位偏移量 @@ 2-355 @@ RW @@ N
+MATH<x>:SPECTral:RESBw @@ MATH<x>:SPECTral:RESBw <NR3>; MATH<x>:SPECTral:RESBw? @@ <NR3> @@ 設定或查詢頻譜分析儀的解析頻寬（RBW） @@ 2-356 @@ RW @@ N
+MATH<x>:SPECTral:SPAN @@ MATH<x>:SPECTral:SPAN {<NR3>|FULl}; MATH<x>:SPECTral:SPAN? @@ <NR3> | FULl @@ 設定或查詢頻譜分析儀輸出資料的頻率跨度 @@ 2-357 @@ RW @@ N
+MATH<x>:SPECTral:SUPPress @@ MATH<x>:SPECTral:SUPPress <NR3>; MATH<x>:SPECTral:SUPPress? @@ <NR3> @@ 設定或查詢頻譜相位顯示的相位抑制門檻值 @@ 2-358 @@ RW @@ N
+MATH<x>:SPECTral:UNWRap @@ MATH<x>:SPECTral:UNWRap {ON|OFF}; MATH<x>:SPECTral:UNWRap? @@ ON | OFF @@ 設定或查詢頻譜分析相位解繞功能的啟用狀態 @@ 2-358 @@ RW @@ N
+MATH<x>:SPECTral:WINdow @@ MATH<x>:SPECTral:WINdow {RECTangular|HAMMing|HANning|KAISerbessel|BLACKMANharris|FLATTOP2|TEKEXPonential}; MATH<x>:SPECTral:WINdow? @@ RECTangular | HAMMing | HANning | KAISerbessel | BLACKMANharris | FLATTOP2 | TEKEXPonential @@ 設定或查詢頻譜分析儀輸入資料所使用的窗函數 @@ 2-359 @@ RW @@ N
+MATH<x>:UNITString @@ MATH<x>:UNITString <QString>; MATH<x>:UNITString? @@ <QString> @@ 設定或查詢指定數學波形的自訂量測單位字串 @@ 2-360 @@ RW @@ N
+MATH<x>:VERTical:POSition @@ MATH<x>:VERTical:POSition <NR3>; MATH<x>:VERTical:POSition? @@ <NR3> @@ 設定或查詢指定數學波形的垂直顯示位置 @@ 2-360 @@ RW @@ N
+MATH<x>:VERTical:SCAle @@ MATH<x>:VERTical:SCAle <NR3>; MATH<x>:VERTical:SCAle? @@ <NR3> @@ 設定或查詢指定數學波形的垂直刻度比例 @@ 2-362 @@ RW @@ N
+MATHArbflt<x>:FILepath @@ MATHArbflt<x>:FILepath <QString>; MATHArbflt<x>:FILepath? @@ <QString> @@ 設定或查詢任意濾波器的濾波係數檔案路徑 @@ 2-344 @@ RW @@ N
+MATHArbflt<x>:READFile @@ MATHArbflt<x>:READFile FORCe @@ FORCe @@ 強制重新讀取指定任意濾波器的濾波係數檔案 @@ 2-344 @@ W @@ N
+MATHVAR? @@ MATHVAR? @@ 無 @@ 傳回可在數學表達式中使用的所有 8 個變數數值 @@ 2-344 @@ R @@ N
+MATHVAR:VAR<x> @@ MATHVAR:VAR<x> <NR3>; MATHVAR:VAR<x>? @@ <NR3> @@ 設定或查詢可在數學表達式中使用的指定變數數值 @@ 2-345 @@ RW @@ N

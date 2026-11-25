@@ -1,0 +1,40 @@
+MARK @@ MARK {NEXT|PREVious}; MARK? @@ NEXT | PREVious @@ 移動至下一個或上一個參考標記或查詢當前標記設定 @@ 2-280 @@ RW @@ N
+MARK:CREATE @@ MARK:CREATE {CH<x>|MATH<x>|REF<x>|COLUMN} @@ CH<x> | MATH<x> | REF<x> | COLUMN @@ 在指定波形或像素列的所有波形上建立標記 @@ 2-280 @@ W @@ N
+MARK:DELEte @@ MARK:DELEte {CH<x>|MATH<x>|SELECTED|REF<x>|ALL|COLUMN} @@ CH<x> | MATH<x> | SELECTED | REF<x> | ALL | COLUMN @@ 刪除指定波形、像素列、所選或全部標記 @@ 2-281 @@ W @@ N
+MARK:FREE? @@ MARK:FREE? @@ 無 @@ 傳回目前尚可使用的標記剩餘數量 @@ 2-281 @@ R @@ N
+MARK:SELected:END? @@ MARK:SELected:END? @@ 無 @@ 傳回所選標記在波形上記錄的結束位置百分比 @@ 2-282 @@ R @@ N
+MARK:SELected:FOCUS? @@ MARK:SELected:FOCUS? @@ 無 @@ 傳回所選標記在波形上記錄的焦點位置百分比 @@ 2-282 @@ R @@ N
+MARK:SELected:LABel @@ MARK:SELected:LABel <QString>; MARK:SELected:LABel? @@ <QString> @@ 設定或查詢所選標記的描述文字標籤 @@ 2-282 @@ RW @@ N
+MARK:SELected:MARKSINCOLumn? @@ MARK:SELected:MARKSINCOLumn? @@ 無 @@ 傳回當前 Zoom 像素列中包含的標記數量 @@ 2-283 @@ R @@ N
+MARK:SELected:OWNer? @@ MARK:SELected:OWNer? @@ 無 @@ 傳回建立所選標記的擁有者 @@ 2-283 @@ R @@ N
+MARK:SELected:SOURCE? @@ MARK:SELected:SOURCE? @@ 無 @@ 傳回所選標記附著的來源波形 @@ 2-283 @@ R @@ N
+MARK:SELected:STARt? @@ MARK:SELected:STARt? @@ 無 @@ 傳回所選標記在波形上記錄的起始位置百分比 @@ 2-284 @@ R @@ N
+MARK:SELected:STATe @@ MARK:SELected:STATe {<NR1>|OFF|ON}; MARK:SELected:STATe? @@ <NR1> | OFF | ON @@ 設定或查詢所選標記的顯示啟用狀態 @@ 2-284 @@ RW @@ N
+MARK:SELected:ZOOm:POSition? @@ MARK:SELected:ZOOm:POSition? @@ 無 @@ 傳回所選標記在 Zoom 概覽視窗中的位置百分比 @@ 2-285 @@ R @@ N
+MARK:SELected:ZOOm:SCAle? @@ MARK:SELected:ZOOm:SCAle? @@ 無 @@ 傳回所選標記在 Zoom 概覽視窗中的縮放比例 @@ 2-285 @@ R @@ N
+MARK:TOTal? @@ MARK:TOTal? @@ 無 @@ 傳回目前已使用的標記總數 @@ 2-285 @@ R @@ N
+SEARCH:SEARCH<x> @@ SEARCH:SEARCH<x>; SEARCH:SEARCH<x>? @@ TOUSER @@ 將指定的搜尋標記轉換為使用者標記或查詢其狀態 @@ 2-429 @@ RW @@ N
+SEARCH:SEARCH<x>:COPy @@ SEARCH:SEARCH<x>:COPy {SEARCHtotrigger|TRIGgertosearch|FROMSearch<x>} @@ SEARCHtotrigger | TRIGgertosearch | FROMSearch<x> @@ 將搜尋條件複製到觸發、將觸發條件複製到搜尋，或搜尋間互相複製 @@ 2-430 @@ W @@ N
+SEARCH:SEARCH<x>:STATE @@ SEARCH:SEARCH<x>:STATE {<NR1>|OFF|ON}; SEARCH:SEARCH<x>:STATE? @@ <NR1> | OFF | ON @@ 設定或查詢指定搜尋項目的啟用狀態 @@ 2-430 @@ RW @@ N
+SEARCH:SEARCH<x>:TOTAL? @@ SEARCH:SEARCH<x>:TOTAL? @@ 無 @@ 傳回指定搜尋項目所找到的合格匹配事件總數 @@ 2-431 @@ R @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:AUTOBitrate @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:AUTOBitrate {AUTO|CUSTom}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:AUTOBitrate? @@ AUTO | CUSTom @@ 設定或查詢 DDR 記憶體搜尋的自動位元率模式 @@ 2-431 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:AUTOReflevel @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:AUTOReflevel {AUTO|CUSTom}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:AUTOReflevel? @@ AUTO | CUSTom @@ 設定或查詢 DDR 記憶體搜尋的自動參考準位模式 @@ 2-431 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:BITRate @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:BITRate <NR3>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:BITRate? @@ <NR3> @@ 設定或查詢 DDR 記憶體搜尋的資料位元率 @@ 2-432 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSActive @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSActive {HIGH|LOW}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSActive? @@ HIGH | LOW @@ 設定或查詢 DDR 記憶體搜尋預期的晶片選擇有效電位 @@ 2-433 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSLevel @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSLevel <NR3>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSLevel? @@ <NR3> @@ 設定或查詢 DDR 記憶體搜尋的晶片選擇門檻電壓 @@ 2-433 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSMode @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSMode {AUTO|MANual}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSMode? @@ AUTO | MANual @@ 設定或查詢 DDR 記憶體搜尋的晶片選擇門檻模式 @@ 2-434 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSSource @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSSource {CH1|CH2|CH3|CH4|MATH1|MATH2|MATH3|MATH4|REF1|REF2|REF3|REF4|NONe}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:CSSource? @@ CH<x> | MATH<x> | REF<x> | NONe @@ 設定或查詢 DDR 記憶體搜尋的晶片選擇來源波形 @@ 2-434 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:DATASource @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:DATASource {CH1|CH2|CH3|CH4|MATH1|MATH2|MATH3|MATH4|REF1|REF2|REF3|REF4}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:DATASource? @@ CH<x> | MATH<x> | REF<x> @@ 設定或查詢 DDR 記憶體搜尋的資料來源波形 @@ 2-435 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:HYSterisis @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:HYSterisis <NR3>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:HYSterisis? @@ <NR3> @@ 設定或查詢 DDR 記憶體搜尋的遲滯百分比 @@ 2-435 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MARgin @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MARgin <NR3>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MARgin? @@ <NR3> @@ 設定或查詢連續寫入時的終端邏輯裕度百分比 @@ 2-436 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MAXCas @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MAXCas <NR3>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MAXCas? @@ <NR3> @@ 設定或查詢尋找晶片選擇脈衝的最大時脈週期距離 @@ 2-436 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MINCas @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MINCas <NR3>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:MINCas? @@ <NR3> @@ 設定或查詢尋找晶片選擇脈衝的最小時脈週期距離 @@ 2-437 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:HIGH @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:HIGH <NRF>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:HIGH? @@ <NRF> @@ 設定或查詢 DDR 記憶體搜尋的資料高位準參考電壓 @@ 2-437 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:LOW @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:LOW <NRF>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:LOW? @@ <NRF> @@ 設定或查詢 DDR 記憶體搜尋的資料低位準參考電壓 @@ 2-438 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:MID @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:MID <NRF>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:DATA:MID? @@ <NRF> @@ 設定或查詢 DDR 記憶體搜尋的資料中間位準參考電壓 @@ 2-438 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:HIGH @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:HIGH <NRF>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:HIGH? @@ <NRF> @@ 設定或查詢 DDR 記憶體搜尋的選通脈衝高位準參考電壓 @@ 2-439 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:LOW @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:LOW <NRF>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:LOW? @@ <NRF> @@ 設定或查詢 DDR 記憶體搜尋的選通脈衝低位準參考電壓 @@ 2-440 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:MID @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:MID <NRF>; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:REFLevel:STROBE:MID? @@ <NRF> @@ 設定或查詢 DDR 記憶體搜尋的選通脈衝中間位準參考電壓 @@ 2-440 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:STANdard @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:STANdard {DDR|DDR2|DDR3|GDDR3|LPDDR}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:STANdard? @@ DDR | DDR2 | DDR3 | GDDR3 | LPDDR @@ 設定或查詢 DDR 記憶體分析搜尋所採用的 DDR 標準規範 @@ 2-441 @@ RW @@ N
+SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:STROBEsource @@ SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:STROBEsource {CH1|CH2|CH3|CH4|MATH1|MATH2|MATH3|MATH4|REF1|REF2|REF3|REF4}; SEARCH:SEARCH<x>:TRIGger:A:DDRMemory:STROBEsource? @@ CH<x> | MATH<x> | REF<x> @@ 設定或查詢 DDR 記憶體搜尋的選通脈衝來源波形 @@ 2-441 @@ RW @@ N
+SEARCH:STOP @@ SEARCH:STOP {<NR1>|OFF|ON|1|0}; SEARCH:STOP? @@ <NR1> | OFF | ON | 1 | 0 @@ 設定或查詢搜尋發現符合事件時是否停止波形擷取 @@ 2-486 @@ RW @@ N

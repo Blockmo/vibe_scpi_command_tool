@@ -1,0 +1,15 @@
+AM:SOURce @@ AM:SOURce {INTernal|EXTernal}; AM:SOURce? @@ INTernal|EXTernal @@ 選擇 AM 調變訊號來源為內部或外部 @@ 198 @@ RW @@ N
+AM:INTernal:FUNCtion @@ AM:INTernal:FUNCtion {SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER}; AM:INTernal:FUNCtion? @@ SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER @@ 設定或查詢 AM 內部調變波形形狀 @@ 198 @@ RW @@ N
+AM:INTernal:FREQuency @@ AM:INTernal:FREQuency {<frequency>|MINimum|MAXimum}; AM:INTernal:FREQuency? [MINimum|MAXimum] @@ 2 mHz-20 kHz; MIN; MAX @@ 設定或查詢 AM 內部調變波形頻率 @@ 199 @@ RW @@ N
+AM:DEPTh @@ AM:DEPTh {<depth in percent>|MINimum|MAXimum}; AM:DEPTh? [MINimum|MAXimum] @@ 0%-120%; MIN; MAX @@ 設定或查詢 AM 調變深度百分比 @@ 199 @@ RW @@ N
+AM:STATe @@ AM:STATe {OFF|ON}; AM:STATe? @@ OFF|ON @@ 啟用或停用 AM 調變功能 @@ 199 @@ RW @@ N
+FM:SOURce @@ FM:SOURce {INTernal|EXTernal}; FM:SOURce? @@ INTernal|EXTernal @@ 選擇 FM 調變訊號來源為內部或外部 @@ 201 @@ RW @@ N
+FM:INTernal:FUNCtion @@ FM:INTernal:FUNCtion {SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER}; FM:INTernal:FUNCtion? @@ SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER @@ 設定或查詢 FM 內部調變波形形狀 @@ 201 @@ RW @@ N
+FM:INTernal:FREQuency @@ FM:INTernal:FREQuency {<frequency>|MINimum|MAXimum}; FM:INTernal:FREQuency? [MINimum|MAXimum] @@ 2 mHz-20 kHz; MIN; MAX @@ 設定或查詢 FM 內部調變波形頻率 @@ 202 @@ RW @@ N
+FM:DEViation @@ FM:DEViation {<peak deviation in Hz>|MINimum|MAXimum}; FM:DEViation? [MINimum|MAXimum] @@ 1 uHz-10.05 MHz; MIN; MAX @@ 設定或查詢 FM 峰值頻率偏移量 @@ 202 @@ RW @@ N
+FM:STATe @@ FM:STATe {OFF|ON}; FM:STATe? @@ OFF|ON @@ 啟用或停用 FM 調變功能 @@ 203 @@ RW @@ N
+PM:SOURce @@ PM:SOURce {INTernal|EXTernal}; PM:SOURce? @@ INTernal|EXTernal @@ 選擇 PM 調變訊號來源為內部或外部 @@ 205 @@ RW @@ N
+PM:INTernal:FUNCtion @@ PM:INTernal:FUNCtion {SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER}; PM:INTernal:FUNCtion? @@ SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER @@ 設定或查詢 PM 內部調變波形形狀 @@ 205 @@ RW @@ N
+PM:INTernal:FREQuency @@ PM:INTernal:FREQuency {<frequency>|MINimum|MAXimum}; PM:INTernal:FREQuency? [MINimum|MAXimum] @@ 2 mHz-20 kHz; MIN; MAX @@ 設定或查詢 PM 內部調變波形頻率 @@ 206 @@ RW @@ N
+PM:DEViation @@ PM:DEViation {<deviation in degrees>|MINimum|MAXimum}; PM:DEViation? [MINimum|MAXimum] @@ 0-360 度; MIN; MAX @@ 設定或查詢 PM 峰值相位偏移角度 @@ 206 @@ RW @@ N
+PM:STATe @@ PM:STATe {OFF|ON}; PM:STATe? @@ OFF|ON @@ 啟用或停用 PM 調變功能 @@ 206 @@ RW @@ N

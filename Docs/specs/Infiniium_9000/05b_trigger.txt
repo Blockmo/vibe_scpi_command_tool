@@ -1,0 +1,66 @@
+:TRIGger:ADVanced:COMM:BWIDth @@ :TRIGger:ADVanced:COMM:BWIDth <bwidth_value>;:TRIGger:ADVanced:COMM:BWIDth? @@ <bwidth_value> (實數，秒) @@ 設定進階通訊觸發模式下的波形位元寬度 @@ 995 @@ RW @@ N
+:TRIGger:ADVanced:COMM:ENCode @@ :TRIGger:ADVanced:COMM:ENCode {RZ | NRZ};:TRIGger:ADVanced:COMM:ENCode? @@ {RZ | NRZ} @@ 設定進階通訊觸發模式下的波形編碼類型 @@ 996 @@ RW @@ N
+:TRIGger:ADVanced:COMM:LEVel @@ :TRIGger:ADVanced:COMM:LEVel CHANnel<N>,<level>;:TRIGger:ADVanced:COMM:LEVel? CHANnel<N> @@ CHANnel<N> (1~4), <level> @@ 設定進階通訊觸發模式下區分邏輯 1 與 0 的電壓準位 @@ 997 @@ RW @@ N
+:TRIGger:ADVanced:COMM:PATTern @@ :TRIGger:ADVanced:COMM:PATTern <bit>[,<bit>...];:TRIGger:ADVanced:COMM:PATTern? @@ <bit> (1, -1, 0, 最多 6 位元) @@ 設定進階通訊觸發模式下的位元圖案 @@ 998 @@ RW @@ N
+:TRIGger:ADVanced:COMM:POLarity @@ :TRIGger:ADVanced:COMM:POLarity {POSitive | NEGative};:TRIGger:ADVanced:COMM:POLarity? @@ {POSitive | NEGative} @@ 設定進階通訊觸發模式下的脈衝極性與觸發斜率 @@ 999 @@ RW @@ N
+:TRIGger:ADVanced:COMM:SOURce @@ :TRIGger:ADVanced:COMM:SOURce CHANnel<N>;:TRIGger:ADVanced:COMM:SOURce? @@ CHANnel<N> (1~4) @@ 設定進階通訊觸發模式的訊號來源通道 @@ 1000 @@ RW @@ N
+:TRIGger:ADVanced:MODE @@ :TRIGger:ADVanced:MODE {COMM | DELay | PATTern | STATe | TV | VIOLation};:TRIGger:ADVanced:MODE? @@ {COMM | DELay | PATTern | STATe | TV | VIOLation} @@ 設定進階觸發的工作模式類型 @@ 994 @@ RW @@ N
+:TRIGger:ADVanced:PATTern:CONDition @@ :TRIGger:ADVanced:PATTern:CONDition {ENTered | EXITed | {GT,<time>[,PEXits|TIMeout]} | {LT,<time>} | {RANGe,<gt_time>,<lt_time>}};:TRIGger:ADVanced:PATTern:CONDition? @@ {ENTered | EXITed | GT | LT | RANGe} @@ 設定進階邏輯圖案觸發的時間門檻與進入/離開條件 @@ 1002 @@ RW @@ N
+:TRIGger:ADVanced:PATTern:LOGic @@ :TRIGger:ADVanced:PATTern:LOGic {CHANnel<N> | DIGital<M>},{HIGH | LOW | DONTcare | RISing | FALLing};:TRIGger:ADVanced:PATTern:LOGic? {CHANnel<N> | DIGital<M>} @@ {HIGH | LOW | DONTcare | RISing | FALLing} @@ 設定指定通道在進階圖案觸發中的邏輯狀態條件 @@ 1004 @@ RW @@ N
+:TRIGger:ADVanced:PWIDth:DIRection @@ :TRIGger:ADVanced:PWIDth:DIRection {GTHan | LTHan};:TRIGger:ADVanced:PWIDth:DIRection? @@ {GTHan | LTHan} @@ 設定進階脈寬違規觸發條件為大於或小於指定寬度 @@ 1045 @@ RW @@ N
+:TRIGger:ADVanced:PWIDth:POLarity @@ :TRIGger:ADVanced:PWIDth:POLarity {NEGative | POSitive};:TRIGger:ADVanced:PWIDth:POLarity? @@ {NEGative | POSitive} @@ 設定進階脈寬違規觸發的脈衝極性 @@ 1046 @@ RW @@ N
+:TRIGger:ADVanced:PWIDth:SOURce @@ :TRIGger:ADVanced:PWIDth:SOURce {CHANnel<N> | DIGital<M>};:TRIGger:ADVanced:PWIDth:SOURce? @@ {CHANnel<N> | DIGital<M>} @@ 設定進階脈寬違規觸發模式的訊號來源 @@ 1047 @@ RW @@ N
+:TRIGger:ADVanced:PWIDth:TPOint @@ :TRIGger:ADVanced:PWIDth:TPOint {EPULse | TIMeout};:TRIGger:ADVanced:PWIDth:TPOint? @@ {EPULse | TIMeout} @@ 設定進階脈寬違規觸發時間點為脈衝結束時或超時發生時 @@ 1048 @@ RW @@ N
+:TRIGger:ADVanced:PWIDth:WIDTh @@ :TRIGger:ADVanced:PWIDth:WIDTh <width>;:TRIGger:ADVanced:PWIDth:WIDTh? @@ <width> (250 ps ~ 10 s) @@ 設定進階脈寬違規觸發的時間門檻值 @@ 1049 @@ RW @@ N
+:TRIGger:ADVanced:SETup:CSOurce @@ :TRIGger:ADVanced:SETup:CSOurce CHANnel<N>;:TRIGger:ADVanced:SETup:CSOurce? @@ CHANnel<N> (1~4) @@ 設定進階建立與保持時間違規觸發的時脈訊號來源 @@ 1051 @@ RW @@ N
+:TRIGger:ADVanced:SETup:CSOurce:EDGE @@ :TRIGger:ADVanced:SETup:CSOurce:EDGE {RISing | FALLing};:TRIGger:ADVanced:SETup:CSOurce:EDGE? @@ {RISing | FALLing} @@ 設定進階建立與保持時間違規觸發的時脈邊緣方向 @@ 1052 @@ RW @@ N
+:TRIGger:ADVanced:SETup:DSOurce @@ :TRIGger:ADVanced:SETup:DSOurce CHANnel<N>;:TRIGger:ADVanced:SETup:DSOurce? @@ CHANnel<N> (1~4) @@ 設定進階建立與保持時間違規觸發的資料訊號來源 @@ 1053 @@ RW @@ N
+:TRIGger:ADVanced:SETup:HoldTIMe @@ :TRIGger:ADVanced:SETup:HoldTIMe <time>;:TRIGger:ADVanced:SETup:HoldTIMe? @@ <time> (秒) @@ 設定進階保持時間 (Hold Time) 違規觸發門檻 @@ 1054 @@ RW @@ N
+:TRIGger:ADVanced:SETup:MODE @@ :TRIGger:ADVanced:SETup:MODE {SETup | HOLD | SHOLd};:TRIGger:ADVanced:SETup:MODE? @@ {SETup | HOLD | SHOLd} @@ 設定進階觸發檢測模式為建立時間、保持時間或兩者皆檢測 @@ 1055 @@ RW @@ N
+:TRIGger:ADVanced:SETup:SetupTIMe @@ :TRIGger:ADVanced:SETup:SetupTIMe <time>;:TRIGger:ADVanced:SETup:SetupTIMe? @@ <time> (秒) @@ 設定進階建立時間 (Setup Time) 違規觸發門檻 @@ 1056 @@ RW @@ N
+:TRIGger:ADVanced:STATe:CLOCk @@ :TRIGger:ADVanced:STATe:CLOCk {CHANnel<N> | DIGital<M>};:TRIGger:ADVanced:STATe:CLOCk? @@ {CHANnel<N> | DIGital<M>} @@ 設定進階狀態觸發模式下的時脈波形來源 @@ 1008 @@ RW @@ N
+:TRIGger:ADVanced:STATe:LOGic @@ :TRIGger:ADVanced:STATe:LOGic {CHANnel<N> | DIGital<M>},{LOW | HIGH | DONTcare | RISing | FALLing};:TRIGger:ADVanced:STATe:LOGic? {CHANnel<N> | DIGital<M>} @@ {LOW | HIGH | DONTcare | RISing | FALLing} @@ 設定指定通道在進階狀態觸發中的邏輯狀態 @@ 1009 @@ RW @@ N
+:TRIGger:ADVanced:STATe:LTYPe @@ :TRIGger:ADVanced:STATe:LTYPe {AND | NAND};:TRIGger:ADVanced:STATe:LTYPe? @@ {AND | NAND} @@ 設定進階狀態觸發模式下的邏輯類型 (AND 或 NAND) @@ 1011 @@ RW @@ N
+:TRIGger:ADVanced:STATe:SLOPe @@ :TRIGger:ADVanced:STATe:SLOPe {RISing | FALLing | EITHer};:TRIGger:ADVanced:STATe:SLOPe? @@ {RISing | FALLing | EITHer} @@ 設定進階狀態觸發模式下的時脈觸發邊緣斜率 @@ 1012 @@ RW @@ N
+:TRIGger:ADVanced:TRANsition:DIRection @@ :TRIGger:ADVanced:TRANsition:DIRection {GTHan | LTHan};:TRIGger:ADVanced:TRANsition:DIRection? @@ {GTHan | LTHan} @@ 設定進階邊緣轉換違規觸發條件為大於或小於指定時間 @@ 1077 @@ RW @@ N
+:TRIGger:ADVanced:TRANsition:SOURce @@ :TRIGger:ADVanced:TRANsition:SOURce CHANnel<N>;:TRIGger:ADVanced:TRANsition:SOURce? @@ CHANnel<N> (1~4) @@ 設定進階邊緣轉換違規觸發模式的訊號來源 @@ 1078 @@ RW @@ N
+:TRIGger:ADVanced:TRANsition:TIME @@ :TRIGger:ADVanced:TRANsition:TIME <time>;:TRIGger:ADVanced:TRANsition:TIME? @@ <time> (實數，秒) @@ 設定進階邊緣轉換違規觸發的時間門檻值 @@ 1079 @@ RW @@ N
+:TRIGger:ADVanced:TRANsition:TYPE @@ :TRIGger:ADVanced:TRANsition:TYPE {RISetime | FALLtime};:TRIGger:ADVanced:TRANsition:TYPE? @@ {RISetime | FALLtime} @@ 設定進階邊緣轉換違規觸發類型為上升時間或下降時間 @@ 1080 @@ RW @@ N
+:TRIGger:ADVanced:VIOLation:MODE @@ :TRIGger:ADVanced:VIOLation:MODE {PWIDth | SETup | TRANsition};:TRIGger:ADVanced:VIOLation:MODE? @@ {PWIDth | SETup | TRANsition} @@ 設定進階違規 (Violation) 觸發的具體子類型 @@ 1043 @@ RW @@ N
+:TRIGger:COMM:BWIDth @@ :TRIGger:COMM:BWIDth <bwidth_value>;:TRIGger:COMM:BWIDth? @@ <bwidth_value> (實數，秒) @@ 設定通訊觸發模式下的波形位元寬度 @@ 920 @@ RW @@ N
+:TRIGger:COMM:ENCode @@ :TRIGger:COMM:ENCode {RZ | NRZ};:TRIGger:COMM:ENCode? @@ {RZ | NRZ} @@ 設定通訊觸發模式下的波形編碼類型 @@ 921 @@ RW @@ N
+:TRIGger:COMM:PATTern @@ :TRIGger:COMM:PATTern <bit>[,<bit>...];:TRIGger:COMM:PATTern? @@ <bit> (1, -1, 0, 最多 6 位元) @@ 設定通訊觸發模式下的位元圖案 @@ 922 @@ RW @@ N
+:TRIGger:COMM:POLarity @@ :TRIGger:COMM:POLarity {POSitive | NEGative};:TRIGger:COMM:POLarity? @@ {POSitive | NEGative} @@ 設定通訊觸發模式下的脈衝極性與觸發斜率 @@ 923 @@ RW @@ N
+:TRIGger:COMM:SOURce @@ :TRIGger:COMM:SOURce CHANnel<N>;:TRIGger:COMM:SOURce? @@ CHANnel<N> (1~4) @@ 設定通訊觸發模式的訊號來源通道 @@ 924 @@ RW @@ N
+:TRIGger:DELay:ARM:SLOPe @@ :TRIGger:DELay:ARM:SLOPe {NEGative | POSitive};:TRIGger:DELay:ARM:SLOPe? @@ {NEGative | POSitive} @@ 設定延遲觸發模式下預備 (Arm) 訊號的邊緣斜率 @@ 927 @@ RW @@ N
+:TRIGger:DELay:ARM:SOURce @@ :TRIGger:DELay:ARM:SOURce {CHANnel<N> | DIGital<M>};:TRIGger:DELay:ARM:SOURce? @@ {CHANnel<N> | DIGital<M>} @@ 設定延遲觸發模式下預備 (Arm) 訊號來源 @@ 926 @@ RW @@ N
+:TRIGger:DELay:EDELay:COUNt @@ :TRIGger:DELay:EDELay:COUNt <edge_number>;:TRIGger:DELay:EDELay:COUNt? @@ <edge_number> (0~16000000) @@ 設定按事件延遲觸發的事件邊緣數量 @@ 928 @@ RW @@ N
+:TRIGger:DELay:EDELay:SLOPe @@ :TRIGger:DELay:EDELay:SLOPe {NEGative | POSitive};:TRIGger:DELay:EDELay:SLOPe? @@ {NEGative | POSitive} @@ 設定按事件延遲觸發的事件邊緣斜率 @@ 930 @@ RW @@ N
+:TRIGger:DELay:EDELay:SOURce @@ :TRIGger:DELay:EDELay:SOURce {CHANnel<N> | DIGital<M>};:TRIGger:DELay:EDELay:SOURce? @@ {CHANnel<N> | DIGital<M>} @@ 設定按事件延遲觸發的事件訊號來源 @@ 929 @@ RW @@ N
+:TRIGger:DELay:MODE @@ :TRIGger:DELay:MODE {EDELay | TDELay};:TRIGger:DELay:MODE? @@ {EDELay | TDELay} @@ 設定延遲觸發模式為按事件延遲或按時間延遲 @@ 931 @@ RW @@ N
+:TRIGger:DELay:TDELay:TIME @@ :TRIGger:DELay:TDELay:TIME <delay>;:TRIGger:DELay:TDELay:TIME? @@ <delay> (10 ns ~ 10 s) @@ 設定按時間延遲觸發的時間間隔 @@ 932 @@ RW @@ N
+:TRIGger:DELay:TRIGger:SLOPe @@ :TRIGger:DELay:TRIGger:SLOPe {NEGative | POSitive};:TRIGger:DELay:TRIGger:SLOPe? @@ {NEGative | POSitive} @@ 設定延遲觸發最終觸發事件的邊緣斜率 @@ 934 @@ RW @@ N
+:TRIGger:DELay:TRIGger:SOURce @@ :TRIGger:DELay:TRIGger:SOURce {CHANnel<N> | DIGital<M>};:TRIGger:DELay:TRIGger:SOURce? @@ {CHANnel<N> | DIGital<M>} @@ 設定延遲觸發最終觸發事件的訊號來源 @@ 933 @@ RW @@ N
+:TRIGger:PATTern:CONDition @@ :TRIGger:PATTern:CONDition {ENTered | EXITed | {GT,<time>[,PEXits|TIMeout]} | {LT,<time>} | {RANGe,<gt_time>,<lt_time>}};:TRIGger:PATTern:CONDition? @@ {ENTered | EXITed | GT | LT | RANGe} @@ 設定邏輯圖案觸發的時間條件或進入/離開條件 @@ 944 @@ RW @@ N
+:TRIGger:PATTern:LOGic @@ :TRIGger:PATTern:LOGic {CHANnel<N> | DIGital<M>},{HIGH | LOW | DONTcare | RISing | FALLing};:TRIGger:PATTern:LOGic? {CHANnel<N> | DIGital<M>} @@ {HIGH | LOW | DONTcare | RISing | FALLing} @@ 設定指定通道在邏輯圖案觸發中的邏輯狀態條件 @@ 945 @@ RW @@ N
+:TRIGger:SHOLd:CSOurce @@ :TRIGger:SHOLd:CSOurce CHANnel<N>;:TRIGger:SHOLd:CSOurce? @@ CHANnel<N> (1~4) @@ 設定建立與保持時間觸發模式的時脈訊號來源 @@ 958 @@ RW @@ N
+:TRIGger:SHOLd:CSOurce:EDGE @@ :TRIGger:SHOLd:CSOurce:EDGE {RISing | FALLing};:TRIGger:SHOLd:CSOurce:EDGE? @@ {RISing | FALLing} @@ 設定建立與保持時間觸發模式的時脈邊緣方向 @@ 959 @@ RW @@ N
+:TRIGger:SHOLd:DSOurce @@ :TRIGger:SHOLd:DSOurce CHANnel<N>;:TRIGger:SHOLd:DSOurce? @@ CHANnel<N> (1~4) @@ 設定建立與保持時間觸發模式的資料訊號來源 @@ 960 @@ RW @@ N
+:TRIGger:SHOLd:HoldTIMe @@ :TRIGger:SHOLd:HoldTIMe <time>;:TRIGger:SHOLd:HoldTIMe? @@ <time> (秒) @@ 設定保持時間 (Hold Time) 違規觸發門檻 @@ 961 @@ RW @@ N
+:TRIGger:SHOLd:MODE @@ :TRIGger:SHOLd:MODE {SETup | HOLD | SHOLd};:TRIGger:SHOLd:MODE? @@ {SETup | HOLD | SHOLd} @@ 設定觸發檢測模式為建立時間、保持時間或兩者皆檢測 @@ 962 @@ RW @@ N
+:TRIGger:SHOLd:SetupTIMe @@ :TRIGger:SHOLd:SetupTIMe <time>;:TRIGger:SHOLd:SetupTIMe? @@ <time> (秒) @@ 設定建立時間 (Setup Time) 違規觸發門檻 @@ 963 @@ RW @@ N
+:TRIGger:STATe:CLOCk @@ :TRIGger:STATe:CLOCk {CHANnel<N> | DIGital<M>};:TRIGger:STATe:CLOCk? @@ {CHANnel<N> | DIGital<M>} @@ 設定狀態觸發模式下的時脈波形來源 @@ 965 @@ RW @@ N
+:TRIGger:STATe:LOGic @@ :TRIGger:STATe:LOGic {CHANnel<N> | DIGital<M>},{LOW | HIGH | DONTcare | RISing | FALLing};:TRIGger:STATe:LOGic? {CHANnel<N> | DIGital<M>} @@ {LOW | HIGH | DONTcare | RISing | FALLing} @@ 設定指定通道在狀態觸發中的邏輯狀態 @@ 966 @@ RW @@ N
+:TRIGger:STATe:LTYPe @@ :TRIGger:STATe:LTYPe {AND | NAND};:TRIGger:STATe:LTYPe? @@ {AND | NAND} @@ 設定狀態觸發模式下的邏輯類型 (AND 或 NAND) @@ 967 @@ RW @@ N
+:TRIGger:STATe:SLOPe @@ :TRIGger:STATe:SLOPe {RISing | FALLing | EITHer};:TRIGger:STATe:SLOPe? @@ {RISing | FALLing | EITHer} @@ 設定狀態觸發模式下的時脈觸發邊緣斜率 @@ 968 @@ RW @@ N
+:TRIGger:TV:FIELd @@ :TRIGger:TV:FIELd {FIELd1 | FIELd2 | ALLfields};:TRIGger:TV:FIELd? @@ {FIELd1 | FIELd2 | ALLfields} @@ 設定 TV 觸發模式下的場 (Field) 觸發條件 @@ 979 @@ RW @@ N
+:TRIGger:TV:LINE @@ :TRIGger:TV:LINE <line_number>;:TRIGger:TV:LINE? @@ <line_number> (整數) @@ 設定 TV 觸發模式下的掃描線編號 @@ 980 @@ RW @@ N
+:TRIGger:TV:MODE @@ :TRIGger:TV:MODE {F1 | F2 | ALL | LINE | L1 | L2 | ALINe | UDTV};:TRIGger:TV:MODE? @@ {F1 | F2 | ALL | LINE | L1 | L2 | ALINe | UDTV} @@ 設定 TV 觸發工作子模式 @@ 981 @@ RW @@ N
+:TRIGger:TV:POLarity @@ :TRIGger:TV:POLarity {POSitive | NEGative};:TRIGger:TV:POLarity? @@ {POSitive | NEGative} @@ 設定 TV 視訊訊號的同步極性 @@ 982 @@ RW @@ N
+:TRIGger:TV:SOURce @@ :TRIGger:TV:SOURce CHANnel<N>;:TRIGger:TV:SOURce? @@ CHANnel<N> (1~4) @@ 設定 TV 觸發模式的訊號來源通道 @@ 983 @@ RW @@ N
+:TRIGger:TV:STANdard @@ :TRIGger:TV:STANdard {I1080L60HZ | I1080L50HZ | L525 | L625 | P480L60HZ | P576L50HZ | P720L60HZ | P720L50HZ | P1080L60HZ | P1080L50HZ | P1080L30HZ | P1080L25HZ | P1080L24HZ | UDTV};:TRIGger:TV:STANdard? @@ {I1080L60HZ | ... | UDTV} @@ 設定 TV 觸發採用的標準視訊規格 @@ 978 @@ RW @@ N
+:TRIGger:TV:UDTV:ENUMber @@ :TRIGger:TV:UDTV:ENUMber <count>;:TRIGger:TV:UDTV:ENUMber? @@ <count> (1~16000000) @@ 設定自訂 TV 模式下預備後延遲的事件 (水平同步脈衝) 數量 @@ 984 @@ RW @@ N
+:TRIGger:TV:UDTV:HSYNc @@ :TRIGger:TV:UDTV:HSYNc {{ON | 1} | {OFF | 0}};:TRIGger:TV:UDTV:HSYNc? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉自訂 TV 模式下的水平同步觸發 @@ 985 @@ RW @@ N
+:TRIGger:TV:UDTV:HTIMe @@ :TRIGger:TV:UDTV:HTIMe <time>;:TRIGger:TV:UDTV:HTIMe? @@ <time> (秒) @@ 設定自訂 TV 模式下的有效同步脈衝寬度時間 @@ 986 @@ RW @@ N
+:TRIGger:TV:UDTV:PGTHan @@ :TRIGger:TV:UDTV:PGTHan <lower_limit>;:TRIGger:TV:UDTV:PGTHan? @@ <lower_limit> (5 ns ~ 9.9999999 s) @@ 設定自訂 TV 模式下預備觸發所需的最小脈衝寬度 @@ 987 @@ RW @@ N
+:TRIGger:TV:UDTV:POLarity @@ :TRIGger:TV:UDTV:POLarity {NEGative | POSitive};:TRIGger:TV:POLarity? @@ {NEGative | POSitive} @@ 設定自訂 TV 模式下的同步脈衝極性 @@ 988 @@ RW @@ N

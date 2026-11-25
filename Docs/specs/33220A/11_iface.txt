@@ -1,0 +1,17 @@
+SYSTem:LOCal @@ SYSTem:LOCal @@ 無參數 @@ 設定儀器狀態為區域控制模式並解鎖前面板按鍵 @@ 254 @@ W @@ N
+SYSTem:REMote @@ SYSTem:REMote @@ 無參數 @@ 設定儀器狀態為遠端控制模式並鎖定前面板按鍵 @@ 254 @@ W @@ N
+SYSTem:RWLock @@ SYSTem:RWLock @@ 無參數 @@ 設定儀器狀態為遠端控制並鎖定前面板按鍵（含 Local 鍵） @@ 254 @@ W @@ N
+SYSTem:COMMunicate:RLSTate @@ SYSTem:COMMunicate:RLSTate {LOCal|REMote|RWLock} @@ LOCal|REMote|RWLock @@ 設定 Telnet 或 Socket 工作階段下的遠端/區域狀態 @@ 254 @@ W @@ N
+SYSTem:COMMunicate:GPIB:ADDRess @@ SYSTem:COMMunicate:GPIB:ADDRess <address>; SYSTem:COMMunicate:GPIB:ADDRess? @@ 0-30 @@ 設定或查詢儀器的 GPIB 位址 @@ 254 @@ RW @@ N
+SYSTem:COMMunicate:LAN:AUTOip[:STATe] @@ SYSTem:COMMunicate:LAN:AUTOip[:STATe] {OFF|0|ON|1}; SYSTem:COMMunicate:LAN:AUTOip[:STATe]? @@ OFF|0|ON|1 @@ 啟用、停用或查詢 LAN Auto-IP 自動分配 IP 功能 @@ 255 @@ RW @@ N
+SYSTem:COMMunicate:LAN:IPADdress @@ SYSTem:COMMunicate:LAN:IPADdress <address>; SYSTem:COMMunicate:LAN:IPADdress? @@ IP 位址 (dot notation) @@ 設定或查詢儀器的靜態 IP 位址 @@ 255 @@ RW @@ N
+SYSTem:COMMunicate:LAN:LIPaddress? @@ SYSTem:COMMunicate:LAN:LIPaddress? @@ 無參數 @@ 查詢最近一次有效使用的 Auto-IP 位址 @@ 256 @@ R @@ N
+SYSTem:COMMunicate:LAN:MAC? @@ SYSTem:COMMunicate:LAN:MAC? @@ 無參數 @@ 查詢儀器網路介面的 MAC 實體位址 @@ 256 @@ R @@ N
+SYSTem:COMMunicate:LAN:MEDiasense @@ SYSTem:COMMunicate:LAN:MEDiasense {OFF|0|ON|1}; SYSTem:COMMunicate:LAN:MEDiasense? @@ OFF|0|ON|1 @@ 啟用、停用或查詢 LAN 斷線偵測重連功能 @@ 256 @@ RW @@ N
+SYSTem:COMMunicate:LAN:NETBios @@ SYSTem:COMMunicate:LAN:NETBios {OFF|0|ON|1}; SYSTem:COMMunicate:LAN:NETBios? @@ OFF|0|ON|1 @@ 啟用、停用或查詢 NETBios 名稱服務自動分配 IP 功能 @@ 256 @@ RW @@ N
+SYSTem:COMMunicate:LAN:TELNet:PROMpt @@ SYSTem:COMMunicate:LAN:TELNet:PROMpt <string>; SYSTem:COMMunicate:LAN:TELNet:PROMpt? @@ 引號字串 (最多 15 字元) @@ 設定或查詢 Telnet 連線時顯示的提示字串 @@ 257 @@ RW @@ N
+SYSTem:COMMunicate:LAN:TELNet:WMESsage @@ SYSTem:COMMunicate:LAN:TELNet:WMESsage <string>; SYSTem:COMMunicate:LAN:TELNet:WMESsage? @@ 引號字串 (最多 63 字元) @@ 設定或查詢 Telnet 連線時顯示的歡迎訊息字串 @@ 257 @@ RW @@ N
+PHASe @@ PHASe {<angle>|MINimum|MAXimum}; PHASe? [MINimum|MAXimum] @@ -360 至 +360 度 (-2pi 至 +2pi 弧度); MIN; MAX @@ 調整或查詢輸出波形相對於外部參考訊號之相位偏移角度 @@ 258 @@ RW @@ N
+PHASe:REFerence @@ PHASe:REFerence @@ 無參數 @@ 立即將目前相位設定為新的零相位參考點 @@ 259 @@ W @@ N
+PHASe:UNLock:ERRor:STATe @@ PHASe:UNLock:ERRor:STATe {OFF|ON}; PHASe:UNLock:ERRor:STATe? @@ OFF|ON @@ 啟用、停用或查詢相位鎖定失鎖時是否產生錯誤訊息 @@ 259 @@ RW @@ N
+UNIT:ANGLe @@ UNIT:ANGLe {DEGree|RADian}; UNIT:ANGLe? @@ DEGree|RADian @@ 設定或查詢相位於遠端介面設定與查詢時的單位 @@ 259 @@ RW @@ N

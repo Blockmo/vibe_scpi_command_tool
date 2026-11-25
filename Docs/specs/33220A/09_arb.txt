@@ -1,0 +1,15 @@
+DATA @@ DATA VOLATILE, <value>, <value>, . . . @@ VOLATILE; -1.0 至 +1.0 (浮點數) @@ 下載浮點數波形點資料至揮發性記憶體 @@ 236 @@ W @@ N
+DATA:DAC @@ DATA:DAC VOLATILE, {<binary block>|<value>, <value>, . . . } @@ VOLATILE; -8191 至 +8191 (二元或十進位) @@ 下載二元或十進位整數 DAC 數值波形點至揮發性記憶體 @@ 237 @@ W @@ N
+FORMat:BORDer @@ FORMat:BORDer {NORMal|SWAPped}; FORMat:BORDer? @@ NORMal|SWAPped @@ 設定或查詢二元區塊資料傳輸時的位元組順序 @@ 239 @@ RW @@ N
+DATA:COPY @@ DATA:COPY <destination arb name> [,VOLATILE] @@ destination arb name (最多 12 字元); VOLATILE @@ 將揮發性記憶體中的任意波形複製儲存至非揮發性記憶體 @@ 239 @@ W @@ N
+FUNCtion:USER @@ FUNCtion:USER {<arb name>|VOLATILE}; FUNCtion:USER? @@ EXP_RISE|EXP_FALL|NEG_RAMP|SINC|CARDIAC|VOLATILE|<arb name> @@ 指定或查詢欲選用的內建、自訂或揮發性任意波形名稱 @@ 240 @@ RW @@ N
+FUNCtion USER @@ FUNCtion USER; FUNCtion? @@ USER @@ 選擇任意波形功能並輸出由 FUNC:USER 指定之波形 @@ 241 @@ RW @@ N
+DATA:CATalog? @@ DATA:CATalog? @@ 無參數 @@ 查詢記憶體中所有可用波形名稱列表 @@ 242 @@ R @@ N
+DATA:NVOLatile:CATalog? @@ DATA:NVOLatile:CATalog? @@ 無參數 @@ 查詢非揮發性記憶體中所有使用者自訂波形名稱列表 @@ 242 @@ R @@ N
+DATA:NVOLatile:FREE? @@ DATA:NVOLatile:FREE? @@ 無參數 @@ 查詢非揮發性記憶體中剩餘可儲存波形的可用位置數量 @@ 242 @@ R @@ N
+DATA:DELete @@ DATA:DELete <arb name> @@ <arb name> (非揮發性波形名稱或 VOLATILE) @@ 從記憶體中刪除指定的自訂或揮發性任意波形 @@ 243 @@ W @@ N
+DATA:DELete:ALL @@ DATA:DELete:ALL @@ 無參數 @@ 一次刪除記憶體中所有使用者自訂與揮發性任意波形 @@ 243 @@ W @@ N
+DATA:ATTRibute:AVERage? @@ DATA:ATTRibute:AVERage? [<arb name>] @@ [<arb name>] @@ 查詢指定任意波形所有點之算術平均值 @@ 244 @@ R @@ N
+DATA:ATTRibute:CFACtor? @@ DATA:ATTRibute:CFACtor? [<arb name>] @@ [<arb name>] @@ 查詢指定任意波形所有點之波峰因數 @@ 244 @@ R @@ N
+DATA:ATTRibute:POINts? @@ DATA:ATTRibute:POINts? [<arb name>] @@ [<arb name>] @@ 查詢指定任意波形包含的總點數 @@ 244 @@ R @@ N
+DATA:ATTRibute:PTPeak? @@ DATA:ATTRibute:PTPeak? [<arb name>] @@ [<arb name>] @@ 查詢指定任意波形所有點之峰對峰值 @@ 244 @@ R @@ N

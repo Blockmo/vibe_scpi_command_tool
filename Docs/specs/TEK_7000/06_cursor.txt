@@ -1,0 +1,39 @@
+CURSor? @@ CURSor? @@ 無 @@ 傳回所有游標設定值 @@ 2-131 @@ R @@ N
+CURSor:FUNCtion @@ CURSor:FUNCtion {OFF|HBArs|VBArs|SCREEN|WAVEform}; CURSor:FUNCtion? @@ OFF | HBArs | VBArs | SCREEN | WAVEform @@ 設定或查詢游標類型 @@ 2-131 @@ RW @@ N
+CURSor:HBArs? @@ CURSor:HBArs? @@ 無 @@ 傳回水平條形游標的設定值 @@ 2-132 @@ R @@ N
+CURSor:HBArs:DELTa? @@ CURSor:HBArs:DELTa? @@ 無 @@ 傳回兩條水平條形游標之間的垂直電壓差 @@ 2-132 @@ R @@ N
+CURSor:HBArs:POSITION<x> @@ CURSor:HBArs:POSITION<x> <NR3>; CURSor:HBArs:POSITION<x>? @@ <NR3> @@ 設定或查詢指定水平條形游標的垂直位置 @@ 2-133 @@ RW @@ N
+CURSor:HBArs:UNIts? @@ CURSor:HBArs:UNIts? @@ 無 @@ 傳回水平條形游標的量測單位 @@ 2-133 @@ R @@ N
+CURSor:LINESTyle @@ CURSor:LINESTyle {SOLID|DASHed|SDASHed}; CURSor:LINESTyle? @@ SOLID | DASHed | SDASHed @@ 設定或查詢游標顯示的線條樣式 @@ 2-134 @@ RW @@ N
+CURSor:MODe @@ CURSor:MODe {TRACk|INDependent}; CURSor:MODe? @@ TRACk | INDependent @@ 設定或查詢兩條游標是否連動或獨立移動 @@ 2-134 @@ RW @@ N
+CURSor:SCREEN:STYle @@ CURSor:SCREEN:STYle {LINE_X|LINES|X}; CURSor:SCREEN:STYle? @@ LINE_X | LINES | X @@ 設定或查詢螢幕游標模式下的游標樣式 @@ 2-135 @@ RW @@ N
+CURSor:SCREEN:XPOSITION<x> @@ CURSor:SCREEN:XPOSITION<x> <NR3>; CURSor:SCREEN:XPOSITION<x>? @@ <NR3> @@ 設定或查詢指定螢幕游標的水平位置 @@ 2-135 @@ RW @@ N
+CURSor:SCREEN:YPOSITION<x> @@ CURSor:SCREEN:YPOSITION<x> <NR3>; CURSor:SCREEN:YPOSITION<x>? @@ <NR3> @@ 設定或查詢指定螢幕游標的垂直位置 @@ 2-136 @@ RW @@ N
+CURSor:SOUrce<x> @@ CURSor:SOUrce<x> {CH<x>|MATH<x>|REF<x>}; CURSor:SOUrce<x>? @@ CH<x> | MATH<x> | REF<x> @@ 設定或查詢指定游標的目標波形來源 @@ 2-136 @@ RW @@ N
+CURSor:STATE @@ CURSor:STATE {ON|OFF|<NR1>}; CURSor:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢游標功能的開啟或關閉狀態 @@ 2-137 @@ RW @@ N
+CURSor:VBArs @@ CURSor:VBArs SNAp; CURSor:VBArs? @@ SNAp @@ 強制垂直條形游標對齊資料起終點或傳回其設定 @@ 2-137 @@ RW @@ N
+CURSor:VBArs:DELTa? @@ CURSor:VBArs:DELTa? @@ 無 @@ 傳回兩條垂直條形游標之間的水平時間或頻率差 @@ 2-138 @@ R @@ N
+CURSor:VBArs:POSITION<x> @@ CURSor:VBArs:POSITION<x> <NR3>; CURSor:VBArs:POSITION<x>? @@ <NR3> @@ 設定或查詢指定垂直條形游標的水平位置 @@ 2-138 @@ RW @@ N
+CURSor:VBArs:POS<x> @@ CURSor:VBArs:POS<x> <NR3>; CURSor:VBArs:POS<x>? @@ <NR3> @@ 設定或查詢指定垂直條形游標的水平位置 @@ 2-139 @@ RW @@ N
+CURSor:VBArs:UNIts @@ CURSor:VBArs:UNIts {SECOnds|HERtz}; CURSor:VBArs:UNIts? @@ SECOnds | HERtz @@ 設定或查詢垂直條形游標的水平單位（秒或赫茲） @@ 2-140 @@ RW @@ N
+CURSor:WAVEform @@ CURSor:WAVEform SNAp; CURSor:WAVEform? @@ SNAp @@ 強制波形游標對齊資料起終點或傳回其設定 @@ 2-140 @@ RW @@ N
+CURSor:WAVEform:HDELTA? @@ CURSor:WAVEform:HDELTA? @@ 無 @@ 傳回波形游標之間的水平時間差 @@ 2-141 @@ R @@ N
+CURSor:WAVEform:HPOS<x>? @@ CURSor:WAVEform:HPOS<x>? @@ 無 @@ 傳回指定波形游標位置對應的電壓值 @@ 2-141 @@ R @@ N
+CURSor:WAVEform:POSition<x> @@ CURSor:WAVEform:POSition<x> <NR3>; CURSor:WAVEform:POSition<x>? @@ <NR3> @@ 設定或查詢指定波形游標的水平時間位置 @@ 2-142 @@ RW @@ N
+CURSor:WAVEform:STYle @@ CURSor:WAVEform:STYle {LINE_X|LINES|X}; CURSor:WAVEform:STYle? @@ LINE_X | LINES | X @@ 設定或查詢波形游標模式下的游標樣式 @@ 2-142 @@ RW @@ N
+CURSor:WAVEform:UNIts @@ CURSor:WAVEform:UNIts BASe; CURSor:WAVEform:UNIts? @@ BASe @@ 設定或查詢波形游標的單位 @@ 2-143 @@ RW @@ N
+CURSor:WAVEform:VDELTA? @@ CURSor:WAVEform:VDELTA? @@ 無 @@ 傳回波形游標之間的垂直電壓差 @@ 2-143 @@ R @@ N
+CURSor:XY? @@ CURSor:XY? @@ 無 @@ 傳回 XY 游標的所有設定與讀值 @@ 2-143 @@ R @@ N
+CURSor:XY:PRODDELta? @@ CURSor:XY:PRODDELta? @@ 無 @@ 傳回 XY 游標在乘積模式下的 ΔX 與 ΔY 乘積值 @@ 2-144 @@ R @@ N
+CURSor:XY:PRODUCT<x>? @@ CURSor:XY:PRODUCT<x>? @@ 無 @@ 傳回指定 XY 游標的 X 與 Y 位置乘積值 @@ 2-144 @@ R @@ N
+CURSor:XY:RADIUS<x>? @@ CURSor:XY:RADIUS<x>? @@ 無 @@ 傳回極座標模式下指定 XY 游標的半徑值 @@ 2-145 @@ R @@ N
+CURSor:XY:RATDELta? @@ CURSor:XY:RATDELta? @@ 無 @@ 傳回 XY 游標在比例模式下的 ΔY 與 ΔX 比值 @@ 2-145 @@ R @@ N
+CURSor:XY:RATIO<x>? @@ CURSor:XY:RATIO<x>? @@ 無 @@ 傳回指定 XY 游標的 Y 與 X 位置比值 @@ 2-146 @@ R @@ N
+CURSor:XY:RDELta? @@ CURSor:XY:RDELta? @@ 無 @@ 傳回極座標模式下兩條 XY 游標的半徑差 @@ 2-146 @@ R @@ N
+CURSor:XY:READOUT @@ CURSor:XY:READOUT {RECTangular|POLARCoord|PRODuct|RATio}; CURSor:XY:READOUT? @@ RECTangular | POLARCoord | PRODuct | RATio @@ 設定或查詢 XY 游標的讀值顯示模式 @@ 2-147 @@ RW @@ N
+CURSor:XY:RECTX<x> @@ CURSor:XY:RECTX<x> <NR3>; CURSor:XY:RECTX<x>? @@ <NR3> @@ 設定或查詢直角座標下指定 XY 游標的 X 軸位置 @@ 2-147 @@ RW @@ N
+CURSor:XY:RECTY<x> @@ CURSor:XY:RECTY<x> <NR3>; CURSor:XY:RECTY<x>? @@ <NR3> @@ 設定或查詢直角座標下指定 XY 游標的 Y 軸位置 @@ 2-148 @@ RW @@ N
+CURSor:XY:THDELta? @@ CURSor:XY:THDELta? @@ 無 @@ 傳回極座標模式下兩條 XY 游標的角度差 @@ 2-148 @@ R @@ N
+CURSor:XY:THETA<x>? @@ CURSor:XY:THETA<x>? @@ 無 @@ 傳回極座標模式下指定 XY 游標的角度 @@ 2-149 @@ R @@ N
+CURSor:XY:XDELta? @@ CURSor:XY:XDELta? @@ 無 @@ 傳回直角座標模式下 XY 游標的 X 軸位置差 @@ 2-149 @@ R @@ N
+CURSor:XY:YDELta? @@ CURSor:XY:YDELta? @@ 無 @@ 傳回直角座標模式下 XY 游標的 Y 軸位置差 @@ 2-150 @@ R @@ N

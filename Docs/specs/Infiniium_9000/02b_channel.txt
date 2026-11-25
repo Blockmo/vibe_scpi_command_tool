@@ -1,0 +1,27 @@
+:CHANnel<N>:PROBe @@ :CHANnel<N>:PROBe <attenuation_factor>[,{RATio | DECibel}];:CHANnel<N>:PROBe? @@ <attenuation_factor> (0.0001~1000 或 -80~60 dB), [{RATio | DECibel}] @@ 設定自訂探頭的衰減倍率與單位 @@ 217 @@ RW @@ N
+:CHANnel<N>:PROBe:ACCAL @@ :CHANnel<N>:PROBe:ACCAL {AUTO | OFF | PRECprobe};:CHANnel<N>:PROBe:ACCAL? @@ {AUTO | OFF | PRECprobe} @@ 設定探頭 AC 響應校正模式 @@ 218 @@ RW @@ N
+:CHANnel<N>:PROBe:ATTenuation @@ :CHANnel<N>:PROBe:ATTenuation {DIV1 | DIV10};:CHANnel<N>:PROBe:ATTenuation? @@ {DIV1 | DIV10} @@ 設定 1154A 探頭的輸入放大器衰減模式 @@ 219 @@ RW @@ N
+:CHANnel<N>:PROBe:AUTozero @@ :CHANnel<N>:PROBe:AUTozero @@ 無 @@ 啟動 N2893A 探頭的自動消磁與零點校正作業 @@ 220 @@ W @@ N
+:CHANnel<N>:PROBe:COUPling @@ :CHANnel<N>:PROBe:COUPling {DC | AC};:CHANnel<N>:PROBe:COUPling? @@ {DC | AC} @@ 設定指定通道探頭的訊號耦合方式 @@ 221 @@ RW @@ N
+:CHANnel<N>:PROBe:EADapter @@ :CHANnel<N>:PROBe:EADapter {NONE | N2788A | N2789A};:CHANnel<N>:PROBe:EADapter? @@ {NONE | N2788A | N2789A} @@ 設定探頭外接擴充轉接器類型 @@ 222 @@ RW @@ N
+:CHANnel<N>:PROBe:ECOupling @@ :CHANnel<N>:PROBe:ECOupling {NONE | AC};:CHANnel<N>:PROBe:ECOupling? @@ {NONE | AC} @@ 設定 1153A/1154A/1159A 探頭的外接耦合轉接器模式 @@ 224 @@ RW @@ N
+:CHANnel<N>:PROBe:EXTernal @@ :CHANnel<N>:PROBe:EXTernal {{ON | 1} | {OFF | 0}};:CHANnel<N>:PROBe:EXTernal? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的外接探頭模式 @@ 225 @@ RW @@ N
+:CHANnel<N>:PROBe:EXTernal:GAIN @@ :CHANnel<N>:PROBe:EXTernal:GAIN <gain_factor>[,{RATio | DECibel}];:CHANnel<N>:PROBe:EXTernal:GAIN? @@ <gain_factor> (0.001~10000 或 -60~80 dB), [{RATio | DECibel}] @@ 設定外接探頭的比例增益因子與單位 @@ 226 @@ RW @@ N
+:CHANnel<N>:PROBe:EXTernal:OFFSet @@ :CHANnel<N>:PROBe:EXTernal:OFFSet <offset_value>;:CHANnel<N>:PROBe:EXTernal:OFFSet? @@ <offset_value> (電壓) @@ 設定外接探頭在螢幕中央對應的垂直偏置電壓值 @@ 227 @@ RW @@ N
+:CHANnel<N>:PROBe:EXTernal:UNITs @@ :CHANnel<N>:PROBe:EXTernal:UNITs {VOLT | AMPere | WATT | UNKNown};:CHANnel<N>:PROBe:EXTernal:UNITs? @@ {VOLT | AMPere | WATT | UNKNown} @@ 設定外接探頭垂直軸的物理單位 @@ 228 @@ RW @@ N
+:CHANnel<N>:PROBe:GAIN @@ :CHANnel<N>:PROBe:GAIN {X1 | X10};:CHANnel<N>:PROBe:GAIN? @@ {X1 | X10} @@ 設定 1154A 探頭輸入放大器的增益倍率 @@ 229 @@ RW @@ N
+:CHANnel<N>:PROBe:HEAD:ADD @@ :CHANnel<N>:PROBe:HEAD:ADD "<head>"[,"<label>"] @@ "<head>" (型號字串), ["<label>"] @@ 新增探頭前端頭 (Probe Head) 型號至列表 @@ 230 @@ W @@ N
+:CHANnel<N>:PROBe:HEAD:DELete ALL @@ :CHANnel<N>:PROBe:HEAD:DELete ALL @@ ALL @@ 刪除指定通道探頭前端頭列表中所有已新增的項目 @@ 231 @@ W @@ N
+:CHANnel<N>:PROBe:HEAD:SELect @@ :CHANnel<N>:PROBe:HEAD:SELect {<int> | "<quoted_label_string>"};:CHANnel<N>:PROBe:HEAD:SELect? [<format>] @@ {<int> | "<quoted_label_string>"}, [<format>] @@ 從列表中選擇當前使用的探頭前端頭 @@ 232 @@ RW @@ N
+:CHANnel<N>:PROBe:HEAD:VTERm @@ :CHANnel<N>:PROBe:HEAD:VTERm {FLOating | EXTernal | {INTernal,<voltage>}};:CHANnel<N>:PROBe:HEAD:VTERm? @@ {FLOating | EXTernal | {INTernal,<voltage>}} @@ 設定 N5444A 探頭前端頭的終端匹配電壓 @@ 233 @@ RW @@ N
+:CHANnel<N>:PROBe:ID? @@ :CHANnel<N>:PROBe:ID? @@ 無 @@ 查詢連接至指定通道的探頭型號識別字串 @@ 234 @@ R @@ N
+:CHANnel<N>:PROBe:MODE @@ :CHANnel<N>:PROBe:MODE {DIFF | SEA | SEB | CM};:CHANnel<N>:PROBe:MODE? @@ {DIFF | SEA | SEB | CM} @@ 設定 N2750A 探頭的 InfiniiMode 量測模式 @@ 235 @@ RW @@ N
+:CHANnel<N>:PROBe:PRECprobe:BANDwidth @@ :CHANnel<N>:PROBe:PRECprobe:BANDwidth {AUTO | {MANual,<bandwidth>} | {BOOSt,<boost_dB>}};:CHANnel<N>:PROBe:PRECprobe:BANDwidth? @@ {AUTO | {MANual,<bandwidth>} | {BOOSt,<boost_dB>}} @@ 設定 PrecisionProbe 校正的頻寬極限與升頻參數 @@ 236 @@ RW @@ N
+:CHANnel<N>:PROBe:PRECprobe:CALibration @@ :CHANnel<N>:PROBe:PRECprobe:CALibration {{ON | 1} | {OFF | 0}};:CHANnel<N>:PROBe:PRECprobe:CALibration? @@ {{ON | 1} | {OFF | 0}} @@ 啟用或停用 PrecisionProbe/PrecisionCable 的校正結果 @@ 237 @@ RW @@ N
+:CHANnel<N>:PROBe:PRECprobe:MODE @@ :CHANnel<N>:PROBe:PRECprobe:MODE {OFF | TDOMain | FDOMain | BOTH};:CHANnel<N>:PROBe:PRECprobe:MODE? @@ {OFF | TDOMain | FDOMain | BOTH} @@ 設定 PrecisionProbe 的修飾補償模式 (時域/頻域/兩者) @@ 238 @@ RW @@ N
+:CHANnel<N>:PROBe:PRECprobe:ZSRC @@ :CHANnel<N>:PROBe:PRECprobe:ZSRC {VIN | {VSRC,<impedance>} | {VSRC,"<file_string>"}};:CHANnel<N>:PROBe:PRECprobe:ZSRC? @@ {VIN | {VSRC,<impedance>} | {VSRC,"<file_string>"}} @@ 指定 PrecisionProbe 校正時系統來源阻抗特徵模式 @@ 239 @@ RW @@ N
+:CHANnel<N>:PROBe:SKEW @@ :CHANnel<N>:PROBe:SKEW <skew_value>;:CHANnel<N>:PROBe:SKEW? @@ <skew_value> (-1 ms ~ +1 ms) @@ 設定指定通道的探頭對通道時差校正值 @@ 241 @@ RW @@ N
+:CHANnel<N>:PROBe:STYPe @@ :CHANnel<N>:PROBe:STYPe {DIFFerential | SINGle};:CHANnel<N>:PROBe:STYPe? @@ {DIFFerential | SINGle} @@ 設定 113xA/1168A/1169A 探頭訊號類型為差動或單端 @@ 242 @@ RW @@ N
+:CHANnel<N>:RANGe @@ :CHANnel<N>:RANGe <range_value>;:CHANnel<N>:RANGe? @@ <range_value> (電壓) @@ 設定指定通道的全螢幕垂直電壓顯示範圍 @@ 243 @@ RW @@ N
+:CHANnel<N>:SCALe @@ :CHANnel<N>:SCALe <scale_value>;:CHANnel<N>:SCALe? @@ <scale_value> (電壓/格) @@ 設定指定通道的每格垂直電壓刻度比例 @@ 244 @@ RW @@ N
+:CHANnel<N>:UNITs @@ :CHANnel<N>:UNITs {VOLT | AMPere | WATT | UNKNown};:CHANnel<N>:UNITs? @@ {VOLT | AMPere | WATT | UNKNown} @@ 設定指定通道垂直軸顯示與量測的物理單位 @@ 245 @@ RW @@ N

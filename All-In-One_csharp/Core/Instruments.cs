@@ -66,13 +66,19 @@ public static class InstrumentCatalog
         {
             Def("DPO 7 Series", "DPO_7SERIES", CmdStyle.Index, "TEKTRONIX,DPO7254,SIM0000,CF:91.1CT FV:1.0",
                 "Digital Phosphor Oscilloscope (Tektronix)", "數位螢光示波器 (Tektronix)"),
+            Def("TDS 7000 Series", "TEK_7000", CmdStyle.Index, "TEKTRONIX,TDS7104,SIM0000,CF:91.1CT FV:1.0",
+                "Digital Phosphor Oscilloscope (Tektronix)", "數位螢光示波器 (Tektronix)"),
             Def("MSO 5 Series", "MSO_5SERIES", CmdStyle.Index, "TEKTRONIX,MSO54,SIM0000,CF:91.1CT FV:1.0",
                 "Mixed-Signal Oscilloscope (Tektronix)", "混合訊號示波器 (Tektronix)"),
             Def("R&S RTE", "RS_RTE", CmdStyle.Index, "Rohde&Schwarz,RTE1104,1326.0003K04/SIM0000,4.70.1.0",
                 "Digital Oscilloscope (Rohde & Schwarz)", "數位示波器 (Rohde & Schwarz)"),
+            Def("Infiniium 9000", "INFINIIUM_9000", CmdStyle.Index, "AGILENT TECHNOLOGIES,DSO9104A,SIM0000,06.00.0001",
+                "Infiniium Oscilloscope (Agilent/Keysight)", "Infiniium 示波器 (Agilent/Keysight)"),
         }),
         new Category("cat_fgen", new[]
         {
+            Def("33220A", "33220A", CmdStyle.ChList, "Agilent Technologies,33220A,SIM0000,2.02-2.02-22-2",
+                "Function / Arbitrary Waveform Generator (Agilent/Keysight)", "函數／任意波形產生器 (Agilent/Keysight)"),
             Def("AFG3000", "AFG3000", CmdStyle.Index, "TEKTRONIX,AFG3252,SIM0000,SCPI:99.0 FV:3.1.1",
                 "Arbitrary/Function Generator (Tektronix)", "任意波形／函數信號產生器 (Tektronix)"),
             Def("AFG31000", "AFG31000", CmdStyle.Index, "TEKTRONIX,AFG31052,SIM0000,SCPI:99.0 FV:1.0",

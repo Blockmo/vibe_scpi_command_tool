@@ -1,0 +1,82 @@
+:MEASure:QUALifier<M>:CONDition@@:MEASure:QUALifier<M>:CONDition {HIGH | LOW | INSide | OUTSide};:MEASure:QUALifier<M>:CONDition?@@{HIGH | LOW | INSide | OUTSide}@@設定觸發限定條件成立時的波形準位或範圍門檻@@621@@RW@@N
+:MEASure:QUALifier<M>:SOURce@@:MEASure:QUALifier<M>:SOURce {CHANnel<N> | DIGital<M> | FUNCtion<F> | WMEMory<N>};:MEASure:QUALifier<M>:SOURce?@@{CHANnel<N> | DIGital<M> | FUNCtion<F> | WMEMory<N>}@@設定時間量測限定機制的訊號來源通道@@622@@RW@@N
+:MEASure:QUALifier<M>:STATe@@:MEASure:QUALifier<M>:STATe {{ON | 1} | {OFF | 0}};:MEASure:QUALifier<M>:STATe?@@{{ON | 1} | {OFF | 0}}@@開啟或關閉指定量測項目的限定檢測機制@@623@@RW@@N
+:MEASure:RESults?@@:MEASure:RESults?@@無@@查詢螢幕上所有已啟用量測項目的當前量測數值與統計結果@@624@@R@@N
+:MEASure:RISetime@@:MEASure:RISetime [<source>];:MEASure:RISetime? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | DIGital<M> | WMEMory<N> | ...}@@量測波形上升沿的時間@@627@@RW@@N
+:MEASure:RJDJ:ALL?@@:MEASure:RJDJ:ALL?@@無@@查詢隨機抖動 (RJ) 與確定性抖動 (DJ) 分解分析的所有結果數據@@629@@R@@N
+:MEASure:RJDJ:APLength?@@:MEASure:RJDJ:APLength?@@無@@查詢 RJ/DJ 分析自動偵測到的圖案長度 (Pattern Length)@@631@@R@@N
+:MEASure:RJDJ:BANDwidth@@:MEASure:RJDJ:BANDwidth {NARRow | WIDE};:MEASure:RJDJ:BANDwidth?@@{NARRow | WIDE}@@設定 RJ/DJ 分解分析時濾波器的頻寬模式@@632@@RW@@N
+:MEASure:RJDJ:BER@@:MEASure:RJDJ:BER <ber_value>;:MEASure:RJDJ:BER?@@<ber_value> (1E-18 ~ 1E-1)@@設定總抖動 (TJ) 計算時所採用的目標誤碼率 (BER)@@633@@RW@@N
+:MEASure:RJDJ:CLOCk@@:MEASure:RJDJ:CLOCk {{ON | 1} | {OFF | 0}};:MEASure:RJDJ:CLOCk?@@{{ON | 1} | {OFF | 0}}@@設定是否強制將輸入圖案視為時脈訊號進行抖動分析@@635@@RW@@N
+:MEASure:RJDJ:EDGE@@:MEASure:RJDJ:EDGE {RISing | FALLing | BOTH};:MEASure:RJDJ:EDGE?@@{RISing | FALLing | BOTH}@@設定 RJ/DJ 抖動分析所針對的波形邊緣類型@@636@@RW@@N
+:MEASure:RJDJ:INTerpolate@@:MEASure:RJDJ:INTerpolate {{ON | 1} | {OFF | 0}};:MEASure:RJDJ:INTerpolate?@@{{ON | 1} | {OFF | 0}}@@開啟或關閉 RJ/DJ 抖動分析時數據點的插值補點功能@@637@@RW@@N
+:MEASure:RJDJ:METHod@@:MEASure:RJDJ:METHod {SPECtral | BOTH};:MEASure:RJDJ:METHod?@@{SPECtral | BOTH}@@設定 RJ/DJ 分解分析採用的演算法 (頻譜法或雙重法)@@638@@RW@@N
+:MEASure:RJDJ:MODe@@:MEASure:RJDJ:MODe {ARBitrary | PERiodic};:MEASure:RJDJ:MODe?@@{ARBitrary | PERiodic}@@設定 RJ/DJ 抖動分析所處理的資料訊號模式類型@@639@@RW@@N
+:MEASure:RJDJ:PLENgth@@:MEASure:RJDJ:PLENgth {AUTO | <length>};:MEASure:RJDJ:PLENgth?@@{AUTO | <length>}@@設定 RJ/DJ 抖動分析時重複序列圖案的位元長度@@640@@RW@@N
+:MEASure:RJDJ:REPort@@:MEASure:RJDJ:REPort {SPECtral | TAILfit};:MEASure:RJDJ:REPort?@@{SPECtral | TAILfit}@@設定雙重模式下報告採用的抖動分解模型結果@@641@@RW@@N
+:MEASure:RJDJ:RJ@@:MEASure:RJDJ:RJ {{ON, <rj_rms_value>} | OFF};:MEASure:RJDJ:RJ?@@{{ON, <rj_rms_value>} | OFF}@@手動指定已知系統隨機抖動 (RJ) 的 RMS 數值@@642@@RW@@N
+:MEASure:RJDJ:SCOPe:RJ@@:MEASure:RJDJ:SCOPe:RJ {{ON, <rj_rms_value>} | OFF};:MEASure:RJDJ:SCOPe:RJ?@@{{ON, <rj_rms_value>} | OFF}@@設定分析結果中是否扣除示波器本身基底的隨機抖動@@643@@RW@@N
+:MEASure:RJDJ:SOURce@@:MEASure:RJDJ:SOURce <source>;:MEASure:RJDJ:SOURce?@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@設定 RJ/DJ 抖動分析的波形來源通道@@644@@RW@@N
+:MEASure:RJDJ:STATe@@:MEASure:RJDJ:STATe {{ON | 1} | {OFF | 0}};:MEASure:RJDJ:STATe?@@{{ON | 1} | {OFF | 0}}@@開啟或關閉 RJ/DJ 抖動分解量測功能@@645@@RW@@N
+:MEASure:RJDJ:TJRJDJ?@@:MEASure:RJDJ:TJRJDJ?@@無@@一次查詢總抖動 (TJ)、隨機抖動 (RJ) 與確定性抖動 (DJ) 的量測值@@646@@R@@N
+:MEASure:RJDJ:UNITs@@:MEASure:RJDJ:UNITs {SECond | UI};:MEASure:RJDJ:UNITs?@@{SECond | UI}@@設定 RJ/DJ 抖動量測數值的顯示單位為秒或 UI@@647@@RW@@N
+:MEASure:SCRatch@@:MEASure:SCRatch@@無@@清除所有臨時量測設定並恢復為預設狀態@@648@@W@@N
+:MEASure:SENDvalid@@:MEASure:SENDvalid {{ON | 1} | {OFF | 0}};:MEASure:SENDvalid?@@{{ON | 1} | {OFF | 0}}@@設定量測查詢傳回結果時是否包含有效性狀態碼@@649@@RW@@N
+:MEASure:SETuptime@@:MEASure:SETuptime [<data_source>,<data_dir>,<clock_source>,<clock_dir>];:MEASure:SETuptime? [<data_source>,<data_dir>,<clock_source>,<clock_dir>]@@<data_source>, <data_dir>:{RIS|FALL}, <clock_source>, <clock_dir>:{RIS|FALL}@@量測資料訊號相對於時脈訊號邊緣的建立時間@@650@@RW@@N
+:MEASure:SLEWrate@@:MEASure:SLEWrate [<data_source>,<edge_dir>];:MEASure:SLEWrate? [<data_source>,<edge_dir>]@@<data_source>, <edge_dir>:{RISing | FALLing | BOTH}@@量測波形邊緣的轉換壓擺率 (Slew Rate)@@652@@RW@@N
+:MEASure:SOURce@@:MEASure:SOURce {<source>[,<source>]};:MEASure:SOURce?@@<source>:{CHANnel<N> | FUNCtion<F> | DIGital<M> | WMEMory<N> | ...}@@設定預設自動量測所採用的預設來源通道@@653@@RW@@N
+:MEASure:STATistics@@:MEASure:STATistics {{ON | 1} | CURRent | MAXimum | MEAN | MINimum | STDDev};:MEASure:STATistics?@@{{ON | 1} | CURRent | MAXimum | MEAN | MINimum | STDDev}@@設定統計查詢傳回的量測數據類型或啟用全統計@@654@@RW@@N
+:MEASure:TEDGe@@:MEASure:TEDGe <meas_thres_txt>,[<slope>]<occurrence>[,<source>];:MEASure:TEDGe? <meas_thres_txt>,[<slope>]<occurrence>[,<source>]@@<meas_thres_txt>:{UPP|MIDD|LOW}, <slope>:{+|-}, <occurrence>:(1~65534), <source>@@量測指定電壓門檻與邊緣次數相對於觸發點的時間差@@655@@RW@@N
+:MEASure:THResholds:ABSolute@@:MEASure:THResholds:ABSolute <source>,<upper_volts>,<middle_volts>,<lower_volts>;:MEASure:THResholds:ABSolute? <source>@@<source>, <upper_volts>, <middle_volts>, <lower_volts>@@設定通用量測所採用的高、中、低絕對電壓門檻@@657@@RW@@N
+:MEASure:THResholds:GENeral:ABSolute@@:MEASure:THResholds:GENeral:ABSolute <source>,<upper_volts>,<middle_volts>,<lower_volts>;:MEASure:THResholds:GENeral:ABSolute? <source>@@<source>, <upper_volts>, <middle_volts>, <lower_volts>@@設定一般時間量測的高、中、低絕對電壓門檻@@659@@RW@@N
+:MEASure:THResholds:GENeral:HYSTeresis@@:MEASure:THResholds:GENeral:HYSTeresis <source>,<range>,<level>;:MEASure:THResholds:GENeral:HYSTeresis? <source>@@<source>, <range> (電壓), <level> (電壓)@@設定一般時間量測時的遲滯門檻範圍與準位@@661@@RW@@N
+:MEASure:THResholds:GENeral:METHod@@:MEASure:THResholds:GENeral:METHod [<source>,]{ABSolute | PERCent | HYSTeresis};:MEASure:THResholds:GENeral:METHod? [<source>]@@<source>, {ABSolute | PERCent | HYSTeresis}@@設定一般時間量測計算門檻的判斷模式@@663@@RW@@N
+:MEASure:THResholds:GENeral:PERCent@@:MEASure:THResholds:GENeral:PERCent <source>,<upper_pct>,<middle_pct>,<lower_pct>;:MEASure:THResholds:GENeral:PERCent? <source>@@<source>, <upper_pct>, <middle_pct>, <lower_pct> (0~100%)@@設定一般時間量測的高、中、低百分比電壓門檻@@665@@RW@@N
+:MEASure:THResholds:GENeral:TOPBase:ABSolute@@:MEASure:THResholds:GENeral:TOPBase:ABSolute <source>,<top_volts>,<base_volts>;:MEASure:THResholds:GENeral:TOPBase:ABSolute? <source>@@<source>, <top_volts>, <base_volts>@@設定一般時間量測的頂部與基部絕對電壓準位@@667@@RW@@N
+:MEASure:THResholds:GENeral:TOPBase:METHod@@:MEASure:THResholds:GENeral:TOPBase:METHod [<source>,]{ABSolute | HISTONLY | MINmax | STANdard};:MEASure:THResholds:GENeral:TOPBase:METHod? [<source>]@@<source>, {ABSolute | HISTONLY | MINmax | STANdard}@@設定一般時間量測計算頂部與基部電壓的模式@@669@@RW@@N
+:MEASure:THResholds:HYSTeresis@@:MEASure:THResholds:HYSTeresis <source>,<range>,<level>;:MEASure:THResholds:HYSTeresis? <source>@@<source>, <range>, <level>@@設定通用量測的遲滯門檻範圍與準位@@671@@RW@@N
+:MEASure:THResholds:METHod@@:MEASure:THResholds:METHod [<source>,]{ABSolute | PERCent | HYSTeresis};:MEASure:THResholds:METHod? [<source>]@@<source>, {ABSolute | PERCent | HYSTeresis}@@設定通用量測計算門檻的判斷模式@@673@@RW@@N
+:MEASure:THResholds:PERCent@@:MEASure:THResholds:PERCent <source>,<upper_pct>,<middle_pct>,<lower_pct>;:MEASure:THResholds:PERCent? <source>@@<source>, <upper_pct>, <middle_pct>, <lower_pct>@@設定通用量測的高、中、低百分比電壓門檻@@675@@RW@@N
+:MEASure:THResholds:RFALl:ABSolute@@:MEASure:THResholds:RFALl:ABSolute <source>,<upper_volts>,<middle_volts>,<lower_volts>;:MEASure:THResholds:RFALl:ABSolute? <source>@@<source>, <upper_volts>, <middle_volts>, <lower_volts>@@設定上升/下降時間量測的高、中、低絕對電壓門檻@@677@@RW@@N
+:MEASure:THResholds:RFALl:HYSTeresis@@:MEASure:THResholds:RFALl:HYSTeresis <source>,<range>,<level>;:MEASure:THResholds:RFALl:HYSTeresis? <source>@@<source>, <range>, <level>@@設定上升/下降時間量測的遲滯門檻範圍與準位@@679@@RW@@N
+:MEASure:THResholds:RFALl:METHod@@:MEASure:THResholds:RFALl:METHod [<source>,]{ABSolute | PERCent | HYSTeresis};:MEASure:THResholds:RFALl:METHod? [<source>]@@<source>, {ABSolute | PERCent | HYSTeresis}@@設定上升/下降時間量測計算門檻的判斷模式@@681@@RW@@N
+:MEASure:THResholds:RFALl:PERCent@@:MEASure:THResholds:RFALl:PERCent <source>,<upper_pct>,<middle_pct>,<lower_pct>;:MEASure:THResholds:RFALl:PERCent? <source>@@<source>, <upper_pct>, <middle_pct>, <lower_pct>@@設定上升/下降時間量測的高、中、低百分比電壓門檻@@683@@RW@@N
+:MEASure:THResholds:RFALl:TOPBase:ABSolute@@:MEASure:THResholds:RFALl:TOPBase:ABSolute <source>,<top_volts>,<base_volts>;:MEASure:THResholds:RFALl:TOPBase:ABSolute? <source>@@<source>, <top_volts>, <base_volts>@@設定上升/下降時間量測的頂部與基部絕對電壓準位@@685@@RW@@N
+:MEASure:THResholds:RFALl:TOPBase:METHod@@:MEASure:THResholds:RFALl:TOPBase:METHod [<source>,]{ABSolute | HISTONLY | MINmax | STANdard};:MEASure:THResholds:RFALl:TOPBase:METHod? [<source>]@@<source>, {ABSolute | HISTONLY | MINmax | STANdard}@@設定上升/下降時間量測計算頂部與基部電壓的模式@@687@@RW@@N
+:MEASure:THResholds:SERial:ABSolute@@:MEASure:THResholds:SERial:ABSolute <source>,<upper_volts>,<middle_volts>,<lower_volts>;:MEASure:THResholds:SERial:ABSolute? <source>@@<source>, <upper_volts>, <middle_volts>, <lower_volts>@@設定串列通訊解碼專用的高、中、低絕對電壓門檻@@689@@RW@@N
+:MEASure:THResholds:SERial:HYSTeresis@@:MEASure:THResholds:SERial:HYSTeresis <source>,<range>,<level>;:MEASure:THResholds:SERial:HYSTeresis? <source>@@<source>, <range>, <level>@@設定串列通訊解碼專用的遲滯門檻範圍與準位@@691@@RW@@N
+:MEASure:THResholds:SERial:METHod@@:MEASure:THResholds:SERial:METHod [<source>,]{ABSolute | PERCent | HYSTeresis};:MEASure:THResholds:SERial:METHod? [<source>]@@<source>, {ABSolute | PERCent | HYSTeresis}@@設定串列通訊解碼計算門檻的判斷模式@@693@@RW@@N
+:MEASure:THResholds:SERial:PERCent@@:MEASure:THResholds:SERial:PERCent <source>,<upper_pct>,<middle_pct>,<lower_pct>;:MEASure:THResholds:SERial:PERCent? <source>@@<source>, <upper_pct>, <middle_pct>, <lower_pct>@@設定串列通訊解碼專用的高、中、低百分比電壓門檻@@695@@RW@@N
+:MEASure:THResholds:SERial:TOPBase:ABSolute@@:MEASure:THResholds:SERial:TOPBase:ABSolute <source>,<top_volts>,<base_volts>;:MEASure:THResholds:SERial:TOPBase:ABSolute? <source>@@<source>, <top_volts>, <base_volts>@@設定串列通訊解碼專用的頂部與基部絕對電壓準位@@697@@RW@@N
+:MEASure:THResholds:SERial:TOPBase:METHod@@:MEASure:THResholds:SERial:TOPBase:METHod [<source>,]{ABSolute | HISTONLY | MINmax | STANdard};:MEASure:THResholds:SERial:TOPBase:METHod? [<source>]@@<source>, {ABSolute | HISTONLY | MINmax | STANdard}@@設定串列通訊解碼計算頂部與基部電壓的模式@@699@@RW@@N
+:MEASure:THResholds:TOPBase:ABSolute@@:MEASure:THResholds:TOPBase:ABSolute <source>,<top_volts>,<base_volts>;:MEASure:THResholds:TOPBase:ABSolute? <source>@@<source>, <top_volts>, <base_volts>@@設定通用量測的頂部與基部絕對電壓準位@@701@@RW@@N
+:MEASure:THResholds:TOPBase:METHod@@:MEASure:THResholds:TOPBase:METHod [<source>,]{ABSolute | HISTONLY | MINmax | STANdard};:MEASure:THResholds:TOPBase:METHod? [<source>]@@<source>, {ABSolute | HISTONLY | MINmax | STANdard}@@設定通用量測計算頂部與基部電壓的模式@@703@@RW@@N
+:MEASure:TIEClock2@@:MEASure:TIEClock2 [<source>[,{SECond | UNITinterval}[,<direction>[,{AUTO | CUSTOM,<freq> | VARiable,<freq>,<bw> | CLOCk}]]]];:MEASure:TIEClock2? [<source>[,{SECond | UNITinterval}[,<direction>[,...]]]]@@<source>, {SECond | UI}, <direction>:{RIS|FALL|BOTH}, {AUTO|CUSTOM|VARiable|CLOCk}@@量測時脈訊號的時間間隔誤差 (TIE Clock)@@705@@RW@@N
+:MEASure:TIEData@@:MEASure:TIEData [<source>[,{SECond | UNITinterval}[,{AUTO | CUSTOM,<rate> | VARiable,<rate>,<bw> | CLOCk}]]];:MEASure:TIEData? [<source>[,{SECond | UNITinterval}[,...]]]@@<source>, {SECond | UI}, {AUTO|CUSTOM|VARiable|CLOCk}@@量測資料訊號的時間間隔誤差 (TIE Data)@@707@@RW@@N
+:MEASure:TIEFilter:SHAPe@@:MEASure:TIEFilter:SHAPe {RECTangular | DB20 | DB40};:MEASure:TIEFilter:SHAPe?@@{RECTangular | DB20 | DB40}@@設定 TIE 抖動分析濾波器的滾降形狀@@709@@RW@@N
+:MEASure:TIEFilter:STARt@@:MEASure:TIEFilter:STARt <start_frequency>;:MEASure:TIEFilter:STARt?@@<start_frequency> (Hz)@@設定 TIE 抖動分析帶通濾波器的起始轉折頻率@@710@@RW@@N
+:MEASure:TIEFilter:STATe@@:MEASure:TIEFilter:STATe {{ON | 1} | {OFF | 0}};:MEASure:TIEFilter:STATe?@@{{ON | 1} | {OFF | 0}}@@開啟或關閉 TIE 抖動數據量測時的濾波器功能@@711@@RW@@N
+:MEASure:TIEFilter:STOP@@:MEASure:TIEFilter:STOP <stop_frequency>;:MEASure:TIEFilter:STOP?@@<stop_frequency> (Hz)@@設定 TIE 抖動分析帶通濾波器的截止頻率@@712@@RW@@N
+:MEASure:TIEFilter:TYPE@@:MEASure:TIEFilter:TYPE {OFF | HPASs | LPASs | BPASs};:MEASure:TIEFilter:TYPE?@@{OFF | HPASs | LPASs | BPASs}@@設定 TIE 抖動分析濾波器的類型 (高通、低通、帶通)@@713@@RW@@N
+:MEASure:TMAX@@:MEASure:TMAX [<source>];:MEASure:TMAX? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測螢幕上波形出現最大電壓值時的時間位置@@714@@RW@@N
+:MEASure:TMIN@@:MEASure:TMIN [<source>];:MEASure:TMIN? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測螢幕上波形出現最小電壓值時的時間位置@@715@@RW@@N
+:MEASure:TVOLt@@:MEASure:TVOLt <voltage>[,<slope>[,<occurrence>[,<source>]]];:MEASure:TVOLt? <voltage>[,<slope>[,<occurrence>[,<source>]]]@@<voltage> (電壓), <slope>:{+|-}, <occurrence>, <source>@@量測波形達到指定電壓準位時的時間位置@@716@@RW@@N
+:MEASure:UITouijitter@@:MEASure:UITouijitter [<source>];:MEASure:UITouijitter? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測連續 UI (單位時間間隔) 之間的週期抖動量@@718@@RW@@N
+:MEASure:UNITinterval@@:MEASure:UNITinterval [<source>];:MEASure:UNITinterval? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測序列資料訊號單一位元的單位時間間隔 (UI)@@719@@RW@@N
+:MEASure:VAMPlitude@@:MEASure:VAMPlitude [<source>];:MEASure:VAMPlitude? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形頂部 (Top) 與基部 (Base) 之間的振幅電壓@@721@@RW@@N
+:MEASure:VAVerage@@:MEASure:VAVerage [{CYCLe | DISPlay}[,<source>]];:MEASure:VAVerage? [{CYCLe | DISPlay}[,<source>]]@@{CYCLe | DISPlay}, <source>@@量測指定區間內波形訊號的算術平均電壓 (DC)@@722@@RW@@N
+:MEASure:VBASe@@:MEASure:VBASe [<source>];:MEASure:VBASe? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形底部的統計基部 (Base) 電壓@@724@@RW@@N
+:MEASure:VLOWer@@:MEASure:VLOWer [<source>];:MEASure:VLOWer? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形在低電壓門檻 (Lower Threshold) 處的電壓值@@725@@RW@@N
+:MEASure:VMAX@@:MEASure:VMAX [<source>];:MEASure:VMAX? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測螢幕上波形出現的最大絕對電壓值@@726@@RW@@N
+:MEASure:VMIDdle@@:MEASure:VMIDdle [<source>];:MEASure:VMIDdle? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形在中電壓門檻 (Middle Threshold) 處的電壓值@@728@@RW@@N
+:MEASure:VMIN@@:MEASure:VMIN [<source>];:MEASure:VMIN? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測螢幕上波形出現的最小絕對電壓值@@729@@RW@@N
+:MEASure:VOVershoot@@:MEASure:VOVershoot [<source>[,<direction>]];:MEASure:VOVershoot? [<source>[,<direction>]]@@<source>, <direction>:{RISing | FALLing}@@量測波形過衝 (Overshoot) 的局部電壓值@@731@@RW@@N
+:MEASure:VPP@@:MEASure:VPP [<source>];:MEASure:VPP? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形最大值與最小值之間的峰對峰 (Peak-to-Peak) 電壓@@732@@RW@@N
+:MEASure:VPReshoot@@:MEASure:VPReshoot [<source>[,<direction>]];:MEASure:VPReshoot? [<source>[,<direction>]]@@<source>, <direction>:{RISing | FALLing}@@量測波形前衝 (Preshoot) 的局部電壓值@@734@@RW@@N
+:MEASure:VRMS@@:MEASure:VRMS {CYCLe | DISPlay},{AC | DC}[,<source> [,{VOLT | DBM}]];:MEASure:VRMS? {CYCLe | DISPlay},{AC | DC}[,<source> [,{VOLT | DBM}]]@@{CYCLe | DISPlay}, {AC | DC}, <source>, {VOLT | DBM}@@量測指定區間內波形訊號的真均方根 (True RMS) 電壓@@735@@RW@@N
+:MEASure:VTIMe@@:MEASure:VTIMe <time>[,<source>];:MEASure:VTIMe? <time>[,<source>]@@<time> (秒/Hz), <source>@@量測特定時間點 (或頻率點) 處的波形電壓值@@737@@RW@@N
+:MEASure:VTOP@@:MEASure:VTOP [<source>];:MEASure:VTOP? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形頂部的統計頂部 (Top) 電壓@@739@@RW@@N
+:MEASure:VUPPer@@:MEASure:VUPPer [<source>];:MEASure:VUPPer? [<source>]@@<source>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...}@@量測波形在高電壓門檻 (Upper Threshold) 處的電壓值@@740@@RW@@N
+:MEASure:WINDow@@:MEASure:WINDow {MAIN | WINDow};:MEASure:WINDow?@@{MAIN | WINDow}@@設定量測運算作用在主顯示波形或放大視窗波形@@742@@RW@@N
+:MEASurement<N>:NAME@@:MEASurement<N>:NAME <string>;:MEASurement<N>:NAME?@@<string> (字串)@@設定或查詢指定編號量測項目的自訂名稱@@743@@RW@@N
+:MEASurement<N>:SOURce@@:MEASurement<N>:SOURce <source>[,<source>];:MEASurement<N>:SOURce?@@<source>:{CHANnel<N> | FUNCtion<F> | DIGital<M> | WMEMory<N> | ...}@@設定或查詢指定編號量測項目的來源通道@@744@@RW@@N

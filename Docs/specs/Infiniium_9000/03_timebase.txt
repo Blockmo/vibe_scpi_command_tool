@@ -1,0 +1,11 @@
+:TIMebase:POSition @@ :TIMebase:POSition <position_value>;:TIMebase:POSition? @@ <position_value> (秒) @@ 設定觸發事件與延遲參考點之間的時間間隔 @@ 892 @@ RW @@ N
+:TIMebase:RANGe @@ :TIMebase:RANGe <full_scale_range>;:TIMebase:RANGe? @@ <full_scale_range> (50 ps ~ 200 s) @@ 設定全螢幕水平時間範圍 @@ 893 @@ RW @@ N
+:TIMebase:REFClock @@ :TIMebase:REFClock {{ON | 1} | {OFF | 0}};:TIMebase:REFClock? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉後面板 10 MHz 參考時脈輸入功能 @@ 894 @@ RW @@ N
+:TIMebase:REFerence @@ :TIMebase:REFerence {LEFT | CENTer | RIGHt};:TIMebase:REFerence? @@ {LEFT | CENTer | RIGHt} @@ 設定螢幕上的延遲參考點位置 @@ 895 @@ RW @@ N
+:TIMebase:ROLL:ENABLE @@ :TIMebase:ROLL:ENABLE {{ON | 1} | {OFF | 0}};:TIMebase:ROLL:ENABLE? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉滾動 (Roll) 模式 @@ 896 @@ RW @@ N
+:TIMebase:SCALe @@ :TIMebase:SCALe <time>;:TIMebase:SCALe? @@ <time> (5 ps/div ~ 20 s/div) @@ 設定時基比例 (每格時間) @@ 897 @@ RW @@ N
+:TIMebase:VIEW @@ :TIMebase:VIEW {MAIN | WINDow};:TIMebase:VIEW? @@ {MAIN | WINDow} @@ 切換主波形檢視或放大 (Zoom/Window) 檢視模式 @@ 898 @@ RW @@ N
+:TIMebase:WINDow:DELay @@ :TIMebase:WINDow:DELay <delay_value>;:TIMebase:WINDow:DELay? @@ <delay_value> (秒) @@ 設定放大檢視中的水平延遲位置 (相容舊指令) @@ 899 @@ RW @@ N
+:TIMebase:WINDow:POSition @@ :TIMebase:WINDow:POSition <position_value>;:TIMebase:WINDow:POSition? @@ <position_value> (秒) @@ 設定放大檢視中的水平位置 @@ 900 @@ RW @@ N
+:TIMebase:WINDow:RANGe @@ :TIMebase:WINDow:RANGe <full_scale_range>;:TIMebase:WINDow:RANGe? @@ <full_scale_range> (10 ps ~ 主時基範圍) @@ 設定放大檢視的全螢幕水平時間範圍 @@ 901 @@ RW @@ N
+:TIMebase:WINDow:SCALe @@ :TIMebase:WINDow:SCALe <time>;:TIMebase:WINDow:SCALe? @@ <time> (秒/格) @@ 設定放大檢視的時間比例 @@ 902 @@ RW @@ N

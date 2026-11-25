@@ -1,0 +1,73 @@
+TRIGger @@ TRIGger FORCe; TRIGger? @@ FORCe @@ 傳回當前觸發參數或強制產生一次觸發事件 @@ 2-496 @@ RW @@ N
+TRIGger:A @@ TRIGger:A SETLevel; TRIGger:A? @@ SETLevel @@ 自動設定 A 觸發準位至 50% 或傳回 A 觸發設定 @@ 2-550 @@ RW @@ N
+TRIGger:{A|B}:LEVel @@ TRIGger:{A|B}:LEVel {ECL|TTL|<NR3>}; TRIGger:{A|B}:LEVel? @@ ECL | TTL | <NR3> @@ 設定或查詢 A 或 B 觸發的電壓門檻準位 @@ 2-502 @@ RW @@ N
+TRIGger:{A|B}:LEVel:CH<x> @@ TRIGger:{A|B}:LEVel:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:LEVel:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道的 A 或 B 觸發電壓門檻準位 @@ 2-502 @@ RW @@ N
+TRIGger:{A|B}:LOWerthreshold:CH<x> @@ TRIGger:{A|B}:LOWerthreshold:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOWerthreshold:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道的 A 或 B 觸發下限門檻電壓 @@ 2-519 @@ RW @@ N
+TRIGger:{A|B}:UPPerthreshold:CH<x> @@ TRIGger:{A|B}:UPPerthreshold:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:UPPerthreshold:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道的 A 或 B 觸發上限門檻電壓 @@ 2-550 @@ RW @@ N
+TRIGger:{A|B}:EDGE? @@ TRIGger:{A|B}:EDGE? @@ 無 @@ 傳回 A 或 B 邊緣觸發的來源、耦合及斜率設定 @@ 2-497 @@ R @@ N
+TRIGger:{A|B}:EDGE:COUPling @@ TRIGger:{A|B}:EDGE:COUPling {AC|DC|HFRej|LFRej|NOISErej|ATRIGger}; TRIGger:{A|B}:EDGE:COUPling? @@ AC | DC | HFRej | LFRej | NOISErej | ATRIGger @@ 設定或查詢 A 或 B 邊緣觸發的訊號耦合模式 @@ 2-498 @@ RW @@ N
+TRIGger:{A|B}:EDGE:COUPling:CH<x> @@ TRIGger:{A|B}:EDGE:COUPling:CH<x> {AC|DC|HFRej|LFRej|NOISErej}; TRIGger:{A|B}:EDGE:COUPling:CH<x>? @@ AC | DC | HFRej | LFRej | NOISErej @@ 設定或查詢指定通道在 A 或 B 邊緣觸發時的耦合模式 @@ 2-499 @@ RW @@ N
+TRIGger:{A|B}:EDGE:SLOpe @@ TRIGger:{A|B}:EDGE:SLOpe {RISe|FALL|EITher}; TRIGger:{A|B}:EDGE:SLOpe? @@ RISe | FALL | EITher @@ 設定或查詢 A 或 B 邊緣觸發的觸發斜率極性 @@ 2-499 @@ RW @@ N
+TRIGger:{A|B}:EDGE:SLOpe:AUX @@ TRIGger:{A|B}:EDGE:SLOpe:AUX {RISe|FALL|EITher}; TRIGger:{A|B}:EDGE:SLOpe:AUX? @@ RISe | FALL | EITher @@ 設定或查詢 AUX In 輸入在 A 或 B 邊緣觸發時的觸發斜率 @@ 2-500 @@ RW @@ N
+TRIGger:{A|B}:EDGE:SLOpe:CH<x> @@ TRIGger:{A|B}:EDGE:SLOpe:CH<x> {RISe|FALL|EITher}; TRIGger:{A|B}:EDGE:SLOpe:CH<x>? @@ RISe | FALL | EITher @@ 設定或查詢指定通道在 A 或 B 邊緣觸發時的觸發斜率 @@ 2-500 @@ RW @@ N
+TRIGger:{A|B}:EDGE:SOUrce @@ TRIGger:{A|B}:EDGE:SOUrce {AUXiliary|CH<x>|LINE}; TRIGger:{A|B}:EDGE:SOUrce? @@ AUXiliary | CH<x> | LINE @@ 設定或查詢 A 或 B 邊緣觸發的來源通道 @@ 2-501 @@ RW @@ N
+TRIGger:A:HOLDoff? @@ TRIGger:A:HOLDoff? @@ 無 @@ 傳回 A 觸發的抑制時間（Holdoff）設定參數 @@ 2-565 @@ R @@ N
+TRIGger:A:HOLDoff:ACTUal? @@ TRIGger:A:HOLDoff:ACTUal? @@ 無 @@ 傳回 A 觸發實際採用的抑制時間 @@ 2-566 @@ R @@ N
+TRIGger:A:HOLDoff:BY @@ TRIGger:A:HOLDoff:BY {TIMe|DEFAult|RANDom|AUTO}; TRIGger:A:HOLDoff:BY? @@ TIMe | DEFAult | RANDom | AUTO @@ 設定或查詢 A 觸發抑制時間的計算方式 @@ 2-566 @@ RW @@ N
+TRIGger:A:HOLDoff:TIMe @@ TRIGger:A:HOLDoff:TIMe <NR3>; TRIGger:A:HOLDoff:TIMe? @@ <NR3> @@ 設定或查詢 A 觸發的抑制時間長度 @@ 2-567 @@ RW @@ N
+TRIGger:A:MODe @@ TRIGger:A:MODe {AUTO|NORMal}; TRIGger:A:MODe? @@ AUTO | NORMal @@ 設定或查詢 A 觸發模式（自動或一般） @@ 2-574 @@ RW @@ N
+TRIGger:A:TYPe @@ TRIGger:A:TYPe {EDGE|LOGIc|PULse|VIDeo|I2C|CAN|SPI|COMMunication|SERIAL|RS232}; TRIGger:A:TYPe? @@ EDGE | LOGIc | PULse | VIDeo | I2C | CAN | SPI | COMMunication | SERIAL | RS232 @@ 設定或查詢 A 觸發的類型類別 @@ 2-598 @@ RW @@ N
+TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:PULSEForm @@ TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:PULSEForm {PLUSOne|MINUSOne|EYEdiagram}; TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:PULSEForm? @@ PLUSOne | MINUSOne | EYEdiagram @@ 設定或查詢 AMI 通訊脈衝波形型態 @@ 2-557 @@ RW @@ N
+TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:HIGH @@ TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:HIGH <NR3>; TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:HIGH? @@ <NR3> @@ 設定或查詢通訊觸發高準位電壓 @@ 2-558 @@ RW @@ N
+TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:LOW @@ TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:LOW <NR3>; TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:LOW? @@ <NR3> @@ 設定或查詢通訊觸發低準位電壓 @@ 2-558 @@ RW @@ N
+TRIGger:A:COMMunication:BITRate @@ TRIGger:A:COMMunication:BITRate <NR3>; TRIGger:A:COMMunication:BITRate? @@ <NR3> @@ 設定或查詢通訊觸發的位元傳輸率 @@ 2-559 @@ RW @@ N
+TRIGger:A:COMMunication:CLOCk:POLarity @@ TRIGger:A:COMMunication:CLOCk:POLarity {RISe|FALL}; TRIGger:A:COMMunication:CLOCk:POLarity? @@ RISe | FALL @@ 設定或查詢通訊時脈極性 @@ 2-559 @@ RW @@ N
+TRIGger:A:COMMunication:CMI:PULSEForm @@ TRIGger:A:COMMunication:CMI:PULSEForm {PLUSOne|MINUSOne|ZERO|EYEdiagram}; TRIGger:A:COMMunication:CMI:PULSEForm? @@ PLUSOne | MINUSOne | ZERO | EYEdiagram @@ 設定或查詢 CMI 脈衝波形型態 @@ 2-560 @@ RW @@ N
+TRIGger:A:COMMunication:CODe @@ TRIGger:A:COMMunication:CODe {AMI|HDB3|B3ZS|B6ZS|B8ZS|CMI|NRZ|MLT3|MANChester}; TRIGger:A:COMMunication:CODe? @@ AMI | HDB3 | B3ZS | B6ZS | B8ZS | CMI | NRZ | MLT3 | MANChester @@ 設定或查詢通訊訊號編碼方式 @@ 2-560 @@ RW @@ N
+TRIGger:A:COMMunication:SOUrce @@ TRIGger:A:COMMunication:SOUrce {CH1|CH2|CH3|CH4}; TRIGger:A:COMMunication:SOUrce? @@ CH1 | CH2 | CH3 | CH4 @@ 設定或查詢通訊觸發來源通道 @@ 2-561 @@ RW @@ N
+TRIGger:A:COMMunication:SOUrce:TYPe @@ TRIGger:A:COMMunication:SOUrce:TYPe {DATa|CLOCk|RECOVered}; TRIGger:A:COMMunication:SOUrce:TYPe? @@ DATa | CLOCk | RECOVered @@ 設定或查詢通訊來源通道類型 @@ 2-562 @@ RW @@ N
+TRIGger:A:COMMunication:STANdard @@ TRIGger:A:COMMunication:STANdard {ATAG1|...|Custom|...|VSROC192}; TRIGger:A:COMMunication:STANdard? @@ ATAG1 至 VSROC192 通訊標準 @@ 設定或查詢通訊觸發標準 @@ 2-563 @@ RW @@ N
+TRIGger:A:SERIAL:BITRate @@ TRIGger:A:SERIAL:BITRate <NR3>; TRIGger:A:SERIAL:BITRate? @@ <NR3> @@ 設定或查詢串列觸發的時脈與資料位元率 @@ 2-579 @@ RW @@ N
+TRIGger:A:SERIAL:CLOCk:LEVel @@ TRIGger:A:SERIAL:CLOCk:LEVel <NR3>; TRIGger:A:SERIAL:CLOCk:LEVel? @@ <NR3> @@ 設定或查詢串列觸發的時脈門檻電壓 @@ 2-580 @@ RW @@ N
+TRIGger:A:SERIAL:CLOCk:POLarity @@ TRIGger:A:SERIAL:CLOCk:POLarity {RISe|FALL}; TRIGger:A:SERIAL:CLOCk:POLarity? @@ RISe | FALL @@ 設定或查詢串列觸發的時脈極性 @@ 2-581 @@ RW @@ N
+TRIGger:A:SERIAL:CLOCk:SOUrce @@ TRIGger:A:SERIAL:CLOCk:SOUrce {CH1|CH2|CH3|CH4|RECOVered}; TRIGger:A:SERIAL:CLOCk:SOUrce? @@ CH1..CH4 | RECOVered @@ 設定或查詢串列觸發的時脈來源通道 @@ 2-582 @@ RW @@ N
+TRIGger:A:SERIAL:CODe @@ TRIGger:A:SERIAL:CODe {NRZ|S8B10B}; TRIGger:A:SERIAL:CODe? @@ NRZ | S8B10B @@ 設定或查詢串列訊號編碼類型 @@ 2-582 @@ RW @@ N
+TRIGger:A:SERIAL:DATa:FORMat @@ TRIGger:A:SERIAL:DATa:FORMat {BINary|HEX}; TRIGger:A:SERIAL:DATa:FORMat? @@ BINary | HEX @@ 設定或查詢串列圖樣字串的顯示格式 @@ 2-583 @@ RW @@ N
+TRIGger:A:SERIAL:DATa:PATtern @@ TRIGger:A:SERIAL:DATa:PATtern <string>; TRIGger:A:SERIAL:DATa:PATtern? @@ <string> @@ 設定或查詢串列觸發的資料圖樣 @@ 2-583 @@ RW @@ N
+TRIGger:A:SERIAL:DATa:PATtern:NRZ @@ TRIGger:A:SERIAL:DATa:PATtern:NRZ <string>; TRIGger:A:SERIAL:DATa:PATtern:NRZ? @@ <string> @@ 設定或查詢 NRZ 編碼的串列觸發資料圖樣 @@ 2-584 @@ RW @@ N
+TRIGger:A:SERIAL:DATa:PATtern:S8B10B @@ TRIGger:A:SERIAL:DATa:PATtern:S8B10B <string>; TRIGger:A:SERIAL:DATa:PATtern:S8B10B? @@ <string> @@ 設定或查詢 8B10B 編碼的串列觸發資料圖樣 @@ 2-585 @@ RW @@ N
+TRIGger:A:SERIAL:LOCKLen @@ TRIGger:A:SERIAL:LOCKLen <NR1>; TRIGger:A:SERIAL:LOCKLen? @@ <NR1> @@ 設定或查詢圖樣鎖定觸發的重複圖樣位元長度 @@ 2-586 @@ RW @@ N
+TRIGger:A:SERIAL:LOCKOffset @@ TRIGger:A:SERIAL:LOCKOffset <NR1>; TRIGger:A:SERIAL:LOCKOffset? @@ <NR1> @@ 設定或查詢圖樣鎖定觸發的位元偏移量 @@ 2-587 @@ RW @@ N
+TRIGger:A:SERIAL:SOUrce @@ TRIGger:A:SERIAL:SOUrce {CH1|CH2|CH3|CH4}; TRIGger:A:SERIAL:SOUrce? @@ CH1 | CH2 | CH3 | CH4 @@ 設定或查詢串列觸發的資料來源通道 @@ 2-587 @@ RW @@ N
+TRIGger:A:SERIAL:STANdard @@ TRIGger:A:SERIAL:STANdard {FC133|...|SATA6_0}; TRIGger:A:SERIAL:STANdard? @@ FC133 至 SATA6_0 標準 @@ 設定或查詢串列觸發標準 @@ 2-588 @@ RW @@ N
+TRIGger:A:SERIAL:TRIGgeron @@ TRIGger:A:SERIAL:TRIGgeron {PATtern|LOck}; TRIGger:A:SERIAL:TRIGgeron? @@ PATtern | LOck @@ 設定或查詢串列觸發條件（指定圖樣或鎖定重複圖樣） @@ 2-589 @@ RW @@ N
+TRIGger:A:VIDeo? @@ TRIGger:A:VIDeo? @@ 無 @@ 傳回 A 視訊觸發的所有設定參數 @@ 2-599 @@ R @@ N
+TRIGger:A:VIDeo:CUSTom? @@ TRIGger:A:VIDeo:CUSTom? @@ 無 @@ 傳回 A 視訊自訂格式設定參數 @@ 2-600 @@ R @@ N
+TRIGger:A:VIDeo:CUSTom:FORMat @@ TRIGger:A:VIDeo:CUSTom:FORMat {INTERLAced|PROGressive}; TRIGger:A:VIDeo:CUSTom:FORMat? @@ INTERLAced | PROGressive @@ 設定或查詢自訂視訊掃描格式（交錯或逐行） @@ 2-600 @@ RW @@ N
+TRIGger:A:VIDeo:CUSTom:LINEPeriod @@ TRIGger:A:VIDeo:CUSTom:LINEPeriod <NR3>; TRIGger:A:VIDeo:CUSTom:LINEPeriod? @@ <NR3> @@ 設定或查詢自訂視訊的水平掃描行週期時間 @@ 2-601 @@ RW @@ N
+TRIGger:A:VIDeo:CUSTom:SYNCInterval @@ TRIGger:A:VIDeo:CUSTom:SYNCInterval <NR3>; TRIGger:A:VIDeo:CUSTom:SYNCInterval? @@ <NR3> @@ 設定或查詢雙階自訂視訊的水平掃描同步時間間隔 @@ 2-601 @@ RW @@ N
+TRIGger:A:VIDeo:FIELD @@ TRIGger:A:VIDeo:FIELD {ODD|EVEN|FIELD1|FIELD2|ALLFields|ALLLines|NUMERic}; TRIGger:A:VIDeo:FIELD? @@ ODD | EVEN | FIELD1 | FIELD2 | ALLFields | ALLLines | NUMERic @@ 設定或查詢視訊觸發的場或行觸發條件 @@ 2-602 @@ RW @@ N
+TRIGger:A:VIDeo:HOLdoff:FIELD @@ TRIGger:A:VIDeo:HOLdoff:FIELD <NR3>; TRIGger:A:VIDeo:HOLdoff:FIELD? @@ <NR3> @@ 設定或查詢以視訊場數為單位的觸發抑制時間 @@ 2-602 @@ RW @@ N
+TRIGger:A:VIDeo:LINE @@ TRIGger:A:VIDeo:LINE <NR1>; TRIGger:A:VIDeo:LINE? @@ <NR1> @@ 設定或查詢視訊觸發指定的掃描行編號 @@ 2-603 @@ RW @@ N
+TRIGger:A:VIDeo:POLarity @@ TRIGger:A:VIDeo:POLarity {INVERTed|NORMal}; TRIGger:A:VIDeo:POLarity? @@ INVERTed | NORMal @@ 設定或查詢視訊觸發的同步脈衝極性 @@ 2-604 @@ RW @@ N
+TRIGger:A:VIDeo:SCAN @@ TRIGger:A:VIDeo:SCAN {RATE1|RATE2|RATE3|RATE4|RATE5}; TRIGger:A:VIDeo:SCAN? @@ RATE1 | RATE2 | RATE3 | RATE4 | RATE5 @@ 設定或查詢視訊觸發的水平行掃描率範圍 @@ 2-604 @@ RW @@ N
+TRIGger:A:VIDeo:SOUrce @@ TRIGger:A:VIDeo:SOUrce CH<x>; TRIGger:A:VIDeo:SOUrce? @@ CH<x> @@ 設定或查詢視訊觸發的來源通道 @@ 2-605 @@ RW @@ N
+TRIGger:A:VIDeo:STANdard @@ TRIGger:A:VIDeo:STANdard {BILevelcustom|TRILevelcustom|NTSc|PAL|SECAM|HD480P60|...}; TRIGger:A:VIDeo:STANdard? @@ BILevelcustom 至 HD1080SF24 等標準 @@ 設定或查詢視訊觸發採用的視訊標準 @@ 2-606 @@ RW @@ N
+TRIGger:B @@ TRIGger:B SETLevel; TRIGger:B? @@ SETLevel @@ 自動設定 B 觸發準位至 50% 或傳回 B 觸發設定 @@ 2-608 @@ RW @@ N
+TRIGger:B:BY @@ TRIGger:B:BY {EVENTS|TIMe}; TRIGger:B:BY? @@ EVENTS | TIMe @@ 設定或查詢 B 觸發延遲條件（指定時間或指定事件數） @@ 2-608 @@ RW @@ N
+TRIGger:B:EVENTS? @@ TRIGger:B:EVENTS? @@ 無 @@ 傳回當前 B 觸發事件計數設定 @@ 2-609 @@ R @@ N
+TRIGger:B:EVENTS:COUNt @@ TRIGger:B:EVENTS:COUNt <NR1>; TRIGger:B:EVENTS:COUNt? @@ <NR1> @@ 設定或查詢 B 觸發發生前必須發生的事件次數 @@ 2-609 @@ RW @@ N
+TRIGger:B:RESET:SOUrce @@ TRIGger:B:RESET:SOUrce {CH<x>|AUXiliary}; TRIGger:B:RESET:SOUrce? @@ CH<x> | AUXiliary @@ 設定或查詢 A→B 順序觸發重置的來源訊號 @@ 2-611 @@ RW @@ N
+TRIGger:B:RESET:STATE @@ TRIGger:B:RESET:STATE {HIGH|LOW}; TRIGger:B:RESET:STATE? @@ HIGH | LOW @@ 設定或查詢 A→B 順序狀態重置條件 @@ 2-612 @@ RW @@ N
+TRIGger:B:RESET:THReshold @@ TRIGger:B:RESET:THReshold {ECL|TTL|<NR3>}; TRIGger:B:RESET:THReshold? @@ ECL | TTL | <NR3> @@ 設定或查詢 A→B 順序觸發重置的門檻電壓 @@ 2-612 @@ RW @@ N
+TRIGger:B:RESET:TIMEOut @@ TRIGger:B:RESET:TIMEOut <NR3>; TRIGger:B:RESET:TIMEOut? @@ <NR3> @@ 設定或查詢順序超時觸發重置的定時器時間 @@ 2-613 @@ RW @@ N
+TRIGger:B:RESET:TRANsition @@ TRIGger:B:RESET:TRANsition {RISe|FALL}; TRIGger:B:RESET:TRANsition? @@ RISe | FALL @@ 設定或查詢轉換觸發重置所需的邊緣方向 @@ 2-614 @@ RW @@ N
+TRIGger:B:RESET:TYPe @@ TRIGger:B:RESET:TYPe {NONe|TIMEOut|STATE|TRANsition}; TRIGger:B:RESET:TYPe? @@ NONe | TIMEOut | STATE | TRANsition @@ 設定或查詢 A→B 順序觸發重置的類型 @@ 2-614 @@ RW @@ N
+TRIGger:B:STATE @@ TRIGger:B:STATE {ON|OFF|<NR1>}; TRIGger:B:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢 B 觸發功能的啟用狀態 @@ 2-615 @@ RW @@ N
+TRIGger:B:TIMe @@ TRIGger:B:TIMe <NR3>; TRIGger:B:TIMe? @@ <NR3> @@ 設定或查詢 A 觸發後 B 觸發的延遲時間 @@ 2-616 @@ RW @@ N
+TRIGger:B:TYPe @@ TRIGger:B:TYPe {EDGE|PULse|LOGIc}; TRIGger:B:TYPe? @@ EDGE | PULse | LOGIc @@ 設定或查詢 B 觸發的類型（邊緣、脈衝或邏輯） @@ 2-616 @@ RW @@ N
+TRIGger:AUXLevel @@ TRIGger:AUXLevel {<NR3>|ECL|TTL}; TRIGger:AUXLevel? @@ <NR3> | ECL | TTL @@ 設定或查詢輔助觸發輸入（AUX In）的觸發門檻電壓 @@ 2-607 @@ RW @@ N
+TRIGger:ENHanced @@ TRIGger:ENHanced {<NR1>|OFF|ON}; TRIGger:ENHanced? @@ <NR1> | OFF | ON @@ 設定或查詢觸發位置增強（Enhanced Triggering）功能狀態 @@ 2-617 @@ RW @@ N
+TRIGger:LVLSrcpreference @@ TRIGger:LVLSrcpreference {SRCDependent|SRCIndependent}; TRIGger:LVLSrcpreference? @@ SRCDependent | SRCIndependent @@ 設定或查詢觸發來源與觸發電壓準位是否獨立或連動 @@ 2-617 @@ RW @@ N
+TRIGger:SENSITivity @@ TRIGger:SENSITivity {<NR1>|OFF|ON}; TRIGger:SENSITivity? @@ <NR1> | OFF | ON @@ 設定或查詢高感度觸發（降噪滾動平均）功能狀態 @@ 2-623 @@ RW @@ N
+TRIGger:STATE? @@ TRIGger:STATE? @@ 無 @@ 傳回當前觸發系統的運作狀態 @@ 2-623 @@ R @@ N

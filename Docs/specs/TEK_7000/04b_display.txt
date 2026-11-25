@@ -1,0 +1,42 @@
+DISplay? @@ DISplay? @@ 無 @@ 傳回目前的顯示設定值 @@ 2-176 @@ R @@ N
+DISplay:CLOCk @@ DISplay:CLOCk {ON|OFF|<NR1>}; DISplay:CLOCk? @@ ON | OFF | <NR1> @@ 設定或查詢日期與時間戳記的顯示狀態 @@ 2-177 @@ RW @@ N
+DISplay:COLOr? @@ DISplay:COLOr? @@ 無 @@ 傳回色彩群組的設定值 @@ 2-178 @@ R @@ N
+DISplay:COLOr:MATHCOLOr @@ DISplay:COLOr:MATHCOLOr {DEFAULT|INHERIT}; DISplay:COLOr:MATHCOLOr? @@ DEFAULT | INHERIT @@ 設定或查詢數學波形所使用的顯示色彩 @@ 2-178 @@ RW @@ N
+DISplay:COLOr:PALEtte:IMAGEView @@ DISplay:COLOr:PALEtte:IMAGEView {NORMal|MONOGREEN|MONOGRAY|TEMPErature|SPECTral|USEr}; DISplay:COLOr:PALEtte:IMAGEView? @@ NORMal | MONOGREEN | MONOGRAY | TEMPErature | SPECTral | USEr @@ 設定或查詢圖像視圖波形的色彩調色盤 @@ 2-179 @@ RW @@ N
+DISplay:COLOr:PALEtte:RECORDView @@ DISplay:COLOr:PALEtte:RECORDView {NORMal|MONOGREEN|MONOGRAY|TEMPErature|SPECTral|USEr}; DISplay:COLOr:PALEtte:RECORDView? @@ NORMal | MONOGREEN | MONOGRAY | TEMPErature | SPECTral | USEr @@ 設定或查詢記錄視圖波形的色彩調色盤 @@ 2-180 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr @@ DISplay:COLOr:PALEtte:USEr RESET; DISplay:COLOr:PALEtte:USEr? @@ RESET @@ 重設自訂調色盤為預設值或傳回自訂調色盤群組設定 @@ 2-180 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:CARet @@ DISplay:COLOr:PALEtte:USEr:CARet <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:CARet? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中的觸發游標色彩 @@ 2-181 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:CH<x> @@ DISplay:COLOr:PALEtte:USEr:CH<x> <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:CH<x>? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中指定通道的顯示色彩 @@ 2-182 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:GRAticule @@ DISplay:COLOr:PALEtte:USEr:GRAticule <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:GRAticule? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中的網格顯示色彩 @@ 2-182 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:HIStogram @@ DISplay:COLOr:PALEtte:USEr:HIStogram <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:HIStogram? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中的直方圖顯示色彩 @@ 2-183 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:MASK @@ DISplay:COLOr:PALEtte:USEr:MASK <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:MASK? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中的遮罩顯示色彩 @@ 2-183 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:MASKHighlight @@ DISplay:COLOr:PALEtte:USEr:MASKHighlight <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:MASKHighlight? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中的遮罩違規點突出顯示色彩 @@ 2-184 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:MATH<x> @@ DISplay:COLOr:PALEtte:USEr:MATH<x> <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:MATH<x>? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中指定數學波形的顯示色彩 @@ 2-184 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:REF<x> @@ DISplay:COLOr:PALEtte:USEr:REF<x> <NR1>,<NR1>,<NR1>; DISplay:COLOr:PALEtte:USEr:REF<x>? @@ <NR1>,<NR1>,<NR1> @@ 設定或查詢自訂調色盤中指定參考波形的顯示色彩 @@ 2-185 @@ RW @@ N
+DISplay:COLOr:PALEtte:USEr:WAVEform @@ DISplay:COLOr:PALEtte:USEr:WAVEform {HLS|TEMPErature|SPECTral}; DISplay:COLOr:PALEtte:USEr:WAVEform? @@ HLS | TEMPErature | SPECTral @@ 設定或查詢自訂調色盤中的波形色彩模式 @@ 2-186 @@ RW @@ N
+DISplay:COLOr:REFCOLOr @@ DISplay:COLOr:REFCOLOr {DEFAULT|INHERIT}; DISplay:COLOr:REFCOLOr? @@ DEFAULT | INHERIT @@ 設定或查詢參考波形所使用的顯示色彩 @@ 2-186 @@ RW @@ N
+DISplay:FILTer @@ DISplay:FILTer {LINEAr|SINX}; DISplay:FILTer? @@ LINEAr | SINX @@ 設定或查詢波形顯示所採用的內插濾波方式 @@ 2-187 @@ RW @@ N
+DISplay:FORMat @@ DISplay:FORMat {YT|XY|XYZ}; DISplay:FORMat? @@ YT | XY | XYZ @@ 設定或查詢波形顯示格式 @@ 2-187 @@ RW @@ N
+DISplay:GRAticule @@ DISplay:GRAticule {CROSSHair|FRAme|FULl|GRId|IRE|NTSC|MV|PAL}; DISplay:GRAticule? @@ CROSSHair | FRAme | FULl | GRId | IRE | NTSC | MV | PAL @@ 設定或查詢顯示網格的樣式 @@ 2-188 @@ RW @@ N
+DISplay:INTENSITy? @@ DISplay:INTENSITy? @@ 無 @@ 傳回波形與網格飽和度強度設定值 @@ 2-189 @@ R @@ N
+DISplay:INTENSITy:WAVEform:IMAGEView @@ DISplay:INTENSITy:WAVEform:IMAGEView <NR2>; DISplay:INTENSITy:WAVEform:IMAGEView? @@ <NR2> @@ 設定或查詢圖像視圖波形的飽和度強度 @@ 2-189 @@ RW @@ N
+DISplay:INTENSITy:WAVEform:RECORDView @@ DISplay:INTENSITy:WAVEform:RECORDView <NR2>; DISplay:INTENSITy:WAVEform:RECORDView? @@ <NR2> @@ 設定或查詢記錄視圖波形的飽和度強度 @@ 2-190 @@ RW @@ N
+DISplay:PERSistence @@ DISplay:PERSistence {OFF|INFPersist|VARpersist}; DISplay:PERSistence? @@ OFF | INFPersist | VARpersist @@ 設定或查詢波形顯示餘暉模式 @@ 2-191 @@ RW @@ N
+DISplay:PERSistence:RESET @@ DISplay:PERSistence:RESET @@ 無 @@ 清除螢幕上的波形餘暉累積資料 @@ 2-191 @@ W @@ N
+DISplay:SCREENTExt? @@ DISplay:SCREENTExt? @@ 無 @@ 傳回所有螢幕自訂文字標籤的設定值 @@ 2-192 @@ R @@ N
+DISplay:SCREENTExt:LABel<x>? @@ DISplay:SCREENTExt:LABel<x>? @@ 無 @@ 傳回指定螢幕文字標籤的名稱與座標 @@ 2-192 @@ R @@ N
+DISplay:SCREENTExt:LABel<x>:FONTCOlor @@ DISplay:SCREENTExt:LABel<x>:FONTCOlor <QString>; DISplay:SCREENTExt:LABel<x>:FONTCOlor? @@ <QString> @@ 設定或查詢指定螢幕文字標籤的字型色彩 @@ 2-193 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:FONTNAme @@ DISplay:SCREENTExt:LABel<x>:FONTNAme <QString>; DISplay:SCREENTExt:LABel<x>:FONTNAme? @@ <QString> @@ 設定或查詢指定螢幕文字標籤的字型名稱 @@ 2-193 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:FONTSIze @@ DISplay:SCREENTExt:LABel<x>:FONTSIze <NR1>; DISplay:SCREENTExt:LABel<x>:FONTSIze? @@ <NR1> @@ 設定或查詢指定螢幕文字標籤的字型大小 @@ 2-194 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:FONTSTyle @@ DISplay:SCREENTExt:LABel<x>:FONTSTyle <QString>; DISplay:SCREENTExt:LABel<x>:FONTSTyle? @@ <QString> @@ 設定或查詢指定螢幕文字標籤的字型樣式 @@ 2-194 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:NAMe @@ DISplay:SCREENTExt:LABel<x>:NAMe <QString>; DISplay:SCREENTExt:LABel<x>:NAMe? @@ <QString> @@ 設定或查詢指定螢幕文字標籤的內容文字 @@ 2-194 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:STATE @@ DISplay:SCREENTExt:LABel<x>:STATE {<NR1>|OFF|ON}; DISplay:SCREENTExt:LABel<x>:STATE? @@ <NR1> | OFF | ON @@ 設定或查詢指定螢幕文字標籤的顯示狀態 @@ 2-195 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:XPOS @@ DISplay:SCREENTExt:LABel<x>:XPOS <NR1>; DISplay:SCREENTExt:LABel<x>:XPOS? @@ <NR1> @@ 設定或查詢指定螢幕文字標籤的水平位置 @@ 2-196 @@ RW @@ N
+DISplay:SCREENTExt:LABel<x>:YPOS @@ DISplay:SCREENTExt:LABel<x>:YPOS <NR1>; DISplay:SCREENTExt:LABel<x>:YPOS? @@ <NR1> @@ 設定或查詢指定螢幕文字標籤的垂直位置 @@ 2-196 @@ RW @@ N
+DISplay:SCREENTExt:STATE @@ DISplay:SCREENTExt:STATE {ON|OFF|<NR1>}; DISplay:SCREENTExt:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢螢幕文字顯示功能的開關狀態 @@ 2-197 @@ RW @@ N
+DISplay:SHOWREmote @@ DISplay:SHOWREmote {ON|OFF|<NR1>}; DISplay:SHOWREmote? @@ ON | OFF | <NR1> @@ 設定或查詢遠端螢幕顯示功能的啟用狀態 @@ 2-197 @@ RW @@ N
+DISplay:STYle @@ DISplay:STYle {VECtors|DOTs|INTENSIFied}; DISplay:STYle? @@ VECtors | DOTs | INTENSIFied @@ 設定或查詢波形資料顯示樣式 @@ 2-198 @@ RW @@ N
+DISplay:TRIGBar @@ DISplay:TRIGBar {OFF|SHORt|LONG}; DISplay:TRIGBar? @@ OFF | SHORt | LONG @@ 設定或查詢觸發準位指示條的顯示樣式 @@ 2-198 @@ RW @@ N
+DISplay:TRIGT @@ DISplay:TRIGT {<NR1>|OFF|ON}; DISplay:TRIGT? @@ <NR1> | OFF | ON @@ 設定或查詢觸發點（T）指示標籤的顯示狀態 @@ 2-199 @@ RW @@ N
+DISplay:VARpersist @@ DISplay:VARpersist <NR3>; DISplay:VARpersist? @@ <NR3> @@ 設定或查詢可變餘暉衰減時間 @@ 2-200 @@ RW @@ N
+DISplay:WAVEform @@ DISplay:WAVEform {<NR1>|OFF|ON}; DISplay:WAVEform? @@ <NR1> | OFF | ON @@ 設定或查詢波形軌跡的顯示狀態 @@ 2-200 @@ RW @@ N

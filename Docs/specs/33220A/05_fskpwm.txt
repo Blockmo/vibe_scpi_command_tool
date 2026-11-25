@@ -1,0 +1,10 @@
+FSKey:SOURce @@ FSKey:SOURce {INTernal|EXTernal}; FSKey:SOURce? @@ INTernal|EXTernal @@ 選擇 FSK 調變訊號來源為內部或外部 @@ 208 @@ RW @@ N
+FSKey:FREQuency @@ FSKey:FREQuency {<frequency>|MINimum|MAXimum}; FSKey:FREQuency? [MINimum|MAXimum] @@ 1 uHz-20 MHz; MIN; MAX @@ 設定或查詢 FSK Hop 頻率（交替頻率） @@ 209 @@ RW @@ N
+FSKey:INTernal:RATE @@ FSKey:INTernal:RATE {<rate in Hz>|MINimum|MAXimum}; FSKey:INTernal:RATE? [MINimum|MAXimum] @@ 2 mHz-100 kHz; MIN; MAX @@ 設定或查詢內部 FSK 移頻速率 @@ 209 @@ RW @@ N
+FSKey:STATe @@ FSKey:STATe {OFF|ON}; FSKey:STATe? @@ OFF|ON @@ 啟用或停用 FSK 調變功能 @@ 209 @@ RW @@ N
+PWM:SOURce @@ PWM:SOURce {INTernal|EXTernal}; PWM:SOURce? @@ INTernal|EXTernal @@ 選擇 PWM 調變訊號來源為內部或外部 @@ 211 @@ RW @@ N
+PWM:INTernal:FUNCtion @@ PWM:INTernal:FUNCtion {SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER}; PWM:INTernal:FUNCtion? @@ SINusoid|SQUare|RAMP|NRAMp|TRIangle|NOISe|USER @@ 設定或查詢 PWM 內部調變波形形狀 @@ 211 @@ RW @@ N
+PWM:INTernal:FREQuency @@ PWM:INTernal:FREQuency {<frequency>|MINimum|MAXimum}; PWM:INTernal:FREQuency? [MINimum|MAXimum] @@ 2 mHz-20 kHz; MIN; MAX @@ 設定或查詢 PWM 內部調變波形頻率 @@ 212 @@ RW @@ N
+PWM:DEViation @@ PWM:DEViation {<deviation in seconds>|MINimum|MAXimum}; PWM:DEViation? [MINimum|MAXimum] @@ 0 s-1000 s; MIN; MAX @@ 設定或查詢脈衝寬度偏移量（秒） @@ 212 @@ RW @@ N
+PWM:DEViation:DCYCle @@ PWM:DEViation:DCYCle {<deviation in percent>|MINimum|MAXimum}; PWM:DEViation:DCYCle? [MINimum|MAXimum] @@ 0%-100%; MIN; MAX @@ 設定或查詢脈衝工作週期偏移百分比 @@ 213 @@ RW @@ N
+PWM:STATe @@ PWM:STATe {OFF|ON}; PWM:STATe? @@ OFF|ON @@ 啟用或停用 PWM 調變功能 @@ 214 @@ RW @@ N

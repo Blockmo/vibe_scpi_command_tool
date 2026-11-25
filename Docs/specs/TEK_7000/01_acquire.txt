@@ -1,0 +1,14 @@
+ACQuire? @@ ACQuire? @@ 無 @@ 傳回目前的擷取參數設定 @@ 2-75 @@ R @@ N
+ACQuire:INTERPEightbit @@ ACQuire:INTERPEightbit {AUTO|ON|OFF}; ACQuire:INTERPEightbit? @@ AUTO | ON | OFF @@ 設定或查詢 8 位元內插擷取模式 @@ 2-75 @@ RW @@ N
+ACQuire:MODe @@ ACQuire:MODe {SAMple|PEAKdetect|HIRes|AVErage|WFMDB|ENVelope}; ACQuire:MODe? @@ SAMple | PEAKdetect | HIRes | AVErage | WFMDB | ENVelope @@ 設定或查詢波形擷取模式 @@ 2-76 @@ RW @@ N
+ACQuire:NUMACq? @@ ACQuire:NUMACq? @@ 無 @@ 傳回自啟動擷取以來已發生的波形擷取次數 @@ 2-77 @@ R @@ N
+ACQuire:NUMAVg @@ ACQuire:NUMAVg <NR1>; ACQuire:NUMAVg? @@ <NR1> @@ 設定或查詢平均波形模式下的擷取平均數 @@ 2-78 @@ RW @@ N
+ACQuire:NUMEnv @@ ACQuire:NUMEnv {<NR1>|INFInite}; ACQuire:NUMEnv? @@ <NR1> | INFInite @@ 設定或查詢包絡線波形模式下的擷取次數 @@ 2-78 @@ RW @@ N
+ACQuire:NUMFRAMESACQuired? @@ ACQuire:NUMFRAMESACQuired? @@ 無 @@ 傳回 FastFrame 單次序列模式下已擷取的訊框數量 @@ 2-79 @@ R @@ N
+ACQuire:NUMSAMples @@ ACQuire:NUMSAMples {<NR1>}; ACQuire:NUMSAMples? @@ <NR1> @@ 設定或查詢單次序列及遮罩測試下波形資料庫的最少採樣點數 @@ 2-80 @@ RW @@ N
+ACQuire:SAMPlingmode @@ ACQuire:SAMPlingmode {RT|IT|ET}; ACQuire:SAMPlingmode? @@ RT | IT | ET @@ 設定或查詢採樣模式（即時、內插或等效時間） @@ 2-80 @@ RW @@ N
+ACQuire:STATE @@ ACQuire:STATE {OFF|ON|RUN|STOP|<NR1>}; ACQuire:STATE? @@ OFF | ON | RUN | STOP | <NR1> @@ 啟動、停止或查詢波形擷取狀態 @@ 2-81 @@ RW @@ N
+ACQuire:STOPAfter @@ ACQuire:STOPAfter {RUNSTop|SEQuence}; ACQuire:STOPAfter? @@ RUNSTop | SEQuence @@ 設定或查詢擷取是持續進行還是單次序列停止 @@ 2-82 @@ RW @@ N
+FASTAcq? @@ FASTAcq? @@ 無 @@ 傳回快速擷取模式的開關狀態 @@ 2-217 @@ R @@ N
+FASTAcq:HIACQRATE @@ FASTAcq:HIACQRATE {<NR1>|OFF|ON}; FASTAcq:HIACQRATE? @@ <NR1> | OFF | ON @@ 設定或查詢 FastAcq 最佳化模式（高擷取率或高採樣率） @@ 2-217 @@ RW @@ N
+FASTAcq:STATE @@ FASTAcq:STATE {ON|OFF|<NR1>}; FASTAcq:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢快速擷取模式的啟用狀態 @@ 2-218 @@ RW @@ N

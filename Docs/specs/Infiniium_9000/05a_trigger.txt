@@ -1,0 +1,38 @@
+:TRIGger:AND:ENABle @@ :TRIGger:AND:ENABle {{ON | 1} | {OFF | 0}};:TRIGger:AND:ENABle? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉以其他通道作為觸發條件的邏輯 AND 限定功能 @@ 906 @@ RW @@ N
+:TRIGger:AND:SOURce @@ :TRIGger:AND:SOURce CHANnel<N>,{HIGH | LOW | DONTcare};:TRIGger:AND:SOURce? CHANnel<N> @@ CHANnel<N> (1~4), {HIGH | LOW | DONTcare} @@ 設定指定通道在觸發邏輯 AND 中的邏輯限定狀態 @@ 907 @@ RW @@ N
+:TRIGger:HOLDoff @@ :TRIGger:HOLDoff <holdoff_time>;:TRIGger:HOLDoff? @@ <holdoff_time> (50 ns ~ 10 s) @@ 設定觸發事件發生後的觸發抑制時間 @@ 908 @@ RW @@ N
+:TRIGger:HOLDoff:MAX @@ :TRIGger:HOLDoff:MAX <holdoff_time>;:TRIGger:HOLDoff:MAX? @@ <holdoff_time> (實數，秒) @@ 設定隨機觸發抑制模式下的最大抑制時間 @@ 909 @@ RW @@ N
+:TRIGger:HOLDoff:MIN @@ :TRIGger:HOLDoff:MIN <holdoff_time>;:TRIGger:HOLDoff:MIN? @@ <holdoff_time> (實數，秒) @@ 設定隨機觸發抑制模式下的最小抑制時間 @@ 910 @@ RW @@ N
+:TRIGger:HOLDoff:MODE @@ :TRIGger:HOLDoff:MODE {FIXed | RANDom};:TRIGger:HOLDoff:MODE? @@ {FIXed | RANDom} @@ 設定觸發抑制模式為固定時間或隨機時間 @@ 911 @@ RW @@ N
+:TRIGger:HTHReshold @@ :TRIGger:HTHReshold {{CHANnel<N> | AUXiliary},<level>};:TRIGger:HTHReshold? {CHANnel<N> | AUXiliary} @@ CHANnel<N> (1~4) | AUXiliary, <level> (電壓) @@ 設定指定觸發源的高臨界電壓準位 @@ 912 @@ RW @@ N
+:TRIGger:HYSTeresis @@ :TRIGger:HYSTeresis {NORMal | NREJect};:TRIGger:HYSTeresis? @@ {NORMal | NREJect} @@ 設定觸發遲滯 (雜訊抑制) 模式 @@ 913 @@ RW @@ N
+:TRIGger:LEVel @@ :TRIGger:LEVel {{CHANnel<N> | AUX},<level>};:TRIGger:LEVel? {CHANnel<N> | AUX} @@ CHANnel<N> (1~4) | AUX, <level> (電壓) @@ 設定指定通道或輔助觸發輸入的觸發電壓準位 @@ 914 @@ RW @@ N
+:TRIGger:LTHReshold @@ :TRIGger:LTHReshold {CHANnel<N>},<level>;:TRIGger:LTHReshold? {CHANnel<N> | EXTernal} @@ CHANnel<N> (1~4) | EXTernal, <level> (電壓) @@ 設定指定觸發源的低臨界電壓準位 @@ 915 @@ RW @@ N
+:TRIGger:MODE @@ :TRIGger:MODE {EDGE | GLITch | PATTern | STATe | DELay | TIMeout | TV | COMM | RUNT | SHOLd | TRANsition | WINDow | PWIDth | ADVanced | SBUS<N>};:TRIGger:MODE? @@ {EDGE | GLITch | PATTern | STATe | DELay | TIMeout | TV | COMM | RUNT | SHOLd | TRANsition | WINDow | PWIDth | ADVanced | SBUS<N>} @@ 設定示波器的觸發工作模式 @@ 916 @@ RW @@ N
+:TRIGger:SWEep @@ :TRIGger:SWEep {AUTO | NORMal | SINGle};:TRIGger:SWEep? @@ {AUTO | NORMal | SINGle} @@ 設定觸發掃描模式 (自動、一般、單次) @@ 918 @@ RW @@ N
+:TRIGger:EDGE:COUPling @@ :TRIGger:EDGE:COUPling {AC | DC | LFReject | HFReject};:TRIGger:EDGE:COUPling? @@ {AC | DC | LFReject | HFReject} @@ 設定邊緣觸發模式下的訊號耦合方式 @@ 936 @@ RW @@ N
+:TRIGger:EDGE:SLOPe @@ :TRIGger:EDGE:SLOPe {POSitive | NEGative | EITHer};:TRIGger:EDGE:SLOPe? @@ {POSitive | NEGative | EITHer} @@ 設定邊緣觸發的斜率方向 (正向、負向、任意) @@ 937 @@ RW @@ N
+:TRIGger:EDGE:SOURce @@ :TRIGger:EDGE:SOURce {CHANnel<N> | DIGital<M> | AUX | LINE};:TRIGger:EDGE:SOURce? @@ CHANnel<N> (1~4), DIGital<M> (0~15), AUX, LINE @@ 設定邊緣觸發模式的訊號來源 @@ 938 @@ RW @@ N
+:TRIGger:GLITch:POLarity @@ :TRIGger:GLITch:POLarity {POSitive | NEGative};:TRIGger:GLITch:POLarity? @@ {POSitive | NEGative} @@ 設定突波 (Glitch) 觸發的脈衝極性 @@ 940 @@ RW @@ N
+:TRIGger:GLITch:SOURce @@ :TRIGger:GLITch:SOURce {CHANnel<N> | DIGital<M>};:TRIGger:GLITch:SOURce? @@ CHANnel<N> (1~4), DIGital<M> (0~15) @@ 設定突波觸發模式的訊號來源 @@ 941 @@ RW @@ N
+:TRIGger:GLITch:WIDTh @@ :TRIGger:GLITch:WIDTh <width>;:TRIGger:GLITch:WIDTh? @@ <width> (1.5 ns ~ 10 s) @@ 設定突波觸發的最大脈衝寬度門檻 @@ 942 @@ RW @@ N
+:TRIGger:PWIDth:DIRection @@ :TRIGger:PWIDth:DIRection {GTHan | LTHan};:TRIGger:PWIDth:DIRection? @@ {GTHan | LTHan} @@ 設定脈寬觸發條件為大於或小於指定寬度 @@ 947 @@ RW @@ N
+:TRIGger:PWIDth:POLarity @@ :TRIGger:PWIDth:POLarity {NEGative | POSitive};:TRIGger:PWIDth:POLarity? @@ {NEGative | POSitive} @@ 設定脈寬觸發的脈衝極性 @@ 948 @@ RW @@ N
+:TRIGger:PWIDth:SOURce @@ :TRIGger:PWIDth:SOURce {CHANnel<N> | DIGital<M>};:TRIGger:PWIDth:SOURce? @@ CHANnel<N> (1~4), DIGital<M> (0~15) @@ 設定脈寬觸發模式的訊號來源 @@ 949 @@ RW @@ N
+:TRIGger:PWIDth:TPOint @@ :TRIGger:PWIDth:TPOint {EPULse | TIMeout};:TRIGger:PWIDth:TPOint? @@ {EPULse | TIMeout} @@ 設定脈寬觸發時間點為脈衝結束時或超時發生時 @@ 950 @@ RW @@ N
+:TRIGger:PWIDth:WIDTh @@ :TRIGger:PWIDth:WIDTh <width>;:TRIGger:PWIDth:WIDTh? @@ <width> (250 ps ~ 10 s) @@ 設定脈寬觸發的時間門檻值 @@ 951 @@ RW @@ N
+:TRIGger:RUNT:POLarity @@ :TRIGger:RUNT:POLarity {POSitive | NEGative};:TRIGger:RUNT:POLarity? @@ {POSitive | NEGative} @@ 設定矮脈衝 (Runt) 觸發的脈衝極性 @@ 953 @@ RW @@ N
+:TRIGger:RUNT:QUALified @@ :TRIGger:RUNT:QUALified {{ON | 1} | {OFF | 0}};:TRIGger:RUNT:QUALified? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉時間限定的矮脈衝觸發功能 @@ 954 @@ RW @@ N
+:TRIGger:RUNT:SOURce @@ :TRIGger:RUNT:SOURce CHANnel<N>;:TRIGger:RUNT:SOURce? @@ CHANnel<N> (1~4) @@ 設定矮脈衝觸發模式的訊號來源 @@ 955 @@ RW @@ N
+:TRIGger:RUNT:TIME @@ :TRIGger:RUNT:TIME <time>;:TRIGger:RUNT:TIME? @@ <time> (250 ps ~ 30 ns) @@ 設定矮脈衝觸發的時間限定門檻值 @@ 956 @@ RW @@ N
+:TRIGger:TIMeout:CONDition @@ :TRIGger:TIMeout:CONDition {HIGH | LOW | UNCHanged};:TRIGger:TIMeout:CONDition? @@ {HIGH | LOW | UNCHanged} @@ 設定超時 (Timeout) 觸發的訊號狀態條件 @@ 970 @@ RW @@ N
+:TRIGger:TIMeout:SOURce @@ :TRIGger:TIMeout:SOURce CHANnel<N>;:TRIGger:TIMeout:SOURce? @@ CHANnel<N> (1~4) @@ 設定超時觸發模式的訊號來源 @@ 971 @@ RW @@ N
+:TRIGger:TIMeout:TIME @@ :TRIGger:TIMeout:TIME <time>;:TRIGger:TIMeout:TIME? @@ <time> (實數，秒) @@ 設定超時觸發的時間門檻值 @@ 972 @@ RW @@ N
+:TRIGger:TRANsition:DIRection @@ :TRIGger:TRANsition:DIRection {GTHan | LTHan};:TRIGger:TRANsition:DIRection? @@ {GTHan | LTHan} @@ 設定邊緣轉換觸發條件為大於或小於指定轉換時間 @@ 974 @@ RW @@ N
+:TRIGger:TRANsition:SOURce @@ :TRIGger:TRANsition:SOURce CHANnel<N>;:TRIGger:TRANsition:SOURce? @@ CHANnel<N> (1~4) @@ 設定邊緣轉換觸發模式的訊號來源 @@ 975 @@ RW @@ N
+:TRIGger:TRANsition:TIME @@ :TRIGger:TRANsition:TIME <time>;:TRIGger:TRANsition:TIME? @@ <time> (實數，秒) @@ 設定邊緣轉換觸發的時間門檻值 @@ 976 @@ RW @@ N
+:TRIGger:TRANsition:TYPE @@ :TRIGger:TRANsition:TYPE {RISetime | FALLtime};:TRIGger:TRANsition:TYPE? @@ {RISetime | FALLtime} @@ 設定邊緣轉換觸發的轉換類型為上升時間或下降時間 @@ 977 @@ RW @@ N
+:TRIGger:WINDow:CONDition @@ :TRIGger:WINDow:CONDition {ENTer | EXIT | INSide [,{GTHan | LTHan}] | OUTSide [,{GTHan | LTHan}]};:TRIGger:WINDow:CONDition? @@ {ENTer | EXIT | INSide [,{GTHan|LTHan}] | OUTSide [,{GTHan|LTHan}]} @@ 設定視窗 (Window) 觸發的條件機制 @@ 990 @@ RW @@ N
+:TRIGger:WINDow:SOURce @@ :TRIGger:WINDow:SOURce CHANnel<N>;:TRIGger:WINDow:SOURce? @@ CHANnel<N> (1~4) @@ 設定視窗觸發模式的訊號來源 @@ 991 @@ RW @@ N
+:TRIGger:WINDow:TIME @@ :TRIGger:WINDow:TIME <time>;:TRIGger:WINDow:TIME? @@ <time> (實數，秒) @@ 設定視窗觸發的時間門檻值 @@ 992 @@ RW @@ N
+:TRIGger:WINDow:TPOint @@ :TRIGger:WINDow:TPOint {BOUNdary | TIMeout};:TRIGger:WINDow:TPOint? @@ {BOUNdary | TIMeout} @@ 設定視窗觸發時間點為邊界越過時或超時發生時 @@ 993 @@ RW @@ N

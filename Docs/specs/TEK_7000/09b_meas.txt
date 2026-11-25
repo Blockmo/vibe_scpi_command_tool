@@ -1,0 +1,42 @@
+MEASUrement? @@ MEASUrement? @@ 無 @@ 傳回所有自動量測系統的設定與參數 @@ 2-363 @@ R @@ N
+MEASUrement:ANNOTation:IMMEDSTAte @@ MEASUrement:ANNOTation:IMMEDSTAte {<NR1>|OFF|ON}; MEASUrement:ANNOTation:IMMEDSTAte? @@ <NR1> | OFF | ON @@ 設定或查詢即時量測標註功能的啟用狀態 @@ 2-363 @@ RW @@ N
+MEASUrement:ANNOTation:NUMX? @@ MEASUrement:ANNOTation:NUMX? @@ 無 @@ 傳回螢幕上顯示的水平量測標註線數量 @@ 2-364 @@ R @@ N
+MEASUrement:ANNOTation:NUMY? @@ MEASUrement:ANNOTation:NUMY? @@ 無 @@ 傳回螢幕上顯示的垂直量測標註線數量 @@ 2-364 @@ R @@ N
+MEASUrement:ANNOTation:STATE @@ MEASUrement:ANNOTation:STATE {OFF|MEAS1|MEAS2|MEAS3|MEAS4|MEAS5|MEAS6|MEAS7|MEAS8}; MEASUrement:ANNOTation:STATE? @@ OFF | MEAS1..MEAS8 @@ 設定或查詢要顯示圖形標註的量測欄位 @@ 2-365 @@ RW @@ N
+MEASUrement:ANNOTation:TYPe @@ MEASUrement:ANNOTation:TYPe {STANdard|DETAiled}; MEASUrement:ANNOTation:TYPe? @@ STANdard | DETAiled @@ 設定或查詢量測標註的詳細度樣式 @@ 2-365 @@ RW @@ N
+MEASUrement:ANNOTation:X<x>? @@ MEASUrement:ANNOTation:X<x>? @@ 無 @@ 傳回指定 X 軸量測標註線的位置數值 @@ 2-366 @@ R @@ N
+MEASUrement:ANNOTation:Y<x>? @@ MEASUrement:ANNOTation:Y<x>? @@ 無 @@ 傳回指定 Y 軸量測標註線的位置數值 @@ 2-366 @@ R @@ N
+MEASUrement:GATing @@ MEASUrement:GATing {ON|OFF|<NR1>|ZOOM<x>|CURSor}; MEASUrement:GATing? @@ ON | OFF | <NR1> | ZOOM<x> | CURSor @@ 設定或查詢量測的閘道（範圍限制）模式 @@ 2-366 @@ RW @@ N
+MEASUrement:IMMed? @@ MEASUrement:IMMed? @@ 無 @@ 傳回即時（未顯示）量測的所有設定參數 @@ 2-367 @@ R @@ N
+MEASUrement:IMMed:DELay? @@ MEASUrement:IMMed:DELay? @@ 無 @@ 傳回即時延遲量測的邊緣與搜尋方向參數 @@ 2-368 @@ R @@ N
+MEASUrement:IMMed:DELay:DIREction @@ MEASUrement:IMMed:DELay:DIREction {BACKWards|FORWards}; MEASUrement:IMMed:DELay:DIREction? @@ BACKWards | FORWards @@ 設定或查詢即時延遲量測的搜尋方向 @@ 2-368 @@ RW @@ N
+MEASUrement:IMMed:DELay:EDGE[1] @@ MEASUrement:IMMed:DELay:EDGE[1] {FALL|RISe}; MEASUrement:IMMed:DELay:EDGE[1]? @@ FALL | RISe @@ 設定或查詢即時延遲量測起點波形的邊緣斜率 @@ 2-369 @@ RW @@ N
+MEASUrement:IMMed:DELay:EDGE2 @@ MEASUrement:IMMed:DELay:EDGE2 {FALL|RISe}; MEASUrement:IMMed:DELay:EDGE2? @@ FALL | RISe @@ 設定或查詢即時延遲量測終點波形的邊緣斜率 @@ 2-369 @@ RW @@ N
+MEASUrement:IMMed:METHod @@ MEASUrement:IMMed:METHod {HIStogram|MINMax|MEAN}; MEASUrement:IMMed:METHod? @@ HIStogram | MINMax | MEAN @@ 設定或查詢即時量測計算 0% 與 100% 參考準位的方法 @@ 2-370 @@ RW @@ N
+MEASUrement:IMMed:NOISe @@ MEASUrement:IMMed:NOISe {HIGH|LOW}; MEASUrement:IMMed:NOISe? @@ HIGH | LOW @@ 設定或查詢即時眼圖雜訊量測的位置 @@ 2-371 @@ RW @@ N
+MEASUrement:IMMed:REFLevel? @@ MEASUrement:IMMed:REFLevel? @@ 無 @@ 傳回即時量測的參考準位設定 @@ 2-371 @@ R @@ N
+MEASUrement:IMMed:REFLevel:ABSolute:HIGH @@ MEASUrement:IMMed:REFLevel:ABSolute:HIGH <NR3>; MEASUrement:IMMed:REFLevel:ABSolute:HIGH? @@ <NR3> @@ 設定或查詢即時量測的絕對高參考電壓 @@ 2-372 @@ RW @@ N
+MEASUrement:IMMed:REFLevel:ABSolute:LOW @@ MEASUrement:IMMed:REFLevel:ABSolute:LOW <NR3>; MEASUrement:IMMed:REFLevel:ABSolute:LOW? @@ <NR3> @@ 設定或查詢即時量測的絕對低參考電壓 @@ 2-372 @@ RW @@ N
+MEASUrement:IMMed:REFLevel:ABSolute:MID<x> @@ MEASUrement:IMMed:REFLevel:ABSolute:MID<x> <NR3>; MEASUrement:IMMed:REFLevel:ABSolute:MID<x>? @@ <NR3> @@ 設定或查詢即時量測的絕對中間參考電壓 @@ 2-373 @@ RW @@ N
+MEASUrement:IMMed:REFLevel:METHod @@ MEASUrement:IMMed:REFLevel:METHod {ABSolute|PERCent}; MEASUrement:IMMed:REFLevel:METHod? @@ ABSolute | PERCent @@ 設定或查詢即時量測計算採用的參考準位單位 @@ 2-374 @@ RW @@ N
+MEASUrement:IMMed:REFLevel:PERCent:HIGH @@ MEASUrement:IMMed:REFLevel:PERCent:HIGH <NR1>; MEASUrement:IMMed:REFLevel:PERCent:HIGH? @@ <NR1> @@ 設定或查詢即時量測的高參考百分比 @@ 2-374 @@ RW @@ N
+MEASUrement:IMMed:REFLevel:PERCent:LOW @@ MEASUrement:IMMed:REFLevel:PERCent:LOW <NR1>; MEASUrement:IMMed:REFLevel:PERCent:LOW? @@ <NR1> @@ 設定或查詢即時量測的低參考百分比 @@ 2-375 @@ RW @@ N
+MEASUrement:IMMed:REFLevel:PERCent:MID<x> @@ MEASUrement:IMMed:REFLevel:PERCent:MID<x> <NR1>; MEASUrement:IMMed:REFLevel:PERCent:MID<x>? @@ <NR1> @@ 設定或查詢即時量測的中間參考百分比 @@ 2-376 @@ RW @@ N
+MEASUrement:IMMed:SOUrce<x> @@ MEASUrement:IMMed:SOUrce<x> {CH<x>|MATH<y>|REF<x>|HIStogram}; MEASUrement:IMMed:SOUrce<x>? @@ CH<x> | MATH<y> | REF<x> | HIStogram @@ 設定或查詢即時量測的來源波形 @@ 2-376 @@ RW @@ N
+MEASUrement:IMMed:SOUrce<x>:SIGType @@ MEASUrement:IMMed:SOUrce<x>:SIGType {PULse|EYE}; MEASUrement:IMMed:SOUrce<x>:SIGType? @@ PULse | EYE @@ 設定或查詢即時量測來源波形的訊號類型 @@ 2-377 @@ RW @@ N
+MEASUrement:IMMed:TYPe @@ MEASUrement:IMMed:TYPe {AMPlitude|...|WAVEFORMS}; MEASUrement:IMMed:TYPe? @@ AMPlitude 至 WAVEFORMS 等類型 @@ 設定或查詢即時量測的自動量測類型 @@ 2-378 @@ RW @@ N
+MEASUrement:IMMed:UNIts? @@ MEASUrement:IMMed:UNIts? @@ 無 @@ 傳回即時量測的量測單位 @@ 2-382 @@ R @@ N
+MEASUrement:IMMed:VALue? @@ MEASUrement:IMMed:VALue? @@ 無 @@ 傳回即時量測計算出的當前數值 @@ 2-383 @@ R @@ N
+MEASUrement:METHod @@ MEASUrement:METHod {HIStogram|MEAN|MINMax}; MEASUrement:METHod? @@ HIStogram | MEAN | MINMax @@ 設定或查詢全域參考準位 0% 與 100% 的計算方法 @@ 2-401 @@ RW @@ N
+MEASUrement:NOISe @@ MEASUrement:NOISe {HIGH|LOW}; MEASUrement:NOISe? @@ HIGH | LOW @@ 設定或查詢眼圖雜訊量測的全域位置 @@ 2-402 @@ RW @@ N
+MEASUrement:REFLevel:ABSolute:HIGH @@ MEASUrement:REFLevel:ABSolute:HIGH <NR3>; MEASUrement:REFLevel:ABSolute:HIGH? @@ <NR3> @@ 設定或查詢全域高參考電壓 @@ 2-403 @@ RW @@ N
+MEASUrement:REFLevel:ABSolute:LOW @@ MEASUrement:REFLevel:ABSolute:LOW <NR3>; MEASUrement:REFLevel:ABSolute:LOW? @@ <NR3> @@ 設定或查詢全域低參考電壓 @@ 2-403 @@ RW @@ N
+MEASUrement:REFLevel:ABSolute:MID<x> @@ MEASUrement:REFLevel:ABSolute:MID<x> <NR3>; MEASUrement:REFLevel:ABSolute:MID<x>? @@ <NR3> @@ 設定或查詢全域中間參考電壓 @@ 2-404 @@ RW @@ N
+MEASUrement:REFLevel:METHod @@ MEASUrement:REFLevel:METHod {ABSolute|PERCent}; MEASUrement:REFLevel:METHod? @@ ABSolute | PERCent @@ 設定或查詢全域參考準位採用的單位方式 @@ 2-405 @@ RW @@ N
+MEASUrement:REFLevel:PERCent:HIGH @@ MEASUrement:REFLevel:PERCent:HIGH <NR3>; MEASUrement:REFLevel:PERCent:HIGH? @@ <NR3> @@ 設定或查詢全域高參考百分比 @@ 2-406 @@ RW @@ N
+MEASUrement:REFLevel:PERCent:LOW @@ MEASUrement:REFLevel:PERCent:LOW <NR3>; MEASUrement:REFLevel:PERCent:LOW? @@ <NR3> @@ 設定或查詢全域低參考百分比 @@ 2-406 @@ RW @@ N
+MEASUrement:REFLevel:PERCent:MID<x> @@ MEASUrement:REFLevel:PERCent:MID<x> <NR3>; MEASUrement:REFLevel:PERCent:MID<x>? @@ <NR3> @@ 設定或查詢全域中間參考百分比 @@ 2-407 @@ RW @@ N
+MEASUrement:SOUrce<x>:SIGType @@ MEASUrement:SOUrce<x>:SIGType {PULse|EYE}; MEASUrement:SOUrce<x>:SIGType? @@ PULse | EYE @@ 設定或查詢全域量測來源波形的訊號類型 @@ 2-408 @@ RW @@ N
+MEASUrement:STATIstics:COUNt @@ MEASUrement:STATIstics:COUNt RESET @@ RESET @@ 清除記憶體中的統計資料並重置統計計數 @@ 2-409 @@ W @@ N
+MEASUrement:STATIstics:MODe @@ MEASUrement:STATIstics:MODe {OFF|ALL|VALUEMean|MINMax|MEANSTDdev}; MEASUrement:STATIstics:MODe? @@ OFF | ALL | VALUEMean | MINMax | MEANSTDdev @@ 設定或查詢統計功能的啟用與顯示模式 @@ 2-409 @@ RW @@ N
+MEASUrement:STATIstics:WEIghting @@ MEASUrement:STATIstics:WEIghting <NR1>; MEASUrement:STATIstics:WEIghting? @@ <NR1> @@ 設定或查詢平均值與標準差統計計算的時間常數 @@ 2-410 @@ RW @@ N

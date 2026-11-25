@@ -1,0 +1,24 @@
+*SAV @@ *SAV {0|1|2|3|4} @@ 0, 1, 2, 3, 4 (0為關機狀態，1-4為使用者儲存區) @@ 將目前儀器設定狀態儲存至非揮發性記憶體位置 @@ 245 @@ W @@ N
+*RCL @@ *RCL {0|1|2|3|4} @@ 0, 1, 2, 3, 4 @@ 自非揮發性記憶體位置載入並恢復儀器設定狀態 @@ 246 @@ W @@ N
+MEMory:STATe:NAME @@ MEMory:STATe:NAME {0|1|2|3|4} [,<name>]; MEMory:STATe:NAME? {0|1|2|3|4} @@ 位置: 0-4; name: 最多 12 個字元 @@ 為指定的狀態儲存位置設定或查詢自訂名稱 @@ 247 @@ RW @@ N
+MEMory:STATe:DELete @@ MEMory:STATe:DELete {0|1|2|3|4} @@ 0, 1, 2, 3, 4 @@ 刪除指定儲存位置的狀態內容並恢復預設名稱 @@ 247 @@ W @@ N
+MEMory:STATe:RECall:AUTO @@ MEMory:STATe:RECall:AUTO {OFF|ON}; MEMory:STATe:RECall:AUTO? @@ OFF|ON @@ 設定或查詢開機時是否自動載入關機前狀態(位置0) @@ 248 @@ RW @@ N
+MEMory:STATe:VALid? @@ MEMory:STATe:VALid? {0|1|2|3|4} @@ 0, 1, 2, 3, 4 @@ 查詢指定儲存位置是否存有有效的儀器狀態 @@ 248 @@ R @@ N
+MEMory:STATe:CATalog? @@ MEMory:STATe:CATalog? @@ 無參數 @@ 查詢所有狀態儲存位置 (0-4) 目前分配的名稱列表 @@ 248 @@ R @@ N
+MEMory:NSTates? @@ MEMory:NSTates? @@ 無參數 @@ 查詢儀器支援的狀態儲存位置總數量 @@ 248 @@ R @@ N
+SYSTem:ERRor? @@ SYSTem:ERRor? @@ 無參數 @@ 讀取並清除錯誤佇列中的一筆錯誤訊息 @@ 249 @@ R @@ N
+*IDN? @@ *IDN? @@ 無參數 @@ 查詢儀器製造商、型號、序號與韌體版本識別字串 @@ 250 @@ R @@ N
+DISPlay @@ DISPlay {OFF|ON}; DISPlay? @@ OFF|ON @@ 停用或啟用前面板螢幕顯示 @@ 250 @@ RW @@ N
+DISPlay:TEXT @@ DISPlay:TEXT <quoted string>; DISPlay:TEXT? @@ 引號字串 (最多 12 大字元/40 小字元) @@ 在前面板螢幕上顯示指定文字字串或查詢當前顯示文字 @@ 251 @@ RW @@ N
+DISPlay:TEXT:CLEar @@ DISPlay:TEXT:CLEar @@ 無參數 @@ 清除前面板螢幕上顯示的文字訊息 @@ 251 @@ W @@ N
+*RST @@ *RST @@ 無參數 @@ 將波形產生器重設為出廠預設狀態 @@ 251 @@ W @@ N
+*TST? @@ *TST? @@ 無參數 @@ 執行儀器自我測試並傳回測試結果 @@ 252 @@ R @@ N
+SYSTem:VERSion? @@ SYSTem:VERSion? @@ 無參數 @@ 查詢儀器符合的 SCPI 語言版本年份與版次 @@ 252 @@ R @@ N
+SYSTem:BEEPer @@ SYSTem:BEEPer @@ 無參數 @@ 控制儀器蜂鳴器立即發出一聲蜂鳴聲 @@ 252 @@ W @@ N
+SYSTem:BEEPer:STATe @@ SYSTem:BEEPer:STATe {OFF|ON}; SYSTem:BEEPer:STATe? @@ OFF|ON @@ 啟用或停用產生錯誤時的蜂鳴聲警告 @@ 252 @@ RW @@ N
+SYSTem:KLOCk[:STATe] @@ SYSTem:KLOCk[:STATe] {OFF|ON} @@ OFF|ON @@ 鎖定或解鎖前面板按鍵 @@ 252 @@ W @@ N
+SYSTem:KLOCk:EXCLude @@ SYSTem:KLOCk:EXCLude {NONE|LOCal}; SYSTem:KLOCk:EXCLude? @@ NONE|LOCal @@ 設定或查詢按鍵鎖定時是否排除 Local 鍵 @@ 253 @@ RW @@ N
+SYSTem:SECurity:IMMediate @@ SYSTem:SECurity:IMMediate @@ 無參數 @@ 立即清除記憶體中所有使用者資料與設定 @@ 253 @@ W @@ N
+*LRN? @@ *LRN? @@ 無參數 @@ 查詢並傳回包含當前儀器所有設定的 SCPI 命令字串 @@ 253 @@ R @@ N
+*OPC @@ *OPC; *OPC? @@ 無參數 @@ 設定操作完成標誌位元或查詢所有前述命令是否已執行完成 @@ 253 @@ RW @@ N
+*WAI @@ *WAI @@ 無參數 @@ 等待所有待處理的操作執行完成後再執行後續命令 @@ 253 @@ W @@ N

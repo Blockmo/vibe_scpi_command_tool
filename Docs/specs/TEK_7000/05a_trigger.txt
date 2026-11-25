@@ -1,0 +1,38 @@
+TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:PULSEForm @@ TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:PULSEForm {PLUSOne|MINUSOne|EYEdiagram}; TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:PULSEForm? @@ PLUSOne | MINUSOne | EYEdiagram @@ 設定或查詢 AMI 通訊脈衝波形 @@ 2-557 @@ RW @@ N
+TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:HIGH @@ TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:HIGH <NR3>; TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:HIGH? @@ <NR3> @@ 設定或查詢通訊觸發高準位電壓 @@ 2-558 @@ RW @@ N
+TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:LOW @@ TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:LOW <NR3>; TRIGger:A:COMMunication:{AMI|HDB3|B3ZS|B6ZS|B8ZS}:THReshold:LOW? @@ <NR3> @@ 設定或查詢通訊觸發低準位電壓 @@ 2-558 @@ RW @@ N
+TRIGger:A:COMMunication:BITRate @@ TRIGger:A:COMMunication:BITRate <NR3>; TRIGger:A:COMMunication:BITRate? @@ <NR3> @@ 設定或查詢通訊觸發的位元傳輸率 @@ 2-559 @@ RW @@ N
+TRIGger:A:COMMunication:CLOCk:POLarity @@ TRIGger:A:COMMunication:CLOCk:POLarity {RISe|FALL}; TRIGger:A:COMMunication:CLOCk:POLarity? @@ RISe | FALL @@ 設定或查詢通訊時脈極性 @@ 2-559 @@ RW @@ N
+TRIGger:A:COMMunication:CMI:PULSEForm @@ TRIGger:A:COMMunication:CMI:PULSEForm {PLUSOne|MINUSOne|EYEdiagram}; TRIGger:A:COMMunication:CMI:PULSEForm? @@ PLUSOne | MINUSOne | EYEdiagram @@ 選擇 CMI 脈衝波形型態 @@ 2-560 @@ RW @@ N
+TRIGger:A:COMMunication:CODe @@ TRIGger:A:COMMunication:CODe {AMI|HDB3|B3ZS|B6ZS|B8ZS|CMI|NRZ|MLT3|MANChester}; TRIGger:A:COMMunication:CODe? @@ AMI | HDB3 | B3ZS | B6ZS | B8ZS | CMI | NRZ | MLT3 | MANChester @@ 設定或查詢通訊訊號編碼 @@ 2-560 @@ RW @@ N
+TRIGger:A:COMMunication:SOUrce @@ TRIGger:A:COMMunication:SOUrce {CH1|CH2|CH3|CH4}; TRIGger:A:COMMunication:SOUrce? @@ CH1 | CH2 | CH3 | CH4 @@ 設定或查詢通訊觸發來源通道 @@ 2-561 @@ RW @@ N
+TRIGger:A:COMMunication:SOUrce:TYPe @@ TRIGger:A:COMMunication:SOUrce:TYPe {DATa|CLOCk|RECOVered}; TRIGger:A:COMMunication:SOUrce:TYPe? @@ DATa | CLOCk | RECOVered @@ 設定或查詢通訊來源通道類型 @@ 2-562 @@ RW @@ N
+TRIGger:A:COMMunication:STANdard @@ TRIGger:A:COMMunication:STANdard {ATAG1|...|Custom|...|VSROC192}; TRIGger:A:COMMunication:STANdard? @@ ATAG1 至 VSROC192 標準 @@ 選擇通訊標準 @@ 2-563 @@ RW @@ N
+TRIGger:A:LOGIc? @@ TRIGger:A:LOGIc? @@ 無 @@ 傳回所有 A 邏輯觸發參數設定 @@ 2-574 @@ R @@ N
+TRIGger:{A|B}:LOGIc:CLAss @@ TRIGger:{A|B}:LOGIc:CLAss {PATtern|STATE|SETHold}; TRIGger:{A|B}:LOGIc:CLAss? @@ PATtern | STATE | SETHold @@ 設定或查詢邏輯觸發的類別 @@ 2-503 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:FUNCtion @@ TRIGger:{A|B}:LOGIc:FUNCtion {AND|NANd|NOR|OR}; TRIGger:{A|B}:LOGIc:FUNCtion? @@ AND | NANd | NOR | OR @@ 設定或查詢輸入通道的布林邏輯運算 @@ 2-503 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:INPut? @@ TRIGger:{A|B}:LOGIc:INPut? @@ 無 @@ 傳回通道 1、2 與 3 的邏輯觸發輸入設定 @@ 2-504 @@ R @@ N
+TRIGger:{A|B}:LOGIc:INPut:CH<x> @@ TRIGger:{A|B}:LOGIc:INPut:CH<x> {HIGH|LOW|X}; TRIGger:{A|B}:LOGIc:INPut:CH<x>? @@ HIGH | LOW | X @@ 設定或查詢指定通道的邏輯輸入狀態 @@ 2-505 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern? @@ TRIGger:{A|B}:LOGIc:PATtern? @@ 無 @@ 傳回邏輯圖樣觸發的條件與時間限制 @@ 2-505 @@ R @@ N
+TRIGger:{A|B}:LOGIc:PATtern:INPut:CH<x> @@ TRIGger:{A|B}:LOGIc:PATtern:INPut:CH<x> {HIGH|LOW|X}; TRIGger:{A|B}:LOGIc:PATtern:INPut:CH<x>? @@ HIGH | LOW | X @@ 設定或查詢圖樣觸發時指定通道的邏輯輸入值 @@ 2-506 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern:WHEn @@ TRIGger:{A|B}:LOGIc:PATtern:WHEn {TRUe|FALSe|LESSThan|MOREThan}; TRIGger:{A|B}:LOGIc:PATtern:WHEn? @@ TRUe | FALSe | LESSThan | MOREThan @@ 設定或查詢產生邏輯圖樣觸發的條件 @@ 2-507 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern:WHEn:LESSLimit @@ TRIGger:{A|B}:LOGIc:PATtern:WHEn:LESSLimit <NR3>; TRIGger:{A|B}:LOGIc:PATtern:WHEn:LESSLimit? @@ <NR3> @@ 設定或查詢圖樣維持為真的最大時間上限 @@ 2-507 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern:WHEn:MORELimit @@ TRIGger:{A|B}:LOGIc:PATtern:WHEn:MORELimit <NR3>; TRIGger:{A|B}:LOGIc:PATtern:WHEn:MORELimit? @@ <NR3> @@ 設定或查詢圖樣維持為真的最小時間下限 @@ 2-508 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold? @@ TRIGger:{A|B}:LOGIc:SETHold? @@ 無 @@ 傳回建立與保持時間違規觸發的所有參數 @@ 2-509 @@ R @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk? @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk? @@ 無 @@ 傳回建立與保持時間觸發的時脈設定 @@ 2-509 @@ R @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:EDGE @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:EDGE {FALL|RISe}; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:EDGE? @@ FALL | RISe @@ 設定或查詢建立與保持時間觸發的時脈邊緣極性 @@ 2-510 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:SOUrce @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:SOUrce CH<x>; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:SOUrce? @@ CH<x> @@ 設定或查詢建立與保持時間觸發的時脈來源通道 @@ 2-510 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold? @@ ECL | TTL | <NR3> @@ 設定或查詢建立與保持時間觸發的時脈電壓門檻 @@ 2-511 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold:CH<x> @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道作為時脈時的電壓門檻 @@ 2-512 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa? @@ TRIGger:{A|B}:LOGIc:SETHold:DATa? @@ 無 @@ 傳回建立與保持時間觸發的資料源與電壓門檻設定 @@ 2-512 @@ R @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa:SOUrce @@ TRIGger:{A|B}:LOGIc:SETHold:DATa:SOUrce CH<x>; TRIGger:{A|B}:LOGIc:SETHold:DATa:SOUrce? @@ CH<x> @@ 設定或查詢建立與保持時間觸發的資料來源通道 @@ 2-513 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold @@ TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold? @@ ECL | TTL | <NR3> @@ 設定或查詢建立與保持時間觸發的資料電壓門檻 @@ 2-513 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold:CH<x> @@ TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道作為資料源時的電壓門檻 @@ 2-514 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:HOLDTime @@ TRIGger:{A|B}:LOGIc:SETHold:HOLDTime <NR3>; TRIGger:{A|B}:LOGIc:SETHold:HOLDTime? @@ <NR3> @@ 設定或查詢建立與保持時間觸發的保持時間 @@ 2-515 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:QUAlify @@ TRIGger:{A|B}:LOGIc:SETHold:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:LOGIc:SETHold:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢建立與保持時間觸發的限定條件 @@ 2-515 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:SETTime @@ TRIGger:{A|B}:LOGIc:SETHold:SETTime <NR3>; TRIGger:{A|B}:LOGIc:SETHold:SETTime? @@ <NR3> @@ 設定或查詢建立與保持時間觸發的建立時間 @@ 2-516 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:STATE? @@ TRIGger:{A|B}:LOGIc:STATE? @@ 無 @@ 傳回邏輯狀態觸發的資料輸入與觸發條件設定 @@ 2-516 @@ R @@ N
+TRIGger:{A|B}:LOGIc:STATE:INPut:CH<x> @@ TRIGger:{A|B}:LOGIc:STATE:INPut:CH<x> {FALL|RISe}; TRIGger:{A|B}:LOGIc:STATE:INPut:CH<x>? @@ FALL | RISe @@ 設定或查詢指定通道在邏輯狀態觸發時的邊緣極性 @@ 2-517 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:STATE:WHEn @@ TRIGger:{A|B}:LOGIc:STATE:WHEn {TRUe|FALSe}; TRIGger:{A|B}:LOGIc:STATE:WHEn? @@ TRUe | FALSe @@ 設定或查詢產生邏輯狀態觸發的圖樣條件 @@ 2-518 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:THReshold? @@ TRIGger:{A|B}:LOGIc:THReshold? @@ 無 @@ 傳回邏輯觸發中所有通道的門檻電壓 @@ 2-518 @@ R @@ N
+TRIGger:{A|B}:LOGIc:THReshold:CH<x> @@ TRIGger:{A|B}:LOGIc:THReshold:CH<x> <NR3>; TRIGger:{A|B}:LOGIc:THReshold:CH<x>? @@ <NR3> @@ 設定或查詢指定通道在邏輯觸發時的門檻電壓 @@ 2-519 @@ RW @@ N

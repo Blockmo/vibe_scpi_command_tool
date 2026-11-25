@@ -1,19 +1,19 @@
 # SCPI 儀器控制套件（C# / WPF）
 
-以 C# / WPF 實作的 SCPI 儀器控制程式，涵蓋十三台量測儀器、共 **3,297 條** SCPI 指令。
+以 C# / WPF 實作的 SCPI 儀器控制程式，涵蓋十六台量測儀器、共 **4,741 條** SCPI 指令。
 指令資料皆係與 NotebookLM 對各原廠手冊逐子系統問答彙整而得（含頁碼）。
 
 ## 程式
 
 | 資料夾 | 說明 |
 |------|------|
-| [`All-In-One_csharp/`](All-In-One_csharp/README.md) | **SCPI Command Tool（SCT.exe）**：單一視窗整合全部 13 台儀器（分類 → 儀器下拉、可同時連線多台、Scan / Search / Copy、EN / 繁中） |
+| [`All-In-One_csharp/`](All-In-One_csharp/README.md) | **SCPI Command Tool（SCT.exe）**：單一視窗整合全部 16 台儀器（分類 → 儀器下拉、可同時連線多台、Scan / Search / Copy、EN / 繁中） |
 | [`CSharp/Chroma_62000P/`](CSharp/Chroma_62000P/README.md) | Chroma 62000P 單機版控制程式 |
 
 需求：Windows 10/11 x64、.NET 8 Desktop Runtime、系統 VISA（NI-VISA 或 Keysight IO Libraries）。
 建置：在程式資料夾執行 `dotnet build -c Release`。
 
-## 十三台儀器
+## 十六台儀器
 
 | 儀器 | 類型 | 指令數 | 通道模型 |
 |------|------|:---:|------|
@@ -25,8 +25,11 @@
 | **34970 / 34972A** | 資料擷取/開關單元 (Keysight/Agilent) | 179 | `(@通道清單)` 參數 |
 | **Chroma 63600** | 直流電子負載 (Chroma) | 212 | `CHANnel <n>` 作用中通道 |
 | **DPO 7 Series** | 數位螢光示波器 (Tektronix) | 482 | 標頭編號 `CH{n}`/`MEAS{n}`/`MATH{n}` |
+| **TDS 7000 Series** | 數位螢光示波器 (Tektronix) | 764 | 標頭編號 `CH{n}`/`MEAS{n}`/`MATH{n}`/`SEARCH{n}` |
 | **MSO 5 Series** | 混合訊號示波器 (Tektronix) | 557 | 標頭編號 `CH{n}`/`MEAS{n}`/`MATH{n}` |
 | **R&S RTE** | 數位示波器 (Rohde & Schwarz) | 552 | 數值後綴 `CHANnel{n}`/`MEASurement{n}` |
+| **Infiniium 9000** | Infiniium 示波器 (Agilent/Keysight) | 535 | 標頭編號 `CHANnel{n}`/`FUNCtion{n}`/`WMEMory{n}` |
+| **33220A** | 函數／任意波形產生器 (Agilent/Keysight) | 145 | 單輸出、無通道 |
 | **AFG3000** | 任意波形／函數信號產生器 (Tektronix) | 144 | `SOURce{1\|2}` 標頭通道 |
 | **AFG31000** | 任意函數信號產生器 (Tektronix) | 187 | `SOURce{1\|2}` 標頭索引 |
 | **Series 2400** | 電源量測單元 SourceMeter (Keithley) | 255 | 單通道；`CALCulate2:LIMit{n}` 標頭編號 |

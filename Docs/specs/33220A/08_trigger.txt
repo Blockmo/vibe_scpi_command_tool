@@ -1,0 +1,7 @@
+TRIGger:SOURce @@ TRIGger:SOURce {IMMediate|EXTernal|BUS}; TRIGger:SOURce? @@ IMMediate|EXTernal|BUS @@ 設定或查詢掃描與 Burst 模式的觸發訊號來源 @@ 231 @@ RW @@ N
+TRIGger @@ TRIGger @@ 無參數 @@ 從遠端介面發送觸發訊號以啟動一次掃描或 Burst @@ 232 @@ W @@ N
+*TRG @@ *TRG @@ 無參數 @@ 從遠端介面發送匯流排觸發訊號（僅 BUS 觸發源有效） @@ 232 @@ W @@ N
+TRIGger:SLOPe @@ TRIGger:SLOPe {POSitive|NEGative}; TRIGger:SLOPe? @@ POSitive|NEGative @@ 設定或查詢 Trig In 接頭外部觸發訊號之極性 @@ 232 @@ RW @@ N
+BURSt:GATE:POLarity @@ BURSt:GATE:POLarity {NORMal|INVerted}; BURSt:GATE:POLarity? @@ NORMal|INVerted @@ 設定或查詢外部閘控 Burst 模式下 Trig In 接頭之邏輯極性 @@ 232 @@ RW @@ N
+OUTPut:TRIGger:SLOPe @@ OUTPut:TRIGger:SLOPe {POSitive|NEGative}; OUTPut:TRIGger:SLOPe? @@ POSitive|NEGative @@ 設定或查詢 Trig Out 接頭輸出觸發訊號之極性 @@ 233 @@ RW @@ N
+OUTPut:TRIGger @@ OUTPut:TRIGger {OFF|ON}; OUTPut:TRIGger? @@ OFF|ON @@ 啟用或停用 Trig Out 接頭之觸發輸出訊號 @@ 233 @@ RW @@ N

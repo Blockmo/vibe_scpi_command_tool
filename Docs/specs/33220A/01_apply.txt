@@ -1,0 +1,14 @@
+APPLy:SINusoid @@ APPLy:SINusoid [<frequency> [,<amplitude> [,<offset>]]] @@ frequency: 1 uHz~20 MHz, amplitude: 10 mVpp~10 Vpp, offset: ±5 Vdc @@ 設定波形產生器輸出指定頻率、振幅與 DC 偏置的正弦波 @@ 176 @@ W @@ N
+APPLy:SQUare @@ APPLy:SQUare [<frequency> [,<amplitude> [,<offset>]]] @@ frequency: 1 uHz~20 MHz, amplitude: 10 mVpp~10 Vpp, offset: ±5 Vdc @@ 設定波形產生器輸出指定頻率、振幅與 DC 偏置的方波 @@ 176 @@ W @@ N
+APPLy:RAMP @@ APPLy:RAMP [<frequency> [,<amplitude> [,<offset>]]] @@ frequency: 1 uHz~200 kHz, amplitude: 10 mVpp~10 Vpp, offset: ±5 Vdc @@ 設定波形產生器輸出指定頻率、振幅與 DC 偏置的斜波 @@ 176 @@ W @@ N
+APPLy:PULSe @@ APPLy:PULSe [<frequency> [,<amplitude> [,<offset>]]] @@ frequency: 500 uHz~5 MHz, amplitude: 10 mVpp~10 Vpp, offset: ±5 Vdc @@ 設定波形產生器輸出指定頻率、振幅與 DC 偏置的脈衝波 @@ 176 @@ W @@ N
+APPLy:NOISe @@ APPLy:NOISe [<frequency|DEFault> [,<amplitude> [,<offset>]]] @@ frequency: 無作用/DEFault, amplitude: 10 mVpp~10 Vpp, offset: ±5 Vdc @@ 設定波形產生器輸出指定振幅與 DC 偏置的高斯白雜訊 @@ 177 @@ W @@ N
+APPLy:DC @@ APPLy:DC [<frequency|DEFault> [,<amplitude|DEFault> [,<offset>]]] @@ frequency: 無作用/DEFault, amplitude: 無作用/DEFault, offset: ±5 Vdc @@ 設定波形產生器輸出指定偏置電壓值的直流電壓信號 @@ 177 @@ W @@ N
+APPLy:USER @@ APPLy:USER [<frequency> [,<amplitude> [,<offset>]]] @@ frequency: 1 uHz~6 MHz, amplitude: 10 mVpp~10 Vpp, offset:APPLy:SINusoid @@ APPLy:SINusoid [<frequency> [,<amplitude> [,<offset>]]] @@ 1 uHz-20 MHz; 10 mVpp-10 Vpp; ±5 Vdc @@ 輸出特定頻率、振幅與直流偏置之正弦波 @@ 176 @@ W @@ N
+APPLy:SQUare @@ APPLy:SQUare [<frequency> [,<amplitude> [,<offset>]]] @@ 1 uHz-20 MHz; 10 mVpp-10 Vpp; ±5 Vdc @@ 輸出特定頻率與振幅之方波（占空比固定為 50%） @@ 176 @@ W @@ N
+APPLy:RAMP @@ APPLy:RAMP [<frequency> [,<amplitude> [,<offset>]]] @@ 1 uHz-200 kHz; 10 mVpp-10 Vpp; ±5 Vdc @@ 輸出特定頻率與振幅之斜波（對稱度固定為 100%） @@ 176 @@ W @@ N
+APPLy:PULSe @@ APPLy:PULSe [<frequency> [,<amplitude> [,<offset>]]] @@ 500 uHz-5 MHz; 10 mVpp-10 Vpp; ±5 Vdc @@ 輸出脈衝波並保留現有脈寬與邊緣時間設定 @@ 176 @@ W @@ N
+APPLy:NOISe @@ APPLy:NOISe [<frequency|DEFault> [,<amplitude> [,<offset>]]] @@ 頻率參數無效/DEF; 10 mVpp-10 Vpp; ±5 Vdc @@ 輸出 10 MHz 頻寬之高斯白雜訊 @@ 177 @@ W @@ N
+APPLy:DC @@ APPLy:DC [<frequency|DEFault> [,<amplitude|DEFault> [,<offset>]]] @@ 頻率與振幅參數無效; offset: ±5 Vdc (50Ω) / ±10 Vdc (High-Z) @@ 輸出指定偏置電壓之直流電壓位準 @@ 177 @@ W @@ N
+APPLy:USER @@ APPLy:USER [<frequency> [,<amplitude> [,<offset>]]] @@ 1 uHz-6 MHz; 10 mVpp-10 Vpp; ±5 Vdc @@ 輸出目前由 FUNC:USER 所選定之任意波形 @@ 177 @@ W @@ N
+APPLy? @@ APPLy? @@ 無參數 @@ 查詢儀器當前輸出功能與參數設定（以引號字串返回） @@ 178 @@ R @@ N

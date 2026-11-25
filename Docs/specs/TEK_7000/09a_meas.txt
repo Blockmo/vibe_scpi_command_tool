@@ -1,0 +1,25 @@
+MEASUrement:MEAS<x>? @@ MEASUrement:MEAS<x>? @@ 無 @@ 傳回指定顯示量測項目的所有設定參數 @@ 2-383 @@ R @@ N
+MEASUrement:MEAS<x>:COUNt? @@ MEASUrement:MEAS<x>:COUNt? @@ 無 @@ 傳回自上次統計重置以來所累積的量測次數 @@ 2-384 @@ R @@ N
+MEASUrement:MEAS<x>:DELay? @@ MEASUrement:MEAS<x>:DELay? @@ 無 @@ 傳回指定量測項目的延遲量測參數 @@ 2-384 @@ R @@ N
+MEASUrement:MEAS<x>:DELay:DIREction @@ MEASUrement:MEAS<x>:DELay:DIREction {BACKWards|FORWards}; MEASUrement:MEAS<x>:DELay:DIREction? @@ BACKWards | FORWards @@ 設定或查詢延遲量測的搜尋方向 @@ 2-384 @@ RW @@ N
+MEASUrement:MEAS<x>:DELay:EDGE<x> @@ MEASUrement:MEAS<x>:DELay:EDGE<x> {FALL|RISe}; MEASUrement:MEAS<x>:DELay:EDGE<x>? @@ FALL | RISe @@ 設定或查詢延遲量測所使用的波形邊緣斜率 @@ 2-385 @@ RW @@ N
+MEASUrement:MEAS<x>:MAXimum? @@ MEASUrement:MEAS<x>:MAXimum? @@ 無 @@ 傳回自上次統計重置以來所找到的最大量測值 @@ 2-386 @@ R @@ N
+MEASUrement:MEAS<x>:MEAN? @@ MEASUrement:MEAS<x>:MEAN? @@ 無 @@ 傳回自上次統計重置以來所累積的平均量測值 @@ 2-386 @@ R @@ N
+MEASUrement:MEAS<x>:METHod @@ MEASUrement:MEAS<x>:METHod {HIStogram|MINMax|MEAN}; MEASUrement:MEAS<x>:METHod? @@ HIStogram | MINMax | MEAN @@ 設定或查詢計算 0% 與 100% 參考準位的方法 @@ 2-387 @@ RW @@ N
+MEASUrement:MEAS<x>:MINImum? @@ MEASUrement:MEAS<x>:MINImum? @@ 無 @@ 傳回自上次統計重置以來所找到的最小量測值 @@ 2-387 @@ R @@ N
+MEASUrement:MEAS<x>:NOISe @@ MEASUrement:MEAS<x>:NOISe {HIGH|LOW}; MEASUrement:MEAS<x>:NOISe? @@ HIGH | LOW @@ 設定或查詢眼圖波形雜訊量測是在高準位或低準位進行 @@ 2-387 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel? @@ MEASUrement:MEAS<x>:REFLevel? @@ 無 @@ 傳回指定量測項目的參考準位設定 @@ 2-388 @@ R @@ N
+MEASUrement:MEAS<x>:REFLevel:ABSolute:HIGH @@ MEASUrement:MEAS<x>:REFLevel:ABSolute:HIGH <NR3>; MEASUrement:MEAS<x>:REFLevel:ABSolute:HIGH? @@ <NR3> @@ 設定或查詢絕對數值的高參考準位電壓 @@ 2-389 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel:ABSolute:LOW @@ MEASUrement:MEAS<x>:REFLevel:ABSolute:LOW <NR3>; MEASUrement:MEAS<x>:REFLevel:ABSolute:LOW? @@ <NR3> @@ 設定或查詢絕對數值的低參考準位電壓 @@ 2-389 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel:ABSolute:MID<x> @@ MEASUrement:MEAS<x>:REFLevel:ABSolute:MID<x> <NR3>; MEASUrement:MEAS<x>:REFLevel:ABSolute:MID<x>? @@ <NR3> @@ 設定或查詢絕對數值的中間參考準位電壓 @@ 2-390 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel:METHod @@ MEASUrement:MEAS<x>:REFLevel:METHod {ABSolute|PERCent}; MEASUrement:MEAS<x>:REFLevel:METHod? @@ ABSolute | PERCent @@ 設定或查詢量測計算所使用的參考準位單位 @@ 2-390 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel:PERCent:HIGH @@ MEASUrement:MEAS<x>:REFLevel:PERCent:HIGH <NR3>; MEASUrement:MEAS<x>:REFLevel:PERCent:HIGH? @@ <NR3> @@ 設定或查詢百分比模式下的高參考準位 @@ 2-391 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel:PERCent:LOW @@ MEASUrement:MEAS<x>:REFLevel:PERCent:LOW <NR3>; MEASUrement:MEAS<x>:REFLevel:PERCent:LOW? @@ <NR3> @@ 設定或查詢百分比模式下的低參考準位 @@ 2-392 @@ RW @@ N
+MEASUrement:MEAS<x>:REFLevel:PERCent:MID<x> @@ MEASUrement:MEAS<x>:REFLevel:PERCent:MID<x> <NR3>; MEASUrement:MEAS<x>:REFLevel:PERCent:MID<x>? @@ <NR3> @@ 設定或查詢百分比模式下的中間參考準位 @@ 2-392 @@ RW @@ N
+MEASUrement:MEAS<x>:SOUrce<x> @@ MEASUrement:MEAS<x>:SOUrce<x> {CH<x>|MATH<y>|REF<x>|HIStogram}; MEASUrement:MEAS<x>:SOUrce<x>? @@ CH<x> | MATH<y> | REF<x> | HIStogram @@ 設定或查詢指定量測欄位的來源波形 @@ 2-393 @@ RW @@ N
+MEASUrement:MEAS<x>:SOUrce<x>:SIGType @@ MEASUrement:MEAS<x>:SOUrce<x>:SIGType {PULse|EYE}; MEASUrement:MEAS<x>:SOUrce<x>:SIGType? @@ PULse | EYE @@ 設定或查詢指定量測欄位來源波形的輸入訊號類型 @@ 2-394 @@ RW @@ N
+MEASUrement:MEAS<x>:STATE @@ MEASUrement:MEAS<x>:STATE {OFF|ON|<NR1>}; MEASUrement:MEAS<x>:STATE? @@ OFF | ON | <NR1> @@ 設定或查詢指定量測欄位是否進行計算並顯示 @@ 2-395 @@ RW @@ N
+MEASUrement:MEAS<x>:STDdev? @@ MEASUrement:MEAS<x>:STDdev? @@ 無 @@ 傳回自上次統計重置以來所累積量測值的標準差 @@ 2-395 @@ R @@ N
+MEASUrement:MEAS<x>:TYPe @@ MEASUrement:MEAS<x>:TYPe {AMPlitude|AREa|BURst|CARea|CMEan|CRMs|DELay|DISTDUty|EXTINCTDB|EXTINCTPCT|EXTINCTRATIO|EYEHeight|EYEWIdth|FALL|FREQuency|HIGH|HITs|LOW|MAXimum|MEAN|MEDian|MINImum|NCROss|NDUty|NOVershoot|NWIdth|PBASe|PCROss|PCTCROss|PDUty|PEAKHits|PERIod|PHAse|PK2Pk|PKPKJitter|PKPKNoise|POVershoot|PTOP|PWIdth|QFACtor|RISe|RMS|RMSJitter|RMSNoise|SIGMA1|SIGMA2|SIGMA3|SIXSigmajit|SNRatio|STDdev|UNDEFINED|WAVEFORMS}; MEASUrement:MEAS<x>:TYPe? @@ AMPlitude 至 WAVEFORMS 等類型 @@ 設定或查詢指定量測欄位所採用的自動量測類型 @@ 2-396 @@ RW @@ N
+MEASUrement:MEAS<x>:UNIts? @@ MEASUrement:MEAS<x>:UNIts? @@ 無 @@ 傳回指定量測項目的量測單位 @@ 2-400 @@ R @@ N
+MEASUrement:MEAS<x>:VALue? @@ MEASUrement:MEAS<x>:VALue? @@ 無 @@ 傳回指定量測欄位當前計算出的量測數值 @@ 2-401 @@ R @@ N

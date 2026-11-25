@@ -1,0 +1,68 @@
+:MEASure:HISTogram:HITS @@ :MEASure:HISTogram:HITS [<source>];:MEASure:HISTogram:HITS? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖內落在指定區域的總數據點命中次數 @@ 555 @@ RW @@ N
+:MEASure:HISTogram:M1S @@ :MEASure:HISTogram:M1S [<source>];:MEASure:HISTogram:M1S? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖數據落在平均值一倍標準差內之百分比 @@ 556 @@ RW @@ N
+:MEASure:HISTogram:M2S @@ :MEASure:HISTogram:M2S [<source>];:MEASure:HISTogram:M2S? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖數據落在平均值兩倍標準差內之百分比 @@ 557 @@ RW @@ N
+:MEASure:HISTogram:M3S @@ :MEASure:HISTogram:M3S [<source>];:MEASure:HISTogram:M3S? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖數據落在平均值三倍標準差內之百分比 @@ 558 @@ RW @@ N
+:MEASure:HISTogram:MAX @@ :MEASure:HISTogram:MAX [<source>];:MEASure:HISTogram:MAX? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖涵蓋範圍內的最大數據值 @@ 559 @@ RW @@ N
+:MEASure:HISTogram:MEAN @@ :MEASure:HISTogram:MEAN [<source>];:MEASure:HISTogram:MEAN? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖數據的算術平均值 @@ 560 @@ RW @@ N
+:MEASure:HISTogram:MEDian @@ :MEASure:HISTogram:MEDian [<source>];:MEASure:HISTogram:MEDian? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖數據的中位數數值 @@ 561 @@ RW @@ N
+:MEASure:HISTogram:MIN @@ :MEASure:HISTogram:MIN [<source>];:MEASure:HISTogram:MIN? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖涵蓋範圍內的最小數據值 @@ 562 @@ RW @@ N
+:MEASure:HISTogram:MODE @@ :MEASure:HISTogram:MODE [<source>];:MEASure:HISTogram:MODE? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖出現頻率最高的眾數數值 @@ 563 @@ RW @@ N
+:MEASure:HISTogram:PEAK @@ :MEASure:HISTogram:PEAK [<source>];:MEASure:HISTogram:PEAK? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖最高峰值柱狀圖所對應的命中次數 @@ 564 @@ RW @@ N
+:MEASure:HISTogram:PP @@ :MEASure:HISTogram:PP [<source>];:MEASure:HISTogram:PP? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖範圍內最大值與最小值的峰對峰差值 @@ 565 @@ RW @@ N
+:MEASure:HISTogram:RESolution @@ :MEASure:HISTogram:RESolution [<source>];:MEASure:HISTogram:RESolution? [<source>] @@ <source>:{FUNCtion<F> | WMEMory<N> | HISTogram} @@ 量測直方圖單一柱狀條的:MEASure:HISTogram:HITS @@ :MEASure:HISTogram:HITS [<source>];:MEASure:HISTogram:HITS? [<source>] @@ <source>:{FN<F>|WMEM<N>|HIST} @@ 量測直方圖內落在指定區域的總數據點命中次數 @@ 555 @@ RW @@ N
+:MEASure:HISTogram:M1S @@ :MEASure:HISTogram:M1S [<source>];:MEASure:HISTogram:M1S? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖數據落在平均值一倍標準差內之百分比 @@ 556 @@ RW @@ N
+:MEASure:HISTogram:M2S @@ :MEASure:HISTogram:M2S [<source>];:MEASure:HISTogram:M2S? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖數據落在平均值兩倍標準差內之百分比 @@ 557 @@ RW @@ N
+:MEASure:HISTogram:M3S @@ :MEASure:HISTogram:M3S [<source>];:MEASure:HISTogram:M3S? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖數據落在平均值三倍標準差內之百分比 @@ 558 @@ RW @@ N
+:MEASure:HISTogram:MAX @@ :MEASure:HISTogram:MAX [<source>];:MEASure:HISTogram:MAX? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖涵蓋範圍內的最大數據值 @@ 559 @@ RW @@ N
+:MEASure:HISTogram:MEAN @@ :MEASure:HISTogram:MEAN [<source>];:MEASure:HISTogram:MEAN? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖數據的算術平均值 @@ 560 @@ RW @@ N
+:MEASure:HISTogram:MEDian @@ :MEASure:HISTogram:MEDian [<source>];:MEASure:HISTogram:MEDian? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖數據的中位數數值 @@ 561 @@ RW @@ N
+:MEASure:HISTogram:MIN @@ :MEASure:HISTogram:MIN [<source>];:MEASure:HISTogram:MIN? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖涵蓋範圍內的最小數據值 @@ 562 @@ RW @@ N
+:MEASure:HISTogram:MODE @@ :MEASure:HISTogram:MODE [<source>];:MEASure:HISTogram:MODE? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖出現頻率最高的眾數數值 @@ 563 @@ RW @@ N
+:MEASure:HISTogram:PEAK @@ :MEASure:HISTogram:PEAK [<source>];:MEASure:HISTogram:PEAK? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖最高峰值柱狀圖所對應的命中次數 @@ 564 @@ RW @@ N
+:MEASure:HISTogram:PP @@ :MEASure:HISTogram:PP [<source>];:MEASure:HISTogram:PP? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖範圍內最大值與最小值的峰對峰差值 @@ 565 @@ RW @@ N
+:MEASure:HISTogram:RESolution @@ :MEASure:HISTogram:RESolution [<source>];:MEASure:HISTogram:RESolution? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖單一柱狀條的解析度寬度值 @@ 566 @@ RW @@ N
+:MEASure:HISTogram:STDDev @@ :MEASure:HISTogram:STDDev [<source>];:MEASure:HISTogram:STDDev? [<source>] @@ <source>:{FUNCtion<F>|WMEMory<N>|HISTogram} @@ 量測直方圖數據分布的標準差 @@ 567 @@ RW @@ N
+:MEASure:HOLDtime @@ :MEASure:HOLDtime <clk_src>,<clk_edge>,<dat_src>,<dat_edge>;:MEASure:HOLDtime? <clk_src>,<clk_edge>,<dat_src>,<dat_edge> @@ <clk_src>, <clk_edge>:{RIS|FALL}, <dat_src>, <dat_edge>:{RIS|FALL} @@ 量測資料訊號相對於時脈訊號邊緣的保持時間 @@ 568 @@ RW @@ N
+:MEASure:JITTer:HISTogram @@ :MEASure:JITTer:HISTogram {{ON | 1} | {OFF | 0}};:MEASure:JITTer:HISTogram? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉抖動量測項目的直方圖圖表顯示 @@ 570 @@ RW @@ N
+:MEASure:JITTer:MEASurement @@ :MEASure:JITTer:MEASurement {MEASurement<N>};:MEASure:JITTer:MEASurement? @@ {MEASurement<N>} (N=1~10) @@ 指定執行抖動與統計分析的螢幕量測項目編號 @@ 571 @@ RW @@ N
+:MEASure:JITTer:SPECtrum @@ :MEASure:JITTer:SPECtrum {{ON | 1} | {OFF | 0}};:MEASure:JITTer:SPECtrum? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉抖動頻譜 (Jitter Spectrum) 圖表顯示 @@ 572 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:HORizontal @@ :MEASure:JITTer:SPECtrum:HORizontal {AUTO | MANual};:MEASure:JITTer:SPECtrum:HORizontal? @@ {AUTO | MANual} @@ 設定抖動頻譜圖表的水平縮放模式為自動或手動 @@ 573 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:HORizontal:POSition @@ :MEASure:JITTer:SPECtrum:HORizontal:POSition <pos>;:MEASure:JITTer:SPECtrum:HORizontal:POSition? @@ <pos> (Hz 頻率) @@ 設定抖動頻譜圖表手動模式下的中心頻率位置 @@ 574 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:HORizontal:RANGe @@ :MEASure:JITTer:SPECtrum:HORizontal:RANGe <range>;:MEASure:JITTer:SPECtrum:HORizontal:RANGe? @@ <range> (Hz 頻率範圍) @@ 設定抖動頻譜圖表手動模式下的全螢幕頻率範圍 @@ 575 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:VERTical @@ :MEASure:JITTer:SPECtrum:VERTical {AUTO | MANual};:MEASure:JITTer:SPECtrum:VERTical? @@ {AUTO | MANual} @@ 設定抖動頻譜圖表的垂直縮放模式為自動或手動 @@ 576 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:VERTical:OFFSet @@ :MEASure:JITTer:SPECtrum:VERTical:OFFSet <offset>;:MEASure:JITTer:SPECtrum:VERTical:OFFSet? @@ <offset> (實數) @@ 設定抖動頻譜圖表手動模式下的垂直偏置值 @@ 577 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:VERTical:RANGe @@ :MEASure:JITTer:SPECtrum:VERTical:RANGe <range>;:MEASure:JITTer:SPECtrum:VERTical:RANGe? @@ <range> (實數) @@ 設定抖動頻譜圖表手動模式下的垂直全螢幕範圍 @@ 578 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:VERTical:TYPE @@ :MEASure:JITTer:SPECtrum:VERTical:TYPE {LOGarithmic | LINear};:MEASure:JITTer:SPECtrum:VERTical:TYPE? @@ {LOGarithmic | LINear} @@ 設定抖動頻譜垂直軸刻度為對數 (dB) 或線性單位 @@ 579 @@ RW @@ N
+:MEASure:JITTer:SPECtrum:WINDow @@ :MEASure:JITTer:SPECtrum:WINDow {RECTangular | HANNing | FLATtop | BHARris | HAMMing};:MEASure:JITTer:SPECtrum:WINDow? @@ {RECTangular | HANNing | FLATtop | BHARris | HAMMing} @@ 設定計算抖動頻譜時所採用的窗函數濾波器類型 @@ 580 @@ RW @@ N
+:MEASure:JITTer:STATistics @@ :MEASure:JITTer:STATistics {{ON | 1} | {OFF | 0}};:MEASure:JITTer:STATistics? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉量測項目的即時統計數據表格顯示 @@ 581 @@ RW @@ N
+:MEASure:JITTer:TRENd @@ :MEASure:JITTer:TRENd {{ON | 1} | {OFF | 0}};:MEASure:JITTer:TRENd? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉抖動趨勢 (Jitter Trend) 波形圖顯示 @@ 582 @@ RW @@ N
+:MEASure:JITTer:TRENd:SMOoth @@ :MEASure:JITTer:TRENd:SMOoth {{ON | 1} | {OFF | 0}};:MEASure:JITTer:TRENd:SMOoth? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉抖動趨勢圖的平滑化移動平均濾波 @@ 583 @@ RW @@ N
+:MEASure:JITTer:TRENd:SMOoth:POINts @@ :MEASure:JITTer:TRENd:SMOoth:POINts <pts>;:MEASure:JITTer:TRENd:SMOoth:POINts? @@ <pts> (整數) @@ 設定抖動趨勢圖平滑化處理所採用的數據點數 @@ 584 @@ RW @@ N
+:MEASure:JITTer:TRENd:VERTical @@ :MEASure:JITTer:TRENd:VERTical {AUTO | MANual};:MEASure:JITTer:TRENd:VERTical? @@ {AUTO | MANual} @@ 設定抖動趨勢圖的垂直縮放模式為自動或手動 @@ 585 @@ RW @@ N
+:MEASure:JITTer:TRENd:VERTical:OFFSet @@ :MEASure:JITTer:TRENd:VERTical:OFFSet <offset>;:MEASure:JITTer:TRENd:VERTical:OFFSet? @@ <offset> (秒/實數) @@ 設定抖動趨勢圖手動模式下的垂直偏置量 @@ 586 @@ RW @@ N
+:MEASure:JITTer:TRENd:VERTical:RANGe @@ :MEASure:JITTer:TRENd:VERTical:RANGe <range>;:MEASure:JITTer:TRENd:VERTical:RANGe? @@ <range> (秒/實數) @@ 設定抖動趨勢圖手動模式下的垂直全螢幕範圍 @@ 587 @@ RW @@ N
+:MEASure:NAME @@ :MEASure:NAME {MEAS1 | MEAS2 | MEAS3 | MEAS4},<name>;:MEASure:NAME? {MEAS1 | MEAS2 | MEAS3 | MEAS4} @@ {MEAS1 | MEAS2 | MEAS3 | MEAS4}, <name> @@ 設定螢幕上特定量測項目的自訂顯示名稱 @@ 588 @@ RW @@ N
+:MEASure:NCJitter @@ :MEASure:NCJitter [<src>,<dir>,<n>,<start>];:MEASure:NCJitter? [<src>,<dir>,<n>,<start>] @@ <src>, <dir>:{RIS|FALL}, <n>:(1~99), <start>:(1~n-1) @@ 量測波形連續 N 個週期的 N-Cycle 週期抖動量 @@ 589 @@ RW @@ N
+:MEASure:NOISe @@ :MEASure:NOISe [<src>,{VOLT | UNITamp},{ZERO | ONE | BOTH}];:MEASure:NOISe? [<src>,{VOLT | UNITamp},{ZERO | ONE | BOTH}] @@ <src>, {VOLT | UNITamp}, {ZERO | ONE | BOTH} @@ 新增雜訊 (Noise) 量測項目至螢幕顯示並量測數值 @@ 591 @@ RW @@ N
+:MEASure:NOISe:ALL? @@ :MEASure:NOISe:ALL? @@ 無 @@ 傳回當前雜訊量測的所有詳細參數與統計結果 @@ 592 @@ R @@ N
+:MEASure:NOISe:BANDwidth @@ :MEASure:NOISe:BANDwidth {NARRow | WIDE};:MEASure:NOISe:BANDwidth? @@ {NARRow | WIDE} @@ 設定雜訊分析時用以區分隨機與確定性雜訊的濾波頻寬 @@ 594 @@ RW @@ N
+:MEASure:NOISe:LOCation @@ :MEASure:NOISe:LOCation <pct>;:MEASure:NOISe:LOCation? @@ <pct> (0~100%) @@ 指定位元時間區間內進行雜訊量測的垂直量測位置百分比 @@ 595 @@ RW @@ N
+:MEASure:NOISe:METHod @@ :MEASure:NOISe:METHod {SPECtral | BOTH};:MEASure:NOISe:METHod? @@ {SPECtral | BOTH} @@ 設定隨機雜訊 (RN) 分析採用頻譜法或雙重演算法 @@ 596 @@ RW @@ N
+:MEASure:NOISe:REPort @@ :MEASure:NOISe:REPort {SPECtral | TAILfit};:MEASure:NOISe:REPort? @@ {SPECtral | TAILfit} @@ 設定雙重分析模式下報告所採用的雜訊分析方法 @@ 597 @@ RW @@ N
+:MEASure:NOISe:RN @@ :MEASure:NOISe:RN {{ON, <RNrms_Zero>, <RNrms_One>} | OFF};:MEASure:NOISe:RN? @@ {{ON, <RNrms_Zero>, <RNrms_One>} | OFF} @@ 手動指定已知邏輯 0 與邏輯 1 的隨機雜訊 RMS 數值 @@ 598 @@ RW @@ N
+:MEASure:NOISe:SCOPe:RN @@ :MEASure:NOISe:SCOPe:RN {{ON, <RNrms_Zero>, <RNrms_One>} | OFF};:MEASure:NOISe:SCOPe:RN? @@ {{ON, <RNrms_Zero>, <RNrms_One>} | OFF} @@ 設定量測結果中是否扣除示波器本身校正之本底隨機雜訊 @@ 599 @@ RW @@ N
+:MEASure:NOISe:STATe @@ :MEASure:NOISe:STATe {{ON | 1} | {OFF | 0}};:MEASure:NOISe:STATe? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉雜訊 (Noise) 量測功能 @@ 600 @@ RW @@ N
+:MEASure:NOISe:UNITs @@ :MEASure:NOISe:UNITs {VOLT | UNITamplitude};:MEASure:NOISe:UNITs? @@ {VOLT | UNITamplitude} @@ 設定雜訊量測項目的顯示單位為伏特或單位振幅 @@ 601 @@ RW @@ N
+:MEASure:NPERiod @@ :MEASure:NPERiod [<src>,<slope>,<N>];:MEASure:NPERiod? [<src>,<slope>,<N>] @@ <src>, <slope>:{RISing | FALLing}, <N> (整數>=1) @@ 量測波形跨越 N 個連續完整週期的總時間長度 @@ 602 @@ RW @@ N
+:MEASure:NPULses @@ :MEASure:NPULses [<src>];:MEASure:NPULses? [<src>] @@ <src>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 計數並量測螢幕畫面上出現的負脈衝總個數 @@ 603 @@ RW @@ N
+:MEASure:NUI @@ :MEASure:NUI [<src>,<N>];:MEASure:NUI? [<src>,<N>] @@ <src>, <N> (整數>=1) @@ 量測序列波形跨越 N 個單位時間間隔 (UI) 的時間長度 @@ 604 @@ RW @@ N
+:MEASure:NWIDth @@ :MEASure:NWIDth [<src>];:MEASure:NWIDth? [<src>] @@ <src>:{CHANnel<N> | FUNCtion<F> | DIGital<M> | WMEMory<N> | ...} @@ 量測螢幕畫面上第一個負脈衝的寬度時間 @@ 605 @@ RW @@ N
+:MEASure:OVERshoot @@ :MEASure:OVERshoot [<src>[,<dir>]];:MEASure:OVERshoot? [<src>[,<dir>]] @@ <src>, <dir>:{RISing | FALLing} @@ 量測波形第一個邊緣過衝 (Overshoot) 百分比 @@ 607 @@ RW @@ N
+:MEASure:PAMPlitude @@ :MEASure:PAMPlitude [<src>,<width>,<dir>];:MEASure:PAMPlitude? [<src>,<width>,<dir>] @@ <src>, <width> (0~100%), <dir>:{RISing | FALLing} @@ 量測指定邊緣兩側脈衝頂部與基部的脈衝振幅 @@ 609 @@ RW @@ N
+:MEASure:PBASe @@ :MEASure:PBASe [<src>,<pct>];:MEASure:PBASe? [<src>,<pct>] @@ <src>, <pct> (0~100%) @@ 量測負脈衝在指定視窗寬度內的平均基部電壓 @@ 610 @@ RW @@ N
+:MEASure:PERiod @@ :MEASure:PERiod [<src>[,<dir>]];:MEASure:PERiod? [<src>[,<dir>]] @@ <src>, <dir>:{RISing | FALLing} @@ 量測波形螢幕上第一個完整週期的時間長度 @@ 611 @@ RW @@ N
+:MEASure:PHASe @@ :MEASure:PHASe [<src1>[,<src2>]];:MEASure:PHASe? [<src1>[,<src2>]] @@ <src1>, <src2> @@ 量測兩波形訊號之間的相位角角度差 @@ 613 @@ RW @@ N
+:MEASure:PPULses @@ :MEASure:PPULses [<src>];:MEASure:PPULses? [<src>] @@ <src>:{CHANnel<N> | FUNCtion<F> | WMEMory<N> | ...} @@ 計數並量測螢幕畫面上出現的正脈衝總個數 @@ 615 @@ RW @@ N
+:MEASure:PREShoot @@ :MEASure:PREShoot [<src>[,<dir>]];:MEASure:PREShoot? [<src>[,<dir>]] @@ <src>, <dir>:{RISing | FALLing} @@ 量測波形第一個邊緣前衝 (Preshoot) 百分比 @@ 616 @@ RW @@ N
+:MEASure:PTOP @@ :MEASure:PTOP [<src>,<pct>];:MEASure:PTOP? [<src>,<pct>] @@ <src>, <pct> (0~100%) @@ 量測正脈衝在指定視窗寬度內的平均頂部電壓 @@ 618 @@ RW @@ N
+:MEASure:PWIDth @@ :MEASure:PWIDth [<src>];:MEASure:PWIDth? [<src>] @@ <src>:{CHANnel<N> | FUNCtion<F> | DIGital<M> | WMEMory<N> | ...} @@ 量測螢幕畫面上第一個正脈衝的寬度時間 @@ 619 @@ RW @@ N

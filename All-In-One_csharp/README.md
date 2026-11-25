@@ -1,6 +1,6 @@
 # SCPI Command Tool（SCT，C# / WPF 版）
 
-一個視窗整合 **13 台儀器、3,297 條 SCPI 指令**的 WPF 控制程式，
+一個視窗整合 **16 台儀器、4,741 條 SCPI 指令**的 WPF 控制程式，
 介面沿用 `../CSharp/Chroma_62000P/` 的設計（兩種色系、三種字體大小、EN / 繁中）。
 
 | 分類 | 儀器 | 範本 |
@@ -8,7 +8,8 @@
 | 電源供應器 | 2231A-30-3 / E3633A / E36300 / Chroma 62000P | 通道清單型 |
 | 資料擷取 DAQ | DAQ973A / 34970 / 34972A | 通道清單型 |
 | 電子負載 | Chroma 63600 | 通道清單型 |
-| 示波器 | DPO 7 Series / MSO 5 Series / R&S RTE | 標頭編號型 |
+| 示波器 | DPO 7 Series / TDS 7000 Series / MSO 5 Series / R&S RTE / Infiniium 9000 | 標頭編號型 |
+| 函數信號產生器 | 33220A | 通道清單型（單輸出） |
 | 函數信號產生器 | AFG3000 / AFG31000 | 標頭編號型 |
 | 電錶 / 電源量測單元 | Series 2400 | 標頭編號型 |
 
@@ -31,7 +32,7 @@ bin\Release\net8.0-windows\SCT.exe --sim    # 模擬模式（開發測試用，�
 dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
 ```
 
-**13 台的指令表都已內嵌在 exe 裡**，執行與發佈都不需要其他資料夾。
+**16 台的指令表都已內嵌在 exe 裡**，執行與發佈都不需要其他資料夾。
 
 ## 介面
 
@@ -54,7 +55,7 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 - **標頭編號型**：標頭的 `{ch}`/`{n}` 代入通道與編號；寫入 `標頭 值`；查詢 `標頭?`（qarg 指令帶引數為 `標頭? 引數`）。
 - 數值原樣送出（`MIN/MAX/DEF…` 轉大寫），ON/OFF 只接受 `ON|OFF|1|0`。
 
-移除 Python 版前，已以原 Python 驅動對全部 13 台指令產生的寫入 / 查詢字串逐一比對，結果完全一致。
+移除 Python 版前，已以原 Python 驅動對當時全部 13 台指令產生的寫入 / 查詢字串逐一比對，結果完全一致。
 
 ## 檔案
 
@@ -65,14 +66,14 @@ dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=
 | `MainWindow.xaml(.cs)` | 主視窗版面與互動邏輯 |
 | `Assets/app.ico` | 應用程式圖示（視窗左上角 / 工作列 / exe） |
 | `Themes/Theme.xaml` | 所有控制項樣式（顏色以 DynamicResource 參照） |
-| `Core/Instruments.cs` | 分類與 13 台儀器的登錄表（範本、模擬 IDN、說明） |
+| `Core/Instruments.cs` | 分類與 16 台儀器的登錄表（範本、模擬 IDN、說明） |
 | `Core/CommandSpec.cs` | 指令規格與內嵌資源載入 |
 | `Core/ScpiBuilder.cs` | SCPI 組字串引擎（兩種範本） |
 | `Core/Device.cs` | 連線裝置、虛擬儀器、每台儀器的 session 狀態 |
 | `Core/Visa.cs` | VISA P/Invoke 與資源掃描 |
 | `Core/ThemeManager.cs` | 兩套色系、三種字體大小與執行時切換（字級以 `Fs*` 資源參照） |
 | `Core/I18n.cs` | 介面文字英文 / 繁中 |
-| `Data/*.json` | 13 台的指令表（**唯一來源**，編譯時內嵌） |
+| `Data/*.json` | 16 台的指令表（**唯一來源**，編譯時內嵌） |
 
 ## 指令表格式（`Data/<儀器>.json`）
 

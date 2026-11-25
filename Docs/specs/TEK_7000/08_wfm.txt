@@ -1,0 +1,51 @@
+ALLOcate:WAVEform:REF<x>? @@ ALLOcate:WAVEform:REF<x>? @@ 無 @@ 傳回指定參考波形記憶體的紀錄長度 @@ 2-86 @@ R @@ N
+CURVe @@ CURVe {<Block>|<asc curve>}; CURVe? @@ <Block> | <asc curve> @@ 傳送波形資料至示波器或傳回波形資料點 @@ 2-150 @@ RW @@ N
+CURVENext? @@ CURVENext? @@ 無 @@ 傳回新一次擷取事件的波形資料點 @@ 2-151 @@ R @@ N
+CURVEStream @@ CURVEStream @@ 無 @@ 以連續串流方式傳輸波形資料 @@ 2-152 @@ R @@ N
+DATa @@ DATa {INIT|SNAp}; DATa? @@ INIT | SNAp @@ 初始化或傳回波形傳輸資料的格式與位置參數 @@ 2-153 @@ RW @@ N
+DATa:DESTination @@ DATa:DESTination REF<x>; DATa:DESTination? @@ REF<x> @@ 設定或查詢傳入波形資料儲存的目標參考記憶體 @@ 2-153 @@ RW @@ N
+DATa:ENCdg @@ DATa:ENCdg {ASCii|FAStest|RIBinary|RPBinary|FPBinary|SRIbinary|SRPbinary|SFPbinary}; DATa:ENCdg? @@ ASCii | FAStest | RIBinary | RPBinary | FPBinary | SRIbinary | SRPbinary | SFPbinary @@ 設定或查詢傳出波形資料的編碼格式 @@ 2-154 @@ RW @@ N
+DATa:FRAMESTARt @@ DATa:FRAMESTARt <NR1>; DATa:FRAMESTARt? @@ <NR1> @@ 設定或查詢波形傳輸時的起始傳輸訊框 @@ 2-156 @@ RW @@ N
+DATa:FRAMESTOP @@ DATa:FRAMESTOP <NR1>; DATa:FRAMESTOP? @@ <NR1> @@ 設定或查詢波形傳輸時的結束傳輸訊框 @@ 2-157 @@ RW @@ N
+DATa:SOUrce @@ DATa:SOUrce <wfm>[<,><wfm>]; DATa:SOUrce? @@ <wfm>: CH<x>|MATH<x>|REF<x> @@ 設定或查詢傳出波形資料的來源 @@ 2-157 @@ RW @@ N
+DATa:STARt @@ DATa:STARt <NR1>; DATa:STARt? @@ <NR1> @@ 設定或查詢波形傳輸的起始採樣點 @@ 2-158 @@ RW @@ N
+DATa:STOP @@ DATa:STOP <NR1>; DATa:STOP? @@ <NR1> @@ 設定或查詢波形傳輸的結束採樣點 @@ 2-159 @@ RW @@ N
+WAVFrm? @@ WAVFrm? @@ 無 @@ 同時傳回波形前導檔資訊（WFMOutpre?）與波形資料點（CURVe?） @@ 2-626 @@ R @@ N
+WAVFRMStream? @@ WAVFRMStream? @@ 無 @@ 同時以串流方式傳回波形前導檔與連續波形資料 @@ 2-627 @@ R @@ N
+WFMInpre? @@ WFMInpre? @@ 無 @@ 傳回將套用於下一次傳入波形資料的波形前導檔格式設定 @@ 2-628 @@ R @@ N
+WFMInpre:BIT_Nr @@ WFMInpre:BIT_Nr <NR1>; WFMInpre:BIT_Nr? @@ <NR1> @@ 設定或查詢傳入二進位波形資料點的位元數 @@ 2-629 @@ RW @@ N
+WFMInpre:BN_Fmt @@ WFMInpre:BN_Fmt {RI|RP|FP}; WFMInpre:BN_Fmt? @@ RI | RP | FP @@ 設定或查詢傳入波形二進位資料的格式 @@ 2-629 @@ RW @@ N
+WFMInpre:BYT_Nr @@ WFMInpre:BYT_Nr <NR1>; WFMInpre:BYT_Nr? @@ <NR1> @@ 設定或查詢傳入波形資料點的位元組寬度 @@ 2-630 @@ RW @@ N
+WFMInpre:BYT_Or @@ WFMInpre:BYT_Or {LSB|MSB}; WFMInpre:BYT_Or? @@ LSB | MSB @@ 設定或查詢傳入多位元組波形資料的位元組傳輸順序 @@ 2-631 @@ RW @@ N
+WFMInpre:ENCdg @@ WFMInpre:ENCdg {ASCii|BINary}; WFMInpre:ENCdg? @@ ASCii | BINary @@ 設定或查詢傳入波形資料的編碼類型 @@ 2-631 @@ RW @@ N
+WFMInpre:NR_FR @@ WFMInpre:NR_FR <NR1>; WFMInpre:NR_FR? @@ <NR1> @@ 設定或查詢傳入波形記錄中的訊框數量 @@ 2-632 @@ RW @@ N
+WFMInpre:NR_Pt @@ WFMInpre:NR_Pt <NR1>; WFMInpre:NR_Pt? @@ <NR1> @@ 設定或查詢傳入波形記錄中的資料點數 @@ 2-632 @@ RW @@ N
+WFMInpre:PT_Fmt @@ WFMInpre:PT_Fmt {ENV|Y}; WFMInpre:PT_Fmt? @@ ENV | Y @@ 設定或查詢傳入波形資料的點格式（包絡線對或單點） @@ 2-633 @@ RW @@ N
+WFMInpre:PT_Off @@ WFMInpre:PT_Off <NR1>; WFMInpre:PT_Off? @@ <NR1> @@ 設定或查詢傳入波形記錄內的觸發採樣點位置 @@ 2-634 @@ RW @@ N
+WFMInpre:WFId @@ WFMInpre:WFId <QString> @@ <QString> @@ 輸入並設定傳入波形的描述識別字串 @@ 2-634 @@ W @@ N
+WFMInpre:XINcr @@ WFMInpre:XINcr <NR3>; WFMInpre:XINcr? @@ <NR3> @@ 設定或查詢傳入波形資料點之間的水平採樣時間間隔 @@ 2-635 @@ RW @@ N
+WFMInpre:XUNit @@ WFMInpre:XUNit <QString>; WFMInpre:XUNit? @@ <QString> @@ 設定或查詢傳入波形的水平單位 @@ 2-635 @@ RW @@ N
+WFMInpre:XZEro @@ WFMInpre:XZEro <NR3>; WFMInpre:XZEro? @@ <NR3> @@ 設定或查詢傳入波形觸發點與觸發採樣點之間的次採樣時間 @@ 2-636 @@ RW @@ N
+WFMInpre:YMUlt @@ WFMInpre:YMUlt <NR3>; WFMInpre:YMUlt? @@ <NR3> @@ 設定或查詢傳入波形資料點每階的垂直比例係數 @@ 2-636 @@ RW @@ N
+WFMInpre:YOFf @@ WFMInpre:YOFf <NR3>; WFMInpre:YOFf? @@ <NR3> @@ 設定或查詢傳入波形以數位化階數表示的垂直位置 @@ 2-637 @@ RW @@ N
+WFMInpre:YUNit @@ WFMInpre:YUNit <QString>; WFMInpre:YUNit? @@ <QString> @@ 設定或查詢傳入波形的垂直單位 @@ 2-637 @@ RW @@ N
+WFMInpre:YZEro @@ WFMInpre:YZEro <NR3>; WFMInpre:YZEro? @@ <NR3> @@ 設定或查詢傳入波形的垂直偏移電壓 @@ 2-638 @@ RW @@ N
+WFMOutpre? @@ WFMOutpre? @@ 無 @@ 傳回指定傳出波形的前導檔格式與解析設定資訊 @@ 2-638 @@ R @@ N
+WFMOutpre:BIT_Nr @@ WFMOutpre:BIT_Nr <NR1>; WFMOutpre:BIT_Nr? @@ <NR1> @@ 設定或查詢傳出波形資料點包含的位元數 @@ 2-639 @@ RW @@ N
+WFMOutpre:BN_Fmt @@ WFMOutpre:BN_Fmt {RI|RP|FP}; WFMOutpre:BN_Fmt? @@ RI | RP | FP @@ 設定或查詢傳出波形二進位資料的格式 @@ 2-639 @@ RW @@ N
+WFMOutpre:BYT_Nr @@ WFMOutpre:BYT_Nr <NR1>; WFMOutpre:BYT_Nr? @@ <NR1> @@ 設定或查詢傳出波形資料點的位元組寬度 @@ 2-640 @@ RW @@ N
+WFMOutpre:BYT_Or @@ WFMOutpre:BYT_Or {LSB|MSB}; WFMOutpre:BYT_Or? @@ LSB | MSB @@ 設定或查詢傳出波形資料的位元組傳輸順序 @@ 2-641 @@ RW @@ N
+WFMOutpre:ENCdg @@ WFMOutpre:ENCdg {ASCii|BINary}; WFMOutpre:ENCdg? @@ ASCii | BINary @@ 設定或查詢傳出波形資料的編碼類型 @@ 2-641 @@ RW @@ N
+WFMOutpre:NR_FR? @@ WFMOutpre:NR_FR? @@ 無 @@ 傳回傳出波形記錄中的訊框數量 @@ 2-642 @@ R @@ N
+WFMOutpre:NR_Pt? @@ WFMOutpre:NR_Pt? @@ 無 @@ 傳回傳出波形記錄中的資料點數 @@ 2-642 @@ R @@ N
+WFMOutpre:PT_Fmt? @@ WFMOutpre:PT_Fmt? @@ 無 @@ 傳回傳出波形資料的點格式 @@ 2-643 @@ R @@ N
+WFMOutpre:PT_Off? @@ WFMOutpre:PT_Off? @@ 無 @@ 傳回傳出波形記錄相對於 DATa:STARt 的觸發採樣點位置 @@ 2-643 @@ R @@ N
+WFMOutpre:PT_ORder? @@ WFMOutpre:PT_ORder? @@ 無 @@ 傳回傳出波形是否為 FastAcq 快速擷取波形格式 @@ 2-644 @@ R @@ N
+WFMOutpre:WFId? @@ WFMOutpre:WFId? @@ 無 @@ 傳回描述傳出波形擷取參數的識別字串 @@ 2-644 @@ R @@ N
+WFMOutpre:XINcr? @@ WFMOutpre:XINcr? @@ 無 @@ 傳回傳出波形資料點之間的水平採樣時間間隔 @@ 2-645 @@ R @@ N
+WFMOutpre:XUNit? @@ WFMOutpre:XUNit? @@ 無 @@ 傳回傳出波形的水平單位 @@ 2-646 @@ R @@ N
+WFMOutpre:XZEro? @@ WFMOutpre:XZEro? @@ 無 @@ 傳回傳出波形觸發點與觸發採樣點之間的次採樣時間 @@ 2-646 @@ R @@ N
+WFMOutpre:YMUlt? @@ WFMOutpre:YMUlt? @@ 無 @@ 傳回傳出波形資料點每階的垂直比例係數 @@ 2-647 @@ R @@ N
+WFMOutpre:YOFf? @@ WFMOutpre:YOFf? @@ 無 @@ 傳回傳出波形以數位化階數表示的垂直位置 @@ 2-647 @@ R @@ N
+WFMOutpre:YUNit? @@ WFMOutpre:YUNit? @@ 無 @@ 傳回傳出波形的垂直單位 @@ 2-648 @@ R @@ N
+WFMOutpre:YZEro? @@ WFMOutpre:YZEro? @@ 無 @@ 傳回傳出波形的垂直偏移電壓 @@ 2-648 @@ R @@ N

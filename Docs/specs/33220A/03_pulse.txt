@@ -1,0 +1,5 @@
+PULSe:PERiod @@ PULSe:PERiod {<seconds>|MINimum|MAXimum}; PULSe:PERiod? [MINimum|MAXimum] @@ 200 ns-2000 s; MIN; MAX @@ 設定或查詢脈衝波形之週期 @@ 192 @@ RW @@ N
+FUNCtion:PULSe:HOLD @@ FUNCtion:PULSe:HOLD {WIDTh|DCYCle}; FUNCtion:PULSe:HOLD? [WIDTh|DCYCle] @@ WIDTh|DCYCle @@ 設定或查詢當週期變更時保持脈寬或工作週期固定 @@ 193 @@ RW @@ N
+FUNCtion:PULSe:WIDTh @@ FUNCtion:PULSe:WIDTh {<seconds>|MINimum|MAXimum}; FUNCtion:PULSe:WIDTh? [MINimum|MAXimum] @@ 20 ns-2000 s; MIN; MAX @@ 設定或查詢脈衝波形之脈衝寬度 @@ 194 @@ RW @@ N
+FUNCtion:PULSe:DCYCle @@ FUNCtion:PULSe:DCYCle {<percent>|MINimum|MAXimum}; FUNCtion:PULSe:DCYCle? [MINimum|MAXimum] @@ 0%-100%; MIN; MAX @@ 設定或查詢脈衝波形之工作週期百分比 @@ 195 @@ RW @@ N
+FUNCtion:PULSe:TRANsition @@ FUNCtion:PULSe:TRANsition {<seconds>|MINimum|MAXimum}; FUNCtion:PULSe:TRANsition? [MINimum|MAXimum] @@ 5 ns-100 ns; MIN; MAX @@ 設定或查詢脈衝波形上升與下降沿之邊緣時間 @@ 196 @@ RW @@ N

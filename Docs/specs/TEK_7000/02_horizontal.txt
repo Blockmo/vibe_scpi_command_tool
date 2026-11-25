@@ -1,0 +1,49 @@
+HORizontal? @@ HORizontal? @@ 無 @@ 傳回所有可設定的水平指令參數值 @@ 2-238 @@ R @@ N
+HORizontal:ACQDURATION? @@ HORizontal:ACQDURATION? @@ 無 @@ 傳回時基擷取持續時間 @@ 2-239 @@ R @@ N
+HORizontal:ACQLENGTH? @@ HORizontal:ACQLENGTH? @@ 無 @@ 傳回波形記錄長度 @@ 2-239 @@ R @@ N
+HORizontal:DIVisions? @@ HORizontal:DIVisions? @@ 無 @@ 傳回波形顯示所佔用的網格格數 @@ 2-239 @@ R @@ N
+HORizontal:FASTframe? @@ HORizontal:FASTframe? @@ 無 @@ 傳回 FastFrame 快速訊框的所有設定值 @@ 2-240 @@ R @@ N
+HORizontal:FASTframe:COUNt @@ HORizontal:FASTframe:COUNt <NR1>; HORizontal:FASTframe:COUNt? @@ <NR1> @@ 設定或查詢 FastFrame 擷取的訊框總數 @@ 2-240 @@ RW @@ N
+HORizontal:FASTframe:MAXFRames? @@ HORizontal:FASTframe:MAXFRames? @@ 無 @@ 傳回目前記錄長度下所能擷取的最大 FastFrame 訊框數 @@ 2-241 @@ R @@ N
+HORizontal:FASTframe:MULtipleframes:FRAMESTart:<wfm> @@ HORizontal:FASTframe:MULtipleframes:FRAMESTart:<wfm> <NR1>; HORizontal:FASTframe:MULtipleframes:FRAMESTart:<wfm>? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR1> @@ 設定或查詢指定波形在多重訊框重疊顯示時的起始訊框編號 @@ 2-241 @@ RW @@ N
+HORizontal:FASTframe:MULtipleframes:MODe @@ HORizontal:FASTframe:MULtipleframes:MODe {OFF|OVERlay|ONLYOVERlay}; HORizontal:FASTframe:MULtipleframes:MODe? @@ OFF | OVERlay | ONLYOVERlay @@ 設定或查詢 FastFrame 多重訊框顯示模式 @@ 2-242 @@ RW @@ N
+HORizontal:FASTframe:MULtipleframes:NUMFRames:<wfm> @@ HORizontal:FASTframe:MULtipleframes:NUMFRames:<wfm> <NR1>; HORizontal:FASTframe:MULtipleframes:NUMFRames:<wfm>? @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR1> @@ 設定或查詢指定波形在多重訊框重疊顯示時的訊框數量 @@ 2-243 @@ RW @@ N
+HORizontal:FASTframe:REF:FRAme @@ HORizontal:FASTframe:REF:FRAme <NR1>; HORizontal:FASTframe:REF:FRAme? @@ <NR1> @@ 設定或查詢 FastFrame 用於計算時間差的基準訊框編號 @@ 2-243 @@ RW @@ N
+HORizontal:FASTframe:REF:SOUrce @@ HORizontal:FASTframe:REF:SOUrce <wfm>; HORizontal:FASTframe:REF:SOUrce? @@ <wfm>: CH<x>|MATH<x> @@ 設定或查詢 FastFrame 的基準波形來源 @@ 2-244 @@ RW @@ N
+HORizontal:FASTframe:SELECTED:CH<x> @@ HORizontal:FASTframe:SELECTED:CH<x> <NRF>; HORizontal:FASTframe:SELECTED:CH<x>? @@ <NRF> @@ 設定或查詢指定通道上選取的 FastFrame 訊框編號 @@ 2-245 @@ RW @@ N
+HORizontal:FASTframe:SELECTED:MATH<x> @@ HORizontal:FASTframe:SELECTED:MATH<x> <NRF>; HORizontal:FASTframe:SELECTED:MATH<x>? @@ <NRF> @@ 設定或查詢指定數學波形上選取的 FastFrame 訊框編號 @@ 2-245 @@ RW @@ N
+HORizontal:FASTframe:SELECTED:REF<x> @@ HORizontal:FASTframe:SELECTED:REF<x> <NRF>; HORizontal:FASTframe:SELECTED:REF<x>? @@ <NRF> @@ 設定或查詢指定參考波形上選取的 FastFrame 訊框編號 @@ 2-245 @@ RW @@ N
+HORizontal:FASTframe:SELECTED:SOUrce @@ HORizontal:FASTframe:SELECTED:SOUrce {CH<x>|MATH<x>}; HORizontal:FASTframe:SELECTED:SOUrce? @@ CH<x> | MATH<x> @@ 設定或查詢 FastFrame 來源波形 @@ 2-246 @@ RW @@ N
+HORizontal:FASTframe:SEQuence @@ HORizontal:FASTframe:SEQuence {FIRst|LAST}; HORizontal:FASTframe:SEQuence? @@ FIRst | LAST @@ 設定或查詢 FastFrame 單次序列模式的停止條件 @@ 2-247 @@ RW @@ N
+HORizontal:FASTframe:STATE @@ HORizontal:FASTframe:STATE {ON|OFF|<NR1>}; HORizontal:FASTframe:STATE? @@ ON | OFF | <NR1> @@ 設定或查詢 FastFrame 擷取功能的啟用狀態 @@ 2-247 @@ RW @@ N
+HORizontal:FASTframe:SUMFrame @@ HORizontal:FASTframe:SUMFrame {NONe|ENVelope|AVErage}; HORizontal:FASTframe:SUMFrame? @@ NONe | ENVelope | AVErage @@ 設定或查詢 FastFrame 摘要訊框（包絡線或平均）模式 @@ 2-248 @@ RW @@ N
+HORizontal:FASTframe:TIMEStamp:ALL:<wfm>? @@ HORizontal:FASTframe:TIMEStamp:ALL:<wfm>? <NR1>, <NR1> @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR1>, <NR1> @@ 傳回指定波形在請求訊框範圍內所有訊框的編號與時間戳記 @@ 2-248 @@ R @@ N
+HORizontal:FASTframe:TIMEStamp:BETWeen:<wfm>? @@ HORizontal:FASTframe:TIMEStamp:BETWeen:<wfm>? <NR1>, <NR1> @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR1>, <NR1> @@ 傳回指定波形中兩個特定訊框觸發點之間的相對時間差 @@ 2-249 @@ R @@ N
+HORizontal:FASTframe:TIMEStamp:DELTa:<wfm>? @@ HORizontal:FASTframe:TIMEStamp:DELTa:<wfm>? @@ <wfm>: CH<x>|MATH<x>|REF<x> @@ 傳回指定波形中已選取訊框與基準訊框觸發點之間的相對時間差 @@ 2-250 @@ R @@ N
+HORizontal:FASTframe:TIMEStamp:FRAMe:<wfm>? @@ HORizontal:FASTframe:TIMEStamp:FRAMe:<wfm>? <NR1> @@ <wfm>: CH<x>|MATH<x>|REF<x>; <NR1> @@ 傳回指定波形中特定訊框的絕對觸發日期與時間 @@ 2-250 @@ R @@ N
+HORizontal:FASTframe:TIMEStamp:REF? @@ HORizontal:FASTframe:TIMEStamp:REF? @@ 無 @@ 傳回 FastFrame 基準波形的絕對觸發日期與時間 @@ 2-251 @@ R @@ N
+HORizontal:FASTframe:TIMEStamp:SELECTED:<wfm>? @@ HORizontal:FASTframe:TIMEStamp:SELECTED:<wfm>? @@ <wfm>: CH<x>|MATH<x>|REF<x> @@ 傳回指定波形中已選取 FastFrame 訊框的絕對觸發日期與時間 @@ 2-251 @@ R @@ N
+HORizontal:FASTframe:TRACk @@ HORizontal:FASTframe:TRACk {LIVE|ALL}; HORizontal:FASTframe:TRACk? @@ LIVE | ALL @@ 設定或查詢 FastFrame 訊框追蹤連動模式 @@ 2-252 @@ RW @@ N
+HORizontal:FASTframe:XZEro:ALL:CH<x>? @@ HORizontal:FASTframe:XZEro:ALL:CH<x>? <NR1>,<NR1> @@ <NR1>, <NR1> @@ 傳回指定通道上請求訊框範圍內從觸發點到訊框起點的時間 @@ 2-253 @@ R @@ N
+HORizontal:FASTframe:XZEro:ALL:REF<x>? @@ HORizontal:FASTframe:XZEro:ALL:REF<x>? <NR1>,<NR1> @@ <NR1>, <NR1> @@ 傳回指定參考波形上請求訊框範圍內從觸發點到訊框起點的時間 @@ 2-253 @@ R @@ N
+HORizontal:FASTframe:XZEro:FRAme:CH<x>? @@ HORizontal:FASTframe:XZEro:FRAme:CH<x>? <NR1> @@ <NR1> @@ 傳回指定通道上特定訊框從觸發點到訊框起點的時間 @@ 2-254 @@ R @@ N
+HORizontal:FASTframe:XZEro:FRAme:REF<x>? @@ HORizontal:FASTframe:XZEro:FRAme:REF<x>? <NR1> @@ <NR1> @@ 傳回指定參考波形上特定訊框從觸發點到訊框起點的時間 @@ 2-254 @@ R @@ N
+HORizontal:FASTframe:XZEro:REF? @@ HORizontal:FASTframe:XZEro:REF? @@ 無 @@ 傳回基準波形上從觸發點到觸發採樣點的時間 @@ 2-255 @@ R @@ N
+HORizontal:FASTframe:XZEro:SELECTED:CH<x>? @@ HORizontal:FASTframe:XZEro:SELECTED:CH<x>? @@ 無 @@ 傳回已選取通道上從觸發點到觸發採樣點的時間 @@ 2-255 @@ R @@ N
+HORizontal:FASTframe:XZEro:SELECTED:REF<x>? @@ HORizontal:FASTframe:XZEro:SELECTED:REF<x>? @@ 無 @@ 傳回已選取參考波形上從觸發點到觸發採樣點的時間 @@ 2-255 @@ R @@ N
+HORizontal:MAIn? @@ HORizontal:MAIn? @@ 無 @@ 傳回主時基的每格時間 @@ 2-256 @@ R @@ N
+HORizontal[:MAIn]:DELay:MODe @@ HORizontal[:MAIn]:DELay:MODe {ON|OFF|<NR1>}; HORizontal[:MAIn]:DELay:MODe? @@ ON | OFF | <NR1> @@ 設定或查詢主時基觸發延遲模式的開關狀態 @@ 2-256 @@ RW @@ N
+HORizontal[:MAIn]:DELay:POSition @@ HORizontal[:MAIn]:DELay:POSition <NR3>; HORizontal[:MAIn]:DELay:POSition? @@ <NR3> @@ 設定或查詢停用延遲模式時主時基觸發位置的百分比 @@ 2-257 @@ RW @@ N
+HORizontal[:MAIn]:DELay:TIMe @@ HORizontal[:MAIn]:DELay:TIMe <NR3>; HORizontal[:MAIn]:DELay:TIMe? @@ <NR3> @@ 設定或查詢主時基觸發延遲時間 @@ 2-257 @@ RW @@ N
+HORizontal:MAIn:INTERPRatio? @@ HORizontal:MAIn:INTERPRatio? @@ 無 @@ 傳回主水平時基的內插比例 @@ 2-258 @@ R @@ N
+HORizontal[:MAIn]:POSition @@ HORizontal[:MAIn]:POSition <NR3>; HORizontal[:MAIn]:POSition? @@ <NR3> @@ 設定或查詢螢幕上波形的水平位置百分比 @@ 2-258 @@ RW @@ N
+HORizontal:MAIn:UNUnits @@ HORizontal:MAIn:UNUnits <STRing>; HORizontal:MAIn:UNUnits? @@ <STRing> @@ 設定或傳回水平時基的單位 @@ 2-259 @@ RW @@ N
+HORizontal:MAIn:UNUnits:STRing @@ HORizontal:MAIn:UNUnits:STRing <string>; HORizontal:MAIn:UNUnits:STRing? @@ <string> @@ 設定或傳回主水平時基觸發延遲的單位字串 @@ 2-259 @@ RW @@ N
+HORizontal:MODE @@ HORizontal:MODE {AUTO|CONStant|MANual}; HORizontal:MODE? @@ AUTO | CONStant | MANual @@ 設定或查詢水平工作模式 @@ 2-260 @@ RW @@ N
+HORizontal:MODE:AUTO:LIMITrecordlen @@ HORizontal:MODE:AUTO:LIMITrecordlen <NR1>; HORizontal:MODE:AUTO:LIMITrecordlen? @@ <NR1> @@ 設定或查詢自動水平模式下使用的記錄長度限制 @@ 2-261 @@ RW @@ N
+HORizontal:MODE:RECOrdlength @@ HORizontal:MODE:RECOrdlength <NR1>; HORizontal:MODE:RECOrdlength? @@ <NR1> @@ 設定或查詢波形記錄長度 @@ 2-261 @@ RW @@ N
+HORizontal:MODE:SAMPLERate @@ HORizontal:MODE:SAMPLERate <NR1>; HORizontal:MODE:SAMPLERate? @@ <NR1> @@ 設定或查詢採樣率 @@ 2-262 @@ RW @@ N
+HORizontal:MODE:SCAle @@ HORizontal:MODE:SCAle <NR1>; HORizontal:MODE:SCAle? @@ <NR1> @@ 設定或查詢水平時基比例 @@ 2-262 @@ RW @@ N
+HORizontal:ROLL @@ HORizontal:ROLL {AUTO|OFF|ON}; HORizontal:ROLL? @@ AUTO | OFF | ON @@ 設定或查詢水平滾動模式狀態 @@ 2-263 @@ RW @@ N
+HORizontal:TIMEStamp:CH<x>? @@ HORizontal:TIMEStamp:CH<x>? @@ 無 @@ 傳回指定通道波形的絕對觸發日期與時間 @@ 2-263 @@ R @@ N
+HORizontal:TIMEStamp:REF<x>? @@ HORizontal:TIMEStamp:REF<x>? @@ 無 @@ 傳回 FastFrame 參考波形的絕對觸發日期與時間 @@ 2-263 @@ R @@ N

@@ -1,0 +1,40 @@
+CH<x>? @@ CH<x>? @@ 無 @@ 傳回指定通道的垂直設定參數 @@ 2-107 @@ R @@ N
+CH<x>:BANdwidth @@ CH<x>:BANdwidth {TWEnty|ONEfifty|TWOfifty|FIVe|FULl|<NR3>}; CH<x>:BANdwidth? @@ TWEnty | ONEfifty | TWOfifty | FIVe | FULl | <NR3> @@ 設定或查詢指定通道的頻寬限制 @@ 2-107 @@ RW @@ N
+CH<x>:BANdwidth:ENHanced @@ CH<x>:BANdwidth:ENHanced {AUTO|OFF}; CH<x>:BANdwidth:ENHanced? @@ AUTO | OFF @@ 設定或查詢指定通道的數位頻寬增強功能 @@ 2-108 @@ RW @@ N
+CH<x>:BANdwidth:ENHanced:APPLYtoall @@ CH<x>:BANdwidth:ENHanced:APPLYtoall {ON|OFF|1|0}; CH<x>:BANdwidth:ENHanced:APPLYtoall? @@ ON | OFF | 1 | 0 @@ 設定或查詢是否將指定通道的頻寬增強設定套用到所有通道 @@ 2-109 @@ RW @@ N
+CH<x>:BANdwidth:ENHanced:FORCe @@ CH<x>:BANdwidth:ENHanced:FORCe {OFF|ON}; CH<x>:BANdwidth:ENHanced:FORCe? @@ OFF | ON @@ 設定或查詢是否強制保持 DSP 數位濾波所需的取樣率 @@ 2-109 @@ RW @@ N
+CH<x>:BANdwidth:ENHanced:STATE? @@ CH<x>:BANdwidth:ENHanced:STATE? @@ 無 @@ 傳回指定通道頻寬增強濾波器的啟用狀態 @@ 2-110 @@ R @@ N
+CH<x>:COUPling @@ CH<x>:COUPling {AC|DC|GND|DCREJect}; CH<x>:COUPling? @@ AC | DC | GND | DCREJect @@ 設定或查詢指定通道的輸入衰減器耦合模式 @@ 2-111 @@ RW @@ N
+CH<x>:DESKew @@ CH<x>:DESKew <NR3>; CH<x>:DESKew? @@ <NR3> @@ 設定或查詢指定通道的時偏校正（Deskew）時間 @@ 2-111 @@ RW @@ N
+CH<x>:LABel:NAMe @@ CH<x>:LABel:NAMe <str>; CH<x>:LABel:NAMe? @@ <str> @@ 設定或查詢指定通道波形顯示標籤的名稱 @@ 2-112 @@ RW @@ N
+CH<x>:LABel:XPOS @@ CH<x>:LABel:XPOS <NR1>; CH<x>:LABel:XPOS? @@ <NR1> @@ 設定或查詢指定通道波形標籤的水平位置 @@ 2-112 @@ RW @@ N
+CH<x>:LABel:YPOS @@ CH<x>:LABel:YPOS <NR1>; CH<x>:LABel:YPOS? @@ <NR1> @@ 設定或查詢指定通道波形標籤的垂直位置 @@ 2-113 @@ RW @@ N
+CH<x>:OFFSet @@ CH<x>:OFFSet <NR3>; CH<x>:OFFSet? @@ <NR3> @@ 設定或查詢指定通道的垂直偏移電壓 @@ 2-113 @@ RW @@ N
+CH<x>:POSition @@ CH<x>:POSition <NR3>; CH<x>:POSition? @@ <NR3> @@ 設定或查詢指定通道波形的垂直顯示位置 @@ 2-114 @@ RW @@ N
+CH<x>:PRObe? @@ CH<x>:PRObe? @@ 無 @@ 傳回指定通道所連接探棒的所有設定參數 @@ 2-115 @@ R @@ N
+CH<x>:PRObe:AUTOZero @@ CH<x>:PRObe:AUTOZero EXECute @@ EXECute @@ 執行指定通道連接探棒的自動歸零程序 @@ 2-116 @@ W @@ N
+CH<x>:PRObe:DEGAUSS @@ CH<x>:PRObe:DEGAUSS EXECute @@ EXECute @@ 啟動指定通道連接探棒的消磁程序 @@ 2-116 @@ W @@ N
+CH<x>:PRObe:DEGAUSS:STATE? @@ CH<x>:PRObe:DEGAUSS:STATE? @@ 無 @@ 傳回指定通道連接探棒是否已完成消磁 @@ 2-116 @@ R @@ N
+CH<x>:PRObe:FORCEDRange @@ CH<x>:PRObe:FORCEDRange <NR3>; CH<x>:PRObe:FORCEDRange? @@ <NR3> @@ 設定或查詢指定通道探棒的強制量程範圍 @@ 2-117 @@ RW @@ N
+CH<x>:PRObe:GAIN? @@ CH<x>:PRObe:GAIN? @@ 無 @@ 傳回指定通道探棒的增益係數 @@ 2-117 @@ R @@ N
+CH<x>:PRObe:ID? @@ CH<x>:PRObe:ID? @@ 無 @@ 傳回指定通道探棒的型號類型與序號 @@ 2-118 @@ R @@ N
+CH<x>:PRObe:ID:SERnumber? @@ CH<x>:PRObe:ID:SERnumber? @@ 無 @@ 傳回指定通道探棒的產品序號 @@ 2-118 @@ R @@ N
+CH<x>:PRObe:ID:TYPe? @@ CH<x>:PRObe:ID:TYPe? @@ 無 @@ 傳回指定通道探棒的型號類型 @@ 2-118 @@ R @@ N
+CH<x>:PRObe:INPUTMode @@ CH<x>:PRObe:INPUTMode {DEFault|DIFFerential|COMmonmode|A|B}; CH<x>:PRObe:INPUTMode? @@ DEFault | DIFFerential | COMmonmode | A | B @@ 設定或查詢指定通道探棒的輸入模式 @@ 2-119 @@ RW @@ N
+CH<x>:PRObe:INPUTMode:AOFFSet @@ CH<x>:PRObe:INPUTMode:AOFFSet <NR3>; CH<x>:PRObe:INPUTMode:AOFFSet? @@ <NR3> @@ 設定或查詢指定通道探棒在 A 模式下的偏移控制電壓 @@ 2-119 @@ RW @@ N
+CH<x>:PRObe:INPUTMode:BOFFSet @@ CH<x>:PRObe:INPUTMode:BOFFSet <NR3>; CH<x>:PRObe:INPUTMode:BOFFSet? @@ <NR3> @@ 設定或查詢指定通道探棒在 B 模式下的偏移控制電壓 @@ 2-120 @@ RW @@ N
+CH<x>:PRObe:INPUTMode:CMOFFSet @@ CH<x>:PRObe:INPUTMode:CMOFFSet <NR3>; CH<x>:PRObe:INPUTMode:CMOFFSet? @@ <NR3> @@ 設定或查詢指定通道探棒的共模偏移控制電壓 @@ 2-120 @@ RW @@ N
+CH<x>:PRObe:INPUTMode:DMOFFSet @@ CH<x>:PRObe:INPUTMode:DMOFFSet <NR3>; CH<x>:PRObe:INPUTMode:DMOFFSet? @@ <NR3> @@ 設定或查詢指定通道探棒的差模偏移控制電壓 @@ 2-121 @@ RW @@ N
+CH<x>:PRObe:RANge @@ CH<x>:PRObe:RANge {ATTEN1X..ATTEN1000X}; CH<x>:PRObe:RANge? @@ ATTEN1X 至 ATTEN1000X @@ 設定或查詢指定通道探棒的衰減範圍 @@ 2-121 @@ RW @@ N
+CH<x>:PRObe:RESistance? @@ CH<x>:PRObe:RESistance? @@ 無 @@ 傳回指定通道探棒的輸入阻抗值 @@ 2-122 @@ R @@ N
+CH<x>:PRObe:SET @@ CH<x>:PRObe:SET <QString>; CH<x>:PRObe:SET? @@ <QString> @@ 設定或查詢指定通道探棒配件介面的特定設定字串 @@ 2-122 @@ RW @@ N
+CH<x>:PRObe:SIGnal @@ CH<x>:PRObe:SIGnal <QString>; CH<x>:PRObe:SIGnal? @@ <QString> @@ 設定或查詢指定通道探棒配件介面的訊號通路狀態 @@ 2-123 @@ RW @@ N
+CH<x>:PRObe:TIPtype @@ CH<x>:PRObe:TIPtype {HBWStraightflex|OTHer}; CH<x>:PRObe:TIPtype? @@ HBWStraightflex | OTHer @@ 設定或查詢指定通道探棒所使用的前端針頭類型 @@ 2-124 @@ RW @@ N
+CH<x>:PRObe:UNIts? @@ CH<x>:PRObe:UNIts? @@ 無 @@ 傳回指定通道探棒的量測單位 @@ 2-124 @@ R @@ N
+CH<x>:PROBECal? @@ CH<x>:PROBECal? @@ 無 @@ 傳回指定通道探棒的校正結果狀態 @@ 2-125 @@ R @@ N
+CH<x>:PROBECOntrol @@ CH<x>:PROBECOntrol {AUTO|MANual}; CH<x>:PROBECOntrol? @@ AUTO | MANual @@ 設定或查詢指定通道探棒量程控制模式 @@ 2-125 @@ RW @@ N
+CH<x>:PROBEFunc:EXTAtten @@ CH<x>:PROBEFunc:EXTAtten <NR3>; CH<x>:PROBEFunc:EXTAtten? @@ <NR3> @@ 設定或查詢指定通道外部衰減器的衰減倍率 @@ 2-126 @@ RW @@ N
+CH<x>:PROBEFunc:EXTDBatten @@ CH<x>:PROBEFunc:EXTDBatten <NR3>; CH<x>:PROBEFunc:EXTDBatten? @@ <NR3> @@ 設定或查詢指定通道外部衰減器的分貝衰減值 @@ 2-127 @@ RW @@ N
+CH<x>:PROBEFunc:EXTUnits @@ CH<x>:PROBEFunc:EXTUnits <str>; CH<x>:PROBEFunc:EXTUnits? @@ <str> @@ 設定或查詢指定通道外部衰減器的量測單位 @@ 2-127 @@ RW @@ N
+CH<x>:SCAle @@ CH<x>:SCAle <NR3>; CH<x>:SCAle? @@ <NR3> @@ 設定或查詢指定通道的垂直刻度比例（伏特/格） @@ 2-128 @@ RW @@ N
+CH<x>:TERmination @@ CH<x>:TERmination <NR3>; CH<x>:TERmination? @@ <NR3> @@ 設定或查詢指定通道的輸入終端阻抗 @@ 2-129 @@ RW @@ N

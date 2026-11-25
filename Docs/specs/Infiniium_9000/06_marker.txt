@@ -1,0 +1,15 @@
+:MARKer:CURSor? @@ :MARKer:CURSor? {DELTa | STARt | STOP} @@ {DELTa | STARt | STOP} @@ 查詢追蹤波形模式下指定游標的時間與量測值數值對 @@ 420 @@ R @@ N
+:MARKer:MEASurement:MEASurement @@ :MARKer:MEASurement:MEASurement {MEASurement<N>};:MARKer:MEASurement:MEASurement? @@ {MEASurement<N>} (N=1~10) @@ 指定游標追蹤模式下所追蹤的量測項目 @@ 421 @@ RW @@ N
+:MARKer:MODE @@ :MARKer:MODE {OFF | MANual | WAVeform | MEASurement | FFTPeak};:MARKer:MODE? @@ {OFF | MANual | WAVeform | MEASurement | FFTPeak} @@ 設定游標的顯示與運作模式 @@ 422 @@ RW @@ N
+:MARKer:TSTArt @@ :MARKer:TSTArt <Ax_position>;:MARKer:TSTArt? @@ <Ax_position> (秒) @@ 設定 Ax 時間游標的位置 (舊語法，建議使用 X1Position) @@ 423 @@ RW @@ N
+:MARKer:TSTOp @@ :MARKer:TSTOp <Bx_position>;:MARKer:TSTOp? @@ <Bx_position> (秒) @@ 設定 Bx 時間游標的位置 (舊語法，建議使用 X2Position) @@ 424 @@ RW @@ N
+:MARKer:VSTArt @@ :MARKer:VSTArt <Ay_position>;:MARKer:VSTArt? @@ <Ay_position> (電壓/電流/功率單位) @@ 設定 Ay 垂直游標的位置 (舊語法，建議使用 Y1Position) @@ 425 @@ RW @@ N
+:MARKer:VSTOp @@ :MARKer:VSTOp <By_position>;:MARKer:VSTOp? @@ <By_position> (電壓/電流/功率單位) @@ 設定 By 垂直游標的位置 (舊語法，建議使用 Y2Position) @@ 426 @@ RW @@ N
+:MARKer:X1Position @@ :MARKer:X1Position <Ax_position>;:MARKer:X1Position? @@ <Ax_position> (秒) @@ 設定 Ax 時間游標相對於觸發時間的位置 @@ 427 @@ RW @@ N
+:MARKer:X2Position @@ :MARKer:X2Position <Bx_position>;:MARKer:X2Position? @@ <Bx_position> (秒) @@ 設定 Bx 時間游標相對於觸發時間的位置 @@ 428 @@ RW @@ N
+:MARKer:X1Y1source @@ :MARKer:X1Y1source {CHANnel<N> | COMMonmode<P> | DIFFerential<P> | FUNCtion<F> | WMEMory<N> | CLOCk | MTRend | MSPectrum | EQUalized | HISTogram | DIGital<M> | BUS<N>};:MARKer:X1Y1source? @@ {CHANnel<N> | COMMonmode<P> | DIFFerential<P> | FUNCtion<F> | WMEMory<N> | CLOCk | MTRend | MSPectrum | EQUalized | HISTogram | DIGital<M> | BUS<N>} @@ 設定 Ax 與 Ay 游標的訊號來源 @@ 429 @@ RW @@ N
+:MARKer:X2Y2source @@ :MARKer:X2Y2source {CHANnel<N> | COMMonmode<P> | DIFFerential<P> | FUNCtion<F> | WMEMory<N> | CLOCk | MTRend | MSPectrum | EQUalized | HISTogram | DIGital<M> | BUS<N>};:MARKer:X2Y2source? @@ {CHANnel<N> | COMMonmode<P> | DIFFerential<P> | FUNCtion<F> | WMEMory<N> | CLOCk | MTRend | MSPectrum | EQUalized | HISTogram | DIGital<M> | BUS<N>} @@ 設定 Bx 與 By 游標的訊號來源 @@ 431 @@ RW @@ N
+:MARKer:XDELta? @@ :MARKer:XDELta? @@ 無 @@ 查詢 Ax 與 Bx 時間游標之間的時間差 @@ 433 @@ R @@ N
+:MARKer:Y1Position @@ :MARKer:Y1Position <Ay_position>;:MARKer:Y1Position? @@ <Ay_position> (電壓/電流/功率單位) @@ 設定 Ay 垂直游標在指定來源上的位置 @@ 434 @@ RW @@ N
+:MARKer:Y2Position @@ :MARKer:Y2Position <By_position>;:MARKer:Y2Position? @@ <By_position> (電壓/電流/功率單位) @@ 設定 By 垂直游標在指定來源上的位置 @@ 435 @@ RW @@ N
+:MARKer:YDELta? @@ :MARKer:YDELta? @@ 無 @@ 查詢 Ay 與 By 垂直游標之間的量測數值差 @@ 436 @@ R @@ N

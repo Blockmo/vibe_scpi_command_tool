@@ -1,0 +1,13 @@
+FREQuency:STARt @@ FREQuency:STARt {<frequency>|MINimum|MAXimum}; FREQuency:STARt? [MINimum|MAXimum] @@ 1 uHz-20 MHz (Sine/Square); 200 kHz (Ramp); 6 MHz (Arb) @@ 設定或查詢掃描起始頻率 @@ 217 @@ RW @@ N
+FREQuency:STOP @@ FREQuency:STOP {<frequency>|MINimum|MAXimum}; FREQuency:STOP? [MINimum|MAXimum] @@ 1 uHz-20 MHz (Sine/Square); 200 kHz (Ramp); 6 MHz (Arb) @@ 設定或查詢掃描終止頻率 @@ 217 @@ RW @@ N
+FREQuency:CENTer @@ FREQuency:CENTer {<frequency>|MINimum|MAXimum}; FREQuency:CENTer? [MINimum|MAXimum] @@ 1 uHz-20 MHz (Sine/Square); 200 kHz (Ramp); 6 MHz (Arb) @@ 設定或查詢掃描中心頻率 @@ 218 @@ RW @@ N
+FREQuency:SPAN @@ FREQuency:SPAN {<frequency>|MINimum|MAXimum}; FREQuency:SPAN? [MINimum|MAXimum] @@ 0 Hz-20 MHz (Sine/Square); 200 kHz (Ramp); 6 MHz (Arb) @@ 設定或查詢掃描頻率跨度 (Span) @@ 218 @@ RW @@ N
+SWEep:SPACing @@ SWEep:SPACing {LINear|LOGarithmic}; SWEep:SPACing? @@ LINear|LOGarithmic @@ 設定或查詢掃描間距為線性或對數 @@ 219 @@ RW @@ N
+SWEep:TIME @@ SWEep:TIME {<seconds>|MINimum|MAXimum}; SWEep:TIME? [MINimum|MAXimum] @@ 1 ms-500 s; MIN; MAX @@ 設定或查詢完成一次掃描所需的時間 @@ 219 @@ RW @@ N
+SWEep:STATe @@ SWEep:STATe {OFF|ON}; SWEep:STATe? @@ OFF|ON @@ 啟用或停用頻率掃描模式 @@ 219 @@ RW @@ N
+TRIGger:SOURce @@ TRIGger:SOURce {IMMediate|EXTernal|BUS}; TRIGger:SOURce? @@ IMMediate|EXTernal|BUS @@ 設定或查詢掃描觸發訊號來源 @@ 220 @@ RW @@ N
+TRIGger:SLOPe @@ TRIGger:SLOPe {POSitive|NEGative}; TRIGger:SLOPe? @@ POSitive|NEGative @@ 設定或查詢外部觸發極性（上升沿或下降沿） @@ 221 @@ RW @@ N
+OUTPut:TRIGger:SLOPe @@ OUTPut:TRIGger:SLOPe {POSitive|NEGative}; OUTPut:TRIGger:SLOPe? @@ POSitive|NEGative @@ 設定或查詢 Trig Out 接頭輸出觸發訊號之極性 @@ 221 @@ RW @@ N
+OUTPut:TRIGger @@ OUTPut:TRIGger {OFF|ON}; OUTPut:TRIGger? @@ OFF|ON @@ 啟用或停用 Trig Out 接頭之觸發輸出訊號 @@ 221 @@ RW @@ N
+MARKer:FREQuency @@ MARKer:FREQuency {<frequency>|MINimum|MAXimum}; MARKer:FREQuency? [MINimum|MAXimum] @@ 1 uHz-20 MHz; MIN; MAX @@ 設定或查詢標記頻率 (Marker Frequency) @@ 222 @@ RW @@ N
+MARKer @@ MARKer {OFF|ON}; MARKer? @@ OFF|ON @@ 啟用或停用頻率標記功能 @@ 222 @@ RW @@ N

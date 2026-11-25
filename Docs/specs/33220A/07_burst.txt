@@ -1,0 +1,11 @@
+BURSt:MODE @@ BURSt:MODE {TRIGgered|GATed}; BURSt:MODE? @@ TRIGgered|GATed @@ 設定或查詢 Burst 模式為觸發或閘控模式 @@ 225 @@ RW @@ N
+BURSt:NCYCles @@ BURSt:NCYCles {<# cycles>|INFinity|MINimum|MAXimum}; BURSt:NCYCles? [MINimum|MAXimum] @@ 1-50,000 週期; INFinity; MIN; MAX @@ 設定或查詢每次 Burst 輸出的波形週期數 @@ 226 @@ RW @@ N
+BURSt:INTernal:PERiod @@ BURSt:INTernal:PERiod {<seconds>|MINimum|MAXimum}; BURSt:INTernal:PERiod? [MINimum|MAXimum] @@ 1 us-500 s; MIN; MAX @@ 設定或查詢內部觸發模式下的 Burst 週期 @@ 227 @@ RW @@ N
+BURSt:PHASe @@ BURSt:PHASe {<angle>|MINimum|MAXimum}; BURSt:PHASe? [MINimum|MAXimum] @@ -360 至 +360 度 (-2pi 至 +2pi 弧度); MIN; MAX @@ 設定或查詢 Burst 的起始相位角度 @@ 227 @@ RW @@ N
+BURSt:STATe @@ BURSt:STATe {OFF|ON}; BURSt:STATe? @@ OFF|ON @@ 啟用或停用 Burst 模式功能 @@ 228 @@ RW @@ N
+UNIT:ANGLe @@ UNIT:ANGLe {DEGree|RADian}; UNIT:ANGLe? @@ DEGree|RADian @@ 設定或查詢 Burst 起始相位角度的單位 @@ 228 @@ RW @@ N
+TRIGger:SOURce @@ TRIGger:SOURce {IMMediate|EXTernal|BUS}; TRIGger:SOURce? @@ IMMediate|EXTernal|BUS @@ 設定或查詢觸發 Burst 的訊號來源 @@ 228 @@ RW @@ N
+TRIGger:SLOPe @@ TRIGger:SLOPe {POSitive|NEGative}; TRIGger:SLOPe? @@ POSitive|NEGative @@ 設定或查詢外部觸發極性（上升沿或下降沿） @@ 229 @@ RW @@ N
+BURSt:GATE:POLarity @@ BURSt:GATE:POLarity {NORMal|INVerted}; BURSt:GATE:POLarity? @@ NORMal|INVerted @@ 設定或查詢外部閘控模式的邏輯極性 @@ 230 @@ RW @@ N
+OUTPut:TRIGger:SLOPe @@ OUTPut:TRIGger:SLOPe {POSitive|NEGative}; OUTPut:TRIGger:SLOPe? @@ POSitive|NEGative @@ 設定或查詢 Trig Out 接頭輸出觸發訊號之極性 @@ 230 @@ RW @@ N
+OUTPut:TRIGger @@ OUTPut:TRIGger {OFF|ON}; OUTPut:TRIGger? @@ OFF|ON @@ 啟用或停用 Trig Out 接頭之觸發輸出訊號 @@ 230 @@ RW @@ N

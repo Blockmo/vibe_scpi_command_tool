@@ -1,0 +1,81 @@
+TRIGger:A:LOGIc? @@ TRIGger:A:LOGIc? @@ 無 @@ 傳回所有 A 邏輯觸發的設定參數 @@ 2-574 @@ R @@ N
+TRIGger:{A|B}:LOGIc:CLAss @@ TRIGger:{A|B}:LOGIc:CLAss {PATtern|STATE|SETHold}; TRIGger:{A|B}:LOGIc:CLAss? @@ PATtern | STATE | SETHold @@ 設定或查詢邏輯觸發的類別 @@ 2-503 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:FUNCtion @@ TRIGger:{A|B}:LOGIc:FUNCtion {AND|NANd|NOR|OR}; TRIGger:{A|B}:LOGIc:FUNCtion? @@ AND | NANd | NOR | OR @@ 設定或查詢邏輯觸發的通道運算函式 @@ 2-503 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:INPut? @@ TRIGger:{A|B}:LOGIc:INPut? @@ 無 @@ 傳回通道 1、2 與 3 的邏輯輸入期望值 @@ 2-504 @@ R @@ N
+TRIGger:{A|B}:LOGIc:INPut:CH<x> @@ TRIGger:{A|B}:LOGIc:INPut:CH<x> {HIGH|LOW|X}; TRIGger:{A|B}:LOGIc:INPut:CH<x>? @@ HIGH | LOW | X @@ 設定或查詢指定通道的邏輯輸入狀態 @@ 2-505 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern? @@ TRIGger:{A|B}:LOGIc:PATtern? @@ 無 @@ 傳回圖樣邏輯觸發的條件與時間限制參數 @@ 2-505 @@ R @@ N
+TRIGger:{A|B}:LOGIc:PATtern:INPut:CH<x> @@ TRIGger:{A|B}:LOGIc:PATtern:INPut:CH<x> {HIGH|LOW|X}; TRIGger:{A|B}:LOGIc:PATtern:INPut:CH<x>? @@ HIGH | LOW | X @@ 設定或查詢圖樣觸發時指定通道的邏輯輸入值 @@ 2-506 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern:WHEn @@ TRIGger:{A|B}:LOGIc:PATtern:WHEn {TRUe|FALSe|LESSThan|MOREThan}; TRIGger:{A|B}:LOGIc:PATtern:WHEn? @@ TRUe | FALSe | LESSThan | MOREThan @@ 設定或查詢產生圖樣邏輯觸發的條件 @@ 2-507 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern:WHEn:LESSLimit @@ TRIGger:{A|B}:LOGIc:PATtern:WHEn:LESSLimit <NR3>; TRIGger:{A|B}:LOGIc:PATtern:WHEn:LESSLimit? @@ <NR3> @@ 設定或查詢圖樣維持為真的最大時間限制 @@ 2-507 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:PATtern:WHEn:MORELimit @@ TRIGger:{A|B}:LOGIc:PATtern:WHEn:MORELimit <NR3>; TRIGger:{A|B}:LOGIc:PATtern:WHEn:MORELimit? @@ <NR3> @@ 設定或查詢圖樣維持為真的最小時間限制 @@ 2-508 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold? @@ TRIGger:{A|B}:LOGIc:SETHold? @@ 無 @@ 傳回建立與保持違規觸發的所有設定參數 @@ 2-509 @@ R @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk? @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk? @@ 無 @@ 傳回建立與保持觸發的時脈設定參數 @@ 2-509 @@ R @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:EDGE @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:EDGE {FALL|RISe}; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:EDGE? @@ FALL | RISe @@ 設定或查詢建立與保持觸發的時脈邊緣極性 @@ 2-510 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:SOUrce @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:SOUrce CH<x>; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:SOUrce? @@ CH<x> @@ 設定或查詢建立與保持觸發的時脈來源通道 @@ 2-510 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold? @@ ECL | TTL | <NR3> @@ 設定或查詢建立與保持觸發的時脈電壓門檻 @@ 2-511 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold:CH<x> @@ TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:CLOCk:THReshold:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道作為時脈時的電壓門檻 @@ 2-512 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa? @@ TRIGger:{A|B}:LOGIc:SETHold:DATa? @@ 無 @@ 傳回建立與保持觸發的資料源與電壓門檻設定 @@ 2-512 @@ R @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa:SOUrce @@ TRIGger:{A|B}:LOGIc:SETHold:DATa:SOUrce CH<x>; TRIGger:{A|B}:LOGIc:SETHold:DATa:SOUrce? @@ CH<x> @@ 設定或查詢建立與保持觸發的資料來源通道 @@ 2-513 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold @@ TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold? @@ ECL | TTL | <NR3> @@ 設定或查詢建立與保持觸發的資料電壓門檻 @@ 2-513 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold:CH<x> @@ TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold:CH<x> {ECL|TTL|<NR3>}; TRIGger:{A|B}:LOGIc:SETHold:DATa:THReshold:CH<x>? @@ ECL | TTL | <NR3> @@ 設定或查詢指定通道作為資料源時的電壓門檻 @@ 2-514 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:HOLDTime @@ TRIGger:{A|B}:LOGIc:SETHold:HOLDTime <NR3>; TRIGger:{A|B}:LOGIc:SETHold:HOLDTime? @@ <NR3> @@ 設定或查詢建立與保持違規觸發的保持時間 @@ 2-515 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:QUAlify @@ TRIGger:{A|B}:LOGIc:SETHold:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:LOGIc:SETHold:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢建立與保持違規觸發的限定條件 @@ 2-515 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:SETHold:SETTime @@ TRIGger:{A|B}:LOGIc:SETHold:SETTime <NR3>; TRIGger:{A|B}:LOGIc:SETHold:SETTime? @@ <NR3> @@ 設定或查詢建立與保持違規觸發的建立時間 @@ 2-516 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:STATE? @@ TRIGger:{A|B}:LOGIc:STATE? @@ 無 @@ 傳回邏輯狀態觸發的資料輸入與觸發條件 @@ 2-516 @@ R @@ N
+TRIGger:{A|B}:LOGIc:STATE:INPut:CH<x> @@ TRIGger:{A|B}:LOGIc:STATE:INPut:CH<x> {FALL|RISe}; TRIGger:{A|B}:LOGIc:STATE:INPut:CH<x>? @@ FALL | RISe @@ 設定或查詢指定通道在邏輯狀態觸發時的邊緣極性 @@ 2-517 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:STATE:WHEn @@ TRIGger:{A|B}:LOGIc:STATE:WHEn {TRUe|FALSe}; TRIGger:{A|B}:LOGIc:STATE:WHEn? @@ TRUe | FALSe @@ 設定或查詢產生邏輯狀態觸發的圖樣條件 @@ 2-518 @@ RW @@ N
+TRIGger:{A|B}:LOGIc:THReshold? @@ TRIGger:{A|B}:LOGIc:THReshold? @@ 無 @@ 傳回邏輯觸發中所有通道的門檻電壓 @@ 2-518 @@ R @@ N
+TRIGger:{A|B}:LOGIc:THReshold:CH<x> @@ TRIGger:{A|B}:LOGIc:THReshold:CH<x> <NR3>; TRIGger:{A|B}:LOGIc:THReshold:CH<x>? @@ <NR3> @@ 設定或查詢指定通道在邏輯觸發時的門檻電壓 @@ 2-519 @@ RW @@ N
+TRIGger:{A|B}:PULse? @@ TRIGger:{A|B}:PULse? @@ 無 @@ 傳回所有脈衝觸發設定參數 @@ 2-520 @@ R @@ N
+TRIGger:{A|B}:PULse:CLAss @@ TRIGger:{A|B}:PULse:CLAss {GLItch|RUNT|WIDth|TRANsition|TIMEOut|WINdow}; TRIGger:{A|B}:PULse:CLAss? @@ GLItch | RUNT | WIDth | TRANsition | TIMEOut | WINdow @@ 設定或查詢觸發的脈衝類型類別 @@ 2-521 @@ RW @@ N
+TRIGger:{A|B}:PULse:GLItch? @@ TRIGger:{A|B}:PULse:GLItch? @@ 無 @@ 傳回突波脈衝觸發設定參數 @@ 2-522 @@ R @@ N
+TRIGger:{A|B}:PULse:GLItch:POLarity @@ TRIGger:{A|B}:PULse:GLItch:POLarity {POSITIVe|NEGAtive|EITher}; TRIGger:{A|B}:PULse:GLItch:POLarity? @@ POSITIVe | NEGAtive | EITher @@ 設定或查詢突波脈衝觸發的極性 @@ 2-522 @@ RW @@ N
+TRIGger:{A|B}:PULse:GLItch:POLarity:CH<x> @@ TRIGger:{A|B}:PULse:GLItch:POLarity:CH<x> {EITher|NEGAtive|POSITIVe}; TRIGger:{A|B}:PULse:GLItch:POLarity:CH<x>? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢指定通道的突波脈衝觸發極性 @@ 2-523 @@ RW @@ N
+TRIGger:{A|B}:PULse:GLItch:QUAlify @@ TRIGger:{A|B}:PULse:GLItch:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:PULse:GLItch:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢突波脈衝觸發的限定條件 @@ 2-524 @@ RW @@ N
+TRIGger:{A|B}:PULse:GLItch:TRIGIF @@ TRIGger:{A|B}:PULse:GLItch:TRIGIF {ACCept|REJect}; TRIGger:{A|B}:PULse:GLItch:TRIGIF? @@ ACCept | REJect @@ 設定或查詢突波脈衝觸發是接受窄於或寬於設定值的脈衝 @@ 2-524 @@ RW @@ N
+TRIGger:{A|B}:PULse:GLItch:WIDth @@ TRIGger:{A|B}:PULse:GLItch:WIDth <NR3>; TRIGger:{A|B}:PULse:GLItch:WIDth? @@ <NR3> @@ 設定或查詢突波脈衝觸發的脈衝寬度 @@ 2-525 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT? @@ TRIGger:{A|B}:PULse:RUNT? @@ 無 @@ 傳回矮脈衝（Runt）觸發設定參數 @@ 2-526 @@ R @@ N
+TRIGger:{A|B}:PULse:RUNT:POLarity @@ TRIGger:{A|B}:PULse:RUNT:POLarity {POSITIVe|NEGAtive|EITher}; TRIGger:{A|B}:PULse:RUNT:POLarity? @@ POSITIVe | NEGAtive | EITher @@ 設定或查詢矮脈衝觸發的極性 @@ 2-526 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT:POLarity:CH<x> @@ TRIGger:{A|B}:PULse:RUNT:POLarity:CH<x> {EITher|NEGAtive|POSITIVe}; TRIGger:{A|B}:PULse:RUNT:POLarity:CH<x>? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢指定通道的矮脈衝觸發極性 @@ 2-527 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT:QUAlify @@ TRIGger:{A|B}:PULse:RUNT:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:PULse:RUNT:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢矮脈衝觸發的限定條件 @@ 2-528 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT:THReshold? @@ TRIGger:{A|B}:PULse:RUNT:THReshold? @@ 無 @@ 傳回矮脈衝觸發的上限與下限門檻電壓 @@ 2-528 @@ R @@ N
+TRIGger:{A|B}:PULse:RUNT:THReshold:BOTh @@ TRIGger:{A|B}:PULse:RUNT:THReshold:BOTh {TTL|ECL} @@ TTL | ECL @@ 設定矮脈衝觸發的上下門檻為標準 TTL 或 ECL 電壓 @@ 2-529 @@ W @@ N
+TRIGger:{A|B}:PULse:RUNT:THReshold:HIGH @@ TRIGger:{A|B}:PULse:RUNT:THReshold:HIGH <NR3>; TRIGger:{A|B}:PULse:RUNT:THReshold:HIGH? @@ <NR3> @@ 設定或查詢矮脈衝觸發的上限門檻電壓 @@ 2-529 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT:THReshold:LOW @@ TRIGger:{A|B}:PULse:RUNT:THReshold:LOW <NR3>; TRIGger:{A|B}:PULse:RUNT:THReshold:LOW? @@ <NR3> @@ 設定或查詢矮脈衝觸發的下限門檻電壓 @@ 2-530 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT:WHEn @@ TRIGger:{A|B}:PULse:RUNT:WHEn {OCCurs|WIDERthan}; TRIGger:{A|B}:PULse:RUNT:WHEn? @@ OCCurs | WIDERthan @@ 設定或查詢矮脈衝觸發的檢查條件（發生即觸發或寬於指定值） @@ 2-530 @@ RW @@ N
+TRIGger:{A|B}:PULse:RUNT:WIDth @@ TRIGger:{A|B}:PULse:RUNT:WIDth <NR3>; TRIGger:{A|B}:PULse:RUNT:WIDth? @@ <NR3> @@ 設定或查詢矮脈衝觸發的最小脈衝寬度 @@ 2-531 @@ RW @@ N
+TRIGger:{A|B}:PULse:SOUrce @@ TRIGger:{A|B}:PULse:SOUrce CH<x>; TRIGger:{A|B}:PULse:SOUrce? @@ CH<x> @@ 設定或查詢脈衝觸發的來源通道 @@ 2-531 @@ RW @@ N
+TRIGger:{A|B}:PULse:TIMEOut? @@ TRIGger:{A|B}:PULse:TIMEOut? @@ 無 @@ 傳回超時脈衝觸發設定參數 @@ 2-532 @@ R @@ N
+TRIGger:{A|B}:PULse:TIMEOut:POLarity @@ TRIGger:{A|B}:PULse:TIMEOut:POLarity {STAYSHigh|STAYSLow|EITher}; TRIGger:{A|B}:PULse:TIMEOut:POLarity? @@ STAYSHigh | STAYSLow | EITher @@ 設定或查詢超時脈衝觸發的極性 @@ 2-533 @@ RW @@ N
+TRIGger:{A|B}:PULse:TIMEOut:POLarity:CH<x> @@ TRIGger:{A|B}:PULse:TIMEOut:POLarity:CH<x> {STAYSHigh|STAYSLow|EITher}; TRIGger:{A|B}:PULse:TIMEOut:POLarity:CH<x>? @@ STAYSHigh | STAYSLow | EITher @@ 設定或查詢指定通道的超時脈衝觸發極性 @@ 2-533 @@ RW @@ N
+TRIGger:{A|B}:PULse:TIMEOut:QUAlify @@ TRIGger:{A|B}:PULse:TIMEOut:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:PULse:TIMEOut:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢超時脈衝觸發的限定條件 @@ 2-534 @@ RW @@ N
+TRIGger:{A|B}:PULse:TIMEOut:TIMe @@ TRIGger:{A|B}:PULse:TIMEOut:TIMe <NR3>; TRIGger:{A|B}:PULse:TIMEOut:TIMe? @@ <NR3> @@ 設定或查詢超時脈衝觸發的時間長度 @@ 2-535 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition? @@ TRIGger:{A|B}:PULse:TRANsition? @@ 無 @@ 傳回轉換時間（Slew Rate）脈衝觸發設定參數 @@ 2-535 @@ R @@ N
+TRIGger:{A|B}:PULse:TRANsition:DELTATime @@ TRIGger:{A|B}:PULse:TRANsition:DELTATime <NR3>; TRIGger:{A|B}:PULse:TRANsition:DELTATime? @@ <NR3> @@ 設定或查詢轉換時間觸發的時間差增量 @@ 2-536 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition:POLarity @@ TRIGger:{A|B}:PULse:TRANsition:POLarity {POSITIVe|NEGAtive|EITher}; TRIGger:{A|B}:PULse:TRANsition:POLarity? @@ POSITIVe | NEGAtive | EITher @@ 設定或查詢轉換時間觸發的邊緣轉換極性 @@ 2-536 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition:POLarity:CH<x> @@ TRIGger:{A|B}:PULse:TRANsition:POLarity:CH<x> {EITher|NEGAtive|POSITIVe}; TRIGger:{A|B}:PULse:TRANsition:POLarity:CH<x>? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢指定通道的轉換時間觸發極性 @@ 2-537 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition:QUAlify @@ TRIGger:{A|B}:PULse:TRANsition:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:PULse:TRANsition:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢轉換時間觸發的限定條件 @@ 2-538 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition:THReshold? @@ TRIGger:{A|B}:PULse:TRANsition:THReshold? @@ 無 @@ 傳回轉換時間觸發的上限與下限門檻電壓 @@ 2-538 @@ R @@ N
+TRIGger:{A|B}:PULse:TRANsition:THReshold:BOTh @@ TRIGger:{A|B}:PULse:TRANsition:THReshold:BOTh {TTL|ECL} @@ TTL | ECL @@ 設定轉換時間觸發的上下門檻為標準 TTL 或 ECL 電壓 @@ 2-539 @@ W @@ N
+TRIGger:{A|B}:PULse:TRANsition:THReshold:HIGH @@ TRIGger:{A|B}:PULse:TRANsition:THReshold:HIGH <NR3>; TRIGger:{A|B}:PULse:TRANsition:THReshold:HIGH? @@ <NR3> @@ 設定或查詢轉換時間觸發的上限門檻電壓 @@ 2-539 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition:THReshold:LOW @@ TRIGger:{A|B}:PULse:TRANsition:THReshold:LOW <NR3>; TRIGger:{A|B}:PULse:TRANsition:THReshold:LOW? @@ <NR3> @@ 設定或查詢轉換時間觸發的下限門檻電壓 @@ 2-540 @@ RW @@ N
+TRIGger:{A|B}:PULse:TRANsition:WHEn @@ TRIGger:{A|B}:PULse:TRANsition:WHEn {FASTERthan|SLOWERthan}; TRIGger:{A|B}:PULse:TRANsition:WHEn? @@ FASTERthan | SLOWERthan @@ 設定或查詢轉換時間觸發的條件（快於或慢於設定時間） @@ 2-540 @@ RW @@ N
+TRIGger:{A|B}:PULse:WIDth? @@ TRIGger:{A|B}:PULse:WIDth? @@ 無 @@ 傳回脈衝寬度觸發設定參數 @@ 2-541 @@ R @@ N
+TRIGger:{A|B}:PULse:WIDth:HIGHLimit @@ TRIGger:{A|B}:PULse:WIDth:HIGHLimit <NR3>; TRIGger:{A|B}:PULse:WIDth:HIGHLimit? @@ <NR3> @@ 設定或查詢脈衝寬度觸發的時間上限 @@ 2-542 @@ RW @@ N
+TRIGger:{A|B}:PULse:WIDth:LOWLimit @@ TRIGger:{A|B}:PULse:WIDth:LOWLimit <NR3>; TRIGger:{A|B}:PULse:WIDth:LOWLimit? @@ <NR3> @@ 設定或查詢脈衝寬度觸發的時間下限 @@ 2-542 @@ RW @@ N
+TRIGger:{A|B}:PULse:WIDth:POLarity @@ TRIGger:{A|B}:PULse:WIDth:POLarity {NEGAtive|POSITIVe}; TRIGger:{A|B}:PULse:WIDth:POLarity? @@ NEGAtive | POSITIVe @@ 設定或查詢脈衝寬度觸發的極性 @@ 2-543 @@ RW @@ N
+TRIGger:{A|B}:PULse:WIDth:POLarity:CH<x> @@ TRIGger:{A|B}:PULse:WIDth:POLarity:CH<x> {NEGAtive|POSITIVe}; TRIGger:{A|B}:PULse:WIDth:POLarity:CH<x>? @@ NEGAtive | POSITIVe @@ 設定或查詢指定通道的脈衝寬度觸發極性 @@ 2-543 @@ RW @@ N
+TRIGger:{A|B}:PULse:WIDth:QUAlify @@ TRIGger:{A|B}:PULse:WIDth:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:PULse:WIDth:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢脈衝寬度觸發的限定條件 @@ 2-544 @@ RW @@ N
+TRIGger:{A|B}:PULse:WIDth:WHEn @@ TRIGger:{A|B}:PULse:WIDth:WHEn {OUTside|WIThin}; TRIGger:{A|B}:PULse:WIDth:WHEn? @@ OUTside | WIThin @@ 設定或查詢脈衝寬度觸發的條件（範圍內或範圍外） @@ 2-545 @@ RW @@ N
+TRIGger:{A|B}:PULse:WINdow? @@ TRIGger:{A|B}:PULse:WINdow? @@ 無 @@ 傳回視窗脈衝觸發設定參數 @@ 2-545 @@ R @@ N
+TRIGger:{A|B}:PULse:WINdow:EVENT @@ TRIGger:{A|B}:PULse:WINdow:EVENT {OUTSIDEGreater|INSIDEGreater|ENTERSWindow|EXITSWindow}; TRIGger:{A|B}:PULse:WINdow:EVENT? @@ OUTSIDEGreater | INSIDEGreater | ENTERSWindow | EXITSWindow @@ 設定或查詢視窗觸發事件條件 @@ 2-546 @@ RW @@ N
+TRIGger:{A|B}:PULse:WINdow:QUAlify @@ TRIGger:{A|B}:PULse:WINdow:QUAlify {OCCurs|LOGIc}; TRIGger:{A|B}:PULse:WINdow:QUAlify? @@ OCCurs | LOGIc @@ 設定或查詢視窗觸發的限定條件 @@ 2-547 @@ RW @@ N
+TRIGger:{A|B}:PULse:WINdow:THReshold? @@ TRIGger:{A|B}:PULse:WINdow:THReshold? @@ 無 @@ 傳回視窗觸發的上限與下限門檻電壓 @@ 2-547 @@ R @@ N
+TRIGger:{A|B}:PULse:WINdow:THReshold:BOTh @@ TRIGger:{A|B}:PULse:WINdow:THReshold:BOTh {TTL|ECL} @@ TTL | ECL @@ 設定視窗觸發的上下門檻為標準 TTL 或 ECL 電壓 @@ 2-548 @@ W @@ N
+TRIGger:{A|B}:PULse:WINdow:THReshold:HIGH @@ TRIGger:{A|B}:PULse:WINdow:THReshold:HIGH <NR3>; TRIGger:{A|B}:PULse:WINdow:THReshold:HIGH? @@ <NR3> @@ 設定或查詢視窗觸發的上限門檻電壓 @@ 2-548 @@ RW @@ N
+TRIGger:{A|B}:PULse:WINdow:THReshold:LOW @@ TRIGger:{A|B}:PULse:WINdow:THReshold:LOW <NR3>; TRIGger:{A|B}:PULse:WINdow:THReshold:LOW? @@ <NR3> @@ 設定或查詢視窗觸發的下限門檻電壓 @@ 2-549 @@ RW @@ N
+TRIGger:{A|B}:PULse:WINdow:WIDTH @@ TRIGger:{A|B}:PULse:WINdow:WIDTH <NR3>; TRIGger:{A|B}:PULse:WINdow:WIDTH? @@ <NR3> @@ 設定或查詢視窗違規的最小時間寬度 @@ 2-549 @@ RW @@ N
+TRIGger:A:PULse:WINdow:POLarity @@ TRIGger:A:PULse:WINdow:POLarity {EITher|NEGAtive|POSITIVe}; TRIGger:A:PULse:WINdow:POLarity? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢 A 觸發源選取之視窗極性 @@ 2-575 @@ RW @@ N
+TRIGger:A:PULse:WINdow:POLarity:CH<x> @@ TRIGger:A:PULse:WINdow:POLarity:CH<x> {EITher|NEGAtive|POSITIVe}; TRIGger:A:PULse:WINdow:POLarity:CH<x>? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢指定通道的 A 視窗觸發極性 @@ 2-576 @@ RW @@ N
+TRIGger:B:PULse:WINdow:POLarity @@ TRIGger:B:PULse:WINdow:POLarity {EITher|NEGAtive|POSITIVe}; TRIGger:B:PULse:WINdow:POLarity? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢 B 觸發源選取之視窗極性 @@ 2-610 @@ RW @@ N
+TRIGger:B:PULse:WINdow:POLarity:CH<x> @@ TRIGger:B:PULse:WINdow:POLarity:CH<x> {EITher|NEGAtive|POSITIVe}; TRIGger:B:PULse:WINdow:POLarity:CH<x>? @@ EITher | NEGAtive | POSITIVe @@ 設定或查詢指定通道的 B 視窗觸發極性 @@ 2-611 @@ RW @@ N

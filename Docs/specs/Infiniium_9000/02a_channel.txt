@@ -1,0 +1,39 @@
+:CHANnel<N>:BWLimit @@ :CHANnel<N>:BWLimit {{ON | 1} | {OFF | 0}};:CHANnel<N>:BWLimit? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的低通濾波頻寬限制 @@ 191 @@ RW @@ N
+:CHANnel<N>:COMMonmode @@ :CHANnel<N>:COMMonmode {{ON | 1} | {OFF | 0}};:CHANnel<N>:COMMonmode? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的共模頻道功能 @@ 192 @@ RW @@ N
+:CHANnel<N>:DIFFerential @@ :CHANnel<N>:DIFFerential {{ON | 1} | {OFF | 0}};:CHANnel<N>:DIFFerential? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的差動頻道功能 @@ 193 @@ RW @@ N
+:CHANnel<N>:DIFFerential:SKEW @@ :CHANnel<N>:DIFFerential:SKEW <skew>;:CHANnel<N>:DIFFerential:SKEW? @@ <skew> (實數，秒) @@ 設定差動或共模通道對之間的時差校正值 @@ 194 @@ RW @@ N
+:CHANnel<N>:DISPlay @@ :CHANnel<N>:DISPlay {{ON | 1} | {OFF | 0}};:CHANnel<N>:DISPlay? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道波形的螢幕顯示 @@ 195 @@ RW @@ N
+:CHANnel<N>:DISPlay:AUTO @@ :CHANnel<N>:DISPlay:AUTO {{ON | 1}:CHANnel<N>:BWLimit @@ :CHANnel<N>:BWLimit {{ON | 1} | {OFF | 0}};:CHANnel<N>:BWLimit? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的低通濾波頻寬限制 @@ 191 @@ RW @@ N
+:CHANnel<N>:COMMonmode @@ :CHANnel<N>:COMMonmode {{ON | 1} | {OFF | 0}};:CHANnel<N>:COMMonmode? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的共模頻道功能 @@ 192 @@ RW @@ N
+:CHANnel<N>:DIFFerential @@ :CHANnel<N>:DIFFerential {{ON | 1} | {OFF | 0}};:CHANnel<N>:DIFFerential? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道的差動頻道功能 @@ 193 @@ RW @@ N
+:CHANnel<N>:DIFFerential:SKEW @@ :CHANnel<N>:DIFFerential:SKEW <skew>;:CHANnel<N>:DIFFerential:SKEW? @@ <skew> (實數，秒) @@ 設定差動或共模通道對之間的時差校正值 @@ 194 @@ RW @@ N
+:CHANnel<N>:DISPlay @@ :CHANnel<N>:DISPlay {{ON | 1} | {OFF | 0}};:CHANnel<N>:DISPlay? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉指定通道波形的螢幕顯示 @@ 195 @@ RW @@ N
+:CHANnel<N>:DISPlay:AUTO @@ :CHANnel<N>:DISPlay:AUTO {{ON | 1} | {OFF | 0}};:CHANnel<N>:DISPlay:AUTO? @@ {{ON | ```
+:CHANnel<N>:BWLimit @@ :CHANnel<N>:BWLimit {ON | OFF | 1 | 0};:CHANnel<N>:BWLimit? @@ {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道的低通濾波頻寬限制 @@ 191 @@ RW @@ N
+:CHANnel<N>:COMMonmode @@ :CHANnel<N>:COMMonmode {ON | OFF | 1 | 0};:CHANnel<N>:COMMonmode? @@ {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道的共模頻道功能 @@ 192 @@ RW @@ N
+:CHANnel<N>:DIFFerential @@ :CHANnel<N>:DIFFerential {ON | OFF | 1 | 0};:CHANnel<N>:DIFFerential? @@ {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道的差動頻道功能 @@ 193 @@ RW @@ N
+:CHANnel<N>:DIFFerential:SKEW @@ :CHANnel<N>:DIFFerential:SKEW <skew>;:CHANnel<N>:DIFFerential:SKEW? @@ <skew> (秒) @@ 設定差動或共模通道對之間的時差校正值 @@ 194 @@ RW @@ N
+:CHANnel<N>:DISPlay @@ :CHANnel<N>:DISPlay {ON | OFF | 1 | 0};:CHANnel<N>:DISPlay? @@ {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道波形的螢幕顯示 @@ 195 @@ RW @@ N
+:CHANnel<N>:DISPlay:AUTO @@ :CHANnel<N>:DISPlay:AUTO {ON | OFF | 1 | 0};:CHANnel<N>:DISPlay:AUTO? @@ {ON | OFF | 1:CHANnel<N>:BWLimit @@ :CHANnel<N>:BWLimit <state>;:CHANnel<N>:BWLimit? @@ <state> := {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道的低通濾波頻寬限制 @@ 191 @@ RW @@ N
+:CHANnel<N>:COMMonmode @@ :CHANnel<N>:COMMonmode <state>;:CHANnel<N>:COMMonmode? @@ <state> := {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道的共模頻道功能 @@ 192 @@ RW @@ N
+:CHANnel<N>:DIFFerential @@ :CHANnel<N>:DIFFerential <state>;:CHANnel<N>:DIFFerential? @@ <state> := {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道的差動頻道功能 @@ 193 @@ RW @@ N
+:CHANnel<N>:DIFFerential:SKEW @@ :CHANnel<N>:DIFFerential:SKEW <skew>;:CHANnel<N>:DIFFerential:SKEW? @@ <skew> (實數，秒) @@ 設定差動或共模通道對之間的時差校正值 @@ 194 @@ RW @@ N
+:CHANnel<N>:DISPlay @@ :CHANnel<N>:DISPlay <state>;:CHANnel<N>:DISPlay? @@ <state> := {ON | OFF | 1 | 0} @@ 開啟或關閉指定通道波形的螢幕顯示 @@ 195 @@ RW @@ N
+:CHANnel<N>:DISPlay:AUTO @@ :CHANnel<N>:DISPlay:AUTO <state>;:CHANnel<N>:DISPlay:AUTO? @@ <state> := {ON | OFF | 1 | 0} @@ 設定差動與共模顯示比例及偏置自動追蹤擷取設定 @@ 196 @@ RW @@ N
+:CHANnel<N>:DISPlay:OFFSet @@ :CHANnel<N>:DISPlay:OFFSet <offset>;:CHANnel<N>:DISPlay:OFFSet? @@ <offset> (電壓) @@ 設定指定通道在螢幕顯示上的垂直偏置電壓 @@ 197 @@ RW @@ N
+:CHANnel<N>:DISPlay:RANGe @@ :CHANnel<N>:DISPlay:RANGe <range>;:CHANnel<N>:DISPlay:RANGe? @@ <range> (電壓) @@ 設定指定通道在螢幕顯示上的全螢幕垂直範圍 @@ 198 @@ RW @@ N
+:CHANnel<N>:DISPlay:SCALe @@ :CHANnel<N>:DISPlay:SCALe <scale>;:CHANnel<N>:DISPlay:SCALe? @@ <scale> (電壓/格) @@ 設定指定通道在螢幕顯示上的每格垂直比例 @@ 199 @@ RW @@ N
+:CHANnel<N>:INPut @@ :CHANnel<N>:INPut <coupling>;:CHANnel<N>:INPut? @@ <coupling> := {DC | DC50 | AC | LFR1 | LFR2} @@ 設定指定通道的輸入耦合方式與阻抗選擇 @@ 200 @@ RW @@ N
+:CHANnel<N>:ISIM:APPLy @@ :CHANnel<N>:ISIM:APPLy "<file>";:CHANnel<N>:ISIM:APPLy? @@ "<file>" (.tf2/.tf4) @@ 套用預先計算的轉移函數檔案至指定通道波形 @@ 201 @@ RW @@ N
+:CHANnel<N>:ISIM:BANDwidth @@ :CHANnel<N>:ISIM:BANDwidth <bw>;:CHANnel<N>:ISIM:BANDwidth? @@ <bw> (1000 Hz ~ 採樣率/2) @@ 設定 InfiniiSim 訊號模擬的頻寬限制截止頻率 @@ 202 @@ RW @@ N
+:CHANnel<N>:ISIM:BWLimit @@ :CHANnel<N>:ISIM:BWLimit <state>;:CHANnel<N>:ISIM:BWLimit? @@ <state> := {ON | OFF | 1 | 0} @@ 開啟或關閉 InfiniiSim 頻寬限制濾波器功能 @@ 203 @@ RW @@ N
+:CHANnel<N>:ISIM:CONVolve @@ :CHANnel<N>:ISIM:CONVolve <s_file>[,<flip>] @@ <s_file> (.s2p/.s4p), <flip> := {ON | OFF} @@ 對指定通道波形進行 S 參數檔案之摺積運算 @@ 204 @@ W @@ N
+:CHANnel<N>:ISIM:CORRection @@ :CHANnel<N>:ISIM:CORRection <pct>;:CHANnel<N>:ISIM:CORRection? @@ <pct> (0~100%) @@ 設定非直流頻率成分的訊號補償修正百分比 @@ 205 @@ RW @@ N
+:CHANnel<N>:ISIM:DEConvolve @@ :CHANnel<N>:ISIM:DEConvolve <s_file>[,<flip>] @@ <s_file> (.s2p/.s4p), <flip> := {ON | OFF} @@ 對指定通道波形進行 S 參數檔案之去摺積反運算 @@ 207 @@ W @@ N
+:CHANnel<N>:ISIM:DELay @@ :CHANnel<N>:ISIM:DELay <mode>;:CHANnel<N>:ISIM:DELay? @@ <mode> := {OFF | ON | TRIGger} @@ 設定轉移函數濾波器引發的時間延遲補償模式 @@ 208 @@ RW @@ N
+:CHANnel<N>:ISIM:NORMalize @@ :CHANnel<N>:ISIM:NORMalize <state>;:CHANnel<N>:ISIM:NORMalize? @@ <state> := {ON | OFF | 1 | 0} @@ 開啟或關閉轉移函數的直流增益正規化功能 @@ 210 @@ RW @@ N
+:CHANnel<N>:ISIM:PEXTraction @@ :CHANnel<N>:ISIM:PEXTraction <mode>;:CHANnel<N>:ISIM:PEXTraction? @@ <mode> := {P12 | P32 | P34 | P14 | DIFF | COMM} @@ 設定 InfiniiSim 訊號模擬中的埠萃取模式 @@ 211 @@ RW @@ N
+:CHANnel<N>:ISIM:SPAN @@ :CHANnel<N>:ISIM:SPAN <span_time>;:CHANnel<N>:ISIM:SPAN? @@ <span_time> (實數，秒) @@ 設定 InfiniiSim 濾波器計算的最大時間跨度 @@ 213 @@ RW @@ N
+:CHANnel<N>:ISIM:STATe @@ :CHANnel<N>:ISIM:STATe <mode>;:CHANnel<N>:ISIM:STATe? @@ <mode> := {OFF | PORT2 | PORT4 | PORT41} @@ 設定 InfiniiSim 功能的啟閉狀態與埠數運作模式 @@ 214 @@ RW @@ N
+:CHANnel<N>:LABel @@ :CHANnel<N>:LABel "<string>";:CHANnel<N>:LABel? @@ "<string>" (最長 16 字元) @@ 設定或查詢指定類比通道在螢幕上的自訂標籤字串 @@ 215 @@ RW @@ N
+:CHANnel<N>:OFFSet @@ :CHANnel<N>:OFFSet <offset_val>;:CHANnel<N>:OFFSet? @@ <offset_val> (電壓) @@ 設定指定通道在硬體擷取放大器上的垂直偏置電壓 @@ 216 @@ RW @@ N

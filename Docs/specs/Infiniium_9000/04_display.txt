@@ -1,0 +1,21 @@
+:DISPlay:CGRade @@ :DISPlay:CGRade {{ON | 1} | {OFF | 0}};:DISPlay:CGRade? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉色彩分級餘輝顯示模式 @@ 296 @@ RW @@ N
+:DISPlay:CGRade:LEVels? @@ :DISPlay:CGRade:LEVels? @@ 無 @@ 查詢色彩分級模式下每種顏色所代表的計數命中範圍 @@ 297 @@ R @@ N
+:DISPlay:CGRade:SCHeme @@ :DISPlay:CGRade:SCHeme {CLASsic | TEMP};:DISPlay:CGRade:SCHeme? @@ {CLASsic | TEMP} @@ 設定色彩分級餘輝的配色方案 @@ 299 @@ RW @@ N
+:DISPlay:COLumn @@ :DISPlay:COLumn <column_number>;:DISPlay:COLumn? @@ <column_number> (0~90整數) @@ 設定後續螢幕文字顯示指令的起始列位置 @@ 301 @@ RW @@ N
+:DISPlay:CONNect @@ :DISPlay:CONNect {{ON | 1} | {OFF | 0}};:DISPlay:CONNect? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉波形數據點之間的直線連接顯示 @@ 302 @@ RW @@ N
+:DISPlay:DATA? @@ :DISPlay:DATA? [<type>[,<screen_mode>[,<compression>[,<inversion>]]]] @@ <type>:{BMP|JPG|GIF|TIF|PNG}, <screen_mode>:{SCReen|GRATicule}, <compression>:{ON|OFF}, <inversion>:{NORMal|INVert} @@ 擷取並傳回當前螢幕畫面或網格區域的圖像資料 @@ 303 @@ R @@ N
+:DISPlay:GRATicule @@ :DISPlay:GRATicule {GRID | FRAMe};:DISPlay:GRATicule? @@ {GRID | FRAMe} @@ 設定螢幕背景網格樣式為完整網格或邊框刻度 @@ 304 @@ RW @@ N
+:DISPlay:GRATicule:INTensity @@ :DISPlay:GRATicule:INTensity <intensity_value>;:DISPlay:GRATicule:INTensity? @@ <intensity_value> (0~100整數) @@ 設定螢幕網格線條的顯示亮度百分比 @@ 305 @@ RW @@ N
+:DISPlay:GRATicule:NUMBer @@ :DISPlay:GRATicule:NUMBer {1 | 2 | 4 | 8 | 16};:DISPlay:GRATicule:NUMBer? @@ {1 | 2 | 4 | 8 | 16} @@ 設定螢幕顯示區域分割為多個網格的數量 @@ 306 @@ RW @@ N
+:DISPlay:GRATicule:SETGrat @@ :DISPlay:GRATicule:SETGrat <DispGratChan>,<number> @@ <DispGratChan>:{CHN<N>|DIFF1|DIFF3|COMM2|COMM4|MEM<N>|FN<F>|HIST|D<M>|BUS<Y>}, <number>:(1~16) @@ 將指定波形分配至螢幕上的特定網格區域 @@ 307 @@ W @@ N
+:DISPlay:GRATicule:SIZE @@ :DISPlay:GRATicule:SIZE {STANdard | EXTended | MAXimized | MINimized};:DISPlay:GRATicule:SIZE? @@ {STANdard | EXTended | MAXimized | MINimized} @@ 設定螢幕網格區域的顯示尺寸大小 @@ 308 @@ RW @@ N
+:DISPlay:LABel @@ :DISPlay:LABel {{ON | 1} | {OFF | 0}};:DISPlay:LABel? @@ {{ON | 1} | {OFF | 0}} @@ 開啟或關閉類比通道標籤的螢幕顯示 @@ 309 @@ RW @@ N
+:DISPlay:LINE @@ :DISPlay:LINE "<string_argument>" @@ "<string_argument>" @@ 從當前行列位置開始在螢幕寫入文字並自動換行 @@ 310 @@ W @@ N
+:DISPlay:PERSistence @@ :DISPlay:PERSistence {MINimum | INFinite | <time>};:DISPlay:PERSistence? @@ {MINimum | INFinite | <time>} @@ 設定波形在螢幕上的顯示餘輝時間 @@ 311 @@ RW @@ N
+:DISPlay:ROW @@ :DISPlay:ROW <row_number>;:DISPlay:ROW? @@ <row_number> (9~23整數) @@ 設定後續螢幕文字顯示指令的起始行位置 @@ 312 @@ RW @@ N
+:DISPlay:SCOLor @@ :DISPlay:SCOLor <color_name>, <hue>, <saturation>, <luminosity>;:DISPlay:SCOLor? <color_name> @@ <color_name>, <hue>(0~100), <saturation>(0~100), <luminosity>(0~100) @@ 設定特定螢幕顯示元素的自訂顏色 @@ 313 @@ RW @@ N
+:DISPlay:STATus:COL @@ :DISPlay:STATus:COL <column>;:DISPlay:STATus:COL? @@ <column> (0~1實數) @@ 設定即時眼圖與區域觸發狀態標籤的水平位置 @@ 315 @@ RW @@ N
+:DISPlay:STATus:ROW @@ :DISPlay:STATus:ROW <row>;:DISPlay:STATus:ROW? @@ <row> (0~1實數) @@ 設定即時眼圖與區域觸發狀態標籤的垂直位置 @@ 316 @@ RW @@ N
+:DISPlay:STRing @@ :DISPlay:STRing "<string_argument>" @@ "<string_argument>" @@ 從當前行列位置開始在螢幕寫入文字字串 @@ 317 @@ W @@ N
+:DISPlay:TAB @@ :DISPlay:TAB <tab>;:DISPlay:TAB? @@ {MEASurement | MARKer | LIMittest | JITTer | NOISe | HISTogram | MASKtest | EYE | COLorgrade | NAVigation | STATus | SCALe} @@ 切換螢幕下方顯示的功能頁籤 @@ 318 @@ RW @@ N
+:DISPlay:TEXT @@ :DISPlay:TEXT BLANk @@ BLANk @@ 清除螢幕上的使用者自訂文字區域 @@ 319 @@ W @@ N

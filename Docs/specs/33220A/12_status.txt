@@ -1,0 +1,26 @@
+*STB? @@ *STB? @@ 無參數 @@ 查詢 Status Byte 暫存器之摘要狀態字組 @@ 270 @@ R @@ N
+*SRE @@ *SRE <enable value>; *SRE? @@ 0-255 @@ 設定或查詢 Status Byte 暫存器之服務請求 (SRQ) 致能位元 @@ 270 @@ RW @@ N
+STATus:QUEStionable:CONDition? @@ STATus:QUEStionable:CONDition? @@ 無參數 @@ 查詢 Questionable Data 條件暫存器之當前即時狀態 @@ 271 @@ R @@ N
+STATus:QUEStionable[:EVENt]? @@ STATus:QUEStionable[:EVENt]? @@ 無參數 @@ 查詢並清除 Questionable Data 事件暫存器之累積內容 @@ 271 @@ R @@ N
+STATus:QUEStionable:ENABle @@ STATus:QUEStionable:ENABle <enable value>; STATus:QUEStionable:ENABle? @@ 0-65535 @@ 設定或查詢 Questionable Data 暫存器之致能位元 @@ 271 @@ RW @@ N
+*ESR? @@ *ESR? @@ 無參數 @@ 查詢並清除 Standard Event 狀態暫存器之累積內容 @@ 272 @@ R @@ N
+*ESE @@ *ESE <enable value>; *ESE? @@ 0-255 @@ 設定或查詢 Standard Event 狀態暫存器之致能位元 @@ 273 @@ RW @@ N
+*CLS @@ *CLS @@ 無參數 @@ 清除所有狀態暫存器群組之事件暫存器與錯誤佇列 @@ 273 @@ W @@ N
+STATus:PRESet @@ STATus:PRESet @@ 無參數 @@ 清除 Questionable Data 暫存器之所有致能位元 @@ 273 @@ W @@ N
+*PSC @@ *PSC {0|1}; *PSC? @@ 0|1 @@ 設定或查詢開機時是否自動清除狀態暫存器致能位元 @@ 273 @@ RW @@ N
+CALibration? @@ CALibration? @@ 無參數 @@ 使用指定之校正數值執行儀器校正程序 @@ 274 @@ R @@ N
+CALibration:SECure:STATe @@ CALibration:SECure:STATe {OFF|ON},<code>; CALibration:SECure:STATe? @@ OFF|ON, 密碼字串 (最多 12 字元) @@ 設定或查詢校正功能之安全鎖定狀態 @@ 274 @@ RW @@ N
+CALibration:SECure:CODE @@ CALibration:SECure:CODE <new code> @@ 新密碼字串 (最多 12 字元) @@ 修改校正安全鎖定密碼 @@ 275 @@ W @@ N
+CALibration:SETup @@ CALibration:SETup <0|1|2|3| . . . |94>; CALibration:SETup? @@ 0-94 @@ 設定或查詢儀器進行特定校正步驟之內部狀態 @@ 274 @@ RW @@ N
+CALibration:VALue @@ CALibration:VALue <value>; CALibration:VALue? @@ 校正標準訊號數值 @@ 設定或查詢目前校正步驟所對應的輸入訊號已知數值 @@ 274 @@ RW @@ N
+CALibration:COUNt? @@ CALibration:COUNt? @@ 無參數 @@ 查詢儀器已執行的校正總次數 @@ 275 @@ R @@ N
+CALibration:STRing @@ CALibration:STRing <quoted string>; CALibration:STRing? @@ 引號字串 (最多 40 字元) @@ 寫入或查詢儲存於非揮發性記憶體中的校正資訊備註字串 @@ 275 @@ RW @@ N
+*IDN? @@ *IDN? @@ 無參數 @@ 查詢儀器製造商、型號、序號與韌體版本識別字串 @@ 273 @@ R @@ N
+*LRN? @@ *LRN? @@ 無參數 @@ 查詢並傳回包含當前儀器所有設定的 SCPI 命令字串 @@ 273 @@ R @@ N
+*OPC @@ *OPC; *OPC? @@ 無參數 @@ 設定操作完成標誌位元或查詢所有前述命令是否已執行完成 @@ 273 @@ RW @@ N
+*RST @@ *RST @@ 無參數 @@ 將波形產生器重設為出廠預設狀態 @@ 273 @@ W @@ N
+*SAV @@ *SAV {0|1|2|3|4} @@ 0, 1, 2, 3, 4 @@ 將目前儀器設定狀態儲存至非揮發性記憶體位置 @@ 273 @@ W @@ N
+*RCL @@ *RCL {0|1|2|3|4} @@ 0, 1, 2, 3, 4 @@ 自非揮發性記憶體位置載入並恢復儀器設定狀態 @@ 273 @@ W @@ N
+*TRG @@ *TRG @@ 無參數 @@ 從遠端介面發送匯流排觸發訊號 @@ 273 @@ W @@ N
+*TST? @@ *TST? @@ 無參數 @@ 執行儀器自我測試並傳回測試結果 @@ 273 @@ R @@ N
+*WAI @@ *WAI @@ 無參數 @@ 等待所有待處理的操作執行完成後再執行後續命令 @@ 273 @@ W @@ N
